@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-async function fetchAndParseM3U(url, categoryFallback = "Live") {
+async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false) {
   try {
     const response = await fetch(url);
     const text = await response.text();
@@ -14,20 +14,22 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
       "accept-encoding": "gzip"
     };
 
+    let globalIndex = 1;
+
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i].trim();
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        // ১. লোগো এক্সট্রাক্ট
+        // লোগো
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // ২. ক্যাটাগরি এক্সট্রাক্ট
+        // ক্যাটাগরি
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const category = groupMatch ? groupMatch[1] : categoryFallback;
 
-        // ৩. চ্যানেলের আসল নাম পার্সিং
+        // চ্যানেলের নাম
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
@@ -69,13 +71,25 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
         currentHeaders["user-agent"] = line.replace('#EXTVLCOPT:http-user-agent=', '').trim();
       } else if (!line.startsWith('#')) {
         if (currentItem.name) {
-          items.push({
-            category_name: currentItem.category_name,
-            name: currentItem.name,
-            link: line,
-            headers: { ...currentHeaders },
-            logo: currentItem.logo
-          });
+          if (isAkash) {
+            // আকাশ গো চ্যানেলগুলোর জন্য নতুন ফরম্যাট
+            items.push({
+              id: globalIndex++,
+              name: currentItem.name,
+              logo: currentItem.logo,
+              stream_url: line,
+              cookie: currentHeaders["cookie"] || ""
+            });
+          } else {
+            // টফি চ্যানেলগুলোর জন্য আগের নেস্টেড ফরম্যাট
+            items.push({
+              category_name: currentItem.category_name,
+              name: currentItem.name,
+              link: line,
+              headers: { ...currentHeaders },
+              logo: currentItem.logo
+            });
+          }
         }
 
         currentItem = {};
@@ -98,8 +112,8 @@ async function main() {
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
 
   const [toffeeData, akashData] = await Promise.all([
-    fetchAndParseM3U(url1, "Toffee Live"),
-    fetchAndParseM3U(url2, "Akash Live")
+    fetchAndParseM3U(url1, "Toffee Live", false),
+    fetchAndParseM3U(url2, "Akash Live", true)
   ]);
 
   const allChannels = [...toffeeData, ...akashData];
@@ -114,7 +128,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with owner "Ahammad Ali".`);
+  console.log(`Successfully generated playlist.json with ${allChannels.length} channels.`);
 }
 
 main();
