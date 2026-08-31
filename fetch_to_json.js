@@ -19,48 +19,45 @@ async function fetchAndParseM3U(url) {
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // ২. ক্যাটাগরি এক্সট্রাক্ট
+        // ২. ক্যাটাগরি/গ্রুপ এক্সট্রাক্ট
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const group = groupMatch ? groupMatch[1] : '';
 
-        // ৩. অরিজিনাল চ্যানেলের নাম পার্সিং (কমা `,` এর পরের অংশ)
-        let originalName = '';
+        // ৩. অরিজিনাল চ্যানেলের আসল নাম পার্সিং (কমা , এর পরের অংশ)
+        let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
-          originalName = line.substring(lastCommaIndex + 1).trim();
+          channelName = line.substring(lastCommaIndex + 1).trim();
         }
 
-        // যদি কোনো কারণে নাম খালি থাকে বা 'Channel' থেকে যায়
-        if (!originalName || originalName.toLowerCase() === 'channel') {
+        // কমা থেকে নাম না পাওয়া গেলে tvg-name ব্যাকআপ হিসেবে নেবে
+        if (!channelName) {
           const nameMatch = line.match(/tvg-name="([^"]+)"/i);
-          originalName = nameMatch ? nameMatch[1] : 'Unknown Channel';
+          channelName = nameMatch ? nameMatch[1] : '';
         }
-
-        // চ্যানেলের নাম কাস্টমাইজেশন
-        const finalName = `${originalName} - আহমদ আলী`;
 
         currentAttributes = {
-          name: finalName,
-          channel_name: finalName,
-          original_name: originalName,
+          name: channelName,
           logo: logo,
           group: group,
-          raw_extinf: line.substring(0, lastCommaIndex + 1) + ' ' + finalName
+          raw_extinf: line
         };
       } else if (line.startsWith('#')) {
-        // সিকিউরিটি হেডার বা কুকি
+        // অতিরিক্ত হেডার বা সিকিউরিটি টোকেন
         currentHeaders.push(line);
       } else {
         // স্ট্রিম URL
         if (currentAttributes.name) {
           items.push({
-            ...currentAttributes,
+            name: currentAttributes.name,
+            logo: currentAttributes.logo,
+            group: currentAttributes.group,
             stream_url: line,
             headers: [...currentHeaders]
           });
         }
         
-        // তথ্য রিসেট
+        // রিসেট
         currentAttributes = {};
         currentHeaders = [];
       }
@@ -81,9 +78,12 @@ async function main() {
     fetchAndParseM3U(url2)
   ]);
 
+  const totalChannels = toffeeData.length + akashData.length;
+
   const resultData = {
+    playlist_owner: "আহমদ আলী",
     updated_at: new Date().toISOString(),
-    total_channels: toffeeData.length + akashData.length,
+    total_channels: totalChannels,
     playlists: {
       toffee: {
         total_channels: toffeeData.length,
@@ -97,7 +97,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated JSON with total ${resultData.total_channels} channels.`);
+  console.log(`Successfully updated playlist.json with ${totalChannels} channels.`);
 }
 
 main();
