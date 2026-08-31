@@ -109,7 +109,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
 
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
-  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
+  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/AynaOTT_Auto_Update_Playlist/refs/heads/main/aynaott.m3u';
 
   const [toffeeData, akashData] = await Promise.all([
     fetchAndParseM3U(url1, "Toffee Live", false),
