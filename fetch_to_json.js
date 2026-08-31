@@ -6,25 +6,48 @@ async function fetchAndParseM3U(url) {
     const text = await response.text();
     const lines = text.split('\n');
     const items = [];
-    let currentExtInf = '';
+    
+    let currentAttributes = {};
+    let currentHeaders = [];
 
     for (let line of lines) {
       line = line.trim();
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        // চ্যানেলের নাম পরিবর্তন করে 'আহমদ আলী' বসানো
-        currentExtInf = line.replace(/,.*$/, ',আহমদ আলী');
+        // লোগো এক্সট্রাক্ট
+        const logoMatch = line.match(/tvg-logo="([^"]+)"/);
+        const logo = logoMatch ? logoMatch[1] : '';
+
+        // গ্রুপ/ক্যাটাগরি এক্সট্রাক্ট
+        const groupMatch = line.match(/group-title="([^"]+)"/);
+        const group = groupMatch ? groupMatch[1] : '';
+
+        // মূল চ্যানেল নাম এক্সট্রাক্ট
+        const nameMatch = line.match(/,(.+)$/);
+        const originalName = nameMatch ? nameMatch[1].trim() : 'Unknown Channel';
+
+        currentAttributes = {
+          channel_name: `${originalName} - আহমদ আলী`,
+          original_name: originalName,
+          logo: logo,
+          group: group,
+          raw_extinf: line.replace(/,.*$/, `,${originalName} - আহমদ আলী`)
+        };
       } else if (line.startsWith('#')) {
-        // অন্য যেকোনো হেডার/ট্যাগ (যেমন #EXTVLCOPT, #KODIPROP) যা ডাটাতে যেভাবে আছে সেভাবেই রাখা
-        items.push({ type: 'header', content: line });
+        // KODI PROP বা অতিরিক্ত সিকিউরিটি হেডার (যেমন Cookie, License, User-Agent ইত্যাদি)
+        currentHeaders.push(line);
       } else {
-        // স্ট্রিম URL বা মিডিয়া লিংক
+        // স্ট্রিম URL
         items.push({
-          extinf: currentExtInf,
-          url: line
+          ...currentAttributes,
+          stream_url: line,
+          headers: [...currentHeaders]
         });
-        currentExtInf = '';
+        
+        // রিসেট
+        currentAttributes = {};
+        currentHeaders = [];
       }
     }
     return items;
@@ -43,27 +66,23 @@ async function main() {
     fetchAndParseM3U(url2)
   ]);
 
-  // চ্যানেল সংখ্যা অটো গণনা (যেসব ডাটায় URL রয়েছে)
-  const toffeeCount = toffeeData.filter(item => item.url).length;
-  const akashCount = akashData.filter(item => item.url).length;
-
   const resultData = {
-    last_updated: new Date().toISOString(),
-    total_channels: toffeeCount + akashCount,
+    updated_at: new Date().toISOString(),
+    total_channels: toffeeData.length + akashData.length,
     playlists: {
       toffee: {
-        total_channels: toffeeCount,
-        data: toffeeData
+        total_channels: toffeeData.length,
+        channels: toffeeData
       },
       akash_go: {
-        total_channels: akashCount,
-        data: akashData
+        total_channels: akashData.length,
+        channels: akashData
       }
     }
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with total ${resultData.total_channels} channels.`);
+  console.log(`Successfully saved playlist.json with total ${resultData.total_channels} channels.`);
 }
 
 main();
