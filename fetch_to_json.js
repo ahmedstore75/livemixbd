@@ -13,8 +13,10 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
     const items = [];
 
     let currentItem = {};
+    
+    // Toffee এর জন্য কার্যকরী ডিফল্ট হেডার
     let currentHeaders = {
-      "user-agent": "okhttp/5.1.0",
+      "user-agent": "Toffee/3.0.0 (Linux; Android 10; Mobile)",
       "client-api-header": "null",
       "accept-encoding": "gzip"
     };
@@ -94,7 +96,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
 
         currentItem = {};
         currentHeaders = {
-          "user-agent": "okhttp/5.1.0",
+          "user-agent": "Toffee/3.0.0 (Linux; Android 10; Mobile)",
           "client-api-header": "null",
           "accept-encoding": "gzip"
         };
@@ -107,21 +109,18 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
   }
 }
 
-// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ইম্প্রুভড ফাংশন
+// ২. JSON লিংক থেকে ডাটা আনার ফাংশন
 async function fetchJsonData(url) {
   try {
     const response = await fetch(url, {
       method: 'GET',
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         'Accept': 'application/json, text/plain, */*'
       }
     });
 
-    if (!response.ok) {
-      console.error(`JSON fetch failed with status: ${response.status}`);
-      return [];
-    }
+    if (!response.ok) return [];
 
     const json = await response.json();
     let rawList = [];
@@ -133,26 +132,19 @@ async function fetchJsonData(url) {
       else if (Array.isArray(json.channels)) rawList = json.channels;
       else if (Array.isArray(json.data)) rawList = json.data;
       else if (Array.isArray(json.channel)) rawList = json.channel;
-      else if (Array.isArray(json.categories)) {
-        // নেস্টেড ক্যাটাগরি ফ্লাট করা
-        json.categories.forEach(cat => {
-          if (Array.isArray(cat.channels)) rawList.push(...cat.channels);
-        });
-      }
     }
 
-    // ফরম্যাট সামঞ্জস্য করা (যদি ফিল্ডের নাম ভিন্ন হয়)
     return rawList.map(ch => ({
       category_name: ch.category_name || ch.category || "Live",
-      name: ch.name || ch.title || ch.channel_name || "Unknown Channel",
-      link: ch.link || ch.stream_url || ch.url || ch.streamUrl || "",
+      name: ch.name || ch.title || "Unknown Channel",
+      link: ch.link || ch.stream_url || ch.url || "",
       headers: ch.headers || (ch.cookie ? { "cookie": ch.cookie } : {
-        "user-agent": "okhttp/5.1.0",
+        "user-agent": "Toffee/3.0.0 (Linux; Android 10; Mobile)",
         "client-api-header": "null",
         "accept-encoding": "gzip"
       }),
-      logo: ch.logo || ch.icon || ch.image || ""
-    })).filter(ch => ch.link !== ""); // খালি লিংক ফিল্টার করে বাদ দেওয়া
+      logo: ch.logo || ch.icon || ""
+    })).filter(ch => ch.link !== "");
 
   } catch (error) {
     console.error(`Error fetching JSON from ${url}:`, error.message);
@@ -160,13 +152,11 @@ async function fetchJsonData(url) {
   }
 }
 
-// ৩. মূল প্রসেসিং
+// ৩. মেইন প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
   const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
-
-  console.log("Fetching channels...");
 
   const [toffeeData, akashData, extraJsonData] = await Promise.all([
     fetchAndParseM3U(url1, "Toffee Live", false),
@@ -174,13 +164,9 @@ async function main() {
     fetchJsonData(url3)
   ]);
 
-  console.log(`Toffee channels: ${toffeeData.length}`);
-  console.log(`Akash channels: ${akashData.length}`);
-  console.log(`Extra JSON channels: ${extraJsonData.length}`);
-
   const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
 
-  // ফিল্টারিং: স্ট্রিমিং ইউআরএল প্লেলিস্টে সর্বোচ্চ ১ বারই থাকবে (ডুপ্লিকেট রিমুভ)
+  // ফিল্টারিং: স্ট্রিমিং ইউআরএল সর্বোচ্চ ১ বারই থাকবে (ইউনিক)
   const seenUrls = new Set();
   const filteredChannels = [];
 
