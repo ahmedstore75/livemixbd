@@ -1,22 +1,15 @@
 const fs = require('fs');
 
-// ১. M3U ফাইল পার্স করার ফাংশন
 async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false) {
   try {
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-      }
-    });
+    const response = await fetch(url);
     const text = await response.text();
     const lines = text.split('\n');
     const items = [];
 
     let currentItem = {};
-    
-    // Toffee এর জন্য কার্যকরী ডিফল্ট হেডার
     let currentHeaders = {
-      "user-agent": "Toffee/3.0.0 (Linux; Android 10; Mobile)",
+      "user-agent": "okhttp/5.1.0",
       "client-api-header": "null",
       "accept-encoding": "gzip"
     };
@@ -28,12 +21,15 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
+        // লোগো
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
+        // ক্যাটাগরি
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const category = groupMatch ? groupMatch[1] : categoryFallback;
 
+        // চ্যানেলের নাম
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
@@ -76,6 +72,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
       } else if (!line.startsWith('#')) {
         if (currentItem.name) {
           if (isAkash) {
+            // আকাশ গো চ্যানেলগুলোর জন্য নতুন ফরম্যাট
             items.push({
               id: globalIndex++,
               name: currentItem.name,
@@ -84,6 +81,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
               cookie: currentHeaders["cookie"] || ""
             });
           } else {
+            // টফি চ্যানেলগুলোর জন্য আগের নেস্টেড ফরম্যাট
             items.push({
               category_name: currentItem.category_name,
               name: currentItem.name,
@@ -96,7 +94,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
 
         currentItem = {};
         currentHeaders = {
-          "user-agent": "Toffee/3.0.0 (Linux; Android 10; Mobile)",
+          "user-agent": "okhttp/5.1.0",
           "client-api-header": "null",
           "accept-encoding": "gzip"
         };
@@ -104,93 +102,33 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
     }
     return items;
   } catch (error) {
-    console.error(`Error fetching M3U ${url}:`, error.message);
+    console.error(`Error fetching ${url}:`, error);
     return [];
   }
 }
 
-// ২. JSON লিংক থেকে ডাটা আনার ফাংশন
-async function fetchJsonData(url) {
-  try {
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'application/json, text/plain, */*'
-      }
-    });
-
-    if (!response.ok) return [];
-
-    const json = await response.json();
-    let rawList = [];
-
-    if (Array.isArray(json)) {
-      rawList = json;
-    } else if (json && typeof json === 'object') {
-      if (Array.isArray(json.response)) rawList = json.response;
-      else if (Array.isArray(json.channels)) rawList = json.channels;
-      else if (Array.isArray(json.data)) rawList = json.data;
-      else if (Array.isArray(json.channel)) rawList = json.channel;
-    }
-
-    return rawList.map(ch => ({
-      category_name: ch.category_name || ch.category || "Live",
-      name: ch.name || ch.title || "Unknown Channel",
-      link: ch.link || ch.stream_url || ch.url || "",
-      headers: ch.headers || (ch.cookie ? { "cookie": ch.cookie } : {
-        "user-agent": "Toffee/3.0.0 (Linux; Android 10; Mobile)",
-        "client-api-header": "null",
-        "accept-encoding": "gzip"
-      }),
-      logo: ch.logo || ch.icon || ""
-    })).filter(ch => ch.link !== "");
-
-  } catch (error) {
-    console.error(`Error fetching JSON from ${url}:`, error.message);
-    return [];
-  }
-}
-
-// ৩. মেইন প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
-  const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
 
-  const [toffeeData, akashData, extraJsonData] = await Promise.all([
+  const [toffeeData, akashData] = await Promise.all([
     fetchAndParseM3U(url1, "Toffee Live", false),
-    fetchAndParseM3U(url2, "Akash Live", true),
-    fetchJsonData(url3)
+    fetchAndParseM3U(url2, "Akash Live", true)
   ]);
 
-  const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
-
-  // ফিল্টারিং: স্ট্রিমিং ইউআরএল সর্বোচ্চ ১ বারই থাকবে (ইউনিক)
-  const seenUrls = new Set();
-  const filteredChannels = [];
-
-  for (const channel of rawChannels) {
-    const streamUrl = channel.link || channel.stream_url;
-    if (!streamUrl) continue;
-
-    if (!seenUrls.has(streamUrl)) {
-      seenUrls.add(streamUrl);
-      filteredChannels.push(channel);
-    }
-  }
+  const allChannels = [...toffeeData, ...akashData];
 
   const resultData = {
     status: "success",
     name: "Live Channels",
     owner: "Ahammad Ali",
-    channels_amount: filteredChannels.length,
+    channels_amount: allChannels.length,
     last_update: new Date().toISOString().split('T')[0],
-    response: filteredChannels
+    response: allChannels
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${filteredChannels.length} unique channels.`);
+  console.log(`Successfully generated playlist.json with ${allChannels.length} channels.`);
 }
 
 main();
