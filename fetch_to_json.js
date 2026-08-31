@@ -27,7 +27,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const category = groupMatch ? groupMatch[1] : categoryFallback;
 
-        // ৩. চ্যানেলের আসল নাম পার্সিং (কমা , এর পরের অংশ)
+        // ৩. চ্যানেলের আসল নাম পার্সিং
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
@@ -45,17 +45,14 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
           logo: logo
         };
       } else if (line.startsWith('#EXTHTTP:')) {
-        // M3U থেকে সরাসরি ডায়নামিক কুকি এবং অন্যান্য হেডার এক্সট্রাক্ট
         try {
           const jsonStr = line.replace('#EXTHTTP:', '').trim();
           const parsedHttp = JSON.parse(jsonStr);
           
-          // যেকোনো কুকি বা হেডার ডাইনামিকালি মার্চ করা
           Object.keys(parsedHttp).forEach(key => {
             currentHeaders[key.toLowerCase()] = parsedHttp[key];
           });
         } catch (e) {
-          // র স্ট্রিং বা অন্য যেকোনো ফরম্যাটের কুকি হ্যান্ডেল করা
           const cookieContent = line.replace('#EXTHTTP:', '').replace(/[\{\}"]/g, '').trim();
           if (cookieContent) {
             const parts = cookieContent.split(':');
@@ -71,7 +68,6 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
       } else if (line.startsWith('#EXTVLCOPT:http-user-agent=')) {
         currentHeaders["user-agent"] = line.replace('#EXTVLCOPT:http-user-agent=', '').trim();
       } else if (!line.startsWith('#')) {
-        // স্ট্রিম URL
         if (currentItem.name) {
           items.push({
             category_name: currentItem.category_name,
@@ -82,7 +78,6 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
           });
         }
 
-        // রিসেট
         currentItem = {};
         currentHeaders = {
           "user-agent": "okhttp/5.1.0",
@@ -112,14 +107,14 @@ async function main() {
   const resultData = {
     status: "success",
     name: "Live Channels",
-    owner: "আহমদ আলী",
+    owner: "Ahammad Ali",
     channels_amount: allChannels.length,
     last_update: new Date().toISOString().split('T')[0],
     response: allChannels
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${allChannels.length} channels.`);
+  console.log(`Successfully generated playlist.json with owner "Ahammad Ali".`);
 }
 
 main();
