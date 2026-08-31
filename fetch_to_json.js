@@ -1,11 +1,10 @@
 const fs = require('fs');
 
-// ১. M3U ফাইল পার্স করার ফাংশন
-async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false) {
+async function fetchAndParseM3U(url, categoryFallback = "Live") {
   try {
     const response = await fetch(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
       }
     });
     const text = await response.text();
@@ -13,13 +12,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
     const items = [];
 
     let currentItem = {};
-    let currentHeaders = {
-      "user-agent": "okhttp/5.1.0",
-      "client-api-header": "null",
-      "accept-encoding": "gzip"
-    };
-
-    let globalIndex = 1;
+    let currentCookie = "";
 
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i].trim();
@@ -28,9 +21,6 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
       if (line.startsWith('#EXTINF:')) {
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
-
-        const groupMatch = line.match(/group-title="([^"]+)"/i);
-        const category = groupMatch ? groupMatch[1] : categoryFallback;
 
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
@@ -44,7 +34,6 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
         }
 
         currentItem = {
-          category_name: category,
           name: channelName,
           logo: logo
         };
@@ -52,52 +41,27 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
         try {
           const jsonStr = line.replace('#EXTHTTP:', '').trim();
           const parsedHttp = JSON.parse(jsonStr);
-          
-          Object.keys(parsedHttp).forEach(key => {
-            currentHeaders[key.toLowerCase()] = parsedHttp[key];
-          });
+          if (parsedHttp.cookie) {
+            currentCookie = parsedHttp.cookie;
+          }
         } catch (e) {
-          const cookieContent = line.replace('#EXTHTTP:', '').replace(/[\{\}"]/g, '').trim();
-          if (cookieContent) {
-            const parts = cookieContent.split(':');
-            if (parts.length >= 2) {
-              const k = parts[0].trim().toLowerCase();
-              const v = parts.slice(1).join(':').trim();
-              currentHeaders[k] = v;
-            } else {
-              currentHeaders["cookie"] = cookieContent;
-            }
+          const cookieMatch = line.match(/Edge-[^"\s]+/i);
+          if (cookieMatch) {
+            currentCookie = cookieMatch[0];
           }
         }
-      } else if (line.startsWith('#EXTVLCOPT:http-user-agent=')) {
-        currentHeaders["user-agent"] = line.replace('#EXTVLCOPT:http-user-agent=', '').trim();
       } else if (!line.startsWith('#')) {
         if (currentItem.name) {
-          if (isAkash) {
-            items.push({
-              id: globalIndex++,
-              name: currentItem.name,
-              logo: currentItem.logo,
-              stream_url: line,
-              cookie: currentHeaders["cookie"] || ""
-            });
-          } else {
-            items.push({
-              category_name: currentItem.category_name,
-              name: currentItem.name,
-              link: line,
-              headers: { ...currentHeaders },
-              logo: currentItem.logo
-            });
-          }
+          items.push({
+            name: currentItem.name,
+            logo: currentItem.logo,
+            stream_url: line,
+            cookie: currentCookie
+          });
         }
 
         currentItem = {};
-        currentHeaders = {
-          "user-agent": "okhttp/5.1.0",
-          "client-api-header": "null",
-          "accept-encoding": "gzip"
-        };
+        currentCookie = "";
       }
     }
     return items;
@@ -107,90 +71,55 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
   }
 }
 
-// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ইম্প্রুভড ফাংশন
 async function fetchJsonData(url) {
   try {
     const response = await fetch(url, {
-      method: 'GET',
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
       }
     });
-
-    if (!response.ok) {
-      console.error(`JSON fetch failed with status: ${response.status}`);
-      return [];
-    }
-
+    if (!response.ok) return [];
     const json = await response.json();
-    let rawList = [];
+    let rawList = Array.isArray(json) ? json : (json.response || json.channels || json.data || []);
 
-    if (Array.isArray(json)) {
-      rawList = json;
-    } else if (json && typeof json === 'object') {
-      if (Array.isArray(json.response)) rawList = json.response;
-      else if (Array.isArray(json.channels)) rawList = json.channels;
-      else if (Array.isArray(json.data)) rawList = json.data;
-      else if (Array.isArray(json.channel)) rawList = json.channel;
-      else if (Array.isArray(json.categories)) {
-        // নেস্টেড ক্যাটাগরি ফ্লাট করা
-        json.categories.forEach(cat => {
-          if (Array.isArray(cat.channels)) rawList.push(...cat.channels);
-        });
-      }
-    }
-
-    // ফরম্যাট সামঞ্জস্য করা (যদি ফিল্ডের নাম ভিন্ন হয়)
     return rawList.map(ch => ({
-      category_name: ch.category_name || ch.category || "Live",
-      name: ch.name || ch.title || ch.channel_name || "Unknown Channel",
-      link: ch.link || ch.stream_url || ch.url || ch.streamUrl || "",
-      headers: ch.headers || (ch.cookie ? { "cookie": ch.cookie } : {
-        "user-agent": "okhttp/5.1.0",
-        "client-api-header": "null",
-        "accept-encoding": "gzip"
-      }),
-      logo: ch.logo || ch.icon || ch.image || ""
-    })).filter(ch => ch.link !== ""); // খালি লিংক ফিল্টার করে বাদ দেওয়া
-
+      name: ch.name || ch.title || "Unknown Channel",
+      logo: ch.logo || ch.icon || "",
+      stream_url: ch.stream_url || ch.link || ch.url || "",
+      cookie: ch.cookie || (ch.headers && ch.headers.cookie ? ch.headers.cookie : "")
+    })).filter(ch => ch.stream_url !== "");
   } catch (error) {
-    console.error(`Error fetching JSON from ${url}:`, error.message);
     return [];
   }
 }
 
-// ৩. মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
   const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
 
-  console.log("Fetching channels...");
-
   const [toffeeData, akashData, extraJsonData] = await Promise.all([
-    fetchAndParseM3U(url1, "Toffee Live", false),
-    fetchAndParseM3U(url2, "Akash Live", true),
+    fetchAndParseM3U(url1, "Toffee Live"),
+    fetchAndParseM3U(url2, "Akash Live"),
     fetchJsonData(url3)
   ]);
 
-  console.log(`Toffee channels: ${toffeeData.length}`);
-  console.log(`Akash channels: ${akashData.length}`);
-  console.log(`Extra JSON channels: ${extraJsonData.length}`);
-
   const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
 
-  // ফিল্টারিং: স্ট্রিমিং ইউআরএল প্লেলিস্টে সর্বোচ্চ ১ বারই থাকবে (ডুপ্লিকেট রিমুভ)
   const seenUrls = new Set();
   const filteredChannels = [];
+  let idCounter = 1;
 
   for (const channel of rawChannels) {
-    const streamUrl = channel.link || channel.stream_url;
-    if (!streamUrl) continue;
-
-    if (!seenUrls.has(streamUrl)) {
-      seenUrls.add(streamUrl);
-      filteredChannels.push(channel);
+    if (channel.stream_url && !seenUrls.has(channel.stream_url)) {
+      seenUrls.add(channel.stream_url);
+      filteredChannels.push({
+        id: idCounter++,
+        name: channel.name,
+        logo: channel.logo,
+        stream_url: channel.stream_url,
+        cookie: channel.cookie
+      });
     }
   }
 
@@ -204,7 +133,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${filteredChannels.length} unique channels.`);
+  console.log(`Generated playlist.json with ${filteredChannels.length} channels in unified format.`);
 }
 
 main();
