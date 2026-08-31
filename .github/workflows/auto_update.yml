@@ -1,4 +1,4 @@
-Name: Auto Update M3U to JSON
+name: Auto Update M3U to JSON
 
 on:
   schedule:
