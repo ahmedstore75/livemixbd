@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 116,
+  "channels_amount": 239,
   "last_update": "2026-08-31",
   "response": [
     {
@@ -1190,6 +1190,1355 @@
       "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1783925099346.png",
       "stream_url": "https://7lsc33jopp.gpcdn.net/bpk-tv/1720/output/index.m3u8",
       "cookie": ""
+    },
+    {
+      "category_name": "Live",
+      "name": "G-Series",
+      "link": "https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/xTxpr24R/1000114119.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "BTV",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/12.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778082545894.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "BTV Shangshad",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/32.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1773247382366.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Somoy TV",
+      "link": "https://tvsen6.aynaott.com/4XcqdovJzbbC9WdJA9gk/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://assets-prod.services.toffeelive.com//Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Jamuna TV",
+      "link": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "DBC News HD",
+      "link": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Maasranga TV",
+      "link": "http://116.204.149.16/maasranga/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1773680325498.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Ekattor HD",
+      "link": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://cdn.ekattorbd.com/contents/cache/images/1200x630x1/uploads/media/2023/08/13/default-f5a63c8327b98eafee564f28c3a9ebdb.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "ATN News",
+      "link": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "News 24 HD",
+      "link": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186895850.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star News",
+      "link": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/starnewsbd.stream/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Deepto TV HD",
+      "link": "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Channel 9 HD",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/16.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Channel I HD",
+      "link": "https://tvsen3.b-cdn.net/qUud8Nxs/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Bangla Vision",
+      "link": "https://owrcovcrpy.gpcdn.net/bpk-tv/1715/output/index.m3u8",
+      "headers": {
+        "cookie": "Edge-Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcwMi9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODgxNjY4ODR9fX1dfQ;Edge-Signature=ryZrSTK9rz3pAWwdGAsVsFwn9nzIiHLZwmoIVSPx8Cw"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735561344354.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Al Jazeera",
+      "link": "http://103.151.60.162:2122/play/a0ff/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1777454219313.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Channel S UK",
+      "link": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/chsukoff.stream/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://chsuk.tv/wp-content/uploads/2025/11/CHS-Side-Text.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Channel Europe",
+      "link": "https://stream.channeleuropetvboxlondon.co.uk/live/channeleurope/chunklist_w572284654.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://channeleurope.tv/storage/settings/BNyRMyomifMQ7VlzvHKbNwCfzxM7kF4Vq7bj4zxZ.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Probashi",
+      "link": "http://158.69.24.53:8080/probashi_tv/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzayWMQexbfPV-jTx3ZNoq-XOmlHKSX1SCjg&s"
+    },
+    {
+      "category_name": "Live",
+      "name": "Deshe Bideshe",
+      "link": "https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://pbs.twimg.com/profile_images/739539785304281088/zMwNO936_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star movies",
+      "link": "http://103.151.60.162:2122/play/a02k/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/yNvkbdL4/1000114150.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "iON TV UK",
+      "link": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iontvuk.stream/live-orgin/iontvuk.stream/chunks.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://www.jagobd.com/wp-content/uploads/2017/10/iontvuk.jpg?x49520"
+    },
+    {
+      "category_name": "Live",
+      "name": "Jago News 24",
+      "link": "https://app.ncare.live/live-orgin/jagonews24.stream/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/jagonews.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "G TV",
+      "link": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://raw.githubusercontent.com/AsimDipto/Logo-box/refs/heads/main/Bangladesh/gtv-hd-bd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS 21 BANGLA",
+      "link": "http://103.190.133.68:1935/news21live/live/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://www.jagobd.com/wp-content/uploads/2024/11/news21.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "NRB HD",
+      "link": "https://app.ncare.live/live-orgin/nrb-eu.stream/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctL8rD_FYfZ1rHUDhs_Q3rJwRYGSDbMX0-XHpHFXLjeTC2D9iYwo8Gq3J&s=10"
+    },
+    {
+      "category_name": "Live",
+      "name": "Ayna TV",
+      "link": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBhxAik9rvkpRV33kdDl-2drT2X3Y2cU_-lrjlMpmIxzBAGCN50afZnqx8vvxgmbaTVZmYITeOyTW1Fg_CAItfNfgRwsrTcxaB1pecb0Z74oky6LcgXFGIAOz8w8IijqMpMo4dUJ8aMsAF4A0x9Xwt57UCZYxhtEpRfOdqTzmfwVjICILOqg9QPbOFww/s1080/1000021053.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Channel 16",
+      "link": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGN4JrZ3Ur3BHiD2tQhsQq3WQ5DXpv7HATFyNDT6o-rSNwAZaeQieMBdfPoGPio5UPipGV2ZBb8rLmyYJe5vySfQjEmTE5MLc_6q8CKfXuzb4eRQREjPiyL5tkncb1Xt5pVMJa6t77CT98JvAFozg95IH_9qofXJ2s1ubKCbJ-_JsuRVb458aBztLImQ/s1080/1000015295.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Sanonda Tv",
+      "link": "http://live-stream.amarbanglatv.in:8080/hls/sanandatv/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQrOMsdkfX7iirtL5LHIosFTqpB8hhdpS7zg&usqp=CAU"
+    },
+    {
+      "category_name": "Live",
+      "name": "Mohona TV",
+      "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8",
+      "headers": {
+        "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1788328837:KeyName=prod_linear:Signature=Xihg1lVWFRGPTarB-aQK0iCt8NgqX9fKZ3CxCpJ5bu2XvCjnBVR3ttz1HoCnDLmYdTLa15WPFn6ITYWtb5pqAw"
+      },
+      "logo": "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "MY TV",
+      "link": "http://116.204.149.16/mytv/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/HxGF4V2b/20250529_103226.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Rajdhani TV",
+      "link": "https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Ekushey TV",
+      "link": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/cd/Ekushey_Television_logo_2000-2002%2C_2007.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Ekhon TV",
+      "link": "https://stream.ottplus.live/live/ekhon_tv_abr/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://assets-prod.services.toffeelive.com/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Green TV",
+      "link": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Green%20TV.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "JonmoBhumi TV",
+      "link": "https://jtvs.ncare.live/Gznr84Woj7UEye3OPVeWq2ForboWAgdV/jonmobhumitv.stream/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://raw.githubusercontent.com/BadhanStrom/img/refs/heads/main/jhonmobhumitv.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "ME TV",
+      "link": "https://iptvbd.live/metv1080/1080.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://www.metvbd.com/media/common/logo-fb.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Bangla Plus",
+      "link": "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/9/9a/Bangla%2B_HD.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "SA TV",
+      "link": "http://116.204.149.16/satv/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Bangla TV",
+      "link": "https://cdn.ghuddi.live/Bangla_TV/Bangla_TV_BD/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://s3.aynaott.com/storage/5b22893ae4e816ef2cf87e63c96e9e08"
+    },
+    {
+      "category_name": "Live",
+      "name": "Boishakhi TV",
+      "link": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/Kv4y2cWq/1000115157.webp"
+    },
+    {
+      "category_name": "Live",
+      "name": "Nagorik TV",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/38.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/gjyb24hM/1000115063.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "T Sports",
+      "link": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/26pLYgzB/1000115823.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "PTV",
+      "link": "http://103.151.60.162:2122/play/a0f9/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/zB0GG09t/ptv-sports.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Ten Sports",
+      "link": "http://66.102.126.10:8000/play/a018/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/Bv4jbHrr/1000116232.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star Sports Select 1 HD",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/40.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/NMYdkKxf/1000114839.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star Sports Select 2 HD",
+      "link": "http://103.151.60.162:2122/play/a027/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Sports_Select_HD_2.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "TSN 1",
+      "link": "https://tvsen7.aynascope.net/tsn1/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_d165c628a0db9286da3914ca916a4971_playmist_tsn_1400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "TSN 2",
+      "link": "https://tvsen7.aynascope.net/tsn2/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "TSN 3",
+      "link": "https://tvsen7.aynascope.net/tsn3/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Willow TV",
+      "link": "https://tvsen5.aynaott.com/willowhd/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Bein Sports 1",
+      "link": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "ESPN",
+      "link": "https://tvsen7.aynaott.com/espn/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "A Sports",
+      "link": "http://103.151.60.162:2122/play/a02z/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_552c5631b1d8ba169911ab3d7bc3952a_playmist_a_sports_hd_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "NFL Network",
+      "link": "https://tvsen6.aynaott.com/nfl/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_cadf0a534c4de626332004067cee3103_playmist_nfl_network400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Bleav Football",
+      "link": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Cricket Gold",
+      "link": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/63dcbec8a9ed027c46e448fb003a0a64.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "BT Sports 2",
+      "link": "https://tvsen3.aynascope.net/FCKU2jmP/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_5c48c1df205227964277087b833a9912_playmist_bt_sport_2400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "TNT Sport 1",
+      "link": "https://tvsen3.aynascope.net/4T5fe4Sc/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_4af9a282522f487a6ed41692f99baad6_playmist_tnt_sports_1400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "DD Sports",
+      "link": "https://cdn-6.pishow.tv/live/13/master.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Golf Channel",
+      "link": "https://tvsen3.aynascope.net/APKc7EfX/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_bf450d05727fd678bee456e883af98e8_playmist_golf_channel_400x400.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "beIN SPORTS 1 HD",
+      "link": "http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/6123/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "http://91.208.162.66/bsnew/bs1hd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "beIN SPORTS 3 HD",
+      "link": "http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/6124/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "http://91.208.162.66/bsnew/bs3hd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "beIN SPORTS 4 HD",
+      "link": "http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/6125/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "http://91.208.162.66/bsnew/bs4hd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "beIN SPORTS 5 HD",
+      "link": "http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/6126/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "http://91.208.162.66/bsnew/bs5hd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "beIN SPORTS 6 HD",
+      "link": "http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/6127/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "http://91.208.162.66/bsnew/bs6hd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "beIN SPORTS 7 HD",
+      "link": "http://2756d46c.akciatv.ru/iptv/7FRNF6CY9A9TG3/6128/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "http://91.208.162.66/bsnew/bs7hd.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Zee Bangla HD",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/35.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/1zDXYnMT/1000115107.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star Jalsha HD",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/33.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/3/3c/Star_Jalsha_HD.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Jalsha Movies HD",
+      "link": "http://103.141.70.136:8080/bdtv/restrem/27.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/04/Jalsha_Movies_HD.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Colors Bangla",
+      "link": "https://yupptvcatchupire.yuppcdn.net/preview/colorsbanglahd/800.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://dl.dropbox.com/s/44vdhjj6fja02co/CBHD.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Enter 10 Bangla",
+      "link": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/Lsk4Vd8S/1000114952.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Sun Bangla",
+      "link": "http://103.151.60.162:2122/play/a01p/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/ZnnTZCFq/1000114955.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Zee Bangla Sonar",
+      "link": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://dtil.tmsimg.com/assets/GNLZZGG00287G7K.png?lock=720x540"
+    },
+    {
+      "category_name": "Live",
+      "name": "Colors Bangla Cinema",
+      "link": "http://live.balajibroadband.com:3500/live/1657.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/Dfxx1y4q/1000115026.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star Gold",
+      "link": "http://103.151.60.162:2122/play/a01n/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/X786Sr04/star-gold.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Star Gold 2 SD",
+      "link": "http://103.151.60.162:2122/play/a01v/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Gold_2.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "COLORS CINEPLEX HD",
+      "link": "http://66.102.126.10:8000/play/a076/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexHD.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Colors Cineplex Bollywood",
+      "link": "http://live.balajibroadband.com:3500/live/1763.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexBollywood.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Colors Cineplex Superhit",
+      "link": "http://live.balajibroadband.com:3500/live/1450.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/ColorsCineplexSuperhit.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "StarPlus HD",
+      "link": "https://yowaimo.in/Sflex-ArtlPVT0719/STAR_PLUS_HD.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Star_Plus_HD.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "R Plus Gold",
+      "link": "https://thelegitpro.in/pntv/rplusnews24x7/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/c/c7/RPlus_Gold_logo_%282013%29.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "SONY AATH HD",
+      "link": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/00/SONY_AATH.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "IN | Bangla Jago TV",
+      "link": "http://banglajagotv.livebox.co.in:80/banglajagohls/24x7.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://banglajagotv.com/wp-content/themes/BANGLAJAGOTV/images/logo.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "IN | Calcutta News",
+      "link": "https://akdnetwork.co.in/live/cnnew/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://assets.calcuttatelevisionnetwork.in/cn.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "IN | R Plus News",
+      "link": "https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://rplus.in/wp-content/uploads/2025/06/RPLUS_NEWS.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "IN | Republic Bangla",
+      "link": "https://vg-republictvyupp.akamaized.net/ptnr-yuppt/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-613605/93d674ab-f7a0-404e-88b2-b4f163373dbe/0.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/9/93/R.Bangla_logo_with_tagline.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "IN | TV9 Bangla",
+      "link": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://images.tv9bangla.com/wp-content/themes/tv9bangla/images/tv9-bangla-logo.svg"
+    },
+    {
+      "category_name": "Live",
+      "name": "ENT | Dangal TV",
+      "link": "https://live-dangal.akamaized.net/liveabr/pub-iodang10p4al/live_720p/chunks.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/3/36/Dangalv2.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "ENT | DANGAL2",
+      "link": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/a/ac/Dangal_2.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "ENT | DD Bharati",
+      "link": "https://d2lk5u59tns74c.cloudfront.net/out/v1/67cec794d8b14f9ba21f73924ac65797/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/d/db/DD_Bharati_english.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "ENT | DD National HD",
+      "link": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/2a/Ddnational2023.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "ENT | DD URDU",
+      "link": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/9b91e9007e754db39a8b32c6bfc5b24a/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://prodcdn1.wavespb.com/shows/poster_url/1423354137DD_URDU______720x960.webp"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | Aaj Tak HD",
+      "link": "https://aajtaklive-amd.akamaized.net/hls/live/2014416/aajtak/aajtaklive/live_720p/chunks.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/9/93/Aaj_Tak_HD_v2.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | Aap Ki Adalat",
+      "link": "https://amg01550-indiatv-indiatv-aapkiadalat-mi-xiaomi-n5tuk.amagi.tv/playlist/amg01550-indiatv-indiatv-aapkiadalat-mi-xiaomi/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://yt3.googleusercontent.com/-LKDkXmG8y-gkKDzES5aUI8SYFtDXR8F7351cCACb8OP0ap9MkI5moxwFLoAWNRjVEXKJmH3pQ=s72-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | India Today",
+      "link": "https://d2lk5u59tns74c.cloudfront.net/out/v1/d4435039c7d1433d9b9d0b6cdc9dd4ff/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/2/25/India_Today_TV.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | India TV",
+      "link": "https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/1/10/India_TV_Orange.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | NDTV English",
+      "link": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678-b/ndtv24x7/master.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://yt3.googleusercontent.com/ytc/AIdro_lcj8idHNsaTiTITY2vWQD6gaxZ6ITkpQPaLVskaDMyiml9=s160-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | NDTV Hindi",
+      "link": "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://logodix.com/logo/2131933.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | News Nation",
+      "link": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://yt3.googleusercontent.com/tWgKmMIT4YwdmT0z5S1MN2bIvoFN8_RvIsAWZbLwQVIpq21RO-_Y4sDzVdpj9l6wWRRz8YeUSg=s72-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | News24",
+      "link": "https://amg13643-amg13643c1-amgplt0016.playout.now3.amagi.tv/ts-eu-w1-n2/playlist/amg13643-amg13643c1-amgplt0016/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3900001YE_20250430T011913SQUARE.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | Republic TV",
+      "link": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/f/fe/Republic-logo2.svg"
+    },
+    {
+      "category_name": "Live",
+      "name": "NEWS | ZEE BUSINESS",
+      "link": "https://dwby15d04agvq.cloudfront.net/index_1.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/0/07/Zee_Business_%282025%29.svg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Gopal Bhar",
+      "link": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://image.tmdb.org/t/p/w500/zzCZIvKcfPNQ4RbaMIakmC7ISKQ.jpg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Sonic Hindi",
+      "link": "http://live.balajibroadband.com:3500/live/1340.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://otapp.store/uploads/tv_image/sm/sonic-hindi.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Sonic Bangla",
+      "link": "http://live.balajibroadband.com:3500/live/1345.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/J7sM8jPH/1000115075.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Nick Bangla",
+      "link": "http://live.balajibroadband.com:3500/live/1341.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://otapp.store/uploads/tv_image/sm/nick-bangla.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Tom and Jerry 2",
+      "link": "https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://gia.tv/streams/pptv/208314.jpg?1750373428"
+    },
+    {
+      "category_name": "Live",
+      "name": "Hungama",
+      "link": "https://raw.githubusercontent.com/IPTVFlixBD/OopsTv/refs/heads/main/asia/1097664.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/7P7cYjV4/1000114968.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Super Hungama",
+      "link": "http://line.umetop.pro:80/play/live.php?mac=00:1A:79:8F:BA:8A&stream=1097624&extension=m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/1XZvq5KT/1000115101.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Disney",
+      "link": "https://yowaimo.in/Sflex-ArtlPVT0719/DISNEY_CHANNEL.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/KzkJZV7Z/Hridoy-TV-new-channel-(16).webp"
+    },
+    {
+      "category_name": "Live",
+      "name": "WowKidz (Motu Patlu)",
+      "link": "https://live20.bozztv.com/giatvplayout7/giatv-209622/index.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/6/64/WowKidz_Logo.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Doraemon",
+      "link": "https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/e/e4/Doraemon2005.svg"
+    },
+    {
+      "category_name": "Live",
+      "name": "Sangeet Bangla",
+      "link": "https://s1.itcnbd.live/SangeetBangla/tracks-v1a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/pdddb1bs/20250529_120025.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "9XM",
+      "link": "https://wiselp.wiseplayout.com/9XM/master.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/fLT661Dr/1000115173.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "yrf Music",
+      "link": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/hPFhzrTG/20250529_121624.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Peace TV Bangla",
+      "link": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/vTYq396x/20250529-071345.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Iqra Bangla",
+      "link": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/iqrabanglatvoffice.stream/live-orgin/iqrabanglatvoffice.stream/chunks.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/qqLNkFLg/20250531-104940.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Quran TV",
+      "link": "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/sharjahtvquranpublish/shqurantv_source/chunks.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://i.postimg.cc/T3f1NQyV/20260524-024937.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Radio Bangla Net",
+      "link": "https://playerservices.streamtheworld.com/api/livestream-redirect/SP_R3563475_SC",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://cdn.instant.audio/images/logos/radio-bd-com/bangla-net.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "BBC Bangla",
+      "link": "https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/dash/nonuk/cellular_main_sd_abr_v2/cfs/bbc_world_service.mpd",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://cdn.instant.audio/images/logos/radio-bd-com/bbc-bangla.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Spice FM",
+      "link": "https://stream.spicefmbd.com/stream.m3u8",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://spicefmbd.com/logospice.png"
+    },
+    {
+      "category_name": "Live",
+      "name": "Radio Mirchi",
+      "link": "https://eu8.fastcast4u.com/proxy/clyedupq?mp=%2F1?aw_0_req_lsid=2c0fae177108c9a42a7cf24878625444",
+      "headers": {
+        "user-agent": "okhttp/5.1.0",
+        "client-api-header": "null",
+        "accept-encoding": "gzip"
+      },
+      "logo": "https://m.economictimes.com/thumb/msid-71679942,width-1200,height-900,resizemode-4,imgsize-42753/radio-mirchi-agencies.jpg"
     }
   ]
 }
