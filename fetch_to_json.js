@@ -19,15 +19,15 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        // লোগো এক্সট্রাক্ট
+        // ১. লোগো এক্সট্রাক্ট
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // ক্যাটাগরি এক্সট্রাক্ট
+        // ২. ক্যাটাগরি এক্সট্রাক্ট
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const category = groupMatch ? groupMatch[1] : categoryFallback;
 
-        // চ্যানেলের আসল নাম পার্সিং (কমা , এর পরের অংশ)
+        // ৩. চ্যানেলের আসল নাম পার্সিং (কমা , এর পরের অংশ)
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
@@ -45,24 +45,33 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
           logo: logo
         };
       } else if (line.startsWith('#EXTHTTP:')) {
-        // EXTHHTP থেকে কুকি অবজেক্টে কনভার্ট করা
+        // M3U থেকে সরাসরি ডায়নামিক কুকি এবং অন্যান্য হেডার এক্সট্রাক্ট
         try {
           const jsonStr = line.replace('#EXTHTTP:', '').trim();
           const parsedHttp = JSON.parse(jsonStr);
-          if (parsedHttp.cookie) {
-            currentHeaders["cookie"] = parsedHttp.cookie;
-          }
+          
+          // যেকোনো কুকি বা হেডার ডাইনামিকালি মার্চ করা
+          Object.keys(parsedHttp).forEach(key => {
+            currentHeaders[key.toLowerCase()] = parsedHttp[key];
+          });
         } catch (e) {
-          // JSON পার্স না হলে সাধারণ টেক্সট থেকে পার্স করার চেষ্টা
-          const cookieMatch = line.match(/cookie="([^"]+)"/i) || line.match(/Edge-Policy=[^"\s]+/i);
-          if (cookieMatch) {
-            currentHeaders["cookie"] = cookieMatch[1] || cookieMatch[0];
+          // র স্ট্রিং বা অন্য যেকোনো ফরম্যাটের কুকি হ্যান্ডেল করা
+          const cookieContent = line.replace('#EXTHTTP:', '').replace(/[\{\}"]/g, '').trim();
+          if (cookieContent) {
+            const parts = cookieContent.split(':');
+            if (parts.length >= 2) {
+              const k = parts[0].trim().toLowerCase();
+              const v = parts.slice(1).join(':').trim();
+              currentHeaders[k] = v;
+            } else {
+              currentHeaders["cookie"] = cookieContent;
+            }
           }
         }
       } else if (line.startsWith('#EXTVLCOPT:http-user-agent=')) {
         currentHeaders["user-agent"] = line.replace('#EXTVLCOPT:http-user-agent=', '').trim();
       } else if (!line.startsWith('#')) {
-        // স্ট্রিম URL পাওয়া মাত্রই অবজেক্ট পুশ করা
+        // স্ট্রিম URL
         if (currentItem.name) {
           items.push({
             category_name: currentItem.category_name,
