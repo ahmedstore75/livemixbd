@@ -6,46 +6,61 @@ async function fetchAndParseM3U(url) {
     const text = await response.text();
     const lines = text.split('\n');
     const items = [];
-    
+
     let currentAttributes = {};
     let currentHeaders = [];
 
-    for (let line of lines) {
-      line = line.trim();
+    for (let i = 0; i < lines.length; i++) {
+      let line = lines[i].trim();
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        // লোগো এক্সট্রাক্ট
-        const logoMatch = line.match(/tvg-logo="([^"]+)"/);
+        // ১. লোগো এক্সট্রাক্ট
+        const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // গ্রুপ/ক্যাটাগরি এক্সট্রাক্ট
-        const groupMatch = line.match(/group-title="([^"]+)"/);
+        // ২. ক্যাটাগরি এক্সট্রাক্ট
+        const groupMatch = line.match(/group-title="([^"]+)"/i);
         const group = groupMatch ? groupMatch[1] : '';
 
-        // মূল চ্যানেল নাম এক্সট্রাক্ট
-        const nameMatch = line.match(/,(.+)$/);
-        const originalName = nameMatch ? nameMatch[1].trim() : 'Unknown Channel';
+        // ৩. অরিজিনাল চ্যানেলের নাম পার্সিং (কমা `,` এর পরের অংশ)
+        let originalName = '';
+        const lastCommaIndex = line.lastIndexOf(',');
+        if (lastCommaIndex !== -1) {
+          originalName = line.substring(lastCommaIndex + 1).trim();
+        }
+
+        // যদি কোনো কারণে নাম খালি থাকে বা 'Channel' থেকে যায়
+        if (!originalName || originalName.toLowerCase() === 'channel') {
+          const nameMatch = line.match(/tvg-name="([^"]+)"/i);
+          originalName = nameMatch ? nameMatch[1] : 'Unknown Channel';
+        }
+
+        // চ্যানেলের নাম কাস্টমাইজেশন
+        const finalName = `${originalName} - আহমদ আলী`;
 
         currentAttributes = {
-          channel_name: `${originalName} - আহমদ আলী`,
+          name: finalName,
+          channel_name: finalName,
           original_name: originalName,
           logo: logo,
           group: group,
-          raw_extinf: line.replace(/,.*$/, `,${originalName} - আহমদ আলী`)
+          raw_extinf: line.substring(0, lastCommaIndex + 1) + ' ' + finalName
         };
       } else if (line.startsWith('#')) {
-        // KODI PROP বা অতিরিক্ত সিকিউরিটি হেডার (যেমন Cookie, License, User-Agent ইত্যাদি)
+        // সিকিউরিটি হেডার বা কুকি
         currentHeaders.push(line);
       } else {
         // স্ট্রিম URL
-        items.push({
-          ...currentAttributes,
-          stream_url: line,
-          headers: [...currentHeaders]
-        });
+        if (currentAttributes.name) {
+          items.push({
+            ...currentAttributes,
+            stream_url: line,
+            headers: [...currentHeaders]
+          });
+        }
         
-        // রিসেট
+        // তথ্য রিসেট
         currentAttributes = {};
         currentHeaders = [];
       }
@@ -82,7 +97,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully saved playlist.json with total ${resultData.total_channels} channels.`);
+  console.log(`Successfully generated JSON with total ${resultData.total_channels} channels.`);
 }
 
 main();
