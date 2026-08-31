@@ -132,7 +132,7 @@ async function fetchJsonData(url) {
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
-  const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
+  const url3 = 'https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/refs/heads/main/Sports_data.m3u';
 
   console.log("Fetching channels...");
 
