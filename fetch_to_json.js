@@ -1,36 +1,33 @@
 const fs = require('fs');
 
-async function fetchAndConvertM3U(url) {
+async function fetchAndParseM3U(url) {
   try {
     const response = await fetch(url);
     const text = await response.text();
     const lines = text.split('\n');
-    const playlist = [];
-    let currentItem = {};
+    const items = [];
+    let currentExtInf = '';
 
     for (let line of lines) {
       line = line.trim();
+      if (!line) continue;
+
       if (line.startsWith('#EXTINF:')) {
-        currentItem = {};
-        // চ্যানেলের নাম এক্সট্রাক্ট করা
-        const nameMatch = line.match(/,(.+)$/);
-        if (nameMatch) currentItem.name = nameMatch[1].trim();
-
-        // লোগো এক্সট্রাক্ট করা
-        const logoMatch = line.match(/tvg-logo="([^"]+)"/);
-        if (logoMatch) currentItem.logo = logoMatch[1];
-
-        // গ্রুপ/ক্যাটাগরি এক্সট্রাক্ট করা
-        const groupMatch = line.match(/group-title="([^"]+)"/);
-        if (groupMatch) currentItem.group = groupMatch[1];
-      } else if (line && !line.startsWith('#')) {
-        currentItem.url = line;
-        if (currentItem.name && currentItem.url) {
-          playlist.push(currentItem);
-        }
+        // চ্যানেলের নাম পরিবর্তন করে 'আহমদ আলী' বসানো
+        currentExtInf = line.replace(/,.*$/, ',আহমদ আলী');
+      } else if (line.startsWith('#')) {
+        // অন্য যেকোনো হেডার/ট্যাগ (যেমন #EXTVLCOPT, #KODIPROP) যা ডাটাতে যেভাবে আছে সেভাবেই রাখা
+        items.push({ type: 'header', content: line });
+      } else {
+        // স্ট্রিম URL বা মিডিয়া লিংক
+        items.push({
+          extinf: currentExtInf,
+          url: line
+        });
+        currentExtInf = '';
       }
     }
-    return playlist;
+    return items;
   } catch (error) {
     console.error(`Error fetching ${url}:`, error);
     return [];
@@ -42,18 +39,31 @@ async function main() {
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
 
   const [toffeeData, akashData] = await Promise.all([
-    fetchAndConvertM3U(url1),
-    fetchAndConvertM3U(url2)
+    fetchAndParseM3U(url1),
+    fetchAndParseM3U(url2)
   ]);
 
-  const combinedData = {
-    updated_at: new Date().toISOString(),
-    toffee: toffeeData,
-    akash_go: akashData
+  // চ্যানেল সংখ্যা অটো গণনা (যেসব ডাটায় URL রয়েছে)
+  const toffeeCount = toffeeData.filter(item => item.url).length;
+  const akashCount = akashData.filter(item => item.url).length;
+
+  const resultData = {
+    last_updated: new Date().toISOString(),
+    total_channels: toffeeCount + akashCount,
+    playlists: {
+      toffee: {
+        total_channels: toffeeCount,
+        data: toffeeData
+      },
+      akash_go: {
+        total_channels: akashCount,
+        data: akashData
+      }
+    }
   };
 
-  fs.writeFileSync('playlist.json', JSON.stringify(combinedData, null, 2));
-  console.log('playlist.json successfully updated!');
+  fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
+  console.log(`Successfully generated playlist.json with total ${resultData.total_channels} channels.`);
 }
 
 main();
