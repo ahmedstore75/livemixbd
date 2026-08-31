@@ -15,15 +15,12 @@ async function fetchAndParseM3U(url) {
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        // ১. লোগো এক্সট্রাক্ট
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // ২. ক্যাটাগরি এক্সট্রাক্ট
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const group = groupMatch ? groupMatch[1] : '';
 
-        // ৩. অরিজিনাল চ্যানেলের আসল নাম পার্সিং
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
@@ -41,17 +38,17 @@ async function fetchAndParseM3U(url) {
           group: group
         };
       } else if (line.startsWith('#')) {
-        // শুধু মাত্র কাজের সিকিউরিটি হেডারগুলো (যেমন Cookie, User-Agent, EXTHHTP, KODIPROP) রাখা হবে
-        // ডেভেলপারের নাম বা যেকোনো সাধারণ কমেন্ট/ব্যানার বাদ দিয়ে দেওয়া হবে
-        const isHeaderTag = line.startsWith('#EXTVLCOPT:') || 
-                            line.startsWith('#EXTHTTP:') || 
-                            line.startsWith('#KODIPROP:');
+        // আকাশের টোকেন বা ডেভেলপার ক্রেডিট ব্যতীত সব প্রয়োজনীয় টেকনিক্যাল ট্যাগ ও হেডার ফিল্টার করা
+        const isUnwantedComment = line.includes('Developed by:') || 
+                                  line.includes('Telegram group') || 
+                                  line.includes('Last Updated:') || 
+                                  line.includes('All channel :') ||
+                                  line.startsWith('#======');
 
-        if (isHeaderTag) {
+        if (!isUnwantedComment) {
           currentHeaders.push(line);
         }
       } else {
-        // স্ট্রিম URL
         if (currentAttributes.name) {
           items.push({
             name: currentAttributes.name,
