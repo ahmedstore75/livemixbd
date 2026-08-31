@@ -1,6 +1,6 @@
 {
   "owner": "আহমদ আলী",
-  "updated_at": "2026-08-31T07:22:58.709Z",
+  "updated_at": "2026-08-31T07:26:56.290Z",
   "total_channels": 116,
   "channels": [
     {
@@ -9,6 +9,8 @@
       "group": "Family",
       "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8",
       "headers": [
+        "#EXTM3U",
+        "# Telegram: https://t.me/monirul_Islam_SM",
         "#EXTVLCOPT:http-user-agent=okhttp/5.1.0",
         "#EXTHTTP:{\"cookie\":\"Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1788328837:KeyName=prod_linear:Signature=Xihg1lVWFRGPTarB-aQK0iCt8NgqX9fKZ3CxCpJ5bu2XvCjnBVR3ttz1HoCnDLmYdTLa15WPFn6ITYWtb5pqAw\"}"
       ]
@@ -758,6 +760,7 @@
       "group": "News",
       "stream_url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1713/output/index.m3u8",
       "headers": [
+        "#EXTM3U",
         "#EXTHTTP:{\"cookie\":\"Edge-Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcxMy9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODgxNjY4Mzh9fX1dfQ;Edge-Signature=7bOsHZjwvDPTiItIy-Jju1s0G~MLy-vy6-~~HEL-rDs\"}"
       ]
     },
