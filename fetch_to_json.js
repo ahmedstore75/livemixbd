@@ -19,31 +19,29 @@ async function fetchAndParseM3U(url) {
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // ২. ক্যাটাগরি/গ্রুপ এক্সট্রাক্ট
+        // ২. ক্যাটাগরি এক্সট্রাক্ট
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const group = groupMatch ? groupMatch[1] : '';
 
-        // ৩. অরিজিনাল চ্যানেলের আসল নাম পার্সিং (কমা , এর পরের অংশ)
+        // ৩. অরিজিনাল চ্যানেলের আসল নাম পার্সিং
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
           channelName = line.substring(lastCommaIndex + 1).trim();
         }
 
-        // কমা থেকে নাম না পাওয়া গেলে tvg-name ব্যাকআপ হিসেবে নেবে
         if (!channelName) {
           const nameMatch = line.match(/tvg-name="([^"]+)"/i);
-          channelName = nameMatch ? nameMatch[1] : '';
+          channelName = nameMatch ? nameMatch[1] : 'Unknown Channel';
         }
 
         currentAttributes = {
           name: channelName,
           logo: logo,
-          group: group,
-          raw_extinf: line
+          group: group
         };
       } else if (line.startsWith('#')) {
-        // অতিরিক্ত হেডার বা সিকিউরিটি টোকেন
+        // অতিরিক্ত হেডার বা কুকি টোকেন
         currentHeaders.push(line);
       } else {
         // স্ট্রিম URL
@@ -57,7 +55,6 @@ async function fetchAndParseM3U(url) {
           });
         }
         
-        // রিসেট
         currentAttributes = {};
         currentHeaders = [];
       }
@@ -78,26 +75,18 @@ async function main() {
     fetchAndParseM3U(url2)
   ]);
 
-  const totalChannels = toffeeData.length + akashData.length;
+  // দুই উৎসের সব চ্যানেল একসাথে বা আলাদা চ্যানেলের লিস্ট তৈরি
+  const allChannels = [...toffeeData, ...akashData];
 
   const resultData = {
-    playlist_owner: "আহমদ আলী",
+    owner: "আহমদ আলী",
     updated_at: new Date().toISOString(),
-    total_channels: totalChannels,
-    playlists: {
-      toffee: {
-        total_channels: toffeeData.length,
-        channels: toffeeData
-      },
-      akash_go: {
-        total_channels: akashData.length,
-        channels: akashData
-      }
-    }
+    total_channels: allChannels.length,
+    channels: allChannels
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully updated playlist.json with ${totalChannels} channels.`);
+  console.log(`Successfully generated playlist.json with ${allChannels.length} channels.`);
 }
 
 main();
