@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// M3U ফাইল পার্স করার ফাংশন
 async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false) {
   try {
     const response = await fetch(url);
@@ -21,15 +22,12 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        // লোগো
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        // ক্যাটাগরি
         const groupMatch = line.match(/group-title="([^"]+)"/i);
         const category = groupMatch ? groupMatch[1] : categoryFallback;
 
-        // চ্যানেলের নাম
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
         if (lastCommaIndex !== -1) {
@@ -72,7 +70,6 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
       } else if (!line.startsWith('#')) {
         if (currentItem.name) {
           if (isAkash) {
-            // আকাশ গো চ্যানেলগুলোর জন্য নতুন ফরম্যাট
             items.push({
               id: globalIndex++,
               name: currentItem.name,
@@ -81,7 +78,6 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
               cookie: currentHeaders["cookie"] || ""
             });
           } else {
-            // টফি চ্যানেলগুলোর জন্য আগের নেস্টেড ফরম্যাট
             items.push({
               category_name: currentItem.category_name,
               name: currentItem.name,
@@ -102,33 +98,70 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
     }
     return items;
   } catch (error) {
-    console.error(`Error fetching ${url}:`, error);
+    console.error(`Error fetching M3U ${url}:`, error);
     return [];
   }
 }
 
+// নতুন JSON লিংক থেকে ডাটা আনার ফাংশন
+async function fetchJsonData(url) {
+  try {
+    const response = await fetch(url);
+    const json = await response.json();
+    
+    // ডাটা যদি কোনো নির্দিষ্ট 'response' অ্যারের মধ্যে থাকে তা হ্যান্ডেল করা
+    if (Array.isArray(json)) return json;
+    if (Array.isArray(json.response)) return json.response;
+    if (Array.isArray(json.channels)) return json.channels;
+    if (Array.isArray(json.data)) return json.data;
+
+    return [];
+  } catch (error) {
+    console.error(`Error fetching JSON ${url}:`, error);
+    return [];
+  }
+}
+
+// মূল এক্সিকিউশন
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
-  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/AynaOTT_Auto_Update_Playlist/refs/heads/main/aynaott.m3u';
+  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
+  const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
 
-  const [toffeeData, akashData] = await Promise.all([
+  const [toffeeData, akashData, extraJsonData] = await Promise.all([
     fetchAndParseM3U(url1, "Toffee Live", false),
-    fetchAndParseM3U(url2, "Akash Live", true)
+    fetchAndParseM3U(url2, "Akash Live", true),
+    fetchJsonData(url3)
   ]);
 
-  const allChannels = [...toffeeData, ...akashData];
+  const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
+
+  // ফিল্টারিং: একই স্ট্রিম লিংক প্লেলিস্টে সর্বোচ্চ ২ বারই আসতে পারবে
+  const urlCountMap = new Map();
+  const filteredChannels = [];
+
+  for (const channel of rawChannels) {
+    const streamUrl = channel.link || channel.stream_url;
+    if (!streamUrl) continue;
+
+    const count = urlCountMap.get(streamUrl) || 0;
+    if (count < 2) {
+      urlCountMap.set(streamUrl, count + 1);
+      filteredChannels.push(channel);
+    }
+  }
 
   const resultData = {
     status: "success",
     name: "Live Channels",
     owner: "Ahammad Ali",
-    channels_amount: allChannels.length,
+    channels_amount: filteredChannels.length,
     last_update: new Date().toISOString().split('T')[0],
-    response: allChannels
+    response: filteredChannels
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${allChannels.length} channels.`);
+  console.log(`Successfully generated playlist.json with ${filteredChannels.length} channels.`);
 }
 
 main();
