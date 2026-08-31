@@ -41,8 +41,15 @@ async function fetchAndParseM3U(url) {
           group: group
         };
       } else if (line.startsWith('#')) {
-        // অতিরিক্ত হেডার বা কুকি টোকেন
-        currentHeaders.push(line);
+        // শুধু মাত্র কাজের সিকিউরিটি হেডারগুলো (যেমন Cookie, User-Agent, EXTHHTP, KODIPROP) রাখা হবে
+        // ডেভেলপারের নাম বা যেকোনো সাধারণ কমেন্ট/ব্যানার বাদ দিয়ে দেওয়া হবে
+        const isHeaderTag = line.startsWith('#EXTVLCOPT:') || 
+                            line.startsWith('#EXTHTTP:') || 
+                            line.startsWith('#KODIPROP:');
+
+        if (isHeaderTag) {
+          currentHeaders.push(line);
+        }
       } else {
         // স্ট্রিম URL
         if (currentAttributes.name) {
@@ -75,7 +82,6 @@ async function main() {
     fetchAndParseM3U(url2)
   ]);
 
-  // দুই উৎসের সব চ্যানেল একসাথে বা আলাদা চ্যানেলের লিস্ট তৈরি
   const allChannels = [...toffeeData, ...akashData];
 
   const resultData = {
@@ -86,7 +92,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${allChannels.length} channels.`);
+  console.log(`Successfully generated clean playlist.json with ${allChannels.length} channels.`);
 }
 
 main();
