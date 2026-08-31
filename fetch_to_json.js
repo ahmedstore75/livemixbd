@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-// M3U ফাইল পার্স করার ফাংশন
+// ১. M3U ফাইল পার্স করার ফাংশন
 async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false) {
   try {
     const response = await fetch(url);
@@ -103,26 +103,35 @@ async function fetchAndParseM3U(url, categoryFallback = "Live", isAkash = false)
   }
 }
 
-// নতুন JSON লিংক থেকে ডাটা আনার ফাংশন
+// ২. JSON থেকে ডাটা আনার ফাংশন
 async function fetchJsonData(url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      }
+    });
     const json = await response.json();
     
-    // ডাটা যদি কোনো নির্দিষ্ট 'response' অ্যারের মধ্যে থাকে তা হ্যান্ডেল করা
-    if (Array.isArray(json)) return json;
-    if (Array.isArray(json.response)) return json.response;
-    if (Array.isArray(json.channels)) return json.channels;
-    if (Array.isArray(json.data)) return json.data;
+    let rawList = [];
 
-    return [];
+    if (Array.isArray(json)) {
+      rawList = json;
+    } else if (json && typeof json === 'object') {
+      if (Array.isArray(json.response)) rawList = json.response;
+      else if (Array.isArray(json.channels)) rawList = json.channels;
+      else if (Array.isArray(json.data)) rawList = json.data;
+      else if (Array.isArray(json.channel)) rawList = json.channel;
+    }
+
+    return rawList;
   } catch (error) {
-    console.error(`Error fetching JSON ${url}:`, error);
+    console.error(`Error fetching JSON from ${url}:`, error);
     return [];
   }
 }
 
-// মূল এক্সিকিউশন
+// ৩. মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
@@ -136,17 +145,17 @@ async function main() {
 
   const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
 
-  // ফিল্টারিং: একই স্ট্রিম লিংক প্লেলিস্টে সর্বোচ্চ ২ বারই আসতে পারবে
-  const urlCountMap = new Map();
+  // ফিল্টারিং: সেম স্ট্রিমিং ইউআরএল লিংক মাত্র ১ বারই থাকবে (একবারের বেশি বা ২য় বার আসবে না)
+  const seenUrls = new Set();
   const filteredChannels = [];
 
   for (const channel of rawChannels) {
-    const streamUrl = channel.link || channel.stream_url;
+    const streamUrl = channel.link || channel.stream_url || channel.url || channel.streamUrl;
     if (!streamUrl) continue;
 
-    const count = urlCountMap.get(streamUrl) || 0;
-    if (count < 2) {
-      urlCountMap.set(streamUrl, count + 1);
+    // যদি ইউআরএলটি আগে না দেখা হয়ে থাকে তবেই পুশ করা হবে
+    if (!seenUrls.has(streamUrl)) {
+      seenUrls.add(streamUrl);
       filteredChannels.push(channel);
     }
   }
@@ -161,7 +170,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${filteredChannels.length} channels.`);
+  console.log(`Successfully generated playlist.json with ${filteredChannels.length} unique channels.`);
 }
 
 main();
