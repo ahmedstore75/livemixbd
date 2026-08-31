@@ -2,7 +2,7 @@ name: Auto Update M3U to JSON
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # প্রতি ৬ ঘণ্টা পর পর অটো রান হবে
+    - cron: '0 */1 * * *' # প্রতি ১ ঘণ্টা পর পর অটো রান হবে
   workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
 
 jobs:
