@@ -1,0 +1,20 @@
+{
+    "playlist_name": "Toffee",
+    "total_channels": 2,
+    "channels": [
+        {
+            "id": "fifa_world_cup_576",
+            "name": "FIFA World Cup Live",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8"
+        },
+        {
+            "id": "toffee_sports_1",
+            "name": "Toffee Sports 1",
+            "group": "Toffee Sports",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/live/fifa_world_cup_576/fifa_world_cup_576.m3u8"
+        }
+    ]
+}
