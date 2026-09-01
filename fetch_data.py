@@ -2,7 +2,7 @@ import json
 import uuid
 import requests
 
-# ১. তোফি সেশন ও টোকেন হেডারস সেটআপ
+# ১. তোফি টোকেন ও হেডার সেটিংস
 SESSION_ID = str(uuid.uuid4())
 DEVICE_ID = str(uuid.uuid4())[:16]
 
@@ -16,10 +16,12 @@ HEADERS = {
 }
 
 API_ENDPOINT = "https://toffeelive.com/api/v1/channels"
+BASE_CDN = "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang"
 DEFAULT_LOGO = "https://toffeelive.com/images/icons/signin-prompt.svg"
 
 all_channels = []
 
+# ২. সার্ভার থেকে ডাটা স্ক্র্যাপ ও লিঙ্ক ফরম্যাটিং
 try:
     session = requests.Session()
     response = session.get(API_ENDPOINT, headers=HEADERS, timeout=12)
@@ -29,47 +31,66 @@ try:
         raw_list = res_data.get("data", []) or res_data.get("channels", [])
         
         for ch in raw_list:
-            ch_id = str(ch.get("id", ""))
+            slug = str(ch.get("slug") or ch.get("id") or "").strip().lower().replace(" ", "_")
+            if not slug:
+                continue
+
             ch_name = ch.get("name") or ch.get("title") or "Toffee Channel"
-            
-            # গ্রুপ / ক্যাটাগরি নির্ধারণ
             ch_group = ch.get("category_name") or ch.get("category") or "Toffee Live"
             
-            # অরিজিনাল লোগো লিঙ্ক ফিক্স করা
+            # লোগো ফিক্স
             logo = ch.get("logo") or ch.get("image_url") or ch.get("poster") or DEFAULT_LOGO
             if logo and logo.startswith("/"):
                 logo = f"https://toffeelive.com{logo}"
 
-            # স্ট্রিম / প্লেয়ার লিঙ্ক
-            stream_url = ch.get("stream_url") or ch.get("link")
-            if not stream_url:
-                slug = ch.get("slug") or ch_id
-                stream_url = f"https://toffeelive.com/en/watch/{slug}"
+            # আপনার দেওয়া নির্দিষ্ট CDN লিংক ফরম্যাট
+            formatted_m3u8 = f"{BASE_CDN}/{slug}/{slug}.m3u8"
 
             all_channels.append({
-                "id": ch_id,
+                "id": slug,
                 "name": ch_name,
                 "group": ch_group,
                 "logo": logo,
-                "url": stream_url
+                "url": formatted_m3u8
             })
             
 except Exception as e:
     print(f"Fetch Error: {e}")
 
-# ব্যাকআপ গ্রুপ ডাটা (যদি এপিআই কল গিটহাব সার্ভার থেকে ব্লক হয়)
+# ব্যাকআপ ফালব্যাক লিস্ট (যদি গিটহাব থেকে ব্যাকএন্ড এপিআই ব্লক হয়)
 if not all_channels:
-    all_channels = [
-        {"id": "fifa_world_cup_576", "name": "FIFA World Cup", "group": "Sports", "logo": DEFAULT_LOGO, "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8"},
-        {"id": "somoy_tv", "name": "Somoy TV", "group": "News", "logo": DEFAULT_LOGO, "url": "https://toffeelive.com/en/watch/somoy_tv"},
-        {"id": "jamuna_tv", "name": "Jamuna TV", "group": "News", "logo": DEFAULT_LOGO, "url": "https://toffeelive.com/en/watch/jamuna_tv"},
-        {"id": "rtv", "name": "RTV", "group": "Entertainment", "logo": DEFAULT_LOGO, "url": "https://toffeelive.com/en/watch/rtv"}
+    fallback_slugs = [
+        ("fifa_world_cup_576", "FIFA World Cup Live", "Sports"),
+        ("somoy_tv", "Somoy TV", "News"),
+        ("jamuna_tv", "Jamuna TV", "News"),
+        ("independent_tv", "Independent TV", "News"),
+        ("channel24", "Channel 24", "News"),
+        ("ekhon_tv", "Ekhon TV", "News"),
+        ("dbc_news", "DBC News", "News"),
+        ("ekattor_tv", "Ekattor TV", "News"),
+        ("rtv", "RTV", "Entertainment"),
+        ("ntv", "NTV", "Entertainment"),
+        ("channel_i", "Channel i", "Entertainment"),
+        ("atn_bangla", "ATN Bangla", "Entertainment"),
+        ("boishakhi_tv", "Boishakhi TV", "Entertainment"),
+        ("deepto_tv", "Deepto TV", "Entertainment"),
+        ("nagorik_tv", "Nagorik TV", "Entertainment"),
+        ("gazi_tv", "Gazi TV (GTV)", "Entertainment"),
+        ("duronto_tv", "Duronto TV", "Kids")
     ]
+    for slug, name, grp in fallback_slugs:
+        all_channels.append({
+            "id": slug,
+            "name": name,
+            "group": grp,
+            "logo": DEFAULT_LOGO,
+            "url": f"{BASE_CDN}/{slug}/{slug}.m3u8"
+        })
 
-# --- ২. গ্রুপ অনুযায়ী ক্রমানুসারে সাজানো (Sort by Group) ---
+# ৩. গ্রুপ অনুসারে ক্রমানুসারে সাজানো
 all_channels = sorted(all_channels, key=lambda x: x["group"])
 
-# --- ৩. toffee.m3u ফাইল তৈরি (Group Title সহ) ---
+# --- ৪. toffee.m3u তৈরি ---
 m3u_lines = ['#EXTM3U name="Toffee Playlist"']
 for ch in all_channels:
     m3u_lines.append(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}')
@@ -78,8 +99,7 @@ for ch in all_channels:
 with open("toffee.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(m3u_lines))
 
-# --- ৪. toffee.json তৈরি (Grouped JSON Structure) ---
-# গ্রুপ অনুযায়ী আলাদা করে JSON তৈরি
+# --- ৫. toffee.json তৈরি (Grouped Structure) ---
 grouped_data = {}
 for ch in all_channels:
     grp = ch["group"]
@@ -98,4 +118,4 @@ json_output = {
 with open("toffee.json", "w", encoding="utf-8") as f:
     json.dump(json_output, f, indent=4, ensure_ascii=False)
 
-print(f"Data saved successfully! Total Channels: {len(all_channels)}, Groups: {len(grouped_data)}")
+print(f"Generated {len(all_channels)} channels with the specified CDN URL format.")
