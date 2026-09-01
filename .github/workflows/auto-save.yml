@@ -1,104 +1,31 @@
-name: Generate Accurate M3U and JSON Playlist
+name: Auto Save JSON and M3U Playlist
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    # প্রতিদিন রাত ১২টায় স্বয়ংক্রিয়ভাবে আপডেট হবে
+    - cron: '0 0 * * *'
+  workflow_dispatch: # অপশনটি থাকলে আপনি ম্যানুয়ালি "Run workflow" বাটনে ক্লিক করেও আপডেট করতে পারবেন
 
 jobs:
-  build-playlist:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Fetch API and Extract Channel Details
+      - name: Run Fetch Script
+        run: node update_channels.js
+
+      - name: Commit and Push Updated JSON & M3U
         run: |
-          node -e '
-          const fs = require("fs");
-          const https = require("https");
-
-          const urls = [
-            "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
-            "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12"
-          ];
-
-          const options = {
-            headers: {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-              "RSC": "1",
-              "Accept": "*/*"
-            }
-          };
-
-          const fetchData = (url) => new Promise((resolve) => {
-            https.get(url, options, (res) => {
-              let data = "";
-              res.on("data", chunk => data += chunk);
-              res.on("end", () => resolve(data));
-            }).on("error", () => resolve(""));
-          });
-
-          async function process() {
-            let rawData = "";
-            for (const url of urls) {
-              rawData += await fetchData(url) + "\n";
-            }
-
-            // Clean escape characters
-            const cleanedData = rawData.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
-
-            const channels = [];
-            let m3uContent = "#EXTM3U\n";
-
-            // Extract stream URLs
-            const streamMatches = [...cleanedData.matchAll(/(https?:[^\s"]+\.m3u8[^\s"]*)/g)];
-            
-            // Extract potential channel titles and logos
-            const imageMatches = [...cleanedData.matchAll(/https?:[^\s"]+\.(?:png|jpg|jpeg|webp)/gi)];
-            const titleMatches = [...cleanedData.matchAll(/"(?:name|title|channelName|label)":"([^"]+)"/g)];
-
-            // Filter out junk titles
-            const filteredTitles = titleMatches
-              .map(m => m[1])
-              .filter(t => !["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT"].includes(t));
-
-            streamMatches.forEach((match, idx) => {
-              const streamUrl = match[1];
-              const title = filteredTitles[idx] || `Channel ${idx + 1}`;
-              const logo = imageMatches[idx] ? imageMatches[idx][0] : "";
-
-              channels.push({
-                name: title,
-                logo: logo,
-                url: streamUrl
-              });
-
-              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
-            });
-
-            fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
-            fs.writeFileSync("playlist.m3u", m3uContent);
-          }
-
-          process();
-          '
-
-      - name: Commit and Push Files
-        run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed Channel Names & Logos: $(date +'%Y-%m-%d %H:%M:%S')"
+          git commit -m "Auto update channels.json and playlist.m3u" || exit 0
           git push
