@@ -1,4 +1,4 @@
-name: Generate Detailed M3U and JSON Playlist
+Name: Generate Detailed M3U and JSON Playlist
 
 on:
   push:
@@ -58,6 +58,7 @@ jobs:
 
             const channels = [];
             let m3uContent = "#EXTM3U\n";
+            const seenUrls = new Set();
 
             // Extract items using regex pattern matching RSC components
             const itemRegex = /"title":"([^"]+)".*?"image":\{"src":"([^"]+)".*?"url":"([^"]+)"/g;
@@ -68,8 +69,11 @@ jobs:
               const logo = match[2].replace(/\\/g, "");
               const streamUrl = match[3].replace(/\\/g, "");
 
-              channels.push({ title, logo, streamUrl });
-              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+              if (!seenUrls.has(streamUrl)) {
+                seenUrls.add(streamUrl);
+                channels.push({ title, logo, streamUrl });
+                m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+              }
             }
 
             // Fallback: If title-image mapping direct pattern misses, parse streams with available metadata
@@ -83,8 +87,11 @@ jobs:
                 const title = titles[idx] ? titles[idx][1] : `Channel ${idx + 1}`;
                 const logo = images[idx] ? images[idx][1].replace(/\\/g, "") : "";
 
-                channels.push({ title, logo, streamUrl });
-                m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+                if (!seenUrls.has(streamUrl)) {
+                  seenUrls.add(streamUrl);
+                  channels.push({ title, logo, streamUrl });
+                  m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+                }
               });
             }
 
