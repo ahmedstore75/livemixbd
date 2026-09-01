@@ -1,31 +1,90 @@
-name: Auto Save JSON and M3U Playlist
+name: Generate Dynamic M3U and JSON Playlist
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # প্রতিদিন রাত ১২টায় স্বয়ংক্রিয়ভাবে আপডেট হবে
-    - cron: '0 0 * * *'
-  workflow_dispatch: # অপশনটি থাকলে আপনি ম্যানুয়ালি "Run workflow" বাটনে ক্লিক করেও আপডেট করতে পারবেন
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-playlist:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Run Fetch Script
-        run: node update_channels.js
-
-      - name: Commit and Push Updated JSON & M3U
+      - name: Fetch API and Extract All Channels
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          node -e '
+          const fs = require("fs");
+          const https = require("https");
+
+          // Main Directory API URL (contains ALL channels)
+          const targetUrl = "https://web.aynaott.com/live-tvs?_rsc=d6u12";
+
+          const options = {
+            headers: {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "RSC": "1",
+              "Accept": "*/*"
+            }
+          };
+
+          https.get(targetUrl, options, (res) => {
+            let rawData = "";
+            res.on("data", chunk => rawData += chunk);
+            res.on("end", () => {
+              // Clean escaping
+              const cleaned = rawData.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
+
+              // Extract Logos & Titles via Regex JSON patterns
+              const logos = [...cleaned.matchAll(/https:\/\/web\.aynaott\.com\/storage\/[^\s"']+/g)].map(m => m[0].replace(/&amp;/g, "&"));
+              const names = [...cleaned.matchAll(/"title":"([^"]+)"|"name":"([^"]+)"/g)].map(m => m[1] || m[2]);
+
+              const channels = [];
+              let m3uContent = "#EXTM3U\n";
+
+              // Unique channels Map based on Logo URL
+              const uniqueLogos = Array.from(new Set(logos));
+
+              uniqueLogos.forEach((logoUrl, index) => {
+                const title = names[index] || `Channel ${index + 1}`;
+                const channelId = `ch_${index + 1}`;
+                const playUrl = `https://web.aynaott.com/live-tvs/${channelId}`;
+
+                channels.push({
+                  id: channelId,
+                  name: title,
+                  logo: logoUrl,
+                  url: playUrl
+                });
+
+                m3uContent += `#EXTINF:-1 tvg-id="${index + 1}" tvg-name="${title}" tvg-logo="${logoUrl}", ${title}\n${playUrl}\n`;
+              });
+
+              fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
+              fs.writeFileSync("playlist.m3u", m3uContent);
+              console.log(`Successfully generated ${channels.length} channels with accurate logos and names.`);
+            });
+          }).on("error", (err) => {
+            console.error("Fetch failed:", err);
+          });
+          '
+
+      - name: Commit and Push Files
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git commit -m "Auto update channels.json and playlist.m3u" || exit 0
+          git diff --staged --quiet || git commit -m "Updated all channels, logos, and playlist: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
