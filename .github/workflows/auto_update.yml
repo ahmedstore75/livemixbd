@@ -2,8 +2,12 @@ name: Auto Update M3U to JSON
 
 on:
   schedule:
-    - cron: '0 */1 * * *' # প্রতি ১ ঘণ্টা পর পর অটো রান হবে
+    - cron: '*/15 * * * *' # প্রতি ১৫ মিনিট পর পর চেক করবে
   workflow_dispatch: # ম্যানুয়ালি রান করার অপশন
+
+# রিপোজিটরিতে নতুন ফাইল Push করার জন্য পারমিশন
+permissions:
+  contents: write
 
 jobs:
   update-data:
@@ -11,18 +15,24 @@ jobs:
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # প্রয়োজন হলে এখানে npm install চালিয়ে নিন (যদি কোনো প্যাকেজ লাগে)
+      # - name: Install dependencies
+      #   run: npm install
+
       - name: Run Script
         run: node fetch_to_json.js
 
       - name: Commit and Push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add playlist.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto updated playlist.json [skip ci]" && git push)
