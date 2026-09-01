@@ -60,14 +60,14 @@ jobs:
             let m3uContent = "#EXTM3U\n";
             const seenUrls = new Set();
 
-            // Regex for title, image, url matching
-            const itemRegex = /"title":"([^"]+)".*?"image":\{"src":"([^"]+)".*?"url":"([^"]+)"/g;
+            // JSON Object আকারে টাইটেল, ছবি ও স্ট্রিম ইউআরএল বের করার নিখুঁত লজিক
+            const objectRegex = /\{"title":"([^"]+)".*?"image":\{"src":"([^"]+)".*?"url":"([^"]+)"\}/g;
             let match;
 
-            while ((match = itemRegex.exec(combinedRaw)) !== null) {
-              const title = match[1];
-              const logo = match[2].replace(/\\/g, "");
-              const streamUrl = match[3].replace(/\\/g, "");
+            while ((match = objectRegex.exec(combinedRaw)) !== null) {
+              const title = match[1].trim();
+              const logo = match[2].replace(/\\/g, "").trim();
+              const streamUrl = match[3].replace(/\\/g, "").trim();
 
               if (streamUrl && !seenUrls.has(streamUrl)) {
                 seenUrls.add(streamUrl);
@@ -76,16 +76,16 @@ jobs:
               }
             }
 
-            // Fallback: If primary regex finds 0 items, scan for raw m3u8 URLs
+            // Fallback strategy: Direct Regex pattern parsing for fallback cases
             if (channels.length === 0) {
               const streamMatches = [...combinedRaw.matchAll(/(https?:\\?\/\\?[^\s"\\]+\.m3u8[^\s"\\]*)/g)];
               const titleMatches = [...combinedRaw.matchAll(/"title":"([^"]+)"/g)];
               const imageMatches = [...combinedRaw.matchAll(/"src":"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/g)];
 
               streamMatches.forEach((st, idx) => {
-                const streamUrl = st[1].replace(/\\/g, "");
-                const title = titleMatches[idx] ? titleMatches[idx][1] : `Channel ${idx + 1}`;
-                const logo = imageMatches[idx] ? imageMatches[idx][1].replace(/\\/g, "") : "";
+                const streamUrl = st[1].replace(/\\/g, "").trim();
+                const title = titleMatches[idx] ? titleMatches[idx][1].trim() : `Channel ${idx + 1}`;
+                const logo = imageMatches[idx] ? imageMatches[idx][1].replace(/\\/g, "").trim() : "";
 
                 if (streamUrl && !seenUrls.has(streamUrl)) {
                   seenUrls.add(streamUrl);
@@ -97,7 +97,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully generated playlist with ${channels.length} unique channels.`);
+            console.log(`Generated playlist with ${channels.length} unique streaming links.`);
           }
 
           process();
