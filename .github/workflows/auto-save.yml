@@ -58,7 +58,7 @@ jobs:
 
             const channels = [];
             let m3uContent = "#EXTM3U\n";
-            const seenUrls = new Set();
+            const seenUrls = new Set(); // ডুপ্লিকেট লিংক ট্র্যাক করার জন্য Set
 
             // Extract items using regex pattern matching RSC components
             const itemRegex = /"title":"([^"]+)".*?"image":\{"src":"([^"]+)".*?"url":"([^"]+)"/g;
@@ -69,6 +69,7 @@ jobs:
               const logo = match[2].replace(/\\/g, "");
               const streamUrl = match[3].replace(/\\/g, "");
 
+              // লিঙ্কটি আগে না এসে থাকলে তবেই যুক্ত হবে
               if (!seenUrls.has(streamUrl)) {
                 seenUrls.add(streamUrl);
                 channels.push({ title, logo, streamUrl });
