@@ -1,5 +1,29 @@
-#EXTM3U name="Toffee Live"
+#EXTM3U name="Toffee"
 #EXTINF:-1 tvg-id="fifa_world_cup_576" tvg-name="FIFA World Cup Live" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",FIFA World Cup Live
 https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8
-#EXTINF:-1 tvg-id="toffee_sports_1" tvg-name="Toffee Sports 1" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Sports",Toffee Sports 1
-https://bldcmprod-cdn.toffeelive.com/live/fifa_world_cup_576/fifa_world_cup_576.m3u8
+#EXTINF:-1 tvg-id="T9O9X5UBm1RY_In7UXFv" tvg-name="Toffee Live Channel 1" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 1
+https://toffeelive.com/en/watch/T9O9X5UBm1RY_In7UXFv
+#EXTINF:-1 tvg-id="WtPBX5UBm1RY_In7mXEU" tvg-name="Toffee Live Channel 2" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 2
+https://toffeelive.com/en/watch/WtPBX5UBm1RY_In7mXEU
+#EXTINF:-1 tvg-id="Ii5_-JQBv9knK3AHLDV3" tvg-name="Toffee Live Channel 3" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 3
+https://toffeelive.com/en/watch/Ii5_-JQBv9knK3AHLDV3
+#EXTINF:-1 tvg-id="-C7MX5UBv9knK3AHdKOi" tvg-name="Toffee Live Channel 4" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 4
+https://toffeelive.com/en/watch/-C7MX5UBv9knK3AHdKOi
+#EXTINF:-1 tvg-id="ny6W-JQBv9knK3AHujXC" tvg-name="Toffee Live Channel 5" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 5
+https://toffeelive.com/en/watch/ny6W-JQBv9knK3AHujXC
+#EXTINF:-1 tvg-id="mC6W-JQBv9knK3AHfDWA" tvg-name="Toffee Live Channel 6" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 6
+https://toffeelive.com/en/watch/mC6W-JQBv9knK3AHfDWA
+#EXTINF:-1 tvg-id="1y6e-JQBv9knK3AHNDWb" tvg-name="Toffee Live Channel 7" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 7
+https://toffeelive.com/en/watch/1y6e-JQBv9knK3AHNDWb
+#EXTINF:-1 tvg-id="ay7uX5UBv9knK3AHs6TI" tvg-name="Toffee Live Channel 8" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 8
+https://toffeelive.com/en/watch/ay7uX5UBv9knK3AHs6TI
+#EXTINF:-1 tvg-id="Ay6s-JQBv9knK3AHJTY1" tvg-name="Toffee Live Channel 9" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 9
+https://toffeelive.com/en/watch/Ay6s-JQBv9knK3AHJTY1
+#EXTINF:-1 tvg-id="IC5_-JQBv9knK3AHFDXh" tvg-name="Toffee Live Channel 10" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 10
+https://toffeelive.com/en/watch/IC5_-JQBv9knK3AHFDXh
+#EXTINF:-1 tvg-id="py5j-JQBv9knK3AHxDTY" tvg-name="Toffee Live Channel 11" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 11
+https://toffeelive.com/en/watch/py5j-JQBv9knK3AHxDTY
+#EXTINF:-1 tvg-id="vi5n-JQBv9knK3AHqzTC" tvg-name="Toffee Live Channel 12" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 12
+https://toffeelive.com/en/watch/vi5n-JQBv9knK3AHqzTC
+#EXTINF:-1 tvg-id="sy5m-JQBv9knK3AHYTTk" tvg-name="Toffee Live Channel 13" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Toffee Live",Toffee Live Channel 13
+https://toffeelive.com/en/watch/sy5m-JQBv9knK3AHYTTk
