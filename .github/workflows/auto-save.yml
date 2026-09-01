@@ -1,4 +1,4 @@
-name: Generate Detailed M3U and JSON Playlist
+name: Generate Accurate M3U and JSON Playlist
 
 on:
   push:
@@ -51,42 +51,42 @@ jobs:
           });
 
           async function process() {
-            let combinedRaw = "";
+            let rawData = "";
             for (const url of urls) {
-              combinedRaw += await fetchData(url) + "\n";
+              rawData += await fetchData(url) + "\n";
             }
+
+            // Clean escape characters
+            const cleanedData = rawData.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
 
             const channels = [];
             let m3uContent = "#EXTM3U\n";
 
-            // Extract items using regex pattern matching RSC components
-            const itemRegex = /"title":"([^"]+)".*?"image":\{"src":"([^"]+)".*?"url":"([^"]+)"/g;
-            let match;
+            // Extract stream URLs
+            const streamMatches = [...cleanedData.matchAll(/(https?:[^\s"]+\.m3u8[^\s"]*)/g)];
+            
+            // Extract potential channel titles and logos
+            const imageMatches = [...cleanedData.matchAll(/https?:[^\s"]+\.(?:png|jpg|jpeg|webp)/gi)];
+            const titleMatches = [...cleanedData.matchAll(/"(?:name|title|channelName|label)":"([^"]+)"/g)];
 
-            while ((match = itemRegex.exec(combinedRaw)) !== null) {
-              const title = match[1];
-              const logo = match[2].replace(/\\/g, "");
-              const streamUrl = match[3].replace(/\\/g, "");
+            // Filter out junk titles
+            const filteredTitles = titleMatches
+              .map(m => m[1])
+              .filter(t => !["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT"].includes(t));
 
-              channels.push({ title, logo, streamUrl });
-              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
-            }
+            streamMatches.forEach((match, idx) => {
+              const streamUrl = match[1];
+              const title = filteredTitles[idx] || `Channel ${idx + 1}`;
+              const logo = imageMatches[idx] ? imageMatches[idx][0] : "";
 
-            // Fallback: If title-image mapping direct pattern misses, parse streams with available metadata
-            if (channels.length === 0) {
-              const streams = [...combinedRaw.matchAll(/(https?:\\?\/\\?[^\s"\\]+\.m3u8[^\s"\\]*)/g)];
-              const titles = [...combinedRaw.matchAll(/"name":"([^"]+)"/g)];
-              const images = [...combinedRaw.matchAll(/"src":"([^"]+\.(?:png|jpg|jpeg|webp))/g)];
-
-              streams.forEach((st, idx) => {
-                const streamUrl = st[1].replace(/\\/g, "");
-                const title = titles[idx] ? titles[idx][1] : `Channel ${idx + 1}`;
-                const logo = images[idx] ? images[idx][1].replace(/\\/g, "") : "";
-
-                channels.push({ title, logo, streamUrl });
-                m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+              channels.push({
+                name: title,
+                logo: logo,
+                url: streamUrl
               });
-            }
+
+              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+            });
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
@@ -100,5 +100,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated M3U with Channel Names & Logos: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed Channel Names & Logos: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
