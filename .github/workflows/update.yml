@@ -1,9 +1,10 @@
-name: Auto Fetch and Update Playlists
+name: Auto Fetch and Update Toffee Playlists
 
 on:
   schedule:
-    # প্রতি ৬ ঘণ্টা পর পর অটো রান হবে
+    # প্রতি ৬ ঘণ্টা পর পর এটি অটোমেটিক ব্যাকগ্রাউন্ডে চলবে (Cron Job)
     - cron: '0 */6 * * *'
+  # গিটহাব ড্যাশবোর্ড থেকে ম্যানুয়ালি রান করার অপশন
   workflow_dispatch:
 
 jobs:
@@ -31,6 +32,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
-          git add playlist.m3u playlist.json
-          git diff-index --quiet HEAD || git commit -m "Auto update M3U and JSON playlists [skip ci]"
+          git add toffee.m3u toffee.json
+          git diff-index --quiet HEAD || git commit -m "Auto update Toffee M3U & JSON [skip ci]"
           git push
