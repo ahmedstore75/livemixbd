@@ -1,3 +1,9 @@
-#EXTM3U name="Toffee"
-#EXTINF:-1 tvg-id="fifa_world_cup_576" tvg-name="FIFA World Cup / Sports Live" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Sports",FIFA World Cup / Sports Live
+#EXTM3U name="Toffee Playlist"
+#EXTINF:-1 tvg-id="rtv" tvg-name="RTV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",RTV
+https://toffeelive.com/en/watch/rtv
+#EXTINF:-1 tvg-id="somoy_tv" tvg-name="Somoy TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Somoy TV
+https://toffeelive.com/en/watch/somoy_tv
+#EXTINF:-1 tvg-id="jamuna_tv" tvg-name="Jamuna TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Jamuna TV
+https://toffeelive.com/en/watch/jamuna_tv
+#EXTINF:-1 tvg-id="fifa_world_cup_576" tvg-name="FIFA World Cup" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Sports",FIFA World Cup
 https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8

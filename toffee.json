@@ -1,10 +1,68 @@
 {
     "playlist_name": "Toffee",
-    "total_channels": 1,
-    "channels": [
+    "total_channels": 4,
+    "total_groups": 3,
+    "groups": {
+        "Entertainment": [
+            {
+                "id": "rtv",
+                "name": "RTV",
+                "group": "Entertainment",
+                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "url": "https://toffeelive.com/en/watch/rtv"
+            }
+        ],
+        "News": [
+            {
+                "id": "somoy_tv",
+                "name": "Somoy TV",
+                "group": "News",
+                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "url": "https://toffeelive.com/en/watch/somoy_tv"
+            },
+            {
+                "id": "jamuna_tv",
+                "name": "Jamuna TV",
+                "group": "News",
+                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "url": "https://toffeelive.com/en/watch/jamuna_tv"
+            }
+        ],
+        "Sports": [
+            {
+                "id": "fifa_world_cup_576",
+                "name": "FIFA World Cup",
+                "group": "Sports",
+                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8"
+            }
+        ]
+    },
+    "all_channels": [
+        {
+            "id": "rtv",
+            "name": "RTV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/rtv"
+        },
+        {
+            "id": "somoy_tv",
+            "name": "Somoy TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/somoy_tv"
+        },
+        {
+            "id": "jamuna_tv",
+            "name": "Jamuna TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/jamuna_tv"
+        },
         {
             "id": "fifa_world_cup_576",
-            "name": "FIFA World Cup / Sports Live",
+            "name": "FIFA World Cup",
             "group": "Sports",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8"
