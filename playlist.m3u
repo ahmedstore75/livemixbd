@@ -1,5 +1,3 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1" tvg-name="Channel 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png\", Channel 1
+#EXTINF:-1 tvg-id="1" tvg-name="viewport" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png", viewport
 https://web.aynaott.com/live-tvs/ch_1
-#EXTINF:-1 tvg-id="2" tvg-name="Channel 2" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png", Channel 2
-https://web.aynaott.com/live-tvs/ch_2
