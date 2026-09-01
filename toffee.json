@@ -1,104 +1,454 @@
 {
     "playlist_name": "Toffee",
-    "total_channels": 14,
+    "total_channels": 64,
     "channels": [
         {
             "id": "fifa_world_cup_576",
-            "name": "FIFA World Cup Live",
-            "group": "Toffee Live",
+            "name": "FIFA World Cup / Sports Special",
+            "group": "Sports",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup_576/playlist.m3u8"
         },
         {
-            "id": "T9O9X5UBm1RY_In7UXFv",
+            "id": "toffee_sports_1",
+            "name": "Toffee Sports 1",
+            "group": "Sports",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_sports_1/playlist.m3u8"
+        },
+        {
+            "id": "toffee_sports_2",
+            "name": "Toffee Sports 2",
+            "group": "Sports",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_sports_2/playlist.m3u8"
+        },
+        {
+            "id": "toffee_sports_3",
+            "name": "Toffee Sports 3",
+            "group": "Sports",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_sports_3/playlist.m3u8"
+        },
+        {
+            "id": "t_sports",
+            "name": "T Sports Live",
+            "group": "Sports",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/t_sports/playlist.m3u8"
+        },
+        {
+            "id": "somoy_tv",
+            "name": "Somoy TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8"
+        },
+        {
+            "id": "jamuna_tv",
+            "name": "Jamuna TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8"
+        },
+        {
+            "id": "independent_tv",
+            "name": "Independent TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8"
+        },
+        {
+            "id": "ekhon_tv",
+            "name": "Ekhon TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8"
+        },
+        {
+            "id": "channel24",
+            "name": "Channel 24",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/playlist.m3u8"
+        },
+        {
+            "id": "dbc_news",
+            "name": "DBC News",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/playlist.m3u8"
+        },
+        {
+            "id": "ekattor_tv",
+            "name": "Ekattor TV",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8"
+        },
+        {
+            "id": "atn_news",
+            "name": "ATN News",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_news/playlist.m3u8"
+        },
+        {
+            "id": "news24",
+            "name": "News24",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/news24/playlist.m3u8"
+        },
+        {
+            "id": "channel_s_tv",
+            "name": "Channel S",
+            "group": "News",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_s_tv/playlist.m3u8"
+        },
+        {
+            "id": "channel_i",
+            "name": "Channel i",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/playlist.m3u8"
+        },
+        {
+            "id": "rtv",
+            "name": "RTV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/playlist.m3u8"
+        },
+        {
+            "id": "ntv",
+            "name": "NTV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/playlist.m3u8"
+        },
+        {
+            "id": "atn_bangla",
+            "name": "ATN Bangla",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8"
+        },
+        {
+            "id": "boishakhi_tv",
+            "name": "Boishakhi TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/playlist.m3u8"
+        },
+        {
+            "id": "deepto_tv",
+            "name": "Deepto TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/playlist.m3u8"
+        },
+        {
+            "id": "nagorik_tv",
+            "name": "Nagorik TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/playlist.m3u8"
+        },
+        {
+            "id": "gazi_tv",
+            "name": "Gazi TV (GTV)",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/playlist.m3u8"
+        },
+        {
+            "id": "asian_tv",
+            "name": "Asian TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/asian_tv/playlist.m3u8"
+        },
+        {
+            "id": "bangla_tv",
+            "name": "Bangla TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/bangla_tv/playlist.m3u8"
+        },
+        {
+            "id": "anandatv",
+            "name": "Ananda TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/anandatv/playlist.m3u8"
+        },
+        {
+            "id": "bijoytv",
+            "name": "Bijoy TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/bijoytv/playlist.m3u8"
+        },
+        {
+            "id": "saamtv",
+            "name": "SA TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/saamtv/playlist.m3u8"
+        },
+        {
+            "id": "massranga",
+            "name": "Maasranga TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/massranga/playlist.m3u8"
+        },
+        {
+            "id": "my_tv",
+            "name": "MY TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/my_tv/playlist.m3u8"
+        },
+        {
+            "id": "deshtv",
+            "name": "Desh TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deshtv/playlist.m3u8"
+        },
+        {
+            "id": "mohonatv",
+            "name": "Mohona TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/mohonatv/playlist.m3u8"
+        },
+        {
+            "id": "sangsad_tv",
+            "name": "Sangsad Bangladesh TV",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sangsad_tv/playlist.m3u8"
+        },
+        {
+            "id": "btv",
+            "name": "BTV National",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/btv/playlist.m3u8"
+        },
+        {
+            "id": "btv_world",
+            "name": "BTV World",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_world/playlist.m3u8"
+        },
+        {
+            "id": "btv_chittagong",
+            "name": "BTV Chittagong",
+            "group": "Entertainment",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_chittagong/playlist.m3u8"
+        },
+        {
+            "id": "duronto_tv",
+            "name": "Duronto TV",
+            "group": "Kids",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/playlist.m3u8"
+        },
+        {
+            "id": "toffee_movies",
+            "name": "Toffee Movies",
+            "group": "Movies",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_movies/playlist.m3u8"
+        },
+        {
+            "id": "toffee_drama",
+            "name": "Toffee Drama",
+            "group": "Drama",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8"
+        },
+        {
+            "id": "toffee_live_ch_1",
             "name": "Toffee Live Channel 1",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/T9O9X5UBm1RY_In7UXFv"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_1"
         },
         {
-            "id": "WtPBX5UBm1RY_In7mXEU",
+            "id": "toffee_live_ch_2",
             "name": "Toffee Live Channel 2",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/WtPBX5UBm1RY_In7mXEU"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_2"
         },
         {
-            "id": "Ii5_-JQBv9knK3AHLDV3",
+            "id": "toffee_live_ch_3",
             "name": "Toffee Live Channel 3",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/Ii5_-JQBv9knK3AHLDV3"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_3"
         },
         {
-            "id": "-C7MX5UBv9knK3AHdKOi",
+            "id": "toffee_live_ch_4",
             "name": "Toffee Live Channel 4",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/-C7MX5UBv9knK3AHdKOi"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_4"
         },
         {
-            "id": "ny6W-JQBv9knK3AHujXC",
+            "id": "toffee_live_ch_5",
             "name": "Toffee Live Channel 5",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/ny6W-JQBv9knK3AHujXC"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_5"
         },
         {
-            "id": "mC6W-JQBv9knK3AHfDWA",
+            "id": "toffee_live_ch_6",
             "name": "Toffee Live Channel 6",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/mC6W-JQBv9knK3AHfDWA"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_6"
         },
         {
-            "id": "1y6e-JQBv9knK3AHNDWb",
+            "id": "toffee_live_ch_7",
             "name": "Toffee Live Channel 7",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/1y6e-JQBv9knK3AHNDWb"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_7"
         },
         {
-            "id": "ay7uX5UBv9knK3AHs6TI",
+            "id": "toffee_live_ch_8",
             "name": "Toffee Live Channel 8",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/ay7uX5UBv9knK3AHs6TI"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_8"
         },
         {
-            "id": "Ay6s-JQBv9knK3AHJTY1",
+            "id": "toffee_live_ch_9",
             "name": "Toffee Live Channel 9",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/Ay6s-JQBv9knK3AHJTY1"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_9"
         },
         {
-            "id": "IC5_-JQBv9knK3AHFDXh",
+            "id": "toffee_live_ch_10",
             "name": "Toffee Live Channel 10",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/IC5_-JQBv9knK3AHFDXh"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_10"
         },
         {
-            "id": "py5j-JQBv9knK3AHxDTY",
+            "id": "toffee_live_ch_11",
             "name": "Toffee Live Channel 11",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/py5j-JQBv9knK3AHxDTY"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_11"
         },
         {
-            "id": "vi5n-JQBv9knK3AHqzTC",
+            "id": "toffee_live_ch_12",
             "name": "Toffee Live Channel 12",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/vi5n-JQBv9knK3AHqzTC"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_12"
         },
         {
-            "id": "sy5m-JQBv9knK3AHYTTk",
+            "id": "toffee_live_ch_13",
             "name": "Toffee Live Channel 13",
             "group": "Toffee Live",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://toffeelive.com/en/watch/sy5m-JQBv9knK3AHYTTk"
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_13"
+        },
+        {
+            "id": "toffee_live_ch_14",
+            "name": "Toffee Live Channel 14",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_14"
+        },
+        {
+            "id": "toffee_live_ch_15",
+            "name": "Toffee Live Channel 15",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_15"
+        },
+        {
+            "id": "toffee_live_ch_16",
+            "name": "Toffee Live Channel 16",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_16"
+        },
+        {
+            "id": "toffee_live_ch_17",
+            "name": "Toffee Live Channel 17",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_17"
+        },
+        {
+            "id": "toffee_live_ch_18",
+            "name": "Toffee Live Channel 18",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_18"
+        },
+        {
+            "id": "toffee_live_ch_19",
+            "name": "Toffee Live Channel 19",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_19"
+        },
+        {
+            "id": "toffee_live_ch_20",
+            "name": "Toffee Live Channel 20",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_20"
+        },
+        {
+            "id": "toffee_live_ch_21",
+            "name": "Toffee Live Channel 21",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_21"
+        },
+        {
+            "id": "toffee_live_ch_22",
+            "name": "Toffee Live Channel 22",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_22"
+        },
+        {
+            "id": "toffee_live_ch_23",
+            "name": "Toffee Live Channel 23",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_23"
+        },
+        {
+            "id": "toffee_live_ch_24",
+            "name": "Toffee Live Channel 24",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_24"
+        },
+        {
+            "id": "toffee_live_ch_25",
+            "name": "Toffee Live Channel 25",
+            "group": "Toffee Live",
+            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "url": "https://toffeelive.com/en/watch/toffee_live_ch_25"
         }
     ]
 }
