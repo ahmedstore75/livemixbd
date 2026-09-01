@@ -1,108 +1,33 @@
 [
   {
-    "name": "Email",
+    "name": "Enter Profile PIN",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png",
     "url": "https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8"
   },
   {
-    "name": "Phone number",
+    "name": "Something went wrong",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png",
     "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
   },
   {
-    "name": "Subscriber ID",
+    "name": "Sorry, you are not authorized to view this content.",
     "logo": "",
     "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
   },
   {
-    "name": "Home",
+    "name": "404",
     "logo": "",
     "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
   },
   {
-    "name": "Live TV",
+    "name": "Access denied!",
     "logo": "",
     "url": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8"
   },
   {
-    "name": "Drama",
-    "logo": "",
-    "url": "https://cdn-6.pishow.tv/live/13/master.m3u8"
-  },
-  {
-    "name": "Movies",
-    "logo": "",
-    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8"
-  },
-  {
-    "name": "Series",
-    "logo": "",
-    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
-  },
-  {
-    "name": "Privacy Policy",
-    "logo": "",
-    "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8"
-  },
-  {
-    "name": "Terms of Service",
-    "logo": "",
-    "url": "https://tvsen7.aynascope.net/tsn1/index.m3u8"
-  },
-  {
-    "name": "About Us",
-    "logo": "",
-    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
-  },
-  {
-    "name": "Contact Us",
-    "logo": "",
-    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
-  },
-  {
-    "name": "FAQ",
-    "logo": "",
-    "url": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8"
-  },
-  {
-    "name": "News",
-    "logo": "",
-    "url": "https://tvsen7.aynaott.com/Sports4/index.m3u8"
-  },
-  {
-    "name": "Blog",
-    "logo": "",
-    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
-  },
-  {
-    "name": "Enter Profile PIN",
-    "logo": "",
-    "url": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8"
-  },
-  {
-    "name": "Something went wrong",
-    "logo": "",
-    "url": "https://tvsen7.aynaott.com/espn/index.m3u8"
-  },
-  {
-    "name": "Sorry, you are not authorized to view this content.",
-    "logo": "",
-    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
-  },
-  {
-    "name": "404",
-    "logo": "",
-    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
-  },
-  {
-    "name": "Access denied!",
-    "logo": "",
-    "url": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8"
-  },
-  {
     "name": "Restricted Content",
     "logo": "",
-    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8"
+    "url": "https://cdn-6.pishow.tv/live/13/master.m3u8"
   },
   {
     "name": "Whoops! Nothing to see here.",
@@ -112,27 +37,27 @@
   {
     "name": "Oops, there is an error!",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
   },
   {
     "name": "Watch History",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
+    "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8"
   },
   {
     "name": "Continue Watching",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
+    "url": "https://tvsen7.aynascope.net/tsn1/index.m3u8"
   },
   {
     "name": "My Account",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
   },
   {
     "name": "Profile Details",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
   },
   {
     "name": "Payment History",
@@ -142,27 +67,27 @@
   {
     "name": "Redeem Code",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
+    "url": "https://tvsen7.aynaott.com/Sports4/index.m3u8"
   },
   {
     "name": "Connected Devices",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
   },
   {
     "name": "Payment & Subscription",
     "logo": "",
-    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
+    "url": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8"
   },
   {
     "name": "Cancel Subscription",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
+    "url": "https://tvsen7.aynaott.com/espn/index.m3u8"
   },
   {
     "name": "Rent",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8"
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
   },
   {
     "name": "Playlists",
@@ -172,65 +97,140 @@
   {
     "name": "Liked Contents",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
+    "url": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8"
   },
   {
     "name": "Manage Profile",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8"
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8"
   },
   {
     "name": "Add Profile",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8"
   },
   {
     "name": "Edit Profile",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
   },
   {
     "name": "Choose Profile",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
   },
   {
     "name": "Forgot PIN?",
     "logo": "",
-    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
   },
   {
     "name": "Payment Successful",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
   },
   {
     "name": "Payment Unsuccessful",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
   },
   {
     "name": "Account Deleted",
     "logo": "",
-    "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8"
   },
   {
     "name": "Delete your account",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
   },
   {
     "name": "404",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8"
   },
   {
     "name": "Device Limit Reached!",
     "logo": "",
-    "url": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8"
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
   },
   {
     "name": "Search",
+    "logo": "",
+    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
+  },
+  {
+    "name": "Browse",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8"
+  },
+  {
+    "name": "Notifications",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
+  },
+  {
+    "name": "Flexiplan",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
+  },
+  {
+    "name": "More Like This",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8"
+  },
+  {
+    "name": "Reset Password",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
+  },
+  {
+    "name": "Your Consent is Required",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8"
+  },
+  {
+    "name": "Login",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
+  },
+  {
+    "name": "Login with email address",
+    "logo": "",
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8"
+  },
+  {
+    "name": "Email",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8"
+  },
+  {
+    "name": "Enter password",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8"
+  },
+  {
+    "name": "Password",
+    "logo": "",
+    "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8"
+  },
+  {
+    "name": "Set a password",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8"
+  },
+  {
+    "name": "Forgot password?",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8"
+  },
+  {
+    "name": "Create your account",
+    "logo": "",
+    "url": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8"
+  },
+  {
+    "name": "Name",
     "logo": "",
     "url": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8"
   }
