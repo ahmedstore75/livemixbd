@@ -1,4 +1,4 @@
-name: Generate Dynamic M3U and JSON Playlist
+name: Dynamic M3U and JSON Generator
 
 on:
   push:
@@ -23,68 +23,13 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Fetch API and Extract All Channels
-        run: |
-          node -e '
-          const fs = require("fs");
-          const https = require("https");
-
-          // Main Directory API URL (contains ALL channels)
-          const targetUrl = "https://web.aynaott.com/live-tvs?_rsc=d6u12";
-
-          const options = {
-            headers: {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-              "RSC": "1",
-              "Accept": "*/*"
-            }
-          };
-
-          https.get(targetUrl, options, (res) => {
-            let rawData = "";
-            res.on("data", chunk => rawData += chunk);
-            res.on("end", () => {
-              // Clean escaping
-              const cleaned = rawData.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
-
-              // Extract Logos & Titles via Regex JSON patterns
-              const logos = [...cleaned.matchAll(/https:\/\/web\.aynaott\.com\/storage\/[^\s"']+/g)].map(m => m[0].replace(/&amp;/g, "&"));
-              const names = [...cleaned.matchAll(/"title":"([^"]+)"|"name":"([^"]+)"/g)].map(m => m[1] || m[2]);
-
-              const channels = [];
-              let m3uContent = "#EXTM3U\n";
-
-              // Unique channels Map based on Logo URL
-              const uniqueLogos = Array.from(new Set(logos));
-
-              uniqueLogos.forEach((logoUrl, index) => {
-                const title = names[index] || `Channel ${index + 1}`;
-                const channelId = `ch_${index + 1}`;
-                const playUrl = `https://web.aynaott.com/live-tvs/${channelId}`;
-
-                channels.push({
-                  id: channelId,
-                  name: title,
-                  logo: logoUrl,
-                  url: playUrl
-                });
-
-                m3uContent += `#EXTINF:-1 tvg-id="${index + 1}" tvg-name="${title}" tvg-logo="${logoUrl}", ${title}\n${playUrl}\n`;
-              });
-
-              fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
-              fs.writeFileSync("playlist.m3u", m3uContent);
-              console.log(`Successfully generated ${channels.length} channels with accurate logos and names.`);
-            });
-          }).on("error", (err) => {
-            console.error("Fetch failed:", err);
-          });
-          '
+      - name: Run JS Script
+        run: node update_channels.js
 
       - name: Commit and Push Files
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated all channels, logos, and playlist: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Auto update channels: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
