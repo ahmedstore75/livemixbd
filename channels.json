@@ -1,237 +1,237 @@
 [
   {
-    "title": "viewport",
-    "logo": "",
-    "streamUrl": "https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8"
+    "name": "Email",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png",
+    "url": "https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8"
   },
   {
-    "title": "description",
-    "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
+    "name": "Phone number",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png",
+    "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
   },
   {
-    "title": "Default",
+    "name": "Subscriber ID",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
   },
   {
-    "title": "Noir",
+    "name": "Home",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
   },
   {
-    "title": "Ayna OTT",
+    "name": "Live TV",
     "logo": "",
-    "streamUrl": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8"
+    "url": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8"
   },
   {
-    "title": "Noir",
+    "name": "Drama",
     "logo": "",
-    "streamUrl": "https://cdn-6.pishow.tv/live/13/master.m3u8"
+    "url": "https://cdn-6.pishow.tv/live/13/master.m3u8"
   },
   {
-    "title": "NEXT_LOCALE",
+    "name": "Movies",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Series",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Privacy Policy",
     "logo": "",
-    "streamUrl": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8"
+    "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Terms of Service",
     "logo": "",
-    "streamUrl": "https://tvsen7.aynascope.net/tsn1/index.m3u8"
+    "url": "https://tvsen7.aynascope.net/tsn1/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "About Us",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Contact Us",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "FAQ",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "News",
     "logo": "",
-    "streamUrl": "https://tvsen7.aynaott.com/Sports4/index.m3u8"
+    "url": "https://tvsen7.aynaott.com/Sports4/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Blog",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Enter Profile PIN",
     "logo": "",
-    "streamUrl": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8"
+    "url": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8"
   },
   {
-    "title": "G",
+    "name": "Something went wrong",
     "logo": "",
-    "streamUrl": "https://tvsen7.aynaott.com/espn/index.m3u8"
+    "url": "https://tvsen7.aynaott.com/espn/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Sorry, you are not authorized to view this content.",
     "logo": "",
-    "streamUrl": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
   },
   {
-    "title": "G",
+    "name": "404",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Access denied!",
     "logo": "",
-    "streamUrl": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8"
+    "url": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8"
   },
   {
-    "title": "G",
+    "name": "Restricted Content",
     "logo": "",
-    "streamUrl": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8"
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Whoops! Nothing to see here.",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Oops, there is an error!",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Watch History",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Continue Watching",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "My Account",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Profile Details",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Payment History",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Redeem Code",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Connected Devices",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Payment & Subscription",
     "logo": "",
-    "streamUrl": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8"
   },
   {
-    "title": "viewport",
+    "name": "Cancel Subscription",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8"
   },
   {
-    "title": "description",
+    "name": "Rent",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8"
   },
   {
-    "title": "Ayna OTT",
+    "name": "Playlists",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8"
   },
   {
-    "title": "Noir",
+    "name": "Liked Contents",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8"
   },
   {
-    "title": "Default",
+    "name": "Manage Profile",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8"
   },
   {
-    "title": "Noir",
+    "name": "Add Profile",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8"
   },
   {
-    "title": "NEXT_LOCALE",
+    "name": "Edit Profile",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Choose Profile",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Forgot PIN?",
     "logo": "",
-    "streamUrl": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8"
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Payment Successful",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Payment Unsuccessful",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Account Deleted",
     "logo": "",
-    "streamUrl": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8"
+    "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Delete your account",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "404",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Device Limit Reached!",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8"
   },
   {
-    "title": "G",
+    "name": "Search",
     "logo": "",
-    "streamUrl": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8"
+    "url": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8"
   }
 ]
