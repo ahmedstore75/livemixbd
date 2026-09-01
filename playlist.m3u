@@ -1,95 +1,95 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="channel1", Channel 1
+#EXTINF:-1 tvg-name="viewport" tvg-logo="", viewport
 https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 tvg-id="channel2", Channel 2
+#EXTINF:-1 tvg-name="description" tvg-logo="", description
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-#EXTINF:-1 tvg-id="channel3", Channel 3
+#EXTINF:-1 tvg-name="Default" tvg-logo="", Default
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
-#EXTINF:-1 tvg-id="channel4", Channel 4
+#EXTINF:-1 tvg-name="Noir" tvg-logo="", Noir
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
-#EXTINF:-1 tvg-id="channel5", Channel 5
+#EXTINF:-1 tvg-name="Ayna OTT" tvg-logo="", Ayna OTT
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
-#EXTINF:-1 tvg-id="channel6", Channel 6
+#EXTINF:-1 tvg-name="Noir" tvg-logo="", Noir
 https://cdn-6.pishow.tv/live/13/master.m3u8
-#EXTINF:-1 tvg-id="channel7", Channel 7
+#EXTINF:-1 tvg-name="NEXT_LOCALE" tvg-logo="", NEXT_LOCALE
 https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
-#EXTINF:-1 tvg-id="channel8", Channel 8
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
-#EXTINF:-1 tvg-id="channel9", Channel 9
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
-#EXTINF:-1 tvg-id="channel10", Channel 10
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen7.aynascope.net/tsn1/index.m3u8
-#EXTINF:-1 tvg-id="channel11", Channel 11
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
-#EXTINF:-1 tvg-id="channel12", Channel 12
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-#EXTINF:-1 tvg-id="channel13", Channel 13
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
-#EXTINF:-1 tvg-id="channel14", Channel 14
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen7.aynaott.com/Sports4/index.m3u8
-#EXTINF:-1 tvg-id="channel15", Channel 15
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-#EXTINF:-1 tvg-id="channel16", Channel 16
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://live-bangla.akamaized.net/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="channel17", Channel 17
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen7.aynaott.com/espn/index.m3u8
-#EXTINF:-1 tvg-id="channel18", Channel 18
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
-#EXTINF:-1 tvg-id="channel19", Channel 19
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
-#EXTINF:-1 tvg-id="channel20", Channel 20
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
-#EXTINF:-1 tvg-id="channel21", Channel 21
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-#EXTINF:-1 tvg-id="channel22", Channel 22
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
-#EXTINF:-1 tvg-id="channel23", Channel 23
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
-#EXTINF:-1 tvg-id="channel24", Channel 24
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
-#EXTINF:-1 tvg-id="channel25", Channel 25
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-#EXTINF:-1 tvg-id="channel26", Channel 26
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
-#EXTINF:-1 tvg-id="channel27", Channel 27
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
-#EXTINF:-1 tvg-id="channel28", Channel 28
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
-#EXTINF:-1 tvg-id="channel29", Channel 29
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-#EXTINF:-1 tvg-id="channel30", Channel 30
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
-#EXTINF:-1 tvg-id="channel31", Channel 31
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
-#EXTINF:-1 tvg-id="channel32", Channel 32
+#EXTINF:-1 tvg-name="viewport" tvg-logo="", viewport
 https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
-#EXTINF:-1 tvg-id="channel33", Channel 33
+#EXTINF:-1 tvg-name="description" tvg-logo="", description
 https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
-#EXTINF:-1 tvg-id="channel34", Channel 34
+#EXTINF:-1 tvg-name="Ayna OTT" tvg-logo="", Ayna OTT
 https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
-#EXTINF:-1 tvg-id="channel35", Channel 35
+#EXTINF:-1 tvg-name="Noir" tvg-logo="", Noir
 https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-#EXTINF:-1 tvg-id="channel36", Channel 36
+#EXTINF:-1 tvg-name="Default" tvg-logo="", Default
 https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
-#EXTINF:-1 tvg-id="channel37", Channel 37
+#EXTINF:-1 tvg-name="Noir" tvg-logo="", Noir
 https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
-#EXTINF:-1 tvg-id="channel38", Channel 38
+#EXTINF:-1 tvg-name="NEXT_LOCALE" tvg-logo="", NEXT_LOCALE
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
-#EXTINF:-1 tvg-id="channel39", Channel 39
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
-#EXTINF:-1 tvg-id="channel40", Channel 40
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
-#EXTINF:-1 tvg-id="channel41", Channel 41
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
-#EXTINF:-1 tvg-id="channel42", Channel 42
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
-#EXTINF:-1 tvg-id="channel43", Channel 43
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
-#EXTINF:-1 tvg-id="channel44", Channel 44
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8
-#EXTINF:-1 tvg-id="channel45", Channel 45
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
-#EXTINF:-1 tvg-id="channel46", Channel 46
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
-#EXTINF:-1 tvg-id="channel47", Channel 47
+#EXTINF:-1 tvg-name="G" tvg-logo="", G
 https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
