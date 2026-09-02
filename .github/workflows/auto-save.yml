@@ -86,27 +86,27 @@ jobs:
             "ananda tv", "desh tv", "boishakhi tv"
           ];
 
-          // Keywords List for IPTV Categories
-          const indianBanglaKeywords = ["star jalsha", "zee bangla", "colors bangla", "sangeet bangla", "akash ath", "news18 bangla", "tv9 bangla", "calcuttatv"];
-          const sportsKeywords = ["sports", "sport", "t sports", "tsn", "espn", "nfl", "bein", "cricket", "football", "willow", "ptv sports", "bleav", "bahrain sports"];
-          const musicKeywords = ["music", "m tv", "mtv", "zoom", "9xm", "9x jalwa", "sangeet", "vh1", "club"];
-          const hindiKeywords = ["star plus", "zee tv", "colors hindi", "sony tv", "sab tv", "star bharat", "dangal"];
+          // Enhanced Keyword Sets for IPTV Categories
+          const sportsKeywords = ["sports", "sport", "t sports", "tsn", "espn", "nfl", "bein", "cricket", "football", "willow", "ptv sports", "bleav", "bahrain sports", "fifa"];
+          const indianBanglaKeywords = ["star jalsha", "zee bangla", "colors bangla", "sangeet bangla", "akash ath", "news18 bangla", "tv9 bangla", "calcuttatv", "dd bangla", "enter 10 bangla", "ruposhi bangla"];
+          const musicKeywords = ["music", "m tv", "mtv", "zoom", "9xm", "9x jalwa", "sangeet", "vh1", "club", "b4u hitz", "b4u music", "zing", "musiq"];
+          const newsKeywords = ["news", "samachar", "bbc", "cnn", "al jazeera", "republic", "ndtv", "news18", "times now", "reuters", "anb", "dw", "cp 24", "fox news", "fox business", "khabar", "aaj tak"];
+          const movieKeywords = ["movie", "cinema", "star gold", "zee cinema", "sony max", "hbo", "action", "goldmine", "and pictures", "&pictures", "pictures", "b4u movies", "filmy"];
+          const hindiKeywords = ["star plus", "zee tv", "colors hindi", "sony tv", "sab tv", "star bharat", "dangal", "b4u", "enter 10"];
           const islamicKeywords = ["islamic", "peace tv", "makkah", "madinah", "quran", "sunnah", "iqra", "deen"];
           const kidsKeywords = ["kids", "cartoon", "nick", "pogo", "disney", "sonic", "hungama", "duronto", "baby"];
-          const movieKeywords = ["movie", "cinema", "star gold", "zee cinema", "sony max", "hbo", "action", "goldmine"];
-          const newsKeywords = ["bbc", "cnn", "al jazeera", "republic", "ndtv", "news18", "times now", "reuters"];
           const docKeywords = ["discovery", "nat geo", "national geographic", "history", "animal planet", "investigation"];
 
           const categoryOrder = [
             "Bangladeshi", 
             "Indian Bangla", 
             "Sports", 
+            "News",
+            "Movies", 
             "Music", 
             "Hindi", 
             "Islamic", 
             "Kids", 
-            "Movies", 
-            "News", 
             "Documentary", 
             "Entertainment", 
             "Others"
@@ -171,7 +171,7 @@ jobs:
                 logoUrl = logoFallbackMap[lowerTitle];
               }
 
-              // Categorization Logic
+              // Advanced Categorization Decision Tree
               let category = "Others";
               
               if (bdChannelPriority.some(item => lowerTitle === item || lowerTitle.includes(item))) {
@@ -180,6 +180,10 @@ jobs:
                 category = "Indian Bangla";
               } else if (sportsKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Sports";
+              } else if (newsKeywords.some(item => lowerTitle.includes(item))) {
+                category = "News";
+              } else if (movieKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Movies";
               } else if (musicKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Music";
               } else if (hindiKeywords.some(item => lowerTitle.includes(item))) {
@@ -188,13 +192,9 @@ jobs:
                 category = "Islamic";
               } else if (kidsKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Kids";
-              } else if (movieKeywords.some(item => lowerTitle.includes(item))) {
-                category = "Movies";
-              } else if (newsKeywords.some(item => lowerTitle.includes(item))) {
-                category = "News";
               } else if (docKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Documentary";
-              } else if (lowerTitle.includes("usa") || lowerTitle.includes("tv")) {
+              } else if (lowerTitle.includes("usa") || lowerTitle.includes("fox") || lowerTitle.includes("drama")) {
                 category = "Entertainment";
               }
 
@@ -208,7 +208,7 @@ jobs:
               });
             }
 
-            // Sorting Categories
+            // Sorting Rules
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
@@ -238,7 +238,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Playlist generated with full IPTV category mapping.`);
+            console.log(`Deep categorized playlist updated successfully.`);
           }
 
           processData();
@@ -250,5 +250,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated full IPTV categories (Indian Bangla, Hindi, Music, Movies, etc.): $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Comprehensive category matching rules update: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
