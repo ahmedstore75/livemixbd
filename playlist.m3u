@@ -1,71 +1,263 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Channel 1" tvg-logo="", Channel 1
-https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 tvg-name="Channel 2" tvg-logo="", Channel 2
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-#EXTINF:-1 tvg-name="Channel 3" tvg-logo="", Channel 3
+#EXTINF:-1 tvg-name="Channel 2" tvg-logo="", Channel 2
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
-#EXTINF:-1 tvg-name="Channel 4" tvg-logo="", Channel 4
-https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
-#EXTINF:-1 tvg-name="Channel 5" tvg-logo="", Channel 5
-https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
-#EXTINF:-1 tvg-name="Channel 6" tvg-logo="", Channel 6
-https://cdn-6.pishow.tv/live/13/master.m3u8
-#EXTINF:-1 tvg-name="Channel 7" tvg-logo="", Channel 7
-https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
-#EXTINF:-1 tvg-name="Channel 8" tvg-logo="", Channel 8
+#EXTINF:-1 tvg-name="Channel 3" tvg-logo="", Channel 3
 https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
-#EXTINF:-1 tvg-name="Channel 9" tvg-logo="", Channel 9
-https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
-#EXTINF:-1 tvg-name="Channel 10" tvg-logo="", Channel 10
-https://tvsen7.aynascope.net/tsn1/index.m3u8
-#EXTINF:-1 tvg-name="Channel 11" tvg-logo="", Channel 11
-https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
-#EXTINF:-1 tvg-name="Channel 12" tvg-logo="", Channel 12
-https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-#EXTINF:-1 tvg-name="Channel 13" tvg-logo="", Channel 13
+#EXTINF:-1 tvg-name="Channel 4" tvg-logo="", Channel 4
 https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
-#EXTINF:-1 tvg-name="Channel 14" tvg-logo="", Channel 14
-https://tvsen7.aynaott.com/Sports4/index.m3u8
-#EXTINF:-1 tvg-name="Channel 15" tvg-logo="", Channel 15
-https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-#EXTINF:-1 tvg-name="Channel 16" tvg-logo="", Channel 16
-https://live-bangla.akamaized.net/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-name="Channel 17" tvg-logo="", Channel 17
-https://tvsen7.aynaott.com/espn/index.m3u8
-#EXTINF:-1 tvg-name="Channel 18" tvg-logo="", Channel 18
-https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
-#EXTINF:-1 tvg-name="Channel 19" tvg-logo="", Channel 19
-https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
-#EXTINF:-1 tvg-name="Channel 20" tvg-logo="", Channel 20
-https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
-#EXTINF:-1 tvg-name="Channel 21" tvg-logo="", Channel 21
-https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-#EXTINF:-1 tvg-name="Channel 22" tvg-logo="", Channel 22
-https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
-#EXTINF:-1 tvg-name="Channel 23" tvg-logo="", Channel 23
-https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
-#EXTINF:-1 tvg-name="Channel 24" tvg-logo="", Channel 24
+#EXTINF:-1 tvg-name="Channel 5" tvg-logo="", Channel 5
+https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
+#EXTINF:-1 tvg-name="Channel 6" tvg-logo="", Channel 6
 https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
-#EXTINF:-1 tvg-name="Channel 25" tvg-logo="", Channel 25
+#EXTINF:-1 tvg-name="Channel 7" tvg-logo="", Channel 7
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
+#EXTINF:-1 tvg-name="Channel 8" tvg-logo="", Channel 8
+https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
+#EXTINF:-1 tvg-name="Channel 9" tvg-logo="", Channel 9
 https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
-#EXTINF:-1 tvg-name="Channel 26" tvg-logo="", Channel 26
+#EXTINF:-1 tvg-name="Channel 10" tvg-logo="", Channel 10
+https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
+#EXTINF:-1 tvg-name="Channel 11" tvg-logo="", Channel 11
+https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
+#EXTINF:-1 tvg-name="Channel 12" tvg-logo="", Channel 12
 https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
-#EXTINF:-1 tvg-name="Channel 27" tvg-logo="", Channel 27
+#EXTINF:-1 tvg-name="Channel 13" tvg-logo="", Channel 13
+https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
+#EXTINF:-1 tvg-name="Channel 14" tvg-logo="", Channel 14
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
+#EXTINF:-1 tvg-name="Channel 15" tvg-logo="", Channel 15
+https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
+#EXTINF:-1 tvg-name="Channel 16" tvg-logo="", Channel 16
+https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
+#EXTINF:-1 tvg-name="Channel 17" tvg-logo="", Channel 17
+https://tvsen7.aynascope.net/tsn1/index.m3u8
+#EXTINF:-1 tvg-name="Channel 18" tvg-logo="", Channel 18
+https://tvsen7.aynascope.net/tsn2/index.m3u8
+#EXTINF:-1 tvg-name="Channel 19" tvg-logo="", Channel 19
+https://tvsen7.aynascope.net/tsn3/index.m3u8
+#EXTINF:-1 tvg-name="Channel 20" tvg-logo="", Channel 20
+https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
+#EXTINF:-1 tvg-name="Channel 21" tvg-logo="", Channel 21
+https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
+#EXTINF:-1 tvg-name="Channel 22" tvg-logo="", Channel 22
+https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
+#EXTINF:-1 tvg-name="Channel 23" tvg-logo="", Channel 23
+https://tvsen7.aynaott.com/espn/index.m3u8
+#EXTINF:-1 tvg-name="Channel 24" tvg-logo="", Channel 24
+https://tvsen6.aynaott.com/nfl/index.m3u8
+#EXTINF:-1 tvg-name="Channel 25" tvg-logo="", Channel 25
+https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 26" tvg-logo="", Channel 26
+https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8
+#EXTINF:-1 tvg-name="Channel 27" tvg-logo="", Channel 27
+https://cdn-6.pishow.tv/live/13/master.m3u8
 #EXTINF:-1 tvg-name="Channel 28" tvg-logo="", Channel 28
 https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
 #EXTINF:-1 tvg-name="Channel 29" tvg-logo="", Channel 29
-https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
-#EXTINF:-1 tvg-name="Channel 30" tvg-logo="", Channel 30
-https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
-#EXTINF:-1 tvg-name="Channel 31" tvg-logo="", Channel 31
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
+#EXTINF:-1 tvg-name="Channel 30" tvg-logo="", Channel 30
+https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
+#EXTINF:-1 tvg-name="Channel 31" tvg-logo="", Channel 31
+https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
 #EXTINF:-1 tvg-name="Channel 32" tvg-logo="", Channel 32
 https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8
 #EXTINF:-1 tvg-name="Channel 33" tvg-logo="", Channel 33
-https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
+https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
 #EXTINF:-1 tvg-name="Channel 34" tvg-logo="", Channel 34
-https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
+https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
 #EXTINF:-1 tvg-name="Channel 35" tvg-logo="", Channel 35
-https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
+https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
+#EXTINF:-1 tvg-name="Channel 36" tvg-logo="", Channel 36
+https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8
+#EXTINF:-1 tvg-name="Channel 37" tvg-logo="", Channel 37
+https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
+#EXTINF:-1 tvg-name="Channel 38" tvg-logo="", Channel 38
+https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8
+#EXTINF:-1 tvg-name="Channel 39" tvg-logo="", Channel 39
+https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
+#EXTINF:-1 tvg-name="Channel 40" tvg-logo="", Channel 40
+https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8
+#EXTINF:-1 tvg-name="Channel 41" tvg-logo="", Channel 41
+https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8
+#EXTINF:-1 tvg-name="Channel 42" tvg-logo="", Channel 42
+https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8
+#EXTINF:-1 tvg-name="Channel 43" tvg-logo="", Channel 43
+https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8
+#EXTINF:-1 tvg-name="Channel 44" tvg-logo="", Channel 44
+https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
+#EXTINF:-1 tvg-name="Channel 45" tvg-logo="", Channel 45
+https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8
+#EXTINF:-1 tvg-name="Channel 46" tvg-logo="", Channel 46
+https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8
+#EXTINF:-1 tvg-name="Channel 47" tvg-logo="", Channel 47
+https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
+#EXTINF:-1 tvg-name="Channel 48" tvg-logo="", Channel 48
+https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8
+#EXTINF:-1 tvg-name="Channel 49" tvg-logo="", Channel 49
+https://tvsen6.aynaott.com/xjkX3euD/index.m3u8
+#EXTINF:-1 tvg-name="Channel 50" tvg-logo="", Channel 50
+https://tvsen1.aynaott.com/shn6jGTk/index.m3u8
+#EXTINF:-1 tvg-name="Channel 51" tvg-logo="", Channel 51
+https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8
+#EXTINF:-1 tvg-name="Channel 52" tvg-logo="", Channel 52
+https://tvsen6.aynaott.com/cnn/index.m3u8
+#EXTINF:-1 tvg-name="Channel 53" tvg-logo="", Channel 53
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-name="Channel 54" tvg-logo="", Channel 54
+https://tvsen6.aynaott.com/bloombergtv/index.m3u8
+#EXTINF:-1 tvg-name="Channel 55" tvg-logo="", Channel 55
+https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8
+#EXTINF:-1 tvg-name="Channel 56" tvg-logo="", Channel 56
+https://tvsen6.aynaott.com/cnbc/index.m3u8
+#EXTINF:-1 tvg-name="Channel 57" tvg-logo="", Channel 57
+https://tvsen6.aynaott.com/cp24/index.m3u8
+#EXTINF:-1 tvg-name="Channel 58" tvg-logo="", Channel 58
+https://tvsen6.aynaott.com/foxnews/index.m3u8
+#EXTINF:-1 tvg-name="Channel 59" tvg-logo="", Channel 59
+https://tvsen5.aynaott.com/skynews/index.m3u8
+#EXTINF:-1 tvg-name="Channel 60" tvg-logo="", Channel 60
+https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8
+#EXTINF:-1 tvg-name="Channel 61" tvg-logo="", Channel 61
+https://tvsen7.aynaott.com/Sports4/index.m3u8
+#EXTINF:-1 tvg-name="Channel 62" tvg-logo="", Channel 62
+https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8
+#EXTINF:-1 tvg-name="Channel 63" tvg-logo="", Channel 63
+https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
+#EXTINF:-1 tvg-name="Channel 64" tvg-logo="", Channel 64
+https://feeds.intoday.in/hltapps/api/master.m3u8
+#EXTINF:-1 tvg-name="Channel 65" tvg-logo="", Channel 65
+https://live.presstv.ir/hls/presstv_5_482/index.m3u8
+#EXTINF:-1 tvg-name="Channel 66" tvg-logo="", Channel 66
+https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-name="Channel 67" tvg-logo="", Channel 67
+https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
+#EXTINF:-1 tvg-name="Channel 68" tvg-logo="", Channel 68
+https://tvsen6.aynaott.com/faGd3tuq/index.m3u8
+#EXTINF:-1 tvg-name="Channel 69" tvg-logo="", Channel 69
+https://tvsen7.aynaott.com/HindiKhabar/index.m3u8
+#EXTINF:-1 tvg-name="Channel 70" tvg-logo="", Channel 70
+https://tvsen3.aynaott.com/m94BZDYb/index.m3u8
+#EXTINF:-1 tvg-name="Channel 71" tvg-logo="", Channel 71
+https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8
+#EXTINF:-1 tvg-name="Channel 72" tvg-logo="", Channel 72
+https://tvsen6.aynaott.com/TaVfw58T/index.m3u8
+#EXTINF:-1 tvg-name="Channel 73" tvg-logo="", Channel 73
+https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8
+#EXTINF:-1 tvg-name="Channel 74" tvg-logo="", Channel 74
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 75" tvg-logo="", Channel 75
+https://247wlive.foxweather.com/stream/index.m3u8
+#EXTINF:-1 tvg-name="Channel 76" tvg-logo="", Channel 76
+https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 77" tvg-logo="", Channel 77
+https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 78" tvg-logo="", Channel 78
+https://tvsen7.aynaott.com/lifetime/index.m3u8
+#EXTINF:-1 tvg-name="Channel 79" tvg-logo="", Channel 79
+https://tvsen7.aynaott.com/TRTWorldHD/index.m3u8
+#EXTINF:-1 tvg-name="Channel 80" tvg-logo="", Channel 80
+https://tvsen6.aynaott.com/mtv/index.m3u8
+#EXTINF:-1 tvg-name="Channel 81" tvg-logo="", Channel 81
+https://tvsen6.aynaott.com/fox5/index.m3u8
+#EXTINF:-1 tvg-name="Channel 82" tvg-logo="", Channel 82
+https://tvsen6.aynaott.com/foxbusiness/index.m3u8
+#EXTINF:-1 tvg-name="Channel 83" tvg-logo="", Channel 83
+https://tvsen3.aynaott.com/34fJSjZP/index.m3u8
+#EXTINF:-1 tvg-name="Channel 84" tvg-logo="", Channel 84
+https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8
+#EXTINF:-1 tvg-name="Channel 85" tvg-logo="", Channel 85
+https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8
+#EXTINF:-1 tvg-name="Channel 86" tvg-logo="", Channel 86
+https://tvsen7.aynaott.com/timetv/index.m3u8
+#EXTINF:-1 tvg-name="Channel 87" tvg-logo="", Channel 87
+https://tvsen7.aynaott.com/vtvusa/index.m3u8
+#EXTINF:-1 tvg-name="Channel 88" tvg-logo="", Channel 88
+https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
+#EXTINF:-1 tvg-name="Channel 89" tvg-logo="", Channel 89
+https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8
+#EXTINF:-1 tvg-name="Channel 90" tvg-logo="", Channel 90
+https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8
+#EXTINF:-1 tvg-name="Channel 91" tvg-logo="", Channel 91
+https://live-bangla.akamaized.net/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 92" tvg-logo="", Channel 92
+https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 93" tvg-logo="", Channel 93
+https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
+#EXTINF:-1 tvg-name="Channel 94" tvg-logo="", Channel 94
+https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 95" tvg-logo="", Channel 95
+https://tvsen6.aynaott.com/andpictureshd/index.m3u8
+#EXTINF:-1 tvg-name="Channel 96" tvg-logo="", Channel 96
+https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8
+#EXTINF:-1 tvg-name="Channel 97" tvg-logo="", Channel 97
+https://vods2.aynaott.com/hindimovies/index.m3u8
+#EXTINF:-1 tvg-name="Channel 98" tvg-logo="", Channel 98
+https://tvsen6.aynaott.com/dhoom/index.m3u8
+#EXTINF:-1 tvg-name="Channel 99" tvg-logo="", Channel 99
+https://tvsen6.aynaott.com/talkSPORT/index.m3u8
+#EXTINF:-1 tvg-name="Channel 100" tvg-logo="", Channel 100
+https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8
+#EXTINF:-1 tvg-name="Channel 101" tvg-logo="", Channel 101
+https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8
+#EXTINF:-1 tvg-name="Channel 102" tvg-logo="", Channel 102
+https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8
+#EXTINF:-1 tvg-name="Channel 103" tvg-logo="", Channel 103
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 104" tvg-logo="", Channel 104
+https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8
+#EXTINF:-1 tvg-name="Channel 105" tvg-logo="", Channel 105
+https://tvsen6.aynaott.com/B4UHitz/index.m3u8
+#EXTINF:-1 tvg-name="Channel 106" tvg-logo="", Channel 106
+https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8
+#EXTINF:-1 tvg-name="Channel 107" tvg-logo="", Channel 107
+https://vods2.aynaott.com/gseriesDrama/index.m3u8
+#EXTINF:-1 tvg-name="Channel 108" tvg-logo="", Channel 108
+https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
+#EXTINF:-1 tvg-name="Channel 109" tvg-logo="", Channel 109
+https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
+#EXTINF:-1 tvg-name="Channel 110" tvg-logo="", Channel 110
+https://tvsen7.aynaott.com/hbo/index.m3u8
+#EXTINF:-1 tvg-name="Channel 111" tvg-logo="", Channel 111
+https://tvsen5.aynaott.com/qRHda6ax/index.m3u8
+#EXTINF:-1 tvg-name="Channel 112" tvg-logo="", Channel 112
+https://tvsen7.aynaott.com/disney/index.m3u8
+#EXTINF:-1 tvg-name="Channel 113" tvg-logo="", Channel 113
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
+#EXTINF:-1 tvg-name="Channel 114" tvg-logo="", Channel 114
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
+#EXTINF:-1 tvg-name="Channel 115" tvg-logo="", Channel 115
+https://live.zoomnews.info/live/Zoom_playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 116" tvg-logo="", Channel 116
+https://tvsen3.aynaott.com/wpa56Uk3/index.m3u8
+#EXTINF:-1 tvg-name="Channel 117" tvg-logo="", Channel 117
+http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
+#EXTINF:-1 tvg-name="Channel 118" tvg-logo="", Channel 118
+https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8
+#EXTINF:-1 tvg-name="Channel 119" tvg-logo="", Channel 119
+https://tvsen6.aynaott.com/dubaisports1/index.m3u8
+#EXTINF:-1 tvg-name="Channel 120" tvg-logo="", Channel 120
+https://tvsen6.aynaott.com/kolkatatv/index.m3u8
+#EXTINF:-1 tvg-name="Channel 121" tvg-logo="", Channel 121
+https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
+#EXTINF:-1 tvg-name="Channel 122" tvg-logo="", Channel 122
+https://tvsen3.aynaott.com/u3NjUrny/index.m3u8
+#EXTINF:-1 tvg-name="Channel 123" tvg-logo="", Channel 123
+https://tvsen3.aynaott.com/z24qLsqV/index.m3u8
+#EXTINF:-1 tvg-name="Channel 124" tvg-logo="", Channel 124
+https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 125" tvg-logo="", Channel 125
+https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
+#EXTINF:-1 tvg-name="Channel 126" tvg-logo="", Channel 126
+https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-name="Channel 127" tvg-logo="", Channel 127
+https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
+#EXTINF:-1 tvg-name="Channel 128" tvg-logo="", Channel 128
+https://tvsen6.aynaott.com/amc/index.m3u8
+#EXTINF:-1 tvg-name="Channel 129" tvg-logo="", Channel 129
+https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-name="Channel 130" tvg-logo="", Channel 130
+https://tvsen6.aynaott.com/AndTV/index.m3u8
+#EXTINF:-1 tvg-name="Channel 131" tvg-logo="", Channel 131
+https://tvsen6.aynaott.com/channel52/index.m3u8
