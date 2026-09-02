@@ -1,4 +1,4 @@
-name: Generate Accurate M3U and JSON Playlist
+name: Generate Categorized M3U and JSON Playlist
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Fetch API and Extract Channel Details
+      - name: Fetch API and Process Categories
         run: |
           cat << 'EOF' > parse.js
           const fs = require("fs");
@@ -86,6 +86,17 @@ jobs:
             "ananda tv", "desh tv", "boishakhi tv"
           ];
 
+          // Keywords for Category Custom Classification
+          const sportsKeywords = ["t sports", "tsn", "sports", "espn", "nfl", "bein", "cricket", "football", "willow", "ptv sports", "bleav"];
+          const newsKeywords = ["news", "ekattor", "jamuna", "somoy", "dbc", "independent", "71", "24", "bbc", "cnn"];
+          const islamicKeywords = ["islamic", "peace tv", "makkah", "madinah", "quran", "sunnah", "iqra", "deen"];
+          const kidsKeywords = ["kids", "cartoon", "nick", "pogo", "disney", "sonic", "hungama", "duronto", "baby"];
+          const docKeywords = ["discovery", "nat geo", "national geographic", "history", "animal planet", "investigation"];
+          const movieKeywords = ["movie", "cinema", "action", "hbo", "star", "zee", "sony", "colors"];
+
+          // Hierarchy of Categories
+          const categoryOrder = ["Bangladeshi", "Sports", "News", "Islamic", "Kids", "Movies & Entertainment", "Documentary", "Others"];
+
           async function processData() {
             let rawData = "";
             for (const url of urls) {
@@ -124,24 +135,6 @@ jobs:
 
               if (!title) continue;
 
-              // Extract Dynamic Category directly from API block
-              let category = "General";
-              const catMatch = block.match(/"(?:category|group|genre|categoryName|type)"\s*:\s*"([^"]+)"/i) ||
-                               block.match(/"(?:category|group|genre)"\s*:\s*\{[^}]*"name"\s*:\s*"([^"]+)"/i);
-
-              if (catMatch && catMatch[1]) {
-                const parsedCat = catMatch[1].trim();
-                if (parsedCat && !["default", "channel", "tv"].includes(parsedCat.toLowerCase())) {
-                  category = parsedCat;
-                }
-              }
-
-              // Force Bangladeshi Channels under "Bangladeshi" group if not detected
-              const lowerTitle = title.toLowerCase();
-              if (bdChannelPriority.some(item => lowerTitle.includes(item))) {
-                category = "Bangladeshi";
-              }
-
               let logoUrl = "";
               const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                                 block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
@@ -157,8 +150,27 @@ jobs:
                 }
               }
 
+              const lowerTitle = title.toLowerCase();
               if (!logoUrl && logoFallbackMap[lowerTitle]) {
                 logoUrl = logoFallbackMap[lowerTitle];
+              }
+
+              // Custom Category Detection
+              let category = "Others";
+              if (bdChannelPriority.some(item => lowerTitle.includes(item))) {
+                category = "Bangladeshi";
+              } else if (sportsKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Sports";
+              } else if (islamicKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Islamic";
+              } else if (kidsKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Kids";
+              } else if (docKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Documentary";
+              } else if (newsKeywords.some(item => lowerTitle.includes(item))) {
+                category = "News";
+              } else if (movieKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Movies & Entertainment";
               }
 
               seenUrls.add(streamUrl);
@@ -171,12 +183,17 @@ jobs:
               });
             }
 
-            // Priority Sorting: Bangladeshi channels first, then by API Category
+            // Custom Categorized Sorting
             extractedChannels.sort((a, b) => {
-              if (a.category === "Bangladeshi" && b.category !== "Bangladeshi") return -1;
-              if (a.category !== "Bangladeshi" && b.category === "Bangladeshi") return 1;
+              const catIndexA = categoryOrder.indexOf(a.category);
+              const catIndexB = categoryOrder.indexOf(b.category);
 
-              if (a.category === "Bangladeshi" && b.category === "Bangladeshi") {
+              if (catIndexA !== catIndexB) {
+                return catIndexA - catIndexB;
+              }
+
+              // BD Channels Top Preference
+              if (a.category === "Bangladeshi") {
                 const nameA = a.name.toLowerCase();
                 const nameB = b.name.toLowerCase();
                 const indexA = bdChannelPriority.findIndex(item => nameA.includes(item));
@@ -185,11 +202,6 @@ jobs:
                 if (indexA !== -1 && indexB !== -1) return indexA - indexB;
                 if (indexA !== -1) return -1;
                 if (indexB !== -1) return 1;
-              }
-
-              // Group remaining by Category alphabetically
-              if (a.category !== b.category) {
-                return a.category.localeCompare(b.category);
               }
 
               return a.name.localeCompare(b.name);
@@ -202,7 +214,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully mapped channels according to API dynamic categories.`);
+            console.log(`Successfully mapped playlist with custom custom categories.`);
           }
 
           processData();
@@ -214,5 +226,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Extracted dynamic API categories for group-title: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Applied custom categorizations (Bangladeshi, Sports, News, Islamic, Kids, Movies, Documentary): $(date +'%Y-%m-%d %H:%M:%S')"
           git push
