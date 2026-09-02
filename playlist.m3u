@@ -1,71 +1,71 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Email" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png", Email
+#EXTINF:-1 tvg-name="Channel 1" tvg-logo="", Channel 1
 https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 tvg-name="Phone number" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-30/images_b3c3896846b2ed3270d99735e6466388_playmist_ayna_fav.png", Phone number
+#EXTINF:-1 tvg-name="Channel 2" tvg-logo="", Channel 2
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-#EXTINF:-1 tvg-name="Subscriber ID" tvg-logo="", Subscriber ID
+#EXTINF:-1 tvg-name="Channel 3" tvg-logo="", Channel 3
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
-#EXTINF:-1 tvg-name="Home" tvg-logo="", Home
+#EXTINF:-1 tvg-name="Channel 4" tvg-logo="", Channel 4
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
-#EXTINF:-1 tvg-name="Live TV" tvg-logo="", Live TV
+#EXTINF:-1 tvg-name="Channel 5" tvg-logo="", Channel 5
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
-#EXTINF:-1 tvg-name="Drama" tvg-logo="", Drama
+#EXTINF:-1 tvg-name="Channel 6" tvg-logo="", Channel 6
 https://cdn-6.pishow.tv/live/13/master.m3u8
-#EXTINF:-1 tvg-name="Movies" tvg-logo="", Movies
+#EXTINF:-1 tvg-name="Channel 7" tvg-logo="", Channel 7
 https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
-#EXTINF:-1 tvg-name="Series" tvg-logo="", Series
+#EXTINF:-1 tvg-name="Channel 8" tvg-logo="", Channel 8
 https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
-#EXTINF:-1 tvg-name="Privacy Policy" tvg-logo="", Privacy Policy
+#EXTINF:-1 tvg-name="Channel 9" tvg-logo="", Channel 9
 https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
-#EXTINF:-1 tvg-name="Terms of Service" tvg-logo="", Terms of Service
+#EXTINF:-1 tvg-name="Channel 10" tvg-logo="", Channel 10
 https://tvsen7.aynascope.net/tsn1/index.m3u8
-#EXTINF:-1 tvg-name="About Us" tvg-logo="", About Us
+#EXTINF:-1 tvg-name="Channel 11" tvg-logo="", Channel 11
 https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
-#EXTINF:-1 tvg-name="Contact Us" tvg-logo="", Contact Us
+#EXTINF:-1 tvg-name="Channel 12" tvg-logo="", Channel 12
 https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-#EXTINF:-1 tvg-name="FAQ" tvg-logo="", FAQ
+#EXTINF:-1 tvg-name="Channel 13" tvg-logo="", Channel 13
 https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
-#EXTINF:-1 tvg-name="News" tvg-logo="", News
+#EXTINF:-1 tvg-name="Channel 14" tvg-logo="", Channel 14
 https://tvsen7.aynaott.com/Sports4/index.m3u8
-#EXTINF:-1 tvg-name="Blog" tvg-logo="", Blog
+#EXTINF:-1 tvg-name="Channel 15" tvg-logo="", Channel 15
 https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-#EXTINF:-1 tvg-name="Enter Profile PIN" tvg-logo="", Enter Profile PIN
+#EXTINF:-1 tvg-name="Channel 16" tvg-logo="", Channel 16
 https://live-bangla.akamaized.net/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-name="Something went wrong" tvg-logo="", Something went wrong
+#EXTINF:-1 tvg-name="Channel 17" tvg-logo="", Channel 17
 https://tvsen7.aynaott.com/espn/index.m3u8
-#EXTINF:-1 tvg-name="Sorry, you are not authorized to view this content." tvg-logo="", Sorry, you are not authorized to view this content.
+#EXTINF:-1 tvg-name="Channel 18" tvg-logo="", Channel 18
 https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
-#EXTINF:-1 tvg-name="404" tvg-logo="", 404
+#EXTINF:-1 tvg-name="Channel 19" tvg-logo="", Channel 19
 https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
-#EXTINF:-1 tvg-name="Access denied!" tvg-logo="", Access denied!
+#EXTINF:-1 tvg-name="Channel 20" tvg-logo="", Channel 20
 https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
-#EXTINF:-1 tvg-name="Restricted Content" tvg-logo="", Restricted Content
+#EXTINF:-1 tvg-name="Channel 21" tvg-logo="", Channel 21
 https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-#EXTINF:-1 tvg-name="Whoops! Nothing to see here." tvg-logo="", Whoops! Nothing to see here.
+#EXTINF:-1 tvg-name="Channel 22" tvg-logo="", Channel 22
 https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
-#EXTINF:-1 tvg-name="Oops, there is an error!" tvg-logo="", Oops, there is an error!
+#EXTINF:-1 tvg-name="Channel 23" tvg-logo="", Channel 23
 https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
-#EXTINF:-1 tvg-name="Watch History" tvg-logo="", Watch History
+#EXTINF:-1 tvg-name="Channel 24" tvg-logo="", Channel 24
 https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
-#EXTINF:-1 tvg-name="Continue Watching" tvg-logo="", Continue Watching
+#EXTINF:-1 tvg-name="Channel 25" tvg-logo="", Channel 25
 https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
-#EXTINF:-1 tvg-name="My Account" tvg-logo="", My Account
+#EXTINF:-1 tvg-name="Channel 26" tvg-logo="", Channel 26
 https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
-#EXTINF:-1 tvg-name="Profile Details" tvg-logo="", Profile Details
+#EXTINF:-1 tvg-name="Channel 27" tvg-logo="", Channel 27
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
-#EXTINF:-1 tvg-name="Payment History" tvg-logo="", Payment History
+#EXTINF:-1 tvg-name="Channel 28" tvg-logo="", Channel 28
 https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
-#EXTINF:-1 tvg-name="Redeem Code" tvg-logo="", Redeem Code
+#EXTINF:-1 tvg-name="Channel 29" tvg-logo="", Channel 29
 https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
-#EXTINF:-1 tvg-name="Connected Devices" tvg-logo="", Connected Devices
+#EXTINF:-1 tvg-name="Channel 30" tvg-logo="", Channel 30
 https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
-#EXTINF:-1 tvg-name="Payment & Subscription" tvg-logo="", Payment & Subscription
+#EXTINF:-1 tvg-name="Channel 31" tvg-logo="", Channel 31
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
-#EXTINF:-1 tvg-name="Cancel Subscription" tvg-logo="", Cancel Subscription
+#EXTINF:-1 tvg-name="Channel 32" tvg-logo="", Channel 32
 https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8
-#EXTINF:-1 tvg-name="Rent" tvg-logo="", Rent
+#EXTINF:-1 tvg-name="Channel 33" tvg-logo="", Channel 33
 https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
-#EXTINF:-1 tvg-name="Playlists" tvg-logo="", Playlists
+#EXTINF:-1 tvg-name="Channel 34" tvg-logo="", Channel 34
 https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
-#EXTINF:-1 tvg-name="Liked Contents" tvg-logo="", Liked Contents
+#EXTINF:-1 tvg-name="Channel 35" tvg-logo="", Channel 35
 https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
