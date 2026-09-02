@@ -51,22 +51,13 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          // Standard mapping for known encrypted stream hash IDs to proper channel names & logos
-          const knownChannelMap = {
-            "tsn1": { name: "T Sports 1", logo: "https://web.aynaott.com/logos/tsports.png" },
-            "tsn2": { name: "T Sports 2", logo: "https://web.aynaott.com/logos/tsports.png" },
-            "tsn5": { name: "T Sports 5", logo: "https://web.aynaott.com/logos/tsports.png" },
-            "espn": { name: "ESPN", logo: "https://web.aynaott.com/logos/espn.png" },
-            "nfl": { name: "NFL Network", logo: "https://web.aynaott.com/logos/nfl.png" }
-          };
-
           async function processData() {
             let rawData = "";
             for (const url of urls) {
               rawData += await fetchData(url) + "\n";
             }
 
-            // Unescape Unicode & JSON text
+            // Unescape Unicode & standard JSON escape sequences
             const cleanedData = rawData
               .replace(/\\"/g, '"')
               .replace(/\\\\/g, "\\")
@@ -76,70 +67,79 @@ jobs:
             const seenUrls = new Set();
             let m3uContent = "#EXTM3U\n";
 
-            // Extract objects containing stream links
+            // Extract valid JSON structures from Next.js payload lines
+            const jsonObjects = [];
+            const lines = cleanedData.split("\n");
+
+            for (const line of lines) {
+              const matches = line.match(/\{[^{}]*\}/g);
+              if (matches) {
+                for (const match of matches) {
+                  try {
+                    if (match.includes("http")) {
+                      jsonObjects.push(match);
+                    }
+                  } catch (e) {}
+                }
+              }
+            }
+
+            // Regex scan across full payload blocks
             const streamMatches = [...cleanedData.matchAll(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi)];
 
-            // Match all images to map sequentially if missing direct association
-            const allImages = [...cleanedData.matchAll(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/gi)].map(m => m[1]);
-
-            let fallbackCount = 1;
+            const junkNames = [
+              "viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT",
+              "Email", "Phone number", "Subscriber ID", "Home", "Live TV", "Drama", "Movies",
+              "Series", "Privacy Policy", "Terms of Service", "About Us", "Contact Us", "FAQ", "News",
+              "Bangla", "Channels", "Channel", "Subscribe", "Football", "Cricket", "Sports"
+            ];
 
             for (const match of streamMatches) {
               const streamUrl = match[1];
 
-              // Skip duplicate stream URLs completely
+              // Filter out duplicate streams completely
               if (seenUrls.has(streamUrl)) continue;
 
-              const startIndex = Math.max(0, match.index - 600);
-              const endIndex = Math.min(cleanedData.length, match.index + 600);
+              const startIndex = Math.max(0, match.index - 800);
+              const endIndex = Math.min(cleanedData.length, match.index + 800);
               const context = cleanedData.substring(startIndex, endIndex);
 
               let channelName = "";
               let logoUrl = "";
 
-              // Extract Name from RSC Context
-              const nameMatches = [...context.matchAll(/"(?:title|name|channelName|label)"\s*:\s*"([^"]+)"/gi)];
-              for (const nm of nameMatches) {
-                const val = nm[1].trim();
-                const isJunk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live TV", "Email", "Home"].includes(val);
-                const isHash = /^[a-zA-Z0-9]{12,}$/.test(val); // Detect random hash IDs
+              // Extract Name strictly from JSON attributes
+              const titleMatches = [...context.matchAll(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/gi)];
+              for (const tm of titleMatches) {
+                const val = tm[1].trim();
+                const isJunk = junkNames.includes(val);
+                const isHash = /^[a-zA-Z0-9]{10,}$/.test(val); // Ignore raw hashes
                 
-                if (!isJunk && !isHash) {
+                if (!isJunk && !isHash && val.length > 2) {
                   channelName = val;
                   break;
                 }
               }
 
-              // Extract Logo from RSC Context
-              const logoMatch = context.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/i) ||
-                                context.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
-              
-              if (logoMatch && !logoMatch[1].includes("avatar") && !logoMatch[1].includes("default")) {
-                logoUrl = logoMatch[1];
-              }
-
-              // Fallback mapping if hash ID is used in stream URL path
-              try {
-                const parsed = new URL(streamUrl);
-                const pathParts = parsed.pathname.split("/").filter(Boolean);
-                const slug = pathParts[0] ? pathParts[0].replace(".m3u8", "").toLowerCase() : "";
-
-                if (knownChannelMap[slug]) {
-                  if (!channelName) channelName = knownChannelMap[slug].name;
-                  if (!logoUrl) logoUrl = knownChannelMap[slug].logo;
-                } else if (!channelName && slug && !/^[a-zA-Z0-9]{12,}$/.test(slug)) {
-                  channelName = slug.replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+              // Extract Logo strictly from image properties
+              const logoMatches = [...context.matchAll(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/gi)];
+              for (const lm of logoMatches) {
+                const val = lm[1].trim();
+                if (!val.includes("avatar") && !val.includes("default") && !val.includes("placeholder")) {
+                  logoUrl = val;
+                  break;
                 }
-              } catch (e) {}
-
-              // Final fallbacks
-              if (!channelName) {
-                channelName = `Live Channel ${fallbackCount}`;
               }
 
-              if (!logoUrl && allImages[channels.length]) {
-                logoUrl = allImages[channels.length];
+              // Direct image regex fallback in context
+              if (!logoUrl) {
+                const imgFallback = context.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+                if (imgFallback && !imgFallback[1].includes("default")) {
+                  logoUrl = imgFallback[1];
+                }
               }
+
+              // Skip entries without valid channel names or broken streams
+              if (!channelName) continue;
 
               seenUrls.add(streamUrl);
 
@@ -150,12 +150,11 @@ jobs:
               });
 
               m3uContent += `#EXTINF:-1 tvg-name="${channelName}" tvg-logo="${logoUrl}", ${channelName}\n${streamUrl}\n`;
-              fallbackCount++;
             }
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully mapped ${channels.length} clean channels.`);
+            console.log(`Successfully generated ${channels.length} valid named channels.`);
           }
 
           processData();
@@ -167,5 +166,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Completely clean channel names & fixed logo matching: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Accurate Channel Name and Logo Parsing Fix: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
