@@ -29,7 +29,9 @@ jobs:
           const fs = require("fs");
           const https = require("https");
 
+          // Ayna OTT Main & Block APIs to retrieve all channels
           const urls = [
+            "https://web.aynaott.com/live-tvs?_rsc=d6u12",
             "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
             "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12"
           ];
@@ -56,77 +58,92 @@ jobs:
               rawData += await fetchData(url) + "\n";
             }
 
+            // Unescape quotes and slashes for parsing RSC payload
+            const cleanedData = rawData.replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+
             const channels = [];
             const seenUrls = new Set();
             let m3uContent = "#EXTM3U\n";
 
-            // RSC lines clean & unescape
-            const lines = rawData.split("\n");
+            // Regex pattern to extract JSON objects containing m3u8 streams
+            const regex = /\{[^{}]*"(?:stream_url|streamUrl|url|link|src)"\s*:\s*"(https?:[^\s"\\]+\.m3u8[^\s"\\]*)"[^{}]*\}/gi;
+            
+            // Alternative match for whole object boundaries in RSC response
+            const objectBlocks = cleanedData.match(/\{[^{}]*\}/g) || [];
 
-            for (let line of lines) {
-              if (!line.includes(".m3u8")) continue;
+            // Helper function to extract channel info from JSON string
+            function extractInfo(str) {
+              const urlMatch = str.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
+              if (!urlMatch) return null;
 
-              // Clean escaped JSON strings in RSC format
-              let cleanedLine = line.replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+              const streamUrl = urlMatch[1];
 
-              // Match JSON object or chunk containing stream URL
-              const jsonMatches = cleanedLine.match(/\{[^{}]*"(?:streamUrl|url|file|src|link)"\s*:\s*"[^"]+\.m3u8[^"]*"[^{}]*\}/g) || 
-                                cleanedLine.match(/\{[^{}]*\.m3u8[^{}]*\}/g);
+              // Title match priorities
+              const titleMatch = str.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
+              const logoMatch = str.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/i) ||
+                                str.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
 
-              const targets = jsonMatches || [cleanedLine];
+              let title = titleMatch ? titleMatch[1].trim() : "";
+              let logo = logoMatch ? logoMatch[1] : "";
 
-              for (let block of targets) {
-                // Extract Stream URL (.m3u8)
-                const urlMatch = block.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/);
-                if (!urlMatch) continue;
+              // Skip invalid site UI keywords
+              const junkTitles = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT"];
+              if (junkTitles.includes(title)) title = "";
 
-                const streamUrl = urlMatch[1];
+              return { title, logo, streamUrl };
+            }
 
-                // Skip duplicate links
-                if (seenUrls.has(streamUrl)) continue;
+            for (const block of objectBlocks) {
+              if (!block.includes(".m3u8")) continue;
 
-                // Extract Channel Title (Searching strictly within the same block)
-                const titleMatch = block.match(/"(?:title|name|channelName|label|tvName)"\s*:\s*"([^"]+)"/i);
-                let title = titleMatch ? titleMatch[1].trim() : "";
+              const item = extractInfo(block);
+              if (!item || !item.streamUrl) continue;
 
-                // Skip site menu items or boilerplate metadata
-                const junkTitles = [
-                  "viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT",
-                  "Email", "Phone number", "Subscriber ID", "Home", "Live TV", "Drama", "Movies",
-                  "Series", "Privacy Policy", "Terms of Service", "About Us", "Contact Us", "FAQ", "News"
-                ];
+              if (seenUrls.has(item.streamUrl)) continue;
 
-                if (!title || junkTitles.includes(title)) {
-                  // Fallback: search nearby text inside block for channel title
-                  const fallbackTitleMatch = block.match(/"text"\s*:\s*"([^"]+)"/i);
-                  if (fallbackTitleMatch && !junkTitles.includes(fallbackTitleMatch[1])) {
-                    title = fallbackTitleMatch[1].trim();
-                  } else {
-                    title = `Channel ${channels.length + 1}`;
-                  }
-                }
+              const finalTitle = item.title || `Channel ${channels.length + 1}`;
+              const finalLogo = item.logo || "";
 
-                // Extract Logo URL
-                const logoMatch = block.match(/"(?:logo|image|thumbnail|poster|icon|src)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/i) ||
-                                  block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
-                
-                const logo = logoMatch ? logoMatch[1] : "";
+              seenUrls.add(item.streamUrl);
+              channels.push({
+                name: finalTitle,
+                logo: finalLogo,
+                url: item.streamUrl
+              });
 
-                seenUrls.add(streamUrl);
+              m3uContent += `#EXTINF:-1 tvg-name="${finalTitle}" tvg-logo="${finalLogo}", ${finalTitle}\n${item.streamUrl}\n`;
+            }
 
-                channels.push({
-                  name: title,
-                  logo: logo,
-                  url: streamUrl
-                });
+            // Global regex scan fallback for any missed streams with nearby titles/logos
+            const allStreamMatches = [...cleanedData.matchAll(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi)];
+            for (const match of allStreamMatches) {
+              const streamUrl = match[1];
+              if (seenUrls.has(streamUrl)) continue;
 
-                m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
-              }
+              // Search surrounding 500 characters for metadata
+              const startIndex = Math.max(0, match.index - 250);
+              const endIndex = Math.min(cleanedData.length, match.index + 250);
+              const context = cleanedData.substring(startIndex, endIndex);
+
+              const titleMatch = context.match(/"(?:title|name|channelName)"\s*:\s*"([^"]+)"/i);
+              const logoMatch = context.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+
+              const title = titleMatch ? titleMatch[1].trim() : `Channel ${channels.length + 1}`;
+              const logo = logoMatch ? logoMatch[1] : "";
+
+              seenUrls.add(streamUrl);
+              channels.push({
+                name: title,
+                logo: logo,
+                url: streamUrl
+              });
+
+              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
             }
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully generated ${channels.length} unique channels.`);
+            console.log(`Total Unique Channels Generated: ${channels.length}`);
           }
 
           processData();
@@ -138,5 +155,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed metadata matching & excluded UI elements: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated all channels with accurate titles and logos: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
