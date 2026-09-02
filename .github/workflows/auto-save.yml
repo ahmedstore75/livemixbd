@@ -53,6 +53,10 @@ jobs:
 
           // Backup CDN Logos mapped strictly to channel names
           const logoFallbackMap = {
+            "btv": "https://web.aynaott.com/logos/btv.png",
+            "btv national hd": "https://web.aynaott.com/logos/btv.png",
+            "btv world": "https://web.aynaott.com/logos/btvworld.png",
+            "btv ctg": "https://web.aynaott.com/logos/btvctg.png",
             "channel i": "https://web.aynaott.com/logos/channel-i.png",
             "ntv": "https://web.aynaott.com/logos/ntv.png",
             "bangla vision": "https://web.aynaott.com/logos/banglavision.png",
@@ -68,15 +72,20 @@ jobs:
             "channel 24": "https://web.aynaott.com/logos/channel24.png",
             "dbc news": "https://web.aynaott.com/logos/dbc.png",
             "atn news": "https://web.aynaott.com/logos/atn-news.png",
-            "t sports hd": "https://web.aynaott.com/logos/tsports.png",
-            "tsn 1": "https://web.aynaott.com/logos/tsports.png",
-            "tsn 2": "https://web.aynaott.com/logos/tsports.png",
-            "tsn 3": "https://web.aynaott.com/logos/tsports.png",
-            "espn": "https://web.aynaott.com/logos/espn.png",
-            "nfl network": "https://web.aynaott.com/logos/nfl.png",
             "gazi tv": "https://web.aynaott.com/logos/gtv.png",
             "independent tv": "https://web.aynaott.com/logos/independent.png"
           };
+
+          // Priority sorting list for Bangladeshi Channels
+          const bdChannelPriority = [
+            "btv national hd", "btv", "btv world", "btv ctg", 
+            "channel i", "ntv", "bangla vision", "rtv", "atn bangla", 
+            "etv", "maasranga tv", "deepto tv", "ekhon tv", "ekattor tv", 
+            "jamuna tv", "news 24 bd", "channel 24", "dbc news", "atn news", 
+            "independent tv", "gazi tv", "channel 9", "sa tv", "bangla tv", 
+            "mohona tv", "nexus tv", "bijoy tv", "global tv", "my tv", 
+            "ananda tv", "desh tv", "boishakhi tv"
+          ];
 
           async function processData() {
             let rawData = "";
@@ -89,9 +98,8 @@ jobs:
               .replace(/\\\\/g, "\\")
               .replace(/\\u0026/g, "&");
 
-            const channels = [];
+            let extractedChannels = [];
             const seenUrls = new Set();
-            let m3uContent = "#EXTM3U\n";
 
             const rawBlocks = cleanedData.split(/(?=\{"id"|\{"title"|\{"name")/g);
 
@@ -118,7 +126,6 @@ jobs:
               if (!title) continue;
 
               let logoUrl = "";
-              // Catch absolute & relative image paths from payload
               const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                                 block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
                                 block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
@@ -133,7 +140,6 @@ jobs:
                 }
               }
 
-              // Apply channel name lookup if API image is missing
               const lowerTitle = title.toLowerCase();
               if (!logoUrl && logoFallbackMap[lowerTitle]) {
                 logoUrl = logoFallbackMap[lowerTitle];
@@ -141,18 +147,36 @@ jobs:
 
               seenUrls.add(streamUrl);
 
-              channels.push({
+              extractedChannels.push({
                 name: title,
                 logo: logoUrl,
                 url: streamUrl
               });
-
-              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logoUrl}", ${title}\n${streamUrl}\n`;
             }
 
-            fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
+            // Custom sorting: BD channels first based on priority array
+            extractedChannels.sort((a, b) => {
+              const nameA = a.name.toLowerCase();
+              const nameB = b.name.toLowerCase();
+
+              const indexA = bdChannelPriority.findIndex(item => nameA.includes(item));
+              const indexB = bdChannelPriority.findIndex(item => nameB.includes(item));
+
+              if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+              if (indexA !== -1) return -1;
+              if (indexB !== -1) return 1;
+
+              return nameA.localeCompare(nameB);
+            });
+
+            let m3uContent = "#EXTM3U\n";
+            for (const ch of extractedChannels) {
+              m3uContent += `#EXTINF:-1 tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
+            }
+
+            fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully generated ${channels.length} channels with accurate logos.`);
+            console.log(`Successfully generated and ordered ${extractedChannels.length} channels.`);
           }
 
           processData();
@@ -164,5 +188,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Added relative path parsing and logo fallback map: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Prioritized BD channels starting with BTV: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
