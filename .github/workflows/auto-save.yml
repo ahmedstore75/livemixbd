@@ -51,12 +51,11 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          // Backup CDN Logos mapped strictly to channel names
+          // Logo Mapping Fallback
           const logoFallbackMap = {
             "btv": "https://web.aynaott.com/logos/btv.png",
             "btv national hd": "https://web.aynaott.com/logos/btv.png",
-            "btv world": "https://web.aynaott.com/logos/btvworld.png",
-            "btv ctg": "https://web.aynaott.com/logos/btvctg.png",
+            "somoy tv": "https://web.aynaott.com/logos/somoy.png",
             "channel i": "https://web.aynaott.com/logos/channel-i.png",
             "ntv": "https://web.aynaott.com/logos/ntv.png",
             "bangla vision": "https://web.aynaott.com/logos/banglavision.png",
@@ -76,9 +75,9 @@ jobs:
             "independent tv": "https://web.aynaott.com/logos/independent.png"
           };
 
-          // Priority sorting list for Bangladeshi Channels
+          // Bangladeshi Channel Top Order
           const bdChannelPriority = [
-            "btv national hd", "btv", "btv world", "btv ctg", 
+            "btv national hd", "btv", "btv world", "btv ctg", "somoy tv",
             "channel i", "ntv", "bangla vision", "rtv", "atn bangla", 
             "etv", "maasranga tv", "deepto tv", "ekhon tv", "ekattor tv", 
             "jamuna tv", "news 24 bd", "channel 24", "dbc news", "atn news", 
@@ -125,6 +124,24 @@ jobs:
 
               if (!title) continue;
 
+              // Extract Dynamic Category directly from API block
+              let category = "General";
+              const catMatch = block.match(/"(?:category|group|genre|categoryName|type)"\s*:\s*"([^"]+)"/i) ||
+                               block.match(/"(?:category|group|genre)"\s*:\s*\{[^}]*"name"\s*:\s*"([^"]+)"/i);
+
+              if (catMatch && catMatch[1]) {
+                const parsedCat = catMatch[1].trim();
+                if (parsedCat && !["default", "channel", "tv"].includes(parsedCat.toLowerCase())) {
+                  category = parsedCat;
+                }
+              }
+
+              // Force Bangladeshi Channels under "Bangladeshi" group if not detected
+              const lowerTitle = title.toLowerCase();
+              if (bdChannelPriority.some(item => lowerTitle.includes(item))) {
+                category = "Bangladeshi";
+              }
+
               let logoUrl = "";
               const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                                 block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
@@ -140,7 +157,6 @@ jobs:
                 }
               }
 
-              const lowerTitle = title.toLowerCase();
               if (!logoUrl && logoFallbackMap[lowerTitle]) {
                 logoUrl = logoFallbackMap[lowerTitle];
               }
@@ -150,33 +166,43 @@ jobs:
               extractedChannels.push({
                 name: title,
                 logo: logoUrl,
-                url: streamUrl
+                url: streamUrl,
+                category: category
               });
             }
 
-            // Custom sorting: BD channels first based on priority array
+            // Priority Sorting: Bangladeshi channels first, then by API Category
             extractedChannels.sort((a, b) => {
-              const nameA = a.name.toLowerCase();
-              const nameB = b.name.toLowerCase();
+              if (a.category === "Bangladeshi" && b.category !== "Bangladeshi") return -1;
+              if (a.category !== "Bangladeshi" && b.category === "Bangladeshi") return 1;
 
-              const indexA = bdChannelPriority.findIndex(item => nameA.includes(item));
-              const indexB = bdChannelPriority.findIndex(item => nameB.includes(item));
+              if (a.category === "Bangladeshi" && b.category === "Bangladeshi") {
+                const nameA = a.name.toLowerCase();
+                const nameB = b.name.toLowerCase();
+                const indexA = bdChannelPriority.findIndex(item => nameA.includes(item));
+                const indexB = bdChannelPriority.findIndex(item => nameB.includes(item));
 
-              if (indexA !== -1 && indexB !== -1) return indexA - indexB;
-              if (indexA !== -1) return -1;
-              if (indexB !== -1) return 1;
+                if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+                if (indexA !== -1) return -1;
+                if (indexB !== -1) return 1;
+              }
 
-              return nameA.localeCompare(nameB);
+              // Group remaining by Category alphabetically
+              if (a.category !== b.category) {
+                return a.category.localeCompare(b.category);
+              }
+
+              return a.name.localeCompare(b.name);
             });
 
             let m3uContent = "#EXTM3U\n";
             for (const ch of extractedChannels) {
-              m3uContent += `#EXTINF:-1 tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
+              m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
             }
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully generated and ordered ${extractedChannels.length} channels.`);
+            console.log(`Successfully mapped channels according to API dynamic categories.`);
           }
 
           processData();
@@ -188,5 +214,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Prioritized BD channels starting with BTV: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Extracted dynamic API categories for group-title: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
