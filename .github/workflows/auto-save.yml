@@ -51,7 +51,7 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          // Logo Fallback
+          // Logo Fallback Map
           const logoFallbackMap = {
             "btv": "https://web.aynaott.com/logos/btv.png",
             "btv national hd": "https://web.aynaott.com/logos/btv.png",
@@ -75,7 +75,7 @@ jobs:
             "independent tv": "https://web.aynaott.com/logos/independent.png"
           };
 
-          // Strict Bangladeshi Mainstream Channels List
+          // Priority Bangladeshi Channels
           const bdChannelPriority = [
             "btv national hd", "btv", "btv world", "btv ctg", "somoy tv",
             "channel i", "ntv", "bangla vision", "rtv", "atn bangla", 
@@ -86,14 +86,31 @@ jobs:
             "ananda tv", "desh tv", "boishakhi tv"
           ];
 
-          // Specific Category Filter Keywords
+          // Keywords List for IPTV Categories
+          const indianBanglaKeywords = ["star jalsha", "zee bangla", "colors bangla", "sangeet bangla", "akash ath", "news18 bangla", "tv9 bangla", "calcuttatv"];
           const sportsKeywords = ["sports", "sport", "t sports", "tsn", "espn", "nfl", "bein", "cricket", "football", "willow", "ptv sports", "bleav", "bahrain sports"];
+          const musicKeywords = ["music", "m tv", "mtv", "zoom", "9xm", "9x jalwa", "sangeet", "vh1", "club"];
+          const hindiKeywords = ["star plus", "zee tv", "colors hindi", "sony tv", "sab tv", "star bharat", "dangal"];
           const islamicKeywords = ["islamic", "peace tv", "makkah", "madinah", "quran", "sunnah", "iqra", "deen"];
           const kidsKeywords = ["kids", "cartoon", "nick", "pogo", "disney", "sonic", "hungama", "duronto", "baby"];
+          const movieKeywords = ["movie", "cinema", "star gold", "zee cinema", "sony max", "hbo", "action", "goldmine"];
+          const newsKeywords = ["bbc", "cnn", "al jazeera", "republic", "ndtv", "news18", "times now", "reuters"];
           const docKeywords = ["discovery", "nat geo", "national geographic", "history", "animal planet", "investigation"];
-          const entertainmentKeywords = ["usa tv", "usa", "zee", "star", "colors", "sony", "hbo", "cinema", "movie", "drama", "action"];
 
-          const categoryOrder = ["Bangladeshi", "Sports", "Islamic", "Kids", "Documentary", "Entertainment", "Others"];
+          const categoryOrder = [
+            "Bangladeshi", 
+            "Indian Bangla", 
+            "Sports", 
+            "Music", 
+            "Hindi", 
+            "Islamic", 
+            "Kids", 
+            "Movies", 
+            "News", 
+            "Documentary", 
+            "Entertainment", 
+            "Others"
+          ];
 
           async function processData() {
             let rawData = "";
@@ -125,7 +142,6 @@ jobs:
               
               if (titleMatch) {
                 let val = titleMatch[1];
-                // Clean unwanted character escape codes (Fixes "\t USA TV" issue)
                 val = val.replace(/\\t|\\n|\\r/g, "").trim();
                 const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels"];
                 if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val)) {
@@ -158,28 +174,27 @@ jobs:
               // Categorization Logic
               let category = "Others";
               
-              // 1. Check Bangladeshi First
               if (bdChannelPriority.some(item => lowerTitle === item || lowerTitle.includes(item))) {
                 category = "Bangladeshi";
-              } 
-              // 2. Check Sports
-              else if (sportsKeywords.some(item => lowerTitle.includes(item))) {
+              } else if (indianBanglaKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Indian Bangla";
+              } else if (sportsKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Sports";
-              } 
-              // 3. Check Islamic
-              else if (islamicKeywords.some(item => lowerTitle.includes(item))) {
+              } else if (musicKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Music";
+              } else if (hindiKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Hindi";
+              } else if (islamicKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Islamic";
-              } 
-              // 4. Check Kids
-              else if (kidsKeywords.some(item => lowerTitle.includes(item))) {
+              } else if (kidsKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Kids";
-              } 
-              // 5. Check Documentary
-              else if (docKeywords.some(item => lowerTitle.includes(item))) {
+              } else if (movieKeywords.some(item => lowerTitle.includes(item))) {
+                category = "Movies";
+              } else if (newsKeywords.some(item => lowerTitle.includes(item))) {
+                category = "News";
+              } else if (docKeywords.some(item => lowerTitle.includes(item))) {
                 category = "Documentary";
-              } 
-              // 6. Check Entertainment (Includes USA TV, Drama, Movies)
-              else if (entertainmentKeywords.some(item => lowerTitle.includes(item))) {
+              } else if (lowerTitle.includes("usa") || lowerTitle.includes("tv")) {
                 category = "Entertainment";
               }
 
@@ -193,7 +208,7 @@ jobs:
               });
             }
 
-            // Category and Name Sorting
+            // Sorting Categories
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
@@ -223,7 +238,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Cleaned channel titles and organized into strict categories.`);
+            console.log(`Playlist generated with full IPTV category mapping.`);
           }
 
           processData();
@@ -235,5 +250,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed title formatting and updated categories: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated full IPTV categories (Indian Bangla, Hindi, Music, Movies, etc.): $(date +'%Y-%m-%d %H:%M:%S')"
           git push
