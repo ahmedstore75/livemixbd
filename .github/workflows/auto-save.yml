@@ -29,7 +29,6 @@ jobs:
           const fs = require("fs");
           const https = require("https");
 
-          // Ayna OTT Main & Block APIs to retrieve all channels
           const urls = [
             "https://web.aynaott.com/live-tvs?_rsc=d6u12",
             "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
@@ -52,98 +51,100 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
+          function cleanChannelName(slug) {
+            if (!slug) return "";
+            // Replace hyphens, underscores and capitalize words
+            let name = slug.replace(/[-_]/g, " ")
+                           .replace(/index/gi, "")
+                           .replace(/hls/gi, "")
+                           .replace(/stream/gi, "")
+                           .trim();
+
+            if (!name) return "";
+
+            // Capitalize properly (e.g. banglatv -> Bangla Tv)
+            return name.replace(/\b\w/g, l => l.toUpperCase());
+          }
+
           async function processData() {
             let rawData = "";
             for (const url of urls) {
               rawData += await fetchData(url) + "\n";
             }
 
-            // Unescape quotes and slashes for parsing RSC payload
-            const cleanedData = rawData.replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+            // Unescape Unicode & standard JSON escape sequences
+            const cleanedData = rawData
+              .replace(/\\"/g, '"')
+              .replace(/\\\\/g, "\\")
+              .replace(/\\u0026/g, "&");
 
             const channels = [];
             const seenUrls = new Set();
             let m3uContent = "#EXTM3U\n";
 
-            // Regex pattern to extract JSON objects containing m3u8 streams
-            const regex = /\{[^{}]*"(?:stream_url|streamUrl|url|link|src)"\s*:\s*"(https?:[^\s"\\]+\.m3u8[^\s"\\]*)"[^{}]*\}/gi;
-            
-            // Alternative match for whole object boundaries in RSC response
-            const objectBlocks = cleanedData.match(/\{[^{}]*\}/g) || [];
+            // Find all m3u8 stream links
+            const streamMatches = [...cleanedData.matchAll(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi)];
 
-            // Helper function to extract channel info from JSON string
-            function extractInfo(str) {
-              const urlMatch = str.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
-              if (!urlMatch) return null;
-
-              const streamUrl = urlMatch[1];
-
-              // Title match priorities
-              const titleMatch = str.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
-              const logoMatch = str.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/i) ||
-                                str.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
-
-              let title = titleMatch ? titleMatch[1].trim() : "";
-              let logo = logoMatch ? logoMatch[1] : "";
-
-              // Skip invalid site UI keywords
-              const junkTitles = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT"];
-              if (junkTitles.includes(title)) title = "";
-
-              return { title, logo, streamUrl };
-            }
-
-            for (const block of objectBlocks) {
-              if (!block.includes(".m3u8")) continue;
-
-              const item = extractInfo(block);
-              if (!item || !item.streamUrl) continue;
-
-              if (seenUrls.has(item.streamUrl)) continue;
-
-              const finalTitle = item.title || `Channel ${channels.length + 1}`;
-              const finalLogo = item.logo || "";
-
-              seenUrls.add(item.streamUrl);
-              channels.push({
-                name: finalTitle,
-                logo: finalLogo,
-                url: item.streamUrl
-              });
-
-              m3uContent += `#EXTINF:-1 tvg-name="${finalTitle}" tvg-logo="${finalLogo}", ${finalTitle}\n${item.streamUrl}\n`;
-            }
-
-            // Global regex scan fallback for any missed streams with nearby titles/logos
-            const allStreamMatches = [...cleanedData.matchAll(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi)];
-            for (const match of allStreamMatches) {
+            for (const match of streamMatches) {
               const streamUrl = match[1];
+
+              // Filter out duplicate streams
               if (seenUrls.has(streamUrl)) continue;
 
-              // Search surrounding 500 characters for metadata
-              const startIndex = Math.max(0, match.index - 250);
-              const endIndex = Math.min(cleanedData.length, match.index + 250);
+              const startIndex = Math.max(0, match.index - 400);
+              const endIndex = Math.min(cleanedData.length, match.index + 400);
               const context = cleanedData.substring(startIndex, endIndex);
 
-              const titleMatch = context.match(/"(?:title|name|channelName)"\s*:\s*"([^"]+)"/i);
-              const logoMatch = context.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+              // 1. Try JSON metadata extraction for Title
+              let channelName = "";
+              const titleMatch = context.match(/"(?:title|name|channelName|tvName)"\s*:\s*"([^"]+)"/i);
+              
+              const junkTitles = [
+                "viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT",
+                "Email", "Phone number", "Subscriber ID", "Home", "Live TV", "Drama", "Movies",
+                "Series", "Privacy Policy", "Terms of Service", "About Us", "Contact Us", "FAQ", "News"
+              ];
 
-              const title = titleMatch ? titleMatch[1].trim() : `Channel ${channels.length + 1}`;
-              const logo = logoMatch ? logoMatch[1] : "";
+              if (titleMatch && !junkTitles.includes(titleMatch[1].trim())) {
+                channelName = titleMatch[1].trim();
+              }
+
+              // 2. Fallback: Parse Title directly from Stream URL Path
+              if (!channelName) {
+                try {
+                  const parsedUrl = new URL(streamUrl);
+                  const pathSegments = parsedUrl.pathname.split("/").filter(Boolean);
+                  if (pathSegments.length > 0) {
+                    const lastSegment = pathSegments[0] !== "hls" ? pathSegments[0] : pathSegments[1];
+                    channelName = cleanChannelName(lastSegment);
+                  }
+                } catch (e) {}
+              }
+
+              if (!channelName) channelName = `Channel ${channels.length + 1}`;
+
+              // 3. Extract Logo URL from context or API
+              let logoUrl = "";
+              const logoMatch = context.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+              
+              if (logoMatch) {
+                logoUrl = logoMatch[1];
+              }
 
               seenUrls.add(streamUrl);
+
               channels.push({
-                name: title,
-                logo: logo,
+                name: channelName,
+                logo: logoUrl,
                 url: streamUrl
               });
 
-              m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+              m3uContent += `#EXTINF:-1 tvg-name="${channelName}" tvg-logo="${logoUrl}", ${channelName}\n${streamUrl}\n`;
             }
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Total Unique Channels Generated: ${channels.length}`);
+            console.log(`Successfully generated ${channels.length} channels.`);
           }
 
           processData();
@@ -155,5 +156,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated all channels with accurate titles and logos: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed Channel Names and Logo extraction: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
