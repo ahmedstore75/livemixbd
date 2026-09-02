@@ -51,13 +51,39 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
+          // Backup CDN Logos mapped strictly to channel names
+          const logoFallbackMap = {
+            "channel i": "https://web.aynaott.com/logos/channel-i.png",
+            "ntv": "https://web.aynaott.com/logos/ntv.png",
+            "bangla vision": "https://web.aynaott.com/logos/banglavision.png",
+            "rtv": "https://web.aynaott.com/logos/rtv.png",
+            "atn bangla": "https://web.aynaott.com/logos/atn-bangla.png",
+            "etv": "https://web.aynaott.com/logos/etv.png",
+            "maasranga tv": "https://web.aynaott.com/logos/maasranga.png",
+            "deepto tv": "https://web.aynaott.com/logos/deepto.png",
+            "ekhon tv": "https://web.aynaott.com/logos/ekhon.png",
+            "ekattor tv": "https://web.aynaott.com/logos/ekattor.png",
+            "jamuna tv": "https://web.aynaott.com/logos/jamuna.png",
+            "news 24 bd": "https://web.aynaott.com/logos/news24.png",
+            "channel 24": "https://web.aynaott.com/logos/channel24.png",
+            "dbc news": "https://web.aynaott.com/logos/dbc.png",
+            "atn news": "https://web.aynaott.com/logos/atn-news.png",
+            "t sports hd": "https://web.aynaott.com/logos/tsports.png",
+            "tsn 1": "https://web.aynaott.com/logos/tsports.png",
+            "tsn 2": "https://web.aynaott.com/logos/tsports.png",
+            "tsn 3": "https://web.aynaott.com/logos/tsports.png",
+            "espn": "https://web.aynaott.com/logos/espn.png",
+            "nfl network": "https://web.aynaott.com/logos/nfl.png",
+            "gazi tv": "https://web.aynaott.com/logos/gtv.png",
+            "independent tv": "https://web.aynaott.com/logos/independent.png"
+          };
+
           async function processData() {
             let rawData = "";
             for (const url of urls) {
               rawData += await fetchData(url) + "\n";
             }
 
-            // Unescape Unicode & JSON strings properly
             const cleanedData = rawData
               .replace(/\\"/g, '"')
               .replace(/\\\\/g, "\\")
@@ -67,20 +93,17 @@ jobs:
             const seenUrls = new Set();
             let m3uContent = "#EXTM3U\n";
 
-            // Split into structural blocks/objects containing m3u8
             const rawBlocks = cleanedData.split(/(?=\{"id"|\{"title"|\{"name")/g);
 
             for (const block of rawBlocks) {
               if (!block.includes(".m3u8")) continue;
 
-              // Extract Stream URL (.m3u8)
               const streamMatch = block.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
               if (!streamMatch) continue;
 
               const streamUrl = streamMatch[1];
               if (seenUrls.has(streamUrl)) continue;
 
-              // Extract Name strictly within the same block
               let title = "";
               const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
               
@@ -92,17 +115,29 @@ jobs:
                 }
               }
 
-              // Extract Logo URL strictly within the same block
+              if (!title) continue;
+
               let logoUrl = "";
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/i) ||
+              // Catch absolute & relative image paths from payload
+              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
+                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
                                 block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
 
-              if (logoMatch && !logoMatch[1].includes("avatar") && !logoMatch[1].includes("default")) {
-                logoUrl = logoMatch[1];
+              if (logoMatch) {
+                let extracted = logoMatch[1].trim();
+                if (extracted.startsWith("/")) {
+                  extracted = "https://web.aynaott.com" + extracted;
+                }
+                if (!extracted.includes("avatar") && !extracted.includes("default")) {
+                  logoUrl = extracted;
+                }
               }
 
-              // Skip if no proper title was found to prevent mismatching
-              if (!title) continue;
+              // Apply channel name lookup if API image is missing
+              const lowerTitle = title.toLowerCase();
+              if (!logoUrl && logoFallbackMap[lowerTitle]) {
+                logoUrl = logoFallbackMap[lowerTitle];
+              }
 
               seenUrls.add(streamUrl);
 
@@ -117,7 +152,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully mapped ${channels.length} unique channels with logos.`);
+            console.log(`Successfully generated ${channels.length} channels with accurate logos.`);
           }
 
           processData();
@@ -129,5 +164,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed block matching for accurate logos and titles: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Added relative path parsing and logo fallback map: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
