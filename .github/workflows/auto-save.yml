@@ -1,4 +1,4 @@
-Name: Generate Accurate M3U and JSON Playlist
+name: Generate Accurate M3U and JSON Playlist
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Fetch API and Extract Channel Details
         run: |
-          node -e '
+          cat << 'EOF' > parse.js
           const fs = require("fs");
           const https = require("https");
 
@@ -36,7 +36,7 @@ jobs:
 
           const options = {
             headers: {
-              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
               "RSC": "1",
               "Accept": "*/*"
             }
@@ -50,73 +50,61 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          async function process() {
+          async function processData() {
             let rawData = "";
             for (const url of urls) {
               rawData += await fetchData(url) + "\n";
             }
 
-            // Clean escaped characters for JSON structure evaluation
-            const cleanedData = rawData.replace(/\\"/g, "\"").replace(/\\\\/g, "\\");
+            const cleanedData = rawData.replace(/\\"/g, '"').replace(/\\\\/g, "\\");
 
             const channels = [];
             const seenUrls = new Set();
             let m3uContent = "#EXTM3U\n";
 
-            // Find JSON-like object blocks in the payload to match channel metadata accurately
-            const objectMatches = cleanedData.match(/\{[^{}]*(?:name|title|channelName)[^{}]*\}/g) || [];
+            // Extract blocks containing m3u8 links
+            const streamMatches = [...cleanedData.matchAll(/(https?:[^\s"]+\.m3u8[^\s"]*)/g)];
+            const imageMatches = [...cleanedData.matchAll(/https?:[^\s"]+\.(?:png|jpg|jpeg|webp)/gi)];
+            const titleMatches = [...cleanedData.matchAll(/"(?:name|title|channelName|label)":"([^"]+)"/g)];
 
-            for (const block of objectMatches) {
-              const urlMatch = block.match(/(https?:[^\s"]+\.m3u8[^\s"]*)/);
-              if (!urlMatch) continue;
+            const ignoredTitles = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT"];
+            const filteredTitles = titleMatches
+              .map(m => m[1])
+              .filter(t => !ignoredTitles.includes(t));
 
-              const streamUrl = urlMatch[1];
+            let channelIndex = 0;
+            for (const match of streamMatches) {
+              const streamUrl = match[1];
 
-              // Skip duplicate stream URLs
+              // Skip duplicate URLs
               if (seenUrls.has(streamUrl)) continue;
-
-              // Extract Channel Name
-              const nameMatch = block.match(/"(?:name|title|channelName|label)"\s*:\s*"([^"]+)"/i);
-              let title = nameMatch ? nameMatch[1].trim() : "";
-
-              // Skip noise/metadata titles
-              const ignoredTitles = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT"];
-              if (!title || ignoredTitles.includes(title)) continue;
-
-              // Extract Logo URL
-              const logoMatch = block.match(/"(?:logo|image|thumbnail|poster|icon)"\s*:\s*"([^"]+\.(?:png|jpg|jpeg|webp)[^"]*)"/i) 
-                             || block.match(/(https?:[^\s"]+\.(?:png|jpg|jpeg|webp)[^\s"]*)/i);
-              const logo = logoMatch ? logoMatch[1] : "";
-
               seenUrls.add(streamUrl);
-              channels.push({ name: title, logo: logo, url: streamUrl });
+
+              const title = filteredTitles[channelIndex] || `Channel ${channelIndex + 1}`;
+              const logo = imageMatches[channelIndex] ? imageMatches[channelIndex][0] : "";
+
+              channels.push({
+                name: title,
+                logo: logo,
+                url: streamUrl
+              });
 
               m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="${logo}", ${title}\n${streamUrl}\n`;
+              channelIndex++;
             }
-
-            // Fallback parsing if object parsing misses streams
-            const allStreams = [...cleanedData.matchAll(/(https?:[^\s"]+\.m3u8[^\s"]*)/g)];
-            allStreams.forEach((match, idx) => {
-              const streamUrl = match[1];
-              if (!seenUrls.has(streamUrl)) {
-                seenUrls.add(streamUrl);
-                const title = `Channel ${channels.length + 1}`;
-                channels.push({ name: title, logo: "", url: streamUrl });
-                m3uContent += `#EXTINF:-1 tvg-name="${title}" tvg-logo="", ${title}\n${streamUrl}\n`;
-              }
-            });
 
             fs.writeFileSync("channels.json", JSON.stringify(channels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
           }
 
-          process();
-          '
+          processData();
+          EOF
+          node parse.js
 
       - name: Commit and Push Files
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed Channel Names & Logos: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated Playlist & JSON: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
