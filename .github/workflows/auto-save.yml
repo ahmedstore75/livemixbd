@@ -51,76 +51,88 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          // Master Override Dictionary for Unfail-safe Categorization
-          const masterCategoryMap = {
-            // Indian Bangla
-            "sony aath": "Indian Bangla", "aath": "Indian Bangla", "star jalsha": "Indian Bangla", "zee bangla": "Indian Bangla", 
-            "colors bangla": "Indian Bangla", "sangeet bangla": "Indian Bangla", "akash ath": "Indian Bangla", "ruposhi bangla": "Indian Bangla", 
-            "calcuttatv": "Indian Bangla", "dd bangla": "Indian Bangla", "enter 10 bangla": "Indian Bangla", "news18 bangla": "Indian Bangla", 
-            "tv9 bangla": "Indian Bangla", "bangla talkies": "Indian Bangla",
-
-            // Bangladeshi
-            "btv": "Bangladeshi", "btv national hd": "Bangladeshi", "btv world": "Bangladeshi", "btv ctg": "Bangladeshi",
-            "somoy tv": "Bangladeshi", "channel i": "Bangladeshi", "ntv": "Bangladeshi", "bangla vision": "Bangladeshi",
-            "rtv": "Bangladeshi", "atn bangla": "Bangladeshi", "etv": "Bangladeshi", "maasranga tv": "Bangladeshi",
-            "deepto tv": "Bangladeshi", "ekhon tv": "Bangladeshi", "ekattor tv": "Bangladeshi", "jamuna tv": "Bangladeshi",
-            "news 24 bd": "Bangladeshi", "channel 24": "Bangladeshi", "dbc news": "Bangladeshi", "atn news": "Bangladeshi",
-            "independent tv": "Bangladeshi", "gazi tv": "Bangladeshi", "gtv": "Bangladeshi", "asian tv": "Bangladeshi", 
-            "duronto tv": "Bangladeshi", "sa tv": "Bangladeshi", "channel 9": "Bangladeshi", "mohona tv": "Bangladeshi",
-            "nexus tv": "Bangladeshi", "bijoy tv": "Bangladeshi", "global tv": "Bangladeshi", "my tv": "Bangladeshi",
-            "ananda tv": "Bangladeshi", "desh tv": "Bangladeshi", "boishakhi tv": "Bangladeshi",
-
-            // Islamic
-            "madani tv": "Islamic", "madani": "Islamic", "peace tv": "Islamic", "makkah live": "Islamic", 
-            "madinah live": "Islamic", "quran tv": "Islamic", "sunnah tv": "Islamic", "iqra": "Islamic", "deen tv": "Islamic"
-          };
-
-          // Broad Smart Regex Fallbacks
-          const smartRules = [
-            { category: "Sports", pattern: /sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|t sports/i },
-            { category: "News", pattern: /news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9|anb|bharat/i },
-            { category: "Movies", pattern: /movie|cinema|cine|gold|max|hbo|action|goldmine|picture|&pictures|filmy|flix|popcorn|star gold|zee cinema|sony max|and pictures/i },
-            { category: "Music", pattern: /music|mtv|zoom|9xm|9x|sangeet|vh1|club|b4u hitz|zing|musiq|beat|sound/i },
-            { category: "Kids", pattern: /kid|cartoon|nick|pogo|disney|sonic|hungama|duronto|baby|junior|toon|anime/i },
-            { category: "Documentary", pattern: /discovery|nat geo|national geographic|history|animal planet|investigation|science|planet|earth|docu/i },
-            { category: "Hindi", pattern: /star plus|zee tv|colors hindi|sony tv|sab|star bharat|dangal|b4u|bindass|sahara/i },
-            { category: "Entertainment", pattern: /entertainment|usa|fox|drama|series|show|channel|tv/i }
-          ];
-
-          function resolveCategory(title, rawCategory) {
-            const cleanTitle = title.toLowerCase().trim();
-
-            // 1. Direct Dictionary Match (100% Guaranteed Accuracy)
-            for (const [key, val] of Object.entries(masterCategoryMap)) {
-              if (cleanTitle.includes(key)) return val;
-            }
-
-            // 2. Smart Regex Match
-            for (const rule of smartRules) {
-              if (rule.pattern.test(cleanTitle)) return rule.category;
-            }
-
-            // 3. Fallback to API Category if valid
-            if (rawCategory && rawCategory !== "Others" && rawCategory.length > 2) {
-              return rawCategory;
-            }
-
-            return "Entertainment"; // Safe default instead of "Others"
-          }
-
+          // Master Category Order (As requested by user)
           const categoryOrder = [
-            "Bangladeshi", 
-            "Indian Bangla", 
+            "Bangla", 
             "Sports", 
-            "News",
+            "Kolkata", 
+            "Indian", 
+            "News", 
             "Movies", 
             "Music", 
-            "Hindi", 
             "Islamic", 
             "Kids", 
             "Documentary", 
             "Entertainment"
           ];
+
+          // Priority BD Channels
+          const bdChannelPriority = [
+            "btv national hd", "btv", "btv world", "btv ctg", "somoy tv",
+            "channel i", "ntv", "bangla vision", "rtv", "atn bangla", 
+            "etv", "maasranga tv", "deepto tv", "ekhon tv", "ekattor tv", 
+            "jamuna tv", "news 24 bd", "channel 24", "dbc news", "atn news", 
+            "independent tv", "gazi tv", "gtv", "asian tv", "duronto tv", 
+            "sa tv", "channel 9", "mohona tv", "nexus tv", "bijoy tv", 
+            "global tv", "my tv", "ananda tv", "desh tv", "boishakhi tv"
+          ];
+
+          // Master Override Classifier
+          function resolveCategory(title) {
+            const clean = title.toLowerCase().trim();
+
+            // 1. Bangla (Bangladeshi Channels)
+            if (bdChannelPriority.some(item => clean.includes(item))) {
+              return "Bangla";
+            }
+
+            // 2. Sports
+            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|t sports/i.test(clean)) {
+              return "Sports";
+            }
+
+            // 3. Kolkata (Indian Bangla Channels)
+            if (/sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla|bangla talkies/i.test(clean)) {
+              return "Kolkata";
+            }
+
+            // 4. Indian (Hindi & Indian General Channels)
+            if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine/i.test(clean)) {
+              return "Indian";
+            }
+
+            // 5. Islamic
+            if (/madani|islam|peace|makkah|madinah|quran|sunnah|iqra|deen|huda/i.test(clean)) {
+              return "Islamic";
+            }
+
+            // 6. News
+            if (/news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9|anb|bharat/i.test(clean)) {
+              return "News";
+            }
+
+            // 7. Movies
+            if (/movie|cinema|cine|gold|hbo|action|picture|filmy|flix|popcorn/i.test(clean)) {
+              return "Movies";
+            }
+
+            // 8. Music
+            if (/music|mtv|zoom|9xm|9x|sangeet|vh1|club|b4u hitz|zing|musiq|beat|sound/i.test(clean)) {
+              return "Music";
+            }
+
+            // 9. Kids
+            if (/kid|cartoon|nick|pogo|disney|sonic|hungama|duronto|baby|junior|toon|anime/i.test(clean)) {
+              return "Kids";
+            }
+
+            // 10. Documentary
+            if (/discovery|nat geo|national geographic|history|animal planet|investigation|science|planet|earth|docu/i.test(clean)) {
+              return "Documentary";
+            }
+
+            return "Entertainment";
+          }
 
           async function processData() {
             let rawData = "";
@@ -152,17 +164,13 @@ jobs:
               
               if (titleMatch) {
                 let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
-                const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels"];
+                const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs"];
                 if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val)) {
                   title = val;
                 }
               }
 
               if (!title) continue;
-
-              let rawCategory = "";
-              const categoryMatch = block.match(/"(?:category|group|genre|type)"\s*:\s*"([^"]+)"/i);
-              if (categoryMatch) rawCategory = categoryMatch[1];
 
               let logoUrl = "";
               const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
@@ -179,7 +187,7 @@ jobs:
                 }
               }
 
-              const category = resolveCategory(title, rawCategory);
+              const category = resolveCategory(title);
               seenUrls.add(streamUrl);
 
               extractedChannels.push({
@@ -190,13 +198,16 @@ jobs:
               });
             }
 
-            // Sort Channels by Category Order
+            // Strict Sorting according to Category Order
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
 
-              if (catIndexA !== catIndexB) {
-                return (catIndexA === -1 ? 99 : catIndexA) - (catIndexB === -1 ? 99 : catIndexB);
+              const indexA = catIndexA === -1 ? 99 : catIndexA;
+              const indexB = catIndexB === -1 ? 99 : catIndexB;
+
+              if (indexA !== indexB) {
+                return indexA - indexB;
               }
 
               return a.name.localeCompare(b.name);
@@ -209,7 +220,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`100% Fixed playlist successfully generated.`);
+            console.log(`Playlist generated with exact user category ordering.`);
           }
 
           processData();
@@ -221,5 +232,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Applied 100% Fail-safe Dictionary & Regex Matching System: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated categories to Bangla, Sports, Kolkata, Indian and removed Live-tvs: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
