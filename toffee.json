@@ -8,7 +8,7 @@
                 "id": "rtv",
                 "name": "RTV",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/rtv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -17,7 +17,7 @@
                 "id": "ntv",
                 "name": "NTV",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/ntv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -26,7 +26,7 @@
                 "id": "channel_i",
                 "name": "Channel i",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/channel_i.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -35,7 +35,7 @@
                 "id": "atn_bangla",
                 "name": "ATN Bangla",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/atn_bangla.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -44,7 +44,7 @@
                 "id": "boishakhi_tv",
                 "name": "Boishakhi TV",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/boishakhi_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -53,7 +53,7 @@
                 "id": "deepto_tv",
                 "name": "Deepto TV",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/deepto_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -62,7 +62,7 @@
                 "id": "nagorik_tv",
                 "name": "Nagorik TV",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/nagorik_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -71,7 +71,7 @@
                 "id": "gazi_tv",
                 "name": "Gazi TV (GTV)",
                 "group": "Entertainment",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/gazi_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -82,7 +82,7 @@
                 "id": "duronto_tv",
                 "name": "Duronto TV",
                 "group": "Kids",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/duronto_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -93,7 +93,7 @@
                 "id": "somoy_tv",
                 "name": "Somoy TV",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/somoy_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -102,7 +102,7 @@
                 "id": "jamuna_tv",
                 "name": "Jamuna TV",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -111,7 +111,7 @@
                 "id": "independent_tv",
                 "name": "Independent TV",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/independent_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -120,7 +120,7 @@
                 "id": "channel24",
                 "name": "Channel 24",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/channel24.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -129,7 +129,7 @@
                 "id": "ekhon_tv",
                 "name": "Ekhon TV",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/ekhon_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -138,7 +138,7 @@
                 "id": "dbc_news",
                 "name": "DBC News",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/dbc_news.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -147,7 +147,7 @@
                 "id": "ekattor_tv",
                 "name": "Ekattor TV",
                 "group": "News",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/ekattor_tv.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -158,7 +158,7 @@
                 "id": "fifa_world_cup",
                 "name": "FIFA World Cup Live",
                 "group": "Sports",
-                "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+                "logo": "https://toffeelive.com/images/channels/fifa_world_cup.png",
                 "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8",
                 "user_agent": "okhttp/3.1.0",
                 "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -170,7 +170,7 @@
             "id": "rtv",
             "name": "RTV",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/rtv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -179,7 +179,7 @@
             "id": "ntv",
             "name": "NTV",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/ntv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -188,7 +188,7 @@
             "id": "channel_i",
             "name": "Channel i",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/channel_i.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -197,7 +197,7 @@
             "id": "atn_bangla",
             "name": "ATN Bangla",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/atn_bangla.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -206,7 +206,7 @@
             "id": "boishakhi_tv",
             "name": "Boishakhi TV",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/boishakhi_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -215,7 +215,7 @@
             "id": "deepto_tv",
             "name": "Deepto TV",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/deepto_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -224,7 +224,7 @@
             "id": "nagorik_tv",
             "name": "Nagorik TV",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/nagorik_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -233,7 +233,7 @@
             "id": "gazi_tv",
             "name": "Gazi TV (GTV)",
             "group": "Entertainment",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/gazi_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -242,7 +242,7 @@
             "id": "duronto_tv",
             "name": "Duronto TV",
             "group": "Kids",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/duronto_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -251,7 +251,7 @@
             "id": "somoy_tv",
             "name": "Somoy TV",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/somoy_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -260,7 +260,7 @@
             "id": "jamuna_tv",
             "name": "Jamuna TV",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -269,7 +269,7 @@
             "id": "independent_tv",
             "name": "Independent TV",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/independent_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -278,7 +278,7 @@
             "id": "channel24",
             "name": "Channel 24",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/channel24.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -287,7 +287,7 @@
             "id": "ekhon_tv",
             "name": "Ekhon TV",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/ekhon_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -296,7 +296,7 @@
             "id": "dbc_news",
             "name": "DBC News",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/dbc_news.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -305,7 +305,7 @@
             "id": "ekattor_tv",
             "name": "Ekattor TV",
             "group": "News",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/ekattor_tv.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
@@ -314,7 +314,7 @@
             "id": "fifa_world_cup",
             "name": "FIFA World Cup Live",
             "group": "Sports",
-            "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
+            "logo": "https://toffeelive.com/images/channels/fifa_world_cup.png",
             "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8",
             "user_agent": "okhttp/3.1.0",
             "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
