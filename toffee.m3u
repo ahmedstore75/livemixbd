@@ -1,35 +1,35 @@
 #EXTM3U name="Toffee Playlist"
 #EXTINF:-1 tvg-id="rtv" tvg-name="RTV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",RTV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/rtv/rtv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/rtv.m3u8
 #EXTINF:-1 tvg-id="ntv" tvg-name="NTV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",NTV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/ntv/ntv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/ntv.m3u8
 #EXTINF:-1 tvg-id="channel_i" tvg-name="Channel i" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",Channel i
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/channel_i/channel_i.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/channel_i.m3u8
 #EXTINF:-1 tvg-id="atn_bangla" tvg-name="ATN Bangla" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",ATN Bangla
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/atn_bangla/atn_bangla.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/atn_bangla.m3u8
 #EXTINF:-1 tvg-id="boishakhi_tv" tvg-name="Boishakhi TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",Boishakhi TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/boishakhi_tv/boishakhi_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/boishakhi_tv.m3u8
 #EXTINF:-1 tvg-id="deepto_tv" tvg-name="Deepto TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",Deepto TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/deepto_tv/deepto_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/deepto_tv.m3u8
 #EXTINF:-1 tvg-id="nagorik_tv" tvg-name="Nagorik TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",Nagorik TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/nagorik_tv/nagorik_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/nagorik_tv.m3u8
 #EXTINF:-1 tvg-id="gazi_tv" tvg-name="Gazi TV (GTV)" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Entertainment",Gazi TV (GTV)
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/gazi_tv/gazi_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/gazi_tv.m3u8
 #EXTINF:-1 tvg-id="duronto_tv" tvg-name="Duronto TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Kids",Duronto TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/duronto_tv/duronto_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/duronto_tv.m3u8
 #EXTINF:-1 tvg-id="somoy_tv" tvg-name="Somoy TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Somoy TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/somoy_tv/somoy_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/somoy_tv.m3u8
 #EXTINF:-1 tvg-id="jamuna_tv" tvg-name="Jamuna TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Jamuna TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/jamuna_tv/jamuna_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/jamuna_tv.m3u8
 #EXTINF:-1 tvg-id="independent_tv" tvg-name="Independent TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Independent TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/independent_tv/independent_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/independent_tv.m3u8
 #EXTINF:-1 tvg-id="channel24" tvg-name="Channel 24" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Channel 24
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/channel24/channel24.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/channel24.m3u8
 #EXTINF:-1 tvg-id="ekhon_tv" tvg-name="Ekhon TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Ekhon TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/ekhon_tv/ekhon_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/ekhon_tv.m3u8
 #EXTINF:-1 tvg-id="dbc_news" tvg-name="DBC News" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",DBC News
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/dbc_news/dbc_news.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/dbc_news.m3u8
 #EXTINF:-1 tvg-id="ekattor_tv" tvg-name="Ekattor TV" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="News",Ekattor TV
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/ekattor_tv/ekattor_tv.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/ekattor_tv.m3u8
 #EXTINF:-1 tvg-id="fifa_world_cup_576" tvg-name="FIFA World Cup Live" tvg-logo="https://toffeelive.com/images/icons/signin-prompt.svg" group-title="Sports",FIFA World Cup Live
-https://bldcmprod-cdn.toffeelive.com/cdn/live/slang/fifa_world_cup_576/fifa_world_cup_576.m3u8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup_576/fifa_world_cup_576.m3u8
