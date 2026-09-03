@@ -1,4 +1,4 @@
-name: Generate Categorized M3U and JSON Playlist
+name: Generate M3U and JSON Playlist
 
 on:
   push:
@@ -64,7 +64,8 @@ jobs:
               "atn bangla", "deepto tv", "ekattor tv", "dbc news", "gtv", 
               "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv", 
               "ananda tv", "bijoy tv", "asian tv", "boishakhi", "desh tv", 
-              "mohona", "nexus", "my tv", "sa tv", "channel 9"
+              "mohona", "nexus", "my tv", "sa tv", "channel 9", "channel 52",
+              "drama 24", "global tv", "thikana"
             ],
             "Sports": [
               "t sports", "star sports 1", "star sports 2", "star sports hindi", 
@@ -76,14 +77,16 @@ jobs:
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9/i.test(clean)) {
+            // Bangla Channels Rule
+            if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) {
               return "Bangla";
+            }
+            // Kolkata Channels Rule
+            if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
+              return "Kolkata";
             }
             if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) {
               return "Sports";
-            }
-            if (/sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
-              return "Kolkata";
             }
             if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine|tv9 bharatvarsh/i.test(clean)) {
               return "Indian";
@@ -117,17 +120,13 @@ jobs:
             return index === -1 ? 999 : index;
           }
 
-          // DYNAMIC AUTO-LOGO GENERATOR FUNCTION
           function generateAutoLogo(channelName) {
-            // Clean title string: Remove special characters and formatting spaces
             let formattedName = channelName
               .replace(/[^a-zA-Z0-9\s]/g, "")
               .replace(/\s+/g, "")
               .trim();
 
             if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
-
-            // Tries matching with iptv-org public standard logo repository automatically
             return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
           }
 
@@ -170,7 +169,6 @@ jobs:
 
               let logoUrl = "";
 
-              // 1. Try fetching directly from API Response
               const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                                 block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
                                 block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
@@ -185,7 +183,6 @@ jobs:
                 }
               }
 
-              // 2. Automated Dynamic Logo Resolver (No manual channel list needed)
               if (!logoUrl) {
                 logoUrl = generateAutoLogo(title);
               }
@@ -221,7 +218,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Playlist generated with Dynamic Auto Logo Resolver.`);
+            console.log(`Updated successfully with new Bangla and Kolkata rules.`);
           }
 
           processData();
@@ -233,5 +230,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Added Fully Automated Dynamic Logo Resolver: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
