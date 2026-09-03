@@ -1,4 +1,4 @@
-Name: Generate M3U and JSON Playlist
+Name: Generate Categorized M3U and JSON Playlist
 
 on:
   push:
@@ -66,78 +66,78 @@ jobs:
             "Entertainment"
           ];
 
-          // BD Popular Channel List (Top Priority First)
-          const bdChannelPriority = [
-            "somoy tv", "jamuna tv", "independent tv", "channel 24", "ekattor tv", 
-            "dbc news", "news 24 bd", "atn news", "ekhon tv", "btv national hd", 
-            "btv", "btv world", "btv ctg", "channel i", "ntv", "bangla vision", 
-            "rtv", "atn bangla", "etv", "maasranga tv", "deepto tv", "gazi tv", 
-            "gtv", "asian tv", "duronto tv", "sa tv", "channel 9", "mohona tv", 
-            "nexus tv", "bijoy tv", "global tv", "my tv", "ananda tv", "desh tv", "boishakhi tv"
-          ];
+          // Priority Arrays for Top Positioning per Category
+          const priorityMap = {
+            "Bangla": [
+              "btv national", "btv", "somoy tv", "jamuna tv", "channel 24", 
+              "ntv", "rtv", "independent tv", "bangla vision", "atn bangla", 
+              "deepto tv", "ekattor tv", "dbc news", "gtv", "gazi tv", 
+              "t sports", "maasranga tv", "ekhon tv", "asian tv"
+            ],
+            "Sports": [
+              "t sports", "star sports 1", "star sports 2", "star sports hindi", 
+              "sony sports 1", "sony sports 2", "sony sports 5", "ten sports", 
+              "willow tv", "bein sports", "ptv sports", "eurosport"
+            ],
+            "Kolkata": [
+              "star jalsha", "zee bangla", "colors bangla", "sony aath", 
+              "aath", "sangeet bangla", "akash ath", "news18 bangla"
+            ],
+            "Indian": [
+              "star plus", "zee tv", "sony tv", "colors hindi", "colors", 
+              "star bharat", "sab tv", "star gold", "zee cinema", "sony max"
+            ]
+          };
 
-          // Kolkata Popular Channel List
-          const kolkataChannelPriority = [
-            "zee bangla", "star jalsha", "jalsha", "colors bangla", "sony aath", 
-            "aath", "sangeet bangla", "akash ath", "ruposhi bangla", "calcuttatv", 
-            "enter 10 bangla", "dd bangla", "news18 bangla", "tv9 bangla", "bangla talkies"
-          ];
-
-          function getPriorityIndex(title, priorityList) {
-            const clean = title.toLowerCase().trim();
-            const index = priorityList.findIndex(item => clean.includes(item));
-            return index === -1 ? 999 : index;
-          }
+          // Manual Fallback Logos
+          const logoMap = {
+            "gazi tv": "https://i.ibb.co/L5RkgT7/gtv.png",
+            "gtv": "https://i.ibb.co/L5RkgT7/gtv.png",
+            "bahrain sports 1": "https://i.ibb.co/pZ4T2Qn/bahrain-sports.png",
+            "ktv sports class": "https://i.ibb.co/9VvCkBx/ktv-sports.png",
+            "sports fishing tv": "https://i.ibb.co/b3PfZh7/sports-fishing-tv.png",
+            "tv9 bharatvarsh": "https://i.ibb.co/3yn9j8p/tv9-bharatvarsh.png"
+          };
 
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            // 1. Kolkata
-            if (/sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla|bangla talkies/i.test(clean)) {
-              return "Kolkata";
-            }
-
-            // 2. Bangla (BD Channels)
-            if (bdChannelPriority.some(item => clean.includes(item)) || /bangla|bd|dhaka|nagorik|bangladesh/i.test(clean)) {
+            if (priorityMap["Bangla"].some(item => clean.includes(item)) || /boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9/i.test(clean)) {
               return "Bangla";
             }
 
-            // 3. Sports
-            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|t sports/i.test(clean)) {
+            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing/i.test(clean)) {
               return "Sports";
             }
 
-            // 4. Indian (Hindi)
-            if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine/i.test(clean)) {
+            if (/sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
+              return "Kolkata";
+            }
+
+            if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine|tv9 bharatvarsh/i.test(clean)) {
               return "Indian";
             }
 
-            // 5. Islamic
             if (/madani|islam|peace|makkah|madinah|quran|sunnah|iqra|deen|huda/i.test(clean)) {
               return "Islamic";
             }
 
-            // 6. News
-            if (/news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9|anb|bharat/i.test(clean)) {
+            if (/news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9/i.test(clean)) {
               return "News";
             }
 
-            // 7. Movies
             if (/movie|cinema|cine|gold|hbo|action|picture|filmy|flix|popcorn/i.test(clean)) {
               return "Movies";
             }
 
-            // 8. Music
             if (/music|mtv|zoom|9xm|9x|sangeet|vh1|club|b4u hitz|zing|musiq|beat|sound/i.test(clean)) {
               return "Music";
             }
 
-            // 9. Kids
             if (/kid|cartoon|nick|pogo|disney|sonic|hungama|duronto|baby|junior|toon|anime/i.test(clean)) {
               return "Kids";
             }
 
-            // 10. Documentary
             if (/discovery|nat geo|national geographic|history|animal planet|investigation|science|planet|earth|docu/i.test(clean)) {
               return "Documentary";
             }
@@ -145,11 +145,19 @@ jobs:
             return "Entertainment";
           }
 
+          function getPriorityIndex(category, title) {
+            const list = priorityMap[category];
+            if (!list) return 999;
+            
+            const clean = title.toLowerCase().trim();
+            const index = list.findIndex(item => clean.includes(item));
+            return index === -1 ? 999 : index;
+          }
+
           async function processData() {
             let rawData = "";
             for (const url of urls) {
-              const res = await fetchData(url);
-              if (res) rawData += res + "\n";
+              rawData += await fetchData(url) + "\n";
             }
 
             const cleanedData = rawData
@@ -185,17 +193,28 @@ jobs:
               if (!title) continue;
 
               let logoUrl = "";
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
-                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
-                                block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+              const cleanTitle = title.toLowerCase().trim();
 
-              if (logoMatch) {
-                let extracted = logoMatch[1].trim();
-                if (extracted.startsWith("/")) {
-                  extracted = "https://web.aynaott.com" + extracted;
+              for (const [key, val] of Object.entries(logoMap)) {
+                if (cleanTitle.includes(key)) {
+                  logoUrl = val;
+                  break;
                 }
-                if (!extracted.includes("avatar") && !extracted.includes("default")) {
-                  logoUrl = extracted;
+              }
+
+              if (!logoUrl) {
+                const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
+                                  block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
+                                  block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+
+                if (logoMatch) {
+                  let extracted = logoMatch[1].trim();
+                  if (extracted.startsWith("/")) {
+                    extracted = "https://web.aynaott.com" + extracted;
+                  }
+                  if (!extracted.includes("avatar") && !extracted.includes("default")) {
+                    logoUrl = extracted;
+                  }
                 }
               }
 
@@ -206,11 +225,12 @@ jobs:
                 name: title,
                 logo: logoUrl,
                 url: streamUrl,
-                category: category
+                category: category,
+                priority: getPriorityIndex(category, title)
               });
             }
 
-            // Strict Priority Sorting
+            // Advanced Sorting: First by Category Order, then by Priority, then Alphabetical
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
@@ -222,15 +242,8 @@ jobs:
                 return indexA - indexB;
               }
 
-              if (a.category === "Bangla") {
-                const pA = getPriorityIndex(a.name, bdChannelPriority);
-                const pB = getPriorityIndex(b.name, bdChannelPriority);
-                if (pA !== pB) return pA - pB;
-              } 
-              else if (a.category === "Kolkata") {
-                const pA = getPriorityIndex(a.name, kolkataChannelPriority);
-                const pB = getPriorityIndex(b.name, kolkataChannelPriority);
-                if (pA !== pB) return pA - pB;
+              if (a.priority !== b.priority) {
+                return a.priority - b.priority;
               }
 
               return a.name.localeCompare(b.name);
@@ -243,7 +256,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log("Successfully generated playlist.m3u and channels.json");
+            console.log(`Playlist successfully generated with popular channel priorities.`);
           }
 
           processData();
@@ -255,5 +268,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Auto-update playlist: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Sorted popular channels to top in Bangla, Sports, Kolkata & Indian categories: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
