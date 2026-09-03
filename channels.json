@@ -424,63 +424,63 @@
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg",
     "url": "https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8",
     "category": "Kolkata",
-    "priority": 999
-  },
-  {
-    "name": "DD Bangla",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
-    "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
-    "category": "Kolkata",
-    "priority": 999
-  },
-  {
-    "name": "Enter 10 Bangla",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
-    "url": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8",
-    "category": "Kolkata",
-    "priority": 999
-  },
-  {
-    "name": "kolkata TV",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_067234e427ca902620258631b762cea8_playmist_kolkata_tv_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8",
-    "category": "Kolkata",
-    "priority": 999
-  },
-  {
-    "name": "R Plus",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
-    "category": "Kolkata",
-    "priority": 999
-  },
-  {
-    "name": "Sangeet Bangla",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_68b8c3bbc8b629bbc2c00880b4546d74_playmist_sangeet_bangla400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
-    "category": "Kolkata",
-    "priority": 999
+    "priority": 2
   },
   {
     "name": "Sony AATH",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
     "category": "Kolkata",
-    "priority": 999
+    "priority": 3
   },
   {
-    "name": "TV9 Bangla",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
-    "url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+    "name": "kolkata TV",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_067234e427ca902620258631b762cea8_playmist_kolkata_tv_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8",
     "category": "Kolkata",
-    "priority": 999
+    "priority": 7
+  },
+  {
+    "name": "R Plus",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
+    "category": "Kolkata",
+    "priority": 8
   },
   {
     "name": "Zee 24 Ghanta",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
     "url": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
     "category": "Kolkata",
-    "priority": 999
+    "priority": 9
+  },
+  {
+    "name": "Sangeet Bangla",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_68b8c3bbc8b629bbc2c00880b4546d74_playmist_sangeet_bangla400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
+    "category": "Kolkata",
+    "priority": 11
+  },
+  {
+    "name": "Enter 10 Bangla",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg",
+    "url": "https://live-bangla.akamaized.net/liveabr/playlist.m3u8",
+    "category": "Kolkata",
+    "priority": 14
+  },
+  {
+    "name": "DD Bangla",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg",
+    "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
+    "category": "Kolkata",
+    "priority": 15
+  },
+  {
+    "name": "TV9 Bangla",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
+    "url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+    "category": "Kolkata",
+    "priority": 17
   },
   {
     "name": "And Pictures HD",
