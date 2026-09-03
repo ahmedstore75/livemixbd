@@ -3,9 +3,10 @@ import json
 import uuid
 import requests
 
+M3U_FILE = "toffee.m3u"
+JSON_FILE = "toffee.json"
 DATA_BACKUP_FILE = "toffee_backup.json"
 
-# ১. ডায়নামিক সেশন ও ডিভাইস আইডি
 SESSION_ID = str(uuid.uuid4())
 DEVICE_ID = str(uuid.uuid4())[:16]
 
@@ -28,11 +29,9 @@ DEFAULT_LOGO = "https://toffeelive.com/images/icons/signin-prompt.svg"
 
 all_channels = []
 
-# ২. এপিআই থেকে সরাসরি লাইভ ডাটা নেওয়ার চেষ্টা
 try:
     session = requests.Session()
     session.headers.update(HEADERS)
-    
     session.get("https://toffeelive.com/", timeout=10)
     response = session.get(API_ENDPOINT, timeout=12)
     
@@ -71,90 +70,24 @@ try:
 except Exception as e:
     print(f"Fetch Error: {e}")
 
-# ৩. অটোমেটিক ব্যাকআপ ফাইল সেভ ও চেক
+# ব্যাকআপ সেভ ও লোড
 if all_channels:
     with open(DATA_BACKUP_FILE, "w", encoding="utf-8") as bf:
         json.dump(all_channels, bf, ensure_ascii=False)
-else:
-    print("API ফেইল করেছে! লোকাল ব্যাকআপ সার্চ করা হচ্ছে...")
-    if os.path.exists(DATA_BACKUP_FILE):
-        with open(DATA_BACKUP_FILE, "r", encoding="utf-8") as bf:
-            all_channels = json.load(bf)
+elif os.path.exists(DATA_BACKUP_FILE):
+    with open(DATA_BACKUP_FILE, "r", encoding="utf-8") as bf:
+        all_channels = json.load(bf)
 
-# ৪. এপিআই এবং ব্যাকআপ দুটিই না থাকলে স্বয়ংক্রিয় ডায়নামিক অটো জেনারেটর
-if not all_channels:
-    print("লোকাল ব্যাকআপও নেই! অটোমেটিক চ্যানেল নাম, লোগো ও লিংক জেনারেট করা হচ্ছে...")
-    
-    # অটো-জেনারেটর কাস্টম লিস্ট
-    channel_database = [
-        ("fifa_world_cup", "FIFA World Cup Live", "Sports"),
-        ("somoy_tv", "Somoy TV", "News"),
-        ("jamuna_tv", "Jamuna TV", "News"),
-        ("independent_tv", "Independent TV", "News"),
-        ("channel24", "Channel 24", "News"),
-        ("ekhon_tv", "Ekhon TV", "News"),
-        ("dbc_news", "DBC News", "News"),
-        ("ekattor_tv", "Ekattor TV", "News"),
-        ("rtv", "RTV", "Entertainment"),
-        ("ntv", "NTV", "Entertainment"),
-        ("channel_i", "Channel i", "Entertainment"),
-        ("atn_bangla", "ATN Bangla", "Entertainment"),
-        ("boishakhi_tv", "Boishakhi TV", "Entertainment"),
-        ("deepto_tv", "Deepto TV", "Entertainment"),
-        ("nagorik_tv", "Nagorik TV", "Entertainment"),
-        ("gazi_tv", "Gazi TV (GTV)", "Entertainment"),
-        ("duronto_tv", "Duronto TV", "Kids")
-    ]
-    
-    default_cookie = "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
-
-    for slug, name, grp in channel_database:
-        # স্বয়ংক্রিয়ভাবে ডায়নামিক লোগো ও স্ট্রিম লিংক তৈরি
-        generated_url = f"{BASE_CDN}/{slug}/playlist.m3u8"
-        generated_logo = f"https://toffeelive.com/images/channels/{slug}.png" # অটো লোগো ইউআরএল স্ট্রাকচার
-
-        all_channels.append({
-            "id": slug,
-            "name": name,
-            "group": grp,
-            "logo": generated_logo,
-            "url": generated_url,
-            "user_agent": "okhttp/3.1.0",
-            "cookie": default_cookie
-        })
-
-# ৫. গ্রুপ অনুসারে সাজানো
-all_channels = sorted(all_channels, key=lambda x: x["group"])
-
-# ৬. toffee.m3u তৈরি
-m3u_lines = []
-for ch in all_channels:
-    m3u_lines.append(f'#EXTINF:-1 group-title="{ch["group"]}" tvg-logo="{ch["logo"]}",{ch["name"]}')
-    m3u_lines.append(f'#EXTVLCOPT:http-user-agent={ch["user_agent"]}')
+# মূল M3U স্ট্রাকচার অনুযায়ী সেভ করা
+m3u_content = "#EXTM3U\n"
+for ch in sorted(all_channels, key=lambda x: x["group"]):
+    m3u_content += f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}\n'
+    m3u_content += f'#EXTVLCOPT:http-user-agent={ch["user_agent"]}\n'
     if ch.get("cookie"):
-        m3u_lines.append(f'#EXTHTTP:{{"cookie":"{ch["cookie"]}"}}')
-    m3u_lines.append(ch["url"])
+        m3u_content += f'#EXTHTTP:{{"cookie":"{ch["cookie"]}"}}\n'
+    m3u_content += f'{ch["url"]}\n\n'
 
-with open("toffee.m3u", "w", encoding="utf-8") as f:
-    f.write("\n".join(m3u_lines))
+with open(M3U_FILE, "w", encoding="utf-8") as f:
+    f.write(m3u_content.strip())
 
-# ৭. toffee.json তৈরি
-grouped_data = {}
-for ch in all_channels:
-    grp = ch["group"]
-    if grp not in grouped_data:
-        grouped_data[grp] = []
-    grouped_data[grp].append(ch)
-
-json_output = {
-    "playlist_name": "Toffee",
-    "total_channels": len(all_channels),
-    "total_groups": len(grouped_data),
-    "groups": grouped_data,
-    "all_channels": all_channels
-}
-
-with open("toffee.json", "w", encoding="utf-8") as f:
-    json.dump(json_output, f, indent=4, ensure_ascii=False)
-
-print(f"Successfully generated {len(all_channels)} channels.")
+print(f"সফলভাবে আগের মতো M3U ফরম্যাটে {len(all_channels)} টি চ্যানেল সেভ করা হয়েছে!")
