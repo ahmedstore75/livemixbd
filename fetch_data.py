@@ -2,7 +2,6 @@ import json
 import uuid
 import requests
 
-# ১. তোফি টোকেন ও হেডার সেটিংস
 SESSION_ID = str(uuid.uuid4())
 DEVICE_ID = str(uuid.uuid4())[:16]
 
@@ -21,16 +20,13 @@ DEFAULT_LOGO = "https://toffeelive.com/images/icons/signin-prompt.svg"
 
 all_channels = []
 
-# ২. এপিআই থেকে সরাসরি ডাটা এবং কুকি স্ক্র্যাপ করা
 try:
     session = requests.Session()
     response = session.get(API_ENDPOINT, headers=HEADERS, timeout=12)
     
-    # এপিআই রেসপন্স থেকে এজ কুকি এক্সট্র্যাক্ট করা
     extracted_cookies = session.cookies.get_dict()
     cookie_str = "; ".join([f"{k}={v}" for k, v in extracted_cookies.items()])
     
-    # যদি সার্ভার থেকে কুকি না আসে, তবে এজ-ক্যাশে ফরমেট কুকি জেনারেট করা
     if not cookie_str:
         cookie_str = "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
 
@@ -65,7 +61,6 @@ try:
 except Exception as e:
     print(f"Fetch Error: {e}")
 
-# ব্যাকআপ ফালব্যাক লিস্ট (যদি API রেসপন্স না দেয়)
 if not all_channels:
     fallback_slugs = [
         ("fifa_world_cup", "FIFA World Cup Live", "Sports"),
@@ -98,10 +93,8 @@ if not all_channels:
             "cookie": default_cookie
         })
 
-# ৩. গ্রুপ অনুসারে সাজানো
 all_channels = sorted(all_channels, key=lambda x: x["group"])
 
-# ৪. toffee.m3u ফাইল তৈরি
 m3u_lines = []
 for ch in all_channels:
     m3u_lines.append(f'#EXTINF:-1 group-title="{ch["group"]}" tvg-logo="{ch["logo"]}",{ch["name"]}')
@@ -113,7 +106,6 @@ for ch in all_channels:
 with open("toffee.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(m3u_lines))
 
-# ৫. toffee.json ফাইল তৈরি
 grouped_data = {}
 for ch in all_channels:
     grp = ch["group"]
@@ -132,4 +124,4 @@ json_output = {
 with open("toffee.json", "w", encoding="utf-8") as f:
     json.dump(json_output, f, indent=4, ensure_ascii=False)
 
-print(f"Successfully generated {len(all_channels)} channels with Cookie headers.")
+print(f"Successfully generated {len(all_channels)} channels.")
