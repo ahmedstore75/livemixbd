@@ -9,56 +9,72 @@
                 "name": "RTV",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/rtv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "ntv",
                 "name": "NTV",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/ntv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "channel_i",
                 "name": "Channel i",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/channel_i.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "atn_bangla",
                 "name": "ATN Bangla",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/atn_bangla.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "boishakhi_tv",
                 "name": "Boishakhi TV",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/boishakhi_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "deepto_tv",
                 "name": "Deepto TV",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/deepto_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "nagorik_tv",
                 "name": "Nagorik TV",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/nagorik_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "gazi_tv",
                 "name": "Gazi TV (GTV)",
                 "group": "Entertainment",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/gazi_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             }
         ],
         "Kids": [
@@ -67,7 +83,9 @@
                 "name": "Duronto TV",
                 "group": "Kids",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/duronto_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             }
         ],
         "News": [
@@ -76,58 +94,74 @@
                 "name": "Somoy TV",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/somoy_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "jamuna_tv",
                 "name": "Jamuna TV",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/jamuna_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "independent_tv",
                 "name": "Independent TV",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/independent_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "channel24",
                 "name": "Channel 24",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/channel24.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "ekhon_tv",
                 "name": "Ekhon TV",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/ekhon_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "dbc_news",
                 "name": "DBC News",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/dbc_news.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             },
             {
                 "id": "ekattor_tv",
                 "name": "Ekattor TV",
                 "group": "News",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/ekattor_tv.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             }
         ],
         "Sports": [
             {
-                "id": "fifa_world_cup_576",
+                "id": "fifa_world_cup",
                 "name": "FIFA World Cup Live",
                 "group": "Sports",
                 "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup_576/fifa_world_cup_576.m3u8"
+                "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8",
+                "user_agent": "okhttp/3.1.0",
+                "cookie": ""
             }
         ]
     },
@@ -137,119 +171,153 @@
             "name": "RTV",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/rtv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "ntv",
             "name": "NTV",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/ntv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "channel_i",
             "name": "Channel i",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/channel_i.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_i/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "atn_bangla",
             "name": "ATN Bangla",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/atn_bangla.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "boishakhi_tv",
             "name": "Boishakhi TV",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/boishakhi_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "deepto_tv",
             "name": "Deepto TV",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/deepto_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/deepto_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "nagorik_tv",
             "name": "Nagorik TV",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/nagorik_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "gazi_tv",
             "name": "Gazi TV (GTV)",
             "group": "Entertainment",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/gazi_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/gazi_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "duronto_tv",
             "name": "Duronto TV",
             "group": "Kids",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/duronto_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/duronto_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "somoy_tv",
             "name": "Somoy TV",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/somoy_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "jamuna_tv",
             "name": "Jamuna TV",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/jamuna_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "independent_tv",
             "name": "Independent TV",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/independent_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "channel24",
             "name": "Channel 24",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/channel24.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/channel24/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "ekhon_tv",
             "name": "Ekhon TV",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/ekhon_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "dbc_news",
             "name": "DBC News",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/dbc_news.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
             "id": "ekattor_tv",
             "name": "Ekattor TV",
             "group": "News",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/ekattor_tv.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         },
         {
-            "id": "fifa_world_cup_576",
+            "id": "fifa_world_cup",
             "name": "FIFA World Cup Live",
             "group": "Sports",
             "logo": "https://toffeelive.com/images/icons/signin-prompt.svg",
-            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup_576/fifa_world_cup_576.m3u8"
+            "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": ""
         }
     ]
 }
