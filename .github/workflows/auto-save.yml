@@ -69,9 +69,9 @@ jobs:
             ],
             "Kolkata": [
               "star jalsha", "zee bangla", "colors bangla", "sony aath", "aath",
-              "ruposhi bangla", "rooposhi bangla", "ruposhi", "kolkata tv", "r plus", 
-              "zee 24 ghanta", "24 ghanta", "sangeet bangla", "akash ath", "calcuttatv", 
-              "enter 10 bangla", "dd bangla", "news18 bangla", "tv9 bangla"
+              "ruposhi bangla", "rooposhi bangla", "rupashi bangla", "ruposhi", "rupashi",
+              "kolkata tv", "r plus", "zee 24 ghanta", "24 ghanta", "sangeet bangla", 
+              "akash ath", "calcuttatv", "enter 10 bangla", "dd bangla", "news18 bangla", "tv9 bangla"
             ],
             "Sports": [
               "t sports", "star sports 1", "star sports 2", "star sports hindi", 
@@ -83,12 +83,12 @@ jobs:
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            // 1. Kolkata Category (Checked FIRST to avoid 'Bangla' keyword conflict)
-            if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|\baath\b|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi|rooposhi|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
+            // 1. Kolkata Category Regex (Covers all variations of Ruposhi/Rupashi)
+            if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|\baath\b|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|rupo|rupa|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
               return "Kolkata";
             }
 
-            // 2. Bangla Category
+            // 2. Bangla Category Regex
             if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|\b52\b|drama 24|global tv|thikana/i.test(clean)) {
               return "Bangla";
             }
@@ -242,7 +242,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Fixed category evaluation order. Ruposhi Bangla successfully assigned to Kolkata.`);
+            console.log(`Force updated both channels.json and playlist.m3u successfully.`);
           }
 
           processData();
@@ -254,5 +254,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed evaluation priority to ensure Ruposhi Bangla goes to Kolkata: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Force sync playlist.m3u and fix Ruposhi Bangla matching rule: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
