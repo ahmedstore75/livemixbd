@@ -66,13 +66,16 @@ jobs:
             "Entertainment"
           ];
 
-          // Priority Arrays for Top Positioning per Category
+          // Priority Order for Top Positioning in Bangla Category
           const priorityMap = {
             "Bangla": [
-              "btv national", "btv", "somoy tv", "jamuna tv", "channel 24", 
-              "ntv", "rtv", "independent tv", "bangla vision", "atn bangla", 
-              "deepto tv", "ekattor tv", "dbc news", "gtv", "gazi tv", 
-              "t sports", "maasranga tv", "ekhon tv", "asian tv"
+              "btv national", "btv", "channel i", "somoy tv", "jamuna tv", 
+              "channel 24", "news 24", "news24", "atn news", "ntv", "rtv", 
+              "ekushey tv", "etv", "independent tv", "bangla vision", 
+              "atn bangla", "deepto tv", "ekattor tv", "dbc news", "gtv", 
+              "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv", 
+              "ananda tv", "bijoy tv", "asian tv", "boishakhi", "desh tv", 
+              "mohona", "nexus", "my tv", "sa tv", "channel 9"
             ],
             "Sports": [
               "t sports", "star sports 1", "star sports 2", "star sports hindi", 
@@ -102,7 +105,8 @@ jobs:
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            if (priorityMap["Bangla"].some(item => clean.includes(item)) || /boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9/i.test(clean)) {
+            // Explicit Check for All Bangladeshi Channels
+            if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9/i.test(clean)) {
               return "Bangla";
             }
 
@@ -267,5 +271,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed syntax and updated priority list: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed missing Bangladeshi channels priority and categorization: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
