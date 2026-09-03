@@ -1,4 +1,4 @@
-Name: Generate Categorized M3U and JSON Playlist
+name: Generate Categorized M3U and JSON Playlist
 
 on:
   push:
@@ -230,7 +230,6 @@ jobs:
               });
             }
 
-            // Advanced Sorting: First by Category Order, then by Priority, then Alphabetical
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
@@ -256,7 +255,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Playlist successfully generated with popular channel priorities.`);
+            console.log(`Playlist successfully generated.`);
           }
 
           processData();
@@ -268,5 +267,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Sorted popular channels to top in Bangla, Sports, Kolkata & Indian categories: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed syntax and updated priority list: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
