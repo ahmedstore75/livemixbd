@@ -1,54 +1,10 @@
-import json
-import re
-
-# আপনার M3U ডেটা টেক্সট ফাইল থেকে পড়তে পারেন বা সরাসরি স্ট্রিং হিসেবে দিতে পারেন
-m3u_data = """#EXTM3U
-#=================================
-# Developed by: Ahammad Ali
-#=================================
-
-#EXTINF:-1 group-title="Family" tvg-logo="https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",Toffee TV
-#EXTVLCOPT:http-user-agent=okhttp/5.1.0
-#EXTVLCOPT:http-cookie=Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1788598873:KeyName=prod_linear:Signature=nG3VEiqzIpm0FwS927kzXVCoVzFlvSIkkhoo_sCSRxpru06E523EDH3tAg3Be6-QqWAs0M1yKTL2RHkcFzdrAA
-https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8"""
-
-def parse_m3u_to_json(data, output_file="playlist_backup.json"):
-    channels = []
-    lines = [line.strip() for line in data.strip().split('\n') if line.strip()]
-    
-    current_channel = {}
-    
-    for line in lines:
-        if line.startswith('#EXTINF:'):
-            current_channel = {}
-            # Group Title এক্সট্র্যাক্ট করা
-            group_match = re.search(r'group-title="([^"]+)"', line)
-            current_channel['group'] = group_match.group(1) if group_match else "Uncategorized"
-            
-            # Logo URL এক্সট্র্যাক্ট করা
-            logo_match = re.search(r'tvg-logo="([^"]+)"', line)
-            current_channel['logo'] = logo_match.group(1) if logo_match else ""
-            
-            # Channel Name এক্সট্র্যাক্ট করা
-            name_split = line.split(',')
-            current_channel['name'] = name_split[-1].strip() if len(name_split) > 1 else "Unknown"
-            
-        elif line.startswith('#EXTVLCOPT:http-user-agent='):
-            current_channel['user_agent'] = line.split('=', 1)[1]
-            
-        elif line.startswith('#EXTVLCOPT:http-cookie='):
-            current_channel['cookie'] = line.split('=', 1)[1]
-            
-        elif line.startswith('http://') or line.startswith('https://'):
-            current_channel['url'] = line
-            channels.append(current_channel)
-            current_channel = {}
-
-    # JSON ফাইলে ব্যাকআপ অটো-সেভ করা
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(channels, f, indent=4, ensure_ascii=False)
-        
-    print(f"✅ ব্যাকআপ সফলভাবে '{output_file}' ফাইলে সেভ হয়েছে! মোট চ্যানেল: {len(channels)}")
-
-# ফাংশন রান করা
-parse_m3u_to_json(m3u_data)
+[
+    {
+        "group": "Family",
+        "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
+        "name": "Toffee TV",
+        "user_agent": "okhttp/5.1.0",
+        "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1788598873:KeyName=prod_linear:Signature=nG3VEiqzIpm0FwS927kzXVCoVzFlvSIkkhoo_sCSRxpru06E523EDH3tAg3Be6-QqWAs0M1yKTL2RHkcFzdrAA",
+        "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8"
+    }
+]
