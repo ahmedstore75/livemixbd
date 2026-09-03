@@ -51,7 +51,7 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          // Master Category Order (পপুলারিটি অনুযায়ী ক্যাটাগরির ক্রম)
+          // Master Category Order
           const categoryOrder = [
             "Bangla", 
             "Sports", 
@@ -66,7 +66,7 @@ jobs:
             "Entertainment"
           ];
 
-          // Priority BD Channels (বাংলাদেশী পপুলার চ্যানেলের ক্রম)
+          // BD Popular Channel List (Top Priority First)
           const bdChannelPriority = [
             "somoy tv", "jamuna tv", "independent tv", "channel 24", "ekattor tv", 
             "dbc news", "news 24 bd", "atn news", "ekhon tv", "btv national hd", 
@@ -76,40 +76,38 @@ jobs:
             "nexus tv", "bijoy tv", "global tv", "my tv", "ananda tv", "desh tv", "boishakhi tv"
           ];
 
-          // Priority Kolkata Channels (কলকাতা পপুলার চ্যানেলের ক্রম)
+          // Kolkata Popular Channel List
           const kolkataChannelPriority = [
             "zee bangla", "star jalsha", "jalsha", "colors bangla", "sony aath", 
             "aath", "sangeet bangla", "akash ath", "ruposhi bangla", "calcuttatv", 
             "enter 10 bangla", "dd bangla", "news18 bangla", "tv9 bangla", "bangla talkies"
           ];
 
-          // Priority Helper Function
           function getPriorityIndex(title, priorityList) {
             const clean = title.toLowerCase().trim();
             const index = priorityList.findIndex(item => clean.includes(item));
             return index === -1 ? 999 : index;
           }
 
-          // Master Override Classifier
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            // 1. Bangla (Bangladeshi Channels)
-            if (bdChannelPriority.some(item => clean.includes(item))) {
-              return "Bangla";
-            }
-
-            // 2. Sports
-            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|t sports/i.test(clean)) {
-              return "Sports";
-            }
-
-            // 3. Kolkata (Indian Bangla Channels)
+            // 1. Kolkata
             if (/sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla|bangla talkies/i.test(clean)) {
               return "Kolkata";
             }
 
-            // 4. Indian (Hindi & Indian General Channels)
+            // 2. Bangla (BD Channels)
+            if (bdChannelPriority.some(item => clean.includes(item)) || /bangla|bd|dhaka|nagorik|bangladesh/i.test(clean)) {
+              return "Bangla";
+            }
+
+            // 3. Sports
+            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|t sports/i.test(clean)) {
+              return "Sports";
+            }
+
+            // 4. Indian (Hindi)
             if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine/i.test(clean)) {
               return "Indian";
             }
@@ -150,7 +148,8 @@ jobs:
           async function processData() {
             let rawData = "";
             for (const url of urls) {
-              rawData += await fetchData(url) + "\n";
+              const res = await fetchData(url);
+              if (res) rawData += res + "\n";
             }
 
             const cleanedData = rawData
@@ -211,7 +210,7 @@ jobs:
               });
             }
 
-            // Category & Popularity Based Strict Sorting
+            // Strict Priority Sorting
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
@@ -219,12 +218,10 @@ jobs:
               const indexA = catIndexA === -1 ? 99 : catIndexA;
               const indexB = catIndexB === -1 ? 99 : catIndexB;
 
-              // ১. প্রথমে ক্যাটাগরি অনুযায়ী সাজানো হবে (Bangla > Sports > Kolkata...)
               if (indexA !== indexB) {
                 return indexA - indexB;
               }
 
-              // ২. একই ক্যাটাগরির ভেতরে পপুলারিটি অনুযায়ী সাজানো হবে
               if (a.category === "Bangla") {
                 const pA = getPriorityIndex(a.name, bdChannelPriority);
                 const pB = getPriorityIndex(b.name, bdChannelPriority);
@@ -236,7 +233,6 @@ jobs:
                 if (pA !== pB) return pA - pB;
               }
 
-              // ৩. বাকি চ্যানেলগুলো অ্যালফাবেটিক্যালি সাজানো থাকবে
               return a.name.localeCompare(b.name);
             });
 
@@ -247,7 +243,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Playlist generated with popularity sorting.`);
+            console.log("Successfully generated playlist.m3u and channels.json");
           }
 
           processData();
@@ -259,5 +255,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated priority channels list and custom order: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Auto-update playlist: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
