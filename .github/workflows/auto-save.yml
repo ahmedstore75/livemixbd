@@ -229,6 +229,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add channels.json playlist.m3u
+          git add Ayna-playlist.json Ayna-playlist.m3u
           git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
