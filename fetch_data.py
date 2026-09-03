@@ -15,7 +15,7 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*"
 }
 
-API_ENDPOINT = "https://toffeelive.com/api/v1/channels"
+API_ENDPOINT = "https://toffeelive.com/en/live"
 BASE_CDN = "https://bldcmprod-cdn.toffeelive.com/cdn/live/slang"
 DEFAULT_LOGO = "https://toffeelive.com/images/icons/signin-prompt.svg"
 
