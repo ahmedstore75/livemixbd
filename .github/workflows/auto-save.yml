@@ -1,4 +1,4 @@
-name: Generate M3U and JSON Playlist
+Name: Generate M3U and JSON Playlist
 
 on:
   push:
@@ -51,7 +51,7 @@ jobs:
             }).on("error", () => resolve(""));
           });
 
-          // Master Category Order (As requested by user)
+          // Master Category Order (পপুলারিটি অনুযায়ী ক্যাটাগরির ক্রম)
           const categoryOrder = [
             "Bangla", 
             "Sports", 
@@ -66,16 +66,29 @@ jobs:
             "Entertainment"
           ];
 
-          // Priority BD Channels
+          // Priority BD Channels (বাংলাদেশী পপুলার চ্যানেলের ক্রম)
           const bdChannelPriority = [
-            "btv national hd", "btv", "btv world", "btv ctg", "somoy tv",
-            "channel i", "ntv", "bangla vision", "rtv", "atn bangla", 
-            "etv", "maasranga tv", "deepto tv", "ekhon tv", "ekattor tv", 
-            "jamuna tv", "news 24 bd", "channel 24", "dbc news", "atn news", 
-            "independent tv", "gazi tv", "gtv", "asian tv", "duronto tv", 
-            "sa tv", "channel 9", "mohona tv", "nexus tv", "bijoy tv", 
-            "global tv", "my tv", "ananda tv", "desh tv", "boishakhi tv"
+            "somoy tv", "jamuna tv", "independent tv", "channel 24", "ekattor tv", 
+            "dbc news", "news 24 bd", "atn news", "ekhon tv", "btv national hd", 
+            "btv", "btv world", "btv ctg", "channel i", "ntv", "bangla vision", 
+            "rtv", "atn bangla", "etv", "maasranga tv", "deepto tv", "gazi tv", 
+            "gtv", "asian tv", "duronto tv", "sa tv", "channel 9", "mohona tv", 
+            "nexus tv", "bijoy tv", "global tv", "my tv", "ananda tv", "desh tv", "boishakhi tv"
           ];
+
+          // Priority Kolkata Channels (কলকাতা পপুলার চ্যানেলের ক্রম)
+          const kolkataChannelPriority = [
+            "zee bangla", "star jalsha", "jalsha", "colors bangla", "sony aath", 
+            "aath", "sangeet bangla", "akash ath", "ruposhi bangla", "calcuttatv", 
+            "enter 10 bangla", "dd bangla", "news18 bangla", "tv9 bangla", "bangla talkies"
+          ];
+
+          // Priority Helper Function
+          function getPriorityIndex(title, priorityList) {
+            const clean = title.toLowerCase().trim();
+            const index = priorityList.findIndex(item => clean.includes(item));
+            return index === -1 ? 999 : index;
+          }
 
           // Master Override Classifier
           function resolveCategory(title) {
@@ -198,7 +211,7 @@ jobs:
               });
             }
 
-            // Strict Sorting according to Category Order
+            // Category & Popularity Based Strict Sorting
             extractedChannels.sort((a, b) => {
               const catIndexA = categoryOrder.indexOf(a.category);
               const catIndexB = categoryOrder.indexOf(b.category);
@@ -206,10 +219,24 @@ jobs:
               const indexA = catIndexA === -1 ? 99 : catIndexA;
               const indexB = catIndexB === -1 ? 99 : catIndexB;
 
+              // ১. প্রথমে ক্যাটাগরি অনুযায়ী সাজানো হবে (Bangla > Sports > Kolkata...)
               if (indexA !== indexB) {
                 return indexA - indexB;
               }
 
+              // ২. একই ক্যাটাগরির ভেতরে পপুলারিটি অনুযায়ী সাজানো হবে
+              if (a.category === "Bangla") {
+                const pA = getPriorityIndex(a.name, bdChannelPriority);
+                const pB = getPriorityIndex(b.name, bdChannelPriority);
+                if (pA !== pB) return pA - pB;
+              } 
+              else if (a.category === "Kolkata") {
+                const pA = getPriorityIndex(a.name, kolkataChannelPriority);
+                const pB = getPriorityIndex(b.name, kolkataChannelPriority);
+                if (pA !== pB) return pA - pB;
+              }
+
+              // ৩. বাকি চ্যানেলগুলো অ্যালফাবেটিক্যালি সাজানো থাকবে
               return a.name.localeCompare(b.name);
             });
 
@@ -220,7 +247,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Playlist generated with exact user category ordering.`);
+            console.log(`Playlist generated with popularity sorting.`);
           }
 
           processData();
@@ -232,5 +259,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated categories to Bangla, Sports, Kolkata, Indian and removed Live-tvs: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated priority channels list and custom order: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
