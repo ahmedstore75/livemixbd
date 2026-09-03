@@ -92,25 +92,25 @@ jobs:
             ]
           };
 
-          // Manual Fallback Logos
+          // Reliable High-Quality Logos (Github RAW & Wikimedia CDN)
           const logoMap = {
-            "gazi tv": "https://i.ibb.co/L5RkgT7/gtv.png",
-            "gtv": "https://i.ibb.co/L5RkgT7/gtv.png",
-            "bahrain sports 1": "https://i.ibb.co/pZ4T2Qn/bahrain-sports.png",
-            "ktv sports class": "https://i.ibb.co/9VvCkBx/ktv-sports.png",
-            "sports fishing tv": "https://i.ibb.co/b3PfZh7/sports-fishing-tv.png",
-            "tv9 bharatvarsh": "https://i.ibb.co/3yn9j8p/tv9-bharatvarsh.png"
+            "gazi tv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.bd.png",
+            "gtv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.bd.png",
+            "bahrain sports": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bahrain_Sports_logo.png/500px-Bahrain_Sports_logo.png",
+            "ktv sport": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/KTV_Sport_logo.png/500px-KTV_Sport_logo.png",
+            "ktv sports": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/KTV_Sport_logo.png/500px-KTV_Sport_logo.png",
+            "sports fishing": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SportsFishing.us.png",
+            "tv9 bharatvarsh": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/TV9_Bharatvarsh_Logo.png/500px-TV9_Bharatvarsh_Logo.png"
           };
 
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            // Explicit Check for All Bangladeshi Channels
             if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9/i.test(clean)) {
               return "Bangla";
             }
 
-            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing/i.test(clean)) {
+            if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) {
               return "Sports";
             }
 
@@ -199,6 +199,7 @@ jobs:
               let logoUrl = "";
               const cleanTitle = title.toLowerCase().trim();
 
+              // Direct Match with Manual Logos
               for (const [key, val] of Object.entries(logoMap)) {
                 if (cleanTitle.includes(key)) {
                   logoUrl = val;
@@ -206,6 +207,7 @@ jobs:
                 }
               }
 
+              // Fallback to API Logo if not found in Manual Map
               if (!logoUrl) {
                 const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                                   block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
@@ -259,7 +261,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Playlist successfully generated.`);
+            console.log(`Playlist successfully generated with Working Logos.`);
           }
 
           processData();
@@ -271,5 +273,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed missing Bangladeshi channels priority and categorization: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed missing logos using GitHub/Wikimedia RAW CDN URLs: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
