@@ -245,6 +245,34 @@
     "priority": 34
   },
   {
+    "name": "Channel 52",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-26/images_9b7bab426198d5e39dea4b494cad717b_playmist_channel52.jpg",
+    "url": "https://tvsen6.aynaott.com/channel52/index.m3u8",
+    "category": "Bangla",
+    "priority": 35
+  },
+  {
+    "name": "Drama 24",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/30554e50000b538aef52a9181052af56.jpg",
+    "url": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
+    "category": "Bangla",
+    "priority": 36
+  },
+  {
+    "name": "Global TV",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_e58bddfe000aa3e5df9f7c2e90416d90_playmist_global_tv_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8",
+    "category": "Bangla",
+    "priority": 37
+  },
+  {
+    "name": "Thikana",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b9a8bdbfcea2fb4656204d06f615682a_playmist_thikana400x400.jpg",
+    "url": "https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8",
+    "category": "Bangla",
+    "priority": 38
+  },
+  {
     "name": "T Sports HD",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg",
     "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
@@ -413,6 +441,20 @@
     "priority": 999
   },
   {
+    "name": "kolkata TV",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_067234e427ca902620258631b762cea8_playmist_kolkata_tv_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8",
+    "category": "Kolkata",
+    "priority": 999
+  },
+  {
+    "name": "R Plus",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
+    "category": "Kolkata",
+    "priority": 999
+  },
+  {
     "name": "Sangeet Bangla",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_68b8c3bbc8b629bbc2c00880b4546d74_playmist_sangeet_bangla400x400.jpg",
     "url": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
@@ -430,6 +472,13 @@
     "name": "TV9 Bangla",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg",
     "url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+    "category": "Kolkata",
+    "priority": 999
+  },
+  {
+    "name": "Zee 24 Ghanta",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
     "category": "Kolkata",
     "priority": 999
   },
@@ -749,13 +798,6 @@
     "priority": 999
   },
   {
-    "name": "Channel 52",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-26/images_9b7bab426198d5e39dea4b494cad717b_playmist_channel52.jpg",
-    "url": "https://tvsen6.aynaott.com/channel52/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
     "name": "CNBC TV",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_e67654cc3d37f4eda1a16709b2b88f6d_playmist_cnbc_tv_400x400.jpg",
     "url": "https://tvsen6.aynaott.com/cnbc/index.m3u8",
@@ -766,13 +808,6 @@
     "name": "CP 24",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_eaacf02e8523f40c627b8234c614963d_playmist_cp_24_400x400.jpg",
     "url": "https://tvsen6.aynaott.com/cp24/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Drama 24",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/30554e50000b538aef52a9181052af56.jpg",
-    "url": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -805,13 +840,6 @@
     "priority": 999
   },
   {
-    "name": "Global TV",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_e58bddfe000aa3e5df9f7c2e90416d90_playmist_global_tv_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
     "name": "Goal TV",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg",
     "url": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
@@ -833,23 +861,9 @@
     "priority": 999
   },
   {
-    "name": "kolkata TV",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_067234e427ca902620258631b762cea8_playmist_kolkata_tv_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/kolkatatv/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
     "name": "LIFE TIME",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_31a018cec62068612c9dc5efa6b13856_playmist_life_time_400x400.jpg",
     "url": "https://tvsen7.aynaott.com/lifetime/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "R Plus",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -864,13 +878,6 @@
     "name": "Test Live TV",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/TestLiveTV.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Thikana",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b9a8bdbfcea2fb4656204d06f615682a_playmist_thikana400x400.jpg",
-    "url": "https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -906,13 +913,6 @@
     "name": "Wion",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_af4d270a6fc7246b2dc185399cce7dbd_playmist_wion_400x400.jpg",
     "url": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Zee 24 Ghanta",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   }
