@@ -2,16 +2,22 @@ import json
 import uuid
 import requests
 
+# ১. ডায়নামিক সেশন ও ডিভাইস আইডি
 SESSION_ID = str(uuid.uuid4())
 DEVICE_ID = str(uuid.uuid4())[:16]
 
+# ২. আপডেটেড রিয়েল ব্রাউজার ও অ্যাপ হেডার্স
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Linux; Android 13; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
     "Referer": "https://toffeelive.com/",
     "Origin": "https://toffeelive.com",
     "X-Session-Id": SESSION_ID,
     "X-Device-Id": DEVICE_ID,
-    "Accept": "application/json, text/plain, */*"
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin"
 }
 
 API_ENDPOINT = "https://toffeelive.com/api/v1/channels"
@@ -20,9 +26,16 @@ DEFAULT_LOGO = "https://toffeelive.com/images/icons/signin-prompt.svg"
 
 all_channels = []
 
+# ৩. এপিআই থেকে সরাসরি ডাটা এবং কুকি এক্সট্র্যাক্ট করা
 try:
     session = requests.Session()
-    response = session.get(API_ENDPOINT, headers=HEADERS, timeout=12)
+    session.headers.update(HEADERS)
+    
+    # কুকি জেনারেট করার জন্য হোমপেজে প্রথম রিকোয়েস্ট
+    session.get("https://toffeelive.com/", timeout=10)
+    
+    # এপিআই রিকোয়েস্ট
+    response = session.get(API_ENDPOINT, timeout=12)
     
     extracted_cookies = session.cookies.get_dict()
     cookie_str = "; ".join([f"{k}={v}" for k, v in extracted_cookies.items()])
@@ -32,17 +45,17 @@ try:
 
     if response.status_code == 200:
         res_data = response.json()
-        raw_list = res_data.get("data", []) or res_data.get("channels", [])
+        raw_list = res_data.get("data", []) or res_data.get("channels", []) or res_data.get("results", [])
         
         for ch in raw_list:
-            slug = str(ch.get("slug") or ch.get("id") or "").strip().lower().replace(" ", "_")
+            slug = str(ch.get("slug") or ch.get("channel_slug") or ch.get("id") or "").strip().lower().replace(" ", "_")
             if not slug:
                 continue
 
-            ch_name = ch.get("name") or ch.get("title") or "Toffee Channel"
-            ch_group = ch.get("category_name") or ch.get("category") or "Toffee Live"
+            ch_name = ch.get("name") or ch.get("title") or ch.get("channel_name") or "Toffee Channel"
+            ch_group = ch.get("category_name") or ch.get("category") or ch.get("genre") or "Toffee Live"
             
-            logo = ch.get("logo") or ch.get("image_url") or ch.get("poster") or DEFAULT_LOGO
+            logo = ch.get("logo") or ch.get("image_url") or ch.get("poster") or ch.get("logo_url") or DEFAULT_LOGO
             if logo and logo.startswith("/"):
                 logo = f"https://toffeelive.com{logo}"
 
@@ -61,6 +74,7 @@ try:
 except Exception as e:
     print(f"Fetch Error: {e}")
 
+# ব্যাকআপ ফালFallback চ্যানেল লিস্ট (যদি API পুরোপুরি ব্লক করে)
 if not all_channels:
     fallback_slugs = [
         ("fifa_world_cup", "FIFA World Cup Live", "Sports"),
@@ -93,8 +107,10 @@ if not all_channels:
             "cookie": default_cookie
         })
 
+# ৪. গ্রুপ অনুসারে সাজানো
 all_channels = sorted(all_channels, key=lambda x: x["group"])
 
+# ৫. toffee.m3u ফাইল তৈরি
 m3u_lines = []
 for ch in all_channels:
     m3u_lines.append(f'#EXTINF:-1 group-title="{ch["group"]}" tvg-logo="{ch["logo"]}",{ch["name"]}')
@@ -106,6 +122,7 @@ for ch in all_channels:
 with open("toffee.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(m3u_lines))
 
+# ৬. toffee.json ফাইল তৈরি
 grouped_data = {}
 for ch in all_channels:
     grp = ch["group"]
