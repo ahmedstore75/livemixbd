@@ -2,7 +2,7 @@ name: Auto Save Toffee Playlist
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # প্রতি ১২ ঘণ্টা পরপর অটো সেভ হবে
+    - cron: '0 */12 * * *' # প্রতি ১২ ঘণ্টা পর পর অটো রান হবে
   workflow_dispatch: # ম্যানুয়ালি রান করার বোতাম
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
+        run: pip install requests
 
       - name: Run Script
         run: python main.py
