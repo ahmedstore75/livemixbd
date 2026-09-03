@@ -24,6 +24,7 @@ jobs:
         run: pip install requests
 
       - name: Run Script
+        # আপনার পাইথন ফাইলটির নাম যদি main.py না হয়ে অন্য কিছু হয় (যেমন toffee.py), তবে নিচের লাইনে main.py মুছে সেই নাম বসিয়ে দিন
         run: python main.py
 
       - name: Commit and Push Updated Files
