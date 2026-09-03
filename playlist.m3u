@@ -39,7 +39,7 @@ https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
 https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
 #EXTINF:-1 group-title="Bangla" tvg-name="DBC News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_f38ba3f3f90338a11e3004e52cf804af_playmist_dbc_news_400x400.jpg", DBC News
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Gazi TV" tvg-logo="https://i.ibb.co/L5RkgT7/gtv.png", Gazi TV
+#EXTINF:-1 group-title="Bangla" tvg-name="Gazi TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.bd.png", Gazi TV
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
 #EXTINF:-1 group-title="Bangla" tvg-name="Maasranga TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg", Maasranga TV
 https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
@@ -79,7 +79,7 @@ http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="PTV Sports" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg", PTV Sports
 https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://i.ibb.co/pZ4T2Qn/bahrain-sports.png", Bahrain Sports 1
+#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bahrain_Sports_logo.png/500px-Bahrain_Sports_logo.png", Bahrain Sports 1
 https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="Bleav Football" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg", Bleav Football
 https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8
@@ -93,7 +93,7 @@ https://tvsen6.aynaott.com/dubaisports1/index.m3u8
 https://tvsen7.aynaott.com/espn/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="FIFA+" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/bcc9699c8a3c8faf509c92e9280e576f.jpg", FIFA+
 https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="KTV Sport Plus" tvg-logo="", KTV Sport Plus
+#EXTINF:-1 group-title="Sports" tvg-name="KTV Sport Plus" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/KTV_Sport_logo.png/500px-KTV_Sport_logo.png", KTV Sport Plus
 https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="NFL Network" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_cadf0a534c4de626332004067cee3103_playmist_nfl_network400x400.jpg", NFL Network
 https://tvsen6.aynaott.com/nfl/index.m3u8
@@ -101,7 +101,7 @@ https://tvsen6.aynaott.com/nfl/index.m3u8
 https://tvsen5.aynaott.com/skynews/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="Sky News Weather" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg", Sky News Weather
 https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports Fishing TV" tvg-logo="https://i.ibb.co/b3PfZh7/sports-fishing-tv.png", Sports Fishing TV
+#EXTINF:-1 group-title="Sports" tvg-name="Sports Fishing TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SportsFishing.us.png", Sports Fishing TV
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="Talk Sport" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e190f393ddda707426d58a0f295bd7cd.jpg", Talk Sport
 https://tvsen6.aynaott.com/talkSPORT/index.m3u8
@@ -133,7 +133,7 @@ https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
 https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
 #EXTINF:-1 group-title="Indian" tvg-name="Goldmines Movies" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg", Goldmines Movies
 https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
-#EXTINF:-1 group-title="Indian" tvg-name="TV9 Bharatvarsh" tvg-logo="https://i.ibb.co/3yn9j8p/tv9-bharatvarsh.png", TV9 Bharatvarsh
+#EXTINF:-1 group-title="Indian" tvg-name="TV9 Bharatvarsh" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/TV9_Bharatvarsh_Logo.png/500px-TV9_Bharatvarsh_Logo.png", TV9 Bharatvarsh
 https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
 #EXTINF:-1 group-title="News" tvg-name="ABC News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a806cf1e3ba0981e00a8f340fab8a6f8_playmist_abc_news_400x400.jpg", ABC News
 https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8

@@ -141,7 +141,7 @@
   },
   {
     "name": "Gazi TV",
-    "logo": "https://i.ibb.co/L5RkgT7/gtv.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.bd.png",
     "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8",
     "category": "Bangla",
     "priority": 20
@@ -281,7 +281,7 @@
   },
   {
     "name": "Bahrain Sports 1",
-    "logo": "https://i.ibb.co/pZ4T2Qn/bahrain-sports.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bahrain_Sports_logo.png/500px-Bahrain_Sports_logo.png",
     "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
     "category": "Sports",
     "priority": 999
@@ -330,7 +330,7 @@
   },
   {
     "name": "KTV Sport Plus",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/KTV_Sport_logo.png/500px-KTV_Sport_logo.png",
     "url": "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8",
     "category": "Sports",
     "priority": 999
@@ -358,7 +358,7 @@
   },
   {
     "name": "Sports Fishing TV",
-    "logo": "https://i.ibb.co/b3PfZh7/sports-fishing-tv.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SportsFishing.us.png",
     "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8",
     "category": "Sports",
     "priority": 999
@@ -470,7 +470,7 @@
   },
   {
     "name": "TV9 Bharatvarsh",
-    "logo": "https://i.ibb.co/3yn9j8p/tv9-bharatvarsh.png",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/TV9_Bharatvarsh_Logo.png/500px-TV9_Bharatvarsh_Logo.png",
     "url": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
     "category": "Indian",
     "priority": 999
