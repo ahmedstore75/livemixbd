@@ -1,4 +1,4 @@
-name: Generate M3U and JSON Playlist
+name: Generate Categorized M3U and JSON Playlist
 
 on:
   push:
