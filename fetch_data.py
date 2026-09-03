@@ -74,9 +74,8 @@ try:
 except Exception as e:
     print(f"Fetch Error: {e}")
 
-# ৪. অটোমেটিক ব্যাকআপ সেভ এবং লোড লজিক (API কাজ না করলে অটো লোকাল ব্যাকআপ নিবে)
+# ৪. অটোমেটিক ব্যাকআপ সেভ এবং লোড লজিক
 if all_channels:
-    # API সফল হলে ভবিষ্যতে ফেইল মারার জন্য ডাটা ব্যাকআপ রেখে দিবে
     with open(DATA_BACKUP_FILE, "w", encoding="utf-8") as bf:
         json.dump(all_channels, bf, ensure_ascii=False)
 else:
@@ -85,37 +84,37 @@ else:
         with open(DATA_BACKUP_FILE, "r", encoding="utf-8") as bf:
             all_channels = json.load(bf)
 
-# ৫. তাও না থাকলে Fallback স্লগস থেকে ডাটা তৈরি করবে[span_1](start_span)[span_1](end_span)
-if not all_channels:[span_2](start_span)[span_2](end_span)
-    fallback_slugs = [[span_3](start_span)[span_3](end_span)
-        ("fifa_world_cup", "FIFA World Cup Live", "Sports"),[span_4](start_span)[span_4](end_span)
-        ("somoy_tv", "Somoy TV", "News"),[span_5](start_span)[span_5](end_span)
-        ("jamuna_tv", "Jamuna TV", "News"),[span_6](start_span)[span_6](end_span)
-        ("independent_tv", "Independent TV", "News"),[span_7](start_span)[span_7](end_span)
-        ("channel24", "Channel 24", "News"),[span_8](start_span)[span_8](end_span)
-        ("ekhon_tv", "Ekhon TV", "News"),[span_9](start_span)[span_9](end_span)
-        ("dbc_news", "DBC News", "News"),[span_10](start_span)[span_10](end_span)
-        ("ekattor_tv", "Ekattor TV", "News"),[span_11](start_span)[span_11](end_span)
-        ("rtv", "RTV", "Entertainment"),[span_12](start_span)[span_12](end_span)
-        ("ntv", "NTV", "Entertainment"),[span_13](start_span)[span_13](end_span)
-        ("channel_i", "Channel i", "Entertainment"),[span_14](start_span)[span_14](end_span)
-        ("atn_bangla", "ATN Bangla", "Entertainment"),[span_15](start_span)[span_15](end_span)
-        ("boishakhi_tv", "Boishakhi TV", "Entertainment"),[span_16](start_span)[span_16](end_span)
-        ("deepto_tv", "Deepto TV", "Entertainment"),[span_17](start_span)[span_17](end_span)
-        ("nagorik_tv", "Nagorik TV", "Entertainment"),[span_18](start_span)[span_18](end_span)
-        ("gazi_tv", "Gazi TV (GTV)", "Entertainment"),[span_19](start_span)[span_19](end_span)
-        ("duronto_tv", "Duronto TV", "Kids")[span_20](start_span)[span_20](end_span)
+# ৫. তাও না থাকলে Fallback স্লগস থেকে ডাটা তৈরি করবে
+if not all_channels:
+    fallback_slugs = [
+        ("fifa_world_cup", "FIFA World Cup Live", "Sports"),
+        ("somoy_tv", "Somoy TV", "News"),
+        ("jamuna_tv", "Jamuna TV", "News"),
+        ("independent_tv", "Independent TV", "News"),
+        ("channel24", "Channel 24", "News"),
+        ("ekhon_tv", "Ekhon TV", "News"),
+        ("dbc_news", "DBC News", "News"),
+        ("ekattor_tv", "Ekattor TV", "News"),
+        ("rtv", "RTV", "Entertainment"),
+        ("ntv", "NTV", "Entertainment"),
+        ("channel_i", "Channel i", "Entertainment"),
+        ("atn_bangla", "ATN Bangla", "Entertainment"),
+        ("boishakhi_tv", "Boishakhi TV", "Entertainment"),
+        ("deepto_tv", "Deepto TV", "Entertainment"),
+        ("nagorik_tv", "Nagorik TV", "Entertainment"),
+        ("gazi_tv", "Gazi TV (GTV)", "Entertainment"),
+        ("duronto_tv", "Duronto TV", "Kids")
     ]
-    default_cookie = "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key[span_21](start_span)"[span_21](end_span)
-    for slug, name, grp in fallback_slugs:[span_22](start_span)[span_22](end_span)
-        all_channels.append({[span_23](start_span)[span_23](end_span)
-            "id": slug,[span_24](start_span)[span_24](end_span)
-            "name": name,[span_25](start_span)[span_25](end_span)
-            "group": grp,[span_26](start_span)[span_26](end_span)
-            "logo": DEFAULT_LOGO,[span_27](start_span)[span_27](end_span)
-            "url": f"{BASE_CDN}/{slug}/playlist.m3u8",[span_28](start_span)[span_28](end_span)
-            "user_agent": "okhttp/3.1.0",[span_29](start_span)[span_29](end_span)
-            "cookie": default_cookie[span_30](start_span)[span_30](end_span)
+    default_cookie = "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t; Expires=1788598874; KeyName=edge-cache-key"
+    for slug, name, grp in fallback_slugs:
+        all_channels.append({
+            "id": slug,
+            "name": name,
+            "group": grp,
+            "logo": DEFAULT_LOGO,
+            "url": f"{BASE_CDN}/{slug}/playlist.m3u8",
+            "user_agent": "okhttp/3.1.0",
+            "cookie": default_cookie
         })
 
 # ৬. গ্রুপ অনুসারে সাজানো
