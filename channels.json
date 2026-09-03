@@ -141,7 +141,7 @@
   },
   {
     "name": "Gazi TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.bd.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.png",
     "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8",
     "category": "Bangla",
     "priority": 20
@@ -281,7 +281,7 @@
   },
   {
     "name": "Bahrain Sports 1",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BahrainSports1.bh.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BahrainSports1.png",
     "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
     "category": "Sports",
     "priority": 999
@@ -330,7 +330,7 @@
   },
   {
     "name": "KTV Sport Plus",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/KTVSport.kw.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/KTVSportPlus.png",
     "url": "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8",
     "category": "Sports",
     "priority": 999
@@ -358,7 +358,7 @@
   },
   {
     "name": "Sports Fishing TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SportsFishingTV.png",
     "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8",
     "category": "Sports",
     "priority": 999
@@ -470,7 +470,7 @@
   },
   {
     "name": "TV9 Bharatvarsh",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/TV9Bharatvarsh.png",
     "url": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
     "category": "Indian",
     "priority": 999
@@ -862,7 +862,7 @@
   },
   {
     "name": "Test Live TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/TestLiveTV.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
     "category": "Entertainment",
     "priority": 999
