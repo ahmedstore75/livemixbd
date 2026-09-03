@@ -121,7 +121,7 @@
   },
   {
     "name": "Gazi TV",
-    "logo": "",
+    "logo": "https://i.ibb.co/L5RkgT7/gtv.png",
     "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8",
     "category": "Bangla"
   },
@@ -211,7 +211,7 @@
   },
   {
     "name": "Bahrain Sports 1",
-    "logo": "",
+    "logo": "https://i.ibb.co/pZ4T2Qn/bahrain-sports.png",
     "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
     "category": "Sports"
   },
@@ -295,7 +295,7 @@
   },
   {
     "name": "Sports Fishing TV",
-    "logo": "",
+    "logo": "https://i.ibb.co/b3PfZh7/sports-fishing-tv.png",
     "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8",
     "category": "Sports"
   },
@@ -402,6 +402,12 @@
     "category": "Indian"
   },
   {
+    "name": "TV9 Bharatvarsh",
+    "logo": "https://i.ibb.co/3yn9j8p/tv9-bharatvarsh.png",
+    "url": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
+    "category": "Indian"
+  },
+  {
     "name": "ABC News",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a806cf1e3ba0981e00a8f340fab8a6f8_playmist_abc_news_400x400.jpg",
     "url": "https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8",
@@ -501,12 +507,6 @@
     "name": "Star News",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_4c8e446a0a7c9f1c28fd6aef2c19132d_playmist_star_news400x400.jpg",
     "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8",
-    "category": "News"
-  },
-  {
-    "name": "TV9 Bharatvarsh",
-    "logo": "",
-    "url": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
     "category": "News"
   },
   {
