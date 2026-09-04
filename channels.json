@@ -350,13 +350,6 @@
     "priority": 999
   },
   {
-    "name": "KTV Sport Plus",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/KTVSportPlus.png",
-    "url": "https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8",
-    "category": "Sports",
-    "priority": 999
-  },
-  {
     "name": "NFL Network",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_cadf0a534c4de626332004067cee3103_playmist_nfl_network400x400.jpg",
     "url": "https://tvsen6.aynaott.com/nfl/index.m3u8",
@@ -662,6 +655,13 @@
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
     "url": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
     "category": "Movies",
+    "priority": 999
+  },
+  {
+    "name": "9x Jalwa",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
+    "category": "Music",
     "priority": 999
   },
   {
