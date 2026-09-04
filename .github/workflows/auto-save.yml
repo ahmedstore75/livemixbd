@@ -147,45 +147,49 @@ jobs:
             let extractedChannels = [];
             const seenUrls = new Set();
 
-            const items = cleanedData.split(/\n/);
+            // এক লাইনের ডাটা স্ট্রিম থেকে গ্লোবাল স্লাইসিং
+            const urlRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
+            let match;
 
-            for (const line of items) {
-              if (!line.includes(".m3u8")) continue;
-
-              const streamMatch = line.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
-              if (!streamMatch) continue;
-
-              const streamUrl = streamMatch[1];
+            while ((match = urlRegex.exec(cleanedData)) !== null) {
+              const streamUrl = match[1];
               if (seenUrls.has(streamUrl)) continue;
 
+              const startIndex = Math.max(0, match.index - 800);
+              const endIndex = Math.min(cleanedData.length, match.index + 300);
+              const contextBlock = cleanedData.substring(startIndex, endIndex);
+
               let title = "";
-              const titleMatch = line.match(/"(?:title|name|tvName|channel_name)"\s*:\s*"([^"]+)"/i);
+              const titleMatch = contextBlock.match(/"(?:title|name|tvName|channel_name|label)"\s*:\s*"([^"]+)"/i);
+              
               if (titleMatch) {
-                let candidate = titleMatch[1].trim();
+                let val = titleMatch[1].trim();
                 const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Sports", "Channels", "Live-tvs"];
-                if (!junk.includes(candidate)) {
-                  title = candidate;
+                if (!junk.includes(val) && !/^[a-zA-Z0-9]{15,}$/.test(val)) {
+                  title = val;
                 }
               }
 
               if (!title) {
-                const altMatch = line.match(/"([^"]{3,30})"\s*,\s*"https?:[^\s"\\]+\.m3u8/i);
-                if (altMatch) title = altMatch[1];
+                const altMatch = contextBlock.match(/"([^"]{3,40})"\s*,\s*"https?:/i);
+                if (altMatch) title = altMatch[1].trim();
               }
 
               if (!title) continue;
 
               let logoUrl = "";
-              const logoMatch = line.match(/"(?:logo|image|poster|thumbnail|icon|avatar)"\s*:\s*"([^"]+)"/i) ||
-                                line.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*)/i) ||
-                                line.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg))/i);
+              const logoMatch = contextBlock.match(/"(?:logo|image|poster|thumbnail|icon|avatar|path)"\s*:\s*"([^"]+)"/i) ||
+                                contextBlock.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*")/i) ||
+                                contextBlock.match(/("\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)")/i);
 
               if (logoMatch) {
-                let extracted = logoMatch[1].trim();
+                let extracted = logoMatch[1].replace(/"/g, "").trim();
                 if (extracted.startsWith("/")) {
                   extracted = "https://web.aynaott.com" + extracted;
                 }
-                logoUrl = extracted;
+                if (!extracted.includes("placeholder") && !extracted.includes("default-avatar")) {
+                  logoUrl = extracted;
+                }
               }
 
               if (!logoUrl) {
@@ -223,7 +227,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Saved ${extractedChannels.length} channels.`);
+            console.log(`Successfully saved ${extractedChannels.length} channels.`);
           }
 
           processData();
