@@ -8,15 +8,18 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-playlist:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -144,56 +147,45 @@ jobs:
             let extractedChannels = [];
             const seenUrls = new Set();
 
-            // JSON অবজেক্ট প্যাটার্ন পার্সিং
-            const objectRegex = /\{[^{}]*"[a-zA-Z0-9_-]*"[^{}]*\}/g;
-            const matches = cleanedData.match(objectRegex) || [];
+            const items = cleanedData.split(/\n/);
 
-            // Ayna OTT RSC Stream Patterns
-            const channelBlocks = cleanedData.split(/(?=\{"id":|"title":|"stream":|"url":)/g);
+            for (const line of items) {
+              if (!line.includes(".m3u8")) continue;
 
-            for (const block of channelBlocks) {
-              if (!block.includes(".m3u8")) continue;
-
-              const streamMatch = block.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
+              const streamMatch = line.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
               if (!streamMatch) continue;
 
               const streamUrl = streamMatch[1];
               if (seenUrls.has(streamUrl)) continue;
 
-              // নিখুঁত টাইটেল এক্সট্র্যাকশন (ক্যাটেগরির জ্যাঙ্ক নাম ফিল্টার সহ)
               let title = "";
-              const titleMatches = [...block.matchAll(/"(?:title|name|tvName|channel_name)"\s*:\s*"([^"]+)"/gi)];
-              
-              const excludeWords = [
-                "viewport", "description", "noir", "default", "next_locale", "g", 
-                "ayna ott", "bangla", "sports", "kolkata", "indian", "news", "movies", 
-                "music", "islamic", "kids", "documentary", "entertainment", "channels", "live-tvs"
-              ];
-
-              for (const tm of titleMatches) {
-                let candidate = tm[1].replace(/\\t|\\n|\\r/g, "").trim();
-                if (candidate && !excludeWords.includes(candidate.toLowerCase()) && !/^[a-zA-Z0-9]{15,}$/.test(candidate)) {
+              const titleMatch = line.match(/"(?:title|name|tvName|channel_name)"\s*:\s*"([^"]+)"/i);
+              if (titleMatch) {
+                let candidate = titleMatch[1].trim();
+                const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Sports", "Channels", "Live-tvs"];
+                if (!junk.includes(candidate)) {
                   title = candidate;
-                  break;
                 }
+              }
+
+              if (!title) {
+                const altMatch = line.match(/"([^"]{3,30})"\s*,\s*"https?:[^\s"\\]+\.m3u8/i);
+                if (altMatch) title = altMatch[1];
               }
 
               if (!title) continue;
 
-              // লোগো এক্সট্র্যাকশন
               let logoUrl = "";
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|avatar|path)"\s*:\s*"([^"]+)"/i) ||
-                                block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*)/i) ||
-                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg))/i);
+              const logoMatch = line.match(/"(?:logo|image|poster|thumbnail|icon|avatar)"\s*:\s*"([^"]+)"/i) ||
+                                line.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*)/i) ||
+                                line.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg))/i);
 
               if (logoMatch) {
-                let extracted = logoMatch[1].replace(/"/g, "").trim();
+                let extracted = logoMatch[1].trim();
                 if (extracted.startsWith("/")) {
                   extracted = "https://web.aynaott.com" + extracted;
                 }
-                if (!extracted.includes("placeholder") && !extracted.includes("default-avatar")) {
-                  logoUrl = extracted;
-                }
+                logoUrl = extracted;
               }
 
               if (!logoUrl) {
@@ -231,7 +223,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully generated playlist with ${extractedChannels.length} channels.`);
+            console.log(`Saved ${extractedChannels.length} channels.`);
           }
 
           processData();
@@ -240,8 +232,8 @@ jobs:
 
       - name: Commit and Push Files
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated channels playlist: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push
+          git commit -m "Auto update playlist: $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push origin main
