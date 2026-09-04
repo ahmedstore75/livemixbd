@@ -1,323 +1,261 @@
 #EXTM3U
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel24.png", Channel 24
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 24
 https://tvsen6.aynaott.com/nfl/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 9" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel9.png", Channel 9
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 9" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 9
 https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 91" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel91.png", Channel 91
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 91" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 91
 https://live-bangla.akamaized.net/liveabr/playlist.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 93" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel93.png", Channel 93
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 93" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 93
 https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 94" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel94.png", Channel 94
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 94" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 94
 https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 95" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel95.png", Channel 95
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 95" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 95
 https://tvsen6.aynaott.com/andpictureshd/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 98" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel98.png", Channel 98
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 98" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 98
 https://tvsen6.aynaott.com/dhoom/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 52" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel52.png", Channel 52
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 52" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 52
 https://tvsen6.aynaott.com/cnn/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 152" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel152.png", Channel 152
-https://tvsen3.aynaott.com/u2VhUFwF/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Cricket" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Cricket.png", Cricket
+#EXTINF:-1 group-title="Sports" tvg-name="Cricket" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Cricket
 https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Cricket" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Cricket.png", Cricket
+#EXTINF:-1 group-title="Sports" tvg-name="Cricket" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Cricket
 https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Football.png", Football
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Football
 https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Football.png", Football
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Football
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Football.png", Football
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Football
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Football.png", Football
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Football
 https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Sports.png", Sports
+#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Sports
 https://tvsen7.aynascope.net/tsn2/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Sports.png", Sports
+#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Sports
 https://tvsen7.aynaott.com/espn/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Sports.png", Sports
+#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Sports
 https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Sports.png", Sports
+#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Sports
 https://tvsen6.aynaott.com/talkSPORT/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Sports.png", Sports
+#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Sports
 https://tvsen6.aynaott.com/dubaisports1/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Sports.png", Sports
+#EXTINF:-1 group-title="Sports" tvg-name="Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Sports
 https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
-https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen1.aynaott.com/shn6jGTk/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/cnbc/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen7.aynaott.com/Sports4/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen6.aynaott.com/faGd3tuq/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://247wlive.foxweather.com/stream/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen7.aynaott.com/lifetime/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://tvsen7.aynaott.com/TRTWorldHD/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News.png", News
+#EXTINF:-1 group-title="News" tvg-name="News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", News
 https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
-#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Movie.png", Movie
+#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Movie
 https://vods2.aynaott.com/hindimovies/index.m3u8
-#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Movie.png", Movie
+#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Movie
 https://tvsen7.aynaott.com/hbo/index.m3u8
-#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Movie.png", Movie
+#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Movie
 https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="Music" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Music.png", Music
+#EXTINF:-1 group-title="Music" tvg-name="Music" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Music
 https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="Music" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Music.png", Music
-https://tvsen6.aynaott.com/sMqhLN6n/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynaott.com/vod/bangla/drama/gseries/2026/Barir_Choto_Chele_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynascope.net/vod/bangla/drama/gseries/2025/Megh_Na_Chaitei_Bristi_(2025).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynascope.net/vod/bangla/drama/gseries/exclusive/Sweet_Crush/Sweet_Crush_full_drama.mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynaott.com/vod/bangla/drama/gseries/exclusive/Amader_Pasher_Barita/Amader_Pasher_Barita_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynaott.com/vod/bangla/drama/gseries/2026/Vul_Naki_Prem_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynaott.com/vod/bangla/drama/gseries/exclusive/Punorabritti/Punorabritti_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynaott.com/vod/bangla/drama/gseries/exclusive/dakpion/Dakpion_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynaott.com/vod/bangla/drama/gseries/2026/Tomaroi_Thakbo_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynascope.net/vod/bangla/drama/gseries/exclusive/Poroma_Sundori/Poroma_Sundori_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynascope.net/vod/bangla/drama/gseries/2026/Chawa_Pawa_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla Drama" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BanglaDrama.png", Bangla Drama
-https://vods2.aynascope.net/vod/bangla/drama/gseries/exclusive/Songsar_Amar_Bhalo_Lage_Na/Ayna_Full_Drama_mini.mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel1.png", Channel 1
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 1
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 102" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel102.png", Channel 102
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 102" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 102
 https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 103" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel103.png", Channel 103
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 103" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 103
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 104" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel104.png", Channel 104
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 104" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 104
 https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 106" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel106.png", Channel 106
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 106" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 106
 https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 108" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel108.png", Channel 108
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 108" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 108
 https://vods2.aynaott.com/gseriesDrama/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 110" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel110.png", Channel 110
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 110" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 110
 https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 111" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel111.png", Channel 111
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 111" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 111
 https://tvsen5.aynaott.com/qRHda6ax/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 112" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel112.png", Channel 112
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 112" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 112
 https://tvsen7.aynaott.com/disney/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 114" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel114.png", Channel 114
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 114" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 114
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 118" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel118.png", Channel 118
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 118" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 118
 https://tvsen3.aynaott.com/wpa56Uk3/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 12" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel12.png", Channel 12
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 12" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 12
 https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 120" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel120.png", Channel 120
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 120" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 120
 http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 122" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel122.png", Channel 122
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 122" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 122
 https://tvsen6.aynaott.com/kolkatatv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 124" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel124.png", Channel 124
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 124" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 124
 https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 125" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel125.png", Channel 125
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 125" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 125
 https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 126" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel126.png", Channel 126
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 126" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 126
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 128" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel128.png", Channel 128
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 128" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 128
 https://tvsen6.aynaott.com/AndTV/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 129" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel129.png", Channel 129
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 129" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 129
 https://tvsen6.aynaott.com/amc/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 143" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel143.png", Channel 143
-https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 145" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel145.png", Channel 145
-https://tvsen7.aynaott.com/RongeenTV/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 146" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel146.png", Channel 146
-https://tvsen6.aynaott.com/3Cb2WLFz/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 148" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel148.png", Channel 148
-https://tvsen3.aynaott.com/8KfZvBYS/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 149" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel149.png", Channel 149
-https://tvsen3.aynaott.com/qPNg4LJK/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 150" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel150.png", Channel 150
-https://tvsen3.aynaott.com/27jCLCUX/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 153" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel153.png", Channel 153
-https://tvsen3.aynaott.com/jzT482XQ/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 154" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel154.png", Channel 154
-https://tvsen3.aynaott.com/X9E6bxg3/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 155" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel155.png", Channel 155
-https://tvsen3.aynaott.com/cXpKEQ8U/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 157" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel157.png", Channel 157
-https://tvsen6.aynaott.com/a2cKGQtB/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 160" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel160.png", Channel 160
-https://tvsen6.aynaott.com/msnbc/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 161" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel161.png", Channel 161
-https://edge.socialsmart.tv/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 17" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel17.png", Channel 17
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 17" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 17
 https://tvsen7.aynascope.net/tsn1/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 19" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel19.png", Channel 19
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 19" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 19
 https://tvsen7.aynascope.net/tsn3/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 2" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel2.png", Channel 2
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 2" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 2
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 27" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel27.png", Channel 27
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 27" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 27
 https://cdn-6.pishow.tv/live/13/master.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 3" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel3.png", Channel 3
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 28" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 28
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 3" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 3
 https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 30" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel30.png", Channel 30
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 30" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 30
 https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 31" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel31.png", Channel 31
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 31" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 31
 https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 32" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel32.png", Channel 32
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 32" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 32
 https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 33" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel33.png", Channel 33
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 33" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 33
 https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 34" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel34.png", Channel 34
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 34" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 34
 https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 35" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel35.png", Channel 35
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 35" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 35
 https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 36" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel36.png", Channel 36
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 36" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 36
 https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 37" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel37.png", Channel 37
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 37" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 37
 https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 38" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel38.png", Channel 38
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 38" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 38
 https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 39" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel39.png", Channel 39
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 39" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 39
 https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 4" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel4.png", Channel 4
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 4" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 4
 https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 40" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel40.png", Channel 40
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 40" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 40
 https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 41" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel41.png", Channel 41
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 41" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 41
 https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 42" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel42.png", Channel 42
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 42" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 42
 https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 43" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel43.png", Channel 43
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 43" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 43
 https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 44" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel44.png", Channel 44
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 44" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 44
 https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 45" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel45.png", Channel 45
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 45" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 45
 https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 46" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel46.png", Channel 46
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 46" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 46
 https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 48" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel48.png", Channel 48
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 48" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 48
 https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 49" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel49.png", Channel 49
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 49" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 49
 https://tvsen6.aynaott.com/xjkX3euD/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 5" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel5.png", Channel 5
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 5" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 5
 https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 54" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel54.png", Channel 54
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 54" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 54
 https://tvsen6.aynaott.com/bloombergtv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 55" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel55.png", Channel 55
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 55" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 55
 https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 57" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel57.png", Channel 57
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 57" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 57
 https://tvsen6.aynaott.com/cp24/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 58" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel58.png", Channel 58
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 58" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 58
 https://tvsen6.aynaott.com/foxnews/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 6" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel6.png", Channel 6
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 6" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 6
 https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 60" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel60.png", Channel 60
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 60" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 60
 https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 64" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel64.png", Channel 64
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 64" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 64
 https://feeds.intoday.in/hltapps/api/master.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 65" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel65.png", Channel 65
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 65" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 65
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 7" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel7.png", Channel 7
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 7" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 7
 https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 70" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel70.png", Channel 70
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 70" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 70
 https://tvsen3.aynaott.com/m94BZDYb/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 71" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel71.png", Channel 71
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 71" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 71
 https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 72" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel72.png", Channel 72
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 72" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 72
 https://tvsen6.aynaott.com/TaVfw58T/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 73" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel73.png", Channel 73
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 73" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 73
 https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 8" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel8.png", Channel 8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 8" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 8
 https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 82" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel82.png", Channel 82
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 82" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 82
 https://tvsen6.aynaott.com/foxbusiness/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 83" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel83.png", Channel 83
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 83" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 83
 https://tvsen3.aynaott.com/34fJSjZP/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 86" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel86.png", Channel 86
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channel 86" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Channel 86
 https://tvsen7.aynaott.com/timetv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen5.aynaott.com/skynews/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen6.aynaott.com/mtv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen6.aynaott.com/fox5/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen7.aynaott.com/vtvusa/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/English.png", English
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", English
 https://tvsen3.aynaott.com/u3NjUrny/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://tvsen7.aynaott.com/HindiKhabar/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://tvsen6.aynaott.com/B4UHitz/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://live.zoomnews.info/live/Zoom_playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Hindi
 https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
-https://tvsen6.aynascope.com/F4Z6es8E/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
-https://tvsen3.aynaott.com/yRMLky2j/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Hindi.png", Hindi
-https://tvsen6.aynaott.com/vhu6qz5Nsd/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IndianBangla.png", Indian Bangla
-https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IndianBangla.png", Indian Bangla
+#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Indian Bangla
 https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IndianBangla.png", Indian Bangla
+#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Indian Bangla
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IndianBangla.png", Indian Bangla
-https://tvsen7.aynaott.com/AssamTalks/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Mosharraf Karim" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/MosharrafKarim.png", Mosharraf Karim
-https://vods2.aynaott.com/vod/bangla/drama/gseries/2026/Digital_Hablu_(2026).mp4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Religious" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Religious.png", Religious
+#EXTINF:-1 group-title="Entertainment" tvg-name="Religious" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Religious
 https://tvsen3.aynaott.com/z24qLsqV/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Subscribe
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Subscribe
+https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png", Subscribe
 https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Urdhu" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Urdhu.png", Urdhu
-https://jk3lz82elw79-hls-live.5centscdn.com/harPalGeo/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
