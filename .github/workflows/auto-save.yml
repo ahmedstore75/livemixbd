@@ -23,16 +23,33 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Puppeteer
-        run: |
-          npm init -y
-          npm install puppeteer
-
       - name: Fetch API and Process Categories
         run: |
           cat << 'EOF' > parse.js
           const fs = require("fs");
-          const puppeteer = require("puppeteer");
+          const https = require("https");
+
+          const urls = [
+            "https://web.aynaott.com/live-tvs?_rsc=d6u12",
+            "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
+            "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12"
+          ];
+
+          const options = {
+            headers: {
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+              "RSC": "1",
+              "Accept": "*/*"
+            }
+          };
+
+          const fetchData = (url) => new Promise((resolve) => {
+            https.get(url, options, (res) => {
+              let data = "";
+              res.on("data", chunk => data += chunk);
+              res.on("end", () => resolve(data));
+            }).on("error", () => resolve(""));
+          });
 
           const categoryOrder = [
             "Bangla", "Sports", "Kolkata", "Indian", "News", 
@@ -101,125 +118,77 @@ jobs:
             return index === -1 ? 999 : index;
           }
 
+          function generateAutoLogo(channelName) {
+            let formattedName = channelName
+              .replace(/[^a-zA-Z0-9\s]/g, "")
+              .replace(/\s+/g, "")
+              .trim();
+
+            if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
+            return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
+          }
+
           async function processData() {
-            const browser = await puppeteer.launch({
-              headless: "new",
-              args: ["--no-sandbox", "--disable-setuid-sandbox"]
-            });
-            const page = await browser.newPage();
+            let rawData = "";
+            for (const url of urls) {
+              rawData += await fetchData(url) + "\n";
+            }
 
-            await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36");
-
-            let rawResponses = [];
-
-            // নেটওয়ার্ক ট্রাফিক ইন্টারসেপ্ট করে RSC এপিআই রেসপন্স ক্যাপচার
-            page.on("response", async (response) => {
-              const url = response.url();
-              if (url.includes("live-tvs") || url.includes("blocks")) {
-                try {
-                  const text = await response.text();
-                  rawResponses.push(text);
-                } catch (e) {}
-              }
-            });
-
-            console.log("Navigating to site...");
-            await page.goto("https://web.aynaott.com/live-tvs", { waitUntil: "networkidle2", timeout: 60000 });
-
-            // পেজের সব উপাদান রেন্ডার নিশ্চিত করতে স্ক্রোল ডিক্লেয়ারেশন
-            await page.evaluate(async () => {
-              await new Promise((resolve) => {
-                let totalHeight = 0;
-                const distance = 100;
-                const timer = setInterval(() => {
-                  const scrollHeight = document.body.scrollHeight;
-                  window.scrollBy(0, distance);
-                  totalHeight += distance;
-                  if (totalHeight >= scrollHeight) {
-                    clearInterval(timer);
-                    resolve();
-                  }
-                }, 100);
-              });
-            });
-
-            // DOM উপাদান থেকে সরাসরি নাম ও লোগো সংগ্রহ
-            const domChannels = await page.evaluate(() => {
-              const items = [];
-              const cards = document.querySelectorAll("a, div[class*='card'], div[class*='item']");
-              cards.forEach(card => {
-                const img = card.querySelector("img");
-                const text = card.innerText || img?.alt || "";
-                if (img && img.src && text.length > 1 && text.length < 50) {
-                  items.push({
-                    name: text.trim().split("\n")[0],
-                    logo: img.src
-                  });
-                }
-              });
-              return items;
-            });
-
-            const pageContent = await page.content();
-            rawResponses.push(pageContent);
-            await browser.close();
-
-            const fullData = rawResponses.join("\n")
+            const cleanedData = rawData
               .replace(/\\"/g, '"')
               .replace(/\\\\/g, "\\")
-              .replace(/\\u0026/g, "&")
-              .replace(/\\u002f/gi, "/");
+              .replace(/\\u0026/g, "&");
 
             let extractedChannels = [];
             const seenUrls = new Set();
 
-            const m3u8Regex = /(https?:[^\s"'\\]+\.m3u8[^\s"'\\]*)/gi;
-            let match;
+            // আপনার অরিজিনাল ব্লক স্প্লিটিংকে ফ্লেক্সিবল অবজেক্ট ফিল্টারিং দিয়ে উন্নত করা হয়েছে
+            const rawBlocks = cleanedData.split(/\{/g);
 
-            while ((match = m3u8Regex.exec(fullData)) !== null) {
-              const streamUrl = match[1];
+            for (let i = 0; i < rawBlocks.length; i++) {
+              // কাছাকাছি ৩টি ব্লক মিলিয়ে অবজেক্ট সার্চ (যাতে আইডি, টাইটেল ও ইউআরএল একসাথে মেলে)
+              const block = "{" + rawBlocks.slice(i, i + 5).join("{");
+
+              if (!block.includes(".m3u8")) continue;
+
+              const streamMatch = block.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
+              if (!streamMatch) continue;
+
+              const streamUrl = streamMatch[1];
               if (seenUrls.has(streamUrl)) continue;
 
-              const startIndex = Math.max(0, match.index - 800);
-              const endIndex = Math.min(fullData.length, match.index + 800);
-              const contextBlock = fullData.substring(startIndex, endIndex);
-
               let title = "";
-              const titleMatch = contextBlock.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
+              const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
               
               if (titleMatch) {
                 let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
                 const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs"];
-                if (val && !junk.includes(val) && !/^[a-f0-9-]{10,}$/i.test(val)) {
+                if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val)) {
                   title = val;
                 }
               }
 
+              if (!title) continue;
+
               let logoUrl = "";
-              const logoMatch = contextBlock.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
-                                contextBlock.match(/(https?:[^\s"'\\]+\.(?:png|jpg|jpeg|webp)[^\s"'\\]*)/i);
+
+              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
+                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
+                                block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
 
               if (logoMatch) {
                 let extracted = logoMatch[1].trim();
                 if (extracted.startsWith("/")) {
                   extracted = "https://web.aynaott.com" + extracted;
                 }
-                if (!extracted.includes("avatar") && !extracted.includes("placeholder")) {
+                if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
                   logoUrl = extracted;
                 }
               }
 
-              // DOM থেকে ম্যাচ করা
-              if (!title || title.startsWith("Channel")) {
-                const matchedDom = domChannels.find(d => logoUrl && d.logo && d.logo.includes(logoUrl.split('/').pop()));
-                if (matchedDom) {
-                  title = matchedDom.name;
-                  if (!logoUrl) logoUrl = matchedDom.logo;
-                }
-              }
-
-              if (!title) {
-                title = `Channel ${extractedChannels.length + 1}`;
+              // আপনার মূল লোগো জেনারেটর কল
+              if (!logoUrl) {
+                logoUrl = generateAutoLogo(title);
               }
 
               const category = resolveCategory(title);
@@ -227,7 +196,7 @@ jobs:
 
               extractedChannels.push({
                 name: title,
-                logo: logoUrl || "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png",
+                logo: logoUrl,
                 url: streamUrl,
                 category: category,
                 priority: getPriorityIndex(category, title)
@@ -246,8 +215,6 @@ jobs:
               return a.name.localeCompare(b.name);
             });
 
-            console.log(`Total channels fetched: ${extractedChannels.length}`);
-
             let m3uContent = "#EXTM3U\n";
             for (const ch of extractedChannels) {
               m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
@@ -255,6 +222,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
+            console.log(`Updated successfully with all channels: ${extractedChannels.length}`);
           }
 
           processData();
@@ -266,5 +234,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated channels with Puppeteer: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated channels playlist: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
