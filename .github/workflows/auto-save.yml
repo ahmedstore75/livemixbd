@@ -147,47 +147,57 @@ jobs:
             let extractedChannels = [];
             const seenUrls = new Set();
 
-            // এক লাইনের ডাটা স্ট্রিম থেকে গ্লোবাল স্লাইসিং
+            // মেইন ফিল্টারিং: m3u8 লিংক ধরে ব্যাক ট্র্যাকিং
             const urlRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
             let match;
+
+            const categoryJunk = [
+              "cricket", "football", "sports", "news", "bangla", "kolkata", 
+              "indian", "movies", "music", "islamic", "kids", "documentary", 
+              "entertainment", "channels", "live-tvs", "ayna ott", "default", "noir"
+            ];
 
             while ((match = urlRegex.exec(cleanedData)) !== null) {
               const streamUrl = match[1];
               if (seenUrls.has(streamUrl)) continue;
 
-              const startIndex = Math.max(0, match.index - 800);
-              const endIndex = Math.min(cleanedData.length, match.index + 300);
-              const contextBlock = cleanedData.substring(startIndex, endIndex);
+              // স্ট্রিম লিংক থেকে আগের ৬০০ ক্যারেক্টার টেনে এক্সট্র্যাক্ট করা
+              const startIndex = Math.max(0, match.index - 600);
+              const contextBlock = cleanedData.substring(startIndex, match.index + 100);
 
               let title = "";
-              const titleMatch = contextBlock.match(/"(?:title|name|tvName|channel_name|label)"\s*:\s*"([^"]+)"/i);
               
-              if (titleMatch) {
-                let val = titleMatch[1].trim();
-                const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Sports", "Channels", "Live-tvs"];
-                if (!junk.includes(val) && !/^[a-zA-Z0-9]{15,}$/.test(val)) {
-                  title = val;
+              // ১. লোগোর Alt text বা সরাসরি নাম খোঁজা
+              const nameMatches = [...contextBlock.matchAll(/"(?:title|name|tvName|label|alt)"\s*:\s*"([^"]+)"/gi)];
+              
+              for (const nm of nameMatches) {
+                let candidate = nm[1].trim();
+                if (candidate && !categoryJunk.includes(candidate.toLowerCase()) && !/^[a-zA-Z0-9]{15,}$/.test(candidate)) {
+                  title = candidate;
                 }
               }
 
+              // ২. যদি নাম না পাওয়া যায় তবে অবজেক্টের টেক্সট ফিল্টার
               if (!title) {
-                const altMatch = contextBlock.match(/"([^"]{3,40})"\s*,\s*"https?:/i);
-                if (altMatch) title = altMatch[1].trim();
+                const altMatch = contextBlock.match(/"([^"]{3,30})"\s*,\s*"https?:/i);
+                if (altMatch && !categoryJunk.includes(altMatch[1].trim().toLowerCase())) {
+                  title = altMatch[1].trim();
+                }
               }
 
               if (!title) continue;
 
               let logoUrl = "";
-              const logoMatch = contextBlock.match(/"(?:logo|image|poster|thumbnail|icon|avatar|path)"\s*:\s*"([^"]+)"/i) ||
-                                contextBlock.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*")/i) ||
-                                contextBlock.match(/("\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)")/i);
+              const logoMatch = contextBlock.match(/"(?:logo|image|poster|thumbnail|icon|avatar|path|src)"\s*:\s*"([^"]+)"/i) ||
+                                contextBlock.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*)/i) ||
+                                contextBlock.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg))/i);
 
               if (logoMatch) {
                 let extracted = logoMatch[1].replace(/"/g, "").trim();
                 if (extracted.startsWith("/")) {
                   extracted = "https://web.aynaott.com" + extracted;
                 }
-                if (!extracted.includes("placeholder") && !extracted.includes("default-avatar")) {
+                if (!extracted.includes("placeholder")) {
                   logoUrl = extracted;
                 }
               }
@@ -227,7 +237,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Successfully saved ${extractedChannels.length} channels.`);
+            console.log(`Saved ${extractedChannels.length} channels.`);
           }
 
           processData();
