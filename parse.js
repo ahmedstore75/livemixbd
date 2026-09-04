@@ -1,0 +1,137 @@
+const fs = require("fs");
+const https = require("https");
+
+const urls = [
+  "https://web.aynaott.com/live-tvs?_rsc=d6u12",
+  "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
+  "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12"
+];
+
+const options = {
+  headers: {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "RSC": "1"
+  }
+};
+
+const fetchData = (url) => new Promise((resolve) => {
+  https.get(url, options, (res) => {
+    let data = "";
+    res.on("data", chunk => data += chunk);
+    res.on("end", () => resolve(data));
+  }).on("error", () => resolve(""));
+});
+
+const categoryOrder = [
+  "Bangla", "Sports", "Kolkata", "Indian", "News", 
+  "Movies", "Music", "Islamic", "Kids", "Documentary", "Entertainment"
+];
+
+const priorityMap = {
+  "Bangla": ["btv national", "btv", "channel i", "somoy tv", "jamuna tv", "channel 24", "news 24", "atn news", "ntv", "rtv", "ekushey tv", "independent tv", "bangla vision", "atn bangla", "deepto tv", "ekattor tv", "dbc news", "gtv", "t sports", "maasranga tv", "ekhon tv", "bangla tv", "ananda tv", "bijoy tv", "asian tv", "boishakhi", "desh tv", "mohona", "nexus", "my tv", "sa tv", "channel 9", "channel 52", "drama 24", "global tv", "thikana"],
+  "Sports": ["t sports", "star sports 1", "star sports 2", "star sports hindi", "sony sports 1", "sony sports 2", "sony sports 5", "ten sports", "willow tv", "bein sports", "ptv sports", "eurosport"]
+};
+
+function resolveCategory(title) {
+  const clean = title.toLowerCase().trim();
+  if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) return "Bangla";
+  if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) return "Kolkata";
+  if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) return "Sports";
+  if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine|tv9 bharatvarsh/i.test(clean)) return "Indian";
+  if (/madani|islam|peace|makkah|madinah|quran|sunnah|iqra|deen|huda/i.test(clean)) return "Islamic";
+  if (/news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9/i.test(clean)) return "News";
+  if (/movie|cinema|cine|gold|hbo|action|picture|filmy|flix|popcorn/i.test(clean)) return "Movies";
+  if (/music|mtv|zoom|9xm|9x|sangeet|vh1|club|b4u hitz|zing|musiq|beat|sound/i.test(clean)) return "Music";
+  if (/kid|cartoon|nick|pogo|disney|sonic|hungama|duronto|baby|junior|toon|anime/i.test(clean)) return "Kids";
+  if (/discovery|nat geo|national geographic|history|animal planet|investigation|science|planet|earth|docu/i.test(clean)) return "Documentary";
+  return "Entertainment";
+}
+
+function getPriorityIndex(category, title) {
+  const list = priorityMap[category];
+  if (!list) return 999;
+  const clean = title.toLowerCase().trim();
+  const index = list.findIndex(item => clean.includes(item));
+  return index === -1 ? 999 : index;
+}
+
+function generateAutoLogo(channelName) {
+  let formattedName = channelName.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, "").trim();
+  if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
+  return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
+}
+
+async function processData() {
+  let rawData = "";
+  for (const url of urls) rawData += await fetchData(url) + "\n";
+
+  const cleanedData = rawData.replace(/\\"/g, '"').replace(/\\u0026/g, "&");
+  let extractedChannels = [];
+  const seenUrls = new Set();
+  const categoryJunk = ["cricket", "football", "sports", "news", "bangla", "kolkata", "indian", "movies", "music", "islamic", "kids", "documentary", "entertainment", "channels", "live-tvs", "ayna ott", "default", "noir", "viewport", "description", "next_locale"];
+
+  const streamRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
+  let match;
+
+  while ((match = streamRegex.exec(cleanedData)) !== null) {
+    const streamUrl = match[1];
+    if (seenUrls.has(streamUrl)) continue;
+
+    const startPos = Math.max(0, match.index - 500);
+    const snippet = cleanedData.substring(startPos, match.index);
+    let title = "";
+
+    const fieldMatches = [...snippet.matchAll(/"(?:label|tvName|alt|name|title|channelName)"\s*:\s*"([^"]+)"/gi)];
+    for (let i = fieldMatches.length - 1; i >= 0; i--) {
+      let candidate = fieldMatches[i][1].replace(/[\r\n\t]/g, "").trim();
+      if (candidate && !categoryJunk.includes(candidate.toLowerCase()) && !/^[a-zA-Z0-9]{15,}$/.test(candidate)) {
+        title = candidate;
+        break;
+      }
+    }
+
+    if (!title) continue;
+
+    let logoUrl = "";
+    const logoMatches = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) || snippet.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+    if (logoMatches) {
+      let extracted = logoMatches[1].trim();
+      if (extracted.startsWith("/")) extracted = "https://web.aynaott.com" + extracted;
+      if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) logoUrl = extracted;
+    }
+
+    if (!logoUrl) logoUrl = generateAutoLogo(title);
+
+    const category = resolveCategory(title);
+    seenUrls.add(streamUrl);
+
+    extractedChannels.push({
+      name: title,
+      logo: logoUrl,
+      url: streamUrl,
+      category: category,
+      priority: getPriorityIndex(category, title)
+    });
+  }
+
+  extractedChannels.sort((a, b) => {
+    const catIndexA = categoryOrder.indexOf(a.category);
+    const catIndexB = categoryOrder.indexOf(b.category);
+    const indexA = catIndexA === -1 ? 99 : catIndexA;
+    const indexB = catIndexB === -1 ? 99 : catIndexB;
+    if (indexA !== indexB) return indexA - indexB;
+    if (a.priority !== b.priority) return a.priority - b.priority;
+    return a.name.localeCompare(b.name);
+  });
+
+  let m3uContent = "#EXTM3U\n";
+  for (const ch of extractedChannels) {
+    m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
+  }
+
+  fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
+  fs.writeFileSync("playlist.m3u", m3uContent);
+  console.log(`Success: Extracted ${extractedChannels.length} channels.`);
+}
+
+processData();
