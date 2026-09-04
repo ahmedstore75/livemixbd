@@ -1,15 +1,20 @@
 const fs = require("fs");
 const https = require("https");
 
+// ১৩০+ সব চ্যানেল ফেচ করার জন্য Ayna OTT-র সকল ব্লক লিঙ্ক
 const urls = [
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
-  "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12"
+  "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12",
+  "https://web.aynaott.com/live-tvs/blocks/019edd26-0e1d-7212-b13d-5e263d906bf2?_rsc=d6u12",
+  "https://web.aynaott.com/live-tvs/blocks/019edd26-d667-7b2d-b873-1ee2ddba42df?_rsc=d6u12",
+  "https://web.aynaott.com/live-tvs/blocks/019edd27-4a0b-741c-8e4a-382a9b4991aa?_rsc=d6u12",
+  "https://web.aynaott.com/live-tvs/blocks/019edd27-8a4a-71dd-932f-7634f3b60c91?_rsc=d6u12"
 ];
 
 const options = {
   headers: {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "RSC": "1"
   }
 };
@@ -65,39 +70,50 @@ async function processData() {
   let rawData = "";
   for (const url of urls) rawData += await fetchData(url) + "\n";
 
-  const cleanedData = rawData.replace(/\\"/g, '"').replace(/\\u0026/g, "&");
+  // RSC এস্কেপ ক্যারেক্টার ক্লিন করা
+  const cleanedData = rawData
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, "/")
+    .replace(/\\u0026/g, "&");
+
   let extractedChannels = [];
   const seenUrls = new Set();
-  const categoryJunk = ["cricket", "football", "sports", "news", "bangla", "kolkata", "indian", "movies", "music", "islamic", "kids", "documentary", "entertainment", "channels", "live-tvs", "ayna ott", "default", "noir", "viewport", "description", "next_locale"];
+  const categoryNames = ["cricket", "football", "sports", "news", "bangla", "kolkata", "indian", "movies", "music", "islamic", "kids", "documentary", "entertainment", "channels", "live-tvs", "ayna ott", "default", "noir", "viewport", "description", "next_locale"];
 
-  const streamRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
-  let match;
+  // .m3u8 স্ট্রিমিং লিঙ্কগুলো খুঁজে বের করা
+  const matches = [...cleanedData.matchAll(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi)];
 
-  while ((match = streamRegex.exec(cleanedData)) !== null) {
-    const streamUrl = match[1];
+  for (const m of matches) {
+    const streamUrl = m[1];
     if (seenUrls.has(streamUrl)) continue;
 
-    const startPos = Math.max(0, match.index - 500);
-    const snippet = cleanedData.substring(startPos, match.index);
+    // লিঙ্কের আগের ১০০০ ক্যারেক্টার ফিল্টার করা নাম ও লোগো খোঁজার জন্য
+    const startPos = Math.max(0, m.index - 1000);
+    const snippet = cleanedData.substring(startPos, m.index);
+
     let title = "";
 
-    const fieldMatches = [...snippet.matchAll(/"(?:label|tvName|alt|name|title|channelName)"\s*:\s*"([^"]+)"/gi)];
-    for (let i = fieldMatches.length - 1; i >= 0; i--) {
-      let candidate = fieldMatches[i][1].replace(/[\r\n\t]/g, "").trim();
-      if (candidate && !categoryJunk.includes(candidate.toLowerCase()) && !/^[a-zA-Z0-9]{15,}$/.test(candidate)) {
-        title = candidate;
+    // চ্যানেল টাইটেল / নেম ফিল্টার
+    const nameMatches = [...snippet.matchAll(/"(?:name|title|tvName|label|channelName)"\s*:\s*"([^"]+)"/gi)];
+    for (let i = nameMatches.length - 1; i >= 0; i--) {
+      let cand = nameMatches[i][1].replace(/[\r\n\t]/g, "").trim();
+      if (cand && !categoryNames.includes(cand.toLowerCase()) && !/^[a-f0-9-]{10,}$/i.test(cand)) {
+        title = cand;
         break;
       }
     }
 
     if (!title) continue;
 
+    // লোগো এক্সট্র্যাক্ট
     let logoUrl = "";
-    const logoMatches = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) || snippet.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+    const logoMatches = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) || 
+                        snippet.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+
     if (logoMatches) {
-      let extracted = logoMatches[1].trim();
-      if (extracted.startsWith("/")) extracted = "https://web.aynaott.com" + extracted;
-      if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) logoUrl = extracted;
+      let ext = logoMatches[1].trim();
+      if (ext.startsWith("/")) ext = "https://web.aynaott.com" + ext;
+      if (!ext.includes("avatar") && !ext.includes("default") && !ext.includes("placeholder")) logoUrl = ext;
     }
 
     if (!logoUrl) logoUrl = generateAutoLogo(title);
@@ -131,7 +147,7 @@ async function processData() {
 
   fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("playlist.m3u", m3uContent);
-  console.log(`Success: Extracted ${extractedChannels.length} channels.`);
+  console.log(`Success: Found ${extractedChannels.length} channels.`);
 }
 
 processData();
