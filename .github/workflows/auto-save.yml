@@ -136,7 +136,7 @@ jobs:
 
             const cleanedData = rawData
               .replace(/\\"/g, '"')
-              .replace(/\\\\/g, "\\")
+              .replace(/\\\\/g, "/")
               .replace(/\\u0026/g, "&");
 
             let extractedChannels = [];
@@ -149,7 +149,6 @@ jobs:
               "viewport", "description", "next_locale"
             ];
 
-            // ১. সকল .m3u8 লিংক আগে লোকেট করা
             const streamRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
             let match;
 
@@ -157,25 +156,21 @@ jobs:
               const streamUrl = match[1];
               if (seenUrls.has(streamUrl)) continue;
 
-              // স্ট্রিম লিংকের পেছনের ৫০০ ক্যারেক্টারের স্নিপেট আলাদা করা
               const startPos = Math.max(0, match.index - 500);
               const snippet = cleanedData.substring(startPos, match.index);
 
               let title = "";
 
-              // ১. ফিল্ড-ভিত্তিক ম্যাচ (label, tvName, alt, name, title)
               const fieldMatches = [...snippet.matchAll(/"(?:label|tvName|alt|name|title|channelName)"\s*:\s*"([^"]+)"/gi)];
               
-              // পিছন দিক থেকে স্ক্যান করা যেন m3u8 এর সবচেয়ে কাছের নামটি আগে পায়
               for (let i = fieldMatches.length - 1; i >= 0; i--) {
-                let candidate = fieldMatches[i][1].replace(/\\t|\\n|\\r/g, "").trim();
+                let candidate = fieldMatches[i][1].replace(/[\r\n\t]/g, "").trim();
                 if (candidate && !categoryJunk.includes(candidate.toLowerCase()) && !/^[a-zA-Z0-9]{15,}$/.test(candidate)) {
                   title = candidate;
                   break;
                 }
               }
 
-              // ২. অল্টারনেট ক্লিওপার সার্চ (যদি ফার্স্ট মেথড মিস করে)
               if (!title) {
                 const altMatch = [...snippet.matchAll(/"([^"]{3,35})"\s*,\s*"https?:/gi)];
                 for (let i = altMatch.length - 1; i >= 0; i--) {
@@ -189,7 +184,6 @@ jobs:
 
               if (!title) continue;
 
-              // লোগো নিষ্কাশন
               let logoUrl = "";
               const logoMatches = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                                   snippet.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
@@ -252,5 +246,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fix workflow parsing syntax and extraction: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
