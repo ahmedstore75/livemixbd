@@ -144,11 +144,14 @@ jobs:
             let extractedChannels = [];
             const seenUrls = new Set();
 
-            const rawBlocks = cleanedData.split(/\{/g);
+            // JSON অবজেক্ট প্যাটার্ন পার্সিং
+            const objectRegex = /\{[^{}]*"[a-zA-Z0-9_-]*"[^{}]*\}/g;
+            const matches = cleanedData.match(objectRegex) || [];
 
-            for (let i = 0; i < rawBlocks.length; i++) {
-              const block = "{" + rawBlocks.slice(i, i + 8).join("{");
+            // Ayna OTT RSC Stream Patterns
+            const channelBlocks = cleanedData.split(/(?=\{"id":|"title":|"stream":|"url":)/g);
 
+            for (const block of channelBlocks) {
               if (!block.includes(".m3u8")) continue;
 
               const streamMatch = block.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
@@ -157,33 +160,38 @@ jobs:
               const streamUrl = streamMatch[1];
               if (seenUrls.has(streamUrl)) continue;
 
+              // নিখুঁত টাইটেল এক্সট্র্যাকশন (ক্যাটেগরির জ্যাঙ্ক নাম ফিল্টার সহ)
               let title = "";
-              const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
+              const titleMatches = [...block.matchAll(/"(?:title|name|tvName|channel_name)"\s*:\s*"([^"]+)"/gi)];
               
-              if (titleMatch) {
-                let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
-                const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs"];
-                if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val)) {
-                  title = val;
+              const excludeWords = [
+                "viewport", "description", "noir", "default", "next_locale", "g", 
+                "ayna ott", "bangla", "sports", "kolkata", "indian", "news", "movies", 
+                "music", "islamic", "kids", "documentary", "entertainment", "channels", "live-tvs"
+              ];
+
+              for (const tm of titleMatches) {
+                let candidate = tm[1].replace(/\\t|\\n|\\r/g, "").trim();
+                if (candidate && !excludeWords.includes(candidate.toLowerCase()) && !/^[a-zA-Z0-9]{15,}$/.test(candidate)) {
+                  title = candidate;
+                  break;
                 }
               }
 
               if (!title) continue;
 
+              // লোগো এক্সট্র্যাকশন
               let logoUrl = "";
-
-              // নেস্টেড অবজেক্ট থেকে লোগো বের করার আপডেট করা রেগুলার এক্সপ্রেশন
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|avatar|src|path)"\s*:\s*"([^"]+)"/i) ||
-                                block.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*")/i) ||
-                                block.match(/("\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)")/i);
+              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|avatar|path)"\s*:\s*"([^"]+)"/i) ||
+                                block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg)[^\s"\\]*)/i) ||
+                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp|svg))/i);
 
               if (logoMatch) {
                 let extracted = logoMatch[1].replace(/"/g, "").trim();
                 if (extracted.startsWith("/")) {
                   extracted = "https://web.aynaott.com" + extracted;
                 }
-                // অকেজো ডিফল্ট প্লেসহোল্ডার ফিল্টার করা
-                if (!extracted.includes("default-avatar") && !extracted.includes("placeholder-logo")) {
+                if (!extracted.includes("placeholder") && !extracted.includes("default-avatar")) {
                   logoUrl = extracted;
                 }
               }
@@ -223,7 +231,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Total channels updated: ${extractedChannels.length}`);
+            console.log(`Successfully generated playlist with ${extractedChannels.length} channels.`);
           }
 
           processData();
