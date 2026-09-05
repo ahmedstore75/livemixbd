@@ -130,8 +130,8 @@ async function fetchJsonData(url) {
 
 // ৩. মূল প্রসেসিং
 async function main() {
-  const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
-  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
+  const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
+  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
   const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
 
   console.log("Fetching channels...");
