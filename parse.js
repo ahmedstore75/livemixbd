@@ -1,7 +1,6 @@
 const fs = require("fs");
 const https = require("https");
 
-// Working endpoints for Ayna OTT live streams
 const urls = [
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
@@ -85,7 +84,6 @@ async function processData() {
     rawData += await fetchData(url) + "\n";
   }
 
-  // RSC payload cleanup
   const cleanedData = rawData
     .replace(/\\"/g, '"')
     .replace(/\\\\/g, "/")
@@ -94,7 +92,6 @@ async function processData() {
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  // Extract streams based on m3u8 pattern
   const streamRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
   let match;
 
@@ -102,13 +99,12 @@ async function processData() {
     const streamUrl = match[1];
     if (seenUrls.has(streamUrl)) continue;
 
-    // Scan backwards from stream URL position for title metadata
-    const startPos = Math.max(0, match.index - 800);
+    const startPos = Math.max(0, match.index - 1000);
     const snippet = cleanedData.substring(startPos, match.index);
 
     let title = "";
     const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/gi)];
-    
+
     for (let i = nameMatches.length - 1; i >= 0; i--) {
       let cand = nameMatches[i][1].replace(/[\r\n\t]/g, "").trim();
       const junk = ["viewport", "description", "noir", "default", "next_locale", "g", "ayna ott", "bangla", "channels", "live-tvs"];
@@ -164,7 +160,7 @@ async function processData() {
 
   fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("playlist.m3u", m3uContent);
-  console.log(`Success: Generated playlist with ${extractedChannels.length} channels.`);
+  console.log(`Successfully generated playlist with ${extractedChannels.length} channels.`);
 }
 
 processData();
