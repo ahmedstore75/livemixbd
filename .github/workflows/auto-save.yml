@@ -1,2 +1,35 @@
+name: Generate Categorized M3U and JSON Playlist
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-playlist:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Fetch API and Process Categories
         run: node parse.js
+
+      - name: Commit and Push Files
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add channels.json playlist.m3u
+          git diff --staged --quiet || git commit -m "Auto update playlist: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
