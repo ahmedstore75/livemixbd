@@ -1,7 +1,103 @@
 #EXTM3U
+#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BahrainSports1.png", Bahrain Sports 1
+https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="Sports Fishing TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SportsFishingTV.png", Sports Fishing TV
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/1722.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen7.aynascope.net/tsn2/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://owrcovcrpy.gpcdn.net/bpk-tv/1704/output/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/kajlsd57jnkdf/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
 https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
 https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/talkSPORT/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://vods2.aynaott.com/gseriesDrama/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://tvsen6.aynaott.com/kolkatatv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Subscribe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Subscribe.png", Subscribe
+https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
