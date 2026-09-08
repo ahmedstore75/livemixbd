@@ -651,6 +651,13 @@
     "priority": 999
   },
   {
+    "name": "Khushboo",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg",
+    "url": "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8",
+    "category": "Movies",
+    "priority": 999
+  },
+  {
     "name": "Manoranjan Movies",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg",
     "url": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
@@ -759,13 +766,6 @@
     "name": "Accu Weather",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg",
     "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Amc",
-    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_400x400.jpg",
-    "url": "https://tvsen6.aynaott.com/amc/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
