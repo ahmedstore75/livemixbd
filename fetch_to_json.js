@@ -132,7 +132,7 @@ async function fetchJsonData(url) {
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
-  const url3 = 'https://sm-monirul.top/api/app/info/channel_data.json';
+  const url3 = 'https://raw.githubusercontent.com/ahmedstore75/BANGLA-TV/refs/heads/main/playlist.m3u';
 
   console.log("Fetching channels...");
 
