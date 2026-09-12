@@ -1,4 +1,47 @@
 const fs = require('fs');
+const https = require('https');
+
+// Custom HTTPS fetcher standard handling network issues & Cloudflare blocks
+function httpsFetchJson(url) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Connection': 'keep-alive'
+      },
+      rejectUnauthorized: false // bypass SSL verification issues if any
+    };
+
+    https.get(url, options, (res) => {
+      // Handle HTTP redirects (301, 302)
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return httpsFetchJson(res.headers.location).then(resolve).catch(reject);
+      }
+
+      if (res.statusCode !== 200) {
+        console.error(`JSON status error: ${res.statusCode} for ${url}`);
+        return resolve([]);
+      }
+
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          resolve(parsed);
+        } catch (err) {
+          console.error(`JSON Parse error for ${url}:`, err.message);
+          resolve([]);
+        }
+      });
+    }).on('error', (err) => {
+      console.error(`HTTPS request error for ${url}:`, err.message);
+      resolve([]);
+    });
+  });
+}
 
 // ১. M3U ফাইল পার্স করার ফাংশন
 async function fetchAndParseM3U(url, categoryFallback = "Live") {
@@ -7,8 +50,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
       method: 'GET',
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-      },
-      redirect: 'follow'
+      }
     });
 
     if (!response.ok) {
@@ -82,24 +124,10 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
   }
 }
 
-// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ফিক্সড ফাংশন
+// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ফাংশন
 async function fetchJsonData(url) {
   try {
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*'
-      },
-      redirect: 'follow'
-    });
-
-    if (!response.ok) {
-      console.error(`JSON fetch failed for ${url} with status: ${response.status}`);
-      return [];
-    }
-
-    const json = await response.json();
+    const json = await httpsFetchJson(url);
     let rawList = [];
 
     if (Array.isArray(json)) {
@@ -131,7 +159,7 @@ async function fetchJsonData(url) {
     }).filter(ch => ch.stream_url && ch.stream_url.trim() !== "");
 
   } catch (error) {
-    console.error(`Error fetching JSON from ${url}:`, error.message);
+    console.error(`Error processing JSON from ${url}:`, error.message);
     return [];
   }
 }
