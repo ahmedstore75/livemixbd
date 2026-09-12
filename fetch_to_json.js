@@ -95,10 +95,12 @@ async function main() {
 
   const rawChannels = [...toffeeData, ...akashData, ...fastIptvData];
 
-  // ফিল্টারিং: স্ট্রিমিং ইউআরএল ইউনিক হতে হবে এবং "Program Promo" স্কিপ করবে
   const seenUrls = new Set();
   const filteredChannels = [];
   let idCounter = 1;
+
+  // ব্র্যাকেটে যেকোনো ৪ ডিজিটের সাল চেনার জন্য Regex Pattern
+  const yearPattern = /\(\d{4}\)/;
 
   for (const channel of rawChannels) {
     const streamUrl = channel.stream_url;
@@ -106,8 +108,13 @@ async function main() {
 
     if (!streamUrl) continue;
 
-    // "Program Promo" চ্যানেল ফিল্টার করা (ছোট বা বড় হাতের লেখা হলেও ফিল্টার হবে)
+    // ১. "Program Promo" ফিল্টার করা
     if (channelName.toLowerCase() === "program promo") {
+      continue;
+    }
+
+    // ২. চ্যানেলের নামের শেষে বা মাঝে ব্র্যাকেটে কোনো সাল (যেমন: (2026)) থাকলে তা স্কিপ করা
+    if (yearPattern.test(channelName)) {
       continue;
     }
 
