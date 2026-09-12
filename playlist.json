@@ -7,9 +7,9 @@
   "response": [
     {
       "id": 1,
-      "name": "Al-Taawoun vs Al-Hilal | Saudi Pro League 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17891557791020x576.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8",
+      "name": "Real Madrid vs Rayo Vallecano | LaLiga 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892134401020x576.jpg",
+      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/2353jkiL-tapmad/master.m3u8",
       "cookie": ""
     },
     {
@@ -21,16 +21,16 @@
     },
     {
       "id": 3,
-      "name": "Athletic vs Elche | LaLiga 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17891567281020x576.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/306-tapmad/master.m3u8",
+      "name": "Al-Khaleej vs Al-Nassr | Saudi Pro League 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892131551020x576.jpg",
+      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/ZIMvsIND-3827e1/master.m3u8",
       "cookie": ""
     },
     {
       "id": 4,
-      "name": "Al-Khaleej vs Al-Nassr | Saudi Pro League 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892131551020x576.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/ZIMvsIND-3827e1/master.m3u8",
+      "name": "Barbados Tridents Women vs Jamaica Empress Women | Women's Caribbean Premier League 2026",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17891293781020x576.jpg",
+      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8",
       "cookie": ""
     },
     {
