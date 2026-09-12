@@ -95,20 +95,27 @@ async function main() {
 
   const rawChannels = [...toffeeData, ...akashData, ...fastIptvData];
 
-  // ফিল্টারিং: স্ট্রিমিং ইউআরএল প্লেলিস্টে সর্বোচ্চ ১ বারই থাকবে (ইউনিক)
+  // ফিল্টারিং: স্ট্রিমিং ইউআরএল ইউনিক হতে হবে এবং "Program Promo" স্কিপ করবে
   const seenUrls = new Set();
   const filteredChannels = [];
   let idCounter = 1;
 
   for (const channel of rawChannels) {
     const streamUrl = channel.stream_url;
+    const channelName = channel.name ? channel.name.trim() : "";
+
     if (!streamUrl) continue;
+
+    // "Program Promo" চ্যানেল ফিল্টার করা (ছোট বা বড় হাতের লেখা হলেও ফিল্টার হবে)
+    if (channelName.toLowerCase() === "program promo") {
+      continue;
+    }
 
     if (!seenUrls.has(streamUrl)) {
       seenUrls.add(streamUrl);
       filteredChannels.push({
         id: idCounter++,
-        name: channel.name,
+        name: channelName,
         logo: channel.logo,
         stream_url: channel.stream_url,
         cookie: channel.cookie || ""
