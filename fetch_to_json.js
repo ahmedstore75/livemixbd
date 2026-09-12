@@ -4,10 +4,18 @@ const fs = require('fs');
 async function fetchAndParseM3U(url, categoryFallback = "Live") {
   try {
     const response = await fetch(url, {
+      method: 'GET',
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-      }
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      },
+      redirect: 'follow'
     });
+
+    if (!response.ok) {
+      console.error(`M3U Fetch failed: ${url} (Status: ${response.status})`);
+      return [];
+    }
+
     const text = await response.text();
     const lines = text.split('\n');
     const items = [];
@@ -74,7 +82,7 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
   }
 }
 
-// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ফাংশন
+// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ফিক্সড ফাংশন
 async function fetchJsonData(url) {
   try {
     const response = await fetch(url, {
@@ -82,11 +90,12 @@ async function fetchJsonData(url) {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'application/json, text/plain, */*'
-      }
+      },
+      redirect: 'follow'
     });
 
     if (!response.ok) {
-      console.error(`JSON fetch failed with status: ${response.status}`);
+      console.error(`JSON fetch failed for ${url} with status: ${response.status}`);
       return [];
     }
 
@@ -108,7 +117,6 @@ async function fetchJsonData(url) {
     }
 
     return rawList.map(ch => {
-      // কুকি খুঁজে নেওয়া
       let extractCookie = ch.cookie || "";
       if (!extractCookie && ch.headers) {
         extractCookie = ch.headers.cookie || ch.headers.Cookie || "";
@@ -120,7 +128,7 @@ async function fetchJsonData(url) {
         stream_url: ch.stream_url || ch.link || ch.url || ch.streamUrl || "",
         cookie: extractCookie
       };
-    }).filter(ch => ch.stream_url !== "");
+    }).filter(ch => ch.stream_url && ch.stream_url.trim() !== "");
 
   } catch (error) {
     console.error(`Error fetching JSON from ${url}:`, error.message);
@@ -148,7 +156,6 @@ async function main() {
 
   const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
 
-  // ফিল্টারিং: স্ট্রিমিং ইউআরএল প্লেলিস্টে সর্বোচ্চ ১ বারই থাকবে (ইউনিক)
   const seenUrls = new Set();
   const filteredChannels = [];
   let idCounter = 1;
