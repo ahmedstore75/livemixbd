@@ -1,67 +1,45 @@
 const fs = require('fs');
-const https = require('https');
 
-// Custom HTTPS fetcher standard handling network issues & Cloudflare blocks
-function httpsFetchJson(url) {
-  return new Promise((resolve, reject) => {
-    const options = {
+async function debugJsonFetch(url) {
+  try {
+    const response = await fetch(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Connection': 'keep-alive'
-      },
-      rejectUnauthorized: false // bypass SSL verification issues if any
-    };
-
-    https.get(url, options, (res) => {
-      // Handle HTTP redirects (301, 302)
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return httpsFetchJson(res.headers.location).then(resolve).catch(reject);
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
       }
-
-      if (res.statusCode !== 200) {
-        console.error(`JSON status error: ${res.statusCode} for ${url}`);
-        return resolve([]);
-      }
-
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data);
-          resolve(parsed);
-        } catch (err) {
-          console.error(`JSON Parse error for ${url}:`, err.message);
-          resolve([]);
-        }
-      });
-    }).on('error', (err) => {
-      console.error(`HTTPS request error for ${url}:`, err.message);
-      resolve([]);
     });
-  });
+    
+    console.log(`JSON HTTP Status: ${response.status}`);
+    const rawText = await response.text();
+    console.log(`JSON Raw Response Preview: ${rawText.substring(0, 300)}...`);
+
+    if (!response.ok || !rawText) return [];
+
+    const json = JSON.parse(rawText);
+    // যদি JSON অবজেক্ট বা অ্যারে আকারে থাকে
+    let list = Array.isArray(json) ? json : (json.response || json.channels || json.data || []);
+    
+    return list.map(ch => ({
+      name: ch.name || ch.title || "Unknown",
+      logo: ch.logo || ch.icon || "",
+      stream_url: ch.stream_url || ch.link || ch.url || "",
+      cookie: ch.cookie || (ch.headers ? ch.headers.cookie : "") || ""
+    })).filter(ch => ch.stream_url);
+
+  } catch (error) {
+    console.error("JSON Fetch Error:", error.message);
+    return [];
+  }
 }
 
 // ১. M3U ফাইল পার্স করার ফাংশন
-async function fetchAndParseM3U(url, categoryFallback = "Live") {
+async function fetchAndParseM3U(url) {
   try {
     const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-      }
+      headers: { 'User-Agent': 'Mozilla/5.0' }
     });
-
-    if (!response.ok) {
-      console.error(`M3U Fetch failed: ${url} (Status: ${response.status})`);
-      return [];
-    }
-
     const text = await response.text();
     const lines = text.split('\n');
     const items = [];
-
     let currentItem = {};
     let currentCookie = "";
 
@@ -72,36 +50,17 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
       if (line.startsWith('#EXTINF:')) {
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
-
-        let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
-        if (lastCommaIndex !== -1) {
-          channelName = line.substring(lastCommaIndex + 1).trim();
-        }
+        const channelName = lastCommaIndex !== -1 ? line.substring(lastCommaIndex + 1).trim() : 'Unknown Channel';
 
-        if (!channelName) {
-          const nameMatch = line.match(/tvg-name="([^"]+)"/i);
-          channelName = nameMatch ? nameMatch[1] : 'Unknown Channel';
-        }
-
-        currentItem = {
-          name: channelName,
-          logo: logo
-        };
+        currentItem = { name: channelName, logo: logo };
       } else if (line.startsWith('#EXTHTTP:')) {
         try {
-          const jsonStr = line.replace('#EXTHTTP:', '').trim();
-          const parsedHttp = JSON.parse(jsonStr);
-          if (parsedHttp.cookie) {
-            currentCookie = parsedHttp.cookie;
-          } else if (parsedHttp.Cookie) {
-            currentCookie = parsedHttp.Cookie;
-          }
+          const parsedHttp = JSON.parse(line.replace('#EXTHTTP:', '').trim());
+          currentCookie = parsedHttp.cookie || parsedHttp.Cookie || "";
         } catch (e) {
           const cookieMatch = line.match(/Edge-[^"\s]+/i);
-          if (cookieMatch) {
-            currentCookie = cookieMatch[0];
-          }
+          if (cookieMatch) currentCookie = cookieMatch[0];
         }
       } else if (!line.startsWith('#')) {
         if (currentItem.name) {
@@ -112,59 +71,16 @@ async function fetchAndParseM3U(url, categoryFallback = "Live") {
             cookie: currentCookie
           });
         }
-
         currentItem = {};
         currentCookie = "";
       }
     }
     return items;
   } catch (error) {
-    console.error(`Error fetching M3U ${url}:`, error.message);
     return [];
   }
 }
 
-// ২. ৩ নম্বর JSON লিংক থেকে ডাটা আনার ফাংশন
-async function fetchJsonData(url) {
-  try {
-    const json = await httpsFetchJson(url);
-    let rawList = [];
-
-    if (Array.isArray(json)) {
-      rawList = json;
-    } else if (json && typeof json === 'object') {
-      if (Array.isArray(json.response)) rawList = json.response;
-      else if (Array.isArray(json.channels)) rawList = json.channels;
-      else if (Array.isArray(json.data)) rawList = json.data;
-      else if (Array.isArray(json.channel)) rawList = json.channel;
-      else if (Array.isArray(json.categories)) {
-        json.categories.forEach(cat => {
-          if (Array.isArray(cat.channels)) rawList.push(...cat.channels);
-        });
-      }
-    }
-
-    return rawList.map(ch => {
-      let extractCookie = ch.cookie || "";
-      if (!extractCookie && ch.headers) {
-        extractCookie = ch.headers.cookie || ch.headers.Cookie || "";
-      }
-
-      return {
-        name: ch.name || ch.title || ch.channel_name || "Unknown Channel",
-        logo: ch.logo || ch.icon || ch.image || "",
-        stream_url: ch.stream_url || ch.link || ch.url || ch.streamUrl || "",
-        cookie: extractCookie
-      };
-    }).filter(ch => ch.stream_url && ch.stream_url.trim() !== "");
-
-  } catch (error) {
-    console.error(`Error processing JSON from ${url}:`, error.message);
-    return [];
-  }
-}
-
-// ৩. মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
   const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
@@ -173,9 +89,9 @@ async function main() {
   console.log("Fetching channels...");
 
   const [toffeeData, akashData, extraJsonData] = await Promise.all([
-    fetchAndParseM3U(url1, "Toffee Live"),
-    fetchAndParseM3U(url2, "Akash Live"),
-    fetchJsonData(url3)
+    fetchAndParseM3U(url1),
+    fetchAndParseM3U(url2),
+    debugJsonFetch(url3)
   ]);
 
   console.log(`Toffee channels: ${toffeeData.length}`);
@@ -183,17 +99,15 @@ async function main() {
   console.log(`Extra JSON channels: ${extraJsonData.length}`);
 
   const rawChannels = [...toffeeData, ...akashData, ...extraJsonData];
-
   const seenUrls = new Set();
   const filteredChannels = [];
   let idCounter = 1;
 
   for (const channel of rawChannels) {
-    const streamUrl = channel.stream_url;
-    if (!streamUrl) continue;
+    if (!channel.stream_url) continue;
 
-    if (!seenUrls.has(streamUrl)) {
-      seenUrls.add(streamUrl);
+    if (!seenUrls.has(channel.stream_url)) {
+      seenUrls.add(channel.stream_url);
       filteredChannels.push({
         id: idCounter++,
         name: channel.name,
