@@ -79,15 +79,16 @@ async function fetchAndParseM3U(url) {
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
-  // ১. বাংলাদেশ চ্যানেল
+  // ১. বাংলাদেশ চ্যানেল (Mohona সহ সব বানানের জন্য Regex ফিল্টার)
+  const isMohona = /mohona/i.test(n);
   const bdKeywords = [
     'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
     'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
     'desh tv', 'maasranga', 'gazi tv', 'gtv', 'nagorik', 'bijoy tv', 
     'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv', 'bangla tv',
-    'channel s', 'ekhon', 'global tv', 'mohana', 'nexus', 'rajdhani'
+    'channel s', 'ekhon', 'global tv', 'nexus', 'rajdhani'
   ];
-  if (bdKeywords.some(key => n.includes(key))) return 1;
+  if (isMohona || bdKeywords.some(key => n.includes(key))) return 1;
 
   // ২. কলকাতার বাংলা চ্যানেল
   const kolkataKeywords = [
@@ -104,7 +105,7 @@ function getCategoryPriority(name) {
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
-  // ৪. মুভি চ্যানেল (&pictures চ্যানেলটির সব রকম বানানের জন্য শক্তিশালী Regex ফিল্টার)
+  // ৪. মুভি চ্যানেল
   const isAndPictures = /(&|and|&amp;)\s*picture/i.test(n);
   const movieKeywords = [
     'movie', 'movies', 'cinema', 'hbo', 'star movies', 'sony pix', 'mnx', 'flix', 
