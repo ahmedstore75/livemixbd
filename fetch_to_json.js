@@ -75,7 +75,7 @@ async function fetchAndParseM3U(url) {
   }
 }
 
-// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন (শুধু ২ নম্বর লিংকের জন্য)
+// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন (নতুন চ্যানেল যোগ করা হয়েছে)
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
@@ -84,7 +84,8 @@ function getCategoryPriority(name) {
     'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
     'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
     'desh tv', 'maasranga', 'gazi tv', 'gtv', 'nagorik', 'bijoy tv', 
-    'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv', 'bangla tv'
+    'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv', 'bangla tv',
+    'channel s', 'ekhon', 'global tv', 'mohana', 'nexus', 'rajdhani'
   ];
   if (bdKeywords.some(key => n.includes(key))) return 1;
 
@@ -106,7 +107,8 @@ function getCategoryPriority(name) {
   // ৪. মুভি চ্যানেল
   const movieKeywords = [
     'movie', 'movies', 'cinema', 'hbo', 'star movies', 'sony pix', 'mnx', 'flix', 
-    'cineplex', 'action', 'zee cinema', 'star gold', 'sony max', 'colors cineplex'
+    'cineplex', 'action', 'zee cinema', 'star gold', 'sony max', 'colors cineplex', 
+    '&pictures', 'and pictures', 'andpictures'
   ];
   if (movieKeywords.some(key => n.includes(key))) return 4;
 
@@ -126,7 +128,7 @@ function getCategoryPriority(name) {
 
   // ৭. কিডস / শিশুদের চ্যানেল
   const kidsKeywords = [
-    'cartoon', 'nick', 'pogo', 'disney', 'hungama', 'sonic', 'kids', 'baby'
+    'cartoon', 'nick', 'pogo', 'disney', 'hungama', 'sonic', 'kids', 'baby', 'sony yay', 'yay'
   ];
   if (kidsKeywords.some(key => n.includes(key))) return 7;
 
@@ -138,13 +140,14 @@ function getCategoryPriority(name) {
 
   // ৯. আন্তর্জাতিক ও সাধারণ সংবাদ
   const newsKeywords = [
-    'bbc news', 'cnn', 'al jazeera', 'ndtv', 'india today', 'aaj tak', 'republic', 'dw', 'news'
+    'bbc news', 'cnn', 'al jazeera', 'ndtv', 'india today', 'aaj tak', 'republic', 
+    'dw', 'france 24', 'cgtn', 'russia today', 'rt news', 'trt world', 'news'
   ];
   if (newsKeywords.some(key => n.includes(key))) return 9;
 
-  // ১০. ধর্মীয়
+  // ১০. ধর্মীয় / ইসলামিক
   const religiousKeywords = [
-    'islam', 'makkah', 'madinah', 'peace tv', 'quran', 'peacetv', 'bhakti'
+    'islam', 'makkah', 'madinah', 'sunnah', 'peace tv', 'quran', 'peacetv', 'bhakti', 'saudi sunnah'
   ];
   if (religiousKeywords.some(key => n.includes(key))) return 10;
 
@@ -152,7 +155,7 @@ function getCategoryPriority(name) {
   return 11;
 }
 
-// সাধারণ ফিল্টারিং (সর্ট ছাড়া - ১ ও ৩ নম্বর লিংকের জন্য)
+// সাধারণ ফিল্টারিং (১ ও ৩ নম্বর লিংকের জন্য)
 function filterChannelsOnly(channels, seenUrls) {
   const yearPattern = /\(\d{4}\)/;
   const filtered = [];
@@ -185,7 +188,7 @@ function filterChannelsOnly(channels, seenUrls) {
 function processAndSortLink2(channels, seenUrls) {
   const filtered = filterChannelsOnly(channels, seenUrls);
 
-  // শুধু ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি ও ১, ২, ৩ ডিজিট সিকোয়েন্স অনুযায়ী সাজানো হবে
+  // শুধু ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি ও নম্বর সিকোয়েন্স অনুযায়ী সাজানো
   filtered.sort((a, b) => {
     const catA = getCategoryPriority(a.name);
     const catB = getCategoryPriority(b.name);
@@ -220,19 +223,19 @@ async function main() {
 
   const seenUrls = new Set();
 
-  // ১. প্রথম লিংক (অরিজিনাল অর্ডারে থাকবে)
+  // ১. প্রথম লিংক (অরিজিনাল অর্ডার)
   const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
 
-  // ২. দ্বিতীয় লিংক (ক্যাটাগরি অনুযায়ী সাজানো হবে)
+  // ২. দ্বিতীয় লিংক (ক্যাটাগরি অনুযায়ী সাজানো)
   const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
 
-  // ৩. তৃতীয় লিংক (অরিজিনাল অর্ডারে থাকবে)
+  // ৩. তৃতীয় লিংক (অরিজিনাল অর্ডার)
   const fastIptvChannels = filterChannelsOnly(fastIptvData, seenUrls);
 
   // সব চ্যানেল একত্রে (Link 1 -> Sorted Link 2 -> Link 3)
   const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
-  // আইডি নম্বর নতুন করে দেওয়া
+  // আইডি নতুন করে সেট করা
   const finalResponse = allFinalChannels.map((ch, index) => ({
     id: index + 1,
     ...ch
