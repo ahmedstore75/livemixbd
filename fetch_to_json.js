@@ -75,7 +75,7 @@ async function fetchAndParseM3U(url) {
   }
 }
 
-// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন
+// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন (শুধু ২ নম্বর লিংকের জন্য)
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
@@ -152,8 +152,8 @@ function getCategoryPriority(name) {
   return 11;
 }
 
-// প্রতিটি লিংকের ডাটা আলাদা ফিল্টার ও সর্ট করার ফাংশন
-function processAndSortLinkChannels(channels, seenUrls) {
+// সাধারণ ফিল্টারিং (সর্ট ছাড়া - ১ ও ৩ নম্বর লিংকের জন্য)
+function filterChannelsOnly(channels, seenUrls) {
   const yearPattern = /\(\d{4}\)/;
   const filtered = [];
 
@@ -178,7 +178,14 @@ function processAndSortLinkChannels(channels, seenUrls) {
     }
   }
 
-  // ওই নির্দিষ্ট লিংকের চ্যানেলগুলোকে ক্যাটাগরি এবং নাম/নম্বর সিকোয়েন্স অনুসারে সর্ট করা
+  return filtered;
+}
+
+// ২ নম্বর লিংকের ফিল্টার এবং সর্টিং ফাংশন
+function processAndSortLink2(channels, seenUrls) {
+  const filtered = filterChannelsOnly(channels, seenUrls);
+
+  // শুধু ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি ও ১, ২, ৩ ডিজিট সিকোয়েন্স অনুযায়ী সাজানো হবে
   filtered.sort((a, b) => {
     const catA = getCategoryPriority(a.name);
     const catB = getCategoryPriority(b.name);
@@ -213,19 +220,19 @@ async function main() {
 
   const seenUrls = new Set();
 
-  // ১. প্রথম লিংকের চ্যানেল প্রসেস করা
-  const sortedTapmad = processAndSortLinkChannels(tapmadData, seenUrls);
+  // ১. প্রথম লিংক (অরিজিনাল অর্ডারে থাকবে)
+  const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
 
-  // ২. দ্বিতীয় লিংকের চ্যানেল প্রসেস করা
-  const sortedToffee = processAndSortLinkChannels(toffeeData, seenUrls);
+  // ২. দ্বিতীয় লিংক (ক্যাটাগরি অনুযায়ী সাজানো হবে)
+  const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
 
-  // ৩. তৃতীয় লিংকের চ্যানেল প্রসেস করা
-  const sortedFastIptv = processAndSortLinkChannels(fastIptvData, seenUrls);
+  // ৩. তৃতীয় লিংক (অরিজিনাল অর্ডারে থাকবে)
+  const fastIptvChannels = filterChannelsOnly(fastIptvData, seenUrls);
 
-  // লিঙ্কগুলোর সিরিয়াল ঠিক রেখে একসাথে করা (Link 1 -> Link 2 -> Link 3)
-  const allFinalChannels = [...sortedTapmad, ...sortedToffee, ...sortedFastIptv];
+  // সব চ্যানেল একত্রে (Link 1 -> Sorted Link 2 -> Link 3)
+  const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
-  // আইডি নম্বর (1, 2, 3...) পর পর অ্যাসাইন করা
+  // আইডি নম্বর নতুন করে দেওয়া
   const finalResponse = allFinalChannels.map((ch, index) => ({
     id: index + 1,
     ...ch
@@ -241,7 +248,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json in link sequence with ${finalResponse.length} channels.`);
+  console.log(`Successfully generated playlist.json with ${finalResponse.length} channels.`);
 }
 
 main();
