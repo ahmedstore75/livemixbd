@@ -109,6 +109,8 @@ https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.st
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="Talk Sport" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e190f393ddda707426d58a0f295bd7cd.jpg", Talk Sport
 https://tvsen6.aynaott.com/talkSPORT/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="TNT Sport 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_4af9a282522f487a6ed41692f99baad6_playmist_tnt_sports_1400x400.jpg", TNT Sport 1
+https://tvsen6.aynaott.com/TntSports1HD/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="TSN 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_d165c628a0db9286da3914ca916a4971_playmist_tsn_1400x400.jpg", TSN 1
 https://tvsen7.aynascope.net/tsn1/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="TSN 2" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg", TSN 2
@@ -219,8 +221,6 @@ https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Accu Weather" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg", Accu Weather
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="And tv" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg", And tv
-https://tvsen6.aynaott.com/AndTV/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Bloomberg TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_e7674693d1fdcfada9523f3b4315d417_playmist_bloomberg_tv_400x400.jpg", Bloomberg TV
 https://tvsen6.aynaott.com/bloombergtv/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="CBS TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5cd9688088c2f3b2201b17378bc5081c_playmist_cbs_tv_400x400.jpg", CBS TV
