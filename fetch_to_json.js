@@ -75,8 +75,8 @@ async function fetchAndParseM3U(url) {
   }
 }
 
-// ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি অনুযায়ী সাজানোর ফাংশন
-function getChannelPriority(name) {
+// ১. মূল ক্যাটাগরি আইডি বের করার ফাংশন
+function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
   // ১. বাংলাদেশ ও সাধারণ বাংলা চ্যানেল
@@ -84,7 +84,7 @@ function getChannelPriority(name) {
     'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
     'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
     'desh tv', 'maasranga', 'gazi tv', 'gtv', 't sports', 'nagorik', 'bijoy tv', 
-    'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'bTV'
+    'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv'
   ];
   if (bdKeywords.some(key => n.includes(key))) return 1;
 
@@ -98,7 +98,7 @@ function getChannelPriority(name) {
   // ৩. স্পোর্টস চ্যানেল
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
-    'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport'
+    'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport', 't sports'
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
@@ -120,6 +120,22 @@ function getChannelPriority(name) {
   return 6;
 }
 
+// ২. একই ক্যাটাগরির ভেতর ১, ২, ৩ ক্রম অনুযায়ী নাম অনুসারে সর্ট করার ফাংশন
+function sortChannelsSmartly(channels) {
+  return channels.sort((a, b) => {
+    const catA = getCategoryPriority(a.name);
+    const catB = getCategoryPriority(b.name);
+
+    // আগে ক্যাটাগরি অনুযায়ী ভাগ হবে
+    if (catA !== catB) {
+      return catA - catB;
+    }
+
+    // একই ক্যাটাগরি হলে নাম এবং নম্বর ধরে অ্যালফাবেটিকালি সাজানো হবে (যেমন: Sony Ten 1, Sony Ten 2)
+    return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
+  });
+}
+
 // মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
@@ -138,13 +154,15 @@ async function main() {
   console.log(`Toffee channels: ${toffeeData.length}`);
   console.log(`FAST IPTV channels: ${fastIptvData.length}`);
 
-  // ২ নম্বর লিংকের (Toffee) চ্যানেলগুলোকে অগ্রাধিকারের ক্যাটাগরি অনুযায়ী সর্ট করা
-  const sortedToffeeData = toffeeData.sort((a, b) => {
-    return getChannelPriority(a.name) - getChannelPriority(b.name);
-  });
+  // ২ নম্বর ফাইলের (Toffee) চ্যানেলগুলোকে ক্যাটাগরি ও ১, ২, ৩ সিকোয়েন্স অনুসারে সর্ট করা
+  const sortedToffeeData = sortChannelsSmartly(toffeeData);
 
-  // প্রথমে ২ নম্বর (Toffee), এরপর ১ নম্বর (Tapmad) এবং ৩ নম্বর (Fast IPTV) চ্যানেল যুক্ত হবে
-  const rawChannels = [...sortedToffeeData, ...tapmadData, ...fastIptvData];
+  // ১ ও ৩ নম্বরের চ্যানেলগুলোকেও ক্যাটাগরি অনুযায়ী সাজানো
+  const sortedTapmadData = sortChannelsSmartly(tapmadData);
+  const sortedFastIptvData = sortChannelsSmartly(fastIptvData);
+
+  // প্রথমে সর্ট করা ২ নম্বর (Toffee), এরপর ১ নম্বর ও ৩ নম্বর চ্যানেল যুক্ত হবে
+  const rawChannels = [...sortedToffeeData, ...sortedTapmadData, ...sortedFastIptvData];
 
   const seenUrls = new Set();
   const filteredChannels = [];
