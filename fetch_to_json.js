@@ -75,6 +75,51 @@ async function fetchAndParseM3U(url) {
   }
 }
 
+// ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি অনুযায়ী সাজানোর ফাংশন
+function getChannelPriority(name) {
+  const n = name.toLowerCase();
+
+  // ১. বাংলাদেশ ও সাধারণ বাংলা চ্যানেল
+  const bdKeywords = [
+    'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
+    'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
+    'desh tv', 'maasranga', 'gazi tv', 'gtv', 't sports', 'nagorik', 'bijoy tv', 
+    'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'bTV'
+  ];
+  if (bdKeywords.some(key => n.includes(key))) return 1;
+
+  // ২. কলকাতার বাংলা চ্যানেল
+  const kolkataKeywords = [
+    'star jalsha', 'zee bangla', 'colors bangla', 'sun bangla', 'sony aath', 
+    'jalsha movies', 'zee bangla cinema', 'khabor 24', 'abp ananda', 'news18 bangla'
+  ];
+  if (kolkataKeywords.some(key => n.includes(key))) return 2;
+
+  // ৩. স্পোর্টস চ্যানেল
+  const sportsKeywords = [
+    'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
+    'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport'
+  ];
+  if (sportsKeywords.some(key => n.includes(key))) return 3;
+
+  // ৪. মিউজিক এবং কিডস চ্যানেল
+  const musicKidsKeywords = [
+    'music', 'song', 'mtv', 'sangeet', 'cartoon', 'nick', 'pogo', 'disney', 
+    'hungama', 'sonic', 'discovery kids', 'kids'
+  ];
+  if (musicKidsKeywords.some(key => n.includes(key))) return 4;
+
+  // ৫. ডকুমেন্টারি চ্যানেল
+  const docKeywords = [
+    'discovery', 'national geographic', 'nat geo', 'animal planet', 
+    'history', 'investigation', 'natgeo'
+  ];
+  if (docKeywords.some(key => n.includes(key))) return 5;
+
+  // ৬. অন্যান্য চ্যানেল
+  return 6;
+}
+
 // মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
@@ -83,23 +128,28 @@ async function main() {
 
   console.log("Fetching channels...");
 
-  const [toffeeData, akashData, fastIptvData] = await Promise.all([
+  const [tapmadData, toffeeData, fastIptvData] = await Promise.all([
     fetchAndParseM3U(url1),
     fetchAndParseM3U(url2),
     fetchAndParseM3U(url3)
   ]);
 
+  console.log(`Tapmad channels: ${tapmadData.length}`);
   console.log(`Toffee channels: ${toffeeData.length}`);
-  console.log(`Akash channels: ${akashData.length}`);
   console.log(`FAST IPTV channels: ${fastIptvData.length}`);
 
-  const rawChannels = [...toffeeData, ...akashData, ...fastIptvData];
+  // ২ নম্বর লিংকের (Toffee) চ্যানেলগুলোকে অগ্রাধিকারের ক্যাটাগরি অনুযায়ী সর্ট করা
+  const sortedToffeeData = toffeeData.sort((a, b) => {
+    return getChannelPriority(a.name) - getChannelPriority(b.name);
+  });
+
+  // প্রথমে ২ নম্বর (Toffee), এরপর ১ নম্বর (Tapmad) এবং ৩ নম্বর (Fast IPTV) চ্যানেল যুক্ত হবে
+  const rawChannels = [...sortedToffeeData, ...tapmadData, ...fastIptvData];
 
   const seenUrls = new Set();
   const filteredChannels = [];
   let idCounter = 1;
 
-  // ব্র্যাকেটে যেকোনো ৪ ডিজিটের সাল চেনার জন্য Regex Pattern
   const yearPattern = /\(\d{4}\)/;
 
   for (const channel of rawChannels) {
@@ -108,13 +158,8 @@ async function main() {
 
     if (!streamUrl) continue;
 
-    // ১. "Program Promo" ফিল্টার করা
-    if (channelName.toLowerCase() === "program promo") {
-      continue;
-    }
-
-    // ২. চ্যানেলের নামের শেষে বা মাঝে ব্র্যাকেটে কোনো সাল (যেমন: (2026)) থাকলে তা স্কিপ করা
-    if (yearPattern.test(channelName)) {
+    // "Program Promo" এবং ব্র্যাকেটে সাল ফিল্টার করা
+    if (channelName.toLowerCase() === "program promo" || yearPattern.test(channelName)) {
       continue;
     }
 
