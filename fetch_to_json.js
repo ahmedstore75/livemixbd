@@ -75,7 +75,7 @@ async function fetchAndParseM3U(url) {
   }
 }
 
-// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন (নতুন চ্যানেল যোগ করা হয়েছে)
+// ক্যাটাগরি আইডেন্টিফাই করার উন্নত ফাংশন
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
@@ -104,13 +104,13 @@ function getCategoryPriority(name) {
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
-  // ৪. মুভি চ্যানেল
+  // ৪. মুভি চ্যানেল (&pictures চ্যানেলটির সব রকম বানানের জন্য শক্তিশালী Regex ফিল্টার)
+  const isAndPictures = /(&|and|&amp;)\s*picture/i.test(n);
   const movieKeywords = [
     'movie', 'movies', 'cinema', 'hbo', 'star movies', 'sony pix', 'mnx', 'flix', 
-    'cineplex', 'action', 'zee cinema', 'star gold', 'sony max', 'colors cineplex', 
-    '&pictures', 'and pictures', 'andpictures'
+    'cineplex', 'action', 'zee cinema', 'star gold', 'sony max', 'colors cineplex'
   ];
-  if (movieKeywords.some(key => n.includes(key))) return 4;
+  if (isAndPictures || movieKeywords.some(key => n.includes(key))) return 4;
 
   // ৫. সাধারণ বিনোদন ও ড্রামা
   const dramaKeywords = [
@@ -188,7 +188,7 @@ function filterChannelsOnly(channels, seenUrls) {
 function processAndSortLink2(channels, seenUrls) {
   const filtered = filterChannelsOnly(channels, seenUrls);
 
-  // শুধু ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি ও নম্বর সিকোয়েন্স অনুযায়ী সাজানো
+  // ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি ও সিকোয়েন্স অনুযায়ী সাজানো
   filtered.sort((a, b) => {
     const catA = getCategoryPriority(a.name);
     const catB = getCategoryPriority(b.name);
@@ -235,7 +235,7 @@ async function main() {
   // সব চ্যানেল একত্রে (Link 1 -> Sorted Link 2 -> Link 3)
   const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
-  // আইডি নতুন করে সেট করা
+  // আইডি নতুন করে অ্যাসাইন করা
   const finalResponse = allFinalChannels.map((ch, index) => ({
     id: index + 1,
     ...ch
