@@ -75,18 +75,36 @@ async function fetchAndParseM3U(url) {
   }
 }
 
-// ক্যাটাগরি আইডেন্টিফাই করার উন্নত ফাংশন
+// জনপ্রিয় চ্যানেলগুলোর সিরিয়াল নির্ধারণের তালিকা
+const popularBdChannelsOrder = [
+  'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24',
+  't sports', 'gtv', 'gazi tv', 'ntv', 'rtv', 'channel i', 'atn bangla', 'atn news',
+  'maasranga', 'deepto', 'banglavision', 'boishakhi', 'desh tv', 'nagorik', 'btv'
+];
+
+// পপুলার ইনডেক্স চেক করার ফাংশন
+function getPopularBDIndex(name) {
+  const n = name.toLowerCase();
+  for (let i = 0; i < popularBdChannelsOrder.length; i++) {
+    if (n.includes(popularBdChannelsOrder[i])) {
+      return i; // তালিকার পজিশন রিটার্ন করবে (কম সংখ্যা = আগে থাকবে)
+    }
+  }
+  return 999; // সাধারণ চ্যানেল হলে পেছনে যাবে
+}
+
+// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
-  // ১. বাংলাদেশ চ্যানেল (Mohona সহ সব বানানের জন্য Regex ফিল্টার)
+  // ১. বাংলাদেশ চ্যানেল (পপুলারসহ অন্যান্য বাংলাদেশি চ্যানেল)
   const isMohona = /mohona/i.test(n);
   const bdKeywords = [
     'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
     'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
     'desh tv', 'maasranga', 'gazi tv', 'gtv', 'nagorik', 'bijoy tv', 
     'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv', 'bangla tv',
-    'channel s', 'ekhon', 'global tv', 'nexus', 'rajdhani'
+    'channel s', 'ekhon', 'global tv', 'nexus', 'rajdhani', 't sports'
   ];
   if (isMohona || bdKeywords.some(key => n.includes(key))) return 1;
 
@@ -101,7 +119,7 @@ function getCategoryPriority(name) {
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
     'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
-    't sports', 'tapmad', 'dazn', 'bein sports', 'super sport'
+    'tapmad', 'dazn', 'bein sports', 'super sport'
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
@@ -185,19 +203,30 @@ function filterChannelsOnly(channels, seenUrls) {
   return filtered;
 }
 
-// ২ নম্বর লিংকের ফিল্টার এবং সর্টিং ফাংশন
+// ২ নম্বর লিংকের ফিল্টার এবং অ্যাডভান্সড সর্টিং ফাংশন
 function processAndSortLink2(channels, seenUrls) {
   const filtered = filterChannelsOnly(channels, seenUrls);
 
-  // ২ নম্বর লিংকের চ্যানেল ক্যাটাগরি ও সিকোয়েন্স অনুযায়ী সাজানো
   filtered.sort((a, b) => {
     const catA = getCategoryPriority(a.name);
     const catB = getCategoryPriority(b.name);
 
+    // ১. মূল ক্যাটাগরি অনুসারে সর্টিং
     if (catA !== catB) {
       return catA - catB;
     }
 
+    // ২. যদি ক্যাটাগরি "বাংলাদেশ" হয়, তবে পপুলারিটি সিকোয়েন্স অনুসারে সর্ট হবে
+    if (catA === 1) {
+      const popA = getPopularBDIndex(a.name);
+      const popB = getPopularBDIndex(b.name);
+
+      if (popA !== popB) {
+        return popA - popB;
+      }
+    }
+
+    // ৩. বাকি চ্যানেলগুলো সাধারণ নাম ও ডিজিট সিকোয়েন্স (1, 2, 3) অনুযায়ী সাজানো হবে
     return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
   });
 
@@ -227,7 +256,7 @@ async function main() {
   // ১. প্রথম লিংক (অরিজিনাল অর্ডার)
   const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
 
-  // ২. দ্বিতীয় লিংক (ক্যাটাগরি অনুযায়ী সাজানো)
+  // ২. দ্বিতীয় লিংক (পপুলার চ্যানেল আগে + ক্যাটাগরি সর্টিং)
   const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
 
   // ৩. তৃতীয় লিংক (অরিজিনাল অর্ডার)
@@ -236,7 +265,7 @@ async function main() {
   // সব চ্যানেল একত্রে (Link 1 -> Sorted Link 2 -> Link 3)
   const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
-  // আইডি নতুন করে অ্যাসাইন করা
+  // আইডি সেট করা
   const finalResponse = allFinalChannels.map((ch, index) => ({
     id: index + 1,
     ...ch
@@ -252,7 +281,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${finalResponse.length} channels.`);
+  console.log(`Successfully generated playlist.json with popular channels prioritized.`);
 }
 
 main();
