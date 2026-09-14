@@ -75,15 +75,15 @@ async function fetchAndParseM3U(url) {
   }
 }
 
-// ১. মূল ক্যাটাগরি আইডি বের করার ফাংশন
+// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
-  // ১. বাংলাদেশ ও সাধারণ বাংলা চ্যানেল
+  // ১. বাংলাদেশ চ্যানেল
   const bdKeywords = [
     'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
     'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
-    'desh tv', 'maasranga', 'gazi tv', 'gtv', 't sports', 'nagorik', 'bijoy tv', 
+    'desh tv', 'maasranga', 'gazi tv', 'gtv', 'nagorik', 'bijoy tv', 
     'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv'
   ];
   if (bdKeywords.some(key => n.includes(key))) return 1;
@@ -95,10 +95,10 @@ function getCategoryPriority(name) {
   ];
   if (kolkataKeywords.some(key => n.includes(key))) return 2;
 
-  // ৩. স্পোর্টস চ্যানেল
+  // ৩. স্পোর্টস চ্যানেল (T Sports সহ)
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
-    'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport', 't sports'
+    'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport', 't sports', 'tapmad'
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
@@ -120,22 +120,6 @@ function getCategoryPriority(name) {
   return 6;
 }
 
-// ২. একই ক্যাটাগরির ভেতর ১, ২, ৩ ক্রম অনুযায়ী নাম অনুসারে সর্ট করার ফাংশন
-function sortChannelsSmartly(channels) {
-  return channels.sort((a, b) => {
-    const catA = getCategoryPriority(a.name);
-    const catB = getCategoryPriority(b.name);
-
-    // আগে ক্যাটাগরি অনুযায়ী ভাগ হবে
-    if (catA !== catB) {
-      return catA - catB;
-    }
-
-    // একই ক্যাটাগরি হলে নাম এবং নম্বর ধরে অ্যালফাবেটিকালি সাজানো হবে (যেমন: Sony Ten 1, Sony Ten 2)
-    return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
-  });
-}
-
 // মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Tapmad_Auto_Update_Playlist/refs/heads/main/Tapmad_sm.m3u';
@@ -154,29 +138,20 @@ async function main() {
   console.log(`Toffee channels: ${toffeeData.length}`);
   console.log(`FAST IPTV channels: ${fastIptvData.length}`);
 
-  // ২ নম্বর ফাইলের (Toffee) চ্যানেলগুলোকে ক্যাটাগরি ও ১, ২, ৩ সিকোয়েন্স অনুসারে সর্ট করা
-  const sortedToffeeData = sortChannelsSmartly(toffeeData);
-
-  // ১ ও ৩ নম্বরের চ্যানেলগুলোকেও ক্যাটাগরি অনুযায়ী সাজানো
-  const sortedTapmadData = sortChannelsSmartly(tapmadData);
-  const sortedFastIptvData = sortChannelsSmartly(fastIptvData);
-
-  // প্রথমে সর্ট করা ২ নম্বর (Toffee), এরপর ১ নম্বর ও ৩ নম্বর চ্যানেল যুক্ত হবে
-  const rawChannels = [...sortedToffeeData, ...sortedTapmadData, ...sortedFastIptvData];
+  // ১, ২ ও ৩ সব লিংক থেকে পাওয়া সব চ্যানেল একসাথে মেলানো
+  const allRawChannels = [...toffeeData, ...tapmadData, ...fastIptvData];
 
   const seenUrls = new Set();
   const filteredChannels = [];
-  let idCounter = 1;
-
   const yearPattern = /\(\d{4}\)/;
 
-  for (const channel of rawChannels) {
+  // ডুপ্লিকেট ইউআরএল এবং অপ্রয়োজনীয় চ্যানেল ফিল্টার করা
+  for (const channel of allRawChannels) {
     const streamUrl = channel.stream_url;
     const channelName = channel.name ? channel.name.trim() : "";
 
     if (!streamUrl) continue;
 
-    // "Program Promo" এবং ব্র্যাকেটে সাল ফিল্টার করা
     if (channelName.toLowerCase() === "program promo" || yearPattern.test(channelName)) {
       continue;
     }
@@ -184,7 +159,6 @@ async function main() {
     if (!seenUrls.has(streamUrl)) {
       seenUrls.add(streamUrl);
       filteredChannels.push({
-        id: idCounter++,
         name: channelName,
         logo: channel.logo,
         stream_url: channel.stream_url,
@@ -193,17 +167,35 @@ async function main() {
     }
   }
 
+  // পুরো প্লেলিস্ট একসাথে ক্যাটাগরি ও নাম/নম্বর সিকোয়েন্স অনুযায়ী সর্ট করা
+  filteredChannels.sort((a, b) => {
+    const catA = getCategoryPriority(a.name);
+    const catB = getCategoryPriority(b.name);
+
+    if (catA !== catB) {
+      return catA - catB;
+    }
+
+    return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
+  });
+
+  // আইডি নম্বর (1, 2, 3...) নতুন করে অ্যাসাইন করা
+  const finalChannels = filteredChannels.map((ch, index) => ({
+    id: index + 1,
+    ...ch
+  }));
+
   const resultData = {
     status: "success",
     name: "Live Channels",
     owner: "Ahammad Ali",
-    channels_amount: filteredChannels.length,
+    channels_amount: finalChannels.length,
     last_update: new Date().toISOString().split('T')[0],
-    response: filteredChannels
+    response: finalChannels
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with ${filteredChannels.length} unique channels.`);
+  console.log(`Successfully generated playlist.json with ${finalChannels.length} unique channels sorted by categories.`);
 }
 
 main();
