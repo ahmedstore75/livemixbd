@@ -184,6 +184,13 @@
   {
     "name": "Bangla",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
+    "url": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Bangla",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
     "url": "https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -528,13 +535,6 @@
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Live Channel",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
