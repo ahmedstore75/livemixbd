@@ -99,11 +99,12 @@ async function processData() {
     const streamUrl = match[1];
     if (seenUrls.has(streamUrl)) continue;
 
-    const startPos = Math.max(0, match.index - 1000);
+    // ১০০০ ক্যারেক্টারের বদলে ৪০০০ ক্যারেক্টার আগের পেলোডে টাইটেল খোঁজা হচ্ছে
+    const startPos = Math.max(0, match.index - 4000);
     const snippet = cleanedData.substring(startPos, match.index);
 
     let title = "";
-    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/gi)];
+    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName|label|slug)"\s*:\s*"([^"]+)"/gi)];
 
     for (let i = nameMatches.length - 1; i >= 0; i--) {
       let cand = nameMatches[i][1].replace(/[\r\n\t]/g, "").trim();
@@ -114,7 +115,11 @@ async function processData() {
       }
     }
 
-    if (!title) continue;
+    // টাইটেল না পাওয়া গেলে ইউআরএল থেকে ব্যাকআপ নাম তৈরি (যাতে কোনো চ্যানেল বাদ না পড়ে)
+    if (!title) {
+      const fallbackName = streamUrl.split('/').pop().split('.m3u8')[0];
+      title = fallbackName ? fallbackName.toUpperCase() : "Live Channel";
+    }
 
     let logoUrl = "";
     const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
