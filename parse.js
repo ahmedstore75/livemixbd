@@ -99,7 +99,6 @@ async function processData() {
     const streamUrl = match[1];
     if (seenUrls.has(streamUrl)) continue;
 
-    // ১০০০ ক্যারেক্টারের বদলে ৪০০০ ক্যারেক্টার আগের পেলোডে টাইটেল খোঁজা হচ্ছে
     const startPos = Math.max(0, match.index - 4000);
     const snippet = cleanedData.substring(startPos, match.index);
 
@@ -115,7 +114,6 @@ async function processData() {
       }
     }
 
-    // টাইটেল না পাওয়া গেলে ইউআরএল থেকে ব্যাকআপ নাম তৈরি (যাতে কোনো চ্যানেল বাদ না পড়ে)
     if (!title) {
       const fallbackName = streamUrl.split('/').pop().split('.m3u8')[0];
       title = fallbackName ? fallbackName.toUpperCase() : "Live Channel";
@@ -158,13 +156,13 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
-  let m3uContent = "#EXTM3U\n";
+  let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
   }
 
-  fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
-  fs.writeFileSync("playlist.m3u", m3uContent);
+  fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
+  fs.writeFileSync("ayna_ott.m3u", m3uContent);
   console.log(`Successfully generated playlist with ${extractedChannels.length} channels.`);
 }
 
