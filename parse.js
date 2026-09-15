@@ -1,7 +1,7 @@
 const fs = require("fs");
 const https = require("https");
 
-// ১. Ayna OTT-এর সব ক্যাটাগরি ও পেজিনেশনের ইউআরএল তালিকা
+// Ayna OTT-এর সব ব্লক, ক্যাটাগরি ও পেজিনেশনের ইউআরএল তালিকা (১৩+ ক্যাটাগরি ও ১৩০+ চ্যানেল ফেচ করার জন্য)
 const baseBlocks = [
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
@@ -98,8 +98,6 @@ async function processData() {
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  const channelPattern = /\{[^{}]*?"(?:title|name|channelName)"\s*:\s*"([^"]+)"[^{}]*?\}/g;
-  
   const m3u8Regex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
   let streamMatches = [];
   let m;
@@ -116,7 +114,6 @@ async function processData() {
     const endPos = Math.min(rawData.length, streamItem.index + 400);
     const snippet = rawData.substring(startPos, endPos);
 
-    // ১. নির্দিষ্ট স্ট্রিম লিঙ্কের টাইটেল ফেচ করা
     let title = "";
     const nameMatch = snippet.match(/"(?:title|name|channelName)"\s*:\s*"([^"]+)"/i);
     if (nameMatch) {
@@ -127,7 +124,6 @@ async function processData() {
       }
     }
 
-    // ২. Ayna OTT API থেকে চ্যানেলটির নির্দিষ্ট লোগো ফেচ করা
     let logoUrl = "";
     const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|logoUrl)"\s*:\s*"([^"]+)"/i) ||
                       snippet.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i) ||
@@ -142,7 +138,6 @@ async function processData() {
       }
     }
 
-    // ৩. ব্যাকআপ টাইটেল (URL Slug থেকে)
     if (!title) {
       try {
         const u = new URL(streamUrl);
@@ -158,7 +153,6 @@ async function processData() {
 
     if (!title) title = "Live Channel";
 
-    // ৪. ব্যাকআপ লোগো CDN
     if (!logoUrl) {
       const cleanLogoName = title.toLowerCase().replace(/[^a-z0-9]/g, "");
       logoUrl = `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${cleanLogoName}.png`;
@@ -176,7 +170,6 @@ async function processData() {
     });
   }
 
-  // সর্টিং
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
@@ -188,12 +181,12 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
-  // M3U প্লেলিস্ট তৈরি
   let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
   }
 
+  // আগের নাম অনুযায়ী ফাইল দুটো সেভ করা হলো
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
   console.log(`Successfully generated playlist with ${extractedChannels.length} channels.`);
