@@ -1,261 +1,261 @@
 #EXTM3U url-tvg="" x-tvg-url=""
-#EXTINF:-1 group-title="Bangla" tvg-name="BTV NATIONAL HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/btvnationalhd.png", BTV NATIONAL HD
-https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="BTV CTG" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/btvctg.png", BTV CTG
-https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="BTV World" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/btvworld.png", BTV World
-https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Somoy TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/somoytv.png", Somoy TV
-https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8
 #EXTINF:-1 group-title="Bangla" tvg-name="Jamuna TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/jamunatv.png", Jamuna TV
-https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Jamuna TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/jamunatv.png", Jamuna TV
-https://tvsen7.aynaott.com/Sports4/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/channel24.png", Channel 24
-https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/channel24.png", Channel 24
-https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/channel24.png", Channel 24
-https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="News 24 BD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/news24bd.png", News 24 BD
 https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="ATN News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/atnnews.png", ATN News
-https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/channel24.png", Channel 24
+https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8
+#EXTINF:-1 group-title="Bangla" tvg-name="News 24 BD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/news24bd.png", News 24 BD
+https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8
 #EXTINF:-1 group-title="Bangla" tvg-name="ATN News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/atnnews.png", ATN News
 https://tvsen6.aynaott.com/da6WMXAk/index.m3u8
 #EXTINF:-1 group-title="Bangla" tvg-name="NTV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ntv.png", NTV
-https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="NTV Europe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ntveurope.png", NTV Europe
-https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="RTV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/rtv.png", RTV
-https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="ETV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/etv.png", ETV
-https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Bangla Vision" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/banglavision.png", Bangla Vision
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="ATN Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/atnbangla.png", ATN Bangla
-https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Deepto TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/deeptotv.png", Deepto TV
-https://tvsen6.aynaott.com/maasrangatv/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Deepto TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/deeptotv.png", Deepto TV
-https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Ekattor TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ekattortv.png", Ekattor TV
-https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Ekattor TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ekattortv.png", Ekattor TV
-https://live-bangla.akamaized.net/liveabr/playlist.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="DBC News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/dbcnews.png", DBC News
-https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="DBC News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/dbcnews.png", DBC News
-https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Maasranga TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/maasrangatv.png", Maasranga TV
-https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Ekhon TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ekhontv.png", Ekhon TV
-https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Bangla TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/banglatv.png", Bangla TV
-https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="\t USA TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tusatv.png", \t USA TV
-https://tvsen3.aynaott.com/34fJSjZP/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Ananda TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/anandatv.png", Ananda TV
-https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Ananda TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/anandatv.png", Ananda TV
-https://tvsen6.aynaott.com/andpictureshd/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Bijoy TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bijoytv.png", Bijoy TV
-https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Bijoy TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bijoytv.png", Bijoy TV
-https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Boishakhi TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/boishakhitv.png", Boishakhi TV
-https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel 9" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/channel9.png", Channel 9
-https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Desh TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/deshtv.png", Desh TV
-https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Desh TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/deshtv.png", Desh TV
-https://vods2.aynaott.com/gseriesDrama/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Drama 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/drama24.png", Drama 24
-https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Global TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/globaltv.png", Global TV
-https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Mohona TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/mohonatv.png", Mohona TV
-https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="My TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/mytv.png", My TV
-https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="My TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/mytv.png", My TV
-https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="NEXUS TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/nexustv.png", NEXUS TV
-https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="SA TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/satv.png", SA TV
-https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="T Sports HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tsportshd.png", T Sports HD
-https://tvsen7.aynascope.net/tsn3/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="T Sports HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tsportshd.png", T Sports HD
-https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bahrainsports1.png", Bahrain Sports 1
-https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Bein Sports 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/beinsports1.png", Bein Sports 1
-https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Bleav Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bleavfootball.png", Bleav Football
-https://tvsen6.aynaott.com/nfl/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Cricket Gold" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cricketgold.png", Cricket Gold
-https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="DD Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ddsports.png", DD Sports
-https://tvsen6.aynaott.com/TntSports1HD/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="DD Sports" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ddsports.png", DD Sports
-https://cdn-6.pishow.tv/live/13/master.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="ESPN" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/espn.png", ESPN
-https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="NFL Network" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/nflnetwork.png", NFL Network
-https://tvsen7.aynaott.com/espn/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="NFL Network" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/nflnetwork.png", NFL Network
-https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sky News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/skynews.png", Sky News
-https://tvsen6.aynaott.com/foxnews/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sky News Weather" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/skynewsweather.png", Sky News Weather
-https://247wlive.foxweather.com/stream/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="TNT Sport 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tntsport1.png", TNT Sport 1
-https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="TNT Sport 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tntsport1.png", TNT Sport 1
-https://tvsen6.aynaott.com/B4UHitz/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="TSN 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tsn1.png", TSN 1
-https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="TSN 2" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tsn2.png", TSN 2
-https://tvsen7.aynascope.net/tsn1/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="TSN 3" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/tsn3.png", TSN 3
-https://tvsen7.aynascope.net/tsn2/index.m3u8
-#EXTINF:-1 group-title="Kolkata" tvg-name="Colors Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/colorsbangla.png", Colors Bangla
-https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
-#EXTINF:-1 group-title="Kolkata" tvg-name="Colors Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/colorsbangla.png", Colors Bangla
-https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8
-#EXTINF:-1 group-title="Kolkata" tvg-name="kolkata TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/kolkatatv.png", kolkata TV
-https://tvsen3.aynaott.com/wpa56Uk3/index.m3u8
-#EXTINF:-1 group-title="Kolkata" tvg-name="R Plus" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/rplus.png", R Plus
-https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
-#EXTINF:-1 group-title="Kolkata" tvg-name="Sangeet Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/sangeetbangla.png", Sangeet Bangla
-https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8
-#EXTINF:-1 group-title="Kolkata" tvg-name="Sangeet Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/sangeetbangla.png", Sangeet Bangla
-https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
-#EXTINF:-1 group-title="Indian" tvg-name="And Pictures HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/andpictureshd.png", And Pictures HD
-https://vods2.aynaott.com/hindimovies/index.m3u8
-#EXTINF:-1 group-title="Indian" tvg-name="B4U Hitz" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/b4uhitz.png", B4U Hitz
-https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8
-#EXTINF:-1 group-title="Indian" tvg-name="Goldmines Movies" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/goldminesmovies.png", Goldmines Movies
-https://live.zoomnews.info/live/Zoom_playlist.m3u8
-#EXTINF:-1 group-title="News" tvg-name="ABC News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/abcnews.png", ABC News
-https://tvsen6.aynaott.com/bloombergtv/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Aljazeera News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/aljazeeranews.png", Aljazeera News
-https://tvsen6.aynaott.com/cnn/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Aljazeera News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/aljazeeranews.png", Aljazeera News
-https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="ANB News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/anbnews.png", ANB News
-https://tvsen3.aynaott.com/m94BZDYb/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Bharat Samachar" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bharatsamachar.png", Bharat Samachar
-https://tvsen7.aynaott.com/HindiKhabar/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="CNN" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cnn.png", CNN
-https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="CNN" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cnn.png", CNN
-https://tvsen3.aynaott.com/u3NjUrny/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="DW News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/dwnews.png", DW News
-https://tvsen1.aynaott.com/shn6jGTk/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="DW News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/dwnews.png", DW News
-https://tvsen7.aynaott.com/disney/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Fox business" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/foxbusiness.png", Fox business
-https://tvsen6.aynaott.com/fox5/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Fox News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/foxnews.png", Fox News
-https://tvsen6.aynaott.com/cp24/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Hindi Khabar" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindikhabar.png", Hindi Khabar
-https://tvsen6.aynaott.com/faGd3tuq/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News 1 India" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/news1india.png", News 1 India
-https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News India 24x7" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/newsindia24x7.png", News India 24x7
-https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
-#EXTINF:-1 group-title="News" tvg-name="News Time Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/newstimebangla.png", News Time Bangla
-https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Republic TV Bharat" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/republictvbharat.png", Republic TV Bharat
-https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Sadhna Prime News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/sadhnaprimenews.png", Sadhna Prime News
-https://tvsen6.aynaott.com/TaVfw58T/index.m3u8
-#EXTINF:-1 group-title="News" tvg-name="Star News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/starnews.png", Star News
-https://tvsen5.aynaott.com/skynews/index.m3u8
-#EXTINF:-1 group-title="Movies" tvg-name="Hindi Movie Classic 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindimovieclassic24.png", Hindi Movie Classic 24
-https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8
-#EXTINF:-1 group-title="Movies" tvg-name="Khushboo" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/khushboo.png", Khushboo
-https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
-#EXTINF:-1 group-title="Movies" tvg-name="Manoranjan Movies" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/manoranjanmovies.png", Manoranjan Movies
-https://tvsen6.aynaott.com/dubaisports1/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="9x Jalwa" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/9xjalwa.png", 9x Jalwa
-https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="9XM" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/9xm.png", 9XM
-https://tvsen7.aynaott.com/hbo/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="Dhoom Music Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/dhoommusicbangla.png", Dhoom Music Bangla
-https://tvsen6.aynaott.com/talkSPORT/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="MTV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/mtv.png", MTV
-https://tvsen7.aynaott.com/TRTWorldHD/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="MTV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/mtv.png", MTV
-https://tvsen6.aynaott.com/kolkatatv/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="Music India" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/musicindia.png", Music India
-https://tvsen6.aynaott.com/dhoom/index.m3u8
-#EXTINF:-1 group-title="Islamic" tvg-name="MADANI TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/madanitv.png", MADANI TV
-https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
-#EXTINF:-1 group-title="Islamic" tvg-name="Peace TV Bangla HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/peacetvbanglahd.png", Peace TV Bangla HD
+#EXTINF:-1 group-title="Bangla" tvg-name="NTV Europe" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ntveurope.png", NTV Europe
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8
-#EXTINF:-1 group-title="Kids" tvg-name="Disney Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/disneychannel.png", Disney Channel
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
-#EXTINF:-1 group-title="Documentary" tvg-name="Animal Planet HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/animalplanethd.png", Animal Planet HD
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
-#EXTINF:-1 group-title="Documentary" tvg-name="Discovery HD" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/discoveryhd.png", Discovery HD
-https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="ABC 7 Bay" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/abc7bay.png", ABC 7 Bay
-https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="ABN" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/abn.png", ABN
-https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Accu Weather" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/accuweather.png", Accu Weather
-https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Awaaz India" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/awaazindia.png", Awaaz India
-https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Bloomberg TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bloombergtv.png", Bloomberg TV
-https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="CBS TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cbstv.png", CBS TV
-https://tvsen6.aynaott.com/foxbusiness/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="CNBC TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cnbctv.png", CNBC TV
-https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="CNBC TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cnbctv.png", CNBC TV
+#EXTINF:-1 group-title="Bangla" tvg-name="RTV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/rtv.png", RTV
+https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8
+#EXTINF:-1 group-title="Bangla" tvg-name="ETV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/etv.png", ETV
+https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8
+#EXTINF:-1 group-title="Bangla" tvg-name="Ekattor TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ekattortv.png", Ekattor TV
+https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
+#EXTINF:-1 group-title="Bangla" tvg-name="Asian TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/asiantv.png", Asian TV
+https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8
+#EXTINF:-1 group-title="Bangla" tvg-name="SA TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/satv.png", SA TV
+https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="Bein Sports 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/beinsports1.png", Bein Sports 1
+https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="Cricket" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cricket.png", Cricket
+https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/football.png", Football
+https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/football.png", Football
+https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
+#EXTINF:-1 group-title="Sports" tvg-name="Football" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/football.png", Football
+https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8
+#EXTINF:-1 group-title="News" tvg-name="Star News" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/starnews.png", Star News
+https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8
+#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/movie.png", Movie
+https://vods2.aynaott.com/hindimovies/index.m3u8
+#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/movie.png", Movie
+https://tvsen7.aynaott.com/hbo/index.m3u8
+#EXTINF:-1 group-title="Movies" tvg-name="Movie" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/movie.png", Movie
 https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Court TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/courttv.png", Court TV
-https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="CP 24" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cp24.png", CP 24
-https://tvsen6.aynaott.com/cnbc/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Dubai TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/dubaitv.png", Dubai TV
-https://live.presstv.ir/hls/presstv_5_482/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Fox 5" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/fox5.png", Fox 5
-https://tvsen6.aynaott.com/mtv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Fox 5" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/fox5.png", Fox 5
-http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Fox Weather" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/foxweather.png", Fox Weather
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="FX TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/fxtv.png", FX TV
-https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Goal TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/goaltv.png", Goal TV
-https://tvsen3.aynaott.com/z24qLsqV/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="India Today" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indiatoday.png", India Today
+#EXTINF:-1 group-title="Music" tvg-name="Music" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/music.png", Music
+https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8
+#EXTINF:-1 group-title="Music" tvg-name="Music" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/music.png", Music
+https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="ABNURDU" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/abnurdu.png", ABNURDU
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indianbangla.png", Indian Bangla
-https://tvsen6.aynaott.com/xjkX3euD/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indianbangla.png", Indian Bangla
-https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Iran Press" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/iranpress.png", Iran Press
-https://feeds.intoday.in/hltapps/api/master.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Popular Live Tvs" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/popularlivetvs.png", Popular Live Tvs
-https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Rupshi Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/rupshibangla.png", Rupshi Bangla
-https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/testlivetv.png", Test Live TV
-https://tvsen5.aynaott.com/qRHda6ax/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="TIME TV USA" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/timetvusa.png", TIME TV USA
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png", Bangla
+https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png", Bangla
+https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png", Bangla
+https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png", Bangla
+https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png", Bangla
+https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png", Bangla
+https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="CHUNKLIST" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/chunklist.png", CHUNKLIST
+https://dmieigthvllta.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/chunklist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://tvsen5.aynaott.com/skynews/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://tvsen6.aynaott.com/mtv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://tvsen6.aynaott.com/fox5/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
 https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="TRT World" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/trtworld.png", TRT World
-https://tvsen7.aynaott.com/lifetime/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="VTV USA" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/vtvusa.png", VTV USA
-https://tvsen7.aynaott.com/timetv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Weather SPY" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/weatherspy.png", Weather SPY
-https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Wion" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/wion.png", Wion
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
 https://tvsen7.aynaott.com/vtvusa/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png", English
+https://tvsen3.aynaott.com/u3NjUrny/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen6.aynaott.com/hT5jHczt/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen6.aynaott.com/talkSPORT/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://vods2.aynaott.com/gseriesDrama/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png", G
+https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="H5AEGVSJINDEX" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/h5aegvsjindex.png", H5AEGVSJINDEX
+https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png", Hindi
+https://tvsen7.aynaott.com/HindiKhabar/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png", Hindi
+https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png", Hindi
+https://tvsen6.aynaott.com/B4UHitz/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png", Hindi
+https://live.zoomnews.info/live/Zoom_playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png", Hindi
+https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png", Hindi
+https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="INDEX 7" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/index7.png", INDEX 7
+https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indianbangla.png", Indian Bangla
+https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indianbangla.png", Indian Bangla
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/maasrangatv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynascope.net/tsn1/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynascope.net/tsn2/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynascope.net/tsn3/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynaott.com/espn/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/nfl/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/TntSports1HD/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://cdn-6.pishow.tv/live/13/master.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/N8Xbo5vdwVU6sF43RsW0/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/XMpHaEf0ANBhv8w6NWR7/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/LeUAm4F1iixYns3s3Non/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen5.aynaott.com/u3LkNQ7UHhFX/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/xjkX3euD/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen1.aynaott.com/shn6jGTk/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/Qq3s5WR2/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/cnn/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/bloombergtv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/ABCxzdsdNews/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/cnbc/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/cp24/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/foxnews/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynaott.com/Sports4/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://feeds.intoday.in/hltapps/api/master.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://live.presstv.ir/hls/presstv_5_482/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/faGd3tuq/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/m94BZDYb/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/TaVfw58T/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/P2hjvFHV/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://247wlive.foxweather.com/stream/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynaott.com/lifetime/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynaott.com/TRTWorldHD/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/foxbusiness/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/34fJSjZP/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynaott.com/timetv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://live-bangla.akamaized.net/liveabr/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/andpictureshd/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/dhoom/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/Zht5VqBb/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen5.aynaott.com/qRHda6ax/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen7.aynaott.com/disney/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/dubaisports1/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/wpa56Uk3/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/kolkatatv/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+http://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/VamXuQH8/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Religious" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/religious.png", Religious
+https://tvsen3.aynaott.com/z24qLsqV/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/testlivetv.png", Test Live TV
+https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
