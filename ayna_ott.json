@@ -1,204 +1,29 @@
 [
   {
-    "name": "Jamuna TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/jamunatv.png",
-    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8",
-    "category": "Bangla",
-    "priority": 4
-  },
-  {
-    "name": "Channel 24",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/channel24.png",
-    "url": "https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8",
-    "category": "Bangla",
-    "priority": 5
-  },
-  {
-    "name": "News 24 BD",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/news24bd.png",
-    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8",
-    "category": "Bangla",
-    "priority": 6
-  },
-  {
-    "name": "ATN News",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/atnnews.png",
-    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8",
-    "category": "Bangla",
-    "priority": 7
-  },
-  {
-    "name": "NTV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ntv.png",
-    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8",
-    "category": "Bangla",
-    "priority": 8
-  },
-  {
-    "name": "NTV Europe",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ntveurope.png",
-    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8",
-    "category": "Bangla",
-    "priority": 8
-  },
-  {
-    "name": "RTV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/rtv.png",
-    "url": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8",
-    "category": "Bangla",
-    "priority": 9
-  },
-  {
-    "name": "ETV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/etv.png",
-    "url": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8",
-    "category": "Bangla",
-    "priority": 11
-  },
-  {
-    "name": "Ekattor TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ekattortv.png",
-    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8",
-    "category": "Bangla",
-    "priority": 16
-  },
-  {
-    "name": "Asian TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/asiantv.png",
-    "url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8",
-    "category": "Bangla",
-    "priority": 999
-  },
-  {
-    "name": "SA TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/satv.png",
-    "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8",
-    "category": "Bangla",
-    "priority": 999
-  },
-  {
-    "name": "Bein Sports 1",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/beinsports1.png",
-    "url": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
-    "category": "Sports",
-    "priority": 999
-  },
-  {
-    "name": "Cricket",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/cricket.png",
-    "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
-    "category": "Sports",
-    "priority": 999
-  },
-  {
-    "name": "Football",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/football.png",
-    "url": "https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8",
-    "category": "Sports",
-    "priority": 999
-  },
-  {
-    "name": "Football",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/football.png",
-    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
-    "category": "Sports",
-    "priority": 999
-  },
-  {
-    "name": "Football",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/football.png",
-    "url": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
-    "category": "Sports",
-    "priority": 999
-  },
-  {
-    "name": "Star News",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/starnews.png",
-    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8",
+    "name": "KGO 24X7 NEWS",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/kgo24x7news.png",
+    "url": "https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8",
     "category": "News",
     "priority": 999
   },
   {
-    "name": "Movie",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/movie.png",
-    "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
-    "category": "Movies",
-    "priority": 999
-  },
-  {
-    "name": "Movie",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/movie.png",
-    "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
-    "category": "Movies",
-    "priority": 999
-  },
-  {
-    "name": "Movie",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/movie.png",
-    "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
-    "category": "Movies",
-    "priority": 999
-  },
-  {
-    "name": "Music",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/music.png",
-    "url": "https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8",
+    "name": "ZOOM PLAYLIST",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/zoomplaylist.png",
+    "url": "https://live.zoomnews.info/live/Zoom_playlist.m3u8",
     "category": "Music",
     "priority": 999
   },
   {
-    "name": "Music",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/music.png",
-    "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
-    "category": "Music",
+    "name": "1701",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/1701.png",
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/1701.m3u8",
+    "category": "Entertainment",
     "priority": 999
   },
   {
     "name": "ABNURDU",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/abnurdu.png",
     "url": "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
-    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
-    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
-    "url": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
-    "url": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
-    "url": "https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/bangla.png",
-    "url": "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -210,167 +35,6 @@
     "priority": 999
   },
   {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen5.aynaott.com/skynews/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen6.aynaott.com/mtv/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen6.aynaott.com/fox5/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen7.aynaott.com/vtvusa/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "English",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/english.png",
-    "url": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://tvsen6.aynaott.com/55xNrLdf/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "G",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/g.png",
-    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
     "name": "H5AEGVSJINDEX",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/h5aegvsjindex.png",
     "url": "https://tvsen6.aynaott.com/H5aeGVSjindex.m3u8",
@@ -378,44 +42,9 @@
     "priority": 999
   },
   {
-    "name": "Hindi",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png",
-    "url": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Hindi",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png",
-    "url": "https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Hindi",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png",
-    "url": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Hindi",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png",
-    "url": "https://live.zoomnews.info/live/Zoom_playlist.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Hindi",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png",
-    "url": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Hindi",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/hindi.png",
-    "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
+    "name": "INDEX 3",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/index3.png",
+    "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -423,20 +52,6 @@
     "name": "INDEX 7",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/index7.png",
     "url": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Indian Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indianbangla.png",
-    "url": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Indian Bangla",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/indianbangla.png",
-    "url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/7ff57cc9046b4c188b51a0d506f36e7f/index_3.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -450,7 +65,49 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/tgUzpPc9r6xw/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/ba47dHpDk3Se/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/SyQuXz8sC3TB/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/maasrangatv/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/tK2BNdfsdfsdf/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -464,7 +121,49 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -492,6 +191,27 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen7.aynaott.com/espn/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -500,6 +220,20 @@
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/nfl/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://linear-493.frequency.stream/dist/glewedtv/493/hls/master/playlist.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/M2W2UR49dmeKbZnmdRzN/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -541,7 +275,42 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/kajlsd57jnzxyo/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/rELXiuUXqbgzPb06Npom/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/AkyX5dunzju4cpo26dr7/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -583,6 +352,27 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/AQLYTPfXtjm5x7zj7AsM/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/TjGR1GcxKetHNVcMVxbq/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/Xehy3ZqZ/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -591,6 +381,13 @@
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/hT5jHczt/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -632,6 +429,13 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/bloombergtv/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -667,6 +471,13 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen5.aynaott.com/skynews/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen7.aynaott.com/Sports4/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -695,7 +506,21 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/faGd3tuq/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen7.aynaott.com/HindiKhabar/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -723,6 +548,13 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://247wlive.foxweather.com/stream/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -731,6 +563,13 @@
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -751,6 +590,20 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/mtv/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/fox5/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/foxbusiness/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -765,7 +618,35 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/jTqkTE8W/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen7.aynaott.com/timetv/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen7.aynaott.com/vtvusa/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/vG7Wpj7e/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -786,7 +667,28 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://4397879b.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWRlX0ZJRkFQbHVzR2VybWFuX0hMUw/playlist.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://5dd3981940faa.streamlock.net:443/thikanatv/thikanatv/playlist.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/DpPnXP9r/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://vods2.aynaott.com/hindimovies/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -800,7 +702,28 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/7mm4pwCy/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -814,7 +737,21 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen3.aynaott.com/RxGdpyu5/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -828,7 +765,42 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/55xNrLdf/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen5.aynaott.com/qRHda6ax/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://vods2.aynaott.com/gseriesDrama/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/u3NjUrny/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -842,7 +814,21 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -884,7 +870,28 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen3.aynaott.com/z24qLsqV/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://streams2.sofast.tv/sofastplayout/WiseM3U8_1/master.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -896,16 +903,9 @@
     "priority": 999
   },
   {
-    "name": "Religious",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/religious.png",
-    "url": "https://tvsen3.aynaott.com/z24qLsqV/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Test Live TV",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/testlivetv.png",
-    "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8",
+    "name": "MANIFEST",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/manifest.png",
+    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8",
     "category": "Entertainment",
     "priority": 999
   }
