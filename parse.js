@@ -36,21 +36,16 @@ const priorityMap = {
     "channel 24", "news 24", "news24", "atn news", "ntv", "rtv", 
     "ekushey tv", "etv", "independent tv", "bangla vision", 
     "atn bangla", "deepto tv", "ekattor tv", "dbc news", "gtv", 
-    "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv", 
-    "ananda tv", "bijoy tv", "asian tv", "boishakhi", "desh tv", 
-    "mohona", "nexus", "my tv", "sa tv", "channel 9", "channel 52",
-    "drama 24", "global tv", "thikana"
+    "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv"
   ],
   "Sports": [
     "t sports", "star sports 1", "star sports 2", "star sports hindi", 
-    "sony sports 1", "sony sports 2", "sony sports 5", "ten sports", 
-    "willow tv", "bein sports", "ptv sports", "eurosport"
+    "sony sports 1", "sony sports 2", "sony sports 5", "ten sports"
   ]
 };
 
 function resolveCategory(title) {
   const clean = title.toLowerCase().trim();
-
   if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) return "Bangla";
   if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) return "Kolkata";
   if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) return "Sports";
@@ -99,38 +94,56 @@ async function processData() {
     const streamUrl = match[1];
     if (seenUrls.has(streamUrl)) continue;
 
-    const startPos = Math.max(0, match.index - 4000);
-    const snippet = cleanedData.substring(startPos, match.index);
+    // ১০০০ ক্যারেক্টার আগের এবং সামনের অংশ থেকে টাইটেল ও লোগো চেক করা
+    const startPos = Math.max(0, match.index - 2500);
+    const endPos = Math.min(cleanedData.length, match.index + 500);
+    const snippet = cleanedData.substring(startPos, endPos);
 
     let title = "";
-    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName|label|slug)"\s*:\s*"([^"]+)"/gi)];
+    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName|label|slug|displayName)"\s*:\s*"([^"]+)"/gi)];
+
+    // 'subscribe' এবং অন্যান্য অনাকাঙ্ক্ষিত লেখা ফিল্টার করা
+    const junkKeywords = ["viewport", "description", "noir", "default", "next_locale", "g", "ayna ott", "bangla", "channels", "live-tvs", "subscribe", "subscribers", "login"];
 
     for (let i = nameMatches.length - 1; i >= 0; i--) {
       let cand = nameMatches[i][1].replace(/[\r\n\t]/g, "").trim();
-      const junk = ["viewport", "description", "noir", "default", "next_locale", "g", "ayna ott", "bangla", "channels", "live-tvs"];
-      if (cand && !junk.includes(cand.toLowerCase()) && !/^[a-f0-9-]{12,}$/i.test(cand)) {
+      if (cand && !junkKeywords.includes(cand.toLowerCase()) && !/^[a-f0-9-]{12,}$/i.test(cand)) {
         title = cand;
         break;
       }
     }
 
-    if (!title) {
-      const fallbackName = streamUrl.split('/').pop().split('.m3u8')[0];
-      title = fallbackName ? fallbackName.toUpperCase() : "Live Channel";
+    // ব্যাকআপ টাইটেল: ইউআরএল থেকে নাম এক্সট্র্যাক্ট করা (যদি স্ক্র্যাপ করা টাইটেল না পাওয়া যায় বা 'subscribe' আসে)
+    if (!title || junkKeywords.includes(title.toLowerCase())) {
+      try {
+        const urlObj = new URL(streamUrl);
+        const pathSegments = urlObj.pathname.split('/').filter(Boolean);
+        let rawName = pathSegments[pathSegments.length - 1] || "";
+        rawName = rawName.replace('.m3u8', '').replace(/[-_]/g, ' ');
+        if (rawName && !junkKeywords.includes(rawName.toLowerCase())) {
+          title = rawName.toUpperCase();
+        } else {
+          title = "Ayna Live Channel";
+        }
+      } catch (e) {
+        title = "Ayna Live Channel";
+      }
     }
 
+    // লোগো এক্সট্র্যাকশন লজিক উন্নতকরণ
     let logoUrl = "";
-    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
+    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src|cover)"\s*:\s*"([^"]+)"/i) ||
                       snippet.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
 
     if (logoMatch) {
       let ext = logoMatch[1].trim();
       if (ext.startsWith("/")) ext = "https://web.aynaott.com" + ext;
-      if (!ext.includes("avatar") && !ext.includes("default") && !ext.includes("placeholder")) {
+      if (!ext.includes("avatar") && !ext.includes("default") && !ext.includes("placeholder") && !ext.includes("bg")) {
         logoUrl = ext;
       }
     }
 
+    // লোগো না পেলে অটোমেটিক IPTV Repo থেকে চ্যানেলের লোগো জেনারেট করা
     if (!logoUrl) logoUrl = generateAutoLogo(title);
 
     const category = resolveCategory(title);
