@@ -67,10 +67,11 @@ function getPriorityIndex(category, title) {
   return index === -1 ? 999 : index;
 }
 
-function generateAutoLogo(channelName) {
-  let formattedName = channelName.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, "").trim();
-  if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
-  return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
+function sanitizeUrl(str) {
+  if (!str) return "";
+  let clean = str.replace(/\\"/g, '"').replace(/\\\\/g, "/").replace(/\\u0026/g, "&");
+  if (clean.startsWith("/")) clean = "https://web.aynaott.com" + clean;
+  return clean;
 }
 
 async function processData() {
@@ -79,6 +80,7 @@ async function processData() {
     rawData += await fetchData(url) + "\n";
   }
 
+  // RSC এস্কেপিং ক্লিয়ার করা
   const cleanedData = rawData
     .replace(/\\"/g, '"')
     .replace(/\\\\/g, "/")
@@ -87,77 +89,80 @@ async function processData() {
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  const streamRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
+  // RSC এর ডাটা ব্লকগুলোকে আলাদা অবজেক্ট হিসেবে ফিল্টার করা
+  // অবজেক্টের মধ্যে name/title, logo/image এবং m3u8 লিংক একসাথে জোড়া লাগানো
+  const objectRegex = /\{[^{}]*"(?:streamUrl|url|src)"\s*:\s*"(https?:[^\s"\\]+\.m3u8[^\s"\\]*)"[^{}]*\}/gi;
   let match;
 
-  while ((match = streamRegex.exec(cleanedData)) !== null) {
-    const streamUrl = match[1];
+  // প্রথম পদ্ধতি: স্ট্রাকচার্ড অবজেক্ট সার্চ
+  while ((match = objectRegex.exec(cleanedData)) !== null) {
+    const block = match[0];
+    const streamUrl = sanitizeUrl(match[1]);
+
     if (seenUrls.has(streamUrl)) continue;
 
-    // ১০০০ ক্যারেক্টার আগের এবং সামনের অংশ থেকে টাইটেল ও লোগো চেক করা
-    const startPos = Math.max(0, match.index - 2500);
-    const endPos = Math.min(cleanedData.length, match.index + 500);
+    // চ্যানেল টাইটেল
+    const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
+    let title = titleMatch ? titleMatch[1].trim() : "";
+
+    // চ্যানেল লোগো
+    const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|cover)"\s*:\s*"([^"]+)"/i);
+    let logoUrl = logoMatch ? sanitizeUrl(logoMatch[1]) : "";
+
+    if (title && !["sports", "news", "cricket", "football"].includes(title.toLowerCase())) {
+      seenUrls.add(streamUrl);
+      extractedChannels.push({
+        name: title,
+        logo: logoUrl,
+        url: streamUrl,
+        category: resolveCategory(title),
+        priority: getPriorityIndex(resolveCategory(title), title)
+      });
+    }
+  }
+
+  // দ্বিতীয় পদ্ধতি: ব্যাকআপ (যাতে কোনো চ্যানেল বাদ না পড়ে কিন্তু সঠিক অরিজিনাল নেম বের হয়)
+  const fallbackRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
+  while ((match = fallbackRegex.exec(cleanedData)) !== null) {
+    const streamUrl = sanitizeUrl(match[1]);
+    if (seenUrls.has(streamUrl)) continue;
+
+    const startPos = Math.max(0, match.index - 3000);
+    const endPos = Math.min(cleanedData.length, match.index + 1000);
     const snippet = cleanedData.substring(startPos, endPos);
 
+    // অরিজিনাল নাম পাওয়ার জন্য কি-ওয়ার্ড সার্চ
     let title = "";
-    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName|label|slug|displayName)"\s*:\s*"([^"]+)"/gi)];
-
-    // 'subscribe' এবং অন্যান্য অনাকাঙ্ক্ষিত লেখা ফিল্টার করা
-    const junkKeywords = ["viewport", "description", "noir", "default", "next_locale", "g", "ayna ott", "bangla", "channels", "live-tvs", "subscribe", "subscribers", "login"];
-
+    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName)"\s*:\s*"([^"]+)"/gi)];
+    
     for (let i = nameMatches.length - 1; i >= 0; i--) {
-      let cand = nameMatches[i][1].replace(/[\r\n\t]/g, "").trim();
-      if (cand && !junkKeywords.includes(cand.toLowerCase()) && !/^[a-f0-9-]{12,}$/i.test(cand)) {
+      let cand = nameMatches[i][1].trim();
+      if (cand && !["sports", "news", "cricket", "football", "subscribe", "live-tvs"].includes(cand.toLowerCase())) {
         title = cand;
         break;
       }
     }
 
-    // ব্যাকআপ টাইটেল: ইউআরএল থেকে নাম এক্সট্র্যাক্ট করা (যদি স্ক্র্যাপ করা টাইটেল না পাওয়া যায় বা 'subscribe' আসে)
-    if (!title || junkKeywords.includes(title.toLowerCase())) {
-      try {
-        const urlObj = new URL(streamUrl);
-        const pathSegments = urlObj.pathname.split('/').filter(Boolean);
-        let rawName = pathSegments[pathSegments.length - 1] || "";
-        rawName = rawName.replace('.m3u8', '').replace(/[-_]/g, ' ');
-        if (rawName && !junkKeywords.includes(rawName.toLowerCase())) {
-          title = rawName.toUpperCase();
-        } else {
-          title = "Ayna Live Channel";
-        }
-      } catch (e) {
-        title = "Ayna Live Channel";
-      }
-    }
-
-    // লোগো এক্সট্র্যাকশন লজিক উন্নতকরণ
+    // অরিজিনাল লোগো লিঙ্ক বের করার চেইন সার্চ
     let logoUrl = "";
-    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|src|cover)"\s*:\s*"([^"]+)"/i) ||
-                      snippet.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
-
+    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|cover)"\s*:\s*"([^"]+)"/i);
     if (logoMatch) {
-      let ext = logoMatch[1].trim();
-      if (ext.startsWith("/")) ext = "https://web.aynaott.com" + ext;
-      if (!ext.includes("avatar") && !ext.includes("default") && !ext.includes("placeholder") && !ext.includes("bg")) {
-        logoUrl = ext;
-      }
+      logoUrl = sanitizeUrl(logoMatch[1]);
     }
 
-    // লোগো না পেলে অটোমেটিক IPTV Repo থেকে চ্যানেলের লোগো জেনারেট করা
-    if (!logoUrl) logoUrl = generateAutoLogo(title);
+    if (!title) continue; // জেন্যারিক নাম বাদ দেওয়া হচ্ছে
 
-    const category = resolveCategory(title);
     seenUrls.add(streamUrl);
-
     extractedChannels.push({
       name: title,
       logo: logoUrl,
       url: streamUrl,
-      category: category,
-      priority: getPriorityIndex(category, title)
+      category: resolveCategory(title),
+      priority: getPriorityIndex(resolveCategory(title), title)
     });
   }
 
+  // সর্টিং
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
