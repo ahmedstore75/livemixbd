@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
 
       - name: Fetch and Generate Playlist
-        run: node index.js
+        run: node parse.js
 
       - name: Commit and Push Changes
         run: |
