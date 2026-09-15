@@ -1,13 +1,24 @@
 const fs = require("fs");
 const https = require("https");
 
-// Ayna OTT-এর নির্দিষ্ট কন্টেন্ট ব্লকের সোর্স লিঙ্ক
-const urls = [
+// সকল ক্যাটাগরি ও ব্লকের ডাইনামিক সোর্স ইউআরএল
+const baseBlocks = [
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019edd26-0e1d-7212-b13d-5e263d906bf2?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019edd26-d667-7b2d-b873-1ee2ddba42df?_rsc=d6u12"
+];
+
+// অতিরিক্ত ক্যাটাগরি ব্লক জেনারেট করা যাতে সব চ্যানেল আসে
+const categoryPaths = [
+  "bangla", "sports", "kolkata", "indian", "news", 
+  "movies", "music", "islamic", "kids", "documentary", "entertainment"
+];
+
+const urls = [
+  ...baseBlocks,
+  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&_rsc=d6u12`)
 ];
 
 const options = {
@@ -87,11 +98,7 @@ async function processData() {
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  // Ayna OTT-এর JSON অ্যারে থেকে সুনির্দিষ্ট Key-Value জোড়া ফেচ করার জন্য রুলস
-  // প্রতিটি ব্লকে "name"/"title", "logo"/"image" এবং "streamUrl"/"url" একে অপরের সাথে যুক্ত থাকে
-  const channelPattern = /\{[^{}]*?"(?:title|name|channelName)"\s*:\s*"([^"]+)"[^{}]*?\}/g;
-  
-  // সম্পূর্ণ সোর্স থেকে সমস্ত m3u8 স্ট্রিম লিংক বের করা
+  // m3u8 ও m3u8 সমমানের স্ট্রিমিং লিঙ্ক ধরার এক্সপ্রেশন
   const m3u8Regex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
   let streamMatches = [];
   let m;
@@ -104,12 +111,11 @@ async function processData() {
     const streamUrl = streamItem.url;
     if (seenUrls.has(streamUrl)) continue;
 
-    // স্ট্রিম লিঙ্কের আশেপাশের ২০০ ক্যারেক্টার থেকে সরাসরি তার জন্য নির্ধারিত ডাটা অবজেক্ট বের করা
     const startPos = Math.max(0, streamItem.index - 1200);
     const endPos = Math.min(rawData.length, streamItem.index + 400);
     const snippet = rawData.substring(startPos, endPos);
 
-    // ১. নির্দিষ্ট স্ট্রিম লিঙ্কের টাইটেল ফেচ করা (অন্য চ্যানেলের নাম যেন না আসে)
+    // ১. চ্যানেল টাইটেল বের করা
     let title = "";
     const nameMatch = snippet.match(/"(?:title|name|channelName)"\s*:\s*"([^"]+)"/i);
     if (nameMatch) {
@@ -120,7 +126,7 @@ async function processData() {
       }
     }
 
-    // ২. Ayna OTT API থেকে চ্যানেলটির নির্দিষ্ট লোগো ফেচ করা
+    // ২. লোগো লিঙ্ক ফেচ করা
     let logoUrl = "";
     const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|logoUrl)"\s*:\s*"([^"]+)"/i) ||
                       snippet.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i) ||
@@ -135,7 +141,7 @@ async function processData() {
       }
     }
 
-    // ৩. যদি স্ট্রিম ইউআরএল থেকে নিশ্চিত সঠিক নাম ও লোগো না মেলে, সরাসরি URL Slug থেকে রিয়েল নাম ম্যাপ করা
+    // ৩. ব্যাকআপ নেম জেনারেশন
     if (!title) {
       try {
         const u = new URL(streamUrl);
@@ -151,7 +157,7 @@ async function processData() {
 
     if (!title) title = "Live Channel";
 
-    // ৪. যদি ওয়েবসাইট API থেকে লোগো খালি থাকে, তবে এপিআই বেসড ব্যাকআপ CDN থেকে অরিজিনাল লোগো সেট করা
+    // ৪. ব্যাকআপ লোগো জেনারেশন
     if (!logoUrl) {
       const cleanLogoName = title.toLowerCase().replace(/[^a-z0-9]/g, "");
       logoUrl = `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${cleanLogoName}.png`;
@@ -169,7 +175,7 @@ async function processData() {
     });
   }
 
-  // ক্যাটাগরি ও নামের প্রায়োরিটি ফিল্টারিং
+  // সর্টিং
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
