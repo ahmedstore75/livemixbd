@@ -77,14 +77,54 @@ function cleanString(str) {
     .trim();
 }
 
-function buildFallbackLogo(channelName) {
-  let cleanName = channelName
-    .toLowerCase()
-    .replace(/hd|sd|tv|bd|live/g, "")
-    .replace(/[^a-z0-9]/g, "")
-    .trim();
+function getChannelNameFromUrl(streamUrl) {
+  try {
+    const urlObj = new URL(streamUrl);
+    const pathParts = urlObj.pathname.split('/').filter(Boolean);
+    
+    // URL-এর অংশ থেকে নামের ক্লু বের করা
+    for (let part of pathParts.reverse()) {
+      let cleanPart = part.replace(/\.m3u8$/i, '').replace(/[-_]/g, ' ').trim();
+      if (cleanPart && !["index", "playlist", "live", "hls", "stream", "master"].includes(cleanPart.toLowerCase())) {
+        return cleanPart.toUpperCase();
+      }
+    }
+  } catch (e) {}
+  return "";
+}
 
-  if (!cleanName) cleanName = "iptv";
+function getOfficialLogoUrl(channelName) {
+  let cleanName = channelName.toLowerCase().replace(/[^a-z0-9]/g, '');
+  
+  // জনপ্রিয় চ্যানেলগুলোর সঠিক লোগো ম্যাপিং
+  const logoMap = {
+    "btvnational": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BTVNational.bd.png",
+    "btvctg": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BTVChittagong.bd.png",
+    "btvworld": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BTVWorld.bd.png",
+    "somoytv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SomoyTV.bd.png",
+    "jamunatv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/JamunaTV.bd.png",
+    "channel24": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channel24.bd.png",
+    "news24": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/News24.bd.png",
+    "atnnews": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/ATNNews.bd.png",
+    "ntv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/NTV.bd.png",
+    "rtv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/RTV.bd.png",
+    "tsports": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/TSports.bd.png",
+    "gtv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GTV.bd.png",
+    "gazitv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GTV.bd.png",
+    "ekattortv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/EkattorTV.bd.png",
+    "dbcnews": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/DBCNews.bd.png",
+    "independenttv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IndependentTV.bd.png",
+    "banglavision": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Banglavision.bd.png",
+    "channeli": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/Channeli.bd.png",
+    "deeptotv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/DeeptoTV.bd.png",
+    "maasrangatv": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/MaasrangaTV.bd.png"
+  };
+
+  if (logoMap[cleanName]) {
+    return logoMap[cleanName];
+  }
+
+  // ডিফল্ট লোগো জেনারেটর
   return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${cleanName}.png`;
 }
 
@@ -98,66 +138,40 @@ async function processData() {
   const seenUrls = new Set();
 
   const m3u8Regex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
-  let matches = [];
-  let m;
+  let match;
 
-  while ((m = m3u8Regex.exec(rawData)) !== null) {
-    matches.push({ url: cleanString(m[1]), index: m.index });
-  }
-
-  for (const item of matches) {
-    const streamUrl = item.url;
+  while ((match = m3u8Regex.exec(rawData)) !== null) {
+    const streamUrl = cleanString(match[1]);
     if (seenUrls.has(streamUrl)) continue;
 
-    const start = Math.max(0, item.index - 2000);
-    const end = Math.min(rawData.length, item.index + 800);
+    const start = Math.max(0, match.index - 1500);
+    const end = Math.min(rawData.length, match.index + 500);
     const snippet = rawData.substring(start, end);
 
-    // ১. চ্যানেল টাইটেল পার্সিং
+    // সোর্স টেক্সট থেকে আসল নাম খোজা
     let title = "";
-    const titleMatch = snippet.match(/"(?:name|title|channelName|tvName)"\s*:\s*"([^"]+)"/i);
-    if (titleMatch) {
-      const candidate = cleanString(titleMatch[1]);
-      if (candidate && !["subscribe", "viewport", "ayna ott", "live-tvs", "channels"].includes(candidate.toLowerCase())) {
-        title = candidate;
-      }
-    }
-
-    if (!title) {
-      try {
-        const u = new URL(streamUrl);
-        const parts = u.pathname.split("/").filter(Boolean);
-        let rawFileName = parts[parts.length - 1] || "";
-        rawFileName = rawFileName.replace(".m3u8", "").replace(/[-_]/g, " ");
-        if (rawFileName.length > 2) {
-          title = rawFileName.toUpperCase();
-        }
-      } catch (e) {}
-    }
-
-    if (!title) title = "Live Channel";
-
-    // ২. লোগো পার্সিং (উন্নত Regex লজিক)
-    let logoUrl = "";
+    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|label)"\s*:\s*"([^"]+)"/gi)];
     
-    // Ayna OTT-এর নির্দিষ্ট ইমেজ ফরম্যাট এবং পাথ খোঁজা
-    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|logoUrl|cover)"\s*:\s*"([^"]+)"/i) ||
-                      snippet.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i) ||
-                      snippet.match(/("\/images\/[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i);
-
-    if (logoMatch) {
-      let rawLogo = cleanString(logoMatch[1] || logoMatch[0]).replace(/^"|"$/g, '');
-      if (rawLogo.startsWith("/")) {
-        logoUrl = "https://web.aynaott.com" + rawLogo;
-      } else if (rawLogo.startsWith("http")) {
-        logoUrl = rawLogo;
+    for (let i = nameMatches.length - 1; i >= 0; i--) {
+      let cand = cleanString(nameMatches[i][1]);
+      const junk = ["subscribe", "viewport", "ayna ott", "live-tvs", "channels", "default", "noir"];
+      if (cand && !junk.includes(cand.toLowerCase()) && cand.length > 2) {
+        title = cand;
+        break;
       }
     }
 
-    // সোর্স কোডে লোগো না পাওয়া গেলে অথবা ইনভ্যালিড থাকলে অটোমেটিক অরিজিনাল লোগো সেট করা
-    if (!logoUrl || logoUrl.includes("placeholder") || logoUrl.includes("default")) {
-      logoUrl = buildFallbackLogo(title);
+    // যদি টেক্সটে আসল নাম না থাকে, তবে URL থেকে নাম জেনারেট করা
+    if (!title) {
+      title = getChannelNameFromUrl(streamUrl);
     }
+
+    if (!title || title.length < 2) {
+      title = "Live Channel";
+    }
+
+    // অফিশিয়াল লোগো জেনারেট করা
+    const logoUrl = getOfficialLogoUrl(title);
 
     seenUrls.add(streamUrl);
     const category = resolveCategory(title);
@@ -171,7 +185,7 @@ async function processData() {
     });
   }
 
-  // ক্যাটাগরি ও প্রায়োরিটি অনুযায়ী সাজানো
+  // ক্যাটাগরি ও নাম অনুযায়ী সাজানো
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
@@ -183,7 +197,7 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
-  // M3U প্লেলিস্ট জেনারেট করা
+  // M3U ফাইল তৈরি
   let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
