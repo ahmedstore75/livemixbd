@@ -1,8 +1,8 @@
 const fs = require("fs");
 const https = require("https");
 
-// Ayna OTT-এর সব ব্লক, ক্যাটাগরি ও পেজিনেশনের ইউআরএল তালিকা (১৩+ ক্যাটাগরি ও ১৩০+ চ্যানেল ফেচ করার জন্য)
 const baseBlocks = [
+  "https://web.aynaott.com/live-tvs",
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12",
@@ -17,15 +17,17 @@ const categoryPaths = [
 
 const urls = [
   ...baseBlocks,
+  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}`),
   ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&_rsc=d6u12`),
-  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&page=2&_rsc=d6u12`)
+  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&page=2`)
 ];
 
 const options = {
   headers: {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    "RSC": "1",
-    "Accept": "*/*"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache"
   }
 };
 
@@ -186,7 +188,6 @@ async function processData() {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
   }
 
-  // আগের নাম অনুযায়ী ফাইল দুটো সেভ করা হলো
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
   console.log(`Successfully generated playlist with ${extractedChannels.length} channels.`);
