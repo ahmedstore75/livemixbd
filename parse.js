@@ -1,6 +1,7 @@
 const fs = require("fs");
 const https = require("https");
 
+// Ayna OTT-এর নির্দিষ্ট কন্টেন্ট ব্লকের সোর্স লিঙ্ক
 const urls = [
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
@@ -86,76 +87,74 @@ async function processData() {
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  // RSC এর আসল চ্যানেল অবজেক্ট ধরার নিখুঁত Regex Pattern (যেখানে নাম, লোগো এবং লিঙ্ক একসাথে থাকে)
-  const channelBlockRegex = /\{[^{}]*?"title"\s*:\s*"([^"]+)"[^{}]*?\}/gi;
+  // Ayna OTT-এর JSON অ্যারে থেকে সুনির্দিষ্ট Key-Value জোড়া ফেচ করার জন্য রুলস
+  // প্রতিটি ব্লকে "name"/"title", "logo"/"image" এবং "streamUrl"/"url" একে অপরের সাথে যুক্ত থাকে
+  const channelPattern = /\{[^{}]*?"(?:title|name|channelName)"\s*:\s*"([^"]+)"[^{}]*?\}/g;
   
-  // ব্যাকআপ ফিল্টারিং
+  // সম্পূর্ণ সোর্স থেকে সমস্ত m3u8 স্ট্রিম লিংক বের করা
   const m3u8Regex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
-  let m3u8Matches = [];
+  let streamMatches = [];
   let m;
 
   while ((m = m3u8Regex.exec(rawData)) !== null) {
-    m3u8Matches.push({ url: cleanString(m[1]), index: m.index });
+    streamMatches.push({ url: cleanString(m[1]), index: m.index });
   }
 
-  for (const item of m3u8Matches) {
-    const streamUrl = item.url;
+  for (const streamItem of streamMatches) {
+    const streamUrl = streamItem.url;
     if (seenUrls.has(streamUrl)) continue;
 
-    // স্ট্রিমিং লিঙ্কের আশেপাশে নির্দিষ্ট JSON অবজেক্ট থেকে আসল তথ্য বের করা
-    const start = Math.max(0, item.index - 3000);
-    const end = Math.min(rawData.length, item.index + 1000);
-    const snippet = rawData.substring(start, end);
+    // স্ট্রিম লিঙ্কের আশেপাশের ২০০ ক্যারেক্টার থেকে সরাসরি তার জন্য নির্ধারিত ডাটা অবজেক্ট বের করা
+    const startPos = Math.max(0, streamItem.index - 1200);
+    const endPos = Math.min(rawData.length, streamItem.index + 400);
+    const snippet = rawData.substring(startPos, endPos);
 
-    // ১. আসল চ্যানেল টাইটেল (গ্রুপ নাম বাদ দেওয়া হয়েছে)
+    // ১. নির্দিষ্ট স্ট্রিম লিঙ্কের টাইটেল ফেচ করা (অন্য চ্যানেলের নাম যেন না আসে)
     let title = "";
-    const titleMatches = [...snippet.matchAll(/"title"\s*:\s*"([^"]+)"/gi)];
-    
-    // অনাকাঙ্ক্ষিত ক্যাটাগরি ও গ্রুপ টাইটেল ফিল্টার
-    const groupTitles = ["sports", "news", "entertainment", "kolkata", "indian", "bangla", "movies", "kids", "music", "islamic", "documentary", "subscribe", "viewport", "channels", "live tvs", "cricket", "football"];
-
-    for (let i = titleMatches.length - 1; i >= 0; i--) {
-      let cand = cleanString(titleMatches[i][1]);
-      if (cand && !groupTitles.includes(cand.toLowerCase()) && cand.length > 1) {
+    const nameMatch = snippet.match(/"(?:title|name|channelName)"\s*:\s*"([^"]+)"/i);
+    if (nameMatch) {
+      let cand = cleanString(nameMatch[1]);
+      const ignoreNames = ["subscribe", "viewport", "ayna ott", "live-tvs", "channels", "sports", "news", "entertainment"];
+      if (cand && !ignoreNames.includes(cand.toLowerCase())) {
         title = cand;
-        break;
       }
     }
 
-    // ২. অরিজিনাল লোগো লিঙ্ক (Ayna OTT CDN URL)
+    // ২. Ayna OTT API থেকে চ্যানেলটির নির্দিষ্ট লোগো ফেচ করা
     let logoUrl = "";
-    const logoMatch = snippet.match(/"(?:logo|image|thumbnail|poster|icon)"\s*:\s*"([^"]+)"/i) ||
-                      snippet.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|logoUrl)"\s*:\s*"([^"]+)"/i) ||
+                      snippet.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i) ||
+                      snippet.match(/("\/images\/[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i);
 
     if (logoMatch) {
-      let ext = cleanString(logoMatch[1] || logoMatch[0]);
-      if (ext.startsWith("/")) ext = "https://web.aynaott.com" + ext;
-      if (!ext.includes("placeholder") && !ext.includes("default")) {
-        logoUrl = ext;
+      let rawLogo = cleanString(logoMatch[1] || logoMatch[0]).replace(/^"|"$/g, '');
+      if (rawLogo.startsWith("/")) {
+        logoUrl = "https://web.aynaott.com" + rawLogo;
+      } else if (rawLogo.startsWith("http")) {
+        logoUrl = rawLogo;
       }
     }
 
-    // ৩. ব্যাকআপ নাম (যদি টেক্সট ফিল্ডে গ্রুপ টাইটেল ছাড়া কিছু না পাওয়া যায়)
+    // ৩. যদি স্ট্রিম ইউআরএল থেকে নিশ্চিত সঠিক নাম ও লোগো না মেলে, সরাসরি URL Slug থেকে রিয়েল নাম ম্যাপ করা
     if (!title) {
       try {
-        const urlObj = new URL(streamUrl);
-        const parts = urlObj.pathname.split('/').filter(Boolean);
-        for (let p of parts.reverse()) {
-          let cleanP = p.replace(/\.m3u8$/i, '').replace(/[-_]/g, ' ').trim();
-          if (cleanP && !["index", "playlist", "live", "hls", "master"].includes(cleanP.toLowerCase())) {
-            title = cleanP.toUpperCase();
-            break;
-          }
+        const u = new URL(streamUrl);
+        const pathSegments = u.pathname.split('/').filter(Boolean);
+        let lastSegment = pathSegments[pathSegments.length - 1] || "";
+        lastSegment = lastSegment.replace(/\.m3u8$/i, '').replace(/[-_]/g, ' ').trim();
+        
+        if (lastSegment && !["index", "playlist", "master", "live"].includes(lastSegment.toLowerCase())) {
+          title = lastSegment.toUpperCase();
         }
       } catch (e) {}
     }
 
     if (!title) title = "Live Channel";
 
-    // ৪. যদি ওয়েবসাইট লোগো মিসিং থাকে তবে অরিজিনাল GitHub CDN থেকে লোগো লিঙ্ক তৈরি
+    // ৪. যদি ওয়েবসাইট API থেকে লোগো খালি থাকে, তবে এপিআই বেসড ব্যাকআপ CDN থেকে অরিজিনাল লোগো সেট করা
     if (!logoUrl) {
-      const safeName = title.toLowerCase().replace(/[^a-z0-9]/g, "");
-      logoUrl = `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${safeName}.png`;
+      const cleanLogoName = title.toLowerCase().replace(/[^a-z0-9]/g, "");
+      logoUrl = `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${cleanLogoName}.png`;
     }
 
     seenUrls.add(streamUrl);
@@ -170,7 +169,7 @@ async function processData() {
     });
   }
 
-  // সর্টিং
+  // ক্যাটাগরি ও নামের প্রায়োরিটি ফিল্টারিং
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
@@ -182,7 +181,7 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
-  // M3U ফরম্যাটিং
+  // M3U প্লেলিস্ট তৈরি
   let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
