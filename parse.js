@@ -32,8 +32,8 @@ const categoryOrder = [
 
 const priorityMap = {
   "Bangla": [
-    "btv national", "btv", "channel i", "somoy tv", "jamuna tv", 
-    "channel 24", "news 24", "news24", "atn news", "ntv", "rtv", 
+    "btv national", "btv ctg", "btv world", "somoy tv", "jamuna tv", 
+    "channel 24", "news 24", "atn news", "ntv", "rtv", 
     "ekushey tv", "etv", "independent tv", "bangla vision", 
     "atn bangla", "deepto tv", "ekattor tv", "dbc news", "gtv", 
     "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv"
@@ -46,7 +46,7 @@ const priorityMap = {
 
 function resolveCategory(title) {
   const clean = title.toLowerCase().trim();
-  if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) return "Bangla";
+  if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|drama 24|global tv|thikana/i.test(clean)) return "Bangla";
   if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) return "Kolkata";
   if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) return "Sports";
   if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine|tv9 bharatvarsh/i.test(clean)) return "Indian";
@@ -67,11 +67,14 @@ function getPriorityIndex(category, title) {
   return index === -1 ? 999 : index;
 }
 
-function sanitizeUrl(str) {
+function cleanString(str) {
   if (!str) return "";
-  let clean = str.replace(/\\"/g, '"').replace(/\\\\/g, "/").replace(/\\u0026/g, "&");
-  if (clean.startsWith("/")) clean = "https://web.aynaott.com" + clean;
-  return clean;
+  return str
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, "/")
+    .replace(/\\u0026/g, "&")
+    .replace(/[\r\n\t]/g, "")
+    .trim();
 }
 
 async function processData() {
@@ -80,85 +83,82 @@ async function processData() {
     rawData += await fetchData(url) + "\n";
   }
 
-  // RSC এস্কেপিং ক্লিয়ার করা
-  const cleanedData = rawData
-    .replace(/\\"/g, '"')
-    .replace(/\\\\/g, "/")
-    .replace(/\\u0026/g, "&");
-
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  // RSC এর ডাটা ব্লকগুলোকে আলাদা অবজেক্ট হিসেবে ফিল্টার করা
-  // অবজেক্টের মধ্যে name/title, logo/image এবং m3u8 লিংক একসাথে জোড়া লাগানো
-  const objectRegex = /\{[^{}]*"(?:streamUrl|url|src)"\s*:\s*"(https?:[^\s"\\]+\.m3u8[^\s"\\]*)"[^{}]*\}/gi;
-  let match;
+  // RSC এর আসল JSON অবজেক্ট ব্লক ক্যাপচার করার জন্য নতুন প্যাটেন্ট
+  // এটি সরাসরি নাম, লোগো এবং লিঙ্ককে একই অবজেক্ট ফিল্ড থেকে ধরে
+  const jsonBlockRegex = /\{[^{}]*?(?:"name"|"title"|"label"|"channelName")\s*:\s*"([^"]+)"[^{}]*?\}/g;
+  
+  // ব্যাকআপ ফিল্টারিং ও সুনির্দিষ্ট ম্যাচ
+  const m3u8Regex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
+  let matches = [];
+  let m;
 
-  // প্রথম পদ্ধতি: স্ট্রাকচার্ড অবজেক্ট সার্চ
-  while ((match = objectRegex.exec(cleanedData)) !== null) {
-    const block = match[0];
-    const streamUrl = sanitizeUrl(match[1]);
-
-    if (seenUrls.has(streamUrl)) continue;
-
-    // চ্যানেল টাইটেল
-    const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
-    let title = titleMatch ? titleMatch[1].trim() : "";
-
-    // চ্যানেল লোগো
-    const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|cover)"\s*:\s*"([^"]+)"/i);
-    let logoUrl = logoMatch ? sanitizeUrl(logoMatch[1]) : "";
-
-    if (title && !["sports", "news", "cricket", "football"].includes(title.toLowerCase())) {
-      seenUrls.add(streamUrl);
-      extractedChannels.push({
-        name: title,
-        logo: logoUrl,
-        url: streamUrl,
-        category: resolveCategory(title),
-        priority: getPriorityIndex(resolveCategory(title), title)
-      });
-    }
+  while ((m = m3u8Regex.exec(rawData)) !== null) {
+    matches.push({ url: cleanString(m[1]), index: m.index });
   }
 
-  // দ্বিতীয় পদ্ধতি: ব্যাকআপ (যাতে কোনো চ্যানেল বাদ না পড়ে কিন্তু সঠিক অরিজিনাল নেম বের হয়)
-  const fallbackRegex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
-  while ((match = fallbackRegex.exec(cleanedData)) !== null) {
-    const streamUrl = sanitizeUrl(match[1]);
+  for (const item of matches) {
+    const streamUrl = item.url;
     if (seenUrls.has(streamUrl)) continue;
 
-    const startPos = Math.max(0, match.index - 3000);
-    const endPos = Math.min(cleanedData.length, match.index + 1000);
-    const snippet = cleanedData.substring(startPos, endPos);
+    // স্ট্রিম লিঙ্কের ঠিক আশেপাশে (১৫০০ ক্যারেক্টার আগে ও পরে) অবজেক্ট সার্চ
+    const start = Math.max(0, item.index - 1500);
+    const end = Math.min(rawData.length, item.index + 500);
+    const snippet = rawData.substring(start, end);
 
-    // অরিজিনাল নাম পাওয়ার জন্য কি-ওয়ার্ড সার্চ
+    // ১. চ্যানেল টাইটেল বের করা
     let title = "";
-    const nameMatches = [...snippet.matchAll(/"(?:title|name|channelName|tvName)"\s*:\s*"([^"]+)"/gi)];
-    
-    for (let i = nameMatches.length - 1; i >= 0; i--) {
-      let cand = nameMatches[i][1].trim();
-      if (cand && !["sports", "news", "cricket", "football", "subscribe", "live-tvs"].includes(cand.toLowerCase())) {
-        title = cand;
-        break;
+    const titleMatch = snippet.match(/"(?:name|title|channelName)"\s*:\s*"([^"]+)"/i);
+    if (titleMatch) {
+      const candidate = cleanString(titleMatch[1]);
+      if (candidate && !["subscribe", "viewport", "ayna ott", "live-tvs", "channels"].includes(candidate.toLowerCase())) {
+        title = candidate;
       }
     }
 
-    // অরিজিনাল লোগো লিঙ্ক বের করার চেইন সার্চ
+    // ২. চ্যানেল লোগো বের করা
     let logoUrl = "";
-    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|cover)"\s*:\s*"([^"]+)"/i);
+    const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|logoUrl)"\s*:\s*"([^"]+)"/i);
     if (logoMatch) {
-      logoUrl = sanitizeUrl(logoMatch[1]);
+      let ext = cleanString(logoMatch[1]);
+      if (ext.startsWith("/")) ext = "https://web.aynaott.com" + ext;
+      if (!ext.includes("placeholder") && !ext.includes("default")) {
+        logoUrl = ext;
+      }
     }
 
-    if (!title) continue; // জেন্যারিক নাম বাদ দেওয়া হচ্ছে
+    // ৩. যদি টাইটেল মিসমেচ থাকে, স্ট্রিম URL-এর নাম থেকে ক্লিন টাইটেল জেনারেট করা
+    if (!title || title.toLowerCase() === "subscribe") {
+      try {
+        const u = new URL(streamUrl);
+        const parts = u.pathname.split("/").filter(Boolean);
+        let rawFileName = parts[parts.length - 1] || "";
+        rawFileName = rawFileName.replace(".m3u8", "").replace(/[-_]/g, " ");
+        if (rawFileName.length > 2) {
+          title = rawFileName.toUpperCase();
+        }
+      } catch (e) {}
+    }
+
+    if (!title) title = "Live Channel";
+
+    // ৪. যদি ওয়েবসাইট থেকে লোগো না পাওয়া যায়, তবে পাবলিক IPTV Repo থেকে চ্যানেল নেম দিয়ে অরিজিনাল লোগো লিঙ্ক সেট করা
+    if (!logoUrl) {
+      const safeName = title.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+      logoUrl = `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${safeName}.png`;
+    }
 
     seenUrls.add(streamUrl);
+    const category = resolveCategory(title);
+
     extractedChannels.push({
       name: title,
       logo: logoUrl,
       url: streamUrl,
-      category: resolveCategory(title),
-      priority: getPriorityIndex(resolveCategory(title), title)
+      category: category,
+      priority: getPriorityIndex(category, title)
     });
   }
 
@@ -174,6 +174,7 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
+  // M3U হেডার ও কনটেন্ট তৈরি
   let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
