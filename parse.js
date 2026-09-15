@@ -1,7 +1,7 @@
 const fs = require("fs");
 const https = require("https");
 
-// সকল ক্যাটাগরি ও ব্লকের ডাইনামিক সোর্স ইউআরএল
+// ১. Ayna OTT-এর সব ক্যাটাগরি ও পেজিনেশনের ইউআরএল তালিকা
 const baseBlocks = [
   "https://web.aynaott.com/live-tvs?_rsc=d6u12",
   "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
@@ -10,7 +10,6 @@ const baseBlocks = [
   "https://web.aynaott.com/live-tvs/blocks/019edd26-d667-7b2d-b873-1ee2ddba42df?_rsc=d6u12"
 ];
 
-// অতিরিক্ত ক্যাটাগরি ব্লক জেনারেট করা যাতে সব চ্যানেল আসে
 const categoryPaths = [
   "bangla", "sports", "kolkata", "indian", "news", 
   "movies", "music", "islamic", "kids", "documentary", "entertainment"
@@ -18,7 +17,8 @@ const categoryPaths = [
 
 const urls = [
   ...baseBlocks,
-  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&_rsc=d6u12`)
+  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&_rsc=d6u12`),
+  ...categoryPaths.map(cat => `https://web.aynaott.com/live-tvs?category=${cat}&page=2&_rsc=d6u12`)
 ];
 
 const options = {
@@ -98,7 +98,8 @@ async function processData() {
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  // m3u8 ও m3u8 সমমানের স্ট্রিমিং লিঙ্ক ধরার এক্সপ্রেশন
+  const channelPattern = /\{[^{}]*?"(?:title|name|channelName)"\s*:\s*"([^"]+)"[^{}]*?\}/g;
+  
   const m3u8Regex = /(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/gi;
   let streamMatches = [];
   let m;
@@ -115,7 +116,7 @@ async function processData() {
     const endPos = Math.min(rawData.length, streamItem.index + 400);
     const snippet = rawData.substring(startPos, endPos);
 
-    // ১. চ্যানেল টাইটেল বের করা
+    // ১. নির্দিষ্ট স্ট্রিম লিঙ্কের টাইটেল ফেচ করা
     let title = "";
     const nameMatch = snippet.match(/"(?:title|name|channelName)"\s*:\s*"([^"]+)"/i);
     if (nameMatch) {
@@ -126,7 +127,7 @@ async function processData() {
       }
     }
 
-    // ২. লোগো লিঙ্ক ফেচ করা
+    // ২. Ayna OTT API থেকে চ্যানেলটির নির্দিষ্ট লোগো ফেচ করা
     let logoUrl = "";
     const logoMatch = snippet.match(/"(?:logo|image|poster|thumbnail|icon|logoUrl)"\s*:\s*"([^"]+)"/i) ||
                       snippet.match(/("https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*")/i) ||
@@ -141,7 +142,7 @@ async function processData() {
       }
     }
 
-    // ৩. ব্যাকআপ নেম জেনারেশন
+    // ৩. ব্যাকআপ টাইটেল (URL Slug থেকে)
     if (!title) {
       try {
         const u = new URL(streamUrl);
@@ -157,7 +158,7 @@ async function processData() {
 
     if (!title) title = "Live Channel";
 
-    // ৪. ব্যাকআপ লোগো জেনারেশন
+    // ৪. ব্যাকআপ লোগো CDN
     if (!logoUrl) {
       const cleanLogoName = title.toLowerCase().replace(/[^a-z0-9]/g, "");
       logoUrl = `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${cleanLogoName}.png`;
