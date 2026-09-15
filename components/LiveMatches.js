@@ -9,7 +9,7 @@ export default function LiveMatches() {
 
   // GitHub Repository URL বা Raw JSON URL
   // আপনার রিপোজিটরির সঠিক Raw File URL এখানে বসান
-  const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/username/repository-name/main/matches.json';
+  const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/srhady/tapmad-bd/refs/heads/main/tapmad_bd.json';
 
   const fetchMatchData = async () => {
     try {
