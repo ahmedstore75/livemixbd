@@ -1,0 +1,31 @@
+name: "Ayna OTT Auto Playlist Generator"
+
+on:
+  schedule:
+    # প্রতি ৬ ঘণ্টা পর পর স্বয়ংক্রিয়ভাবে রান হবে
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Fetch and Generate Playlist
+        run: node index.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Ahammad Ali"
+          git config --global user.email "ahammad@example.com"
+          git add ayna_ott.m3u ayna_ott.json
+          git commit -m "Auto update: Ayna OTT Playlist" || exit 0
+          git push
