@@ -4,7 +4,7 @@ on:
   schedule:
     # প্রতিদিন রাত ১২টায় (UTC 00:00) অটোমেটিক রান হবে
     - cron: '0 0 * * *'
-  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
 
 jobs:
   build-and-update:
@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add circle.m3u circle.json
-          git commit -m "Auto update circle.m3u and circle.json" || exit 0
+          git add .
+          git commit -m "Auto update circle playlists" || exit 0
           git push
