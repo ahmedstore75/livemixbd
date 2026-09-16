@@ -1,44 +1,50 @@
 const fs = require('fs');
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const axios = require('axios');
+const cheerio = require('cheerio');
 
-// Cloudflare Protection বাইপাস করার জন্য Stealth Plugin
-puppeteer.use(StealthPlugin());
-
-const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
+const FRONTEND_URL = 'https://cirkletv.com/live-tv';
 
 async function generatePlaylists() {
-    console.log('Launching headless browser to bypass Cloudflare...');
-    
-    const browser = await puppeteer.launch({
-        headless: 'new',
-        args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--disable-blink-features=AutomationControlled'
-        ]
-    });
-
     try {
-        const page = await browser.newPage();
+        console.log('Fetching HTML page from frontend...');
 
-        // ব্রাউজার ইউজার এজেন্ট সেট করা
-        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
+        // ফ্রন্টএন্ড পেজ থেকে ডেটা স্ক্র্যাপ করা
+        const response = await axios.get(FRONTEND_URL, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5'
+            }
+        });
 
-        console.log('Navigating to API URL...');
-        await page.goto(API_URL, { waitUntil: 'networkidle2', timeout: 60000 });
-
-        // Cloudflare Challenge পার হওয়ার জন্য কিছুক্ষণ অপেক্ষা
-        await new Promise(r => setTimeout(r, 5000));
-
-        // পেজের ভেতরের JSON রেসপন্স টেক্সট নেওয়া
-        const content = await page.evaluate(() => document.body.innerText);
+        const $ = cheerio.load(response.data);
         
-        const responseData = JSON.parse(content);
-        const channels = responseData.data || responseData.channels || responseData;
+        // Next.js-এর হাইড্রেশন ডেটা (__NEXT_DATA__) থেকে চ্যানেলের সব তথ্য বের করা
+        const nextDataScript = $('#__NEXT_DATA__').html();
 
-        if (!Array.isArray(channels)) {
-            throw new Error('Response is not an array. Cloudflare challenge might have failed.');
+        let channels = [];
+
+        if (nextDataScript) {
+            const parsedData = JSON.parse(nextDataScript);
+            // Next.js এর পেজ প্রপস থেকে চ্যানেল ডেটা এক্সট্র্যাক্ট
+            const pageProps = parsedData?.props?.pageProps || {};
+            channels = pageProps.channels || pageProps.data || pageProps.initialState?.channels || [];
+        }
+
+        // যদি __NEXT_DATA__ তে না পাওয়া যায়, তবে ব্যাকআপ হিসেবে সাধারণ রিকোয়েস্ট পাঠানো
+        if (!channels || channels.length === 0) {
+            console.log('Trying direct API fallback with custom headers...');
+            const apiRes = await axios.get('https://api.cirkletv.com/api/live-tv?page=1&limit=200', {
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                    'Referer': 'https://cirkletv.com/'
+                }
+            });
+            channels = apiRes.data?.data || apiRes.data || [];
+        }
+
+        if (!Array.isArray(channels) || channels.length === 0) {
+            throw new Error('No channels found or failed to parse data.');
         }
 
         let m3uContent = '#EXTM3U\n\n';
@@ -59,7 +65,7 @@ async function generatePlaylists() {
             }
         });
 
-        // ফাইল দুটি তৈরি করা
+        // ফাইল সেভ করা
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
@@ -72,8 +78,6 @@ async function generatePlaylists() {
     } catch (error) {
         console.error('Error generating playlists:', error.message);
         process.exit(1);
-    } finally {
-        await browser.close();
     }
 }
 
