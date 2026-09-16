@@ -1,5 +1,11 @@
 const fs = require("fs");
-const puppeteer = require("puppeteer");
+const https = require("https");
+
+const BASE_URL = "https://web.aynaott.com";
+const categories = [
+  "all", "bangla", "sports", "kolkata", "indian", "news", 
+  "movies", "music", "islamic", "kids", "documentary", "entertainment"
+];
 
 const categoryOrder = [
   "Bangla", "Sports", "Kolkata", "Indian", "News", 
@@ -50,61 +56,37 @@ function generateAutoLogo(channelName) {
   return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
 }
 
-async function processData() {
-  console.log("Launching Headless Browser...");
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+function fetchData(url) {
+  return new Promise((resolve) => {
+    const req = https.get(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "*/*",
+        "RSC": "1"
+      }
+    }, (res) => {
+      let data = "";
+      res.on("data", chunk => data += chunk);
+      res.on("end", () => resolve(data));
+    });
+    req.on("error", () => resolve(""));
+    req.setTimeout(10000, () => { req.destroy(); resolve(""); });
   });
+}
 
-  const page = await browser.newPage();
+async function processData() {
+  console.log("Fetching API responses for all categories & pages...");
   let rawData = "";
 
-  page.on("response", async (response) => {
-    try {
-      const text = await response.text();
-      if (text.includes(".m3u8")) {
-        rawData += text + "\n";
-      }
-    } catch (e) {}
-  });
-
-  console.log("Navigating to Ayna OTT...");
-  await page.goto("https://web.aynaott.com/live-tvs", { waitUntil: "networkidle2", timeout: 60000 });
-
-  // সব ক্যাটাগরি ও ফিল্টারে অটো ক্লিক করে চ্যানেল লোড করা
-  const catList = [
-    "bangla", "sports", "kolkata", "indian", "news", 
-    "movies", "music", "islamic", "kids", "documentary", "entertainment"
-  ];
-
-  for (const cat of catList) {
-    try {
-      console.log(`Fetching category: ${cat}`);
-      await page.goto(`https://web.aynaott.com/live-tvs?category=${cat}`, { waitUntil: "networkidle2", timeout: 30000 });
-      
-      await page.evaluate(async () => {
-        await new Promise((resolve) => {
-          let totalHeight = 0;
-          const distance = 400;
-          const timer = setInterval(() => {
-            const scrollHeight = document.body.scrollHeight;
-            window.scrollBy(0, distance);
-            totalHeight += distance;
-            if (totalHeight >= scrollHeight) {
-              clearInterval(timer);
-              resolve();
-            }
-          }, 150);
-        });
-      });
-      await new Promise(r => setTimeout(r, 2000));
-    } catch (e) {
-      console.log(`Failed to fetch category ${cat}`);
+  // সকল ক্যাটাগরি এবং প্রতিটি ক্যাটাগরির ১ থেকে ১০ নম্বর পেজ পর্যন্ত ডিপ ফেচ করা
+  for (const cat of categories) {
+    for (let page = 1; page <= 10; page++) {
+      const url = `${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=1`;
+      const res = await fetchData(url);
+      if (!res || res.length < 200) break; // ডাটা না থাকলে লুপ বন্ধ
+      rawData += res + "\n";
     }
   }
-
-  await browser.close();
 
   const cleanedData = rawData
     .replace(/\\"/g, '"')
@@ -143,7 +125,7 @@ async function processData() {
 
     if (logoMatch) {
       let extracted = logoMatch[1].trim();
-      if (extracted.startsWith("/")) extracted = "https://web.aynaott.com" + extracted;
+      if (extracted.startsWith("/")) extracted = BASE_URL + extracted;
       if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
         logoUrl = extracted;
       }
@@ -184,7 +166,7 @@ async function processData() {
 
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
-  console.log(`Successfully fetched ALL ${extractedChannels.length} channels using Puppeteer!`);
+  console.log(`Successfully fetched total ${extractedChannels.length} channels!`);
 }
 
 processData();
