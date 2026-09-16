@@ -2,9 +2,8 @@ name: Auto Update IPTV Playlists
 
 on:
   schedule:
-    # প্রতিদিন রাত ১২টায় (UTC 00:00) অটোমেটিক রান হবে
     - cron: '0 0 * * *'
-  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
+  workflow_dispatch:
 
 jobs:
   build-and-update:
@@ -14,13 +13,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js Environment
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Install Dependencies
-        run: npm install axios
+      - name: Install Puppeteer Dependencies
+        run: npm install puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
 
       - name: Run index.js to Generate Playlists
         run: node index.js
@@ -30,5 +29,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Auto update circle playlists" || exit 0
+          git commit -m "Auto update circle playlists via Puppeteer" || exit 0
           git push
