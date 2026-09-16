@@ -1,27 +1,5 @@
 const fs = require("fs");
-const https = require("https");
-
-const BASE_URL = "https://web.aynaott.com";
-const categories = [
-  "bangla", "sports", "kolkata", "indian", "news", 
-  "movies", "music", "islamic", "kids", "documentary", "entertainment"
-];
-
-const options = {
-  headers: {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "RSC": "1",
-    "Accept": "*/*"
-  }
-};
-
-const fetchData = (url) => new Promise((resolve) => {
-  https.get(url, options, (res) => {
-    let data = "";
-    res.on("data", chunk => data += chunk);
-    res.on("end", () => resolve(data));
-  }).on("error", () => resolve(""));
-});
+const puppeteer = require("puppeteer");
 
 const categoryOrder = [
   "Bangla", "Sports", "Kolkata", "Indian", "News", 
@@ -45,37 +23,16 @@ const priorityMap = {
 
 function resolveCategory(title) {
   const clean = title.toLowerCase().trim();
-
-  if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) {
-    return "Bangla";
-  }
-  if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
-    return "Kolkata";
-  }
-  if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) {
-    return "Sports";
-  }
-  if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine|tv9 bharatvarsh/i.test(clean)) {
-    return "Indian";
-  }
-  if (/madani|islam|peace|makkah|madinah|quran|sunnah|iqra|deen|huda/i.test(clean)) {
-    return "Islamic";
-  }
-  if (/news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9/i.test(clean)) {
-    return "News";
-  }
-  if (/movie|cinema|cine|gold|hbo|action|picture|filmy|flix|popcorn/i.test(clean)) {
-    return "Movies";
-  }
-  if (/music|mtv|zoom|9xm|9x|sangeet|vh1|club|b4u hitz|zing|musiq|beat|sound/i.test(clean)) {
-    return "Music";
-  }
-  if (/kid|cartoon|nick|pogo|disney|sonic|hungama|duronto|baby|junior|toon|anime/i.test(clean)) {
-    return "Kids";
-  }
-  if (/discovery|nat geo|national geographic|history|animal planet|investigation|science|planet|earth|docu/i.test(clean)) {
-    return "Documentary";
-  }
+  if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) return "Bangla";
+  if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) return "Kolkata";
+  if (/sport|tsn|espn|nfl|bein|cricket|football|willow|bleav|fifa|ten|eurosport|golf|sky|fishing|ktv/i.test(clean)) return "Sports";
+  if (/star plus|zee tv|colors hindi|colors|sony tv|sab tv|star bharat|dangal|b4u|bindass|sahara|and pictures|&pictures|star gold|zee cinema|sony max|goldmine|tv9 bharatvarsh/i.test(clean)) return "Indian";
+  if (/madani|islam|peace|makkah|madinah|quran|sunnah|iqra|deen|huda/i.test(clean)) return "Islamic";
+  if (/news|samachar|khabar|bbc|cnn|jazeera|republic|ndtv|times|reuters|dw|cp24|fox news|business|aaj tak|bulletin|tv9/i.test(clean)) return "News";
+  if (/movie|cinema|cine|gold|hbo|action|picture|filmy|flix|popcorn/i.test(clean)) return "Movies";
+  if (/music|mtv|zoom|9xm|9x|sangeet|vh1|club|b4u hitz|zing|musiq|beat|sound/i.test(clean)) return "Music";
+  if (/kid|cartoon|nick|pogo|disney|sonic|hungama|duronto|baby|junior|toon|anime/i.test(clean)) return "Kids";
+  if (/discovery|nat geo|national geographic|history|animal planet|investigation|science|planet|earth|docu/i.test(clean)) return "Documentary";
   return "Entertainment";
 }
 
@@ -88,39 +45,51 @@ function getPriorityIndex(category, title) {
 }
 
 function generateAutoLogo(channelName) {
-  let formattedName = channelName
-    .replace(/[^a-zA-Z0-9\s]/g, "")
-    .replace(/\s+/g, "")
-    .trim();
-
+  let formattedName = channelName.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, "").trim();
   if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
   return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
 }
 
 async function processData() {
-  console.log("Fetching root data to discover blocks...");
-  const mainPageData = await fetchData(`${BASE_URL}/live-tvs?_rsc=d6u12`);
-  
-  const blockMatches = mainPageData.match(/blocks\/[a-f0-9-]+/gi) || [];
-  const dynamicBlocks = Array.from(new Set(blockMatches)).map(b => `${BASE_URL}/live-tvs/${b}?_rsc=d6u12`);
+  console.log("Launching Headless Browser...");
+  const browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  });
 
-  const targetUrls = new Set([
-    `${BASE_URL}/live-tvs`,
-    `${BASE_URL}/live-tvs?_rsc=d6u12`,
-    ...dynamicBlocks
-  ]);
-
-  for (const cat of categories) {
-    targetUrls.add(`${BASE_URL}/live-tvs?category=${cat}`);
-    for (let page = 1; page <= 3; page++) {
-      targetUrls.add(`${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=d6u12`);
-    }
-  }
-
+  const page = await browser.newPage();
   let rawData = "";
-  for (const url of targetUrls) {
-    rawData += await fetchData(url) + "\n";
-  }
+
+  page.on("response", async (response) => {
+    try {
+      const text = await response.text();
+      if (text.includes(".m3u8")) {
+        rawData += text + "\n";
+      }
+    } catch (e) {}
+  });
+
+  console.log("Navigating to Ayna OTT...");
+  await page.goto("https://web.aynaott.com/live-tvs", { waitUntil: "networkidle2", timeout: 60000 });
+
+  await page.evaluate(async () => {
+    await new Promise((resolve) => {
+      let totalHeight = 0;
+      const distance = 300;
+      const timer = setInterval(() => {
+        const scrollHeight = document.body.scrollHeight;
+        window.scrollBy(0, distance);
+        totalHeight += distance;
+        if (totalHeight >= scrollHeight) {
+          clearInterval(timer);
+          resolve();
+        }
+      }, 200);
+    });
+  });
+
+  await new Promise(r => setTimeout(r, 5000));
+  await browser.close();
 
   const cleanedData = rawData
     .replace(/\\"/g, '"')
@@ -142,7 +111,6 @@ async function processData() {
 
     let title = "";
     const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
-    
     if (titleMatch) {
       let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
       const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs"];
@@ -160,17 +128,13 @@ async function processData() {
 
     if (logoMatch) {
       let extracted = logoMatch[1].trim();
-      if (extracted.startsWith("/")) {
-        extracted = BASE_URL + extracted;
-      }
+      if (extracted.startsWith("/")) extracted = "https://web.aynaott.com" + extracted;
       if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
         logoUrl = extracted;
       }
     }
 
-    if (!logoUrl) {
-      logoUrl = generateAutoLogo(title);
-    }
+    if (!logoUrl) logoUrl = generateAutoLogo(title);
 
     const category = resolveCategory(title);
     seenUrls.add(streamUrl);
@@ -205,7 +169,7 @@ async function processData() {
 
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
-  console.log(`Updated successfully with ${extractedChannels.length} channels.`);
+  console.log(`Successfully fetched ${extractedChannels.length} channels using Puppeteer!`);
 }
 
 processData();
