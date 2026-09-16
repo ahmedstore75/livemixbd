@@ -16,7 +16,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '20'
+
+      - name: Install Curl-Impersonate (Browser Impersonator)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget
+          wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.6.1/curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
+          tar -xvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
+          sudo cp curl_chrome116 /usr/local/bin/curl-impersonate-chrome
+          sudo chmod +x /usr/local/bin/curl-impersonate-chrome
 
       - name: Run index.js to Generate Playlists
         run: node index.js
