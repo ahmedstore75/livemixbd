@@ -1,15 +1,12 @@
 const fs = require('fs');
 const axios = require('axios');
 
-// API Endpoint
 const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
 
 async function generatePlaylists() {
     try {
-        console.log('Fetching channel data from API...');
+        console.log('Fetching channel data...');
         const response = await axios.get(API_URL);
-        
-        // API স্ট্রাকচার অনুযায়ী ডেটা নেওয়া
         const channels = response.data.data || response.data.channels || response.data;
 
         if (!Array.isArray(channels)) {
@@ -27,37 +24,25 @@ async function generatePlaylists() {
             const streamUrl = channel.streamUrl || channel.url || channel.link || channel.stream;
 
             if (streamUrl) {
-                // M3U ফরম্যাট
                 m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
                 m3uContent += `${streamUrl}\n\n`;
 
-                // JSON ফরম্যাট
-                jsonChannels.push({
-                    id: id,
-                    name: name,
-                    logo: logo,
-                    category: category,
-                    url: streamUrl
-                });
+                jsonChannels.push({ id, name, logo, category, url: streamUrl });
             }
         });
 
-        // circle.m3u ফাইল সেভ করা
+        // ফাইল নেম 'circle.m3u' এবং 'circle.json'
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
-        console.log('Successfully generated: circle.m3u');
-
-        // circle.json ফাইল সেভ করা
-        const jsonContent = JSON.stringify({
+        fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
             total_channels: jsonChannels.length,
             channels: jsonChannels
-        }, null, 2);
+        }, null, 2), 'utf8');
 
-        fs.writeFileSync('circle.json', jsonContent, 'utf8');
-        console.log('Successfully generated: circle.json');
-
+        console.log('Files generated successfully!');
     } catch (error) {
         console.error('Error generating playlists:', error.message);
+        process.exit(1); // ভুল হলে প্রসেস যেন ফেল হয়
     }
 }
 
