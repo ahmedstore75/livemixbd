@@ -23,7 +23,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Run JavaScript Scraper
+      - name: Install Dependencies
+        run: npm install puppeteer
+
+      - name: Run Scraper Script
         run: node parse.js
 
       - name: Commit and Push Files
