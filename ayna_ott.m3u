@@ -200,9 +200,9 @@ https://vods2.aynaott.com/hindimovies/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
 https://tvsen6.aynaott.com/andpictureshd/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
-https://tvsen6.aynaott.com/talkSPORT/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
 https://tvsen6.aynaott.com/dhoom/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen6.aynaott.com/talkSPORT/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
 https://tvsen3.aynaott.com/Ydvf4ppw/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
@@ -232,9 +232,9 @@ https://tvsen3.aynaott.com/u3NjUrny/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
 https://tvsen7.aynaott.com/disney/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
-https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
 https://tvsen6.aynaott.com/dubaisports1/index.m3u8
+#EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
+https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel
 https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Live Channel" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png", Live Channel

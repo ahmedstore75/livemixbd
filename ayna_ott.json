@@ -702,14 +702,14 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8",
+    "url": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/dhoom/index.m3u8",
+    "url": "https://tvsen6.aynaott.com/talkSPORT/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -814,14 +814,14 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
+    "url": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
+    "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
