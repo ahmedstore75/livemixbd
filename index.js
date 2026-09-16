@@ -6,7 +6,17 @@ const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
 async function generatePlaylists() {
     try {
         console.log('Fetching channel data...');
-        const response = await axios.get(API_URL);
+        
+        // 403 Forbidden বাইপাস করার জন্য Custom Headers
+        const response = await axios.get(API_URL, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'application/json, text/plain, */*',
+                'Referer': 'https://cirkletv.com/',
+                'Origin': 'https://cirkletv.com'
+            }
+        });
+
         const channels = response.data.data || response.data.channels || response.data;
 
         if (!Array.isArray(channels)) {
@@ -31,7 +41,7 @@ async function generatePlaylists() {
             }
         });
 
-        // ফাইল নেম 'circle.m3u' এবং 'circle.json'
+        // ফাইল তৈরি
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
@@ -39,10 +49,10 @@ async function generatePlaylists() {
             channels: jsonChannels
         }, null, 2), 'utf8');
 
-        console.log('Files generated successfully!');
+        console.log('circle.m3u and circle.json generated successfully!');
     } catch (error) {
         console.error('Error generating playlists:', error.message);
-        process.exit(1); // ভুল হলে প্রসেস যেন ফেল হয়
+        process.exit(1);
     }
 }
 
