@@ -1,15 +1,15 @@
 const fs = require("fs");
 const https = require("https");
 
-const urls = [
-  "https://web.aynaott.com/live-tvs?_rsc=d6u12",
-  "https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7?_rsc=d6u12",
-  "https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141?_rsc=d6u12"
+const BASE_URL = "https://web.aynaott.com";
+const categories = [
+  "bangla", "sports", "kolkata", "indian", "news", 
+  "movies", "music", "islamic", "kids", "documentary", "entertainment"
 ];
 
 const options = {
   headers: {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "RSC": "1",
     "Accept": "*/*"
   }
@@ -34,10 +34,7 @@ const priorityMap = {
     "channel 24", "news 24", "news24", "atn news", "ntv", "rtv", 
     "ekushey tv", "etv", "independent tv", "bangla vision", 
     "atn bangla", "deepto tv", "ekattor tv", "dbc news", "gtv", 
-    "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv", 
-    "ananda tv", "bijoy tv", "asian tv", "boishakhi", "desh tv", 
-    "mohona", "nexus", "my tv", "sa tv", "channel 9", "channel 52",
-    "drama 24", "global tv", "thikana"
+    "gazi tv", "t sports", "maasranga tv", "ekhon tv", "bangla tv"
   ],
   "Sports": [
     "t sports", "star sports 1", "star sports 2", "star sports hindi", 
@@ -101,8 +98,27 @@ function generateAutoLogo(channelName) {
 }
 
 async function processData() {
+  console.log("Fetching root data to discover blocks...");
+  const mainPageData = await fetchData(`${BASE_URL}/live-tvs?_rsc=d6u12`);
+  
+  const blockMatches = mainPageData.match(/blocks\/[a-f0-9-]+/gi) || [];
+  const dynamicBlocks = Array.from(new Set(blockMatches)).map(b => `${BASE_URL}/live-tvs/${b}?_rsc=d6u12`);
+
+  const targetUrls = new Set([
+    `${BASE_URL}/live-tvs`,
+    `${BASE_URL}/live-tvs?_rsc=d6u12`,
+    ...dynamicBlocks
+  ]);
+
+  for (const cat of categories) {
+    targetUrls.add(`${BASE_URL}/live-tvs?category=${cat}`);
+    for (let page = 1; page <= 3; page++) {
+      targetUrls.add(`${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=d6u12`);
+    }
+  }
+
   let rawData = "";
-  for (const url of urls) {
+  for (const url of targetUrls) {
     rawData += await fetchData(url) + "\n";
   }
 
@@ -138,7 +154,6 @@ async function processData() {
     if (!title) continue;
 
     let logoUrl = "";
-
     const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                       block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
                       block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
@@ -146,7 +161,7 @@ async function processData() {
     if (logoMatch) {
       let extracted = logoMatch[1].trim();
       if (extracted.startsWith("/")) {
-        extracted = "https://web.aynaott.com" + extracted;
+        extracted = BASE_URL + extracted;
       }
       if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
         logoUrl = extracted;
@@ -172,7 +187,6 @@ async function processData() {
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
-
     const indexA = catIndexA === -1 ? 99 : catIndexA;
     const indexB = catIndexB === -1 ? 99 : catIndexB;
 
@@ -183,7 +197,10 @@ async function processData() {
 
   let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
-    m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
+    m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n`;
+    m3uContent += `#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)\n`;
+    m3uContent += `#EXTVLCOPT:http-referrer=https://web.aynaott.com/\n`;
+    m3uContent += `${ch.url}\n`;
   }
 
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
