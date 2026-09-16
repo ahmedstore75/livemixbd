@@ -2,38 +2,33 @@ name: Auto Update IPTV Playlists
 
 on:
   schedule:
-    # প্রতিদিন রাত ১২টায় (UTC 00:00) স্ক্রিপ্টটি অটোমেটিক রান হবে
+    # প্রতিদিন রাত ১২টায় (UTC 00:00) অটোমেটিক রান হবে
     - cron: '0 0 * * *'
-  workflow_dispatch: # GitHub থেকে ম্যানুয়ালি "Run workflow" বাটনে ক্লিক করে চালানোর জন্য
+  workflow_dispatch: # ম্যানুয়ালি রান করার জন্য
 
 jobs:
   build-and-update:
     runs-on: ubuntu-latest
 
     steps:
-      # ১. রিপোজিটরির ফাইলগুলো চেকআউট করা
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # ২. Node.js এনভায়রনমেন্ট সেটআপ করা
       - name: Setup Node.js Environment
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      # ৩. প্রয়োজনীয় প্যাকেজ (Axios) ইন্সটল করা
       - name: Install Dependencies
         run: npm install axios
 
-      # ৪. index.js রান করে M3U এবং JSON প্লেলিস্ট ফাইল জেনারেট করা
       - name: Run index.js to Generate Playlists
         run: node index.js
 
-      # ৫. নতুন ফাইলগুলো GitHub-এ Commit এবং Push করা
       - name: Commit and Push Updated Playlists
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add playlist.m3u playlist.json
-          git commit -m "Auto update playlist.m3u and playlist.json" || exit 0
+          git add circle.m3u circle.json
+          git commit -m "Auto update circle.m3u and circle.json" || exit 0
           git push
