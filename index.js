@@ -4,9 +4,9 @@ const { execSync } = require('child_process');
 const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
 
 function getBrowserData() {
-    console.log('Fetching API response using Chrome TLS Impersonation...');
+    console.log('Fetching API response using Browser Impersonation...');
     
-    // curl-impersonate ব্যবহার করে হুবহু আসল Chrome ব্রাউজারের ফঙ্গারপ্রিন্ট তৈরি
+    // curl_chrome বা curl-impersonate বাইনারি রান করা
     const command = `curl-impersonate-chrome \
         -s "${API_URL}" \
         -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" \
