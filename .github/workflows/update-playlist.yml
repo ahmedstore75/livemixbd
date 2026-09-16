@@ -25,7 +25,7 @@ jobs:
           wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.6.1/curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
           mkdir -p curl-temp
           tar -xvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz -C curl-temp
-          sudo cp curl-temp/curl_chrome* /usr/local/bin/curl-impersonate-chrome
+          sudo cp curl-temp/curl_chrome110 /usr/local/bin/curl-impersonate-chrome
           sudo chmod +x /usr/local/bin/curl-impersonate-chrome
 
       - name: Run index.js to Generate Playlists
@@ -34,7 +34,7 @@ jobs:
       - name: Commit and Push Updated Playlists
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]"
           git add .
           git commit -m "Auto update circle playlists" || exit 0
           git push
