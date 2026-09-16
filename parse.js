@@ -72,23 +72,38 @@ async function processData() {
   console.log("Navigating to Ayna OTT...");
   await page.goto("https://web.aynaott.com/live-tvs", { waitUntil: "networkidle2", timeout: 60000 });
 
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 300;
-      const timer = setInterval(() => {
-        const scrollHeight = document.body.scrollHeight;
-        window.scrollBy(0, distance);
-        totalHeight += distance;
-        if (totalHeight >= scrollHeight) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 200);
-    });
-  });
+  // সব ক্যাটাগরি ও ফিল্টারে অটো ক্লিক করে চ্যানেল লোড করা
+  const catList = [
+    "bangla", "sports", "kolkata", "indian", "news", 
+    "movies", "music", "islamic", "kids", "documentary", "entertainment"
+  ];
 
-  await new Promise(r => setTimeout(r, 5000));
+  for (const cat of catList) {
+    try {
+      console.log(`Fetching category: ${cat}`);
+      await page.goto(`https://web.aynaott.com/live-tvs?category=${cat}`, { waitUntil: "networkidle2", timeout: 30000 });
+      
+      await page.evaluate(async () => {
+        await new Promise((resolve) => {
+          let totalHeight = 0;
+          const distance = 400;
+          const timer = setInterval(() => {
+            const scrollHeight = document.body.scrollHeight;
+            window.scrollBy(0, distance);
+            totalHeight += distance;
+            if (totalHeight >= scrollHeight) {
+              clearInterval(timer);
+              resolve();
+            }
+          }, 150);
+        });
+      });
+      await new Promise(r => setTimeout(r, 2000));
+    } catch (e) {
+      console.log(`Failed to fetch category ${cat}`);
+    }
+  }
+
   await browser.close();
 
   const cleanedData = rawData
@@ -169,7 +184,7 @@ async function processData() {
 
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
-  console.log(`Successfully fetched ${extractedChannels.length} channels using Puppeteer!`);
+  console.log(`Successfully fetched ALL ${extractedChannels.length} channels using Puppeteer!`);
 }
 
 processData();
