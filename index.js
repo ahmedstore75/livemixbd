@@ -1,27 +1,35 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 
-async function generatePlaylists() {
+const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
+
+function fetchApiData() {
+    console.log('Fetching raw API data via Native Curl...');
+    
+    // ব্রাউজারের হুবহু হেডার দিয়ে cURL চালানো
+    const curlCommand = `curl -s "${API_URL}" \
+        -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" \
+        -H "Accept: application/json, text/plain, */*" \
+        -H "Referer: https://cirkletv.com/" \
+        -H "Origin: https://cirkletv.com" \
+        -H "Sec-Fetch-Dest: empty" \
+        -H "Sec-Fetch-Mode: cors" \
+        -H "Sec-Fetch-Site: same-site" \
+        --compressed`;
+
+    const rawResponse = execSync(curlCommand).toString();
+    return JSON.parse(rawResponse);
+}
+
+function generatePlaylists() {
     try {
-        console.log('Fetching channel data via CORS Proxy...');
-
-        const targetUrl = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
-        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
-
-        const response = await fetch(proxyUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
-            }
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const parsedContents = await response.json();
-        const channels = parsedContents.data || parsedContents.channels || parsedContents;
+        const responseData = fetchApiData();
+        
+        // ডেটা এক্সট্র্যাক্ট করা
+        const channels = responseData.data || responseData.channels || responseData;
 
         if (!Array.isArray(channels)) {
-            throw new Error('Invalid channel data format received.');
+            throw new Error('API response does not contain a valid channel array.');
         }
 
         let m3uContent = '#EXTM3U\n\n';
@@ -42,6 +50,7 @@ async function generatePlaylists() {
             }
         });
 
+        // ফাইল তৈরি
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
