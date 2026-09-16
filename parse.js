@@ -70,23 +70,23 @@ function fetchData(url) {
       res.on("end", () => resolve(data));
     });
     req.on("error", () => resolve(""));
-    req.setTimeout(10000, () => { req.destroy(); resolve(""); });
+    req.setTimeout(3000, () => { req.destroy(); resolve(""); }); // ৩ সেকেন্ড টাইমআউট
   });
 }
 
 async function processData() {
-  console.log("Fetching API responses for all categories & pages...");
-  let rawData = "";
+  console.log("Fetching API responses in parallel...");
 
-  // সকল ক্যাটাগরি এবং প্রতিটি ক্যাটাগরির ১ থেকে ১০ নম্বর পেজ পর্যন্ত ডিপ ফেচ করা
+  const urls = [];
   for (const cat of categories) {
-    for (let page = 1; page <= 10; page++) {
-      const url = `${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=1`;
-      const res = await fetchData(url);
-      if (!res || res.length < 200) break; // ডাটা না থাকলে লুপ বন্ধ
-      rawData += res + "\n";
+    for (let page = 1; page <= 4; page++) {
+      urls.push(`${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=1`);
     }
   }
+
+  // সমান্তরালভাবে দ্রুত ফেচ করা
+  const results = await Promise.all(urls.map(url => fetchData(url)));
+  const rawData = results.join("\n");
 
   const cleanedData = rawData
     .replace(/\\"/g, '"')
