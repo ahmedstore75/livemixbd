@@ -1,7 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 
-// API Endpoints
+// API Endpoint
 const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
 
 async function generatePlaylists() {
@@ -9,7 +9,7 @@ async function generatePlaylists() {
         console.log('Fetching channel data from API...');
         const response = await axios.get(API_URL);
         
-        // API স্ট্রাকচার অনুযায়ী চ্যানেল লিস্ট এক্সট্র্যাক্ট করা
+        // API স্ট্রাকচার অনুযায়ী ডেটা নেওয়া
         const channels = response.data.data || response.data.channels || response.data;
 
         if (!Array.isArray(channels)) {
@@ -27,11 +27,11 @@ async function generatePlaylists() {
             const streamUrl = channel.streamUrl || channel.url || channel.link || channel.stream;
 
             if (streamUrl) {
-                // ১. M3U ফরম্যাট
+                // M3U ফরম্যাট
                 m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
                 m3uContent += `${streamUrl}\n\n`;
 
-                // ২. JSON ফরম্যাট
+                // JSON ফরম্যাট
                 jsonChannels.push({
                     id: id,
                     name: name,
@@ -42,19 +42,19 @@ async function generatePlaylists() {
             }
         });
 
-        // M3U ফাইল সেভ করা
-        fs.writeFileSync('playlist.m3u', m3uContent, 'utf8');
-        console.log('Successfully generated: playlist.m3u');
+        // circle.m3u ফাইল সেভ করা
+        fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
+        console.log('Successfully generated: circle.m3u');
 
-        // JSON ফাইল সেভ করা
+        // circle.json ফাইল সেভ করা
         const jsonContent = JSON.stringify({
             updated_at: new Date().toISOString(),
             total_channels: jsonChannels.length,
             channels: jsonChannels
         }, null, 2);
 
-        fs.writeFileSync('playlist.json', jsonContent, 'utf8');
-        console.log('Successfully generated: playlist.json');
+        fs.writeFileSync('circle.json', jsonContent, 'utf8');
+        console.log('Successfully generated: circle.json');
 
     } catch (error) {
         console.error('Error generating playlists:', error.message);
