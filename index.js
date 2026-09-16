@@ -2,19 +2,22 @@ const fs = require('fs');
 
 async function generatePlaylists() {
     try {
-        console.log('Fetching channel data via proxy...');
+        console.log('Fetching channel data via CORS Proxy...');
 
-        // বাংলাদেশী / Cloudflare-bypass CORS Proxy
-        const targetUrl = encodeURIComponent('https://api.cirkletv.com/api/live-tv?page=1&limit=200');
-        const proxyUrl = `https://api.allorigins.win/get?url=${targetUrl}`;
+        const targetUrl = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
+        const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
 
-        const response = await fetch(proxyUrl);
+        const response = await fetch(proxyUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+            }
+        });
+
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const data = await response.json();
-        const parsedContents = JSON.parse(data.contents);
+        const parsedContents = await response.json();
         const channels = parsedContents.data || parsedContents.channels || parsedContents;
 
         if (!Array.isArray(channels)) {
