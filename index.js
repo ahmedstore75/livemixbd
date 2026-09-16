@@ -1,35 +1,52 @@
 const fs = require('fs');
-const { execSync } = require('child_process');
 
-const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
-
-function fetchApiData() {
-    console.log('Fetching raw API data via Native Curl...');
-    
-    // ব্রাউজারের হুবহু হেডার দিয়ে cURL চালানো
-    const curlCommand = `curl -s "${API_URL}" \
-        -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" \
-        -H "Accept: application/json, text/plain, */*" \
-        -H "Referer: https://cirkletv.com/" \
-        -H "Origin: https://cirkletv.com" \
-        -H "Sec-Fetch-Dest: empty" \
-        -H "Sec-Fetch-Mode: cors" \
-        -H "Sec-Fetch-Site: same-site" \
-        --compressed`;
-
-    const rawResponse = execSync(curlCommand).toString();
-    return JSON.parse(rawResponse);
-}
-
-function generatePlaylists() {
+async function generatePlaylists() {
     try {
-        const responseData = fetchApiData();
+        console.log('Fetching channel data...');
+
+        // Cloudflare & Geo-block bypassing target
+        const targetUrl = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
         
-        // ডেটা এক্সট্র্যাক্ট করা
-        const channels = responseData.data || responseData.channels || responseData;
+        // Backup mirror API endpoints
+        const urlsToTry = [
+            `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
+            `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
+            targetUrl
+        ];
+
+        let rawData = null;
+
+        for (const url of urlsToTry) {
+            try {
+                console.log(`Trying endpoint: ${url.substring(0, 45)}...`);
+                const response = await fetch(url, {
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+                    }
+                });
+                
+                if (response.ok) {
+                    const text = await response.text();
+                    // Check if valid JSON returned
+                    if (text.startsWith('{') || text.startsWith('[')) {
+                        rawData = JSON.parse(text);
+                        console.log('Data successfully fetched!');
+                        break;
+                    }
+                }
+            } catch (e) {
+                console.log('Failed this route, trying next...');
+            }
+        }
+
+        if (!rawData) {
+            throw new Error('All fetching routes failed due to Cloudflare Geo-blocking on GitHub Runners.');
+        }
+
+        const channels = rawData.data || rawData.channels || rawData;
 
         if (!Array.isArray(channels)) {
-            throw new Error('API response does not contain a valid channel array.');
+            throw new Error('Invalid channel structure received.');
         }
 
         let m3uContent = '#EXTM3U\n\n';
@@ -50,7 +67,6 @@ function generatePlaylists() {
             }
         });
 
-        // ফাইল তৈরি
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
@@ -58,10 +74,10 @@ function generatePlaylists() {
             channels: jsonChannels
         }, null, 2), 'utf8');
 
-        console.log('Successfully generated circle.m3u and circle.json!');
+        console.log(`Successfully generated playlists with ${jsonChannels.length} channels!`);
 
     } catch (error) {
-        console.error('Error generating playlists:', error.message);
+        console.error('Error:', error.message);
         process.exit(1);
     }
 }
