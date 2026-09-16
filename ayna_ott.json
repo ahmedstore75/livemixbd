@@ -751,6 +751,13 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
+    "url": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
+    "category": "Entertainment",
+    "priority": 999
+  },
+  {
+    "name": "Live Channel",
+    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen7.aynaott.com/hbo/index.m3u8",
     "category": "Entertainment",
     "priority": 999
@@ -759,13 +766,6 @@
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
     "url": "https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8",
-    "category": "Entertainment",
-    "priority": 999
-  },
-  {
-    "name": "Live Channel",
-    "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/B4UHitz/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -814,14 +814,14 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
+    "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8",
+    "url": "https://tvsen6.aynaott.com/dubaisports1/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
@@ -884,14 +884,14 @@
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
+    "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
   {
     "name": "Live Channel",
     "logo": "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/livechannel.png",
-    "url": "https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8",
+    "url": "https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8",
     "category": "Entertainment",
     "priority": 999
   },
