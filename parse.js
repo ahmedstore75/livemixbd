@@ -49,11 +49,9 @@ const priorityMap = {
 function resolveCategory(title) {
   const clean = title.toLowerCase().trim();
 
-  // Bangla Channels Rule
   if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) {
     return "Bangla";
   }
-  // Kolkata Channels Rule
   if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
     return "Kolkata";
   }
@@ -183,12 +181,11 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
-  let m3uContent = "#EXTM3U\n";
+  let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n${ch.url}\n`;
   }
 
-  // কাঙ্ক্ষিত ফাইলের নাম অনুযায়ী আউটপুট সেভ
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
   console.log(`Updated successfully with ${extractedChannels.length} channels.`);
