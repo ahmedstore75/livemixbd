@@ -4,15 +4,13 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 
 puppeteer.use(StealthPlugin());
 
-const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
+const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
-// রেসপন্স থেকে সঠিক লোগো বের করার ফাংশন
 function getChannelLogo(channel) {
     if (!channel) return '';
     return channel.poster || channel.thumbnail || channel.logo || channel.icon || channel.image || '';
 }
 
-// স্পেস বা একাধিক URL যুক্ত স্ট্রিং থেকে আলাদা লিংক বের করার ফাংশন
 function extractUrls(input) {
     if (!input) return [];
     if (Array.isArray(input)) {
@@ -43,53 +41,70 @@ async function generatePlaylists() {
         });
 
         const page = await browser.newPage();
-
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
-        
-        console.log('Navigating to API URL...');
-        await page.goto(API_URL, { waitUntil: 'networkidle2', timeout: 60000 });
 
-        const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
-        const responseData = JSON.parse(content);
+        let allChannels = [];
+        let currentPage = 1;
+        let totalPages = 1;
 
-        // API ডাটা অ্যারে স্ট্রাকচার চেক
-        let channels = null;
-        if (responseData && responseData.data && Array.isArray(responseData.data.data)) {
-            channels = responseData.data.data;
-        } else if (responseData && Array.isArray(responseData.data)) {
-            channels = responseData.data;
-        } else if (Array.isArray(responseData)) {
-            channels = responseData;
-        }
+        // পেজিনেশন লুপ - সব পেজ থেকে ডাটা স্ক্যান করবে
+        do {
+            const url = `${BASE_API_URL}${currentPage}`;
+            console.log(`Fetching Page ${currentPage} of ${totalPages}...`);
+            
+            await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+            const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
+            const responseData = JSON.parse(content);
 
-        if (!channels || !Array.isArray(channels) || channels.length === 0) {
-            throw new Error('Could not parse channel array from response.');
+            // চ্যানেল ডাটা বের করা
+            let pageChannels = [];
+            if (responseData && responseData.data && Array.isArray(responseData.data.data)) {
+                pageChannels = responseData.data.data;
+                // মোট পেজ সংখ্যা আপডেট করা
+                if (responseData.data.pagination && responseData.data.pagination.totalPages) {
+                    totalPages = responseData.data.pagination.totalPages;
+                }
+            } else if (responseData && Array.isArray(responseData.data)) {
+                pageChannels = responseData.data;
+            } else if (Array.isArray(responseData)) {
+                pageChannels = responseData;
+            }
+
+            if (pageChannels && pageChannels.length > 0) {
+                allChannels = allChannels.concat(pageChannels);
+            } else {
+                console.log(`No channels found on page ${currentPage}, stopping pagination.`);
+                break;
+            }
+
+            currentPage++;
+        } while (currentPage <= totalPages);
+
+        console.log(`Total channels fetched across all pages: ${allChannels.length}`);
+
+        if (allChannels.length === 0) {
+            throw new Error('Could not parse any channels from the API response.');
         }
 
         let m3uContent = '#EXTM3U\n\n';
         const jsonChannels = [];
 
-        channels.forEach(channel => {
+        allChannels.forEach(channel => {
             const id = channel._id || channel.id || '';
             const name = channel.title || channel.name || 'Unknown Channel';
-            
-            // লোগো এক্সট্রাকশন (poster / thumbnail)
             const logo = getChannelLogo(channel);
-            
-            // ক্যাটাগরি এক্সট্রাকশন
-            const category = typeof channel.category === 'object' ? (channel.category?.name || 'Sports') : (channel.category || 'Sports');
+            const category = typeof channel.category === 'object' ? (channel.category?.name || 'General') : (channel.category || 'General');
 
-            // একাধিক স্ট্রিমিং URL ফিল্টার করা
             const rawStream = channel.url || channel.streamUrl || channel.stream || '';
             const streamUrls = extractUrls(rawStream);
 
             if (streamUrls.length > 0) {
                 m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
 
-                // প্রথম লিংকটি সরাসরি
+                // প্রথম লিংক সাধারণ লিংক
                 m3uContent += `${streamUrls[0]}\n`;
 
-                // ২য়, ৩য় বা অতিরিক্ত লিংকগুলোর শুরুতে '#' (হ্যাশ)
+                // অতিরিক্ত লিংকগুলোর সামনে '#'
                 for (let i = 1; i < streamUrls.length; i++) {
                     m3uContent += `#${streamUrls[i]}\n`;
                 }
@@ -107,7 +122,7 @@ async function generatePlaylists() {
             channels: jsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ${jsonChannels.length} channels.`);
+        console.log(`Success! Generated circle.m3u & circle.json with ALL ${jsonChannels.length} channels.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
