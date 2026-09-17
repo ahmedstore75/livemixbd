@@ -1,9 +1,12 @@
-name: Auto Update IPTV Playlists
+name: Auto Generate Playlists
 
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-and-update:
@@ -18,15 +21,15 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Curl-Impersonate
+      - name: Install Dependencies
+        run: |
+          npm init -y
+          npm install puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
+
+      - name: Install System Dependencies for Chrome
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget tar
-          wget https://github.com/lwthiker/curl-impersonate/releases/download/v0.6.1/curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz
-          mkdir -p curl-temp
-          tar -xvf curl-impersonate-v0.6.1.x86_64-linux-gnu.tar.gz -C curl-temp
-          sudo cp curl-temp/curl_chrome110 /usr/local/bin/curl-impersonate-chrome
-          sudo chmod +x /usr/local/bin/curl-impersonate-chrome
+          sudo apt-get install -y libgbm-dev wget unzip fonts-liberation libasound2 libatk-bridge2.0-0 libgtk-3-0 libnspr4 libnss3 xdg-utils
 
       - name: Run index.js to Generate Playlists
         run: node index.js
@@ -34,7 +37,7 @@ jobs:
       - name: Commit and Push Updated Playlists
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]"
-          git add .
-          git commit -m "Auto update circle playlists" || exit 0
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add circle.m3u circle.json
+          git commit -m "Auto-update playlists [skip ci]" || exit 0
           git push
