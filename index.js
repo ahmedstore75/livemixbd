@@ -7,17 +7,23 @@ function fetchApiData(url) {
     return new Promise((resolve, reject) => {
         const options = {
             headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
                 'Accept': 'application/json, text/plain, */*',
+                'Accept-Language': 'en-US,en;q=0.9',
                 'Referer': 'https://cirkletv.com/',
-                'Origin': 'https://cirkletv.com'
+                'Origin': 'https://cirkletv.com',
+                'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+                'Sec-Ch-Ua-Mobile': '?0',
+                'Sec-Ch-Ua-Platform': '"Windows"',
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-site'
             }
         };
 
         https.get(url, options, (res) => {
             let data = '';
             
-            // ডাটা রিসিভ করা
             res.on('data', chunk => { data += chunk; });
             
             res.on('end', () => {
@@ -28,7 +34,6 @@ function fetchApiData(url) {
                     const parsed = JSON.parse(data);
                     resolve(parsed);
                 } catch (err) {
-                    console.error('Server returned Non-JSON response (possibly blocked HTML):', data.substring(0, 150));
                     reject(new Error('Failed to parse response as JSON.'));
                 }
             });
@@ -41,10 +46,6 @@ async function generatePlaylists() {
         console.log('Fetching API response...');
         const responseData = await fetchApiData(API_URL);
 
-        // API স্ট্রাকচার প্রিন্ট করে দেখা (ডিবাগ করার জন্য)
-        console.log('API Response Sample Keys:', Object.keys(responseData));
-
-        // অ্যারে খুঁজে বের করা
         let channels = [];
         if (Array.isArray(responseData)) {
             channels = responseData;
@@ -52,8 +53,6 @@ async function generatePlaylists() {
             channels = responseData.data;
         } else if (Array.isArray(responseData.channels)) {
             channels = responseData.channels;
-        } else if (responseData.data && Array.isArray(responseData.data.channels)) {
-            channels = responseData.data.channels;
         }
 
         if (!channels || channels.length === 0) {
