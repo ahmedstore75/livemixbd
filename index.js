@@ -1,50 +1,33 @@
 const fs = require('fs');
-const https = require('https');
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+
+puppeteer.use(StealthPlugin());
 
 const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
 
-function fetchApiData(url) {
-    return new Promise((resolve, reject) => {
-        const options = {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-                'Accept': 'application/json, text/plain, */*',
-                'Accept-Language': 'en-US,en;q=0.9',
-                'Referer': 'https://cirkletv.com/',
-                'Origin': 'https://cirkletv.com',
-                'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
-                'Sec-Ch-Ua-Mobile': '?0',
-                'Sec-Ch-Ua-Platform': '"Windows"',
-                'Sec-Fetch-Dest': 'empty',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-site'
-            }
-        };
-
-        https.get(url, options, (res) => {
-            let data = '';
-            
-            res.on('data', chunk => { data += chunk; });
-            
-            res.on('end', () => {
-                if (res.statusCode >= 400) {
-                    return reject(new Error(`HTTP Server Error Code: ${res.statusCode}`));
-                }
-                try {
-                    const parsed = JSON.parse(data);
-                    resolve(parsed);
-                } catch (err) {
-                    reject(new Error('Failed to parse response as JSON.'));
-                }
-            });
-        }).on('error', (err) => reject(err));
-    });
-}
-
 async function generatePlaylists() {
+    let browser;
     try {
-        console.log('Fetching API response...');
-        const responseData = await fetchApiData(API_URL);
+        console.log('Launching Headless Browser...');
+        browser = await puppeteer.launch({
+            headless: 'new',
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
+        });
+
+        const page = await browser.newPage();
+
+        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
+        await page.setExtraHTTPHeaders({
+            'Referer': 'https://cirkletv.com/',
+            'Origin': 'https://cirkletv.com'
+        });
+
+        console.log('Fetching API Data via Puppeteer...');
+        await page.goto(API_URL, { waitUntil: 'networkidle2', timeout: 60000 });
+
+        const content = await page.evaluate(() => document.body.innerText);
+        const responseData = JSON.parse(content);
 
         let channels = [];
         if (Array.isArray(responseData)) {
@@ -89,6 +72,8 @@ async function generatePlaylists() {
     } catch (error) {
         console.error('Execution Failed:', error.message);
         process.exit(1);
+    } finally {
+        if (browser) await browser.close();
     }
 }
 
