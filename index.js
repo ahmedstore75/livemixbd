@@ -6,6 +6,25 @@ puppeteer.use(StealthPlugin());
 
 const API_URL = 'https://api.cirkletv.com/api/live-tv?page=1&limit=200';
 
+// রেসপন্স থেকে সঠিক লোগো বের করার ফাংশন
+function getChannelLogo(channel) {
+    if (!channel) return '';
+    return channel.poster || channel.thumbnail || channel.logo || channel.icon || channel.image || '';
+}
+
+// স্পেস বা একাধিক URL যুক্ত স্ট্রিং থেকে আলাদা লিংক বের করার ফাংশন
+function extractUrls(input) {
+    if (!input) return [];
+    if (Array.isArray(input)) {
+        return input.flatMap(item => extractUrls(item));
+    }
+    if (typeof input === 'string') {
+        const matches = input.match(/https?:\/\/[^\s,\n"']+/g);
+        return matches || [];
+    }
+    return [];
+}
+
 async function generatePlaylists() {
     let browser;
     try {
@@ -30,44 +49,21 @@ async function generatePlaylists() {
         console.log('Navigating to API URL...');
         await page.goto(API_URL, { waitUntil: 'networkidle2', timeout: 60000 });
 
-        // পেজের কন্টেন্ট নেওয়া
         const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
-        
-        console.log('--- API RESPONSE START ---');
-        console.log(content.substring(0, 500)); // প্রথম ৫০০ ক্যারেক্টার লগে দেখাবে
-        console.log('--- API RESPONSE END ---');
+        const responseData = JSON.parse(content);
 
-        let responseData;
-        try {
-            responseData = JSON.parse(content);
-        } catch (e) {
-            throw new Error('API Response is not JSON. Cloudflare Challenge page detected.');
-        }
-
-        // বিভিন্ন সম্ভাব্য স্ট্রাকচার থেকে ডাটা খোঁজা
+        // API ডাটা অ্যারে স্ট্রাকচার চেক
         let channels = null;
-        if (Array.isArray(responseData)) {
-            channels = responseData;
-        } else if (Array.isArray(responseData.data)) {
-            channels = responseData.data;
-        } else if (Array.isArray(responseData.channels)) {
-            channels = responseData.channels;
-        } else if (responseData.data && Array.isArray(responseData.data.channels)) {
-            channels = responseData.data.channels;
-        } else if (responseData.data && Array.isArray(responseData.data.data)) {
+        if (responseData && responseData.data && Array.isArray(responseData.data.data)) {
             channels = responseData.data.data;
-        } else if (typeof responseData === 'object') {
-            // যদি অন্য কোনো কি (key) এর মধ্যে অ্যারে থাকে
-            for (const key in responseData) {
-                if (Array.isArray(responseData[key])) {
-                    channels = responseData[key];
-                    break;
-                }
-            }
+        } else if (responseData && Array.isArray(responseData.data)) {
+            channels = responseData.data;
+        } else if (Array.isArray(responseData)) {
+            channels = responseData;
         }
 
         if (!channels || !Array.isArray(channels) || channels.length === 0) {
-            throw new Error('Could not parse channel array. Structure received: ' + JSON.stringify(responseData).substring(0, 200));
+            throw new Error('Could not parse channel array from response.');
         }
 
         let m3uContent = '#EXTM3U\n\n';
@@ -75,16 +71,32 @@ async function generatePlaylists() {
 
         channels.forEach(channel => {
             const id = channel._id || channel.id || '';
-            const name = channel.name || channel.title || 'Unknown Channel';
-            const logo = channel.logo || channel.icon || channel.image || '';
-            const category = typeof channel.category === 'object' ? channel.category?.name : (channel.category || 'General');
-            const streamUrl = channel.streamUrl || channel.url || channel.link || channel.stream;
+            const name = channel.title || channel.name || 'Unknown Channel';
+            
+            // লোগো এক্সট্রাকশন (poster / thumbnail)
+            const logo = getChannelLogo(channel);
+            
+            // ক্যাটাগরি এক্সট্রাকশন
+            const category = typeof channel.category === 'object' ? (channel.category?.name || 'Sports') : (channel.category || 'Sports');
 
-            if (streamUrl) {
+            // একাধিক স্ট্রিমিং URL ফিল্টার করা
+            const rawStream = channel.url || channel.streamUrl || channel.stream || '';
+            const streamUrls = extractUrls(rawStream);
+
+            if (streamUrls.length > 0) {
                 m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
-                m3uContent += `${streamUrl}\n\n`;
 
-                jsonChannels.push({ id, name, logo, category, url: streamUrl });
+                // প্রথম লিংকটি সরাসরি
+                m3uContent += `${streamUrls[0]}\n`;
+
+                // ২য়, ৩য় বা অতিরিক্ত লিংকগুলোর শুরুতে '#' (হ্যাশ)
+                for (let i = 1; i < streamUrls.length; i++) {
+                    m3uContent += `#${streamUrls[i]}\n`;
+                }
+
+                m3uContent += `\n`;
+
+                jsonChannels.push({ id, name, logo, category, urls: streamUrls });
             }
         });
 
