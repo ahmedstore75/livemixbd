@@ -26,10 +26,9 @@ jobs:
           npm init -y
           npm install puppeteer puppeteer-extra puppeteer-extra-plugin-stealth
 
-      - name: Install System Dependencies for Chrome
+      - name: Install Chrome Browser for Puppeteer
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libgbm-dev wget unzip fonts-liberation libasound2 libatk-bridge2.0-0 libgtk-3-0 libnspr4 libnss3 xdg-utils
+          npx puppeteer browsers install chrome
 
       - name: Run index.js to Generate Playlists
         run: node index.js
