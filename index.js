@@ -12,34 +12,62 @@ async function generatePlaylists() {
         console.log('Launching Headless Browser...');
         browser = await puppeteer.launch({
             headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-accelerated-2d-canvas',
+                '--no-first-run',
+                '--no-zygote',
+                '--disable-gpu'
+            ]
         });
 
         const page = await browser.newPage();
 
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
-        await page.setExtraHTTPHeaders({
-            'Referer': 'https://cirkletv.com/',
-            'Origin': 'https://cirkletv.com'
-        });
-
-        console.log('Fetching API Data via Puppeteer...');
+        
+        console.log('Navigating to API URL...');
         await page.goto(API_URL, { waitUntil: 'networkidle2', timeout: 60000 });
 
-        const content = await page.evaluate(() => document.body.innerText);
-        const responseData = JSON.parse(content);
+        // পেজের কন্টেন্ট নেওয়া
+        const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
+        
+        console.log('--- API RESPONSE START ---');
+        console.log(content.substring(0, 500)); // প্রথম ৫০০ ক্যারেক্টার লগে দেখাবে
+        console.log('--- API RESPONSE END ---');
 
-        let channels = [];
+        let responseData;
+        try {
+            responseData = JSON.parse(content);
+        } catch (e) {
+            throw new Error('API Response is not JSON. Cloudflare Challenge page detected.');
+        }
+
+        // বিভিন্ন সম্ভাব্য স্ট্রাকচার থেকে ডাটা খোঁজা
+        let channels = null;
         if (Array.isArray(responseData)) {
             channels = responseData;
         } else if (Array.isArray(responseData.data)) {
             channels = responseData.data;
         } else if (Array.isArray(responseData.channels)) {
             channels = responseData.channels;
+        } else if (responseData.data && Array.isArray(responseData.data.channels)) {
+            channels = responseData.data.channels;
+        } else if (responseData.data && Array.isArray(responseData.data.data)) {
+            channels = responseData.data.data;
+        } else if (typeof responseData === 'object') {
+            // যদি অন্য কোনো কি (key) এর মধ্যে অ্যারে থাকে
+            for (const key in responseData) {
+                if (Array.isArray(responseData[key])) {
+                    channels = responseData[key];
+                    break;
+                }
+            }
         }
 
-        if (!channels || channels.length === 0) {
-            throw new Error('Could not find a valid channels array in the response.');
+        if (!channels || !Array.isArray(channels) || channels.length === 0) {
+            throw new Error('Could not parse channel array. Structure received: ' + JSON.stringify(responseData).substring(0, 200));
         }
 
         let m3uContent = '#EXTM3U\n\n';
