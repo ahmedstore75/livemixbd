@@ -1,1 +1,797 @@
 #EXTM3U url-tvg="" x-tvg-url=""
+#EXTINF:-1 group-title="Bangla" tvg-name="BTV National" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-06/images_25ab94e371e82ccbd0f03b2c7754c712_playmist_btv_national_400x400.jpg?w=640&q=75", BTV National
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/btv
+#EXTINF:-1 group-title="Bangla" tvg-name="BTV NATIONAL HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/c32c347d7b31cb064ccae43eb331ec94.jpg?w=640&q=75", BTV NATIONAL HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/btv-national-hd
+#EXTINF:-1 group-title="Bangla" tvg-name="BTV CTG" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/0cff8323fa888ccb69dde38a6880f150.jpg?w=640&q=75", BTV CTG
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/btv-ctg
+#EXTINF:-1 group-title="Bangla" tvg-name="BTV News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1b90aebe217ac437da23625feaba0b76_playmist_btv_news400x400.jpg?w=640&q=75", BTV News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/btv-news
+#EXTINF:-1 group-title="Bangla" tvg-name="BTV World" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9ea3bc79ad1fad76ae1ef2e1dd3c1b42_playmist_btv_world_400x400.jpg?w=640&q=75", BTV World
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/btv-world
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel I" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-01/images_99c9ba1977777337bdc037f79ed921ea_playmist_channel_i_400x400.jpg?w=640&q=75", Channel I
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/channel-i
+#EXTINF:-1 group-title="Bangla" tvg-name="Somoy TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-06/images_9ba1cf96ea84cab5ce889111a44e7981_playmist_somoy_news_tv400x400.jpg?w=640&q=75", Somoy TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/somoy-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Jamuna TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4be60fcb499d59949c222f746ece58f4_playmist_jamuna_tv_400x400.jpg?w=640&q=75", Jamuna TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/jamuna-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 24" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_82f2d197736c65ee983b3d691ad7c1f3_playmist_channel24.png?w=640&q=75", Channel 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/channel-24
+#EXTINF:-1 group-title="Bangla" tvg-name="News 24 BD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_a401495935874d01a5dcd992c40c3a2d_playmist_news24.png?w=640&q=75", News 24 BD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/news-24-bd
+#EXTINF:-1 group-title="Bangla" tvg-name="ATN News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c788f2e0bc6f83a4fdde6022843368a_playmist_atn_news_400x400.jpg?w=640&q=75", ATN News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/atn-news
+#EXTINF:-1 group-title="Bangla" tvg-name="NTV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_73ae9b4f27a23375a0308a3b222ee649_playmist_ntv_400x400.jpg?w=640&q=75", NTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ntv
+#EXTINF:-1 group-title="Bangla" tvg-name="NTV Europe" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_7eb39c04f7cf7ab782e6324c484d93e5_playmist_ntv_europe_400x400.jpg?w=640&q=75", NTV Europe
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ntv-europe
+#EXTINF:-1 group-title="Bangla" tvg-name="RTV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_d6c5ece652161d2d88ed547f00343687_playmist_rtv_400x400.jpg?w=640&q=75", RTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/rtv
+#EXTINF:-1 group-title="Bangla" tvg-name="ETV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0b5269c6ae6e8c382e43c2be02789c60_playmist_etv_400x400.jpg?w=640&q=75", ETV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/etv
+#EXTINF:-1 group-title="Bangla" tvg-name="Independent TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_d7df8a2523be6a1fc0c54ddafc046dc2_playmist_independent_400x400.jpg?w=640&q=75", Independent TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/independent-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Bangla Vision" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_15c72a2cb794593278c9e7efe4df32d5_playmist_bangla_vision_400x400.jpg?w=640&q=75", Bangla Vision
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bangla-vision
+#EXTINF:-1 group-title="Bangla" tvg-name="ATN Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_4ff2f8e87d71747b70ab273686c9df9a_playmist_atn_bangla_400x400.jpg?w=640&q=75", ATN Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/atn-bangla
+#EXTINF:-1 group-title="Bangla" tvg-name="Deepto TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_ebcb173e194bfeede20303e348b80999_playmist_deepto_tv_400x400.jpg?w=640&q=75", Deepto TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/deepto-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Ekattor TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_d5ddbbec6b7919b1003233819616e19b_playmist_ekattor_tv_400x400.jpg?w=640&q=75", Ekattor TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ekattor-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="DBC News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_f38ba3f3f90338a11e3004e52cf804af_playmist_dbc_news_400x400.jpg?w=640&q=75", DBC News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dbc-news
+#EXTINF:-1 group-title="Bangla" tvg-name="Gazi TV" tvg-logo="https://s3.aynaott.com/storage/d60be6284234186c03d07a4ad176bcb4?w=640&q=75", Gazi TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/gazi-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Maasranga TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_9a9da509523ff5fa2e65e262fe3d0125_playmist_maasranga_tv_400x400.jpg?w=640&q=75", Maasranga TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/maasranga-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Ekhon TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_2ae0833e484c0a032e46050cbb8c9cc0_playmist_ekhon_tv_400x400.jpg?w=640&q=75", Ekhon TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ekhon-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Bangla TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_8fd7517559098b744a0595d094228d8d_playmist_bangla_tv_400x400.jpg?w=640&q=75", Bangla TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bangla-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Ananda TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_fb867854a7203c153946b83ab4e972e6_playmist_ananda_tv_400x400.jpg?w=640&q=75", Ananda TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ananda-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Asian TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_a5ac9561e182c07073e46bc30b3c8cab_playmist_asian_tv.png?w=640&q=75", Asian TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/asian-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Bijoy TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_82c9c8c5aa07c6b94a62cf2ffbe21375_playmist_bijoy_tv_400x400.jpg?w=640&q=75", Bijoy TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bijoy-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Boishakhi TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_8a69251df11b66c4e85e7a2fe6d89286_playmist_boishakhi_tv_400x400.jpg?w=640&q=75", Boishakhi TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/boishakhi-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Channel 9" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0f3afa480f77dd7d97d49b449a05f3fa_playmist_channel_9_400x400.jpg?w=640&q=75", Channel 9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/channel-9
+#EXTINF:-1 group-title="Bangla" tvg-name="Desh TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c852d6eba40e680a258e9e18aff2d9f2_playmist_desh_tv_400x400.jpg?w=640&q=75", Desh TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/desh-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Drama 24" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/30554e50000b538aef52a9181052af56.jpg?w=640&q=75", Drama 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/drama-24
+#EXTINF:-1 group-title="Bangla" tvg-name="Global TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_e58bddfe000aa3e5df9f7c2e90416d90_playmist_global_tv_400x400.jpg?w=640&q=75", Global TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/global-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Mohona TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1c2c83a36e990c46964ce6ef25528d84_playmist_mohona_tv400x400.jpg?w=640&q=75", Mohona TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/mohona-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="My TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_6131ede1b10602da29f1271fff0cda77_playmist_my_tv_400x400.jpg?w=640&q=75", My TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/my-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="NEXUS TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7e6104384dddd36f39e1a27fe0a61059_playmist_nexus_tv_400x400.jpg?w=640&q=75", NEXUS TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/nexus-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="SA TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b6f2363fef23e117f9a13b7c185ce26c_playmist_satv.png?w=640&q=75", SA TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sa-tv
+#EXTINF:-1 group-title="Bangla" tvg-name="Thikana" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_b9a8bdbfcea2fb4656204d06f615682a_playmist_thikana400x400.jpg?w=640&q=75", Thikana
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/thikana
+#EXTINF:-1 group-title="Bangla" tvg-name="USA TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5a24c9ea31ddb4a1dd46cc0f11b79c8e_playmist_usa_tv_400x400.jpg?w=640&q=75", USA TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/usa-tv
+#EXTINF:-1 group-title="Sports" tvg-name="T Sports HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_8b38d691dfaf072e6c964dea814a44ba_playmist_t_sports_hd400x400.jpg?w=640&q=75", T Sports HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/t-sports-hd
+#EXTINF:-1 group-title="Sports" tvg-name="Willow TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_1bb4b50bd8e39a63808ed6fa38beb0df_playmist_willow_hd_tv_400x400.jpg?w=640&q=75", Willow TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/willow-tv
+#EXTINF:-1 group-title="Sports" tvg-name="beIN SPORTS" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_d42ab13fe207d824670f04d717bfd88b_playmist_mbein_sports_m.jpg?w=640&q=75", beIN SPORTS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bein-sports
+#EXTINF:-1 group-title="Sports" tvg-name="Bein Sports 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_02eb54f07cbc8c01db3c545aca60d37c_playmist_4g.jpg?w=640&q=75", Bein Sports 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bein-sports-1
+#EXTINF:-1 group-title="Sports" tvg-name="PTV Sports" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_5704c544bcbe25521134b299a0298be7_playmist_ptv_sports_400x400.jpg?w=640&q=75", PTV Sports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ptv-sports
+#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://s3.aynaott.com/storage/0ec8d8b83b191cf915316a1751c8787e?w=640&q=75", Bahrain Sports 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bahrain-sports-1
+#EXTINF:-1 group-title="Sports" tvg-name="Bleav Football" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_c1c4607b44cda506121e777ebeafffce_playmist_bleav_football_400x400.jpg?w=640&q=75", Bleav Football
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bleav-football
+#EXTINF:-1 group-title="Sports" tvg-name="Cricket Gold" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_dde39b3fb713d4946a32e2c8ad5db00a_playmist_cricket_gold_400x400.jpg?w=640&q=75", Cricket Gold
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cricket-gold
+#EXTINF:-1 group-title="Sports" tvg-name="DD Sports" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c3b7a42d7ce8dd21ce151178bca8715d_playmist_dd_sports_400x400.jpg?w=640&q=75", DD Sports
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dd-sports
+#EXTINF:-1 group-title="Sports" tvg-name="Dubai Sports 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_178fd67f7c1b0e4143333962bc7600e7_playmist_dubai_sports_2_400x400.jpg?w=640&q=75", Dubai Sports 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dubai-sports-1
+#EXTINF:-1 group-title="Sports" tvg-name="ESPN" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_aa4e43db11b3d698b78989797debf18c_playmist_espn400x400.jpg?w=640&q=75", ESPN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/espn
+#EXTINF:-1 group-title="Sports" tvg-name="FIFA+" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/bcc9699c8a3c8faf509c92e9280e576f.jpg?w=640&q=75", FIFA+
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/fifa
+#EXTINF:-1 group-title="Sports" tvg-name="NFL Network" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_cadf0a534c4de626332004067cee3103_playmist_nfl_network400x400.jpg?w=640&q=75", NFL Network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/nfl-network
+#EXTINF:-1 group-title="Sports" tvg-name="Sky News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_245b453c334a625e5049ee95e8a1eb13_playmist_sky_news_400x400.jpg?w=640&q=75", Sky News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sky-news
+#EXTINF:-1 group-title="Sports" tvg-name="Sky News Weather" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c9929be9ffadd600f20e2d1c4fd26b95_playmist_sky_news_weather400x400.jpg?w=640&q=75", Sky News Weather
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sky-news-weather
+#EXTINF:-1 group-title="Sports" tvg-name="Sports Fishing TV" tvg-logo="https://s3.aynaott.com/storage/52e9f8f5c78d59a205f0d2bd056d0869?w=640&q=75", Sports Fishing TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sports-fishing-tv
+#EXTINF:-1 group-title="Sports" tvg-name="Talk Sport" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/e190f393ddda707426d58a0f295bd7cd.jpg?w=640&q=75", Talk Sport
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/talk-sport
+#EXTINF:-1 group-title="Sports" tvg-name="TNT Sport 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_4af9a282522f487a6ed41692f99baad6_playmist_tnt_sports_1400x400.jpg?w=640&q=75", TNT Sport 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tnt-sport-1
+#EXTINF:-1 group-title="Sports" tvg-name="TSN 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_d165c628a0db9286da3914ca916a4971_playmist_tsn_1400x400.jpg?w=640&q=75", TSN 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tsn-1
+#EXTINF:-1 group-title="Sports" tvg-name="TSN 2" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg?w=640&q=75", TSN 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tsn-2
+#EXTINF:-1 group-title="Sports" tvg-name="TSN 3" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg?w=640&q=75", TSN 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tsn-3
+#EXTINF:-1 group-title="Kolkata" tvg-name="Colors Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg?w=640&q=75", Colors Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/colors-bangla
+#EXTINF:-1 group-title="Kolkata" tvg-name="DD Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_9cd5e0424aa0759556a829aa36fd4121_playmist_dd_bangla400x400.jpg?w=640&q=75", DD Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dd-bangla
+#EXTINF:-1 group-title="Kolkata" tvg-name="Enter 10 Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_fc0d1242765efd4c1494fbfe4ff65c7a_playmist_enter_10_bangla400x400.jpg?w=640&q=75", Enter 10 Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/enter-10-bangla
+#EXTINF:-1 group-title="Kolkata" tvg-name="kolkata TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_067234e427ca902620258631b762cea8_playmist_kolkata_tv_400x400.jpg?w=640&q=75", kolkata TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/kolkata-tv
+#EXTINF:-1 group-title="Kolkata" tvg-name="R Plus" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_0ec7deccac559ad2e22206dae03454e1_playmist_r_plus_400x400.jpg?w=640&q=75", R Plus
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/r-plus
+#EXTINF:-1 group-title="Kolkata" tvg-name="Sangeet Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_68b8c3bbc8b629bbc2c00880b4546d74_playmist_sangeet_bangla400x400.jpg?w=640&q=75", Sangeet Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sangeet-bangla
+#EXTINF:-1 group-title="Kolkata" tvg-name="Sony AATH" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_6b500d2d4c6979f37f2854565a68bcf0_playmist_sony_aath_logowine.jpg?w=640&q=75", Sony AATH
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sony-aath
+#EXTINF:-1 group-title="Kolkata" tvg-name="TV9 Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_4c08302f7fbe506a998e74c89fcf08ac_playmist_tv9_bangla_400x400.jpg?w=640&q=75", TV9 Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tv9-bangla
+#EXTINF:-1 group-title="Kolkata" tvg-name="Zee 24 Ghanta" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_281d2359842d306ac384314f30059648_playmist_zee_24_ghanta_400x400.jpg?w=640&q=75", Zee 24 Ghanta
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/zee-24-ghanta
+#EXTINF:-1 group-title="Indian" tvg-name="And Pictures HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_b29360e9b3bf9d3ce34bd67d06d7c004_playmist_and_pictures_hd_400x400.jpg?w=640&q=75", And Pictures HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/and-pictures-hd
+#EXTINF:-1 group-title="Indian" tvg-name="B4U Hitz" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_9cba0e4a98d7a55986c6b194441ac753_playmist_b4u_hitz_400x400.jpg?w=640&q=75", B4U Hitz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/b4u-hitz
+#EXTINF:-1 group-title="Indian" tvg-name="Goldmines" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f102735d68ece1e00316c6187b9ad340_playmist_goldmines_400x400.jpg?w=640&q=75", Goldmines
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/goldmines
+#EXTINF:-1 group-title="Indian" tvg-name="Goldmines Bollywood" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/11e8e13a9149c40a88859cdc0fd5f6c3.jpg?w=640&q=75", Goldmines Bollywood
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/goldmines-bollywood
+#EXTINF:-1 group-title="Indian" tvg-name="Goldmines Movies" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f22715a97b25bb49be73ed06edcabef_playmist_goldmines_movies_400x400.jpg?w=640&q=75", Goldmines Movies
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/goldmines-movies
+#EXTINF:-1 group-title="Indian" tvg-name="TV9 Bharatvarsh" tvg-logo="https://s3.aynaott.com/storage/877703490615895c5df9de7b7c317d26?w=640&q=75", TV9 Bharatvarsh
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tv9-bharatvarsh
+#EXTINF:-1 group-title="News" tvg-name="ABC News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a806cf1e3ba0981e00a8f340fab8a6f8_playmist_abc_news_400x400.jpg?w=640&q=75", ABC News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/abc-news
+#EXTINF:-1 group-title="News" tvg-name="Aljazeera News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c8ecdf803a94e7b04619fb573f201146_playmist_aljazeera_news400x400.jpg?w=640&q=75", Aljazeera News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/aljazeera-news
+#EXTINF:-1 group-title="News" tvg-name="ANB News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_86e9d3e52b45d2bb9c321b8168aa01e9_playmist_anb_news_400x400.jpg?w=640&q=75", ANB News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/anb-news
+#EXTINF:-1 group-title="News" tvg-name="BBC News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_bea6d56aa19a59e2bc272736880a97f3_playmist_bbc_news_400x400.jpg?w=640&q=75", BBC News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bbc-news
+#EXTINF:-1 group-title="News" tvg-name="Bharat Samachar" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d52623f16135dea6bd76f7bdacd4b886_playmist_bharat_samachar_400x400.jpg?w=640&q=75", Bharat Samachar
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bharat-samachar
+#EXTINF:-1 group-title="News" tvg-name="CNN" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3ce5ce236141274767c8ee8148b88a5d_playmist_cnn_400x400.jpg?w=640&q=75", CNN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cnn
+#EXTINF:-1 group-title="News" tvg-name="DW News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_e9cbcb0f33668b33e4b5dd06143aa1c6_playmist_dw400x400.jpg?w=640&q=75", DW News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dw-news
+#EXTINF:-1 group-title="News" tvg-name="Fox business" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bbcc532afe02dc4d7edd093b4f3882c4_playmist_fox_business400x400.jpg?w=640&q=75", Fox business
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/fox-business
+#EXTINF:-1 group-title="News" tvg-name="Fox News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8d6efb719d7295f50d5cbb49e3a11a0f_playmist_fox_news400x400.jpg?w=640&q=75", Fox News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/fox-news
+#EXTINF:-1 group-title="News" tvg-name="Hindi Khabar" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_3f07da3fcbcf0b957c04c18d17bd612b_playmist_hindi_khabar_400x400.jpg?w=640&q=75", Hindi Khabar
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/hindi-khabar
+#EXTINF:-1 group-title="News" tvg-name="News 1 India" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_292f3cc412bf05a14544657749e4a0be_playmist_news_1_india_400x400.jpg?w=640&q=75", News 1 India
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/news-1-india
+#EXTINF:-1 group-title="News" tvg-name="News India 24x7" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_50eab684012024afd51f7d4c4fcc7aa7_playmist_news_india_24x7_400x400.jpg?w=640&q=75", News India 24x7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/news-india-24x7
+#EXTINF:-1 group-title="News" tvg-name="News Time Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_ffb6c3be0674cf2d59f66c78d4da5b9a_playmist_news_time_bangla_400x400.jpg?w=640&q=75", News Time Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/news-time-bangla
+#EXTINF:-1 group-title="News" tvg-name="Republic Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-13/images_45a1af747f3728954d1e83ab457d8e53_playmist_republic_bangla_400x400.jpg?w=640&q=75", Republic Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/republic-bangla
+#EXTINF:-1 group-title="News" tvg-name="Republic TV Bharat" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c126a1f2ceda33dad15b71f1d3210b44_playmist_republic_tv_bharat_400x400.jpg?w=640&q=75", Republic TV Bharat
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/republic-tv-bharat
+#EXTINF:-1 group-title="News" tvg-name="Sadhna Prime News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ad482966b8ccc41fc9bd98dd9382ff0d_playmist_sadhna_prime_news_400x400.jpg?w=640&q=75", Sadhna Prime News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sadhna-prime-news
+#EXTINF:-1 group-title="News" tvg-name="Star News" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_4c8e446a0a7c9f1c28fd6aef2c19132d_playmist_star_news400x400.jpg?w=640&q=75", Star News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/star-news
+#EXTINF:-1 group-title="Movies" tvg-name="HBO" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c5adf129be936d1f292d53f697e9e4ef_playmist_hbo400x400.jpg?w=640&q=75", HBO
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/hbo
+#EXTINF:-1 group-title="Movies" tvg-name="HBO 2" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400.jpg?w=640&q=75", HBO 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/hbo-2
+#EXTINF:-1 group-title="Movies" tvg-name="Hindi Movie Classic 24" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_af0da7926606216768d48d2189e3e12c_playmist_hindi_movie_classic_24.jpg?w=640&q=75", Hindi Movie Classic 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/hindi-movie-classic-24
+#EXTINF:-1 group-title="Movies" tvg-name="Khushboo" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_1544964341f4ed337430057b9634b1ad_playmist_khushboo_400x400.jpg?w=640&q=75", Khushboo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/khushboo
+#EXTINF:-1 group-title="Movies" tvg-name="Manoranjan Movies" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg?w=640&q=75", Manoranjan Movies
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/manoranjan-movies
+#EXTINF:-1 group-title="Music" tvg-name="9x Jalwa" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg?w=640&q=75", 9x Jalwa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/9x-jalwa
+#EXTINF:-1 group-title="Music" tvg-name="9XM" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg?w=640&q=75", 9XM
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/9xm
+#EXTINF:-1 group-title="Music" tvg-name="Dhoom Music Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg?w=640&q=75", Dhoom Music Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dhoom-music-bangla
+#EXTINF:-1 group-title="Music" tvg-name="MTV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_79fbc39a1e2b6627305b440da7c524d7_playmist_mtv_400x400.jpg?w=640&q=75", MTV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/mtv
+#EXTINF:-1 group-title="Music" tvg-name="Music India" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_293d590e382ae09a9d8028c4c56d4ee3_playmist_music_india_400x400.jpg?w=640&q=75", Music India
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/music-india
+#EXTINF:-1 group-title="Music" tvg-name="Zoom TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_d5f21c410f16519379a4ca7f1c4a14f5_playmist_zoom_tv400x400.jpg?w=640&q=75", Zoom TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/zoom-tv
+#EXTINF:-1 group-title="Islamic" tvg-name="MADANI TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b8b896039b6eb685a11aab0b7b4a33d3_playmist_madani_tv_400x400.jpg?w=640&q=75", MADANI TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/madani-tv
+#EXTINF:-1 group-title="Islamic" tvg-name="Peace TV Bangla HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_55fa6cf36df126454996a9e4cf7f8e85_playmist_peace_tv_bangla_hd_400x400.jpg?w=640&q=75", Peace TV Bangla HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/peace-tv-bangla-hd
+#EXTINF:-1 group-title="Kids" tvg-name="Disney Channel" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_92666995d4995d2bb46b92598d2b3e48_playmist_disney_channel_400x400.jpg?w=640&q=75", Disney Channel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/disney-channel
+#EXTINF:-1 group-title="Documentary" tvg-name="Animal Planet HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a49ebd8c1eabd8e7cc20297a0fda92f5_playmist_animal_planet_hd_400x400.jpg?w=640&q=75", Animal Planet HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/animal-planet-hd
+#EXTINF:-1 group-title="Documentary" tvg-name="Discovery HD" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_e6222cfb0e0f7e22736f3496cc98a897_playmist_discovery_hd_400x400.jpg?w=640&q=75", Discovery HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/discovery-hd
+#EXTINF:-1 group-title="Documentary" tvg-name="Nat Geo TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_25b786047244481532eb505dfba85580_playmist_nat_geo_tv_400x400.jpg?w=640&q=75", Nat Geo TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/nat-geo-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="ABC 7 Bay" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_08717fb2d69f80063278b28057347175_playmist_abc_news_400x400.jpg?w=640&q=75", ABC 7 Bay
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/abc-7-bay
+#EXTINF:-1 group-title="Entertainment" tvg-name="ABN" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_8610a5f1c975ccf85e23a6077de2f1f2_playmist_abn.jpg?w=640&q=75", ABN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/abn
+#EXTINF:-1 group-title="Entertainment" tvg-name="Accu Weather" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_a220fac6da08a832112ea4603c9a3c33_playmist_accu_weather_400x400.jpg?w=640&q=75", Accu Weather
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/accu-weather
+#EXTINF:-1 group-title="Entertainment" tvg-name="Awaaz India" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/456de8974d027b7dda3fc423929f5dec.jpg?w=640&q=75", Awaaz India
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/awaaz-india
+#EXTINF:-1 group-title="Entertainment" tvg-name="Bloomberg TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_e7674693d1fdcfada9523f3b4315d417_playmist_bloomberg_tv_400x400.jpg?w=640&q=75", Bloomberg TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bloomberg-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="CBS TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5cd9688088c2f3b2201b17378bc5081c_playmist_cbs_tv_400x400.jpg?w=640&q=75", CBS TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cbs-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="Channels" tvg-logo="", Channels
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019efa5d-2eb7-7ac1-a880-647e38ba7141
+#EXTINF:-1 group-title="Entertainment" tvg-name="CNBC TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_e67654cc3d37f4eda1a16709b2b88f6d_playmist_cnbc_tv_400x400.jpg?w=640&q=75", CNBC TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cnbc-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="Court TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/c5fd881d11a213c415e1b6b1675ff689.jpg?w=640&q=75", Court TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/court-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="CP 24" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_eaacf02e8523f40c627b8234c614963d_playmist_cp_24_400x400.jpg?w=640&q=75", CP 24
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cp-24
+#EXTINF:-1 group-title="Entertainment" tvg-name="Dubai TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ebb056ba1a466e52261aad45829a4160_playmist_dubai_tv400x400.jpg?w=640&q=75", Dubai TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dubai-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="English" tvg-logo="", English
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019efa5d-2f0e-7ac2-a8c9-082449522f6f
+#EXTINF:-1 group-title="Entertainment" tvg-name="Featured Live Tvs" tvg-logo="", Featured Live Tvs
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019dd930-8d19-70e9-8285-c9c7d6b66643
+#EXTINF:-1 group-title="Entertainment" tvg-name="Fox 5" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_fd05780c80bb076f35db9e243ee2d5f7_playmist_fox_5_400x400.jpg?w=640&q=75", Fox 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/fox-5
+#EXTINF:-1 group-title="Entertainment" tvg-name="Fox Weather" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c6a3d7e8d5ba4bd874a958a0c6f16e8e_playmist_fox_weather400x400.jpg?w=640&q=75", Fox Weather
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/fox-weather
+#EXTINF:-1 group-title="Entertainment" tvg-name="FX TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aac39f78c7d0e3df940fda4299217e86_playmist_fx_tv400x400.jpg?w=640&q=75", FX TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/fx-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-26/images_9b7bab426198d5e39dea4b494cad717b_playmist_channel52.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/channel-52
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_28f8e70cb65b77b00b911acfcbb43568_playmist_pitaara_tv400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/pitaara-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-08/images_9db50b3bbf28a42f76b50d120b2e1db0_playmist_amc_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/amc
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_862392731195f9182c5aa9f813bbb712_playmist_hidost_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/hidost
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/d59971a29af79ba0f40aff4c18d29aae.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/marquee-sports-network
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/3ce4f626598fec3837ba3f590e34005d.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/more-then-sports-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/17ba4c8d03335c590b01e900ba1d3a9a.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/kids-pang-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/31957d5960d3a36d8f9ca4d5a56eee96?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tvc-arabic-kids
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_b19bcc95f135bcaba24b9128236cb5d9_playmist_dream_turk_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dream-turk
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_e8cc865d910abad00a75ef72c8247262_playmist_ytv400x400.jpg?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/ytv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_e38c97217aa2b9b08475963910ec7e53_playmist_xtrem_sports400x400.png?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/xtrem-sports
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_ac6813356117e23244894d632de90fe9_playmist_world_war_tv.jpg?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/world-war-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_b9fc46d9adae5042068be4f4bc63cd04_playmist_world_muzzik400x400.jpg?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/world-muzzik
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_aa21af3895b9d45aab5b8b41517ad1f7_playmist_wild_tv.jpg?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/wild-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_5196b31badd89d9bba61ff57c49fb73b_playmist_travel_xp400x400.jpg?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/travel-xp
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_053d8306bf2a107696349e9a93083e6b_playmist_travel_channel_400x400.jpg?w=640&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/travel-channel
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-28/images_ab1b8e6f265620cd2720adc23bd2ba0e_playmist_pbs_kids_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/pbs-kids
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fbef127efb1f4148d2730e59a78a9662_playmist_tvcarib_kids_teens400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/tvcarib-kids-teens
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_a183518a2fa3c3364313a8d04ff2feb4_playmist_pbs_kids_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/kids-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_5a86cf863e55540bcff12372d6c5909b_playmist_family_jr_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/family-jr
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ea86bedcc4f35a5855683f064d311b67_playmist_teen_nick_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/teen-nick
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_f02de913e3592f951e728234f2bef434_playmist_disney_xd_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/disney-xd
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_2df08c319ac7e461f3544ff1e9f5bfae_playmist_discovery_family_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/discovery-family
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_57e943dc61890a17ae5c26ac1d8a5f26_playmist_sky_cinema_animation_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sky-cinema-animation
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/dc654c62fa2f2cd754894ebc9353da9c?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/dios-te-ve-kids
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_4be00646d9e8f7a973d43b52166407ff_playmist_moonbug_kids400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/moonbug-kids
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_42d248089af768d78ab12e716c674e77_playmist_3abn_kids.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/3abn-kids
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_845fa61e4b31dbf35e442cd6037ed2e6_playmist_and_tv.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/and-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_523e2066fb11ded3d8340292d0082138_playmist_and_pictures_hd_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/pictures
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_8d3cb234ca19c06362008bee49b854d7_playmist_mastiii_music_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/mastiii-music
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_535399f1d6f11a7f9e501b4db33e2d0c_playmist_adventure_earth.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/adventure-earth
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_e8d396ba6ceb67ea33eedd2060880807_playmist_oan_sports_logo400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/oan
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_790f38211d0c5efaa8f792145e5dc383_playmist_cmac_tv400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cmac-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-06-24/bd701c683948a2e3ab1ca46d9e5e0b76.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/taqbeer
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_61c8b190119b0d1adbfde37c4b521043_playmist_deen_tv_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/deen-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_ba5c1233618589587536727ce37199a2_playmist_sunnah_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/sunnah
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_8546ba7af9854adaeb7f7b4d9ee36019_playmist_channel_win_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/channel-win
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_2b834d3ec5f27714e6bee18647528e0a_playmist_eman_channel_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/eman-channel
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_17ed47c6328295747a22ccdc939f9f0c_playmist_quran_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/quran
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_1e415d048ff6a503320fe9e8cb703345_playmist_iqra_bangla_tv_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/iqra-bangla
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_04fcc2bbcd3f26e7ce92bafd7edb339c_playmist_rtv_islam.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/rtv-islam
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bf2a332556cb4c5da9861e7b981aac1d_playmist_islam.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/islam-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_efeb6a966b36ef807b0aa9bfd5229360_playmist_discover_pikstan.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/discover-pikstan
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_4a5a35509a848a2c3da5b213baff54b0_playmist_9x_tashan_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/9x-tashan
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_85748078beef72409b728a4d01e37696_playmist_9x_jhakaas_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/9x-jhakaas
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_609415ab80bb07335a70905f89257bb0_playmist_b4u_music_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/b4u-music
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_99873e9c7dfcfc8c5f5e7ee1874b7f91_playmist_cgtn_documentary_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/cgtn-documentary
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_19592dbb4ffcc259b63e2508c91dc065_playmist_afroturk_tv_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/afroturk-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_ec64adf4b1ed1539485f005a4eeb4ad5_playmist_geo_ent400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/geo-ent
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_7aa9bc44972d65d5a8c822d3927652f7_playmist_rongeen_tv_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/rongeen-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_35e8912e73d3759eb0f9e21a815d1a80_playmist_network_10_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/network-10
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_175cdaa74b4bc86d10e5b9d49c50b8f1_playmist_assam_talks_400x400.jpg?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/assam-talks
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/ca13e9779e95dfb9990887efc48376a7?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/peoples-radio
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/65fe806ed3cd5b20e44e3fefc219ecea?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/relaks-radio
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/650ac208736099c5a0906204c6fa0b15?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/bangla-radio
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/21eb21293a67fd9a153ae225558992e3?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/radio-bangladesh-co
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/d5f888d8aaa7d20304f02de8116e8b02?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/radio-bhumi-92-80-fm
+#EXTINF:-1 group-title="Entertainment" tvg-name="G" tvg-logo="https://s3.aynaott.com/storage/4df4f9ef1ab8a3370c82a51f9f372529?w=1080&q=75", G
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/spice-fm
+#EXTINF:-1 group-title="Entertainment" tvg-name="Goal TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_db46edea3e5aae6a063369b686c1192d_playmist_goal_tv_400x400.jpg?w=640&q=75", Goal TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/goal-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="Hindi" tvg-logo="", Hindi
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019efa5d-2f01-7481-b507-4f821baf00a5
+#EXTINF:-1 group-title="Entertainment" tvg-name="India Today" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_c7e1c6e2ec548dee61a1a754955b76e1_playmist_india_today400x400.jpg?w=640&q=75", India Today
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/india-today
+#EXTINF:-1 group-title="Entertainment" tvg-name="Indian Bangla" tvg-logo="", Indian Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019efa5d-2fbe-7083-99d6-0abf2a3fe826
+#EXTINF:-1 group-title="Entertainment" tvg-name="Iran Press" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_bf19837ffd975c6258a0f5ee993d73d1_playmist_iran_press400x400.jpg?w=640&q=75", Iran Press
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/iran-press
+#EXTINF:-1 group-title="Entertainment" tvg-name="Latest Live Tvs" tvg-logo="", Latest Live Tvs
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019dd930-8ca8-7108-a445-824ff552eb09
+#EXTINF:-1 group-title="Entertainment" tvg-name="LIFE TIME" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_31a018cec62068612c9dc5efa6b13856_playmist_life_time_400x400.jpg?w=640&q=75", LIFE TIME
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/life-time
+#EXTINF:-1 group-title="Entertainment" tvg-name="Popular Live Tvs" tvg-logo="", Popular Live Tvs
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019dd930-8c78-702b-8c44-4cc1bf4b7bc7
+#EXTINF:-1 group-title="Entertainment" tvg-name="Rupshi Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_454ca4e52d414605814d0f4778fd8137_playmist_rupshi_bangla400x400.jpg?w=640&q=75", Rupshi Bangla
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/rupshi-bangla
+#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-05/thumbnails_e7c232fc971625f04bb5f1c464a92159_playmist_live_tv_placeholder.png?w=640&q=75", Test Live TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/test-live-tv
+#EXTINF:-1 group-title="Entertainment" tvg-name="TIME TV USA" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c05517a566e36853dc54d325a24921ad_playmist_time_tv_usa400x400.jpg?w=640&q=75", TIME TV USA
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/time-tv-usa
+#EXTINF:-1 group-title="Entertainment" tvg-name="Top Live Tvs" tvg-logo="", Top Live Tvs
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/blocks/019dd930-8ce3-7344-b48a-6cd07070a985
+#EXTINF:-1 group-title="Entertainment" tvg-name="TRT World" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_bad71649a48765ea1bfa3b043822e061_playmist_trt_world_400x400.jpg?w=640&q=75", TRT World
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/trt-world
+#EXTINF:-1 group-title="Entertainment" tvg-name="VTV USA" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_48a2f0e255841fe6c7d77b642dd9a9b1_playmist_vtv_usa_400x400.jpg?w=640&q=75", VTV USA
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/vtv-usa
+#EXTINF:-1 group-title="Entertainment" tvg-name="Weather SPY" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_12ff352e97642f2042f8e88a93eca33d_playmist_weather_spy400x400.jpg?w=640&q=75", Weather SPY
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/weather-spy
+#EXTINF:-1 group-title="Entertainment" tvg-name="Wion" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_af4d270a6fc7246b2dc185399cce7dbd_playmist_wion_400x400.jpg?w=640&q=75", Wion
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://web.aynaott.com/
+https://web.aynaott.com/live-tvs/wion
