@@ -449,6 +449,15 @@ https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
 #EXTINF:-1 tvg-id="642dd98a-a2d3-4fe1-b36c-30d4ad76c3f1" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_15_29_20_5232_2_1788331828537_0be2b542e968019f.webp" group-title="Infotainment",National geographic 
 https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1784102611&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=be23b688e0d8482e77b3a038a220a900
 
+#EXTINF:-1 tvg-id="4c56349a-7ed4-4981-8c22-810703561407" tvg-logo="https://s3.aynaott.com/storage/597c839e577e81813e44812cedc50892" group-title="Infotainment",Wild TV
+https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
+
+#EXTINF:-1 tvg-id="74ec450a-f2e2-4889-b3c3-e454d53822f8" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlCh5kON8yENw9yJfeVtZ-PvFOfbWPyVCFmA&s" group-title="Infotainment",Wild Nature
+https://wildearth-plex.amagi.tv/master.m3u8
+
+#EXTINF:-1 tvg-id="9fc126b7-92ba-480a-a88a-47550fc7a0ba" tvg-logo="https://s3.aynaott.com/storage/13c04e44967d653c70eac9670b47fa5d" group-title="Infotainment",Adventure Earth
+https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="6b94da8c-7289-4939-a263-e490fccef835" tvg-logo="https://api.cirkletv.com/files/discovery_eng_1787305695176_8eca4b2ec7a96399.webp" group-title="Infotainment",Discovery
 https://d24aqelmrau4kx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-l1oas691aj7p2/WBTV_IT.m3u8
 

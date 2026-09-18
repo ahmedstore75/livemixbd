@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T15:24:20.626Z",
-  "total_channels": 163,
+  "updated_at": "2026-09-18T15:48:47.535Z",
+  "total_channels": 166,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -1265,6 +1265,33 @@
       "category": "Infotainment",
       "urls": [
         "https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1784102611&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=be23b688e0d8482e77b3a038a220a900"
+      ]
+    },
+    {
+      "id": "4c56349a-7ed4-4981-8c22-810703561407",
+      "name": "Wild TV",
+      "logo": "https://s3.aynaott.com/storage/597c839e577e81813e44812cedc50892",
+      "category": "Infotainment",
+      "urls": [
+        "https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8"
+      ]
+    },
+    {
+      "id": "74ec450a-f2e2-4889-b3c3-e454d53822f8",
+      "name": "Wild Nature",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlCh5kON8yENw9yJfeVtZ-PvFOfbWPyVCFmA&s",
+      "category": "Infotainment",
+      "urls": [
+        "https://wildearth-plex.amagi.tv/master.m3u8"
+      ]
+    },
+    {
+      "id": "9fc126b7-92ba-480a-a88a-47550fc7a0ba",
+      "name": "Adventure Earth",
+      "logo": "https://s3.aynaott.com/storage/13c04e44967d653c70eac9670b47fa5d",
+      "category": "Infotainment",
+      "urls": [
+        "https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8"
       ]
     },
     {
