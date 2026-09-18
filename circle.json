@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T15:48:47.535Z",
-  "total_channels": 166,
+  "updated_at": "2026-09-18T16:01:08.921Z",
+  "total_channels": 168,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -57,6 +57,15 @@
       "category": "Sports",
       "urls": [
         "https://api.cirkletv.com/api/hridoy-tv/stream/ten_cricket_576?expire=43738831219634"
+      ]
+    },
+    {
+      "id": "0ac10a95-5435-479f-b537-4dec4f59f7cf",
+      "name": "Cricbuzz",
+      "logo": "https://api.cirkletv.com/files/cricbuzz_1786727115094_38c2b5cfcb846aa3.webp",
+      "category": "Sports",
+      "urls": [
+        "https://otv.hridoytv-engine.workers.dev/?d=IAYdFFVWezsnIDo6NiUATQocDnA8GxkdVicqFVZuBAcHDnlcBFcaQWszYn5jbmZmVFNFVUZ5JB0EHRdifF0YaAEDU1JxEFEHXU83Zmd4YDRtMAZRS1VAOzRLXhoYanlUGjsBAwEFKUpYUAxANTNuLmBmO2NcBRRQFmpoQA&expire=47753355654"
       ]
     },
     {
@@ -1057,6 +1066,15 @@
       "category": "Movies",
       "urls": [
         "https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8"
+      ]
+    },
+    {
+      "id": "ce9bedad-91dc-445d-b4fc-278b67dac698",
+      "name": "Sony Movies",
+      "logo": "https://api.cirkletv.com/files/sony_movies_1787763857243_9d94797a3624e9c7.webp",
+      "category": "Movies",
+      "urls": [
+        "https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8"
       ]
     },
     {

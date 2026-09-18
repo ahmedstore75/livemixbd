@@ -25,6 +25,9 @@ https://robitv.com/lps/https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8
 #EXTINF:-1 tvg-id="effb37b9-3b52-4546-b64c-895521d25000" tvg-logo="https://api.cirkletv.com/files/cirkletv__1788630430679_e0cab45379c5c819.webp" group-title="Sports",Ten Cricket
 https://api.cirkletv.com/api/hridoy-tv/stream/ten_cricket_576?expire=43738831219634
 
+#EXTINF:-1 tvg-id="0ac10a95-5435-479f-b537-4dec4f59f7cf" tvg-logo="https://api.cirkletv.com/files/cricbuzz_1786727115094_38c2b5cfcb846aa3.webp" group-title="Sports",Cricbuzz
+https://otv.hridoytv-engine.workers.dev/?d=IAYdFFVWezsnIDo6NiUATQocDnA8GxkdVicqFVZuBAcHDnlcBFcaQWszYn5jbmZmVFNFVUZ5JB0EHRdifF0YaAEDU1JxEFEHXU83Zmd4YDRtMAZRS1VAOzRLXhoYanlUGjsBAwEFKUpYUAxANTNuLmBmO2NcBRRQFmpoQA&expire=47753355654
+
 #EXTINF:-1 tvg-id="e2588632-0f96-4fa9-b2f1-be5e3cc14862" tvg-logo="https://api.cirkletv.com/files/willow_1782972080164_396453b7eb6dae16.webp" group-title="Sports",Willow Cricbuzz
 https://tvsen5.aynascope.net/willowhd/mono.m3u8
 #https://tvsen7.aynaott.com/rEBp38Ax/tracks-v1a1/mono.ts.m3u8
@@ -374,6 +377,9 @@ https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8?e=1784102631&u=ee5437a7-c16b-4700
 
 #EXTINF:-1 tvg-id="e859df3c-9ae2-432c-854b-4451f6600a7f" tvg-logo="https://api.cirkletv.com/files/jalsha_movies_1786332538730_2c0b529e814550a4.webp" group-title="Movies",Jalsha Movies HD
 https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8
+
+#EXTINF:-1 tvg-id="ce9bedad-91dc-445d-b4fc-278b67dac698" tvg-logo="https://api.cirkletv.com/files/sony_movies_1787763857243_9d94797a3624e9c7.webp" group-title="Movies",Sony Movies
+https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8
 
 #EXTINF:-1 tvg-id="69a1872f-bffd-48ee-8601-486992236113" tvg-logo="https://api.cirkletv.com/files/SONY_MAX_1786334184699_09dabb7803d2266a.webp" group-title="Movies",Sony Max
 https://cloudplay-sonyliv.pages.dev/max.m3u8
