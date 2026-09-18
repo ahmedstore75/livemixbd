@@ -33,7 +33,7 @@ const CATEGORY_MAP = {
         'hbo', 'hbo hd', 'hbo hits', 'hbo signature', 'hbo family',
         'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'sony movie',
         'star gold', 'zee cinema', 'colors cineplex', 'goldmines', 
-        'star utsav movies', 'zee anmol cinema', 'enterr10 movies', 'cinema tv', 
+        'star utsav movies', 'zee anmol cinema', 'action movies', 'cinema tv', 
         'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
         'star movies', 'wb', 'warner bros', 'axn', 'fox movies', 'cinema world', 'movies now', 'mnx', 'romedy now'
     ],
@@ -45,7 +45,7 @@ const CATEGORY_MAP = {
     ],
     'Kids': [
         'cartoon network', 'nick', 'nickelodeon', 'pogo', 'hungama', 'disney', 'duronto', 
-        'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'duck tv', 'nick jr'
+        'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'sony yay', 'nick jr'
     ],
     'Music': [
         'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
