@@ -6,13 +6,8 @@ puppeteer.use(StealthPlugin());
 
 const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
-// আরও বেশি জনপ্রিয় চ্যানেল ও ক্যাটাগরির আপডেট লিস্ট
+// ক্যাটাগরি ম্যাপিং (Islamic একদম শেষে রাখা হয়েছে)
 const CATEGORY_MAP = {
-    'Islamic': [
-        'makkah', 'madinah', 'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 
-        'peace tv urdu', 'islamic tv', 'quran tv', 'sunnah tv', 'guide us', 'iqraa', 
-        'huda tv', 'madani channel', 'islam'
-    ],
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
         'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro', 'eurosport', 'a sports', 
@@ -52,6 +47,11 @@ const CATEGORY_MAP = {
     ],
     'Music': [
         'm tv', 'mtv', '9xm', 'zoom', 'sangeet bangla', 'mastiii', 'b4u music', 'm4u', 'music india'
+    ],
+    'Islamic': [
+        'makkah', 'madinah', 'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 
+        'peace tv urdu', 'islamic tv', 'quran tv', 'sunnah tv', 'guide us', 'iqraa', 
+        'huda tv', 'madani channel', 'islam'
     ]
 };
 
@@ -65,7 +65,7 @@ function detectCategory(channelName, rawCategory) {
         }
     }
 
-    return null; // অকেজো বা অপরিচিত চ্যানেল স্কিপ করবে
+    return null; // তালিকার বাইরে থাকা অকেজো চ্যানেল স্কিপ করবে
 }
 
 function getChannelLogo(channel) {
@@ -202,7 +202,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ${finalJsonChannels.length} popular channels across 9 categories.`);
+        console.log(`Success! Generated circle.m3u & circle.json with Islamic category at the END.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
