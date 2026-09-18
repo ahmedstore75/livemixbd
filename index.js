@@ -31,7 +31,7 @@ const CATEGORY_MAP = {
         'sony max', 'sony max 2', 'sony wah', 'sony pix', 'sony pix hd', 'max 2', 'max', 'wah', 'pix',
         'b4u kadak', 'b4u movies', 'b4u plus', 'kadak', 'ifilm',
         'hbo', 'hbo hd', 'hbo hits', 'hbo signature', 'hbo family',
-        'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'khushboo',
+        'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'sony movie',
         'star gold', 'zee cinema', 'colors cineplex', 'goldmines', 
         'star utsav movies', 'zee anmol cinema', 'enterr10 movies', 'cinema tv', 
         'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
