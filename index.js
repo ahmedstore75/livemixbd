@@ -25,8 +25,8 @@ function extractUrls(input) {
     return [];
 }
 
-// লিংক সচল আছে কিনা (Active/Working) তা পরীক্ষা করার হেল্পার ফাংশন
-function isUrlWorking(url, timeoutMs = 5000) {
+// সুপারফাস্ট লিংক চেকার (টাইমাউট ২০০০ms)
+function isUrlWorking(url, timeoutMs = 2000) {
     return new Promise((resolve) => {
         try {
             const parsedUrl = new URL(url);
@@ -39,12 +39,11 @@ function isUrlWorking(url, timeoutMs = 5000) {
                 path: parsedUrl.pathname + parsedUrl.search,
                 timeout: timeoutMs,
                 headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
                 }
             };
 
             const req = client.request(options, (res) => {
-                // স্ট্যাটাস কোড ২০০ থেকে ৩৯৯ এর মধ্যে হলে অ্যাক্টিভ হিসেবে ধরা হবে
                 if (res.statusCode >= 200 && res.statusCode < 400) {
                     resolve(true);
                 } else {
@@ -63,6 +62,17 @@ function isUrlWorking(url, timeoutMs = 5000) {
             resolve(false);
         }
     });
+}
+
+// একসাথে অনেকগুলো লিংক প্যারালালে চেক করা
+async function filterActiveUrls(streamUrls) {
+    const results = await Promise.all(
+        streamUrls.map(async (url) => {
+            const active = await isUrlWorking(url);
+            return active ? url : null;
+        })
+    );
+    return results.filter(Boolean);
 }
 
 async function generatePlaylists() {
@@ -89,10 +99,9 @@ async function generatePlaylists() {
         let currentPage = 1;
         let totalPages = 1;
 
-        // পেজিনেশন লুপ - সব পেজ ফেচ করা
         do {
             const url = `${BASE_API_URL}${currentPage}`;
-            console.log(`Fetching Page ${currentPage} of ${totalPages}...`);
+            console.log(`Fetching Page ${currentPage}...`);
             
             await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
             const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
@@ -120,56 +129,55 @@ async function generatePlaylists() {
         } while (currentPage <= totalPages);
 
         console.log(`Total channels fetched from API: ${allChannels.length}`);
-        console.log('Checking for active/working stream links...');
+        console.log('Fast parallel checking active stream links...');
+
+        // প্যারালাল প্রসেসিং (৩০টি চ্যানেল একসাথে ফিল্টার হবে)
+        const BATCH_SIZE = 30;
+        const validChannels = [];
+
+        for (let i = 0; i < allChannels.length; i += BATCH_SIZE) {
+            const batch = allChannels.slice(i, i + BATCH_SIZE);
+            const processedBatch = await Promise.all(
+                batch.map(async (channel) => {
+                    const rawStream = channel.url || channel.streamUrl || channel.stream || '';
+                    const streamUrls = extractUrls(rawStream);
+                    const activeStreamUrls = await filterActiveUrls(streamUrls);
+
+                    if (activeStreamUrls.length > 0) {
+                        return {
+                            id: channel._id || channel.id || '',
+                            name: channel.title || channel.name || 'Unknown Channel',
+                            logo: getChannelLogo(channel),
+                            category: typeof channel.category === 'object' ? (channel.category?.name || 'General') : (channel.category || 'General'),
+                            urls: activeStreamUrls
+                        };
+                    }
+                    return null;
+                })
+            );
+
+            validChannels.push(...processedBatch.filter(Boolean));
+        }
 
         let m3uContent = '#EXTM3U\n\n';
-        const jsonChannels = [];
+        validChannels.forEach(channel => {
+            m3uContent += `#EXTINF:-1 tvg-id="${channel.id}" tvg-logo="${channel.logo}" group-title="${channel.category}",${channel.name}\n`;
+            m3uContent += `${channel.urls[0]}\n`;
 
-        // প্রতিটি চ্যানেল ভ্যালিডেশন লুপ
-        for (const channel of allChannels) {
-            const id = channel._id || channel.id || '';
-            const name = channel.title || channel.name || 'Unknown Channel';
-            const logo = getChannelLogo(channel);
-            const category = typeof channel.category === 'object' ? (channel.category?.name || 'General') : (channel.category || 'General');
-
-            const rawStream = channel.url || channel.streamUrl || channel.stream || '';
-            const streamUrls = extractUrls(rawStream);
-
-            // শুধু কার্যকর (Active) লিংকগুলোর জন্য ফিল্টার
-            const activeStreamUrls = [];
-            for (const streamUrl of streamUrls) {
-                const isValid = await isUrlWorking(streamUrl);
-                if (isValid) {
-                    activeStreamUrls.push(streamUrl);
-                }
+            for (let i = 1; i < channel.urls.length; i++) {
+                m3uContent += `#${channel.urls[i]}\n`;
             }
-
-            // চ্যানেলটিতে যদি অন্তত একটি অ্যাক্টিভ লিংক পাওয়া যায়
-            if (activeStreamUrls.length > 0) {
-                m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
-
-                // প্রথম লিংক সাধারণ
-                m3uContent += `${activeStreamUrls[0]}\n`;
-
-                // অতিরিক্ত একটিভ লিংকের শুরুতে '#' (হ্যাশ)
-                for (let i = 1; i < activeStreamUrls.length; i++) {
-                    m3uContent += `#${activeStreamUrls[i]}\n`;
-                }
-
-                m3uContent += `\n`;
-
-                jsonChannels.push({ id, name, logo, category, urls: activeStreamUrls });
-            }
-        }
+            m3uContent += `\n`;
+        });
 
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
-            total_channels: jsonChannels.length,
-            channels: jsonChannels
+            total_channels: validChannels.length,
+            channels: validChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ONLY ${jsonChannels.length} ACTIVE channels.`);
+        console.log(`Success! Generated circle.m3u & circle.json with ONLY ${validChannels.length} ACTIVE channels in fast speed.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
