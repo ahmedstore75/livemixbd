@@ -1,5 +1,5 @@
 const fs = require("fs");
-const puppeteer = require("puppeteer");
+const https = require("https");
 
 const categoryOrder = [
   "Bangla", "Sports", "Kolkata", "Indian", "News", 
@@ -44,84 +44,101 @@ function getPriorityIndex(category, title) {
   return index === -1 ? 999 : index;
 }
 
-async function processData() {
-  console.log("Launching Browser to fetch Ayna OTT...");
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"]
-  });
-
-  const page = await browser.newPage();
-  
-  // ব্রাউজার দিয়ে পেজে যাওয়া
-  await page.goto("https://web.aynaott.com/live-tvs", { waitUntil: "networkidle2", timeout: 60000 });
-
-  // অটো-স্ক্রোল করে সব চ্যানেল লোড করানো
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 500;
-      const timer = setInterval(() => {
-        const scrollHeight = document.body.scrollHeight;
-        window.scrollBy(0, distance);
-        totalHeight += distance;
-        if (totalHeight >= scrollHeight + 2000) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 200);
-    });
-  });
-
-  // পেজের আসল ডাটা এক্সট্র্যাক্ট করা
-  const channelsData = await page.evaluate(() => {
-    const list = [];
-    const elements = document.querySelectorAll("a[href*='/live-tvs/']");
-    
-    elements.forEach(el => {
-      const img = el.querySelector("img");
-      const nameEl = el.querySelector("p, h3, span");
-      const url = el.href;
-
-      let logo = img ? img.src : "";
-      let name = nameEl ? nameEl.innerText.trim() : "";
-
-      if (name && url) {
-        list.push({ name, logo, url });
+function fetchData(url) {
+  return new Promise((resolve) => {
+    https.get(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "RSC": "1"
       }
-    });
-    return list;
+    }, (res) => {
+      let data = "";
+      res.on("data", chunk => data += chunk);
+      res.on("end", () => resolve(data));
+    }).on("error", () => resolve(""));
   });
+}
 
-  await browser.close();
+async function processData() {
+  console.log("Fetching channels list from Ayna OTT Next.js payload...");
+  const rawData = await fetchData("https://web.aynaott.com/live-tvs?_rsc=1");
 
   let extractedChannels = [];
   const seenUrls = new Set();
 
-  for (const ch of channelsData) {
-    if (seenUrls.has(ch.url)) continue;
-    seenUrls.add(ch.url);
+  // Next.js RSC payload থেকে চ্যানেল ব্লকগুলো পার্স করা
+  const matches = rawData.match(/\{"id":\d+,"title":"[^"]+",.*?\}/g) || 
+                  rawData.match(/\{"id":\d+,"name":"[^"]+",.*?\}/g) || [];
 
-    // লোগো লিংক ফরম্যাটিং (S3 স্টোরেজ সাপোর্ট)
-    let logo = ch.logo;
-    if (logo.startsWith("/")) {
-      logo = "https://s3.aynaott.com" + logo;
-    } else if (logo && !logo.startsWith("http")) {
-      logo = "https://s3.aynaott.com/storage/" + logo;
-    }
+  for (const itemStr of matches) {
+    try {
+      // JSON ফরম্যাট ক্লিন করা
+      const cleanJson = itemStr.replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+      
+      const streamMatch = cleanJson.match(/"(https?:[^"]+\.m3u8[^"]*)"/i);
+      const nameMatch = cleanJson.match(/"(?:title|name)"\s*:\s*"([^"]+)"/i);
+      const logoMatch = cleanJson.match(/"(?:poster|logo|image)"\s*:\s*"([^"]+)"/i);
 
-    const category = resolveCategory(ch.name);
+      if (streamMatch && nameMatch) {
+        const streamUrl = streamMatch[1];
+        const name = nameMatch[1].trim();
 
-    extractedChannels.push({
-      name: ch.name,
-      logo: logo,
-      url: ch.url,
-      category: category,
-      priority: getPriorityIndex(category, ch.name)
-    });
+        if (seenUrls.has(streamUrl) || name === "G" || name.length < 2) continue;
+        seenUrls.add(streamUrl);
+
+        let logo = logoMatch ? logoMatch[1] : "";
+        if (logo.startsWith("/")) {
+          logo = "https://s3.aynaott.com" + logo;
+        } else if (logo && !logo.startsWith("http")) {
+          logo = "https://s3.aynaott.com/storage/" + logo;
+        }
+
+        const category = resolveCategory(name);
+
+        extractedChannels.push({
+          name: name,
+          logo: logo,
+          url: streamUrl,
+          category: category,
+          priority: getPriorityIndex(category, name)
+        });
+      }
+    } catch (e) {}
   }
 
-  // সাজানো
+  // যদি RSC ডাইরেক্ট না পাওয়া যায় তবে সেকেন্ডারি মেথড
+  if (extractedChannels.length === 0) {
+    const slugMatches = rawData.match(/live-tvs\/([a-zA-Z0-9-]+)/g) || [];
+    const uniqueSlugs = [...new Set(slugMatches)];
+
+    for (const slug of uniqueSlugs) {
+      const pageData = await fetchData(`https://web.aynaott.com/${slug}?_rsc=1`);
+      const streamMatch = pageData.match(/(https?:[^\s"\\]+\.m3u8[^\s"\\]*)/i);
+      const nameMatch = pageData.match(/"(?:title|name)"\s*:\s*"([^"]+)"/i);
+      const logoMatch = pageData.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i);
+
+      if (streamMatch && nameMatch) {
+        const streamUrl = streamMatch[1].replace(/\\/g, '');
+        const name = nameMatch[1].trim();
+
+        if (!seenUrls.has(streamUrl) && name !== "G") {
+          seenUrls.add(streamUrl);
+          let logo = logoMatch ? "https://s3.aynaott.com" + logoMatch[1] : "";
+          const category = resolveCategory(name);
+
+          extractedChannels.push({
+            name: name,
+            logo: logo,
+            url: streamUrl,
+            category: category,
+            priority: getPriorityIndex(category, name)
+          });
+        }
+      }
+    }
+  }
+
+  // ক্যাটাগরি ও প্রায়োরিটি অনুযায়ী সাজানো
   extractedChannels.sort((a, b) => {
     const catIndexA = categoryOrder.indexOf(a.category);
     const catIndexB = categoryOrder.indexOf(b.category);
@@ -133,7 +150,7 @@ async function processData() {
     return a.name.localeCompare(b.name);
   });
 
-  // M3U জেনারেট করা
+  // M3U ফাইল ফিলিং
   let m3uContent = '#EXTM3U url-tvg="" x-tvg-url=""\n';
   for (const ch of extractedChannels) {
     m3uContent += `#EXTINF:-1 group-title="${ch.category}" tvg-name="${ch.name}" tvg-logo="${ch.logo}", ${ch.name}\n`;
@@ -144,7 +161,7 @@ async function processData() {
 
   fs.writeFileSync("ayna_ott.json", JSON.stringify(extractedChannels, null, 2));
   fs.writeFileSync("ayna_ott.m3u", m3uContent);
-  console.log(`Successfully fetched ALL ${extractedChannels.length} channels with logos!`);
+  console.log(`Done! Fetched ${extractedChannels.length} channels with valid M3U8 URLs and correct names.`);
 }
 
 processData();
