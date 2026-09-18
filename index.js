@@ -6,18 +6,26 @@ puppeteer.use(StealthPlugin());
 
 const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
-// ক্যাটাগরি ম্যাপিং
+// আগের সিস্টেমে ক্যাটাগরির অর্ডার (সবার প্রথমে Sports)
 const CATEGORY_MAP = {
-    'Islamic': [
-        'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
-        'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 'peace tv urdu', 
-        'islamic tv', 'sunnah tv', 'guide us', 'iqraa', 'huda tv', 'madani channel', 'islam'
+    'Sports': [
+        'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
+        'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro', 'eurosport', 'a sports', 
+        'beIN', 'supersport', 'premier sports', 'sports18'
+    ],
+    'News': [
+        'news', 'somoy', 'jamuna', 'independent', 'ekattor', '71', 'channel 24', 'dbc', 
+        'news24', 'atn news', 'bvnews', 'bbc', 'cnn', 'al jazeera', 'ndtv', 'republic', 'aaj tak'
     ],
     'Bangla Entertainment': [
         'enterr10 bangla', 'enterr 10 bangla', 'enterr10', 'enterr 10', 'enterr', 'e10 bangla',
         'sony aath', 'sony ath', 'aath', 'ath', 'star jalsha', 'zee bangla', 'colors bangla', 
         'atn bangla', 'channel i', 'ntv', 'rtv', 'banglavision', 'boishakhi', 'deepto', 
         'nagorik', 'maasranga', 'duronto', 'asian tv', 'bangla tv', 'sangeet bangla', 'sun bangla'
+    ],
+    'Hindi Entertainment': [
+        'star plus', 'zee tv', 'colors', 'sony tv', 'sony sab', 'star bharat', 'dangal', 
+        'colors rishtey', 'zee anmol', 'star utsav'
     ],
     'Movies': [
         'sony max', 'sony max 2', 'sony wah', 'sony pix', 'sony pix hd', 'max 2', 'max', 'wah', 'pix',
@@ -29,29 +37,21 @@ const CATEGORY_MAP = {
         'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
         'star movies', 'wb', 'warner bros', 'axn', 'fox movies', 'cinema world', 'movies now', 'mnx', 'romedy now'
     ],
-    'Music': [
-        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
+    'Infotainment': [
+        'discovery', 'national geographic', 'nat geo', 'animal planet', 'history tv', 
+        'investigation discovery', 'nat geo wild', 'discovery science', 'turbo'
     ],
     'Kids': [
         'cartoon network', 'nick', 'nickelodeon', 'pogo', 'hungama', 'disney', 'duronto', 
         'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'duck tv', 'nick jr'
     ],
-    'Sports': [
-        'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
-        'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro', 'eurosport', 'a sports', 
-        'beIN', 'supersport', 'premier sports', 'sports18'
+    'Music': [
+        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
     ],
-    'News': [
-        'news', 'somoy', 'jamuna', 'independent', 'ekattor', '71', 'channel 24', 'dbc', 
-        'news24', 'atn news', 'bvnews', 'bbc', 'cnn', 'al jazeera', 'ndtv', 'republic', 'aaj tak'
-    ],
-    'Hindi Entertainment': [
-        'star plus', 'zee tv', 'colors', 'sony tv', 'sony sab', 'star bharat', 'dangal', 
-        'colors rishtey', 'zee anmol', 'star utsav'
-    ],
-    'Infotainment': [
-        'discovery', 'national geographic', 'nat geo', 'animal planet', 'history tv', 
-        'investigation discovery', 'nat geo wild', 'discovery science', 'turbo'
+    'Islamic': [
+        'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
+        'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 'peace tv urdu', 
+        'islamic tv', 'sunnah tv', 'guide us', 'iqraa', 'huda tv', 'madani channel', 'islam'
     ]
 };
 
@@ -224,7 +224,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Both circle.m3u and circle.json updated successfully.`);
+        console.log(`Success! Playlists generated in the original order with Sports first.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
