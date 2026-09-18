@@ -410,8 +410,14 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 #EXTINF:-1 tvg-id="9626245c-3147-4ef8-96ca-621356169dad" tvg-logo="https://api.cirkletv.com/files/pictures_hd_1786335388121_d314315da8656fb9.webp" group-title="Movies",And Pictures HD
 https://api.cirkletv.com/api/hridoy-tv/stream/andpicture_hd_576?expire=43738831219634
 
+#EXTINF:-1 tvg-id="df4a10e5-5a07-4cab-9e91-18e0fb9d0fa9" tvg-logo="https://api.cirkletv.com/files/B4umovies_1786335105746_8c07f08672c05b3a.webp" group-title="Movies",B4U Movies
+https://amg00877-b4unew-amg00877c2-xiaomi-in-5489.playouts.now.amagi.tv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="b00a4d4b-5ab7-4de7-9f86-a2f133a69e65" tvg-logo="https://api.cirkletv.com/files/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400_1788414129142_26fecffa93508f11.webp" group-title="Movies",HBO 2
 https://tvsen7.aynaott.com/hbo2/index.m3u8?e=1784102613&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=40fc8084b5fc57624decaf17689aa4e3
+
+#EXTINF:-1 tvg-id="57f91f6b-879d-49d9-b9ca-dcc608f6c546" tvg-logo="https://s3.aynaott.com/storage/cb1ab052f5b733bbf600a7a8e3a1164b" group-title="Movies",Cowboy Movie Channel
+https://streams2.sofast.tv/sofastplayout/32eb332e-f644-46e5-ad91-e55ad80d14f7_0_HLS/master.m3u8
 
 
 # ==========================================
