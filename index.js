@@ -1,8 +1,6 @@
 const fs = require('fs');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-const https = require('https');
-const http = require('http');
 
 puppeteer.use(StealthPlugin());
 
@@ -23,56 +21,6 @@ function extractUrls(input) {
         return matches || [];
     }
     return [];
-}
-
-// সুপারফাস্ট লিংক চেকার (টাইমাউট ২০০০ms)
-function isUrlWorking(url, timeoutMs = 2000) {
-    return new Promise((resolve) => {
-        try {
-            const parsedUrl = new URL(url);
-            const client = parsedUrl.protocol === 'https:' ? https : http;
-
-            const options = {
-                method: 'HEAD',
-                host: parsedUrl.hostname,
-                port: parsedUrl.port || (parsedUrl.protocol === 'https:' ? 443 : 80),
-                path: parsedUrl.pathname + parsedUrl.search,
-                timeout: timeoutMs,
-                headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-                }
-            };
-
-            const req = client.request(options, (res) => {
-                if (res.statusCode >= 200 && res.statusCode < 400) {
-                    resolve(true);
-                } else {
-                    resolve(false);
-                }
-            });
-
-            req.on('error', () => resolve(false));
-            req.on('timeout', () => {
-                req.destroy();
-                resolve(false);
-            });
-
-            req.end();
-        } catch (e) {
-            resolve(false);
-        }
-    });
-}
-
-// একসাথে অনেকগুলো লিংক প্যারালালে চেক করা
-async function filterActiveUrls(streamUrls) {
-    const results = await Promise.all(
-        streamUrls.map(async (url) => {
-            const active = await isUrlWorking(url);
-            return active ? url : null;
-        })
-    );
-    return results.filter(Boolean);
 }
 
 async function generatePlaylists() {
@@ -99,17 +47,20 @@ async function generatePlaylists() {
         let currentPage = 1;
         let totalPages = 1;
 
+        // পেজিনেশন লুপ - সব পেজ থেকে ডাটা স্ক্যান করবে
         do {
             const url = `${BASE_API_URL}${currentPage}`;
-            console.log(`Fetching Page ${currentPage}...`);
+            console.log(`Fetching Page ${currentPage} of ${totalPages}...`);
             
             await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
             const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
             const responseData = JSON.parse(content);
 
+            // চ্যানেল ডাটা বের করা
             let pageChannels = [];
             if (responseData && responseData.data && Array.isArray(responseData.data.data)) {
                 pageChannels = responseData.data.data;
+                // মোট পেজ সংখ্যা আপডেট করা
                 if (responseData.data.pagination && responseData.data.pagination.totalPages) {
                     totalPages = responseData.data.pagination.totalPages;
                 }
@@ -122,62 +73,56 @@ async function generatePlaylists() {
             if (pageChannels && pageChannels.length > 0) {
                 allChannels = allChannels.concat(pageChannels);
             } else {
+                console.log(`No channels found on page ${currentPage}, stopping pagination.`);
                 break;
             }
 
             currentPage++;
         } while (currentPage <= totalPages);
 
-        console.log(`Total channels fetched from API: ${allChannels.length}`);
-        console.log('Fast parallel checking active stream links...');
+        console.log(`Total channels fetched across all pages: ${allChannels.length}`);
 
-        // প্যারালাল প্রসেসিং (৩০টি চ্যানেল একসাথে ফিল্টার হবে)
-        const BATCH_SIZE = 30;
-        const validChannels = [];
-
-        for (let i = 0; i < allChannels.length; i += BATCH_SIZE) {
-            const batch = allChannels.slice(i, i + BATCH_SIZE);
-            const processedBatch = await Promise.all(
-                batch.map(async (channel) => {
-                    const rawStream = channel.url || channel.streamUrl || channel.stream || '';
-                    const streamUrls = extractUrls(rawStream);
-                    const activeStreamUrls = await filterActiveUrls(streamUrls);
-
-                    if (activeStreamUrls.length > 0) {
-                        return {
-                            id: channel._id || channel.id || '',
-                            name: channel.title || channel.name || 'Unknown Channel',
-                            logo: getChannelLogo(channel),
-                            category: typeof channel.category === 'object' ? (channel.category?.name || 'General') : (channel.category || 'General'),
-                            urls: activeStreamUrls
-                        };
-                    }
-                    return null;
-                })
-            );
-
-            validChannels.push(...processedBatch.filter(Boolean));
+        if (allChannels.length === 0) {
+            throw new Error('Could not parse any channels from the API response.');
         }
 
         let m3uContent = '#EXTM3U\n\n';
-        validChannels.forEach(channel => {
-            m3uContent += `#EXTINF:-1 tvg-id="${channel.id}" tvg-logo="${channel.logo}" group-title="${channel.category}",${channel.name}\n`;
-            m3uContent += `${channel.urls[0]}\n`;
+        const jsonChannels = [];
 
-            for (let i = 1; i < channel.urls.length; i++) {
-                m3uContent += `#${channel.urls[i]}\n`;
+        allChannels.forEach(channel => {
+            const id = channel._id || channel.id || '';
+            const name = channel.title || channel.name || 'Unknown Channel';
+            const logo = getChannelLogo(channel);
+            const category = typeof channel.category === 'object' ? (channel.category?.name || 'General') : (channel.category || 'General');
+
+            const rawStream = channel.url || channel.streamUrl || channel.stream || '';
+            const streamUrls = extractUrls(rawStream);
+
+            if (streamUrls.length > 0) {
+                m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
+
+                // প্রথম লিংক সাধারণ লিংক
+                m3uContent += `${streamUrls[0]}\n`;
+
+                // অতিরিক্ত লিংকগুলোর সামনে '#'
+                for (let i = 1; i < streamUrls.length; i++) {
+                    m3uContent += `#${streamUrls[i]}\n`;
+                }
+
+                m3uContent += `\n`;
+
+                jsonChannels.push({ id, name, logo, category, urls: streamUrls });
             }
-            m3uContent += `\n`;
         });
 
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
-            total_channels: validChannels.length,
-            channels: validChannels
+            total_channels: jsonChannels.length,
+            channels: jsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ONLY ${validChannels.length} ACTIVE channels in fast speed.`);
+        console.log(`Success! Generated circle.m3u & circle.json with ALL ${jsonChannels.length} channels.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
