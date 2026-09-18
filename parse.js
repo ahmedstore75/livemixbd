@@ -50,10 +50,10 @@ function getPriorityIndex(category, title) {
   return index === -1 ? 999 : index;
 }
 
-function generateAutoLogo(channelName) {
-  let formattedName = channelName.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, "").trim();
-  if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
-  return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
+// লোগো মিসিং থাকলে নাম দিয়ে S3 লোগো ফরম্যাট তৈরি
+function generateS3Logo(channelName) {
+  let slug = channelName.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
+  return `https://s3.aynaott.com/storage/images/${slug}.png`;
 }
 
 function fetchData(url) {
@@ -70,7 +70,7 @@ function fetchData(url) {
       res.on("end", () => resolve(data));
     });
     req.on("error", () => resolve(""));
-    req.setTimeout(10000, () => { req.destroy(); resolve(""); }); // ১০ সেকেন্ড টাইমআউট (নেটওয়ার্ক ফেইল এড়াতে)
+    req.setTimeout(10000, () => { req.destroy(); resolve(""); });
   });
 }
 
@@ -94,8 +94,6 @@ async function processData() {
 
   let extractedChannels = [];
   const seenUrls = new Set();
-  
-  // RSC ডাটার সম্পূর্ণ ব্লক আলাদা করা
   const rawBlocks = cleanedData.split(/(?=\{"id"|\{"title"|\{"name")/g);
 
   for (const block of rawBlocks) {
@@ -108,7 +106,6 @@ async function processData() {
     if (seenUrls.has(streamUrl)) continue;
 
     let title = "";
-    // অরিজিনাল চ্যানেল নাম নিষ্কাশন
     const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
     if (titleMatch) {
       let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
@@ -120,7 +117,7 @@ async function processData() {
 
     if (!title) continue;
 
-    // S3 লোগো লিঙ্ক ফিক্স (s3.aynaott.com)
+    // লোগো এক্সট্রাকশন লজিক
     let logoUrl = "";
     const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
                       block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i);
@@ -129,14 +126,15 @@ async function processData() {
       let extracted = logoMatch[1].trim();
       if (extracted.startsWith("/")) {
         logoUrl = "https://s3.aynaott.com" + extracted;
-      } else if (!extracted.startsWith("http")) {
-        logoUrl = "https://s3.aynaott.com/storage/" + extracted;
-      } else {
+      } else if (extracted.startsWith("http")) {
         logoUrl = extracted;
       }
     }
 
-    if (!logoUrl) logoUrl = generateAutoLogo(title);
+    // শুধুমাত্র যদি লোগো লিঙ্ক মিসিং থাকে বা না পাওয়া যায়, তবেই S3 লোগো জেনারেট হবে
+    if (!logoUrl || logoUrl.includes("placeholder") || logoUrl.includes("default")) {
+      logoUrl = generateS3Logo(title);
+    }
 
     const category = resolveCategory(title);
     seenUrls.add(streamUrl);
