@@ -6,7 +6,7 @@ puppeteer.use(StealthPlugin());
 
 const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
-// সমৃদ্ধ ও ক্যাটাগরি অনুযায়ী সাজানো চ্যানেলের তালিকা
+// আরও বেশি জনপ্রিয় চ্যানেল ও ক্যাটাগরির আপডেট লিস্ট
 const CATEGORY_MAP = {
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
@@ -27,8 +27,15 @@ const CATEGORY_MAP = {
         'colors rishtey', 'zee anmol', 'star utsav'
     ],
     'Movies': [
-        'star gold', 'zee cinema', 'sony max', 'star movies', 'hbo', 'colors cineplex', 
-        'utv movies', 'cinema tv', 'goldmines', 'sony pix', 'mnx', 'and pictures', 'jalsha movies'
+        // বাংলা মুভি চ্যানেল
+        'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'khushboo',
+        // হিন্দি ও সাউথ ইন্ডিয়ান ডাবড মুভি চ্যানেল
+        'star gold', 'zee cinema', 'sony max', 'colors cineplex', 'goldmines', 'sony wah', 
+        'star utsav movies', 'zee anmol cinema', 'b4u movies', 'enterr10 movies', 'cinema tv', 
+        'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
+        // হলিউড ও ইংরেজি মুভি চ্যানেল
+        'hbo', 'star movies', 'sony pix', 'wb', 'warner bros', 'axn', 'fox movies', 
+        'cinema world', 'movies now', 'mnx', 'romedy now'
     ],
     'Infotainment': [
         'discovery', 'national geographic', 'nat geo', 'animal planet', 'history tv', 
@@ -53,7 +60,7 @@ function detectCategory(channelName, rawCategory) {
         }
     }
 
-    return null; // তালিকার বাইরে থাকা অতিরিক্ত বা ফালতু চ্যানেল বাদ যাবে
+    return null; // অকেজো বা অপরিচিত চ্যানেল স্কিপ করবে
 }
 
 function getChannelLogo(channel) {
@@ -129,20 +136,18 @@ async function generatePlaylists() {
 
         console.log(`Total channels fetched from API: ${allChannels.length}`);
 
-        // প্রতিটি ক্যাটাগরির জন্য বাফার তৈরি
         const groupedChannels = {};
         Object.keys(CATEGORY_MAP).forEach(cat => {
             groupedChannels[cat] = [];
         });
 
-        // চ্যানেল গুছানো
         allChannels.forEach(channel => {
             const name = channel.title || channel.name || 'Unknown Channel';
             const rawCategory = typeof channel.category === 'object' ? (channel.category?.name || '') : (channel.category || '');
             
             const categoryName = detectCategory(name, rawCategory);
 
-            if (!categoryName) return; // ফিল্টার করা কি-ওয়ার্ডের বাইরে হলে স্কিপ করবে
+            if (!categoryName) return;
 
             const id = channel._id || channel.id || '';
             const logo = getChannelLogo(channel);
@@ -160,7 +165,6 @@ async function generatePlaylists() {
             }
         });
 
-        // একক প্লেলিস্ট ফাইলে পর পর ক্যাটাগরি অনুযায়ী সাজানো
         let m3uContent = '#EXTM3U\n\n';
         const finalJsonChannels = [];
 
@@ -186,7 +190,6 @@ async function generatePlaylists() {
             }
         });
 
-        // ফাইল তৈরি
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
@@ -194,7 +197,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ${finalJsonChannels.length} popular channels across 8 categories.`);
+        console.log(`Success! Generated circle.m3u & circle.json with ${finalJsonChannels.length} popular channels.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
