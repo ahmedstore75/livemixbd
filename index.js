@@ -21,7 +21,7 @@ const CATEGORY_MAP = {
         'enterr10 bangla', 'enterr 10 bangla', 'enterr10', 'enterr 10', 'enterr', 'e10 bangla',
         'sony aath', 'sony ath', 'aath', 'ath', 'star jalsha', 'zee bangla', 'colors bangla', 
         'atn bangla', 'channel i', 'ntv', 'rtv', 'banglavision', 'boishakhi', 'deepto', 
-        'nagorik', 'maasranga', 'duronto', 'asian tv', 'bangla tv', 'sangeet bangla', 'sun bangla'
+        'nagorik', 'maasranga', 'duronto', 'asian tv', 'bangla tv', 'sun bangla'
     ],
     'Hindi Entertainment': [
         'star plus', 'zee tv', 'colors', 'sony tv', 'sony sab', 'star bharat', 'dangal', 
@@ -48,7 +48,7 @@ const CATEGORY_MAP = {
         'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'sony yay', 'nick jr'
     ],
     'Music': [
-        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india', 'balle balle', 'yrf music'
+        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india', '8xm', 'sangeet bangla', 'yrf music'
     ],
     'Islamic': [
         'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
