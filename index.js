@@ -8,6 +8,34 @@ const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
 // ক্যাটাগরি ম্যাপিং
 const CATEGORY_MAP = {
+    'Islamic': [
+        'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
+        'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 'peace tv urdu', 
+        'islamic tv', 'sunnah tv', 'guide us', 'iqraa', 'huda tv', 'madani channel', 'islam'
+    ],
+    'Bangla Entertainment': [
+        'enterr10 bangla', 'enterr 10 bangla', 'enterr10', 'enterr 10', 'enterr', 'e10 bangla',
+        'sony aath', 'sony ath', 'aath', 'ath', 'star jalsha', 'zee bangla', 'colors bangla', 
+        'atn bangla', 'channel i', 'ntv', 'rtv', 'banglavision', 'boishakhi', 'deepto', 
+        'nagorik', 'maasranga', 'duronto', 'asian tv', 'bangla tv', 'sangeet bangla', 'sun bangla'
+    ],
+    'Movies': [
+        'sony max', 'sony max 2', 'sony wah', 'sony pix', 'sony pix hd', 'max 2', 'max', 'wah', 'pix',
+        'b4u kadak', 'b4u movies', 'b4u plus', 'kadak', 'ifilm',
+        'hbo', 'hbo hd', 'hbo hits', 'hbo signature', 'hbo family',
+        'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'khushboo',
+        'star gold', 'zee cinema', 'colors cineplex', 'goldmines', 
+        'star utsav movies', 'zee anmol cinema', 'enterr10 movies', 'cinema tv', 
+        'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
+        'star movies', 'wb', 'warner bros', 'axn', 'fox movies', 'cinema world', 'movies now', 'mnx', 'romedy now'
+    ],
+    'Music': [
+        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
+    ],
+    'Kids': [
+        'cartoon network', 'nick', 'nickelodeon', 'pogo', 'hungama', 'disney', 'duronto', 
+        'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'duck tv', 'nick jr'
+    ],
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
         'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro', 'eurosport', 'a sports', 
@@ -17,46 +45,13 @@ const CATEGORY_MAP = {
         'news', 'somoy', 'jamuna', 'independent', 'ekattor', '71', 'channel 24', 'dbc', 
         'news24', 'atn news', 'bvnews', 'bbc', 'cnn', 'al jazeera', 'ndtv', 'republic', 'aaj tak'
     ],
-    'Bangla Entertainment': [
-        // সনি আট এবং ইন্টারটেন বাংলা যুক্ত করা হয়েছে
-        'sony aath', 'sony ath', 'aath', 'enterr10 bangla', 'enterr 10 bangla', 'enterr10', 'enterr 10',
-        'star jalsha', 'zee bangla', 'colors bangla', 'atn bangla', 'channel i', 'ntv', 'rtv', 
-        'banglavision', 'boishakhi', 'deepto', 'nagorik', 'maasranga', 'duronto', 'asian tv', 
-        'bangla tv', 'sangeet bangla', 'sun bangla'
-    ],
     'Hindi Entertainment': [
         'star plus', 'zee tv', 'colors', 'sony tv', 'sony sab', 'star bharat', 'dangal', 
         'colors rishtey', 'zee anmol', 'star utsav'
     ],
-    'Movies': [
-        // বিফোর ইউ মুভিজ ও ইফিল্ম
-        'b4u kadak', 'b4u movies', 'b4u plus', 'kadak', 'ifilm',
-        // সনি মুভি চ্যানেলসমূহ
-        'sony max', 'sony max 2', 'sony wah', 'sony pix', 'sony pix hd',
-        // এইচবিও (HBO) চ্যানেলসমূহ
-        'hbo', 'hbo hd', 'hbo hits', 'hbo signature', 'hbo family',
-        // বাংলা ও অন্যান্য মুভি চ্যানেল
-        'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'khushboo',
-        'star gold', 'zee cinema', 'colors cineplex', 'goldmines', 
-        'star utsav movies', 'zee anmol cinema', 'enterr10 movies', 'cinema tv', 
-        'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
-        'star movies', 'wb', 'warner bros', 'axn', 'fox movies', 'cinema world', 'movies now', 'mnx', 'romedy now'
-    ],
     'Infotainment': [
         'discovery', 'national geographic', 'nat geo', 'animal planet', 'history tv', 
         'investigation discovery', 'nat geo wild', 'discovery science', 'turbo'
-    ],
-    'Kids': [
-        'cartoon network', 'nick', 'nickelodeon', 'pogo', 'hungama', 'disney', 'duronto', 
-        'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'duck tv', 'nick jr'
-    ],
-    'Music': [
-        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
-    ],
-    'Islamic': [
-        'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
-        'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 'peace tv urdu', 
-        'islamic tv', 'sunnah tv', 'guide us', 'iqraa', 'huda tv', 'madani channel', 'islam'
     ]
 };
 
@@ -64,28 +59,34 @@ function detectCategory(channelName, rawCategory) {
     const nameLower = (channelName || '').toLowerCase().trim();
     const catLower = (rawCategory || '').toLowerCase().trim();
 
-    // আল কুরআন চ্যানেলকে নিশ্চিতভাবে Islamic ক্যাটাগরিতে অ্যাসাইন করা
-    if (nameLower.includes('quran') || nameLower.includes('kareem') || nameLower.includes('makkah') || nameLower.includes('madinah')) {
-        return 'Islamic';
-    }
-
-    // B4U Music যাতে শুধুই Music ক্যাটাগরিতে যায়
+    // ১. B4U Music নির্দিষ্টভাবে Music ক্যাটাগরিতে যাবে
     if (nameLower.includes('b4u music')) {
         return 'Music';
     }
 
-    // Sony Aath এবং Enterr10 Bangla নিশ্চিতভাবে Bangla Entertainment-এ নিয়ে যাওয়া
-    if (nameLower.includes('aath') || nameLower.includes('ath') || nameLower.includes('enterr10 bangla') || nameLower.includes('enterr 10 bangla')) {
+    // ২. আল কুরআন চ্যানেল ইসলামিক ক্যাটাগরিতে যাবে
+    if (nameLower.includes('quran') || nameLower.includes('kareem') || nameLower.includes('makkah') || nameLower.includes('madinah')) {
+        return 'Islamic';
+    }
+
+    // ৩. Enterr10 Bangla & Sony Aath
+    if (nameLower.includes('enterr10') || nameLower.includes('enterr') || nameLower.includes('aath') || nameLower.includes('sony ath')) {
         return 'Bangla Entertainment';
     }
 
+    // ৪. Sony Max/Pix/Wah মুভি ক্যাটাগরিতে যাবে
+    if (nameLower.includes('sony max') || nameLower.includes('sony pix') || nameLower.includes('sony wah') || nameLower.includes('max 2')) {
+        return 'Movies';
+    }
+
+    // সাধারণ লুপ ডিক্লেয়ারেশন
     for (const [categoryName, keywords] of Object.entries(CATEGORY_MAP)) {
         if (keywords.some(keyword => nameLower.includes(keyword) || catLower.includes(keyword))) {
             return categoryName;
         }
     }
 
-    return null; // বাকি অকেজো চ্যানেল স্কিপ করবে
+    return null;
 }
 
 function getChannelLogo(channel) {
@@ -172,7 +173,7 @@ async function generatePlaylists() {
             
             const categoryName = detectCategory(name, rawCategory);
 
-            if (!categoryName) return;
+            if (!categoryName || !groupedChannels[categoryName]) return;
 
             const id = channel._id || channel.id || '';
             const logo = getChannelLogo(channel);
@@ -196,8 +197,8 @@ async function generatePlaylists() {
         Object.keys(CATEGORY_MAP).forEach(categoryName => {
             const channelList = groupedChannels[categoryName];
 
-            if (channelList.length > 0) {
-                m3uContent += `\n# ==========================================\n`;
+            if (channelList && channelList.length > 0) {
+                m3uContent += `# ==========================================\n`;
                 m3uContent += `# CATEGORY: ${categoryName.toUpperCase()}\n`;
                 m3uContent += `# ==========================================\n\n`;
 
@@ -215,6 +216,7 @@ async function generatePlaylists() {
             }
         });
 
+        // M3U এবং JSON ফাইল রাইট করা
         fs.writeFileSync('circle.m3u', m3uContent, 'utf8');
         fs.writeFileSync('circle.json', JSON.stringify({
             updated_at: new Date().toISOString(),
@@ -222,7 +224,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Updated playlist generated with Sony Aath and Enterr10 Bangla included.`);
+        console.log(`Success! Both circle.m3u and circle.json updated successfully.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
