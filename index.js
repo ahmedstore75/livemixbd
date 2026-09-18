@@ -11,7 +11,7 @@ const CATEGORY_MAP = {
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
         'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro', 'eurosport', 'a sports', 
-        'beIN', 'supersport', 'premier sports', 'sports18'
+        'beIN', 'supersport', 'premier sports', 'sports18', 'cricbuzz'
     ],
     'News': [
         'news', 'somoy', 'jamuna', 'independent', 'ekattor', '71', 'channel 24', 'dbc', 
