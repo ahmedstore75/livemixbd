@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T14:01:56.696Z",
-  "total_channels": 158,
+  "updated_at": "2026-09-18T14:16:47.829Z",
+  "total_channels": 160,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -29,7 +29,7 @@
       "logo": "https://api.cirkletv.com/files/ptv_sports_1786333039686_d1a316e4865831b3.webp",
       "category": "Sports",
       "urls": [
-        "https://sports-play.hridoytv-master.workers.dev/proxy?url=https%3A%2F%2Fmz01.playerr03.com%3A7060%2Fhls%2Fptvskpr.m3u8%3Fmd5%3Dp6qXbxhqSOipFFYafkZf-Q%26expires%3D1789438688%26ch%3Dptvskpr%26s%3Dacaa77f01baf531369027cbfe7f5ed5c&expire=48426875"
+        "https://flussonic.defineatoz.com/PTV/index.m3u8"
       ]
     },
     {
@@ -1024,6 +1024,25 @@
       ]
     },
     {
+      "id": "2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b",
+      "name": "B4U Music",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png",
+      "category": "Movies",
+      "urls": [
+        "https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8",
+        "https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8"
+      ]
+    },
+    {
+      "id": "9f07fa56-1553-4301-8ece-e8a3321884f5",
+      "name": "B4U_Hitz",
+      "logo": "https://api.cirkletv.com/files/images_9cba0e4a98d7a55986c6b194441ac753_playmist_b4u_hitz_400x400_1788419591204_d77be85b40587cd0.webp",
+      "category": "Movies",
+      "urls": [
+        "https://cdn.pishow.tv/ott/live/415/master.m3u8"
+      ]
+    },
+    {
       "id": "e859df3c-9ae2-432c-854b-4451f6600a7f",
       "name": "Jalsha Movies HD",
       "logo": "https://api.cirkletv.com/files/jalsha_movies_1786332538730_2c0b529e814550a4.webp",
@@ -1159,6 +1178,15 @@
       ]
     },
     {
+      "id": "0dbd9cc1-e976-4013-8e76-770fa583760d",
+      "name": "B4U Kadak",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHljRYH5YMeCunedbeC2Zzcw7aT81fGdvFnpVmICN7XDkIq9BZnUf54TC_4_PiTvgzHIY5Ic5hUMbEO7UkcH0WDanBBSwlX6lslq0kbf5lCWbjJ5vVdMDui6xgo01qSgPuUIbWAphsN3DnZ9r3FsfVZgGUTnYYsgQbAVy_yhdGDm70O7ynQ9s1mE-MgA/s600/Nur_20251219_134934_0000.png",
+      "category": "Movies",
+      "urls": [
+        "https://amg00877-b4unew-amg00877c4-xiaomi-in-5473.playouts.now.amagi.tv/playlist.m3u8"
+      ]
+    },
+    {
       "id": "b00a4d4b-5ab7-4de7-9f86-a2f133a69e65",
       "name": "HBO 2",
       "logo": "https://api.cirkletv.com/files/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400_1788414129142_26fecffa93508f11.webp",
@@ -1174,6 +1202,15 @@
       "category": "Movies",
       "urls": [
         "https://streams2.sofast.tv/sofastplayout/32eb332e-f644-46e5-ad91-e55ad80d14f7_0_HLS/master.m3u8"
+      ]
+    },
+    {
+      "id": "9ebc1703-3775-4ea5-9d7f-e59263db4d2c",
+      "name": "ifilm TV",
+      "logo": "https://i.imgur.com/aNjgtp5.png",
+      "category": "Movies",
+      "urls": [
+        "https://live.presstv.ir/hls/ifilmen_4_482/index.m3u8"
       ]
     },
     {
@@ -1314,31 +1351,12 @@
       ]
     },
     {
-      "id": "2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b",
-      "name": "B4U Music",
-      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png",
-      "category": "Music",
-      "urls": [
-        "https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8",
-        "https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8"
-      ]
-    },
-    {
       "id": "12d47344-d040-4d79-a4f5-e1190f4c5b4b",
       "name": "Al Quran Al Kareem TV",
       "logo": "https://i.imgur.com/A2fJysM.png",
       "category": "Music",
       "urls": [
         "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8"
-      ]
-    },
-    {
-      "id": "9ebc1703-3775-4ea5-9d7f-e59263db4d2c",
-      "name": "ifilm TV",
-      "logo": "https://i.imgur.com/aNjgtp5.png",
-      "category": "Music",
-      "urls": [
-        "https://live.presstv.ir/hls/ifilmen_4_482/index.m3u8"
       ]
     },
     {

@@ -15,7 +15,7 @@ https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
 
 #EXTINF:-1 tvg-id="f9585f8e-afe0-499d-bb6a-2a4e8b1f4841" tvg-logo="https://api.cirkletv.com/files/ptv_sports_1786333039686_d1a316e4865831b3.webp" group-title="Sports",PTV Sports
-https://sports-play.hridoytv-master.workers.dev/proxy?url=https%3A%2F%2Fmz01.playerr03.com%3A7060%2Fhls%2Fptvskpr.m3u8%3Fmd5%3Dp6qXbxhqSOipFFYafkZf-Q%26expires%3D1789438688%26ch%3Dptvskpr%26s%3Dacaa77f01baf531369027cbfe7f5ed5c&expire=48426875
+https://flussonic.defineatoz.com/PTV/index.m3u8
 
 #EXTINF:-1 tvg-id="97648766-4490-41cc-980e-e569faeddd4e" tvg-logo="https://api.cirkletv.com/files/pksports_1786626635171_dc66352a7666f1dc.webp" group-title="Sports",PK Sports
 https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
@@ -368,6 +368,13 @@ https://api.cirkletv.com/api/hridoy-tv-pro/stream/785?expire=43738831219634
 #EXTINF:-1 tvg-id="98775959-793c-4ea3-b692-f947dbed7229" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png" group-title="Movies",Khushboo Bangla
 https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8?e=1784102631&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=98108f8c82a0dc91e30e52fe77713a09
 
+#EXTINF:-1 tvg-id="2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png" group-title="Movies",B4U Music
+https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8
+#https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8
+
+#EXTINF:-1 tvg-id="9f07fa56-1553-4301-8ece-e8a3321884f5" tvg-logo="https://api.cirkletv.com/files/images_9cba0e4a98d7a55986c6b194441ac753_playmist_b4u_hitz_400x400_1788419591204_d77be85b40587cd0.webp" group-title="Movies",B4U_Hitz
+https://cdn.pishow.tv/ott/live/415/master.m3u8
+
 #EXTINF:-1 tvg-id="e859df3c-9ae2-432c-854b-4451f6600a7f" tvg-logo="https://api.cirkletv.com/files/jalsha_movies_1786332538730_2c0b529e814550a4.webp" group-title="Movies",Jalsha Movies HD
 https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8
 
@@ -413,11 +420,17 @@ https://api.cirkletv.com/api/hridoy-tv/stream/andpicture_hd_576?expire=437388312
 #EXTINF:-1 tvg-id="df4a10e5-5a07-4cab-9e91-18e0fb9d0fa9" tvg-logo="https://api.cirkletv.com/files/B4umovies_1786335105746_8c07f08672c05b3a.webp" group-title="Movies",B4U Movies
 https://amg00877-b4unew-amg00877c2-xiaomi-in-5489.playouts.now.amagi.tv/playlist.m3u8
 
+#EXTINF:-1 tvg-id="0dbd9cc1-e976-4013-8e76-770fa583760d" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHljRYH5YMeCunedbeC2Zzcw7aT81fGdvFnpVmICN7XDkIq9BZnUf54TC_4_PiTvgzHIY5Ic5hUMbEO7UkcH0WDanBBSwlX6lslq0kbf5lCWbjJ5vVdMDui6xgo01qSgPuUIbWAphsN3DnZ9r3FsfVZgGUTnYYsgQbAVy_yhdGDm70O7ynQ9s1mE-MgA/s600/Nur_20251219_134934_0000.png" group-title="Movies",B4U Kadak
+https://amg00877-b4unew-amg00877c4-xiaomi-in-5473.playouts.now.amagi.tv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="b00a4d4b-5ab7-4de7-9f86-a2f133a69e65" tvg-logo="https://api.cirkletv.com/files/images_2e95a01c1a6b96b71670420cfd9d8cbc_playmist_hbo_2400x400_1788414129142_26fecffa93508f11.webp" group-title="Movies",HBO 2
 https://tvsen7.aynaott.com/hbo2/index.m3u8?e=1784102613&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=40fc8084b5fc57624decaf17689aa4e3
 
 #EXTINF:-1 tvg-id="57f91f6b-879d-49d9-b9ca-dcc608f6c546" tvg-logo="https://s3.aynaott.com/storage/cb1ab052f5b733bbf600a7a8e3a1164b" group-title="Movies",Cowboy Movie Channel
 https://streams2.sofast.tv/sofastplayout/32eb332e-f644-46e5-ad91-e55ad80d14f7_0_HLS/master.m3u8
+
+#EXTINF:-1 tvg-id="9ebc1703-3775-4ea5-9d7f-e59263db4d2c" tvg-logo="https://i.imgur.com/aNjgtp5.png" group-title="Movies",ifilm TV
+https://live.presstv.ir/hls/ifilmen_4_482/index.m3u8
 
 
 # ==========================================
@@ -481,15 +494,8 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/main.mpd
 #EXTINF:-1 tvg-id="9d52d0b7-bd16-470a-a9e3-e8eb538b98d5" tvg-logo="https://api.cirkletv.com/files/9xm_1787821118694_c6d0adbcf6b0261b.webp" group-title="Music",9xM
 https://wiselp.wiseplayout.com/9XM/HD1080/HD1080.m3u8
 
-#EXTINF:-1 tvg-id="2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png" group-title="Music",B4U Music
-https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8
-#https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8
-
 #EXTINF:-1 tvg-id="12d47344-d040-4d79-a4f5-e1190f4c5b4b" tvg-logo="https://i.imgur.com/A2fJysM.png" group-title="Music",Al Quran Al Kareem TV
 https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8
-
-#EXTINF:-1 tvg-id="9ebc1703-3775-4ea5-9d7f-e59263db4d2c" tvg-logo="https://i.imgur.com/aNjgtp5.png" group-title="Music",ifilm TV
-https://live.presstv.ir/hls/ifilmen_4_482/index.m3u8
 
 
 # ==========================================
