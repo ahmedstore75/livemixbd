@@ -50,10 +50,10 @@ function getPriorityIndex(category, title) {
   return index === -1 ? 999 : index;
 }
 
-// লোগো মিসিং থাকলে নাম দিয়ে S3 লোগো ফরম্যাট তৈরি
-function generateS3Logo(channelName) {
-  let slug = channelName.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
-  return `https://s3.aynaott.com/storage/images/${slug}.png`;
+function generateAutoLogo(channelName) {
+  let formattedName = channelName.replace(/[^a-zA-Z0-9\s]/g, "").replace(/\s+/g, "").trim();
+  if (!formattedName) return "https://raw.githubusercontent.com/iptv-org/iptv/master/logos/IPTV.png";
+  return `https://raw.githubusercontent.com/iptv-org/iptv/master/logos/${formattedName}.png`;
 }
 
 function fetchData(url) {
@@ -70,7 +70,7 @@ function fetchData(url) {
       res.on("end", () => resolve(data));
     });
     req.on("error", () => resolve(""));
-    req.setTimeout(10000, () => { req.destroy(); resolve(""); });
+    req.setTimeout(3000, () => { req.destroy(); resolve(""); }); // ৩ সেকেন্ড টাইমআউট
   });
 }
 
@@ -79,11 +79,12 @@ async function processData() {
 
   const urls = [];
   for (const cat of categories) {
-    for (let page = 1; page <= 5; page++) {
+    for (let page = 1; page <= 4; page++) {
       urls.push(`${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=1`);
     }
   }
 
+  // সমান্তরালভাবে দ্রুত ফেচ করা
   const results = await Promise.all(urls.map(url => fetchData(url)));
   const rawData = results.join("\n");
 
@@ -109,32 +110,28 @@ async function processData() {
     const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
     if (titleMatch) {
       let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
-      const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs", "icon", "theme-color"];
-      if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val) && val.length > 1) {
+      const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs"];
+      if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val)) {
         title = val;
       }
     }
 
     if (!title) continue;
 
-    // লোগো এক্সট্রাকশন লজিক
     let logoUrl = "";
     const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
-                      block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i);
+                      block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
+                      block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
 
     if (logoMatch) {
       let extracted = logoMatch[1].trim();
-      if (extracted.startsWith("/")) {
-        logoUrl = "https://s3.aynaott.com" + extracted;
-      } else if (extracted.startsWith("http")) {
+      if (extracted.startsWith("/")) extracted = BASE_URL + extracted;
+      if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
         logoUrl = extracted;
       }
     }
 
-    // শুধুমাত্র যদি লোগো লিঙ্ক মিসিং থাকে বা না পাওয়া যায়, তবেই S3 লোগো জেনারেট হবে
-    if (!logoUrl || logoUrl.includes("placeholder") || logoUrl.includes("default")) {
-      logoUrl = generateS3Logo(title);
-    }
+    if (!logoUrl) logoUrl = generateAutoLogo(title);
 
     const category = resolveCategory(title);
     seenUrls.add(streamUrl);
