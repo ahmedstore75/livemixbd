@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T14:16:47.829Z",
-  "total_channels": 160,
+  "updated_at": "2026-09-18T14:34:45.769Z",
+  "total_channels": 162,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -646,15 +646,6 @@
       ]
     },
     {
-      "id": "c6ea8049-8334-484a-a718-90228f284989",
-      "name": "Sky News Weather",
-      "logo": "https://s3.aynaott.com/storage/78b7ab973209ec06346cf8acfd8544cd",
-      "category": "News",
-      "urls": [
-        "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8"
-      ]
-    },
-    {
       "id": "001ba650-8410-49f9-a75f-dd7c11cd8a27",
       "name": "UTV (Czech Republic)",
       "logo": "https://imgur.com/ulfeIwM.png",
@@ -697,6 +688,24 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://catchup.yuppcdn.net/amazonv2/36/preview/colorsbanglahd/master/chunklist.m3u8"
+      ]
+    },
+    {
+      "id": "5956b7cc-dca6-4469-ac39-c268f3bef7b9",
+      "name": "Sony Aath",
+      "logo": "https://api.cirkletv.com/files/Sony_Aath_1786555730768_6cb73939d3366934.webp",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://stream.ottplus.live/live/sony_aath_abr/index.m3u8"
+      ]
+    },
+    {
+      "id": "51304247-e265-461a-a7d2-6caca15d7f4a",
+      "name": "Akash Aath",
+      "logo": "https://api.cirkletv.com/files/akash_aath_1784914058728_a9fcd1b2947073c0.webp",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8"
       ]
     },
     {
@@ -853,6 +862,15 @@
       ]
     },
     {
+      "id": "689da1c3-0880-4d12-a407-a9e4c5fa7c65",
+      "name": "ACCU Weather",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
+      ]
+    },
+    {
       "id": "d82ede68-f2c1-4cef-ae0b-d86213b5eab1",
       "name": "RTV Noord",
       "logo": "https://i.imgur.com/pO5Mexa.png",
@@ -952,6 +970,15 @@
       ]
     },
     {
+      "id": "c6ea8049-8334-484a-a718-90228f284989",
+      "name": "Sky News Weather",
+      "logo": "https://s3.aynaott.com/storage/78b7ab973209ec06346cf8acfd8544cd",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8"
+      ]
+    },
+    {
       "id": "4c2b3050-cd94-4a2e-854c-54ecc2114e01",
       "name": "Colors Cineplex",
       "logo": "https://api.cirkletv.com/files/colors_cineplex_1787483017398_c150769e9cd9f85c.webp",
@@ -1021,25 +1048,6 @@
       "category": "Movies",
       "urls": [
         "https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8?e=1784102631&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=98108f8c82a0dc91e30e52fe77713a09"
-      ]
-    },
-    {
-      "id": "2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b",
-      "name": "B4U Music",
-      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png",
-      "category": "Movies",
-      "urls": [
-        "https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8",
-        "https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8"
-      ]
-    },
-    {
-      "id": "9f07fa56-1553-4301-8ece-e8a3321884f5",
-      "name": "B4U_Hitz",
-      "logo": "https://api.cirkletv.com/files/images_9cba0e4a98d7a55986c6b194441ac753_playmist_b4u_hitz_400x400_1788419591204_d77be85b40587cd0.webp",
-      "category": "Movies",
-      "urls": [
-        "https://cdn.pishow.tv/ott/live/415/master.m3u8"
       ]
     },
     {
@@ -1351,12 +1359,13 @@
       ]
     },
     {
-      "id": "12d47344-d040-4d79-a4f5-e1190f4c5b4b",
-      "name": "Al Quran Al Kareem TV",
-      "logo": "https://i.imgur.com/A2fJysM.png",
+      "id": "2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b",
+      "name": "B4U Music",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png",
       "category": "Music",
       "urls": [
-        "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8"
+        "https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8",
+        "https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8"
       ]
     },
     {
@@ -1447,6 +1456,15 @@
       "category": "Islamic",
       "urls": [
         "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8"
+      ]
+    },
+    {
+      "id": "12d47344-d040-4d79-a4f5-e1190f4c5b4b",
+      "name": "Al Quran Al Kareem TV",
+      "logo": "https://i.imgur.com/A2fJysM.png",
+      "category": "Islamic",
+      "urls": [
+        "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8"
       ]
     }
   ]
