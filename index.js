@@ -6,7 +6,7 @@ puppeteer.use(StealthPlugin());
 
 const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
-// আগের সিস্টেমে ক্যাটাগরির অর্ডার (সবার প্রথমে Sports)
+// ক্যাটাগরি ম্যাপিং
 const CATEGORY_MAP = {
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
@@ -38,8 +38,10 @@ const CATEGORY_MAP = {
         'star movies', 'wb', 'warner bros', 'axn', 'fox movies', 'cinema world', 'movies now', 'mnx', 'romedy now'
     ],
     'Infotainment': [
-        'discovery', 'national geographic', 'nat geo', 'animal planet', 'history tv', 
-        'investigation discovery', 'nat geo wild', 'discovery science', 'turbo'
+        // ওয়াইল্ড, আর্থ ও অন্যান্য ইনফোটেইনমেন্ট কি-ওয়ার্ড
+        'wild earth', 'wild', 'earth', 'nat geo wild', 'national geographic', 'nat geo', 
+        'discovery', 'animal planet', 'history tv', 'investigation discovery', 'discovery science', 
+        'turbo', 'planet', 'science', 'history', 'docubay', 'love nature', 'bbc earth'
     ],
     'Kids': [
         'cartoon network', 'nick', 'nickelodeon', 'pogo', 'hungama', 'disney', 'duronto', 
@@ -224,7 +226,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Playlists generated in the original order with Sports first.`);
+        console.log(`Success! Updated playlist generated with Infotainment channels.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
