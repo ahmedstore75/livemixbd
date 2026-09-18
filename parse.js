@@ -70,7 +70,7 @@ function fetchData(url) {
       res.on("end", () => resolve(data));
     });
     req.on("error", () => resolve(""));
-    req.setTimeout(3000, () => { req.destroy(); resolve(""); }); // ৩ সেকেন্ড টাইমআউট
+    req.setTimeout(10000, () => { req.destroy(); resolve(""); }); // ১০ সেকেন্ড টাইমআউট (নেটওয়ার্ক ফেইল এড়াতে)
   });
 }
 
@@ -79,12 +79,11 @@ async function processData() {
 
   const urls = [];
   for (const cat of categories) {
-    for (let page = 1; page <= 4; page++) {
+    for (let page = 1; page <= 5; page++) {
       urls.push(`${BASE_URL}/live-tvs?category=${cat}&page=${page}&_rsc=1`);
     }
   }
 
-  // সমান্তরালভাবে দ্রুত ফেচ করা
   const results = await Promise.all(urls.map(url => fetchData(url)));
   const rawData = results.join("\n");
 
@@ -95,6 +94,8 @@ async function processData() {
 
   let extractedChannels = [];
   const seenUrls = new Set();
+  
+  // RSC ডাটার সম্পূর্ণ ব্লক আলাদা করা
   const rawBlocks = cleanedData.split(/(?=\{"id"|\{"title"|\{"name")/g);
 
   for (const block of rawBlocks) {
@@ -107,26 +108,30 @@ async function processData() {
     if (seenUrls.has(streamUrl)) continue;
 
     let title = "";
+    // অরিজিনাল চ্যানেল নাম নিষ্কাশন
     const titleMatch = block.match(/"(?:title|name|channelName|tvName|label)"\s*:\s*"([^"]+)"/i);
     if (titleMatch) {
       let val = titleMatch[1].replace(/\\t|\\n|\\r/g, "").trim();
-      const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs"];
-      if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val)) {
+      const junk = ["viewport", "description", "Noir", "Default", "NEXT_LOCALE", "G", "Ayna OTT", "Bangla", "Channels", "Live-tvs", "icon", "theme-color"];
+      if (!junk.includes(val) && !/^[a-zA-Z0-9]{12,}$/.test(val) && val.length > 1) {
         title = val;
       }
     }
 
     if (!title) continue;
 
+    // S3 লোগো লিঙ্ক ফিক্স (s3.aynaott.com)
     let logoUrl = "";
     const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
-                      block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
-                      block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+                      block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i);
 
     if (logoMatch) {
       let extracted = logoMatch[1].trim();
-      if (extracted.startsWith("/")) extracted = BASE_URL + extracted;
-      if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
+      if (extracted.startsWith("/")) {
+        logoUrl = "https://s3.aynaott.com" + extracted;
+      } else if (!extracted.startsWith("http")) {
+        logoUrl = "https://s3.aynaott.com/storage/" + extracted;
+      } else {
         logoUrl = extracted;
       }
     }
