@@ -27,17 +27,18 @@ const CATEGORY_MAP = {
         'colors rishtey', 'zee anmol', 'star utsav'
     ],
     'Movies': [
-        // বিফোর ইউ (B4U), কাড়াক (Kadak) ও অন্যান্য আপডেট মুভি চ্যানেল
-        'b4u kadak', 'b4u movies', 'b4u plus', 'b4u', 'kadak', 'ifilm',
-        // বাংলা মুভি চ্যানেল
+        // বিফোর ইউ মুভিজ ও ইফিল্ম
+        'b4u kadak', 'b4u movies', 'b4u plus', 'kadak', 'ifilm',
+        // সনি মুভি চ্যানেলসমূহ
+        'sony max', 'sony max 2', 'sony wah', 'sony pix', 'sony pix hd',
+        // এইচবিও (HBO) চ্যানেলসমূহ
+        'hbo', 'hbo hd', 'hbo hits', 'hbo signature', 'hbo family',
+        // বাংলা ও অন্যান্য মুভি চ্যানেল
         'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'khushboo',
-        // হিন্দি ও সাউথ ইন্ডিয়ান ডাবড মুভি চ্যানেল
-        'star gold', 'zee cinema', 'sony max', 'colors cineplex', 'goldmines', 'sony wah', 
+        'star gold', 'zee cinema', 'colors cineplex', 'goldmines', 
         'star utsav movies', 'zee anmol cinema', 'enterr10 movies', 'cinema tv', 
         'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
-        // হলিউড ও ইংরেজি মুভি চ্যানেল
-        'hbo', 'star movies', 'sony pix', 'wb', 'warner bros', 'axn', 'fox movies', 
-        'cinema world', 'movies now', 'mnx', 'romedy now'
+        'star movies', 'wb', 'warner bros', 'axn', 'fox movies', 'cinema world', 'movies now', 'mnx', 'romedy now'
     ],
     'Infotainment': [
         'discovery', 'national geographic', 'nat geo', 'animal planet', 'history tv', 
@@ -45,21 +46,31 @@ const CATEGORY_MAP = {
     ],
     'Kids': [
         'cartoon network', 'nick', 'nickelodeon', 'pogo', 'hungama', 'disney', 'duronto', 
-        'sonic', 'discovery kids', 'baby tv'
+        'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'duck tv', 'nick jr'
     ],
     'Music': [
-        'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'b4u music', 'm4u', 'music india'
+        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
     ],
     'Islamic': [
-        'al quran', 'quran kareem', 'quran tv', 'makkah', 'madinah', 'saudi quran', 'saudi sunnah', 
-        'peace tv', 'peace tv bangla', 'peace tv urdu', 'islamic tv', 'sunnah tv', 'guide us', 
-        'iqraa', 'huda tv', 'madani channel', 'islam'
+        'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
+        'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 'peace tv urdu', 
+        'islamic tv', 'sunnah tv', 'guide us', 'iqraa', 'huda tv', 'madani channel', 'islam'
     ]
 };
 
 function detectCategory(channelName, rawCategory) {
     const nameLower = (channelName || '').toLowerCase().trim();
     const catLower = (rawCategory || '').toLowerCase().trim();
+
+    // আল কুরআন চ্যানেলকে আগে নিশ্চিতভাবে Islamic ক্যাটাগরিতে অ্যাসাইন করা
+    if (nameLower.includes('quran') || nameLower.includes('kareem') || nameLower.includes('makkah') || nameLower.includes('madinah')) {
+        return 'Islamic';
+    }
+
+    // B4U Music যাতে শুধুই Music ক্যাটাগরিতে যায়
+    if (nameLower.includes('b4u music')) {
+        return 'Music';
+    }
 
     for (const [categoryName, keywords] of Object.entries(CATEGORY_MAP)) {
         if (keywords.some(keyword => nameLower.includes(keyword) || catLower.includes(keyword))) {
@@ -204,7 +215,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Updated playlist generated with B4U Kadak/Movies and Quran Kareem properly categorized.`);
+        console.log(`Success! Updated playlist generated successfully.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
