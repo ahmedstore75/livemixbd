@@ -8,6 +8,11 @@ const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
 // আরও বেশি জনপ্রিয় চ্যানেল ও ক্যাটাগরির আপডেট লিস্ট
 const CATEGORY_MAP = {
+    'Islamic': [
+        'makkah', 'madinah', 'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 
+        'peace tv urdu', 'islamic tv', 'quran tv', 'sunnah tv', 'guide us', 'iqraa', 
+        'huda tv', 'madani channel', 'islam'
+    ],
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
         'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro', 'eurosport', 'a sports', 
@@ -197,7 +202,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ${finalJsonChannels.length} popular channels.`);
+        console.log(`Success! Generated circle.m3u & circle.json with ${finalJsonChannels.length} popular channels across 9 categories.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
