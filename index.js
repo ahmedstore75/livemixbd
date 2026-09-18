@@ -6,6 +6,27 @@ puppeteer.use(StealthPlugin());
 
 const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
+// পপুলার চ্যানেলগুলোর কি-ওয়ার্ড বা নামের তালিকা
+const POPULAR_KEYWORDS = [
+    // News Channels
+    'somoy', 'jamuna', 'independent', 'ekattor', '71', 'channel 24', 'dbclearning', 'dbc', 'news24', 'atn news', 'bvnews',
+    // Entertainment & Movies (BD & India)
+    'star plus', 'star jalsha', 'zee bangla', 'zee tv', 'colors', 'sony tv', 'sony sab', 'star gold', 'zee cinema', 'sony max',
+    'atn bangla', 'channel i', 'ntv', 'rtv', 'banglavision', 'boishakhi', 'deepto', 'nagorik', 'duronto', 'maasranga', 'gazi', 'gtv',
+    // Sports
+    't sports', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 'ten 2', 'ten 3', 'willow', 'ptv sports', 'astro',
+    // Infotainment & Kids
+    'discovery', 'national geographic', 'nat geo', 'animal planet', 'nick', 'pogo', 'cartoon network', 'hungama', 'disney'
+];
+
+function isPopularChannel(channelName) {
+    if (!channelName) return false;
+    const nameLower = channelName.toLowerCase().trim();
+    
+    // চেক করবে চ্যানেল নাম পপুলার লিস্টের কোনো কি-ওয়ার্ডের সাথে মেলে কিনা
+    return POPULAR_KEYWORDS.some(keyword => nameLower.includes(keyword));
+}
+
 function getChannelLogo(channel) {
     if (!channel) return '';
     return channel.poster || channel.thumbnail || channel.logo || channel.icon || channel.image || '';
@@ -47,7 +68,6 @@ async function generatePlaylists() {
         let currentPage = 1;
         let totalPages = 1;
 
-        // পেজিনেশন লুপ - সব পেজ থেকে ডাটা স্ক্যান করবে
         do {
             const url = `${BASE_API_URL}${currentPage}`;
             console.log(`Fetching Page ${currentPage} of ${totalPages}...`);
@@ -56,11 +76,9 @@ async function generatePlaylists() {
             const content = await page.evaluate(() => document.body.innerText || document.body.textContent);
             const responseData = JSON.parse(content);
 
-            // চ্যানেল ডাটা বের করা
             let pageChannels = [];
             if (responseData && responseData.data && Array.isArray(responseData.data.data)) {
                 pageChannels = responseData.data.data;
-                // মোট পেজ সংখ্যা আপডেট করা
                 if (responseData.data.pagination && responseData.data.pagination.totalPages) {
                     totalPages = responseData.data.pagination.totalPages;
                 }
@@ -80,7 +98,7 @@ async function generatePlaylists() {
             currentPage++;
         } while (currentPage <= totalPages);
 
-        console.log(`Total channels fetched across all pages: ${allChannels.length}`);
+        console.log(`Total raw channels fetched: ${allChannels.length}`);
 
         if (allChannels.length === 0) {
             throw new Error('Could not parse any channels from the API response.');
@@ -90,8 +108,14 @@ async function generatePlaylists() {
         const jsonChannels = [];
 
         allChannels.forEach(channel => {
+            const name = channel.title || channel.name || '';
+
+            // পপুলার চ্যানেল ফিল্টারিং শর্ত
+            if (!isPopularChannel(name)) {
+                return; // লিস্টে না মিললে চ্যানেলটি বাদ যাবে
+            }
+
             const id = channel._id || channel.id || '';
-            const name = channel.title || channel.name || 'Unknown Channel';
             const logo = getChannelLogo(channel);
             const category = typeof channel.category === 'object' ? (channel.category?.name || 'General') : (channel.category || 'General');
 
@@ -101,10 +125,8 @@ async function generatePlaylists() {
             if (streamUrls.length > 0) {
                 m3uContent += `#EXTINF:-1 tvg-id="${id}" tvg-logo="${logo}" group-title="${category}",${name}\n`;
 
-                // প্রথম লিংক সাধারণ লিংক
                 m3uContent += `${streamUrls[0]}\n`;
 
-                // অতিরিক্ত লিংকগুলোর সামনে '#'
                 for (let i = 1; i < streamUrls.length; i++) {
                     m3uContent += `#${streamUrls[i]}\n`;
                 }
@@ -122,7 +144,7 @@ async function generatePlaylists() {
             channels: jsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with ALL ${jsonChannels.length} channels.`);
+        console.log(`Success! Generated circle.m3u & circle.json with ${jsonChannels.length} popular channels.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
