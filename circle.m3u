@@ -1,17 +1,10 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="d614da2b-21fd-45e4-816f-0de46db5cf25" tvg-logo="https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp" group-title="General",T Sports 
-https://tvsen7.aynascope.net/Sports1/index.m3u8
-#https://tvsen7.aynascope.net/Sports1/index.m3u8
-
 #EXTINF:-1 tvg-id="2d40c804-f163-4171-8949-15da49e337ea" tvg-logo="https://api.cirkletv.com/files/PS_1_1787305037500_ec9cd529addf41cb.webp" group-title="General",Premier Sports 1
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
 
 #EXTINF:-1 tvg-id="97648766-4490-41cc-980e-e569faeddd4e" tvg-logo="https://api.cirkletv.com/files/pksports_1786626635171_dc66352a7666f1dc.webp" group-title="General",PK Sports
 https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
-
-#EXTINF:-1 tvg-id="9543a0d4-922f-46c7-9f74-b7cb3a1025e9" tvg-logo="https://api.cirkletv.com/files/TEN_Sports_Logo_1788630369790_fd33a4a44e429c9d.webp" group-title="General",Ten Sports
-https://robitv.com/lps/https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8
 
 #EXTINF:-1 tvg-id="0ac10a95-5435-479f-b537-4dec4f59f7cf" tvg-logo="https://api.cirkletv.com/files/cricbuzz_1786727115094_38c2b5cfcb846aa3.webp" group-title="General",Cricbuzz
 https://otv.hridoytv-engine.workers.dev/?d=IAYdFFVWezsnIDo6NiUATQocDnA8GxkdVicqFVZuBAcHDnlcBFcaQWszYn5jbmZmVFNFVUZ5JB0EHRdifF0YaAEDU1JxEFEHXU83Zmd4YDRtMAZRS1VAOzRLXhoYanlUGjsBAwEFKUpYUAxANTNuLmBmO2NcBRRQFmpoQA&expire=47753355654
@@ -219,9 +212,6 @@ https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
 #EXTINF:-1 tvg-id="17c00871-89e4-41f8-a7eb-4bfb72269c47" tvg-logo="https://www.parsatv.com/index_files/channels/bizmusic.jpg" group-title="General",BIZ Music
 https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="e859df3c-9ae2-432c-854b-4451f6600a7f" tvg-logo="https://api.cirkletv.com/files/jalsha_movies_1786332538730_2c0b529e814550a4.webp" group-title="General",Jalsha Movies HD
-https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8
-
 #EXTINF:-1 tvg-id="7e26d9ae-7c19-43ad-938c-014efabb5045" tvg-logo="https://api.cirkletv.com/files/zee_bangla_sonar_1786332945786_d1f5d421d8d2c43c.webp" group-title="General",Zee Bangla Cinema
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
 
@@ -306,9 +296,6 @@ https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="257f8905-831b-4041-abda-c1a4aad4fe54" tvg-logo="https://e7.pngegg.com/pngimages/407/223/png-clipart-quran-mecca-television-channel-television-show-the-holy-quran-miscellaneous-television.png" group-title="General",Quran TV
 https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="605709c5-3888-4121-ad0c-022039f51c73" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRXM2J7y2LkoE63vv2He9SF1dMo3pS9hmEC23wzJv3maIccQ1e912eTGNSN74Riwx03whZi5tyKXHKEDSFl4AO1JrwjCIlMhglN-nOjmGhBHBnhp1EqdLB5hwV3jHgKUDlzNFW1Cv8qrMylfmiIosSwFmK72-h-LTinSr1bpDVfNm1p8SlrILxKesdgw/s1080/1000008187.png" group-title="General",Islamic TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamictvbd.stream/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-id="9c4feb15-7154-4572-a4b6-74ce0fcb518d" tvg-logo="https://www.jagobd.com/wp-content/uploads/2024/08/logo_50.png" group-title="General",Peace Tv Bangla
 https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8
 
@@ -329,9 +316,6 @@ https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-
 
 #EXTINF:-1 tvg-id="8d5f6a82-cba2-4689-80e2-85e119899bda" tvg-logo="https://images-na.ssl-images-amazon.com/images/I/71CywdrFaZL.png" group-title="General",Madina Live
 https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8
-
-#EXTINF:-1 tvg-id="619b3152-b3cc-41db-8cb7-850d26547361" tvg-logo="https://www.bizasialive.com/wp-content/uploads/2022/09/islam-channel001.jpg" group-title="General",Islam Bangla
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="5dc1b5c9-8f0c-4f58-9501-bd683809c701" tvg-logo="https://i.imgur.com/T40spJw.png" group-title="General",Qatar Television
 https://live.kwikmotion.com/qtv1live/qtv1.smil/qtv1publish/qtv1_480p/chunks.m3u8
@@ -365,9 +349,6 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus5.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="22ddfa66-1592-4009-9691-b04965e70d15" tvg-logo="https://s3.aynaott.com/storage/9882913a8d68aa99c0501b64749d6320" group-title="General",ABN
 https://mediaserver.abnvideos.com/streams/abnurdu.m3u8
-
-#EXTINF:-1 tvg-id="27067781-3454-4335-98f4-c97471ece798" tvg-logo="" group-title="General",TELECOSTA GUATEMALA
-https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8
 
 #EXTINF:-1 tvg-id="33a146e3-662a-4bc7-a419-d00347abef89" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/CGTN-2.svg/langfr-330px-CGTN-2.svg.png" group-title="General",CGTN 1
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master540p.m3u8
@@ -441,6 +422,9 @@ https://d1wal6k3d7ssin.cloudfront.net/out/v1/ea91db0906c847a4931b46a9ec36e77b/in
 #EXTINF:-1 tvg-id="04902d48-156a-4021-9298-37f4d645dd40" tvg-logo="https://i.imgur.com/E65GQN9.png" group-title="General",DELUXE MUSIC
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
 
+#EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="General",FehérvárTV
+https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2
+
 #EXTINF:-1 tvg-id="ccff1c2e-c07b-4c7b-b50d-22b1f5d5b51b" tvg-logo="https://i.imgur.com/JHv0WxM.png" group-title="General",CGTN Documentary English 
 https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8
 
@@ -485,6 +469,9 @@ https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="1baea575-2d83-4539-a3eb-2565757412cd" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXMpIa-Ckqus5ll5uOh9vNZc7_ekC8gzp47_m9tSLqe3KbPGpr2kWhELxLHj-d25HSOh_ys__QnM1ccCK7x_1jeO8KWWj6sg6cZP3u0hJD9QS9nEdWrCCF9qU21nekj758dLm9yaBF9Qw8jxVtY5uuANki_WjX9kEui7iBGf9bpdzCLW1kuodOUTJ5lA/s600/Nur_20251227_140413_0000.png" group-title="General",Global TV
 https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8?e=1784102573&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=3b36e6e9d0ee3e8ec8ddd9a8c61acf71
+
+#EXTINF:-1 tvg-id="e1f927e2-cb61-409e-bfed-9a3b074023f3" tvg-logo="https://www.jagobd.com/wp-content/uploads/2016/02/timetv.jpg?x67896" group-title="General",Time Televison | USA
+https://app.ncare.live/live-orgin/timetvusa.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="38d3f464-7b9a-44e8-a5d8-d7f2f10644c2" tvg-logo="https://api.cirkletv.com/files/gold_cricket_1784942387901_9a25fb20578e51e1.webp" group-title="General",Gold cricket
 https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/manifest.m3u8
@@ -689,6 +676,9 @@ https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/pl
 
 #EXTINF:-1 tvg-id="93450f4e-9029-4960-9e8a-68209d3ab88e" tvg-logo="https://i.imgur.com/xwz9zKk.jpeg" group-title="General",People Are Awesome
 https://jukin-peopleareawesome-2-it.samsung.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="7fc1892e-61cd-4be9-8cc3-7455e860a021" tvg-logo="https://api.cirkletv.com/files/images_d7df8a2523be6a1fc0c54ddafc046dc2_playmist_independent_400x400_1788518137228_7c10d6291d3dbafa.webp" group-title="General",independent
+https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8?e=1784102536&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=faa76e200f238010e464d45a3135f138
 
 #EXTINF:-1 tvg-id="2ad6ce3c-721a-456c-b2d5-d945967ef7e1" tvg-logo="https://api.cirkletv.com/files/images__10__1789065706712_a784df8d9f876e11.webp" group-title="General",Ekhon Tv
 https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8?e=1784102563&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=b5e80a73380863be907284374bdb2bda
@@ -1029,6 +1019,9 @@ https://stream6-rai-it.akamaized.net/live/uninettuno/playlist.m3u8
 #EXTINF:-1 tvg-id="52ae9a86-1334-4011-8e27-f40632ce6a6c" tvg-logo="https://i.imgur.com/zuyYIca.png" group-title="General",Egnatia
 https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u
 
+#EXTINF:-1 tvg-id="54ebb14b-7661-4b5f-b626-2c3c7c3aac35" tvg-logo="https://i.imgur.com/nrEtmBN.png" group-title="General",Start
+https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8
+
 #EXTINF:-1 tvg-id="5746b78a-1148-49ea-95fe-f7d2eb08c5bd" tvg-logo="https://i.imgur.com/FJEeYiz.png" group-title="General",Dijlah TV
 https://ghaasiflu.online/Dijlah/tracks-v1a1/playlist.m3u8
 
@@ -1239,6 +1232,9 @@ https://stream.rossinitv.it/memfs/3bca4ad7-adfc-4610-ac0e-e826743ddc57.m3u8
 #EXTINF:-1 tvg-id="aeb7de03-8d01-4b53-9f7d-35ba7e34ad20" tvg-logo="https://i.imgur.com/kRexw3w.png" group-title="General",Deluxe 139
 https://59d7d6f47d7fc.streamlock.net/pierstyle/pierstyle/playlist.m3u8
 
+#EXTINF:-1 tvg-id="b07aa14b-1832-4a85-91d9-d74f906a8443" tvg-logo="https://i.imgur.com/orqEzJ6.png" group-title="General",Fano Tv
+https://diretta.arcapuglia.it:8080/live/fanotv/index.m3u8
+
 #EXTINF:-1 tvg-id="b2b0127d-eddb-46fd-b0b3-96cfc6963d4d" tvg-logo="https://i.imgur.com/9jeNlLE.png" group-title="General",Iunior Tv
 https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
 
@@ -1247,9 +1243,6 @@ https://www.ntimedia.it/video/S0B/S0B_master.m3u8
 
 #EXTINF:-1 tvg-id="b584921b-1ac8-484e-9666-91f476f09052" tvg-logo="https://i.imgur.com/z05VSSN.png" group-title="General",Icaro Tv Rimini
 https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="b606a75c-8e3a-4977-8879-33b3fe8bcf33" tvg-logo="https://i.imgur.com/EDGez2x.png" group-title="General",Nuvola Tv
-https://stream.nuvola.tv:8181/memfs/4aaa6328-1879-4ebf-b18a-498146d0c61c.m3u8
 
 #EXTINF:-1 tvg-id="b705c563-0ec1-4042-aac9-51a6840238c0" tvg-logo="https://i.imgur.com/u0ezKgE.png" group-title="General",Rete Sole
 https://5926fc9c7c5b2.streamlock.net/9332/9332/playlist.m3u8
@@ -1563,9 +1556,6 @@ https://d3pvma9xb2775h.cloudfront.net/live/omropfryslan/f8f68bd5/playlist.m3u8
 #EXTINF:-1 tvg-id="c3b292ad-ba2d-4672-a594-a3810241a88c" tvg-logo="https://i.imgur.com/5oy5Nuu.png" group-title="General",Super J Tv
 https://59d39900ebfb8.streamlock.net/SuperJtv/SuperJtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ccf8eaf6-2d2f-42fc-8688-fb4138251551" tvg-logo="https://i.imgur.com/CrlzHjv.jpeg" group-title="General",Telecity Piemonte
-https://64b16f23efbee.streamlock.net/telecitypiemonte/telecitypiemonte/playlist.m3u8
-
 #EXTINF:-1 tvg-id="cd1afb8a-a019-4444-9130-ebefec6f16f5" tvg-logo="https://i.imgur.com/bkSPcs4.png" group-title="General",Tele Mantova
 https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8
 
@@ -1628,6 +1618,9 @@ https://qvcuk-live.akamaized.net/hls/live/2097112/qby/3/3.m3u8
 
 #EXTINF:-1 tvg-id="265dc0ef-706f-4d37-b4d5-ff4447ffa23b" tvg-logo="https://i.imgur.com/4FXiyjn.png" group-title="General",MBC Persia
 https://shls-mbcpersia-prod-dub.shahid.net/out/v1/bdc7cd0d990e4c54808632a52c396946/index.m3u8
+
+#EXTINF:-1 tvg-id="26b39049-d9c8-45ee-b4bd-49501089ebb1" tvg-logo="https://i.imgur.com/j786OLG.png" group-title="General",TRT 1
+https://tv-trt1.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="2c0f3959-6b22-4d52-a6d7-04fc35f58e22" tvg-logo="https://i5.satexpat.com/cha/ae/al-wousta-95x90.gif" group-title="General",Al Wousta
 https://svs.itworkscdn.net/alwoustalive/alwoustatv.smil/playlist.m3u8

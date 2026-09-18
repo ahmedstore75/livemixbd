@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-09-17T19:59:41.126Z",
-  "total_channels": 574,
+  "updated_at": "2026-09-18T04:02:08.563Z",
+  "total_channels": 572,
   "channels": [
-    {
-      "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
-      "name": "T Sports ",
-      "logo": "https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp",
-      "category": "General",
-      "urls": [
-        "https://tvsen7.aynascope.net/Sports1/index.m3u8",
-        "https://tvsen7.aynascope.net/Sports1/index.m3u8"
-      ]
-    },
     {
       "id": "2d40c804-f163-4171-8949-15da49e337ea",
       "name": "Premier Sports 1",
@@ -28,15 +18,6 @@
       "category": "General",
       "urls": [
         "https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8"
-      ]
-    },
-    {
-      "id": "9543a0d4-922f-46c7-9f74-b7cb3a1025e9",
-      "name": "Ten Sports",
-      "logo": "https://api.cirkletv.com/files/TEN_Sports_Logo_1788630369790_fd33a4a44e429c9d.webp",
-      "category": "General",
-      "urls": [
-        "https://robitv.com/lps/https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8"
       ]
     },
     {
@@ -654,15 +635,6 @@
       ]
     },
     {
-      "id": "e859df3c-9ae2-432c-854b-4451f6600a7f",
-      "name": "Jalsha Movies HD",
-      "logo": "https://api.cirkletv.com/files/jalsha_movies_1786332538730_2c0b529e814550a4.webp",
-      "category": "General",
-      "urls": [
-        "https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8"
-      ]
-    },
-    {
       "id": "7e26d9ae-7c19-43ad-938c-014efabb5045",
       "name": "Zee Bangla Cinema",
       "logo": "https://api.cirkletv.com/files/zee_bangla_sonar_1786332945786_d1f5d421d8d2c43c.webp",
@@ -915,15 +887,6 @@
       ]
     },
     {
-      "id": "605709c5-3888-4121-ad0c-022039f51c73",
-      "name": "Islamic TV",
-      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRXM2J7y2LkoE63vv2He9SF1dMo3pS9hmEC23wzJv3maIccQ1e912eTGNSN74Riwx03whZi5tyKXHKEDSFl4AO1JrwjCIlMhglN-nOjmGhBHBnhp1EqdLB5hwV3jHgKUDlzNFW1Cv8qrMylfmiIosSwFmK72-h-LTinSr1bpDVfNm1p8SlrILxKesdgw/s1080/1000008187.png",
-      "category": "General",
-      "urls": [
-        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamictvbd.stream/tracks-v1a1/mono.m3u8"
-      ]
-    },
-    {
       "id": "9c4feb15-7154-4572-a4b6-74ce0fcb518d",
       "name": "Peace Tv Bangla",
       "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/logo_50.png",
@@ -984,15 +947,6 @@
       "category": "General",
       "urls": [
         "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8"
-      ]
-    },
-    {
-      "id": "619b3152-b3cc-41db-8cb7-850d26547361",
-      "name": "Islam Bangla",
-      "logo": "https://www.bizasialive.com/wp-content/uploads/2022/09/islam-channel001.jpg",
-      "category": "General",
-      "urls": [
-        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8"
       ]
     },
     {
@@ -1092,15 +1046,6 @@
       "category": "General",
       "urls": [
         "https://mediaserver.abnvideos.com/streams/abnurdu.m3u8"
-      ]
-    },
-    {
-      "id": "27067781-3454-4335-98f4-c97471ece798",
-      "name": "TELECOSTA GUATEMALA",
-      "logo": "",
-      "category": "General",
-      "urls": [
-        "https://tv91.hostingnuclear.com:19360/telecosta/telecosta.m3u8"
       ]
     },
     {
@@ -1320,6 +1265,15 @@
       ]
     },
     {
+      "id": "e0a22e01-451e-4c52-9694-962aa6a77f76",
+      "name": "FehérvárTV",
+      "logo": "https://www.fehervartv.hu/css/img/icon-1-2.png",
+      "category": "General",
+      "urls": [
+        "https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2"
+      ]
+    },
+    {
       "id": "ccff1c2e-c07b-4c7b-b50d-22b1f5d5b51b",
       "name": "CGTN Documentary English ",
       "logo": "https://i.imgur.com/JHv0WxM.png",
@@ -1452,6 +1406,15 @@
       "category": "General",
       "urls": [
         "https://tvsen6.aynaott.com/y0q9eFAuquAtvTxRzUHq/index.m3u8?e=1784102573&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=3b36e6e9d0ee3e8ec8ddd9a8c61acf71"
+      ]
+    },
+    {
+      "id": "e1f927e2-cb61-409e-bfed-9a3b074023f3",
+      "name": "Time Televison | USA",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/timetv.jpg?x67896",
+      "category": "General",
+      "urls": [
+        "https://app.ncare.live/live-orgin/timetvusa.stream/playlist.m3u8"
       ]
     },
     {
@@ -2064,6 +2027,15 @@
       "category": "General",
       "urls": [
         "https://jukin-peopleareawesome-2-it.samsung.wurl.tv/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "7fc1892e-61cd-4be9-8cc3-7455e860a021",
+      "name": "independent",
+      "logo": "https://api.cirkletv.com/files/images_d7df8a2523be6a1fc0c54ddafc046dc2_playmist_independent_400x400_1788518137228_7c10d6291d3dbafa.webp",
+      "category": "General",
+      "urls": [
+        "https://tvsen6.aynaott.com/Wef2Vj67njeYGDqQNFB9/index.m3u8?e=1784102536&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=faa76e200f238010e464d45a3135f138"
       ]
     },
     {
@@ -3084,6 +3056,15 @@
       ]
     },
     {
+      "id": "54ebb14b-7661-4b5f-b626-2c3c7c3aac35",
+      "name": "Start",
+      "logo": "https://i.imgur.com/nrEtmBN.png",
+      "category": "General",
+      "urls": [
+        "https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8"
+      ]
+    },
+    {
       "id": "5746b78a-1148-49ea-95fe-f7d2eb08c5bd",
       "name": "Dijlah TV",
       "logo": "https://i.imgur.com/FJEeYiz.png",
@@ -3714,6 +3695,15 @@
       ]
     },
     {
+      "id": "b07aa14b-1832-4a85-91d9-d74f906a8443",
+      "name": "Fano Tv",
+      "logo": "https://i.imgur.com/orqEzJ6.png",
+      "category": "General",
+      "urls": [
+        "https://diretta.arcapuglia.it:8080/live/fanotv/index.m3u8"
+      ]
+    },
+    {
       "id": "b2b0127d-eddb-46fd-b0b3-96cfc6963d4d",
       "name": "Iunior Tv",
       "logo": "https://i.imgur.com/9jeNlLE.png",
@@ -3738,15 +3728,6 @@
       "category": "General",
       "urls": [
         "https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8"
-      ]
-    },
-    {
-      "id": "b606a75c-8e3a-4977-8879-33b3fe8bcf33",
-      "name": "Nuvola Tv",
-      "logo": "https://i.imgur.com/EDGez2x.png",
-      "category": "General",
-      "urls": [
-        "https://stream.nuvola.tv:8181/memfs/4aaa6328-1879-4ebf-b18a-498146d0c61c.m3u8"
       ]
     },
     {
@@ -4686,15 +4667,6 @@
       ]
     },
     {
-      "id": "ccf8eaf6-2d2f-42fc-8688-fb4138251551",
-      "name": "Telecity Piemonte",
-      "logo": "https://i.imgur.com/CrlzHjv.jpeg",
-      "category": "General",
-      "urls": [
-        "https://64b16f23efbee.streamlock.net/telecitypiemonte/telecitypiemonte/playlist.m3u8"
-      ]
-    },
-    {
       "id": "cd1afb8a-a019-4444-9130-ebefec6f16f5",
       "name": "Tele Mantova",
       "logo": "https://i.imgur.com/bkSPcs4.png",
@@ -4881,6 +4853,15 @@
       "category": "General",
       "urls": [
         "https://shls-mbcpersia-prod-dub.shahid.net/out/v1/bdc7cd0d990e4c54808632a52c396946/index.m3u8"
+      ]
+    },
+    {
+      "id": "26b39049-d9c8-45ee-b4bd-49501089ebb1",
+      "name": "TRT 1",
+      "logo": "https://i.imgur.com/j786OLG.png",
+      "category": "General",
+      "urls": [
+        "https://tv-trt1.medya.trt.com.tr/master.m3u8"
       ]
     },
     {
