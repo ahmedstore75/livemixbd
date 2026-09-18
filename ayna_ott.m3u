@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="" x-tvg-url=""
-#EXTINF:-1 group-title="Bangla" tvg-name="Channel I" tvg-logo="https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-05-02/images_0a83c04b72a6d2579715729a2ba80aa8_playmist_ayna_logo.png", Channel I
+#EXTINF:-1 group-title="Entertainment" tvg-name="Home" tvg-logo="https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-05-02/images_0a83c04b72a6d2579715729a2ba80aa8_playmist_ayna_logo.png", Home
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8

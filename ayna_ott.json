@@ -1,9 +1,9 @@
 [
   {
-    "name": "Channel I",
+    "name": "Home",
     "logo": "https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-05-02/images_0a83c04b72a6d2579715729a2ba80aa8_playmist_ayna_logo.png",
     "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8",
-    "category": "Bangla",
-    "priority": 2
+    "category": "Entertainment",
+    "priority": 999
   }
 ]
