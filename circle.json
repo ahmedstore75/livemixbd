@@ -1,97 +1,7 @@
 {
-  "updated_at": "2026-09-18T13:56:00.352Z",
+  "updated_at": "2026-09-18T14:01:56.696Z",
   "total_channels": 158,
   "channels": [
-    {
-      "id": "a54eb6fb-1787-43f0-a4e5-503faac3ccb1",
-      "name": "Huda TV",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_huda_%D8%AD%D8%AC%D9%85_%D9%83%D8%A8%D9%8A%D8%B1.gif",
-      "category": "Islamic",
-      "urls": [
-        "https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8"
-      ]
-    },
-    {
-      "id": "257f8905-831b-4041-abda-c1a4aad4fe54",
-      "name": "Quran TV",
-      "logo": "https://e7.pngegg.com/pngimages/407/223/png-clipart-quran-mecca-television-channel-television-show-the-holy-quran-miscellaneous-television.png",
-      "category": "Islamic",
-      "urls": [
-        "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8"
-      ]
-    },
-    {
-      "id": "605709c5-3888-4121-ad0c-022039f51c73",
-      "name": "Islamic TV",
-      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRXM2J7y2LkoE63vv2He9SF1dMo3pS9hmEC23wzJv3maIccQ1e912eTGNSN74Riwx03whZi5tyKXHKEDSFl4AO1JrwjCIlMhglN-nOjmGhBHBnhp1EqdLB5hwV3jHgKUDlzNFW1Cv8qrMylfmiIosSwFmK72-h-LTinSr1bpDVfNm1p8SlrILxKesdgw/s1080/1000008187.png",
-      "category": "Islamic",
-      "urls": [
-        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamictvbd.stream/tracks-v1a1/mono.m3u8"
-      ]
-    },
-    {
-      "id": "9c4feb15-7154-4572-a4b6-74ce0fcb518d",
-      "name": "Peace Tv Bangla",
-      "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/logo_50.png",
-      "category": "Islamic",
-      "urls": [
-        "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8"
-      ]
-    },
-    {
-      "id": "f7c89461-070b-4569-8f57-e6f5b9c434a8",
-      "name": "Peace TV Urdu",
-      "logo": "https://i.ibb.co/598TYnC/20240827-092020.png",
-      "category": "Islamic",
-      "urls": [
-        "https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8"
-      ]
-    },
-    {
-      "id": "5bfc9839-4757-4267-8e74-0f0d633ab6ff",
-      "name": "Peace TV English",
-      "logo": "https://i.ibb.co/598TYnC/20240827-092020.png",
-      "category": "Islamic",
-      "urls": [
-        "https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8"
-      ]
-    },
-    {
-      "id": "1fa9a05b-31d6-4e4a-a3dd-baea538c756c",
-      "name": "Saudi Quran",
-      "logo": "https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj",
-      "category": "Islamic",
-      "urls": [
-        "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8"
-      ]
-    },
-    {
-      "id": "6453279a-d579-43da-9b7b-0d6c58a464ec",
-      "name": "Makkah TV",
-      "logo": "https://i.ibb.co/TtHtGkW/20240803-172601.png",
-      "category": "Islamic",
-      "urls": [
-        "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/makkahtv.stream/playlist.m3u8"
-      ]
-    },
-    {
-      "id": "09ea1e5f-a18e-410f-a101-34da6d3e1902",
-      "name": "Makkah Live",
-      "logo": "https://i.imgur.com/colOISC.jpeg",
-      "category": "Islamic",
-      "urls": [
-        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/tracks-v1a1/mono.m3u8"
-      ]
-    },
-    {
-      "id": "619b3152-b3cc-41db-8cb7-850d26547361",
-      "name": "Islam Bangla",
-      "logo": "https://www.bizasialive.com/wp-content/uploads/2022/09/islam-channel001.jpg",
-      "category": "Islamic",
-      "urls": [
-        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8"
-      ]
-    },
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
       "name": "T Sports ",
@@ -1429,6 +1339,96 @@
       "category": "Music",
       "urls": [
         "https://live.presstv.ir/hls/ifilmen_4_482/index.m3u8"
+      ]
+    },
+    {
+      "id": "a54eb6fb-1787-43f0-a4e5-503faac3ccb1",
+      "name": "Huda TV",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_huda_%D8%AD%D8%AC%D9%85_%D9%83%D8%A8%D9%8A%D8%B1.gif",
+      "category": "Islamic",
+      "urls": [
+        "https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8"
+      ]
+    },
+    {
+      "id": "257f8905-831b-4041-abda-c1a4aad4fe54",
+      "name": "Quran TV",
+      "logo": "https://e7.pngegg.com/pngimages/407/223/png-clipart-quran-mecca-television-channel-television-show-the-holy-quran-miscellaneous-television.png",
+      "category": "Islamic",
+      "urls": [
+        "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "605709c5-3888-4121-ad0c-022039f51c73",
+      "name": "Islamic TV",
+      "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRXM2J7y2LkoE63vv2He9SF1dMo3pS9hmEC23wzJv3maIccQ1e912eTGNSN74Riwx03whZi5tyKXHKEDSFl4AO1JrwjCIlMhglN-nOjmGhBHBnhp1EqdLB5hwV3jHgKUDlzNFW1Cv8qrMylfmiIosSwFmK72-h-LTinSr1bpDVfNm1p8SlrILxKesdgw/s1080/1000008187.png",
+      "category": "Islamic",
+      "urls": [
+        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamictvbd.stream/tracks-v1a1/mono.m3u8"
+      ]
+    },
+    {
+      "id": "9c4feb15-7154-4572-a4b6-74ce0fcb518d",
+      "name": "Peace Tv Bangla",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/logo_50.png",
+      "category": "Islamic",
+      "urls": [
+        "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8"
+      ]
+    },
+    {
+      "id": "f7c89461-070b-4569-8f57-e6f5b9c434a8",
+      "name": "Peace TV Urdu",
+      "logo": "https://i.ibb.co/598TYnC/20240827-092020.png",
+      "category": "Islamic",
+      "urls": [
+        "https://dzkyvlfyge.erbvr.com/PeaceTvUrdu/index.m3u8"
+      ]
+    },
+    {
+      "id": "5bfc9839-4757-4267-8e74-0f0d633ab6ff",
+      "name": "Peace TV English",
+      "logo": "https://i.ibb.co/598TYnC/20240827-092020.png",
+      "category": "Islamic",
+      "urls": [
+        "https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8"
+      ]
+    },
+    {
+      "id": "1fa9a05b-31d6-4e4a-a3dd-baea538c756c",
+      "name": "Saudi Quran",
+      "logo": "https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj",
+      "category": "Islamic",
+      "urls": [
+        "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8"
+      ]
+    },
+    {
+      "id": "6453279a-d579-43da-9b7b-0d6c58a464ec",
+      "name": "Makkah TV",
+      "logo": "https://i.ibb.co/TtHtGkW/20240803-172601.png",
+      "category": "Islamic",
+      "urls": [
+        "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/makkahtv.stream/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "09ea1e5f-a18e-410f-a101-34da6d3e1902",
+      "name": "Makkah Live",
+      "logo": "https://i.imgur.com/colOISC.jpeg",
+      "category": "Islamic",
+      "urls": [
+        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/tracks-v1a1/mono.m3u8"
+      ]
+    },
+    {
+      "id": "619b3152-b3cc-41db-8cb7-850d26547361",
+      "name": "Islam Bangla",
+      "logo": "https://www.bizasialive.com/wp-content/uploads/2022/09/islam-channel001.jpg",
+      "category": "Islamic",
+      "urls": [
+        "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8"
       ]
     }
   ]
