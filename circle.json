@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T16:28:45.305Z",
-  "total_channels": 170,
+  "updated_at": "2026-09-18T20:28:22.777Z",
+  "total_channels": 171,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -844,15 +844,6 @@
       ]
     },
     {
-      "id": "f11c1f35-2756-4c76-81cf-209b7ede74c7",
-      "name": "Sangeet Bangla",
-      "logo": "https://api.cirkletv.com/files/sangeet_bangla_1786432416841_7ef4d10d6add610b.webp",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://cdn.pishow.tv/ott/live/1143/master.m3u8"
-      ]
-    },
-    {
       "id": "7e26d9ae-7c19-43ad-938c-014efabb5045",
       "name": "Zee Bangla Cinema",
       "logo": "https://api.cirkletv.com/files/zee_bangla_sonar_1786332945786_d1f5d421d8d2c43c.webp",
@@ -889,21 +880,21 @@
       ]
     },
     {
-      "id": "689da1c3-0880-4d12-a407-a9e4c5fa7c65",
-      "name": "ACCU Weather",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
-      ]
-    },
-    {
       "id": "d82ede68-f2c1-4cef-ae0b-d86213b5eab1",
       "name": "RTV Noord",
       "logo": "https://i.imgur.com/pO5Mexa.png",
       "category": "Bangla Entertainment",
       "urls": [
         "https://media.rtvnoord.nl/live/rtvnoord/tv/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "689da1c3-0880-4d12-a407-a9e4c5fa7c65",
+      "name": "ACCU Weather",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
       ]
     },
     {
@@ -1047,7 +1038,7 @@
       "logo": "https://api.cirkletv.com/files/colors_super_1787506414859_c5320ac5648a07dd.webp",
       "category": "Hindi Entertainment",
       "urls": [
-        "https://api.cirkletv.com/api/hridoy-tv-pro/stream/785?expire=43738831219634"
+        "https://d1rc86nwwc9fag.cloudfront.net/260723/smil:colorssuper1.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b"
       ]
     },
     {
@@ -1394,6 +1385,15 @@
       ]
     },
     {
+      "id": "f11c1f35-2756-4c76-81cf-209b7ede74c7",
+      "name": "Sangeet Bangla",
+      "logo": "https://api.cirkletv.com/files/sangeet_bangla_1786432416841_7ef4d10d6add610b.webp",
+      "category": "Music",
+      "urls": [
+        "https://cdn.pishow.tv/ott/live/1143/master.m3u8"
+      ]
+    },
+    {
       "id": "2f0862c0-2a48-4aed-8750-eb94e2e53588",
       "name": "Zoom Music",
       "logo": "https://api.cirkletv.com/files/Zoom_2018_1784940125596_fb60a7f100dffccf.webp",
@@ -1410,6 +1410,15 @@
       "urls": [
         "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/main.mpd",
         "https://streams.tangotv.in/MUSICINDIA/ORIGIN/index.m3u8"
+      ]
+    },
+    {
+      "id": "942d3f0e-2e30-431a-ac1c-fd6244ca3462",
+      "name": "8XM",
+      "logo": "https://api.cirkletv.com/files/file_0000000004b08211bffb9700c83214b9_1789652261145_8914e2499b044c6f.webp",
+      "category": "Music",
+      "urls": [
+        "https://vodzong.mjunoon.tv:8087/streamtest/8XM-131/playlist.m3u8"
       ]
     },
     {
@@ -1447,6 +1456,15 @@
       "category": "Islamic",
       "urls": [
         "https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8"
+      ]
+    },
+    {
+      "id": "12d47344-d040-4d79-a4f5-e1190f4c5b4b",
+      "name": "Al Quran Al Kareem TV",
+      "logo": "https://i.imgur.com/A2fJysM.png",
+      "category": "Islamic",
+      "urls": [
+        "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8"
       ]
     },
     {
@@ -1528,15 +1546,6 @@
       "category": "Islamic",
       "urls": [
         "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8"
-      ]
-    },
-    {
-      "id": "12d47344-d040-4d79-a4f5-e1190f4c5b4b",
-      "name": "Al Quran Al Kareem TV",
-      "logo": "https://i.imgur.com/A2fJysM.png",
-      "category": "Islamic",
-      "urls": [
-        "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8"
       ]
     }
   ]

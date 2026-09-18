@@ -295,9 +295,6 @@ https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
 #EXTINF:-1 tvg-id="1762c938-9560-45ee-8695-387ddfc1c747" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg" group-title="Bangla Entertainment",Asian TV
 https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8?e=1784102565&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=e4293f68c5bc8aa8e6ac3e088ca754f4
 
-#EXTINF:-1 tvg-id="f11c1f35-2756-4c76-81cf-209b7ede74c7" tvg-logo="https://api.cirkletv.com/files/sangeet_bangla_1786432416841_7ef4d10d6add610b.webp" group-title="Bangla Entertainment",Sangeet Bangla
-https://cdn.pishow.tv/ott/live/1143/master.m3u8
-
 #EXTINF:-1 tvg-id="7e26d9ae-7c19-43ad-938c-014efabb5045" tvg-logo="https://api.cirkletv.com/files/zee_bangla_sonar_1786332945786_d1f5d421d8d2c43c.webp" group-title="Bangla Entertainment",Zee Bangla Cinema
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
 
@@ -310,11 +307,11 @@ https://tvsen5.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.fmp4.m3u8?token=26849003e1
 #EXTINF:-1 tvg-id="3498eb15-fd96-4d55-af67-68657f740490" tvg-logo="https://i.imgur.com/v8PlAJO.png" group-title="Bangla Entertainment",Aristanis SuperTv
 https://video2.azotosolutions.com:1936/supertvoristano/supertvoristano/playlist.m3u8
 
-#EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
-
 #EXTINF:-1 tvg-id="d82ede68-f2c1-4cef-ae0b-d86213b5eab1" tvg-logo="https://i.imgur.com/pO5Mexa.png" group-title="Bangla Entertainment",RTV Noord
 https://media.rtvnoord.nl/live/rtvnoord/tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
 
 #EXTINF:-1 tvg-id="59a02173-3583-47ec-9e13-878a8759015f" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4e/CERTV_4_2015.png" group-title="Bangla Entertainment",Canal RTVD 4
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
@@ -366,7 +363,7 @@ http://103.229.254.25:7001/play/a0cs/index.m3u8
 https://jalshabd.com/stream/90.m3u8?expires=1787819231&signature=3eb872b5a96059260e79adaaffa8c0d4ac75b11bf1085ace0ed8241ab1c97a2c
 
 #EXTINF:-1 tvg-id="7758b467-d57c-4c6f-8a38-faa6a31b9502" tvg-logo="https://api.cirkletv.com/files/colors_super_1787506414859_c5320ac5648a07dd.webp" group-title="Hindi Entertainment",Colors Super
-https://api.cirkletv.com/api/hridoy-tv-pro/stream/785?expire=43738831219634
+https://d1rc86nwwc9fag.cloudfront.net/260723/smil:colorssuper1.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
 # ==========================================
 # CATEGORY: MOVIES
@@ -499,12 +496,18 @@ https://s3.itcnbd.live/channel/6693b38291a7d098.m3u8
 # CATEGORY: MUSIC
 # ==========================================
 
+#EXTINF:-1 tvg-id="f11c1f35-2756-4c76-81cf-209b7ede74c7" tvg-logo="https://api.cirkletv.com/files/sangeet_bangla_1786432416841_7ef4d10d6add610b.webp" group-title="Music",Sangeet Bangla
+https://cdn.pishow.tv/ott/live/1143/master.m3u8
+
 #EXTINF:-1 tvg-id="2f0862c0-2a48-4aed-8750-eb94e2e53588" tvg-logo="https://api.cirkletv.com/files/Zoom_2018_1784940125596_fb60a7f100dffccf.webp" group-title="Music",Zoom Music
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
 #EXTINF:-1 tvg-id="45459233-698f-4141-b121-8d8d1e61b6d6" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFFLa5D9PY1QwJccJVBotkle4QNuD4XX4MH49p3ueGZ9y_76Uf1X98DONGky0xa1gwLHfQkubZNgFJyNpIVZlqKJykCAK1YPjJ73S5DLKj9TD-UN6WepH1tWINUYNlds6wSl-SgLn9SsqnDvnwJv-C5GHL3_JcVVZhk8t5acAKXhRKt03OABgRU1E_Hw/s600/Nur_20251227_140529_0000.png" group-title="Music",Music India
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/main.mpd
 #https://streams.tangotv.in/MUSICINDIA/ORIGIN/index.m3u8
+
+#EXTINF:-1 tvg-id="942d3f0e-2e30-431a-ac1c-fd6244ca3462" tvg-logo="https://api.cirkletv.com/files/file_0000000004b08211bffb9700c83214b9_1789652261145_8914e2499b044c6f.webp" group-title="Music",8XM
+https://vodzong.mjunoon.tv:8087/streamtest/8XM-131/playlist.m3u8
 
 #EXTINF:-1 tvg-id="9d52d0b7-bd16-470a-a9e3-e8eb538b98d5" tvg-logo="https://api.cirkletv.com/files/9xm_1787821118694_c6d0adbcf6b0261b.webp" group-title="Music",9xM
 https://wiselp.wiseplayout.com/9XM/HD1080/HD1080.m3u8
@@ -522,6 +525,9 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/pl
 
 #EXTINF:-1 tvg-id="a54eb6fb-1787-43f0-a4e5-503faac3ccb1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_huda_%D8%AD%D8%AC%D9%85_%D9%83%D8%A8%D9%8A%D8%B1.gif" group-title="Islamic",Huda TV
 https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
+
+#EXTINF:-1 tvg-id="12d47344-d040-4d79-a4f5-e1190f4c5b4b" tvg-logo="https://i.imgur.com/A2fJysM.png" group-title="Islamic",Al Quran Al Kareem TV
+https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8
 
 #EXTINF:-1 tvg-id="257f8905-831b-4041-abda-c1a4aad4fe54" tvg-logo="https://e7.pngegg.com/pngimages/407/223/png-clipart-quran-mecca-television-channel-television-show-the-holy-quran-miscellaneous-television.png" group-title="Islamic",Quran TV
 https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8
@@ -549,7 +555,4 @@ https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF9
 
 #EXTINF:-1 tvg-id="619b3152-b3cc-41db-8cb7-850d26547361" tvg-logo="https://www.bizasialive.com/wp-content/uploads/2022/09/islam-channel001.jpg" group-title="Islamic",Islam Bangla
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="12d47344-d040-4d79-a4f5-e1190f4c5b4b" tvg-logo="https://i.imgur.com/A2fJysM.png" group-title="Islamic",Al Quran Al Kareem TV
-https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8
 
