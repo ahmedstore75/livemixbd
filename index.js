@@ -48,7 +48,7 @@ const CATEGORY_MAP = {
         'sonic', 'discovery kids', 'baby tv', 'marvel hq', 'toonami', 'cbeebies', 'sony yay', 'nick jr'
     ],
     'Music': [
-        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india'
+        'b4u music', 'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'm4u', 'music india', 'balle balle', 'yrf music'
     ],
     'Islamic': [
         'al quran', 'quran kareem', 'quran tv', 'quran', 'kareem', 'makkah', 'madinah', 
