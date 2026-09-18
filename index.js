@@ -18,9 +18,11 @@ const CATEGORY_MAP = {
         'news24', 'atn news', 'bvnews', 'bbc', 'cnn', 'al jazeera', 'ndtv', 'republic', 'aaj tak'
     ],
     'Bangla Entertainment': [
+        // সনি আট এবং ইন্টারটেন বাংলা যুক্ত করা হয়েছে
+        'sony aath', 'sony ath', 'aath', 'enterr10 bangla', 'enterr 10 bangla', 'enterr10', 'enterr 10',
         'star jalsha', 'zee bangla', 'colors bangla', 'atn bangla', 'channel i', 'ntv', 'rtv', 
         'banglavision', 'boishakhi', 'deepto', 'nagorik', 'maasranga', 'duronto', 'asian tv', 
-        'bangla tv', 'sangeet bangla', 'sun bangla', 'enterr10 bangla'
+        'bangla tv', 'sangeet bangla', 'sun bangla'
     ],
     'Hindi Entertainment': [
         'star plus', 'zee tv', 'colors', 'sony tv', 'sony sab', 'star bharat', 'dangal', 
@@ -62,7 +64,7 @@ function detectCategory(channelName, rawCategory) {
     const nameLower = (channelName || '').toLowerCase().trim();
     const catLower = (rawCategory || '').toLowerCase().trim();
 
-    // আল কুরআন চ্যানেলকে আগে নিশ্চিতভাবে Islamic ক্যাটাগরিতে অ্যাসাইন করা
+    // আল কুরআন চ্যানেলকে নিশ্চিতভাবে Islamic ক্যাটাগরিতে অ্যাসাইন করা
     if (nameLower.includes('quran') || nameLower.includes('kareem') || nameLower.includes('makkah') || nameLower.includes('madinah')) {
         return 'Islamic';
     }
@@ -70,6 +72,11 @@ function detectCategory(channelName, rawCategory) {
     // B4U Music যাতে শুধুই Music ক্যাটাগরিতে যায়
     if (nameLower.includes('b4u music')) {
         return 'Music';
+    }
+
+    // Sony Aath এবং Enterr10 Bangla নিশ্চিতভাবে Bangla Entertainment-এ নিয়ে যাওয়া
+    if (nameLower.includes('aath') || nameLower.includes('ath') || nameLower.includes('enterr10 bangla') || nameLower.includes('enterr 10 bangla')) {
+        return 'Bangla Entertainment';
     }
 
     for (const [categoryName, keywords] of Object.entries(CATEGORY_MAP)) {
@@ -215,7 +222,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Updated playlist generated successfully.`);
+        console.log(`Success! Updated playlist generated with Sony Aath and Enterr10 Bangla included.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
