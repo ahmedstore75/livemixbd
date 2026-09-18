@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T16:01:08.921Z",
-  "total_channels": 168,
+  "updated_at": "2026-09-18T16:15:10.415Z",
+  "total_channels": 169,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -1355,6 +1355,15 @@
       "category": "Kids",
       "urls": [
         "https://tvsen7.aynaott.com/teennick/index.m3u8?e=1784102584&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=d43b3bb62ef7f77b2a1199b0cbd11f74"
+      ]
+    },
+    {
+      "id": "3d83c1b9-f086-40d6-9873-07a2463e3327",
+      "name": "Sony YAY",
+      "logo": "https://api.cirkletv.com/files/SONY_YAY_1784915891094_51838b679ce3b3fe.webp",
+      "category": "Kids",
+      "urls": [
+        "https://d6lk10bkdgfae.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-n0stmvwxmsf5c/playlist.m3u8"
       ]
     },
     {
