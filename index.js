@@ -6,7 +6,7 @@ puppeteer.use(StealthPlugin());
 
 const BASE_API_URL = 'https://api.cirkletv.com/api/live-tv?limit=100&page=';
 
-// ক্যাটাগরি ম্যাপিং (Islamic একদম শেষে রাখা হয়েছে)
+// ক্যাটাগরি ম্যাপিং
 const CATEGORY_MAP = {
     'Sports': [
         'sports', 'cricket', 'football', 't sports', 'gtv', 'gazi', 'star sports', 'sony ten', 
@@ -27,11 +27,13 @@ const CATEGORY_MAP = {
         'colors rishtey', 'zee anmol', 'star utsav'
     ],
     'Movies': [
+        // বিফোর ইউ (B4U), কাড়াক (Kadak) ও অন্যান্য আপডেট মুভি চ্যানেল
+        'b4u kadak', 'b4u movies', 'b4u plus', 'b4u', 'kadak', 'ifilm',
         // বাংলা মুভি চ্যানেল
         'jalsha movies', 'zee bangla cinema', 'colors bangla cinema', 'khushboo',
         // হিন্দি ও সাউথ ইন্ডিয়ান ডাবড মুভি চ্যানেল
         'star gold', 'zee cinema', 'sony max', 'colors cineplex', 'goldmines', 'sony wah', 
-        'star utsav movies', 'zee anmol cinema', 'b4u movies', 'enterr10 movies', 'cinema tv', 
+        'star utsav movies', 'zee anmol cinema', 'enterr10 movies', 'cinema tv', 
         'manoranjan', 'rishtey cineplex', 'utv movies', 'utv action', 'and pictures', '&pictures',
         // হলিউড ও ইংরেজি মুভি চ্যানেল
         'hbo', 'star movies', 'sony pix', 'wb', 'warner bros', 'axn', 'fox movies', 
@@ -46,12 +48,12 @@ const CATEGORY_MAP = {
         'sonic', 'discovery kids', 'baby tv'
     ],
     'Music': [
-        'm tv', 'mtv', '9xm', 'zoom', 'sangeet bangla', 'mastiii', 'b4u music', 'm4u', 'music india'
+        'm tv', 'mtv', '9xm', 'zoom', 'mastiii', 'b4u music', 'm4u', 'music india'
     ],
     'Islamic': [
-        'makkah', 'madinah', 'saudi quran', 'saudi sunnah', 'peace tv', 'peace tv bangla', 
-        'peace tv urdu', 'islamic tv', 'quran tv', 'sunnah tv', 'guide us', 'iqraa', 
-        'huda tv', 'madani channel', 'islam'
+        'al quran', 'quran kareem', 'quran tv', 'makkah', 'madinah', 'saudi quran', 'saudi sunnah', 
+        'peace tv', 'peace tv bangla', 'peace tv urdu', 'islamic tv', 'sunnah tv', 'guide us', 
+        'iqraa', 'huda tv', 'madani channel', 'islam'
     ]
 };
 
@@ -65,7 +67,7 @@ function detectCategory(channelName, rawCategory) {
         }
     }
 
-    return null; // তালিকার বাইরে থাকা অকেজো চ্যানেল স্কিপ করবে
+    return null; // বাকি অকেজো চ্যানেল স্কিপ করবে
 }
 
 function getChannelLogo(channel) {
@@ -202,7 +204,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Generated circle.m3u & circle.json with Islamic category at the END.`);
+        console.log(`Success! Updated playlist generated with B4U Kadak/Movies and Quran Kareem properly categorized.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
