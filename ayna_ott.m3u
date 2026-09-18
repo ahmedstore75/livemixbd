@@ -79,7 +79,7 @@ https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
-#EXTINF:-1 group-title="Bangla" tvg-name="Gazi TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/GaziTV.png", Gazi TV
+#EXTINF:-1 group-title="Bangla" tvg-name="Gazi TV" tvg-logo="https://s3.aynaott.com/storage/images/gazi-tv.png", Gazi TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8
@@ -171,7 +171,7 @@ https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen7.aynascope.net/zY3hJ7pQ2vM5gD8s/index.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/BahrainSports1.png", Bahrain Sports 1
+#EXTINF:-1 group-title="Sports" tvg-name="Bahrain Sports 1" tvg-logo="https://s3.aynaott.com/storage/images/bahrain-sports-1.png", Bahrain Sports 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
@@ -211,7 +211,7 @@ https://tvsen5.aynaott.com/skynews/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://distro001-gb-hls1-prd.delivery.skycdp.com/easel_cdn/ngrp:weather_loop.stream_all/playlist.m3u8
-#EXTINF:-1 group-title="Sports" tvg-name="Sports Fishing TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/SportsFishingTV.png", Sports Fishing TV
+#EXTINF:-1 group-title="Sports" tvg-name="Sports Fishing TV" tvg-logo="https://s3.aynaott.com/storage/images/sports-fishing-tv.png", Sports Fishing TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
@@ -291,7 +291,7 @@ https://tvsen6.aynaott.com/55xNrLdf/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen3.aynaott.com/5CGfPvGp/index.m3u8
-#EXTINF:-1 group-title="Indian" tvg-name="TV9 Bharatvarsh" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/TV9Bharatvarsh.png", TV9 Bharatvarsh
+#EXTINF:-1 group-title="Indian" tvg-name="TV9 Bharatvarsh" tvg-logo="https://s3.aynaott.com/storage/images/tv9-bharatvarsh.png", TV9 Bharatvarsh
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen3.aynaott.com/v9NqPxRd/index.m3u8
@@ -495,7 +495,7 @@ https://tvsen7.aynaott.com/lifetime/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-05/thumbnails_e7c232fc971625f04bb5f1c464a92159_playmist_live_tv_placeholder.png", Test Live TV
+#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://s3.aynaott.com/storage/images/test-live-tv.png", Test Live TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://web.aynaott.com/
 https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
