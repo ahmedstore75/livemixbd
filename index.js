@@ -1,4 +1,4 @@
-const fs = require('fs');
+Const fs = require('fs');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 
@@ -188,7 +188,7 @@ async function generatePlaylists() {
                     name,
                     logo,
                     category: categoryName,
-                    urls: streamUrls
+                    url: streamUrls[0] // কেবল প্রথম লিঙ্কটি রাখা হচ্ছে
                 });
             }
         });
@@ -206,14 +206,15 @@ async function generatePlaylists() {
 
                 channelList.forEach(channel => {
                     m3uContent += `#EXTINF:-1 tvg-id="${channel.id}" tvg-logo="${channel.logo}" group-title="${categoryName}",${channel.name}\n`;
-                    m3uContent += `${channel.urls[0]}\n`;
+                    m3uContent += `${channel.url}\n\n`;
 
-                    for (let i = 1; i < channel.urls.length; i++) {
-                        m3uContent += `#${channel.urls[i]}\n`;
-                    }
-                    m3uContent += `\n`;
-
-                    finalJsonChannels.push(channel);
+                    finalJsonChannels.push({
+                        id: channel.id,
+                        name: channel.name,
+                        logo: channel.logo,
+                        category: channel.category,
+                        urls: [channel.url] // JSON ফাইল ফরম্যাট ঠিক রেখে কেবল ১টি লিঙ্ক থাকবে
+                    });
                 });
             }
         });
@@ -226,7 +227,7 @@ async function generatePlaylists() {
             channels: finalJsonChannels
         }, null, 2), 'utf8');
 
-        console.log(`Success! Updated playlist generated with Infotainment channels.`);
+        console.log(`Success! Updated playlist generated with single stream URLs.`);
 
     } catch (error) {
         console.error('Execution Failed:', error.message);
