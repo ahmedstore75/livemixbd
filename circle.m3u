@@ -6,9 +6,6 @@
 
 #EXTINF:-1 tvg-id="d614da2b-21fd-45e4-816f-0de46db5cf25" tvg-logo="https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp" group-title="Sports",T Sports 
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
-#https://tvsen7.aynascope.net/Sports1/index.m3u8
-#https://tvsen7.aynascope.net/Sports1/index.m3u8
-#https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 
 #EXTINF:-1 tvg-id="2d40c804-f163-4171-8949-15da49e337ea" tvg-logo="https://api.cirkletv.com/files/PS_1_1787305037500_ec9cd529addf41cb.webp" group-title="Sports",Premier Sports 1
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
@@ -30,7 +27,6 @@ https://otv.hridoytv-engine.workers.dev/?d=IAYdFFVWezsnIDo6NiUATQocDnA8GxkdVicqF
 
 #EXTINF:-1 tvg-id="e2588632-0f96-4fa9-b2f1-be5e3cc14862" tvg-logo="https://api.cirkletv.com/files/willow_1782972080164_396453b7eb6dae16.webp" group-title="Sports",Willow Cricbuzz
 https://tvsen5.aynascope.net/willowhd/mono.m3u8
-#https://tvsen7.aynaott.com/rEBp38Ax/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 tvg-id="87af8531-e94e-4971-9073-e4ab81330944" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_06_25_09_53_34_9141_4__2__1788550378513_ea4594111d4ab0d4.webp" group-title="Sports",Sony Sports 1
 https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
@@ -450,7 +446,6 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.
 
 #EXTINF:-1 tvg-id="0b20f43e-cadc-41ed-90a3-e03f25a36c7f" tvg-logo="https://api.cirkletv.com/files/Hridoy_TV_channel__10__1788332992276_63021179cad5be95.webp" group-title="Infotainment",Discovery Pakistan
 https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
-#https://livecdn.live247stream.com/discoverpakistan/web/discoverpakistan/q_480p/chunks.m3u8
 
 #EXTINF:-1 tvg-id="642dd98a-a2d3-4fe1-b36c-30d4ad76c3f1" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_15_29_20_5232_2_1788331828537_0be2b542e968019f.webp" group-title="Infotainment",National geographic 
 https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1784102611&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=be23b688e0d8482e77b3a038a220a900
@@ -507,7 +502,6 @@ https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
 #EXTINF:-1 tvg-id="45459233-698f-4141-b121-8d8d1e61b6d6" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFFLa5D9PY1QwJccJVBotkle4QNuD4XX4MH49p3ueGZ9y_76Uf1X98DONGky0xa1gwLHfQkubZNgFJyNpIVZlqKJykCAK1YPjJ73S5DLKj9TD-UN6WepH1tWINUYNlds6wSl-SgLn9SsqnDvnwJv-C5GHL3_JcVVZhk8t5acAKXhRKt03OABgRU1E_Hw/s600/Nur_20251227_140529_0000.png" group-title="Music",Music India
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/main.mpd
-#https://streams.tangotv.in/MUSICINDIA/ORIGIN/index.m3u8
 
 #EXTINF:-1 tvg-id="942d3f0e-2e30-431a-ac1c-fd6244ca3462" tvg-logo="https://api.cirkletv.com/files/file_0000000004b08211bffb9700c83214b9_1789652261145_8914e2499b044c6f.webp" group-title="Music",8XM
 https://vodzong.mjunoon.tv:8087/streamtest/8XM-131/playlist.m3u8
@@ -517,7 +511,6 @@ https://wiselp.wiseplayout.com/9XM/HD1080/HD1080.m3u8
 
 #EXTINF:-1 tvg-id="2b1251e1-78fc-4ccb-b7da-4ac9f8c3807b" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png" group-title="Music",B4U Music
 https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8
-#https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8
 
 #EXTINF:-1 tvg-id="0ebe79b6-fa17-4f2f-82da-132229e7a19a" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_IrD_brxSAg_Uv2jF_QExvP6hTBfFkb1ftKCBz7kMQo49Tm1Q_RE6tRB8ZbEhdlzj_Mn_zx7rTeJBCe9XouPyqzW7Ph9sL3gip08X-6heLfBcSWZw3OcxGFvNykE3vDGaaRrjHSE9sufcSv3IPJnT1dwjXPQjA0jAaAD_AS2WlGgox8rcCi1i5txz/s600/Nur_20251104_202724_0000.png" group-title="Music",YRF Music
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8

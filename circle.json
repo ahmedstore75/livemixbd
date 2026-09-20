@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T04:08:06.887Z",
+  "updated_at": "2026-09-20T18:58:39.562Z",
   "total_channels": 172,
   "channels": [
     {
@@ -8,9 +8,6 @@
       "logo": "https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp",
       "category": "Sports",
       "urls": [
-        "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
-        "https://tvsen7.aynascope.net/Sports1/index.m3u8",
-        "https://tvsen7.aynascope.net/Sports1/index.m3u8",
         "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
       ]
     },
@@ -74,8 +71,7 @@
       "logo": "https://api.cirkletv.com/files/willow_1782972080164_396453b7eb6dae16.webp",
       "category": "Sports",
       "urls": [
-        "https://tvsen5.aynascope.net/willowhd/mono.m3u8",
-        "https://tvsen7.aynaott.com/rEBp38Ax/tracks-v1a1/mono.ts.m3u8"
+        "https://tvsen5.aynascope.net/willowhd/mono.m3u8"
       ]
     },
     {
@@ -1272,8 +1268,7 @@
       "logo": "https://api.cirkletv.com/files/Hridoy_TV_channel__10__1788332992276_63021179cad5be95.webp",
       "category": "Infotainment",
       "urls": [
-        "https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8",
-        "https://livecdn.live247stream.com/discoverpakistan/web/discoverpakistan/q_480p/chunks.m3u8"
+        "https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8"
       ]
     },
     {
@@ -1417,8 +1412,7 @@
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFFLa5D9PY1QwJccJVBotkle4QNuD4XX4MH49p3ueGZ9y_76Uf1X98DONGky0xa1gwLHfQkubZNgFJyNpIVZlqKJykCAK1YPjJ73S5DLKj9TD-UN6WepH1tWINUYNlds6wSl-SgLn9SsqnDvnwJv-C5GHL3_JcVVZhk8t5acAKXhRKt03OABgRU1E_Hw/s600/Nur_20251227_140529_0000.png",
       "category": "Music",
       "urls": [
-        "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/main.mpd",
-        "https://streams.tangotv.in/MUSICINDIA/ORIGIN/index.m3u8"
+        "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Musicindia2/default/main.mpd"
       ]
     },
     {
@@ -1445,8 +1439,7 @@
       "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilXOuGttq9F58UPTuH3QZx-eSpH2qlunCRfruR4y9lPNr_D-5goUxfNOZzdj0cLwj89VCOwlaiz2ju4TjoZ2GhXQC1hOjhZVz2gFX9PjQl-BxJos3dq2WJQFl2oluHg-_1T9ES4Hs6LJ5QMcxsvkQFymYXZUV2vLvgACYc3aeahNDXSmap2ES7s5D94w/s600/Nur_20251219_134908_0000.png",
       "category": "Music",
       "urls": [
-        "https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8",
-        "https://drk6xq0vhn.gpcdn.net/live/b4u_music_abr/index.m3u8"
+        "https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/playlist.m3u8"
       ]
     },
     {
