@@ -109,7 +109,7 @@ https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8
 https://tvsen6.aynaott.com/da6WMXAk/index.m3u8?e=1784102557&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=11c7f2ed16c910de7308032faaf7a7ec
 
 #EXTINF:-1 tvg-id="4e5d3d1f-3b4c-497b-9dab-59bfc35e139d" tvg-logo="https://api.cirkletv.com/files/somoy_1781974337392_63ce696220e00519.webp" group-title="News",Somoy TV
-https://www.youtube.com/watch?v=HIo0DfEOzyg
+https://tvsen5.aynascope.net/somoytv/mono.m3u8
 
 #EXTINF:-1 tvg-id="533b90b7-cdc8-46f3-bf2e-657d02892d18" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnjPHVzOcCQIWIWq5G8BhMVuhVnP517bpdDYxPOWkh9b0eV4zStt_W0n0lrlJX9mNPbF_gLA_H2DtLKAz1L4s2_pu9XkC3iE4fYw5mSMRTWHn1rH_WDAAmP4wdb6uieIiTjUYBJTEZy-hWdWCPWiK50BBIzkwl49dsz30lhhOMDDSSjrVsKD916yjoYA/s1080/1000019130.png" group-title="News",Star News
 https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8
@@ -312,6 +312,9 @@ https://media.rtvnoord.nl/live/rtvnoord/tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
+
+#EXTINF:-1 tvg-id="ae0da199-0e47-4dbf-9200-a1203f673783" tvg-logo="" group-title="Bangla Entertainment",Athletic vs alaves
+https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8
 
 #EXTINF:-1 tvg-id="59a02173-3583-47ec-9e13-878a8759015f" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4e/CERTV_4_2015.png" group-title="Bangla Entertainment",Canal RTVD 4
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8

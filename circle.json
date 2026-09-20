@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T03:51:30.715Z",
-  "total_channels": 171,
+  "updated_at": "2026-09-20T04:08:06.887Z",
+  "total_channels": 172,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -300,7 +300,7 @@
       "logo": "https://api.cirkletv.com/files/somoy_1781974337392_63ce696220e00519.webp",
       "category": "News",
       "urls": [
-        "https://www.youtube.com/watch?v=HIo0DfEOzyg"
+        "https://tvsen5.aynascope.net/somoytv/mono.m3u8"
       ]
     },
     {
@@ -895,6 +895,15 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
+      ]
+    },
+    {
+      "id": "ae0da199-0e47-4dbf-9200-a1203f673783",
+      "name": "Athletic vs alaves",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8"
       ]
     },
     {
