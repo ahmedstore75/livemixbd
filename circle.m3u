@@ -276,6 +276,9 @@ https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
 #EXTINF:-1 tvg-id="31cb69f6-8e2a-4abc-87ef-1387807e79fc" tvg-logo="https://play-lh.googleusercontent.com/VL2R8JVwHx4PtQPmNYG2oP7o22HOuGDy3mQZXa-uEhjRLAqpgZjL5yk0vlBaGnt7KQ" group-title="Bangla Entertainment",NTV Europe
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/ntvuk00332211.stream/live-orgin/ntvuk00332211.stream/chunks.m3u8
 
+#EXTINF:-1 tvg-id="6633dfb8-d40f-41a7-b95d-6a695e7a91b7" tvg-logo="https://api.cirkletv.com/files/Channel_i_1786432298061_e90e3ffe6db0aa1e.webp" group-title="Bangla Entertainment",Channel I
+https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
+
 #EXTINF:-1 tvg-id="ad0a475e-99f9-4463-a409-1f968b34ccca" tvg-logo="https://api.cirkletv.com/files/Deepto_TV_1784913192871_c425969725fffdec.webp" group-title="Bangla Entertainment",Deepto TV
 https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8
 
@@ -287,9 +290,6 @@ https://api.cirkletv.com/api/hridoy-tv-proxy/stream?name=boishakhitv2&expire=437
 
 #EXTINF:-1 tvg-id="185a73cd-599e-4d78-b852-99c0221ac431" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png" group-title="Bangla Entertainment",Channel I HD
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
-
-#EXTINF:-1 tvg-id="1762c938-9560-45ee-8695-387ddfc1c747" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg" group-title="Bangla Entertainment",Asian TV
-https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8?e=1784102565&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=e4293f68c5bc8aa8e6ac3e088ca754f4
 
 #EXTINF:-1 tvg-id="7e26d9ae-7c19-43ad-938c-014efabb5045" tvg-logo="https://api.cirkletv.com/files/zee_bangla_sonar_1786332945786_d1f5d421d8d2c43c.webp" group-title="Bangla Entertainment",Zee Bangla Cinema
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
@@ -323,6 +323,9 @@ https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
 
 #EXTINF:-1 tvg-id="179cc31f-ff58-44cf-ba4a-62610632c09c" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/60/Logo_of_TV_Herceg-Bosne.png" group-title="Bangla Entertainment",RTV HB %8
 https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1762c938-9560-45ee-8695-387ddfc1c747" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg" group-title="Bangla Entertainment",Asian TV
+https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8?e=1784102565&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=e4293f68c5bc8aa8e6ac3e088ca754f4
 
 #EXTINF:-1 tvg-id="bbf1e1d7-811a-49a2-9d70-098383be7fea" tvg-logo="https://i.imgur.com/TKUaflB.png" group-title="Bangla Entertainment",RTV ZE %8
 https://stream.rtvze.ba/live/123/123.m3u8

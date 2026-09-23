@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-22T04:02:27.056Z",
-  "total_channels": 172,
+  "updated_at": "2026-09-23T03:59:14.939Z",
+  "total_channels": 173,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -795,6 +795,15 @@
       ]
     },
     {
+      "id": "6633dfb8-d40f-41a7-b95d-6a695e7a91b7",
+      "name": "Channel I",
+      "logo": "https://api.cirkletv.com/files/Channel_i_1786432298061_e90e3ffe6db0aa1e.webp",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
+      ]
+    },
+    {
       "id": "ad0a475e-99f9-4463-a409-1f968b34ccca",
       "name": "Deepto TV",
       "logo": "https://api.cirkletv.com/files/Deepto_TV_1784913192871_c425969725fffdec.webp",
@@ -828,15 +837,6 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8"
-      ]
-    },
-    {
-      "id": "1762c938-9560-45ee-8695-387ddfc1c747",
-      "name": "Asian TV",
-      "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8?e=1784102565&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=e4293f68c5bc8aa8e6ac3e088ca754f4"
       ]
     },
     {
@@ -936,6 +936,15 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "1762c938-9560-45ee-8695-387ddfc1c747",
+      "name": "Asian TV",
+      "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/asiantv.jpg",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8?e=1784102565&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=e4293f68c5bc8aa8e6ac3e088ca754f4"
       ]
     },
     {
