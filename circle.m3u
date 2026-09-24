@@ -50,13 +50,16 @@ https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8?e=1784102512&u=ee5437
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8
 
 #EXTINF:-1 tvg-id="33824024-0c09-4512-8f92-088c5b5d3832" tvg-logo="https://api.cirkletv.com/files/gazi_tv__1784912733004_0612f4d5c61e40b3.webp" group-title="Sports",Gazi TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="38d3f464-7b9a-44e8-a5d8-d7f2f10644c2" tvg-logo="https://api.cirkletv.com/files/gold_cricket_1784942387901_9a25fb20578e51e1.webp" group-title="Sports",Gold cricket
 https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/manifest.m3u8
 
 #EXTINF:-1 tvg-id="648376c1-ce27-420d-a367-b405a1ad002f" tvg-logo="https://api.cirkletv.com/files/sky_news_1786559403845_977eac46d6ffeb59.webp" group-title="Sports",Sky Sports News
 https://api.cirkletv.com/api/https?url=https://7nyaler.streamhostingcdn.top/stream/11/index.m3u8
+
+#EXTINF:-1 tvg-id="009749b5-0f71-48d9-811a-67febd873cc8" tvg-logo="https://api.cirkletv.com/files/images__19__1790180009836_5b4e8ed25391fc0c.webp" group-title="Sports",Ktv sports plus 
+https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="e3ea5749-8691-451a-8d0a-2a74747a110a" tvg-logo="https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp" group-title="Sports",beIN Sports 1
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
@@ -114,7 +117,7 @@ https://owrcovcrpy.gpcdn.net/bpk-tv/1710/output/index.m3u8
 https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
 
 #EXTINF:-1 tvg-id="3a20569b-7ba8-4c71-8c49-cde2aacd8a7a" tvg-logo="https://api.cirkletv.com/files/independent_1787806669347_ec7ac9747b1fb8ca.webp" group-title="News",Independent
-https://www.youtube.com/watch?v=qREvoxxG6Nc
+https://drk6xq0vhn.gpcdn.net/live/independent_tv_abr/live/independent_tv_720/chunks.m3u8
 
 #EXTINF:-1 tvg-id="30297009-4413-4d6f-84aa-e2cd36ee4caa" tvg-logo="https://api.cirkletv.com/files/ekattor_hd_1787818059747_47aa10ac7b704100.webp" group-title="News",Ekattor HD
 https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8?e=1784102532&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=3b9afdda2bd5332e8f49ed7dfa321a06
@@ -286,7 +289,7 @@ https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8
 https://tvsen5.aynaott.com/maasrangatv/index.m3u8
 
 #EXTINF:-1 tvg-id="89ff0ecc-2d99-4ff3-9900-1ec82d1295ff" tvg-logo="https://api.cirkletv.com/files/boishakhi_tv_1787807188472_9bf2f8a91d87e1ee.webp" group-title="Bangla Entertainment",Boishakhi
-https://api.cirkletv.com/api/hridoy-tv-proxy/stream?name=boishakhitv2&expire=43738831219634
+https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/index.m3u8
 
 #EXTINF:-1 tvg-id="185a73cd-599e-4d78-b852-99c0221ac431" tvg-logo="https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png" group-title="Bangla Entertainment",Channel I HD
 https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
@@ -306,14 +309,11 @@ https://video2.azotosolutions.com:1936/supertvoristano/supertvoristano/playlist.
 #EXTINF:-1 tvg-id="d82ede68-f2c1-4cef-ae0b-d86213b5eab1" tvg-logo="https://i.imgur.com/pO5Mexa.png" group-title="Bangla Entertainment",RTV Noord
 https://media.rtvnoord.nl/live/rtvnoord/tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
-
-#EXTINF:-1 tvg-id="ae0da199-0e47-4dbf-9200-a1203f673783" tvg-logo="" group-title="Bangla Entertainment",Athletic vs alaves
-https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8
-
 #EXTINF:-1 tvg-id="59a02173-3583-47ec-9e13-878a8759015f" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4e/CERTV_4_2015.png" group-title="Bangla Entertainment",Canal RTVD 4
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
+
+#EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
 
 #EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="Bangla Entertainment",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2
@@ -340,7 +340,7 @@ https://str2.yodacdn.net/idman_300_to_small/tracks-v1a1/mono.m3u8
 https://845d8509d2cb4f249dd0b2ae5755b6c2.msvdn.net/rtv38/rtv38_live_main/mainabr/playlist_dvr.m3u8
 
 #EXTINF:-1 tvg-id="da098886-a9f9-423c-a835-e6a9e00831a1" tvg-logo="https://api.cirkletv.com/files/nagorik_tv_1787775318966_b63f393109981865.webp" group-title="Bangla Entertainment",Nagorik TV
-https://api.cirkletv.com/api/hridoy-tv-direct/stream/nagoriktv
+https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="ac8cd37c-7b03-42ff-8ba8-60e4ea0bd2f9" tvg-logo="https://api.cirkletv.com/files/duronto_1789066021278_13000bcac9f4d95c.webp" group-title="Bangla Entertainment",Duronto Tv
 https://tvsen5.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.fmp4.m3u8?token=26849003e1fe1bed0b0c40f6d3be853eb9a2b4f7-6a6a5971089a426fc1829aad7d929e8a-1784095967-1784095067&remote=no_check_ip
@@ -351,9 +351,6 @@ https://tvsen5.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.fmp4.m3u8?token=26849003e1
 
 #EXTINF:-1 tvg-id="4c2b3050-cd94-4a2e-854c-54ecc2114e01" tvg-logo="https://api.cirkletv.com/files/colors_cineplex_1787483017398_c150769e9cd9f85c.webp" group-title="Hindi Entertainment",Colors Cineplex
 https://api.cirkletv.com/api/hridoy-tv-pro/stream/482?expire=43738831219634
-
-#EXTINF:-1 tvg-id="0b34521f-e24a-45fa-98bd-c78dfb39f869" tvg-logo="https://api.cirkletv.com/files/sony_tv_1787820337844_92c0da0a874e977d.webp" group-title="Hindi Entertainment",Sony TV Hindi
-https://api.cirkletv.com/api/hridoy-tv/stream/sonyentertainmnt_hd_576?expire=43738831219634
 
 #EXTINF:-1 tvg-id="370258f2-d645-49ee-ba97-1bc24cea07ef" tvg-logo="https://api.cirkletv.com/files/sony_sab_1787820179774_fccc5bec1c26788d.webp" group-title="Hindi Entertainment",Sony SAB
 https://api.cirkletv.com/api/hridoy-tv/stream/sonysab_hd_576?expire=43738831219634
@@ -396,7 +393,7 @@ https://stream.ottplus.bd/live/pix_hd_abr/live/sony_pix_hd_720/chunks.m3u8
 https://streams.tangotv.in/GOLDMINES/ORIGIN/index.m3u8
 
 #EXTINF:-1 tvg-id="98674478-9ce7-41e7-bb0e-db4c8513acc5" tvg-logo="https://api.cirkletv.com/files/goldmines_movies_1784940251160_9c092ab7bc9adcea.webp" group-title="Movies",Goldmines Movies
-https://mumt03.tangotv.in/Dsly5z3HGOLDMINESACTION/index.m3u8
+https://streams.tangotv.in/GOLDMINEMOVIES/ORIGIN/index.m3u8
 
 #EXTINF:-1 tvg-id="c79b8eda-9245-48bb-ba59-679a72086698" tvg-logo="https://api.cirkletv.com/files/11e8e13a9149c40a88859cdc0fd5f6c3_1788411983330_5604101eea9a47fc.webp" group-title="Movies",Goldmines Bollywood 
 https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
@@ -547,7 +544,7 @@ https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8
 https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8
 
 #EXTINF:-1 tvg-id="6453279a-d579-43da-9b7b-0d6c58a464ec" tvg-logo="https://i.ibb.co/TtHtGkW/20240803-172601.png" group-title="Islamic",Makkah TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/makkahtv.stream/playlist.m3u8
+https://api.cirkletv.com/api/https?url=https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/index.m3u8
 
 #EXTINF:-1 tvg-id="09ea1e5f-a18e-410f-a101-34da6d3e1902" tvg-logo="https://i.imgur.com/colOISC.jpeg" group-title="Islamic",Makkah Live
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/tracks-v1a1/mono.m3u8
