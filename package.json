@@ -1,0 +1,12 @@
+{
+  "name": "livemixbd",
+  "version": "1.0.0",
+  "description": "Auto M3U to JSON converter",
+  "main": "fetch_to_json.js",
+  "scripts": {
+    "start": "node fetch_to_json.js"
+  },
+  "keywords": [],
+  "author": "Ahammad Ali",
+  "license": "ISC"
+}
