@@ -1,20 +1,26 @@
 const fs = require('fs');
 
-// M3U ফাইল পার্স করার ফাংশন
-async function fetchAndParseM3U(url) {
+// Fetch এর জন্য টাইমআউট অপশনসহ M3U পার্স করার ফাংশন
+async function fetchAndParseM3U(url, timeoutMs = 10000) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
   try {
     const response = await fetch(url, {
+      signal: controller.signal,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
       }
     });
+    clearTimeout(timeoutId);
+
     if (!response.ok) {
       console.error(`Fetch failed for ${url} with status: ${response.status}`);
       return [];
     }
 
     const text = await response.text();
-    const lines = text.split('\n');
+    const lines = text.split(/\r?\n/);
     const items = [];
 
     let currentItem = {};
@@ -70,34 +76,36 @@ async function fetchAndParseM3U(url) {
     }
     return items;
   } catch (error) {
-    console.error(`Error fetching M3U ${url}:`, error.message);
+    if (error.name === 'AbortError') {
+      console.error(`Error: Request timed out for ${url}`);
+    } else {
+      console.error(`Error fetching M3U ${url}:`, error.message);
+    }
     return [];
   }
 }
 
-// জনপ্রিয় চ্যানেলগুলোর সিরিয়াল নির্ধারণের তালিকা
+// জনপ্রিয় চ্যানেলগুলোর তালিকা
 const popularBdChannelsOrder = [
   'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24',
   't sports', 'gtv', 'gazi tv', 'ntv', 'rtv', 'channel i', 'atn bangla', 'atn news',
   'maasranga', 'deepto', 'banglavision', 'boishakhi', 'desh tv', 'nagorik', 'btv'
 ];
 
-// পপুলার ইনডেক্স চেক করার ফাংশন
 function getPopularBDIndex(name) {
   const n = name.toLowerCase();
   for (let i = 0; i < popularBdChannelsOrder.length; i++) {
     if (n.includes(popularBdChannelsOrder[i])) {
-      return i; // তালিকার পজিশন রিটার্ন করবে (কম সংখ্যা = আগে থাকবে)
+      return i;
     }
   }
-  return 999; // সাধারণ চ্যানেল হলে পেছনে যাবে
+  return 999;
 }
 
-// ক্যাটাগরি আইডেন্টিফাই করার ফাংশন
+// ক্যাটাগরি পার্সিং
 function getCategoryPriority(name) {
   const n = name.toLowerCase();
 
-  // ১. বাংলাদেশ চ্যানেল (পপুলারসহ অন্যান্য বাংলাদেশি চ্যানেল)
   const isMohona = /mohona/i.test(n);
   const bdKeywords = [
     'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
@@ -108,14 +116,12 @@ function getCategoryPriority(name) {
   ];
   if (isMohona || bdKeywords.some(key => n.includes(key))) return 1;
 
-  // ২. কলকাতার বাংলা চ্যানেল
   const kolkataKeywords = [
     'star jalsha', 'zee bangla', 'colors bangla', 'sun bangla', 'sony aath', 
     'jalsha movies', 'zee bangla cinema', 'khabor 24', 'abp ananda', 'news18 bangla'
   ];
   if (kolkataKeywords.some(key => n.includes(key))) return 2;
 
-  // ৩. স্পোর্টস চ্যানেল
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
     'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
@@ -123,7 +129,6 @@ function getCategoryPriority(name) {
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
-  // ৪. মুভি চ্যানেল
   const isAndPictures = /(&|and|&amp;)\s*picture/i.test(n);
   const movieKeywords = [
     'movie', 'movies', 'cinema', 'hbo', 'star movies', 'sony pix', 'mnx', 'flix', 
@@ -131,50 +136,42 @@ function getCategoryPriority(name) {
   ];
   if (isAndPictures || movieKeywords.some(key => n.includes(key))) return 4;
 
-  // ৫. সাধারণ বিনোদন ও ড্রামা
   const dramaKeywords = [
     'star plus', 'zee tv', 'sony tv', 'colors tv', 'sab tv', 'star bharat', 
     'dangal', 'bindass', 'tlc', 'e!', 'axn'
   ];
   if (dramaKeywords.some(key => n.includes(key))) return 5;
 
-  // ৬. ইনফোটেইনমেন্ট ও ডকুমেন্টারি
   const docKeywords = [
     'discovery', 'national geographic', 'nat geo', 'animal planet', 
     'history', 'investigation', 'natgeo', 'science', 'bbc earth'
   ];
   if (docKeywords.some(key => n.includes(key))) return 6;
 
-  // ৭. কিডস / শিশুদের চ্যানেল
   const kidsKeywords = [
     'cartoon', 'nick', 'pogo', 'disney', 'hungama', 'sonic', 'kids', 'baby', 'sony yay', 'yay'
   ];
   if (kidsKeywords.some(key => n.includes(key))) return 7;
 
-  // ৮. মিউজিক চ্যানেল
   const musicKeywords = [
-    'music', 'song', 'mtv', 'sangeet', '9xm', 'zoOm', 'vh1'
+    'music', 'song', 'mtv', 'sangeet', '9xm', 'zoom', 'vh1'
   ];
   if (musicKeywords.some(key => n.includes(key))) return 8;
 
-  // ৯. আন্তর্জাতিক ও সাধারণ সংবাদ
   const newsKeywords = [
     'bbc news', 'cnn', 'al jazeera', 'ndtv', 'india today', 'aaj tak', 'republic', 
     'dw', 'france 24', 'cgtn', 'russia today', 'rt news', 'trt world', 'news'
   ];
   if (newsKeywords.some(key => n.includes(key))) return 9;
 
-  // ১০. ধর্মীয় / ইসলামিক
   const religiousKeywords = [
     'islam', 'makkah', 'madinah', 'sunnah', 'peace tv', 'quran', 'peacetv', 'bhakti', 'saudi sunnah'
   ];
   if (religiousKeywords.some(key => n.includes(key))) return 10;
 
-  // ১১. অন্যান্য চ্যানেল
   return 11;
 }
 
-// সাধারণ ফিল্টারিং (১ ও ৩ নম্বর লিংকের জন্য)
 function filterChannelsOnly(channels, seenUrls) {
   const yearPattern = /\(\d{4}\)/;
   const filtered = [];
@@ -203,7 +200,6 @@ function filterChannelsOnly(channels, seenUrls) {
   return filtered;
 }
 
-// ২ নম্বর লিংকের ফিল্টার এবং অ্যাডভান্সড সর্টিং ফাংশন
 function processAndSortLink2(channels, seenUrls) {
   const filtered = filterChannelsOnly(channels, seenUrls);
 
@@ -211,12 +207,10 @@ function processAndSortLink2(channels, seenUrls) {
     const catA = getCategoryPriority(a.name);
     const catB = getCategoryPriority(b.name);
 
-    // ১. মূল ক্যাটাগরি অনুসারে সর্টিং
     if (catA !== catB) {
       return catA - catB;
     }
 
-    // ২. যদি ক্যাটাগরি "বাংলাদেশ" হয়, তবে পপুলারিটি সিকোয়েন্স অনুসারে সর্ট হবে
     if (catA === 1) {
       const popA = getPopularBDIndex(a.name);
       const popB = getPopularBDIndex(b.name);
@@ -226,14 +220,12 @@ function processAndSortLink2(channels, seenUrls) {
       }
     }
 
-    // ৩. বাকি চ্যানেলগুলো সাধারণ নাম ও ডিজিট সিকোয়েন্স (1, 2, 3) অনুযায়ী সাজানো হবে
     return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
   });
 
   return filtered;
 }
 
-// মূল প্রসেসিং
 async function main() {
   const url1 = 'https://raw.githubusercontent.com/srhady/SonyLiv/refs/heads/main/sonyliv_playlist.m3u';
   const url2 = 'https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u';
@@ -247,41 +239,35 @@ async function main() {
     fetchAndParseM3U(url3)
   ]);
 
-  console.log(`Tapmad channels: ${tapmadData.length}`);
-  console.log(`Toffee channels: ${toffeeData.length}`);
-  console.log(`FAST IPTV channels: ${fastIptvData.length}`);
-
   const seenUrls = new Set();
 
-  // ১. প্রথম লিংক (অরিজিনাল অর্ডার)
   const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
-
-  // ২. দ্বিতীয় লিংক (পপুলার চ্যানেল আগে + ক্যাটাগরি সর্টিং)
   const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
-
-  // ৩. তৃতীয় লিংক (অরিজিনাল অর্ডার)
   const fastIptvChannels = filterChannelsOnly(fastIptvData, seenUrls);
 
-  // সব চ্যানেল একত্রে (Link 1 -> Sorted Link 2 -> Link 3)
   const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
-  // আইডি সেট করা
   const finalResponse = allFinalChannels.map((ch, index) => ({
     id: index + 1,
-    ...ch
+    name: ch.name,
+    logo: ch.logo,
+    stream_url: ch.stream_url,
+    cookie: ch.cookie
   }));
+
+  const todayDate = new Date().toISOString().split('T')[0];
 
   const resultData = {
     status: "success",
     name: "Live Channels",
     owner: "Ahammad Ali",
     channels_amount: finalResponse.length,
-    last_update: new Date().toISOString().split('T')[0],
+    last_update: todayDate,
     response: finalResponse
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with popular channels prioritized.`);
+  console.log(`Successfully generated playlist.json matching your format.`);
 }
 
 main();
