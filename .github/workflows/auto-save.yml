@@ -167,8 +167,9 @@ jobs:
 
               let logoUrl = "";
 
-              // নির্দিষ্ট কী (Key) থেকে লোগো খোঁজা যেন ভুলবশত অন্য গ্লোবাল লোগো না চলে আসে
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+)"/i);
+              // API থেকে চ্যানেলভিত্তিক লোগো পাথ সংগ্রহ
+              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+)"/i) ||
+                                block.match(/(\/?storage\/[^\s"\\]+)/i);
 
               if (logoMatch) {
                 let extracted = logoMatch[1].trim();
@@ -186,7 +187,7 @@ jobs:
                 }
               }
 
-              // যদি এপিআই-তে লোগো না থাকে, তবে চ্যানেলের নামের উপর ভিত্তি করে অটো লোগো তৈরি হবে
+              // যেসব চ্যানেলের লোগো পাওয়া যায় নি, শুধুমাত্র সেগুলোর ক্ষেত্রে অটো লোগো বসবে
               if (!logoUrl) {
                 logoUrl = generateAutoLogo(title);
               }
@@ -222,7 +223,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Updated successfully with individual channel logos.`);
+            console.log(`Updated successfully with precise logo handling.`);
           }
 
           processData();
@@ -234,5 +235,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed individual channel logo extraction: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed logo assignment for missing S3 links: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
