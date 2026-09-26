@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 224,
+  "channels_amount": 225,
   "last_update": "2026-09-26",
   "response": [
     {
@@ -1521,7 +1521,7 @@
       "id": 217,
       "name": "Discovery",
       "logo": "https://i.postimg.cc/cJ90sMKN/20240823_023541.png",
-      "stream_url": "http://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=discovery_bangla&sm=.m3u8",
+      "stream_url": "https://drk6xq0vhn.gpcdn.net/live/discovery_hd_abr/index.m3u8",
       "cookie": ""
     },
     {
@@ -1555,7 +1555,7 @@
     {
       "id": 222,
       "name": "BBC Earth",
-      "logo": "https://i.postimg.cc/MZR248Yw/20240823-024104.png",
+      "logo": "https://i.postimg.cc/mkzX5fKL/bbc-earth-logo-2023-1x1-removebg-preview.png",
       "stream_url": "https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist540p.m3u8",
       "cookie": ""
     },
@@ -1569,8 +1569,15 @@
     {
       "id": 224,
       "name": "Travel XP HD",
-      "logo": "https://i.postimg.cc/mkzX5fKL/bbc-earth-logo-2023-1x1-removebg-preview.png",
+      "logo": "https://i.postimg.cc/Wbsyc80c/610X380-2-removebg-preview.png",
       "stream_url": "https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 225,
+      "name": "Wild Flix Hindi",
+      "logo": "https://i.postimg.cc/mkzX5fKL/bbc-earth-logo-2023-1x1-removebg-preview.png",
+      "stream_url": "https://cc-qgrxgp51645lw.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-qgrxgp51645lw/IQJW/WBD/WildFlix_IN/WildFlix_IN.m3u8",
       "cookie": ""
     }
   ]
