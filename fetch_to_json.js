@@ -124,7 +124,7 @@ function getCategoryPriority(name) {
 
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
-    'ten 2', 'ten 3', 'sports18', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
+    'ten 2', 'ten 3', 'bfl', 'epl', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
     'tapmad', 'dazn', 'bein sports', 'super sport'
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
@@ -137,8 +137,8 @@ function getCategoryPriority(name) {
   if (isAndPictures || movieKeywords.some(key => n.includes(key))) return 4;
 
   const dramaKeywords = [
-    'star plus', 'zee tv', 'sony tv', 'colors tv', 'sab tv', 'star bharat', 
-    'dangal', 'bindass', 'tlc', 'e!', 'axn'
+    'star plus', 'zee tv hd', 'sony tv', 'colors tv', 'sab tv', 'star bharat', 
+    '&tv hd', 'bindass', 'tlc', 'e!', 'axn'
   ];
   if (dramaKeywords.some(key => n.includes(key))) return 5;
 
@@ -149,7 +149,7 @@ function getCategoryPriority(name) {
   if (docKeywords.some(key => n.includes(key))) return 6;
 
   const kidsKeywords = [
-    'cartoon', 'nick', 'pogo', 'disney', 'hungama', 'sonic', 'kids', 'baby', 'sony yay', 'yay'
+    'cartoon', 'nick', 'pogo', 'disney', 'hungama', 'sonic', 'discovery kids', 'baby', 'sony yay', 'yay'
   ];
   if (kidsKeywords.some(key => n.includes(key))) return 7;
 
