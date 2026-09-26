@@ -125,7 +125,7 @@ function getCategoryPriority(name) {
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
     'ten 2', 'ten 3', 'bfl', 'epl', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
-    'tapmad', 'dazn', 'bein sports', 'super sport'
+    'tapmad', 'dazn', 'bein sports', 'super sport', 'live match'
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
