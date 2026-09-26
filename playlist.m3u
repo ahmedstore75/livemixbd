@@ -247,7 +247,7 @@ https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 https://tvsen7.aynaott.com/lifetime/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="Rupshi Bangla" tvg-logo="https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_454ca4e52d414605814d0f4778fd8137_playmist_rupshi_bangla400x400.jpg", Rupshi Bangla
 https://tvsen6.aynaott.com/a4L7Tcqv/index.m3u8
-#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://raw.githubusercontent.com/iptv-org/iptv/master/logos/TestLiveTV.png", Test Live TV
+#EXTINF:-1 group-title="Entertainment" tvg-name="Test Live TV" tvg-logo="https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-04-05/thumbnails_e7c232fc971625f04bb5f1c464a92159_playmist_live_tv_placeholder.png", Test Live TV
 https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8
 #EXTINF:-1 group-title="Entertainment" tvg-name="TIME TV USA" tvg-logo="https://s3.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-15/images_c05517a566e36853dc54d325a24921ad_playmist_time_tv_usa400x400.jpg", TIME TV USA
 https://tvsen7.aynaott.com/timetv/index.m3u8
