@@ -77,9 +77,11 @@ jobs:
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
+            // Bangla Channels Rule
             if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) {
               return "Bangla";
             }
+            // Kolkata Channels Rule
             if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
               return "Kolkata";
             }
@@ -167,21 +169,17 @@ jobs:
 
               let logoUrl = "";
 
-              // ব্লকভিত্তিক লোগো এক্সট্রাকশন
-              const logoFieldMatch = block.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+)"/i);
+              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
+                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
+                                block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
 
-              if (logoFieldMatch) {
-                let val = logoFieldMatch[1].trim();
-                if (!val.includes(".m3u8")) {
-                  if (val.startsWith("http://") || val.startsWith("https://")) {
-                    logoUrl = val;
-                  } else if (val.startsWith("/storage/")) {
-                    logoUrl = "https://s3.aynaott.com" + val;
-                  } else if (val.startsWith("storage/")) {
-                    logoUrl = "https://s3.aynaott.com/" + val;
-                  } else if (val.startsWith("/")) {
-                    logoUrl = "https://web.aynaott.com" + val;
-                  }
+              if (logoMatch) {
+                let extracted = logoMatch[1].trim();
+                if (extracted.startsWith("/")) {
+                  extracted = "https://web.aynaott.com" + extracted;
+                }
+                if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
+                  logoUrl = extracted;
                 }
               }
 
@@ -220,7 +218,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Updated successfully.`);
+            console.log(`Updated successfully with new Bangla and Kolkata rules.`);
           }
 
           processData();
@@ -232,5 +230,7 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed YAML lowercase name and block logos: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
+এপিআই এর ভিতরে যেই লোগো গুলো মেশিন সেই লোগো গুলো এভাবে দেওয়া যায় না https://s3.aynaott.com/storage/0ec8d8b83b191cf915316a1751c8787ee
+যেমন এটা হচ্ছে বাহারাইন স্পোর্টস ওয়ান এর লোগো
