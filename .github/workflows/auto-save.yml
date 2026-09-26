@@ -1,4 +1,4 @@
-name: Generate Categorized M3U and JSON Playlist
+name: Generate M3U and JSON Playlist
 
 on:
   push:
@@ -231,4 +231,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
           git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
-
+          git push
