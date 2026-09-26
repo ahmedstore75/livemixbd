@@ -231,6 +231,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
           git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push
-এপিআই এর ভিতরে যেই লোগো গুলো মেশিন সেই লোগো গুলো এভাবে দেওয়া যায় না https://s3.aynaott.com/storage/0ec8d8b83b191cf915316a1751c8787ee
-যেমন এটা হচ্ছে বাহারাইন স্পোর্টস ওয়ান এর লোগো
+
