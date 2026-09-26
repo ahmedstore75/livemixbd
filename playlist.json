@@ -947,14 +947,14 @@
       "id": 135,
       "name": "Nick Bangla",
       "logo": "https://i.postimg.cc/GtzBrs18/20240823_021125.png",
-      "stream_url": "http://live.balajibroadband.com:3500/live/1341.m3u8",
+      "stream_url": "http://198.195.239.50:8095/nick/index.m3u8",
       "cookie": ""
     },
     {
       "id": 136,
       "name": "Sonic Bangla",
       "logo": "https://i.postimg.cc/y8DJ4dpx/20240823_021302.png",
-      "stream_url": "http://live.balajibroadband.com:3500/live/1345.m3u8",
+      "stream_url": "http://198.195.239.50:8095/sonic/index.m3u8",
       "cookie": ""
     },
     {
@@ -1360,7 +1360,7 @@
       "id": 194,
       "name": "T Sports HD",
       "logo": "https://i.postimg.cc/Qx3GZn6T/20240823_024117.png",
-      "stream_url": "https://mycoffeetime.net/play/tSDRdsaoGGQ2qYgRPDEe9q-qMIzoahbJArH3W3vOiEaB97nXMpWmLb0Ts759Tjsp/m3u8",
+      "stream_url": "http://livetv.akr4m.com:8080/bdtv/restrem/2.m3u8",
       "cookie": ""
     },
     {
