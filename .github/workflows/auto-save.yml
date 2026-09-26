@@ -167,27 +167,24 @@ jobs:
 
               let logoUrl = "";
 
-              // API থেকে চ্যানেলভিত্তিক লোগো পাথ সংগ্রহ
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+)"/i) ||
-                                block.match(/(\/?storage\/[^\s"\\]+)/i);
+              // ব্লকভিত্তিক লোগো এক্সট্রাকশন
+              const logoFieldMatch = block.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+)"/i);
 
-              if (logoMatch) {
-                let extracted = logoMatch[1].trim();
-
-                if (!extracted.includes(".m3u8")) {
-                  if (extracted.startsWith("http://") || extracted.startsWith("https://")) {
-                    logoUrl = extracted;
-                  } else if (extracted.startsWith("/storage/")) {
-                    logoUrl = "https://s3.aynaott.com" + extracted;
-                  } else if (extracted.startsWith("storage/")) {
-                    logoUrl = "https://s3.aynaott.com/" + extracted;
-                  } else if (extracted.startsWith("/")) {
-                    logoUrl = "https://web.aynaott.com" + extracted;
+              if (logoFieldMatch) {
+                let val = logoFieldMatch[1].trim();
+                if (!val.includes(".m3u8")) {
+                  if (val.startsWith("http://") || val.startsWith("https://")) {
+                    logoUrl = val;
+                  } else if (val.startsWith("/storage/")) {
+                    logoUrl = "https://s3.aynaott.com" + val;
+                  } else if (val.startsWith("storage/")) {
+                    logoUrl = "https://s3.aynaott.com/" + val;
+                  } else if (val.startsWith("/")) {
+                    logoUrl = "https://web.aynaott.com" + val;
                   }
                 }
               }
 
-              // যেসব চ্যানেলের লোগো পাওয়া যায় নি, শুধুমাত্র সেগুলোর ক্ষেত্রে অটো লোগো বসবে
               if (!logoUrl) {
                 logoUrl = generateAutoLogo(title);
               }
@@ -223,7 +220,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Updated successfully with precise logo handling.`);
+            console.log(`Updated successfully.`);
           }
 
           processData();
@@ -235,5 +232,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed logo assignment for missing S3 links: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed YAML lowercase name and block logos: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
