@@ -50,7 +50,7 @@ https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8?e=1784102512&u=ee5437
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8
 
 #EXTINF:-1 tvg-id="33824024-0c09-4512-8f92-088c5b5d3832" tvg-logo="https://api.cirkletv.com/files/gazi_tv__1784912733004_0612f4d5c61e40b3.webp" group-title="Sports",Gazi TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="38d3f464-7b9a-44e8-a5d8-d7f2f10644c2" tvg-logo="https://api.cirkletv.com/files/gold_cricket_1784942387901_9a25fb20578e51e1.webp" group-title="Sports",Gold cricket
 https://streams2.sofast.tv/ptnr-yupptv/title-cricketgold/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b2048bb8-1686-4432-aa50-647245383e0c/manifest.m3u8
@@ -443,6 +443,9 @@ https://api.cirkletv.com/api/https?url=http://sm-monirul.xyz/@monirul_Islam_SM/e
 
 #EXTINF:-1 tvg-id="fa3a7970-97cf-44c5-a77c-9fcc04cdfb5b" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_12_49_59_8814_2_1788331314118_f794cb4b63d6581d.webp" group-title="Infotainment",Discovery Hindi
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.mpd
+
+#EXTINF:-1 tvg-id="4a976bb6-12fa-4689-90c9-439529596796" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_12_50_01_5406_4_1788331590052_b484eea100c8c4e3.webp" group-title="Infotainment",Discovery English
+https://prod-linear-media.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8?edge-cache-token=Expires=1790344936~Starts=1790341336~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=t-5WgA-APtI0Eahx8CWtK7SsIe_1ZeDLiNOmukntG8NOGCj_RQ5hjGEMSVKK4UGP_7hGmzTDEqnc_pZZ0xI-Cw
 
 #EXTINF:-1 tvg-id="0b20f43e-cadc-41ed-90a3-e03f25a36c7f" tvg-logo="https://api.cirkletv.com/files/Hridoy_TV_channel__10__1788332992276_63021179cad5be95.webp" group-title="Infotainment",Discovery Pakistan
 https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
