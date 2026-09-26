@@ -77,11 +77,9 @@ jobs:
           function resolveCategory(title) {
             const clean = title.toLowerCase().trim();
 
-            // Bangla Channels Rule
             if (/btv|channel i|somoy|jamuna|channel 24|news 24|news24|atn news|ntv|rtv|ekushey|etv|independent|bangla vision|atn bangla|deepto|ekattor|dbc news|gtv|gazi tv|maasranga|ekhon|bangla tv|ananda tv|bijoy tv|asian tv|boishakhi|desh tv|mohona|nexus|my tv|sa tv|channel 9|channel 52|52|drama 24|global tv|thikana/i.test(clean)) {
               return "Bangla";
             }
-            // Kolkata Channels Rule
             if (/kolkata|r plus|zee 24 ghanta|24 ghanta|sony aath|aath|jalsha|zee bangla|colors bangla|sangeet bangla|akash ath|ruposhi bangla|calcuttatv|enter 10 bangla|dd bangla|news18 bangla|tv9 bangla/i.test(clean)) {
               return "Kolkata";
             }
@@ -169,20 +167,33 @@ jobs:
 
               let logoUrl = "";
 
+              // ১. JSON কী (logo, image, poster, thumbnail, icon, src) চেক করা
               const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
-                                block.match(/(\/storage\/[^\s"\\]+\.(?:png|jpg|jpeg|webp))/i) ||
-                                block.match(/(https?:[^\s"\\]+\.(?:png|jpg|jpeg|webp)[^\s"\\]*)/i);
+                                block.match(/(\/storage\/[^\s"\\]+)/i) ||
+                                block.match(/(https?:[^\s"\\]*(?:storage|images|logos)[^\s"\\]*)/i);
 
               if (logoMatch) {
                 let extracted = logoMatch[1].trim();
-                if (extracted.startsWith("/")) {
-                  extracted = "https://web.aynaott.com" + extracted;
-                }
-                if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
-                  logoUrl = extracted;
+                
+                // যদি রেজাল্টে .m3u8 চলে আসে তবে সেটা বাতিল
+                if (!extracted.includes(".m3u8")) {
+                  // আপেক্ষিক পাথ ঠিক করা (Relative path fix)
+                  if (extracted.startsWith("/storage/")) {
+                    extracted = "https://s3.aynaott.com" + extracted;
+                  } else if (extracted.startsWith("storage/")) {
+                    extracted = "https://s3.aynaott.com/" + extracted;
+                  } else if (extracted.startsWith("/")) {
+                    extracted = "https://web.aynaott.com" + extracted;
+                  }
+
+                  // ফালতু ইমেজ ছাঁকন
+                  if (!extracted.includes("avatar") && !extracted.includes("default") && !extracted.includes("placeholder")) {
+                    logoUrl = extracted;
+                  }
                 }
               }
 
+              // লোগো না পেলে অটোমেটিক জেনারেট লোগো
               if (!logoUrl) {
                 logoUrl = generateAutoLogo(title);
               }
@@ -218,7 +229,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Updated successfully with new Bangla and Kolkata rules.`);
+            console.log(`Updated successfully with S3 Storage logo fix.`);
           }
 
           processData();
@@ -230,5 +241,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Updated category rules for Bangla and Kolkata channels: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed missing S3 storage logo links: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
