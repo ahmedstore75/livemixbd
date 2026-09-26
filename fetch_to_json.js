@@ -132,7 +132,7 @@ function getCategoryPriority(name) {
   const isAndPictures = /(&|and|&amp;)\s*picture/i.test(n);
   const movieKeywords = [
     'movie', 'movies', 'cinema', 'hbo', 'star movies', 'sony pix', 'mnx', 'flix', 
-    'cineplex', 'action', 'zee cinema', 'star gold', 'sony max', 'colors cineplex'
+    'cineplex', 'action', 'zee cinema', 'zee bollywood', 'star gold', 'sony max', 'colors cineplex'
   ];
   if (isAndPictures || movieKeywords.some(key => n.includes(key))) return 4;
 
