@@ -167,26 +167,26 @@ jobs:
 
               let logoUrl = "";
 
-              // মিসিং বা ইনকমপ্লিট লোগো ফিল্ড ম্যাচ করা
-              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon|src)"\s*:\s*"([^"]+)"/i) ||
-                                block.match(/(\/?storage\/[^\s"\\]+)/i);
+              // নির্দিষ্ট কী (Key) থেকে লোগো খোঁজা যেন ভুলবশত অন্য গ্লোবাল লোগো না চলে আসে
+              const logoMatch = block.match(/"(?:logo|image|poster|thumbnail|icon)"\s*:\s*"([^"]+)"/i);
 
               if (logoMatch) {
                 let extracted = logoMatch[1].trim();
 
                 if (!extracted.includes(".m3u8")) {
-                  // এপিআই-এর মিসিং ইউআরএলগুলোতে সরাসরি S3 লিঙ্ক বসানোর লজিক
-                  if (extracted.startsWith("/storage/")) {
+                  if (extracted.startsWith("http://") || extracted.startsWith("https://")) {
+                    logoUrl = extracted;
+                  } else if (extracted.startsWith("/storage/")) {
                     logoUrl = "https://s3.aynaott.com" + extracted;
                   } else if (extracted.startsWith("storage/")) {
                     logoUrl = "https://s3.aynaott.com/" + extracted;
-                  } else if (extracted.startsWith("http://") || extracted.startsWith("https://")) {
-                    logoUrl = extracted;
+                  } else if (extracted.startsWith("/")) {
+                    logoUrl = "https://web.aynaott.com" + extracted;
                   }
                 }
               }
 
-              // যদি একেবারেই কোনো লোগো না থাকে
+              // যদি এপিআই-তে লোগো না থাকে, তবে চ্যানেলের নামের উপর ভিত্তি করে অটো লোগো তৈরি হবে
               if (!logoUrl) {
                 logoUrl = generateAutoLogo(title);
               }
@@ -222,7 +222,7 @@ jobs:
 
             fs.writeFileSync("channels.json", JSON.stringify(extractedChannels, null, 2));
             fs.writeFileSync("playlist.m3u", m3uContent);
-            console.log(`Updated successfully with missing S3 logo prefix.`);
+            console.log(`Updated successfully with individual channel logos.`);
           }
 
           processData();
@@ -234,5 +234,5 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add channels.json playlist.m3u
-          git diff --staged --quiet || git commit -m "Fixed missing S3 logo URLs: $(date +'%Y-%m-%d %H:%M:%S')"
+          git diff --staged --quiet || git commit -m "Fixed individual channel logo extraction: $(date +'%Y-%m-%d %H:%M:%S')"
           git push
