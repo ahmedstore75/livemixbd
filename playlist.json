@@ -7,23 +7,23 @@
   "response": [
     {
       "id": 1,
-      "name": "India In Action - Squash - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025029/1790493572276408_AG26_27Sep_Squash_Womens_Singles_Final_live_landscape_thumb.jpg",
+      "name": "Day 9 - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024839/1790368025104894_AG26_Generic_Stream1_live_landscape_thumb_clean.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120301/AG_strea2709/ENG/master.m3u8?hdnea=exp=1790517035~acl=/*~id=57704072709844161209097904046895~hmac=6c8429f52ffc2e148b6df6782b9fd116aba732d41dfb409ce05b6bef53efe39c",
       "cookie": ""
     },
     {
       "id": 2,
-      "name": "India vs Vietnam - Volleyball - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024989/1790463750264842_AG26_27Sep_Volleyball_Mens_India_vs_Vietnam_live_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120303/AG_strea2609/ENG/master.m3u8?hdnea=exp=1790509844~acl=/*~id=50811292464980150086484430495509~hmac=ab7460a6da0d68a2caafbe7196f3136f5d7411f5b74e6db3b7202136dd130434",
+      "name": "Navbakhor KHAMIDOVA vs PARVEEN - Women's 65kg - Boxing - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024987/1790462236702801_AG26_27Sep_Boxing_Womens_65kg_live_landscape_thumb.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2005445/AG_DX5_22709/ENG/master.m3u8?hdnea=exp=1790515237~acl=/*~id=62496731952965798578226232555290~hmac=3eea44fafdd21c31c0fbe294bff52fc1c734c6c60c36ad46872bb83e8760ac91",
       "cookie": ""
     },
     {
       "id": 3,
-      "name": "Sepaktakraw - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789300218628741_AG26_Sepaktakraw_pictogram_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2005445/AG_DX5_22709/ENG/master.m3u8?hdnea=exp=1790515237~acl=/*~id=62496731952965798578226232555290~hmac=3eea44fafdd21c31c0fbe294bff52fc1c734c6c60c36ad46872bb83e8760ac91",
+      "name": "Day 9 - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024839/1790368432961894_AG26_Generic_Stream2_live_landscape_thumb_clean.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120303/AG_strea2609/ENG/master.m3u8?hdnea=exp=1790509844~acl=/*~id=50811292464980150086484430495509~hmac=ab7460a6da0d68a2caafbe7196f3136f5d7411f5b74e6db3b7202136dd130434",
       "cookie": ""
     },
     {
@@ -42,8 +42,8 @@
     },
     {
       "id": 6,
-      "name": "China vs Kazakhstan - Men's Épée Team - Fencing - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541854/thumbnail/1790493671422_1789297812134348_AG26_Fencing_pictogram_landscape_thumb.jpg",
+      "name": "People's Republic of China vs Republic of Korea - Women's Sabre Team - Fencing - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541854/thumbnail/1790497452734_1789297812134348_AG26_Fencing_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2037140/AG_DX8_22709/ENG/master.m3u8?hdnea=exp=1790520640~acl=/*~id=88611368256637938251292154911205~hmac=84cef4f533ebc080b67fd971dd3f68d62fdd180b548511cf97443997d7895931",
       "cookie": ""
     },
@@ -91,15 +91,15 @@
     },
     {
       "id": 13,
-      "name": "Trampoline Gymnastics - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789298851346741_AG26_Trampoline_Gymnastics_pictogram_landscape_thumb.jpg",
+      "name": "Beach Volleyball - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789301718758348_AG26_Beach_Volleyball_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022315/AG_MDS4_2609/ENG/master.m3u8?hdnea=exp=1790509844~acl=/*~id=50811292464980150086484430495509~hmac=ab7460a6da0d68a2caafbe7196f3136f5d7411f5b74e6db3b7202136dd130434",
       "cookie": ""
     },
     {
       "id": 14,
-      "name": "Artistic Swimming - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789292610507348_AG26_Artistic_Swimming_pictogram_landscape_thumb.jpg",
+      "name": "Weightlifting - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789301796678741_AG26_Weightlifting_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2094589/AG_MDS2_2609/ENG/master.m3u8?hdnea=exp=1790504439~acl=/*~id=79063572479575880271526683051111~hmac=ac1892aa2f8704244242277114339d472d34323ba37c6309fc3338cfc5ff23cd",
       "cookie": ""
     },
