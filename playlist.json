@@ -7,8 +7,8 @@
   "response": [
     {
       "id": 1,
-      "name": "India In Action - Weightlifting - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024988/1790462924709672_AG26_27Sep_Weightlifting_Harjinder_Kaur_live_landscape_thumb.jpg",
+      "name": "India In Action - Squash - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024991/1790467701643268_AG26_27Sep_Squash_Mens_Singles_Final_live_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120301/AG_strea2709/ENG/master.m3u8?hdnea=exp=1790517035~acl=/*~id=57704072709844161209097904046895~hmac=6c8429f52ffc2e148b6df6782b9fd116aba732d41dfb409ce05b6bef53efe39c",
       "cookie": ""
     },
@@ -42,8 +42,8 @@
     },
     {
       "id": 6,
-      "name": "HAYATA vs SUN - Women's Singles - Table Tennis - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541854/thumbnail/1790489157460_1789300835115741_AG26_Table_Tennis_pictogram_landscape_thumb.jpg",
+      "name": "Japan vs Republic of Korea - Men's Épée Team - Fencing - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541854/thumbnail/1790490258635_1789297812134348_AG26_Fencing_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2037140/AG_DX8_22709/ENG/master.m3u8?hdnea=exp=1790520640~acl=/*~id=88611368256637938251292154911205~hmac=84cef4f533ebc080b67fd971dd3f68d62fdd180b548511cf97443997d7895931",
       "cookie": ""
     },
@@ -84,8 +84,8 @@
     },
     {
       "id": 12,
-      "name": "Athletics - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541380/thumbnail/1790422469008_1789292853755348_AG26_Athletics_pictogram_landscape_thumb.jpg",
+      "name": "People's Republic of China vs Vietnam - Women - Handball - 27 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541380/thumbnail/1790490606018_1789299020142348_AG26_Handball_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120307/AG_DX2_22709/ENG/master.m3u8?hdnea=exp=1790517044~acl=/*~id=84647360443519550221103918219278~hmac=ec9c99e2483efef49e6fa9fc60cda22c3009f14de81b9099dbfc600f5e94fd6c",
       "cookie": ""
     },
