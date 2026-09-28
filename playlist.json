@@ -14,8 +14,8 @@
     },
     {
       "id": 2,
-      "name": "Torekhan SABYRKHAN vs Ali Qasim Hamdan AL-SARRAY - Men's 70kg - Boxing - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541386/thumbnail/1790572626821_1789293652814348_AG26_Boxing_pictogram_landscape_thumb.jpg",
+      "name": "Shamsher SAIDOV vs Zeyad EASHASH - Men's 70kg - Boxing - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541386/thumbnail/1790574431521_1789293652814348_AG26_Boxing_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2018457/ag_dx5_22809/ENG/master.m3u8?hdnea=exp=1790607032~acl=/*~id=25358520602221257753460844649247~hmac=e5649c68498fed9a61feddb07067b93afa0a0bad6c4c70ef88b49328b424a0fa",
       "cookie": ""
     },
@@ -56,36 +56,36 @@
     },
     {
       "id": 8,
-      "name": "Diving - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789285244661348_AG26_Diving_pictogram_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2018458/ag_mds1_2709/ENG/master.m3u8?hdnea=exp=1790599852~acl=/*~id=64864188041744029923084436429194~hmac=478ed979e4c7f5d1a03dfd675d81856622e31f3ae500bb01455e548f6e42029e",
-      "cookie": ""
-    },
-    {
-      "id": 9,
-      "name": "Singapore vs Chinese Taipei - Softball - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789293295442741_AG26_Softball_pictogram_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022317/ag_mds3_2709/ENG/master.m3u8?hdnea=exp=1790596232~acl=/*~id=24093294659110603680939944176123~hmac=da28033c9dd2adf0c7146d37ff3dacce0739287f3da60dfc1a07ba6467430379",
-      "cookie": ""
-    },
-    {
-      "id": 10,
       "name": "Women's & Mixed Semifinals - Badminton - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
       "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789292948462348_AG26_Badminton_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022319/ag_dx4_22709/ENG/master.m3u8?hdnea=exp=1790598035~acl=/*~id=38418569009342767078254525662211~hmac=c89deca2789dad98f02c7b853239d65fa3ffc6e1bbea3786adf5f232488eb22e",
       "cookie": ""
     },
     {
-      "id": 11,
-      "name": "Volleyball - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789301604665741_AG26_Volleyball_pictogram_landscape_thumb.jpg",
+      "id": 9,
+      "name": "Diving - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789285244661348_AG26_Diving_pictogram_landscape_thumb.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2018458/ag_mds1_2709/ENG/master.m3u8?hdnea=exp=1790599852~acl=/*~id=64864188041744029923084436429194~hmac=478ed979e4c7f5d1a03dfd675d81856622e31f3ae500bb01455e548f6e42029e",
+      "cookie": ""
+    },
+    {
+      "id": 10,
+      "name": "Table Tennis - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789300835115741_AG26_Table_Tennis_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022316/ag_mds2_2709/ENG/master.m3u8?hdnea=exp=1790599883~acl=/*~id=15997905684868562848308481139703~hmac=b36fef59d4db6ca2bb49d8f2bdc0088e53ada7eab2fb48d3bf9a2d859a2d71a4",
       "cookie": ""
     },
     {
+      "id": 11,
+      "name": "Weightlifting - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789301796678741_AG26_Weightlifting_pictogram_landscape_thumb.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022317/ag_mds3_2709/ENG/master.m3u8?hdnea=exp=1790596232~acl=/*~id=24093294659110603680939944176123~hmac=da28033c9dd2adf0c7146d37ff3dacce0739287f3da60dfc1a07ba6467430379",
+      "cookie": ""
+    },
+    {
       "id": 12,
-      "name": "Boxing - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789293652814348_AG26_Boxing_pictogram_landscape_thumb.jpg",
+      "name": "Volleyball - 28 Sep 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789301604665741_AG26_Volleyball_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2037139/ag_mds4_2709/ENG/master.m3u8?hdnea=exp=1790596232~acl=/*~id=24093294659110603680939944176123~hmac=da28033c9dd2adf0c7146d37ff3dacce0739287f3da60dfc1a07ba6467430379",
       "cookie": ""
     },
