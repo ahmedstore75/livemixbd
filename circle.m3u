@@ -7,6 +7,9 @@
 #EXTINF:-1 tvg-id="d614da2b-21fd-45e4-816f-0de46db5cf25" tvg-logo="https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp" group-title="Sports",T Sports 
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 
+#EXTINF:-1 tvg-id="ac6c5217-402f-4d35-b00a-6434298f096c" tvg-logo="https://api.cirkletv.com/files/file_0000000050788208b0b4debf28c41fa7_1790512105560_fa2d01a63b4fe62f.webp" group-title="Sports",T Sports HD 
+https://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=t_sports&sm=.m3u8
+
 #EXTINF:-1 tvg-id="2d40c804-f163-4171-8949-15da49e337ea" tvg-logo="https://api.cirkletv.com/files/PS_1_1787305037500_ec9cd529addf41cb.webp" group-title="Sports",Premier Sports 1
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
 
@@ -63,6 +66,9 @@ https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
 
 #EXTINF:-1 tvg-id="e3ea5749-8691-451a-8d0a-2a74747a110a" tvg-logo="https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp" group-title="Sports",beIN Sports 1
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
+
+#EXTINF:-1 tvg-id="ae0feb6b-a369-4597-bded-d1c535626042" tvg-logo="https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp" group-title="Sports",BEIN SPORTS 3
+https://api.cirkletv.com/api/robi/lps/https://7nyaler.streamhostingcdn.top/stream/74/index.m3u8
 
 #EXTINF:-1 tvg-id="e8a6c0dc-dcd4-4dd9-b9f3-38c8ff9206c2" tvg-logo="https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp" group-title="Sports",BEIN SPORTS 5
 https://andro.226503.xyz/checklist/androstreamlivebs5.m3u8

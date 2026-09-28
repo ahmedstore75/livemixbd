@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-27T04:28:49.973Z",
-  "total_channels": 173,
+  "updated_at": "2026-09-28T04:30:05.693Z",
+  "total_channels": 175,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -9,6 +9,15 @@
       "category": "Sports",
       "urls": [
         "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
+      ]
+    },
+    {
+      "id": "ac6c5217-402f-4d35-b00a-6434298f096c",
+      "name": "T Sports HD ",
+      "logo": "https://api.cirkletv.com/files/file_0000000050788208b0b4debf28c41fa7_1790512105560_fa2d01a63b4fe62f.webp",
+      "category": "Sports",
+      "urls": [
+        "https://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=t_sports&sm=.m3u8"
       ]
     },
     {
@@ -180,6 +189,15 @@
       "category": "Sports",
       "urls": [
         "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
+      ]
+    },
+    {
+      "id": "ae0feb6b-a369-4597-bded-d1c535626042",
+      "name": "BEIN SPORTS 3",
+      "logo": "https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp",
+      "category": "Sports",
+      "urls": [
+        "https://api.cirkletv.com/api/robi/lps/https://7nyaler.streamhostingcdn.top/stream/74/index.m3u8"
       ]
     },
     {
