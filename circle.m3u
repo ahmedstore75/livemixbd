@@ -94,6 +94,12 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1
 #EXTINF:-1 tvg-id="1087750a-f434-4848-958e-4cae30610bb6" tvg-logo="https://api.cirkletv.com/files/sports_fishing_1786589674615_cf0d3ed7b03e2ce6.webp" group-title="Sports",Sports Fishing TV
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
 
+#EXTINF:-1 tvg-id="6b7b9e7b-1b9c-4499-b967-aebaaa685228" tvg-logo="https://api.cirkletv.com/files/Fubo_Primary_Logo_Icon_FC_RGB_1790613649165_b07142322a7fee54.webp" group-title="Sports",Fobo Sports 
+https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/playlist.m3u8#skym3u.dev
+
+#EXTINF:-1 tvg-id="3f6c1ad0-144c-4aa9-9961-f655b8fdfcfa" tvg-logo="https://api.cirkletv.com/files/images__7__1790615324222_37f6d1d810b9efee.webp" group-title="Sports",Fast Sports 
+https://d4ddgdmj1cvnm.cloudfront.net/scheduler/scheduleMaster/409.m3u8#skym3u.dev
+
 # ==========================================
 # CATEGORY: NEWS
 # ==========================================

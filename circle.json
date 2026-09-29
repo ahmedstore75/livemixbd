@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-28T04:30:05.693Z",
-  "total_channels": 175,
+  "updated_at": "2026-09-29T04:59:08.817Z",
+  "total_channels": 177,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -270,6 +270,24 @@
       "category": "Sports",
       "urls": [
         "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8"
+      ]
+    },
+    {
+      "id": "6b7b9e7b-1b9c-4499-b967-aebaaa685228",
+      "name": "Fobo Sports ",
+      "logo": "https://api.cirkletv.com/files/Fubo_Primary_Logo_Icon_FC_RGB_1790613649165_b07142322a7fee54.webp",
+      "category": "Sports",
+      "urls": [
+        "https://aegis-cloudfront-1.tubi.video/c2ac89da-5c69-439e-b85d-d87de0548b54/playlist.m3u8#skym3u.dev"
+      ]
+    },
+    {
+      "id": "3f6c1ad0-144c-4aa9-9961-f655b8fdfcfa",
+      "name": "Fast Sports ",
+      "logo": "https://api.cirkletv.com/files/images__7__1790615324222_37f6d1d810b9efee.webp",
+      "category": "Sports",
+      "urls": [
+        "https://d4ddgdmj1cvnm.cloudfront.net/scheduler/scheduleMaster/409.m3u8#skym3u.dev"
       ]
     },
     {
