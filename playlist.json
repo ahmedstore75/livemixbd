@@ -14,23 +14,23 @@
     },
     {
       "id": 2,
-      "name": "India In Action - Wrestling - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025455/1790807947195474_AG26_Wrestling_combo_mansi_and_aman_live_landscape_thumb.jpg",
+      "name": "Day 13 - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024839/1790368025104894_AG26_Generic_Stream1_live_landscape_thumb_clean.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120301/ag_strea3009/ENG/master.m3u8?hdnea=exp=1790855434~acl=/*~id=85920699754924198705640911730828~hmac=faebb41a5244429060e64c5b5e27e9bb755ca1e38da6eef5b8a31611d1148dfc",
       "cookie": ""
     },
     {
       "id": 3,
-      "name": "India vs Pakistan - Men's Volleyball - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025460/1790811934211494_AG26_1st_Oct_Volleyball_Mens_Quarter_Final_live_landscape_thumb_multi_lang.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2005445/ag_strea3009/HIN/master.m3u8?hdnea=exp=1790860841~acl=/*~id=50350415751279335354068445776117~hmac=80ce017a3d5d881948c766e1fbbc19c5a6d33bad4b632f5568674b69701c8f23",
+      "name": "China - Squash - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025458/1790809149362766_Ag26_1st_Oct_Squash_Womens_Team_Semi_Final_live_landscape_thumb.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120303/ag_strea3009/ENG/master.m3u8?hdnea=exp=1790855450~acl=/*~id=05619847520081141572847890968893~hmac=736c29cc2f402d55e2f624439b68ee29b5c468e55fa459a10e0c15fc25182630",
       "cookie": ""
     },
     {
       "id": 4,
-      "name": "China - Squash - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025458/1790809149362766_Ag26_1st_Oct_Squash_Womens_Team_Semi_Final_live_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120303/ag_strea3009/ENG/master.m3u8?hdnea=exp=1790855450~acl=/*~id=05619847520081141572847890968893~hmac=736c29cc2f402d55e2f624439b68ee29b5c468e55fa459a10e0c15fc25182630",
+      "name": "Day 13 - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024839/1790368607376894_AG26_Generic_Stream4_live_landscape_thumb_clean.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2005445/ag_strea3009/HIN/master.m3u8?hdnea=exp=1790860841~acl=/*~id=50350415751279335354068445776117~hmac=80ce017a3d5d881948c766e1fbbc19c5a6d33bad4b632f5568674b69701c8f23",
       "cookie": ""
     },
     {
@@ -42,30 +42,30 @@
     },
     {
       "id": 6,
+      "name": "Thailand vs Kazakhstan - Women - Rugby Sevens - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541853/thumbnail/1790821716802_1789300066350741_AG26_Rugby_pictogram_landscape_thumb.jpg",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120308/ag_dx7_03009/ENG/master.m3u8?hdnea=exp=1790857236~acl=/*~id=47923604069966017783007303785662~hmac=de0914e66ecd701c97a684630f6095acc1b5aa258e0d011fdcd4a71e19c98e75",
+      "cookie": ""
+    },
+    {
+      "id": 7,
       "name": "Wrestling - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
       "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789301849823741_AG26_Wrestling_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120305/ag_mds1_3009/ENG/master.m3u8?hdnea=exp=1790855450~acl=/*~id=05619847520081141572847890968893~hmac=736c29cc2f402d55e2f624439b68ee29b5c468e55fa459a10e0c15fc25182630",
       "cookie": ""
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Beach Volleyball - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
       "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541380/thumbnail/1790816445847_1789301718758348_AG26_Beach_Volleyball_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120304/ag_dx2_03009/ENG/master.m3u8?hdnea=exp=1790862633~acl=/*~id=52469549066928850239267539656950~hmac=81b439d89ccc08ea6b357a9c5d63b2547a14bf13f4d42add06f60ac73bc84cf6",
       "cookie": ""
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Squash - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
       "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789300652991741_AG26_Squash_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120306/ag_edx1_3009/ENG/master.m3u8?hdnea=exp=1790860848~acl=/*~id=53239537297521591387912619401960~hmac=83cfc7e72ded3e9f6a06d9db1308b46decee22e0315947ae590be14559a3097a",
-      "cookie": ""
-    },
-    {
-      "id": 9,
-      "name": "Sri Lanka vs Philippines - Men - Rugby Sevens - 1 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/blitz_assets/1090541853/thumbnail/1790820332489_1789300066350741_AG26_Rugby_pictogram_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120308/ag_dx7_03009/ENG/master.m3u8?hdnea=exp=1790857236~acl=/*~id=47923604069966017783007303785662~hmac=de0914e66ecd701c97a684630f6095acc1b5aa258e0d011fdcd4a71e19c98e75",
       "cookie": ""
     },
     {
