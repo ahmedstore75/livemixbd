@@ -1031,35 +1031,35 @@
       "id": 147,
       "name": "Colors HD",
       "logo": "https://i.postimg.cc/F1t6r1gv/20240823_023247.png",
-      "stream_url": "http://202.70.146.135:8000/play/a00b/index.m3u8",
+      "stream_url": "http://198.195.239.50:8095/COLORS.HD/index.m3u8",
       "cookie": ""
     },
     {
       "id": 148,
       "name": "Colors Cineplex",
       "logo": "https://i.postimg.cc/Tw3MFyQH/20240823_022713.png",
-      "stream_url": "http://202.70.146.135:8000/play/a04n/index.m3u8",
+      "stream_url": "http://198.195.239.50:8095/COLORS.CINEPLEX.HD/index.m3u8",
       "cookie": ""
     },
     {
       "id": 149,
       "name": "Star Plus HD",
       "logo": "https://i.postimg.cc/8k3QXzvt/20240823_022853.png",
-      "stream_url": "http://202.70.146.135:8000/play/a009/index.m3u8",
+      "stream_url": "http://198.195.239.50:8095/STAR.PLUS.HD/index.m3u8",
       "cookie": ""
     },
     {
       "id": 150,
       "name": "Star Gold HD",
       "logo": "https://i.postimg.cc/6pCXvxyz/20240823_022553.png",
-      "stream_url": "http://202.70.146.135:8000/play/a02a/index.m3u8",
+      "stream_url": "http://198.195.239.50:8095/STAR.GOLD.HD/index.m3u8",
       "cookie": ""
     },
     {
       "id": 151,
-      "name": "Star Gold Selected",
+      "name": "Star Movies Selected",
       "logo": "https://i.postimg.cc/bYKYDTmy/20240823_023330.png",
-      "stream_url": "http://202.70.146.135:8000/play/a068/index.m3u8",
+      "stream_url": "http://198.195.239.50:8095/STAR.MOVIES.SEL.HD/index.m3u8",
       "cookie": ""
     },
     {
