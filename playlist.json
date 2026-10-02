@@ -7,15 +7,15 @@
   "response": [
     {
       "id": 1,
-      "name": "Day 14 - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024839/1790368025104894_AG26_Generic_Stream1_live_landscape_thumb_clean.jpg",
+      "name": "India In Action - Archery - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025618/1790920686306509_AG_Archery_koreaVindia_final_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022315/ag_strea0110/ENG/master.m3u8?hdnea=exp=1790943633~acl=/*~id=39342262395456519119082838798273~hmac=1a938b098681b49a9dc6d268885bdb762b966b92bdeb40e2b5d90b527e171e1b",
       "cookie": ""
     },
     {
       "id": 2,
-      "name": "Day 14 - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024839/1790368607376894_AG26_Generic_Stream4_live_landscape_thumb_clean.jpg",
+      "name": "India In Action - Archery - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000025618/1790920971611509_AG_Archery_koreaVindia_final_landscape_thumb_multi.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2022317/ag_strea0110/HIN/master.m3u8?hdnea=exp=1790943640~acl=/*~id=96709797876726601682873278510693~hmac=8738175bfceb370fc0e758bfaea9bbac76c5988a072457b7400a91943bb7ff16",
       "cookie": ""
     },
@@ -63,29 +63,29 @@
     },
     {
       "id": 9,
-      "name": "Beach Volleyball - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789301718758348_AG26_Beach_Volleyball_pictogram_landscape_thumb.jpg",
+      "name": "Archery - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789285619786348_AG26_archery_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120302/ag_mds1_0110/ENG/master.m3u8?hdnea=exp=1790943640~acl=/*~id=96709797876726601682873278510693~hmac=8738175bfceb370fc0e758bfaea9bbac76c5988a072457b7400a91943bb7ff16",
       "cookie": ""
     },
     {
       "id": 10,
-      "name": "Softball - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789293295442741_AG26_Softball_pictogram_landscape_thumb.jpg",
+      "name": "Boxing - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789293652814348_AG26_Boxing_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2094589/ag_mds2_0110/ENG/master.m3u8?hdnea=exp=1790943640~acl=/*~id=96709797876726601682873278510693~hmac=8738175bfceb370fc0e758bfaea9bbac76c5988a072457b7400a91943bb7ff16",
       "cookie": ""
     },
     {
       "id": 11,
-      "name": "Wrestling - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023916/1789301849823741_AG26_Wrestling_pictogram_landscape_thumb.jpg",
+      "name": "Beach Volleyball - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789301718758348_AG26_Beach_Volleyball_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2094587/ag_mds3_0110/ENG/master.m3u8?hdnea=exp=1790947243~acl=/*~id=54969641390469150075485280669252~hmac=451d64deac38aadbd297129d8b4c492b0609105a62be713a5fa460d86409fc57",
       "cookie": ""
     },
     {
       "id": 12,
-      "name": "Judo - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789299207639348_AG26_Judo_pictogram_landscape_thumb.jpg",
+      "name": "Ju-Jitsu - 2 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789294192890348_AG26_Ju_Jitsu_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2018458/ag_mds4_0110/ENG/master.m3u8?hdnea=exp=1790943640~acl=/*~id=96709797876726601682873278510693~hmac=8738175bfceb370fc0e758bfaea9bbac76c5988a072457b7400a91943bb7ff16",
       "cookie": ""
     },
@@ -1101,35 +1101,35 @@
       "id": 157,
       "name": "Colors HD",
       "logo": "https://i.postimg.cc/F1t6r1gv/20240823_023247.png",
-      "stream_url": "http://198.195.239.50:8095/COLORS.HD/index.m3u8",
+      "stream_url": "http://202.70.146.135:8000/play/a00b/index.m3u8",
       "cookie": ""
     },
     {
       "id": 158,
       "name": "Colors Cineplex",
       "logo": "https://i.postimg.cc/Tw3MFyQH/20240823_022713.png",
-      "stream_url": "http://198.195.239.50:8095/COLORS.CINEPLEX.HD/index.m3u8",
+      "stream_url": "http://202.70.146.135:8000/play/a04n/index.m3u8",
       "cookie": ""
     },
     {
       "id": 159,
       "name": "Star Plus HD",
       "logo": "https://i.postimg.cc/8k3QXzvt/20240823_022853.png",
-      "stream_url": "http://198.195.239.50:8095/STAR.PLUS.HD/index.m3u8",
+      "stream_url": "http://202.70.146.135:8000/play/a009/index.m3u8",
       "cookie": ""
     },
     {
       "id": 160,
       "name": "Star Gold HD",
       "logo": "https://i.postimg.cc/6pCXvxyz/20240823_022553.png",
-      "stream_url": "http://198.195.239.50:8095/STAR.GOLD.HD/index.m3u8",
+      "stream_url": "http://202.70.146.135:8000/play/a02a/index.m3u8",
       "cookie": ""
     },
     {
       "id": 161,
-      "name": "Star Movies Selected",
+      "name": "Star Gold Selected",
       "logo": "https://i.postimg.cc/bYKYDTmy/20240823_023330.png",
-      "stream_url": "http://198.195.239.50:8095/STAR.MOVIES.SEL.HD/index.m3u8",
+      "stream_url": "http://202.70.146.135:8000/play/a068/index.m3u8",
       "cookie": ""
     },
     {
