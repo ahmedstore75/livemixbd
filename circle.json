@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-02T04:48:16.442Z",
-  "total_channels": 177,
+  "updated_at": "2026-10-03T04:30:55.074Z",
+  "total_channels": 179,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -8,7 +8,7 @@
       "logo": "https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp",
       "category": "Sports",
       "urls": [
-        "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
+        "https://tvsen5.aynaott.com/TnMn5kZz8aLmjkl/index.m3u8"
       ]
     },
     {
@@ -261,6 +261,15 @@
       "category": "Sports",
       "urls": [
         "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
+      ]
+    },
+    {
+      "id": "b32ebc05-63b0-46bc-9941-2d73f6a558ac",
+      "name": "Trace Sports ",
+      "logo": "https://api.cirkletv.com/files/images__10__1790931301579_40ad23aa00d24c51.webp",
+      "category": "Sports",
+      "urls": [
+        "https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8"
       ]
     },
     {
@@ -899,7 +908,7 @@
       "logo": "https://api.cirkletv.com/files/colors_bangla_cinema_1787505185776_776516e62e415a58.webp",
       "category": "Bangla Entertainment",
       "urls": [
-        "https://api.cirkletv.com/api/hridoy-tv-pro/stream/1657?expire=43738831219634"
+        "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8"
       ]
     },
     {
@@ -1038,12 +1047,21 @@
       ]
     },
     {
+      "id": "562a79fa-93f8-42b0-a390-4199479494da",
+      "name": "Bangla Tv",
+      "logo": "https://api.cirkletv.com/files/images__21__1790953823564_8d097b219bdd5b2b.webp",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8"
+      ]
+    },
+    {
       "id": "4c2b3050-cd94-4a2e-854c-54ecc2114e01",
       "name": "Colors Cineplex",
       "logo": "https://api.cirkletv.com/files/colors_cineplex_1787483017398_c150769e9cd9f85c.webp",
       "category": "Hindi Entertainment",
       "urls": [
-        "https://api.cirkletv.com/api/hridoy-tv-pro/stream/482?expire=43738831219634"
+        "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8"
       ]
     },
     {
@@ -1178,7 +1196,7 @@
       "logo": "https://api.cirkletv.com/files/IMG_20260829_090557_1787972782680_55a9682479135545.webp",
       "category": "Movies",
       "urls": [
-        "https://cdn-2.pishow.tv/live/1460/master.m3u8"
+        "https://mumt03.tangotv.in/Dsly5z3HGOLDMINES2/index.m3u8"
       ]
     },
     {

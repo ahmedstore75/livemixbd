@@ -5,7 +5,7 @@
 # ==========================================
 
 #EXTINF:-1 tvg-id="d614da2b-21fd-45e4-816f-0de46db5cf25" tvg-logo="https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp" group-title="Sports",T Sports 
-https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
+https://tvsen5.aynaott.com/TnMn5kZz8aLmjkl/index.m3u8
 
 #EXTINF:-1 tvg-id="ac6c5217-402f-4d35-b00a-6434298f096c" tvg-logo="https://api.cirkletv.com/files/file_0000000050788208b0b4debf28c41fa7_1790512105560_fa2d01a63b4fe62f.webp" group-title="Sports",T Sports HD 
 https://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=t_sports&sm=.m3u8
@@ -90,6 +90,9 @@ https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1
 
 #EXTINF:-1 tvg-id="2e43903b-7e7e-4bc9-a88c-06f56fe27c67" tvg-logo="https://api.cirkletv.com/files/TNT_Sports_1_1784796055116_b958cb8da4f4b760.webp" group-title="Sports",TNT Sports 3
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
+
+#EXTINF:-1 tvg-id="b32ebc05-63b0-46bc-9941-2d73f6a558ac" tvg-logo="https://api.cirkletv.com/files/images__10__1790931301579_40ad23aa00d24c51.webp" group-title="Sports",Trace Sports 
+https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="1087750a-f434-4848-958e-4cae30610bb6" tvg-logo="https://api.cirkletv.com/files/sports_fishing_1786589674615_cf0d3ed7b03e2ce6.webp" group-title="Sports",Sports Fishing TV
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/eea68b79-bfe2-451e-a227-d637a5b9548a/manifest.m3u8
@@ -310,7 +313,7 @@ https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8
 
 #EXTINF:-1 tvg-id="55827431-6a5f-468a-b0bc-c2852b226db0" tvg-logo="https://api.cirkletv.com/files/colors_bangla_cinema_1787505185776_776516e62e415a58.webp" group-title="Bangla Entertainment",Colors Bangla Cinema
-https://api.cirkletv.com/api/hridoy-tv-pro/stream/1657?expire=43738831219634
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8
 
 #EXTINF:-1 tvg-id="281b89a4-2fb6-40e0-bff4-92f945aff10a" tvg-logo="https://api.cirkletv.com/files/In_Shot_20260808_131440307_1788346873916_e5ea4d216bd37c40.webp" group-title="Bangla Entertainment",Duronto
 https://tvsen5.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.fmp4.m3u8?token=26849003e1fe1bed0b0c40f6d3be853eb9a2b4f7-6a6a5971089a426fc1829aad7d929e8a-1784095967-1784095067&remote=no_check_ip
@@ -357,12 +360,15 @@ https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ac8cd37c-7b03-42ff-8ba8-60e4ea0bd2f9" tvg-logo="https://api.cirkletv.com/files/duronto_1789066021278_13000bcac9f4d95c.webp" group-title="Bangla Entertainment",Duronto Tv
 https://tvsen5.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.fmp4.m3u8?token=26849003e1fe1bed0b0c40f6d3be853eb9a2b4f7-6a6a5971089a426fc1829aad7d929e8a-1784095967-1784095067&remote=no_check_ip
 
+#EXTINF:-1 tvg-id="562a79fa-93f8-42b0-a390-4199479494da" tvg-logo="https://api.cirkletv.com/files/images__21__1790953823564_8d097b219bdd5b2b.webp" group-title="Bangla Entertainment",Bangla Tv
+https://tvsen6.aynaott.com/39ee93nUbCCmm5LsyD4t/index.m3u8
+
 # ==========================================
 # CATEGORY: HINDI ENTERTAINMENT
 # ==========================================
 
 #EXTINF:-1 tvg-id="4c2b3050-cd94-4a2e-854c-54ecc2114e01" tvg-logo="https://api.cirkletv.com/files/colors_cineplex_1787483017398_c150769e9cd9f85c.webp" group-title="Hindi Entertainment",Colors Cineplex
-https://api.cirkletv.com/api/hridoy-tv-pro/stream/482?expire=43738831219634
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8
 
 #EXTINF:-1 tvg-id="370258f2-d645-49ee-ba97-1bc24cea07ef" tvg-logo="https://api.cirkletv.com/files/sony_sab_1787820179774_fccc5bec1c26788d.webp" group-title="Hindi Entertainment",Sony SAB
 https://api.cirkletv.com/api/hridoy-tv/stream/sonysab_hd_576?expire=43738831219634
@@ -411,7 +417,7 @@ https://streams.tangotv.in/GOLDMINEMOVIES/ORIGIN/index.m3u8
 https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
 
 #EXTINF:-1 tvg-id="173098e5-a141-41ae-b16a-ee93af99a62d" tvg-logo="https://api.cirkletv.com/files/IMG_20260829_090557_1787972782680_55a9682479135545.webp" group-title="Movies",Goldmines  2
-https://cdn-2.pishow.tv/live/1460/master.m3u8
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINES2/index.m3u8
 
 #EXTINF:-1 tvg-id="6966c2e1-b5be-4a97-aaa2-634857e5b7b4" tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Star%20Movies.png" group-title="Movies",Star Movies
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
