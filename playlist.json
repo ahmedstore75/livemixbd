@@ -30,7 +30,7 @@
       "id": 4,
       "name": "Golf - 3 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
       "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789297941567348_AG26_Golf_pictogram_landscape_thumb.jpg",
-      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120300/ag_mds4_0210/ENG/master.m3u8?hdnea=exp=1791017438~acl=/*~id=22996757667710002841757752074188~hmac=8a6ccbf86c352cbbe8cfc73355fb54ea8d4d2d6858d0c089ef590f2020cbdd16",
+      "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2120300/ag_mds4_0210/ENG/master.m3u8?hdnea=exp=1791058832~acl=/*~id=08429568719682706116188112177312~hmac=f1a238c14faf47a068e4b0e3b9f16c457f62fc6a6a0a447e1a3c62548290508d",
       "cookie": ""
     },
     {
@@ -56,8 +56,8 @@
     },
     {
       "id": 8,
-      "name": "Archery - 3 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
-      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789285619786348_AG26_archery_pictogram_landscape_thumb.jpg",
+      "name": "Judo - 3 Oct 2026 | 20th Asian Games Aichi-Nagoya 2026",
+      "logo": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000023915/1789299207639348_AG26_Judo_pictogram_landscape_thumb.jpg",
       "stream_url": "https://sonydaimenew.akamaized.net/hls/live/2018457/ag_mds1_0210/ENG/master.m3u8?hdnea=exp=1791028262~acl=/*~id=98601785485711092808063264943013~hmac=52b9670e28542601eac5f3735aae5cb1fc8f5b338ee628c0e2fa41e9ebf02b7d",
       "cookie": ""
     },
