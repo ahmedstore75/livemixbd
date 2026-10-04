@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-03T04:30:55.074Z",
-  "total_channels": 179,
+  "updated_at": "2026-10-04T05:01:29.655Z",
+  "total_channels": 178,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -90,15 +90,6 @@
       "category": "Sports",
       "urls": [
         "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8"
-      ]
-    },
-    {
-      "id": "de87ed96-9d64-4e76-ac4e-278a2d8b19a3",
-      "name": "Sony Sports 2",
-      "logo": "https://api.cirkletv.com/files/Hridoy_TV_pro__59___1__1788550465196_e6ad2cc58fd1cc82.webp",
-      "category": "Sports",
-      "urls": [
-        "https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8"
       ]
     },
     {

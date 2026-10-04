@@ -34,9 +34,6 @@ https://tvsen5.aynascope.net/willowhd/mono.m3u8
 #EXTINF:-1 tvg-id="87af8531-e94e-4971-9073-e4ab81330944" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_06_25_09_53_34_9141_4__2__1788550378513_ea4594111d4ab0d4.webp" group-title="Sports",Sony Sports 1
 https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
 
-#EXTINF:-1 tvg-id="de87ed96-9d64-4e76-ac4e-278a2d8b19a3" tvg-logo="https://api.cirkletv.com/files/Hridoy_TV_pro__59___1__1788550465196_e6ad2cc58fd1cc82.webp" group-title="Sports",Sony Sports 2
-https://stream.ottplus.live/live/ten_2_hd_abr/live/ten_2_hd_720/chunks.m3u8
-
 #EXTINF:-1 tvg-id="91294780-c4b5-4fb5-a10b-65c6f867c4ff" tvg-logo="https://api.cirkletv.com/files/cirkletv_1788551378055_43cacc631951e164.webp" group-title="Sports",Sony Sports 5
 https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8
 
