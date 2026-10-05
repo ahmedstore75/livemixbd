@@ -917,9 +917,9 @@
     },
     {
       "id": 131,
-      "name": "Disnep HD",
+      "name": "Disnep Junior",
       "logo": "https://i.postimg.cc/BnPv7zt1/20240823_021725.png",
-      "stream_url": "http://88.212.15.19/live/disney_channel_hun/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/disneyjunior/index.m3u8",
       "cookie": ""
     },
     {
@@ -1022,37 +1022,37 @@
     },
     {
       "id": 146,
-      "name": "Colors HD",
+      "name": "Colors",
       "logo": "https://i.postimg.cc/F1t6r1gv/20240823_023247.png",
-      "stream_url": "http://202.70.146.135:8000/play/a00b/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/colorssd/index.m3u8",
       "cookie": ""
     },
     {
       "id": 147,
-      "name": "Colors Cineplex",
+      "name": "Colors Cineplex HD",
       "logo": "https://i.postimg.cc/Tw3MFyQH/20240823_022713.png",
-      "stream_url": "http://202.70.146.135:8000/play/a04n/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/colorscineplexhd/index.m3u8",
       "cookie": ""
     },
     {
       "id": 148,
       "name": "Star Plus HD",
       "logo": "https://i.postimg.cc/8k3QXzvt/20240823_022853.png",
-      "stream_url": "http://202.70.146.135:8000/play/a009/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/starplushd/index.m3u8",
       "cookie": ""
     },
     {
       "id": 149,
-      "name": "Star Gold HD",
+      "name": "Star Gold",
       "logo": "https://i.postimg.cc/6pCXvxyz/20240823_022553.png",
-      "stream_url": "http://202.70.146.135:8000/play/a02a/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/stargold/index.m3u8",
       "cookie": ""
     },
     {
       "id": 150,
-      "name": "Star Gold Selected",
+      "name": "Star Gold Selected HD",
       "logo": "https://i.postimg.cc/bYKYDTmy/20240823_023330.png",
-      "stream_url": "http://202.70.146.135:8000/play/a068/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/stargoldselecthd/index.m3u8",
       "cookie": ""
     },
     {
@@ -1493,14 +1493,14 @@
       "id": 213,
       "name": "National Geographic HD",
       "logo": "https://i.postimg.cc/VN6PHrKZ/20240823_023950.png",
-      "stream_url": "http://rgkkw.live:8080/live/4dfoydR2gZ/clever3still/98874.ts",
+      "stream_url": "http://51.75.127.199:3141/natgeohd/index.m3u8",
       "cookie": ""
     },
     {
       "id": 214,
-      "name": "National Wild HD",
+      "name": "National Wild",
       "logo": "https://i.postimg.cc/Jh2Cwrgr/20240823-024003.png",
-      "stream_url": "http://202.70.146.135:8000/play/a05j/index.m3u8",
+      "stream_url": "http://51.75.127.199:3141/natgeowild/index.m3u8",
       "cookie": ""
     },
     {
