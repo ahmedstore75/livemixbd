@@ -7,22 +7,22 @@
   "response": [
     {
       "id": 1,
-      "name": "Alaves vs Atletico Madrid - MATCHDAY 8 - LaLiga 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790926001540x302.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 2,
       "name": "LOSC vs Le Havre - MATCHDAY 6 - French Ligue 1 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791191670540x302.jpg",
       "stream_url": "https://saseries.akamaized.net/hls/live/2110097/306-tapmad/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Barcelona vs Getafe - MATCHDAY 8 - LaLiga 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790926258540x302.jpg",
+      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/tapmad258645/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 3,
+      "name": "Abdoulaye Kane vs Badr Medkouri - PFL Africa - PFL 2026",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791275903540x302.jpg",
       "stream_url": "https://vodnewv2.in-maa-1.linodeobjects.com/promos/Tapmadpromo/master.m3u8",
       "cookie": ""
     },
