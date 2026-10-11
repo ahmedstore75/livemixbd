@@ -14,7 +14,7 @@ https://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=t_sports&sm=.m3u8
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
 
 #EXTINF:-1 tvg-id="f9585f8e-afe0-499d-bb6a-2a4e8b1f4841" tvg-logo="https://api.cirkletv.com/files/ptv_sports_1786333039686_d1a316e4865831b3.webp" group-title="Sports",PTV Sports
-https://flussonic.defineatoz.com/PTV/index.m3u8
+https://tvsen7.aynaott.com/zY3hJ7pQ2vM5gD8s/index.m3u8?e=1784102651&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&ip=52.157.32.49&token=258517a6abcacd20116947f2c3132059
 
 #EXTINF:-1 tvg-id="97648766-4490-41cc-980e-e569faeddd4e" tvg-logo="https://api.cirkletv.com/files/pksports_1786626635171_dc66352a7666f1dc.webp" group-title="Sports",PK Sports
 https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
@@ -39,6 +39,9 @@ https://stream.ottplus.live/live/ten_5_hd_abr/live/ten_5_hd_720/chunks.m3u8
 
 #EXTINF:-1 tvg-id="6b2f7a2c-55c2-4da1-b02d-bc5cf801fa19" tvg-logo="https://api.cirkletv.com/files/SS1HD_1786557023650_40cc63980755dc9c.webp" group-title="Sports",Star Sports 1
 https://sports-play.hridoytv-master.workers.dev/proxy?url=https%3A%2F%2Fmz02.playerr03.com%3A7060%2Fhls%2Fstar1kibich5.m3u8%3Fmd5%3D2FskN3T9CgNXbh_CsF6iFw%26expires%3D1789438607%26ch%3Dstar1kibich5%26s%3D8065f9bc990b0c77fb42d72cbe8aba61&expire=48426875
+
+#EXTINF:-1 tvg-id="a86c4049-99b5-4ec5-86c1-8301c7715b87" tvg-logo="https://api.cirkletv.com/files/SS1HD_1786557023650_40cc63980755dc9c.webp" group-title="Sports",Star Sports 1 HD Hindi
+https://starsportshindiii.pages.dev/index.m3u8
 
 #EXTINF:-1 tvg-id="ede09ced-dda7-43ec-929a-38d1d9cc7fab" tvg-logo="https://api.cirkletv.com/files/star_sports_2_1786556991887_47a52a99537415cf.webp" group-title="Sports",Star Sports 2 HD
 https://tvsen7.aynascope.net/ssport2hd/tracks-v1a1/mono.ts.m3u8
@@ -65,7 +68,7 @@ https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
 
 #EXTINF:-1 tvg-id="ae0feb6b-a369-4597-bded-d1c535626042" tvg-logo="https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp" group-title="Sports",BEIN SPORTS 3
-https://api.cirkletv.com/api/robi/lps/https://7nyaler.streamhostingcdn.top/stream/74/index.m3u8
+https://tvsen6.aynaott.com/beinsports/index.m3u8
 
 #EXTINF:-1 tvg-id="e8a6c0dc-dcd4-4dd9-b9f3-38c8ff9206c2" tvg-logo="https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp" group-title="Sports",BEIN SPORTS 5
 https://andro.226503.xyz/checklist/androstreamlivebs5.m3u8
@@ -326,6 +329,15 @@ https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 
 #EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
+
+#EXTINF:-1 tvg-id="b79b054f-1513-429e-8f70-7b0b7acb37b6" tvg-logo="" group-title="Bangla Entertainment",Rayo Vallecano vs Athletic  Match LIVE 
+https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8
+
+#EXTINF:-1 tvg-id="6134fd25-f0d4-4f5c-ae8b-5d6000c89b3e" tvg-logo="" group-title="Bangla Entertainment",Royo vallecano vs athletic
+https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8
+
+#EXTINF:-1 tvg-id="bb7742f5-5a13-4222-809b-5badbfb3656b" tvg-logo="" group-title="Bangla Entertainment",Rayo Vallecano vs Athletic Match LIVE 
+https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8
 
 #EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="Bangla Entertainment",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2

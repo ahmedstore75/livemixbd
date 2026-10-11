@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-10T05:03:18.919Z",
-  "total_channels": 178,
+  "updated_at": "2026-10-11T04:52:28.871Z",
+  "total_channels": 182,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -35,7 +35,7 @@
       "logo": "https://api.cirkletv.com/files/ptv_sports_1786333039686_d1a316e4865831b3.webp",
       "category": "Sports",
       "urls": [
-        "https://flussonic.defineatoz.com/PTV/index.m3u8"
+        "https://tvsen7.aynaott.com/zY3hJ7pQ2vM5gD8s/index.m3u8?e=1784102651&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&ip=52.157.32.49&token=258517a6abcacd20116947f2c3132059"
       ]
     },
     {
@@ -108,6 +108,15 @@
       "category": "Sports",
       "urls": [
         "https://sports-play.hridoytv-master.workers.dev/proxy?url=https%3A%2F%2Fmz02.playerr03.com%3A7060%2Fhls%2Fstar1kibich5.m3u8%3Fmd5%3D2FskN3T9CgNXbh_CsF6iFw%26expires%3D1789438607%26ch%3Dstar1kibich5%26s%3D8065f9bc990b0c77fb42d72cbe8aba61&expire=48426875"
+      ]
+    },
+    {
+      "id": "a86c4049-99b5-4ec5-86c1-8301c7715b87",
+      "name": "Star Sports 1 HD Hindi",
+      "logo": "https://api.cirkletv.com/files/SS1HD_1786557023650_40cc63980755dc9c.webp",
+      "category": "Sports",
+      "urls": [
+        "https://starsportshindiii.pages.dev/index.m3u8"
       ]
     },
     {
@@ -188,7 +197,7 @@
       "logo": "https://api.cirkletv.com/files/bein_sport_1781972043602_7a2feb38f5f0c44c.webp",
       "category": "Sports",
       "urls": [
-        "https://api.cirkletv.com/api/robi/lps/https://7nyaler.streamhostingcdn.top/stream/74/index.m3u8"
+        "https://tvsen6.aynaott.com/beinsports/index.m3u8"
       ]
     },
     {
@@ -945,6 +954,33 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
+      ]
+    },
+    {
+      "id": "b79b054f-1513-429e-8f70-7b0b7acb37b6",
+      "name": "Rayo Vallecano vs Athletic  Match LIVE ",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8"
+      ]
+    },
+    {
+      "id": "6134fd25-f0d4-4f5c-ae8b-5d6000c89b3e",
+      "name": "Royo vallecano vs athletic",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8"
+      ]
+    },
+    {
+      "id": "bb7742f5-5a13-4222-809b-5badbfb3656b",
+      "name": "Rayo Vallecano vs Athletic Match LIVE ",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8"
       ]
     },
     {
