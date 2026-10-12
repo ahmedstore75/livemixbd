@@ -330,15 +330,6 @@ https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 #EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
 
-#EXTINF:-1 tvg-id="b79b054f-1513-429e-8f70-7b0b7acb37b6" tvg-logo="" group-title="Bangla Entertainment",Rayo Vallecano vs Athletic  Match LIVE 
-https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8
-
-#EXTINF:-1 tvg-id="6134fd25-f0d4-4f5c-ae8b-5d6000c89b3e" tvg-logo="" group-title="Bangla Entertainment",Royo vallecano vs athletic
-https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8
-
-#EXTINF:-1 tvg-id="bb7742f5-5a13-4222-809b-5badbfb3656b" tvg-logo="" group-title="Bangla Entertainment",Rayo Vallecano vs Athletic Match LIVE 
-https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8
-
 #EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="Bangla Entertainment",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2
 

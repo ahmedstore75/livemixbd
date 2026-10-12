@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-11T04:52:28.871Z",
-  "total_channels": 182,
+  "updated_at": "2026-10-12T05:07:08.342Z",
+  "total_channels": 179,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -954,33 +954,6 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
-      ]
-    },
-    {
-      "id": "b79b054f-1513-429e-8f70-7b0b7acb37b6",
-      "name": "Rayo Vallecano vs Athletic  Match LIVE ",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8"
-      ]
-    },
-    {
-      "id": "6134fd25-f0d4-4f5c-ae8b-5d6000c89b3e",
-      "name": "Royo vallecano vs athletic",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8"
-      ]
-    },
-    {
-      "id": "bb7742f5-5a13-4222-809b-5badbfb3656b",
-      "name": "Rayo Vallecano vs Athletic Match LIVE ",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/level_1.m3u8"
       ]
     },
     {
