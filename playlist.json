@@ -21,23 +21,23 @@
     },
     {
       "id": 3,
-      "name": "Newcastle Jets FC (AUS) vs Gamba Osaka (JPN) Live - MATCHDAY 2 - AFC Champions League Elite 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791360983540x302.jpg",
-      "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/tapeuropa27/master.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 4,
       "name": "Brothers Union Ltd vs Fakirerpool Young Mens Club - MATCHDAY 3 - Federation Cup 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790936527540x302.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/tapmad-PAKvsWI-BKd2-TesT/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Rahamatgonj MFS vs Chattogram City FC - MATCHDAY 3 - Federation Cup 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790936642540x302.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/Laliga-2026/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 5,
+      "name": "Shanghai Port FC (CHN) vs Daejeon Hana Citizen FC (KOR) Live - MATCHDAY 2 - AFC Champions League Elite 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791361421540x302.jpg",
+      "stream_url": "https://serieAleague.akamaized.net/hls/live/2107107/Tapmad-KjL52/master.m3u8",
       "cookie": ""
     },
     {
