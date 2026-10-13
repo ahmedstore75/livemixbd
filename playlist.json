@@ -7,37 +7,37 @@
   "response": [
     {
       "id": 1,
-      "name": "Pakistan vs Sri Lanka - 3rd T20I - Sri Lanka Tour of Pakistan 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791546548540x302.jpg",
-      "stream_url": "https://t-prod-pk.tapmad.com/v1/019eff56c91d15e8f412028003f9/019eff5a7a6f15e8f060057b6796/main.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 2,
       "name": "Al Seeb Club (OMA) vs Al Hussein (JOR) Live - MATCHDAY 2 - AFC Champions League Two 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791359646540x302.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8",
       "cookie": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Al Sadd SC (QAT) vs Al Hilal SFC (KSA) Live - MATCHDAY 2 - AFC Champions League Elite 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791366374540x302.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/tapmad-PAKvsWI-BKd2-TesT/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Lens vs Sporting CP - MATCHDAY 2 - UEFA Champions League 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791189230540x302.jpg",
       "stream_url": "https://saseries.akamaized.net/hls/live/2110097/28593jkiL-tapmad/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Sabah vs Slavia Praha - MATCHDAY 2 - UEFA Champions League 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791189392540x302.jpg",
       "stream_url": "https://saseries.akamaized.net/hls/live/2110097/FiFa-3827e1/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 5,
+      "name": "Al Ittihad Club (KSA) vs Shabab Al Ahli (UAE) Live - MATCHDAY 2 - AFC Champions League Elite 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791366814540x302.jpg",
+      "stream_url": "https://vodintlv2.in-maa-1.linodeobjects.com/AFC2026/Elite/PERVIEW/AfcElitepromo/master.m3u8",
       "cookie": ""
     },
     {
