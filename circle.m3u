@@ -330,6 +330,9 @@ https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 #EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
 
+#EXTINF:-1 tvg-id="b14a7033-632d-4c40-97d2-b09b50654d4d" tvg-logo="" group-title="Bangla Entertainment", Shakhtar Donetsk vs AEK Athens
+https://tencent-cdn.tapmad.com/v1/019ea6d121dd15e8f4122afee4cf8f/019ea6d2f96e15e8f0602c5e1b7bc3/fifa1_720.m3u8
+
 #EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="Bangla Entertainment",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2
 
@@ -479,6 +482,9 @@ https://wildearth-plex.amagi.tv/master.m3u8
 
 #EXTINF:-1 tvg-id="9fc126b7-92ba-480a-a88a-47550fc7a0ba" tvg-logo="https://s3.aynaott.com/storage/13c04e44967d653c70eac9670b47fa5d" group-title="Infotainment",Adventure Earth
 https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="cc6b406d-e25a-473e-8aae-e4d995faeed9" tvg-logo="" group-title="Infotainment",Real Salt Lake vs San Jose Earthquakes
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=39e36a36bee3b28086243e1a54ef0dc2&txTime=6ad07f91
 
 #EXTINF:-1 tvg-id="6b94da8c-7289-4939-a263-e490fccef835" tvg-logo="https://api.cirkletv.com/files/discovery_eng_1787305695176_8eca4b2ec7a96399.webp" group-title="Infotainment",Discovery
 https://d24aqelmrau4kx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-l1oas691aj7p2/WBTV_IT.m3u8

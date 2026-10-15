@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-14T04:09:41.120Z",
-  "total_channels": 179,
+  "updated_at": "2026-10-15T03:52:28.662Z",
+  "total_channels": 181,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -957,6 +957,15 @@
       ]
     },
     {
+      "id": "b14a7033-632d-4c40-97d2-b09b50654d4d",
+      "name": " Shakhtar Donetsk vs AEK Athens",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://tencent-cdn.tapmad.com/v1/019ea6d121dd15e8f4122afee4cf8f/019ea6d2f96e15e8f0602c5e1b7bc3/fifa1_720.m3u8"
+      ]
+    },
+    {
       "id": "e0a22e01-451e-4c52-9694-962aa6a77f76",
       "name": "FehérvárTV",
       "logo": "https://www.fehervartv.hu/css/img/icon-1-2.png",
@@ -1368,6 +1377,15 @@
       "category": "Infotainment",
       "urls": [
         "https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8"
+      ]
+    },
+    {
+      "id": "cc6b406d-e25a-473e-8aae-e4d995faeed9",
+      "name": "Real Salt Lake vs San Jose Earthquakes",
+      "logo": "",
+      "category": "Infotainment",
+      "urls": [
+        "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=39e36a36bee3b28086243e1a54ef0dc2&txTime=6ad07f91"
       ]
     },
     {
