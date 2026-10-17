@@ -2,1079 +2,1503 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 153,
+  "channels_amount": 205,
   "last_update": "2026-10-17",
   "response": [
     {
       "id": 1,
       "name": "Bangladesh vs Zimbabwe - 1st ODI - UAE ODI Tri-Series 2026",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1792130757540x302.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/306-tapmad/master.m3u8",
-      "cookie": ""
+      "group": "Cricket",
+      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/306-tapmad/master.m3u8"
     },
     {
       "id": 2,
-      "name": "Espanyol vs Atletico Madrid - MATCHDAY 9 - LaLiga 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790932864540x302.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/tapmad258645/master.m3u8",
-      "cookie": ""
+      "name": "Nikoloz Abramishvili vs Aaron McKenzie - PFL vs RKENA - PFL 2026",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1792231675540x302_.jpg",
+      "group": "Mma",
+      "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8"
     },
     {
       "id": 3,
-      "name": "Nikoloz Abramishvili vs Aaron McKenzie - PFL vs RKENA - PFL 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1792231675540x302_.jpg",
-      "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8",
-      "cookie": ""
+      "name": "India vs West Indies - 5th T20I - West Indies Tour of India 2026",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791354679540x302.jpg",
+      "group": "Cricket",
+      "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad4/master.m3u8"
     },
     {
       "id": 4,
-      "name": "India vs West Indies - 5th T20I - West Indies Tour of India 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791354679540x302.jpg",
-      "stream_url": "https://vodintlv2.in-maa-1.linodeobjects.com/promos/IndvswiOdi2026/master.m3u8",
-      "cookie": ""
+      "name": "Villarreal vs Elche - MATCHDAY 9 - LaLiga 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790933029540x302.jpg",
+      "group": "Football",
+      "stream_url": "https://vodnewv2.in-maa-1.linodeobjects.com/promos/Tapmadpromo/master.m3u8"
     },
     {
       "id": 5,
       "name": "Somoy TV",
       "logo": "https://assets-prod.services.toffeelive.com/Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 6,
       "name": "Ekattor TV",
       "logo": "https://assets-prod.services.toffeelive.com/PS_La5oBNnOkwJLWLRN_/posters/e8c444fd-ee3b-4bf3-bb0a-f969bc295f82.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/ekattor_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 7,
       "name": "Jamuna TV",
       "logo": "https://assets-prod.services.toffeelive.com/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 8,
       "name": "Independent TV",
       "logo": "https://assets-prod.services.toffeelive.com/ES_cZZsBNnOkwJLW1Oz1/posters/b872b8f5-cb6b-45a1-a1cd-7609df51d614.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/independent_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/independent_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 9,
       "name": "NTV",
       "logo": "https://assets-prod.services.toffeelive.com/wHLVIJ4B7a1HdMSjaGLJ/posters/83b89557-3ae8-4ca8-8c5d-3c617359c738.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/n_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/n_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 10,
       "name": "Channel i",
       "logo": "https://assets-prod.services.toffeelive.com/qnv835oBcqxnFHJBuQcB/posters/348dfac3-c1e0-485d-a72b-3d282c9e2c73.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_i/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_i/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 11,
       "name": "Desh TV",
       "logo": "https://assets-prod.services.toffeelive.com/6Hz1PJwBcqxnFHJBhgkV/posters/845f1e3f-987a-47cc-a48d-ee12d8f4d419.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/desh_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/desh_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 12,
       "name": "Ananda TV",
       "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/anandatv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/anandatv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 13,
       "name": "Asian TV",
       "logo": "https://assets-prod.services.toffeelive.com/MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/asian_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/asian_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 14,
       "name": "Bangla TV",
       "logo": "https://assets-prod.services.toffeelive.com/JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/bangla_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/bangla_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 15,
       "name": "Bijoy TV",
       "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/bijoytv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/bijoytv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 16,
       "name": "Channel S",
       "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_s_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_s_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 17,
       "name": "Ekhon TV",
       "logo": "https://assets-prod.services.toffeelive.com/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/ekhon_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 18,
       "name": "Global TV",
       "logo": "https://assets-prod.services.toffeelive.com/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/globaltv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/globaltv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 19,
       "name": "Mohona TV",
       "logo": "https://assets-prod.services.toffeelive.com/-Xz3PJwBcqxnFHJBDAlE/posters/fecea361-8b60-4aeb-a530-6e27eee8178a.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 20,
       "name": "Nexus TV",
       "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/nexus_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/nexus_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 21,
       "name": "Rajdhani TV",
       "logo": "https://assets-prod.services.toffeelive.com/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/rajdhani_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/rajdhani_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 22,
       "name": "Sony Aath",
       "logo": "https://assets-prod.services.toffeelive.com/xi6xX5UBv9knK3AH9aMk/posters/f4db1c12-b10f-46e8-a09b-e0efb8820970.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonyaath/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonyaath/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 23,
       "name": "Zee Bangla",
       "logo": "https://assets-prod.services.toffeelive.com/kK2aX5UBrjBfS2_RBcKf/posters/ba5dd8dc-4f87-414a-b57f-c9ecdeda5253.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 24,
       "name": "Zee Bangla Cinema",
       "logo": "https://assets-prod.services.toffeelive.com/-C7MX5UBv9knK3AHdKOi/posters/e37fef13-9bf3-4ecc-8b74-fca091874fa0.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bangla_cinema/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bangla_cinema/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 25,
       "name": "Eurosport HD",
       "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 26,
       "name": "Sony Ten Cricket",
       "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/ten_cricket/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Sports",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/ten_cricket/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 27,
       "name": "Sony Ten Sports 1 HD",
       "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Sports",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 28,
       "name": "Sony Ten Sports 2 HD",
       "logo": "https://assets-prod.services.toffeelive.com/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_2_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Sports",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_2_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 29,
       "name": "Sony Ten Sports 5 HD",
       "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Sports",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 30,
       "name": "& Pictures HD",
       "logo": "https://assets-prod.services.toffeelive.com/QMwWnZUBtpl-Sbt7S2sx/posters/8cad9a82-842a-47bf-a060-f17011f11c07.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/andpicture_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/andpicture_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 31,
       "name": "B4U Movies APAC",
       "logo": "https://assets-prod.services.toffeelive.com/PC6F-JQBv9knK3AHlTUO/posters/fb0243ba-39a0-4101-a78c-c197be550c6c.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/b4u_movies/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/b4u_movies/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 32,
       "name": "Movie Bangla",
       "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 33,
       "name": "Sony MAX",
       "logo": "https://assets-prod.services.toffeelive.com/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_max/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_max/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 34,
       "name": "Sony MAX 2",
       "logo": "https://assets-prod.services.toffeelive.com/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonymax_2/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonymax_2/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 35,
       "name": "Sony MAX HD",
       "logo": "https://assets-prod.services.toffeelive.com/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_max_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_max_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 36,
       "name": "Sony PIX HD",
       "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonypix_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonypix_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 37,
       "name": "Toffee Movies",
       "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/toffee_movie/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 38,
       "name": "Zee Action",
       "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/33d667ae-bcc3-4f6b-b376-76c552136923.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_action/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_action/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 39,
       "name": "Zee Bollywood",
       "logo": "https://assets-prod.services.toffeelive.com/OnSlPJYBcqxnFHJB6lFX/posters/d9ccb2a6-227f-4a41-8714-efaddab5cf5e.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bollywood/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bollywood/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 40,
       "name": "Zee Cinema HD",
       "logo": "https://assets-prod.services.toffeelive.com/5y7HX5UBv9knK3AHs6Nk/posters/7582fb79-c15f-4247-ba5b-1d2dd27f3d71.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_cinema_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_cinema_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 41,
       "name": "&TV HD",
       "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/and_tv_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/and_tv_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 42,
       "name": "TLC",
       "logo": "https://assets-prod.services.toffeelive.com/7C6j-JQBv9knK3AHVzUA/posters/e8f84105-5efe-4e91-a0d4-18a0849cf2f2.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/tlc_sd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Fantasy",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/tlc_sd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 43,
       "name": "TLC HD",
       "logo": "https://assets-prod.services.toffeelive.com/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/tlc_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Fantasy",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/tlc_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 44,
       "name": "Zee TV HD",
       "logo": "https://assets-prod.services.toffeelive.com/ltPQX5UBm1RY_In7b3F1/posters/d039d9df-9877-4969-a0b6-56888ebe2385.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_tv_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_tv_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 45,
       "name": "Animal Planet",
       "logo": "https://assets-prod.services.toffeelive.com/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/animal_planet_sd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Adventure",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/animal_planet_sd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 46,
       "name": "Animal Planet HD",
       "logo": "https://assets-prod.services.toffeelive.com/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/animal_planet_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Adventure",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/animal_planet_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 47,
       "name": "Discovery",
       "logo": "https://assets-prod.services.toffeelive.com/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_sd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Adventure",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_sd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 48,
       "name": "Discovery HD",
       "logo": "https://assets-prod.services.toffeelive.com/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Adventure",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 49,
       "name": "Discovery Kids",
       "logo": "https://assets-prod.services.toffeelive.com/1i6e-JQBv9knK3AHHTXR/posters/325887a7-84ea-4cf9-a6fd-6111ddc25671.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_kids/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Teen",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_kids/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 50,
       "name": "Discovery Science",
       "logo": "https://assets-prod.services.toffeelive.com/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_science/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Science Fiction",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_science/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 51,
       "name": "Discovery Turbo",
       "logo": "https://assets-prod.services.toffeelive.com/Ay6s-JQBv9knK3AHJTY1/posters/e8f65578-e82d-4e4a-a1ff-073becc5bd71.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_turbo/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Adventure",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_turbo/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 52,
       "name": "Investigation Discovery HD",
       "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovary_investigation_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/discovary_investigation_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 53,
       "name": "Sony BBC Earth HD",
       "logo": "https://assets-prod.services.toffeelive.com/MC6C-JQBv9knK3AHUzUT/posters/a8c32fd3-2ba7-437c-85ac-de2f1b2fa6ca.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Family",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 54,
       "name": "Cartoon Network",
       "logo": "https://assets-prod.services.toffeelive.com/mC6W-JQBv9knK3AHfDWA/posters/d2a02d82-fde4-4769-a6d9-95c0560e2120.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cartoon_network_sd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Teen",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cartoon_network_sd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 55,
       "name": "Cartoon Network HD +",
       "logo": "https://assets-prod.services.toffeelive.com/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cartoon_network_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Teen",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cartoon_network_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 56,
       "name": "POGO",
       "logo": "https://assets-prod.services.toffeelive.com/ny6W-JQBv9knK3AHujXC/posters/7e7c2afe-a663-4c09-983a-2d0fa0f1ca9a.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/pogo_sd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Teen",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/pogo_sd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 57,
       "name": "Sony YAY",
       "logo": "https://assets-prod.services.toffeelive.com/IC5_-JQBv9knK3AHFDXh/posters/36df4012-80f2-4a98-9970-3b663f62093f.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonyyay/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Family",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonyyay/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 58,
       "name": "B4U Music",
       "logo": "https://assets-prod.services.toffeelive.com/PS6F-JQBv9knK3AHqjVz/posters/0f83ee72-be0f-4861-94df-30b158d3df8d.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/b4u_music/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Musical",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/b4u_music/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 59,
       "name": "CGTN",
       "logo": "https://assets-prod.services.toffeelive.com/DYMI_58BJIOHmUelm3aK/posters/d8436322-804a-47b6-9a3f-62764c4622d5.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cgtn/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cgtn/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 60,
       "name": "Channel News Asia",
       "logo": "https://assets-prod.services.toffeelive.com/rYOv_p8BJIOHmUelrnXh/posters/d537453f-7e5b-45f3-9b52-42f6f65950c8.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/channels_news_asia/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/channels_news_asia/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 61,
       "name": "CNN",
       "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cnn/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/cnn/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 62,
       "name": "DW",
       "logo": "https://assets-prod.services.toffeelive.com/7oPt_p8BJIOHmUelhXWj/posters/d6328092-9437-4806-8dc7-d00732d56832.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/dw_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/dw_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 63,
       "name": "France 24",
       "logo": "https://assets-prod.services.toffeelive.com/G4ML_58BJIOHmUelNXZr/posters/becc2fba-4ed5-4f43-af2d-3c1ea2b4ee57.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/france_24/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/france_24/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 64,
       "name": "Russia Today",
       "logo": "https://assets-prod.services.toffeelive.com/CNT2_p8BalKyvLQIBSUG/posters/1e937055-a014-4274-bb69-b1b56d18c434.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/russia_today/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/russia_today/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 65,
       "name": "TRT World",
       "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/trt_world/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/trt_world/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 66,
       "name": "Islamic TV",
       "logo": "https://assets-prod.services.toffeelive.com/jehEA54BIxFjn23xAmdw/posters/2c276556-cbcd-4467-b627-4394bb20f250.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/islamic_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Live Action",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/islamic_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 67,
       "name": "Saudi Quran",
       "logo": "https://assets-prod.services.toffeelive.com/FdT9_p8BalKyvLQIpCUP/posters/6b39f2c6-6fe8-4720-a986-379e09968b5b.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/saudi_quran/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/saudi_quran/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 68,
       "name": "Saudi Sunnah",
       "logo": "https://assets-prod.services.toffeelive.com/JNQA_58BalKyvLQIhiVD/posters/11e764bf-7969-4dcb-a94c-937a3bde2a7f.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/saudi_sunnah/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Documentary",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/saudi_sunnah/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 69,
       "name": "HUM",
       "logo": "https://assets-prod.services.toffeelive.com/0C63X5UBv9knK3AHxaOs/posters/6dce1143-1045-4fec-ac4f-86d2bfb32447.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/hum_tv/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/hum_tv/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 70,
       "name": "HUM Masala",
       "logo": "https://assets-prod.services.toffeelive.com/T9O9X5UBm1RY_In7UXFv/posters/30e0f372-eb3e-4cf9-be1e-b196a40c2fc7.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/hum_masala/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/hum_masala/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 71,
       "name": "HUM Sitaray",
       "logo": "https://assets-prod.services.toffeelive.com/WtPBX5UBm1RY_In7mXEU/posters/188d51f6-aeef-41ed-835b-e25ff911e209.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/hum_sitaray/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/hum_sitaray/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 72,
       "name": "Sony Entertainment Television",
       "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_entertainment/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Family",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_entertainment/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 73,
       "name": "Sony Entertainment Television HD",
       "logo": "https://assets-prod.services.toffeelive.com/-y50-JQBv9knK3AHLzSn/posters/0ab48ac0-ec84-4ca2-9601-746ff3cb809e.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonyentertainmnt_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Family",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonyentertainmnt_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 74,
       "name": "Sony SAB HD",
       "logo": "https://assets-prod.services.toffeelive.com/ES55-JQBv9knK3AHNDWC/posters/13411be9-62b9-4a99-a062-b6e91dfb1099.webp",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonysab_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Family",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/sonysab_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 75,
       "name": "Toffee TV",
       "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Family",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 76,
       "name": "WC Match Recap",
       "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Sports",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/fifa_world_cup/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 77,
       "name": "Zee Anmol",
       "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f9c07bfc-9fde-40d0-91a1-e28c5840f400.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_anmol/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Drama",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_anmol/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 78,
       "name": "Zee Cafe",
       "logo": "https://assets-prod.services.toffeelive.com/U3QEd5YBcqxnFHJBpYzc/posters/8bc7ae1b-1a46-4b76-bdb1-13c7dbd3a95c.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_cafe_hd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Movies",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_cafe_hd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 79,
       "name": "Zing",
       "logo": "https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a4e57fd0-1853-4540-a9bc-0265ee43b5cb.png",
-      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zing_sd/playlist.m3u8?edge-cache-token=Expires=1792247419~Starts=1792243819~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=7sn3YQaESd2gEFxREyk_Nc3beHz8fr-B1e-sdQ4QooyCv8mLl1Ewcz51Mj-CAeBYTxvjaia_tFmKQ5gi1cLfAg",
-      "cookie": ""
+      "group": "Comedy",
+      "stream_url": "https://prod-linear-media.toffeelive.com/cdn/live/zing_sd/playlist.m3u8?edge-cache-token=Expires=1792249228~Starts=1792245628~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiZGQzMjNhYmQtZDAyNS00OTQxLWIwMGItZjJlMTJlOTY3YzUxIn0~Signature=NY72UiPreULdHmoBjvOb3-cQMeMcsbQIiLZbRES1r_a8UrpU6rvnnZw8oZHMb4MMlfrbdr0kDugH-MEwOPDTAA"
     },
     {
       "id": 80,
       "name": "DARTS PDC Vs DARTS PDC - Nova2 Sports FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/DARTS%20PDC%20Vs%20DARTS%20PDC.jpg",
-      "stream_url": "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd",
-      "cookie": ""
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d",
+      "stream_url": "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd"
     },
     {
       "id": 81,
       "name": "DARTS PDC Vs DARTS PDC - SKY SPORTS",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/DARTS%20PDC%20Vs%20DARTS%20PDC.jpg",
-      "stream_url": "https://tmaxapp.site/8wirwjs76erftg/skysportsmainevent005adsf.m3u8",
-      "cookie": ""
+      "group": "Other",
+      "stream_url": "https://tmaxapp.site/8wirwjs76erftg/skysportsmainevent005adsf.m3u8"
     },
     {
       "id": 82,
       "name": "CYCLING EVENTO Vs CYCLING EVENTO - TNT2UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CYCLING%20EVENTO%20Vs%20CYCLING%20EVENTO.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
-      "cookie": ""
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd"
     },
     {
       "id": 83,
       "name": "CYCLING EVENTO Vs CYCLING EVENTO - TNT4UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CYCLING%20EVENTO%20Vs%20CYCLING%20EVENTO.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
-      "cookie": ""
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "fa34fa8c90336dd528c7a23871cad1fe:552a78d1aeb74f1650d68255c5749408",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd"
     },
     {
       "id": 84,
       "name": "CYCLING EVENTO Vs CYCLING EVENTO - TNT3UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CYCLING%20EVENTO%20Vs%20CYCLING%20EVENTO.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd",
-      "cookie": ""
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "cc91508324ce9dcaf425a43d58f1d9d4:643e5474d9edd87c7d9091c8c97994ca",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
     },
     {
       "id": 85,
       "name": "CYCLING EVENTO Vs CYCLING EVENTO - TNT1UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CYCLING%20EVENTO%20Vs%20CYCLING%20EVENTO.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
-      "cookie": ""
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
     },
     {
       "id": 86,
-      "name": "Everton Vs Chelsea - FUBO SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/vy6aqkduw4/out/v1/38d1a6a0ee4e4ff2aa8b760d07cabb9e/74b39ba4-f96b-4c94-87f1-84d5699feef8-cenc.mpd?aws_sessionId=ac7421b8-d652-4f82-beff-564aa2256470",
-      "cookie": ""
+      "name": "India Vs West Indies - WILLOW FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/India%20Vs%20West%20Indies.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "c21cda3aab763439e2f05489f9a73827:582de22865b044837d559884992caf4f",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/n3icgre8mf/out/v1/af3ffb719dea4937aede63586796d513/cenc.mpd"
     },
     {
       "id": 87,
-      "name": "Everton Vs Chelsea - USA TV HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58128/load-playlist?&.m3u8",
-      "cookie": ""
+      "name": "India Vs West Indies - WILLOW ALT",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/India%20Vs%20West%20Indies.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "c21cda3aab763439e2f05489f9a73827:582de22865b044837d559884992caf4f",
+      "stream_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/n3icgre8mf/out/v1/af3ffb719dea4937aede63586796d513/cenc.mpd"
     },
     {
       "id": 88,
-      "name": "Everton Vs Chelsea - USA TV FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://raventheory.s3.us-east-1.amazonaws.com/btsport.m3u8",
-      "cookie": ""
+      "name": "India Vs West Indies - WILLOW SPORTS",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/India%20Vs%20West%20Indies.jpg",
+      "group": "Cricket",
+      "stream_url": "http://103.114.11.37:8081/Willow-TV/index.m3u8"
     },
     {
       "id": 89,
-      "name": "Everton Vs Chelsea - beIN SPORTS HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://primetv.cc.cd/beinfhd1/index.m3u8",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - FUBO SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "5245bea7bb5265e0cefa8a59f3a989e7:a502b56126f5f5e5beb0e901fa246f1e",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-iad-prod/enc/tynmqoruat/out/v1/07d94e5695564616bc21118f294f6cc7/7e0dd27b-f998-465e-8df2-027df73d929b-cenc.mpd?aws_sessionId=9e935291-e3f8-4fd0-880c-7ae5a73ee747"
     },
     {
       "id": 90,
-      "name": "Everton Vs Chelsea - FASTER TV",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://live.vivo155.com/live/hd-en-1-4558601.m3u8?txSecret=c2e70e8342b22f11891f98611eb37dfe&txTime=6AD3691C",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - PEACOCK TV HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "stream_url": "https://chatgpt.hereisman.net/playlist/58135/load-playlist?&.m3u8"
     },
     {
       "id": 91,
-      "name": "Everton Vs Chelsea - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_e35b5d64_3500_429e_b5ea_c3739d9dbc89/index.m3u8",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - PEACOCK FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "stream_url": "https://mysticledger.s3.us-east-1.amazonaws.com/newcastle.m3u8"
     },
     {
       "id": 92,
-      "name": "Everton Vs Chelsea - HD QUALITY4",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://www.rtmpcdn.com/live/8f05519f-67c3-4c16-b819-2c36b95d4b5a.m3u8",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - QUALITY TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4558604.m3u8?txSecret=e541d0b8aa52666a8f5ccc5b86367d06&txTime=6AD390D9"
     },
     {
       "id": 93,
-      "name": "Everton Vs Chelsea - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "http://193.47.62.44/hls/5JJJ.m3u8",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "stream_url": "https://www.rtmpcdn.com/live/d6f999ea-dc58-4d95-a707-dae77c6cb70f.m3u8"
     },
     {
       "id": 94,
-      "name": "Everton Vs Chelsea - SKY SPORTS EPL - FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Everton%20Vs%20Chelsea.jpg",
-      "stream_url": "https://bl.rutube.ru/livestream/e5bacac3b8e730791d4cab20ae81cd8f/index.m3u8?s=Dxx13S3dlOjavbRFqRtQ6g&e=2075285630&scheme=",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_80d889e7_23f1_43d7_a0ee_47aa24473b5c/index.m3u8"
     },
     {
       "id": 95,
-      "name": "Espanyol Vs Atlético Madrid - D SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd",
-      "cookie": ""
+      "name": "Fulham Vs Hull City - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/4444.m3u8"
     },
     {
       "id": 96,
-      "name": "Espanyol Vs Atlético Madrid - FANCODE FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
-      "cookie": ""
+      "name": "Brentford Vs Liverpool FC - FUBO SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "480f6ee51138431bf4a51366ceafccc3:805605d2a7721291a353145533b4f21d",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/n08pizbsu2/out/v1/a8645e4080344c53b38dc66983651d99/d61eead1-3574-4b70-8e75-67a5a806f711-cenc.mpd?aws_sessionId=9b04b8e2-907c-4d19-a01e-61dd85c80ee7"
     },
     {
       "id": 97,
-      "name": "Espanyol Vs Atlético Madrid - CAZE TV FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?",
-      "cookie": ""
+      "name": "Brentford Vs Liverpool FC - PEACOCK TV HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
+      "group": "Football",
+      "stream_url": "https://chatgpt.hereisman.net/playlist/58134/load-playlist?&.m3u8"
     },
     {
       "id": 98,
-      "name": "Espanyol Vs Atlético Madrid - ESPN DEPORTES HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58131/load-playlist?&.m3u8",
-      "cookie": ""
+      "name": "Brentford Vs Liverpool FC - QUALITY TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4558598.m3u8?txSecret=6fdbfbfa3925454c0f1afd73372b9bac&txTime=6AD390F1"
     },
     {
       "id": 99,
-      "name": "Espanyol Vs Atlético Madrid - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_in_amzn1_dv_gti_cd53d14d_7d27_4b6f_8e57_a68073fb3580/index.m3u8",
-      "cookie": ""
+      "name": "Brentford Vs Liverpool FC - HD QUALITY3",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
+      "group": "Football",
+      "stream_url": "https://www.rtmpcdn.com/live/910ed1c3-3d3c-43a7-bb08-0eb20ce5de14.m3u8"
     },
     {
       "id": 100,
-      "name": "Espanyol Vs Atlético Madrid - FASTER TV",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "https://live.vivo155.com/live/hd-en-1-4565453.m3u8?txSecret=5debf53a89fcab13af880f51afd5c51b&txTime=6AD37035",
-      "cookie": ""
+      "name": "Brentford Vs Liverpool FC - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_aa2ff4c6_3fca_4485_9c81_4e0c24850e95/index.m3u8"
     },
     {
       "id": 101,
-      "name": "Espanyol Vs Atlético Madrid - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "https://www.rtmpcdn.com/live/1557ae2b-37ec-4b12-89f3-fe24eb6add40.m3u8",
-      "cookie": ""
+      "name": "Brentford Vs Liverpool FC - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/4444aa.m3u8"
     },
     {
       "id": 102,
-      "name": "Espanyol Vs Atlético Madrid - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
-      "stream_url": "http://193.47.62.55/hls/FUUUQQQQ.m3u8",
-      "cookie": ""
+      "name": "Manchester City Vs Ipswich Town - HD QUALITY 4",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Manchester%20City%20Vs%20Ipswich%20Town.jpg",
+      "group": "Football",
+      "stream_url": "https://www.rtmpcdn.com/live/91eba60d-514b-41a7-ba01-92b3d15aaa28.m3u8"
     },
     {
       "id": 103,
-      "name": "Real Sociedad B Vs Almería - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Sociedad%20B%20Vs%20Almer%C3%ADa.jpg",
-      "stream_url": "http://193.47.62.55/hls/FUUUQQQ.m3u8",
-      "cookie": ""
+      "name": "Manchester City Vs Ipswich Town - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Manchester%20City%20Vs%20Ipswich%20Town.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_e61cdbf5_068e_4153_b635_5e06e5fc7cfb/index.m3u8"
     },
     {
       "id": 104,
-      "name": "SpVgg Greuther Fürth Vs Eintracht Braunschweig - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SpVgg%20Greuther%20F%C3%BCrth%20Vs%20Eintracht%20Braunschweig.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4566620.m3u8?txSecret=80f57216faeed685458eb132b5c0d7de&txTime=6AD36323",
-      "cookie": ""
+      "name": "Manchester City Vs Ipswich Town - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Manchester%20City%20Vs%20Ipswich%20Town.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/4444a.m3u8"
     },
     {
       "id": 105,
-      "name": "SpVgg Greuther Fürth Vs Eintracht Braunschweig - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SpVgg%20Greuther%20F%C3%BCrth%20Vs%20Eintracht%20Braunschweig.jpg",
-      "stream_url": "http://193.47.62.55/hls/8GGG.m3u8",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - D SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "f836853d8eac19446ed9535f5fc568b1:b3bc5ef00602b29abac7e482d3d9fbf3",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd"
     },
     {
       "id": 106,
-      "name": "1. FC Kaiserslautern Vs VfL Bochum 1848 - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Kaiserslautern%20Vs%20VfL%20Bochum%201848.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4566558.m3u8?txSecret=faa3f262865ead6d2063d5e2bb052f8e&txTime=6AD3630F",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - FANCODE FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "1994b1df7dfd2e8a8d7b9bf3fb900285:22a1444b3da18e139191665b3d652835",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd"
     },
     {
       "id": 107,
-      "name": "1. FC Kaiserslautern Vs VfL Bochum 1848 - HD SERVER",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Kaiserslautern%20Vs%20VfL%20Bochum%201848.jpg",
-      "stream_url": "https://pulltx.cqsycw.com/live/202_5546226_1.m3u8?txSecret=c474542213a6f3b300f53441dde590e2&txTime=6AD89952",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - CAZE TV FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "34475edab991ad5e92548aebd710410a:501b209cccd323ac00bf5ac15b406cb4",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?"
     },
     {
       "id": 108,
-      "name": "1. FC Kaiserslautern Vs VfL Bochum 1848 - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Kaiserslautern%20Vs%20VfL%20Bochum%201848.jpg",
-      "stream_url": "http://193.47.62.55/hls/8GGGA.m3u8",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - ESPN DEPORTES HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "stream_url": "https://chatgpt.hereisman.net/playlist/58131/load-playlist?&.m3u8"
     },
     {
       "id": 109,
-      "name": "VfL Wolfsburg Vs 1. FC Heidenheim - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/VfL%20Wolfsburg%20Vs%201.%20FC%20Heidenheim.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4566597.m3u8?txSecret=3546e6c42e9b37e7d7a6e953e1305087&txTime=6AD362E1",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_in_amzn1_dv_gti_cd53d14d_7d27_4b6f_8e57_a68073fb3580/index.m3u8"
     },
     {
       "id": 110,
-      "name": "VfL Wolfsburg Vs 1. FC Heidenheim - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/VfL%20Wolfsburg%20Vs%201.%20FC%20Heidenheim.jpg",
-      "stream_url": "https://live.uu1pp.com/sport/202_5546223_1.m3u8?txSecret=7441199399d9e4a46f0ae908b87b266d&txTime=6AD39C7C",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - FASTER TV",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4565453.m3u8?txSecret=5debf53a89fcab13af880f51afd5c51b&txTime=6AD37035"
     },
     {
       "id": 111,
-      "name": "VfL Wolfsburg Vs 1. FC Heidenheim - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/VfL%20Wolfsburg%20Vs%201.%20FC%20Heidenheim.jpg",
-      "stream_url": "http://193.47.62.55/hls/8GGGAA.m3u8",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "stream_url": "https://www.rtmpcdn.com/live/1557ae2b-37ec-4b12-89f3-fe24eb6add40.m3u8"
     },
     {
       "id": 112,
-      "name": "Venezia Vs SSC Napoli - BeIN2 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
-      "cookie": ""
+      "name": "Espanyol Vs Atlético Madrid - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Espanyol%20Vs%20Atl%C3%A9tico%20Madrid.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/FUUUQQQQ.m3u8"
     },
     {
       "id": 113,
-      "name": "Venezia Vs SSC Napoli - SPORT1 CZ FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
-      "stream_url": "https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd",
-      "cookie": ""
+      "name": "Real Sociedad B Vs Almería - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Sociedad%20B%20Vs%20Almer%C3%ADa.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/FUUUQQQ.m3u8"
     },
     {
       "id": 114,
-      "name": "Venezia Vs SSC Napoli - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_bfc82a09_ebda_41a0_8b45_9fb66df0330b/index.m3u8",
-      "cookie": ""
+      "name": "1. FC Union Berlin Vs Borussia Dortmund - SERVER TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Union%20Berlin%20Vs%20Borussia%20Dortmund.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4566307.m3u8?txSecret=295e9c3e682d6ccc07efd356336c7254&txTime=6AD38824"
     },
     {
       "id": 115,
-      "name": "Carrarese Vs Modena - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Carrarese%20Vs%20Modena.jpg",
-      "stream_url": "https://edgestream2.pro/hls/.m3u8",
-      "cookie": ""
+      "name": "1. FC Union Berlin Vs Borussia Dortmund - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Union%20Berlin%20Vs%20Borussia%20Dortmund.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/1011/index.m3u8"
     },
     {
       "id": 116,
-      "name": "Middlesbrough Vs Cardiff City - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Middlesbrough%20Vs%20Cardiff%20City.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4563633.m3u8?txSecret=e43d776df12fe47f913236e1c87981df&txTime=6AD36BB0",
-      "cookie": ""
+      "name": "1. FC Union Berlin Vs Borussia Dortmund - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Union%20Berlin%20Vs%20Borussia%20Dortmund.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMAAAA.m3u8"
     },
     {
       "id": 117,
-      "name": "Middlesbrough Vs Cardiff City - HD QUALITY TV",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Middlesbrough%20Vs%20Cardiff%20City.jpg",
-      "stream_url": "https://tedesco.formaturamaxi.com.br/ncaa10.m3u8",
-      "cookie": ""
+      "name": "SV 07 Elversberg Vs FC Augsburg - SERVER TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%2007%20Elversberg%20Vs%20FC%20Augsburg.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4566319.m3u8?txSecret=55f49d79888a73d3c7047b5a38b53ed0&txTime=6AD387FA"
     },
     {
       "id": 118,
-      "name": "Middlesbrough Vs Cardiff City - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Middlesbrough%20Vs%20Cardiff%20City.jpg",
-      "stream_url": "http://162.251.160.53:8089/1555/index.m3u8",
-      "cookie": ""
+      "name": "SV 07 Elversberg Vs FC Augsburg - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%2007%20Elversberg%20Vs%20FC%20Augsburg.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/789/index.m3u8"
     },
     {
       "id": 119,
-      "name": "Middlesbrough Vs Cardiff City - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Middlesbrough%20Vs%20Cardiff%20City.jpg",
-      "stream_url": "http://193.47.62.50/hls/4GGGQQQQ.m3u8",
-      "cookie": ""
+      "name": "SV 07 Elversberg Vs FC Augsburg - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%2007%20Elversberg%20Vs%20FC%20Augsburg.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMA.m3u8"
     },
     {
       "id": 120,
-      "name": "Millwall Vs Lincoln City - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Millwall%20Vs%20Lincoln%20City.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4563628.m3u8?txSecret=9b8bcf75ff2c65a257834fcc1d0e8199&txTime=6AD36BEA",
-      "cookie": ""
+      "name": "Hamburger SV Vs VfB Stuttgart - SERVER TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hamburger%20SV%20Vs%20VfB%20Stuttgart.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4566310.m3u8?txSecret=dfbf297ece7f07fe401e66e8c379d090&txTime=6AD38850"
     },
     {
       "id": 121,
-      "name": "Millwall Vs Lincoln City - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Millwall%20Vs%20Lincoln%20City.jpg",
-      "stream_url": "http://193.47.62.50/hls/4GGGQQQQQ.m3u8",
-      "cookie": ""
+      "name": "Hamburger SV Vs VfB Stuttgart - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hamburger%20SV%20Vs%20VfB%20Stuttgart.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/870/index.m3u8"
     },
     {
       "id": 122,
-      "name": "Watford Vs Charlton Athletic - PARAMOUNT+ FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/iu2bdcrjzs/out/v1/e22d52e5cefe49998aaaa751972e18cc/353410b3-f51d-482b-815a-48bb7acc8edd-cenc.mpd?aws_sessionId=94e58c6e-7fd5-4577-94c4-a8512eb680bf",
-      "cookie": ""
+      "name": "Hamburger SV Vs VfB Stuttgart - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hamburger%20SV%20Vs%20VfB%20Stuttgart.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMAA.m3u8"
     },
     {
       "id": 123,
-      "name": "Watford Vs Charlton Athletic - BEIN3 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-      "cookie": ""
+      "name": "SV Werder Bremen Vs SC Paderborn 07 - SERVER TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%20Werder%20Bremen%20Vs%20SC%20Paderborn%2007.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4566313.m3u8?txSecret=a32e52d04d40e90dbc47fe1ec500936a&txTime=6AD38838"
     },
     {
       "id": 124,
-      "name": "Watford Vs Charlton Athletic - CBS SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
-      "cookie": ""
+      "name": "SV Werder Bremen Vs SC Paderborn 07 - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%20Werder%20Bremen%20Vs%20SC%20Paderborn%2007.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/1123/index.m3u8"
     },
     {
       "id": 125,
-      "name": "Watford Vs Charlton Athletic - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4563631.m3u8?txSecret=04eec99c08a898309c2c68dce539ee92&txTime=6AD36BFE",
-      "cookie": ""
+      "name": "SV Werder Bremen Vs SC Paderborn 07 - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%20Werder%20Bremen%20Vs%20SC%20Paderborn%2007.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMAAAAA.m3u8"
     },
     {
       "id": 126,
-      "name": "Watford Vs Charlton Athletic - CBS NETWORK HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "https://tedesco.formaturamaxi.com.br/golazo.m3u8",
-      "cookie": ""
+      "name": "FC Schalke 04 Vs 1. FSV Mainz 05 - SERVER TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Schalke%2004%20Vs%201.%20FSV%20Mainz%2005.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4566316.m3u8?txSecret=42ab025a8a190ae061ac6b891a38676f&txTime=6AD3880B"
     },
     {
       "id": 127,
-      "name": "Watford Vs Charlton Athletic - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "http://162.251.160.53:8089/1459/index.m3u8",
-      "cookie": ""
+      "name": "FC Schalke 04 Vs 1. FSV Mainz 05 - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Schalke%2004%20Vs%201.%20FSV%20Mainz%2005.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/975/index.m3u8"
     },
     {
       "id": 128,
-      "name": "Watford Vs Charlton Athletic - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Watford%20Vs%20Charlton%20Athletic.jpg",
-      "stream_url": "http://193.47.62.50/hls/4GGGQQQQQQ.m3u8",
-      "cookie": ""
+      "name": "FC Schalke 04 Vs 1. FSV Mainz 05 - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Schalke%2004%20Vs%201.%20FSV%20Mainz%2005.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMAAA.m3u8"
     },
     {
       "id": 129,
-      "name": "Arsenal Vs Birmingham City W.F.C. - PARAMOUNT+ FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Arsenal%20Vs%20Birmingham%20City%20W.F.C..jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/ysc0smpdad/out/v1/561cac99030040ce8ef4f56e0c2f5683/8e388aab-de50-4660-8f1c-2caf565fdda3-cenc.mpd?aws_sessionId=e33ba791-e1f8-4cc6-b6a5-0e0295bea982",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - PARAMOUNT+ FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "3ce110bc2e975d62320b07b8002c444c:bdeb1cbedc9416d021a5dde875309856",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-iad-prod/enc/wfhyezkolb/out/v1/84e72db033f541dfb01a7441544b4e08/5a6f5395-db6f-463e-85db-5f834398cb71-cenc.mpd?aws_sessionId=53e40f1d-e74e-406f-842a-6858ae7073bc"
     },
     {
       "id": 130,
-      "name": "Arsenal Vs Birmingham City W.F.C. - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Arsenal%20Vs%20Birmingham%20City%20W.F.C..jpg",
-      "stream_url": "http://162.251.160.53:8089/1765/index.m3u8",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - FUBO SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "7df363e4af7e1dba5eb41eed1371e861:4bbd1dcb1ddbaa62f63e7bcd67a5730d",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/fzhczuypgm/out/v1/4379e830995b4993a974c6cd682b8b54/b22591a2-590f-445b-85df-d514c5d29119-cenc.mpd?aws_sessionId=dba3ceb0-5def-4393-85e7-38803d66c7a3"
     },
     {
       "id": 131,
-      "name": "Arsenal Vs Birmingham City W.F.C. - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Arsenal%20Vs%20Birmingham%20City%20W.F.C..jpg",
-      "stream_url": "http://193.47.62.50/hls/4GGGQQQQQQQ.m3u8",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - BeIN2 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "0b42be2664d7e811d04f3e504e0924c5:ae24090123b8c72ac5404dc152847cb8",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
     },
     {
       "id": 132,
-      "name": "Gençlerbirliği Vs Galatasaray - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Gen%C3%A7lerbirli%C4%9Fi%20Vs%20Galatasaray.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_us_b0hk7tp8xm/index.m3u8",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - DAZN ITALIA FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "2e92917f5e110860bf714c53e2ecafdb:db7422909df18f87eeb99499eb256008",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/mkgktkzogc/out/v1/bf4f2174bb04409d901a9b0d952facb9/cenc.mpd"
     },
     {
       "id": 133,
-      "name": "Peterborough United Vs Burton Albion - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Peterborough%20United%20Vs%20Burton%20Albion.jpg",
-      "stream_url": "http://193.47.62.50/hls/4GGGQQQ.m3u8",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - SPORT1 CZ FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d",
+      "stream_url": "https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd"
     },
     {
       "id": 134,
-      "name": "Bangladesh Vs Zimbabwe - WILLOW FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/iiqppqpksi/out/v1/5aedff78e45a44a08461ab32fa41310a/cenc.mpd",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_bfc82a09_ebda_41a0_8b45_9fb66df0330b/index.m3u8"
     },
     {
       "id": 135,
-      "name": "Bangladesh Vs Zimbabwe - FANCODE FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - DAZN ITALIA HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "stream_url": "https://hello.transcode.cfd/m3u8-proxy.m3u8?data=xDSySD9Dh6zyk5MxlnbBIyxj6bKZHDnOi9wU0lhD8JldWNvoMDiBgFtluzAKipPUtuWqNGiLmq9K8HZbBvZWTk-Dq2tx2Lr8Y7bo9-xJ8ffNLB2-Afu1HzuoIv-CXmAEjU2G"
     },
     {
       "id": 136,
-      "name": "Bangladesh Vs Zimbabwe - WILLOW ALT",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
-      "stream_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/iiqppqpksi/out/v1/5aedff78e45a44a08461ab32fa41310a/cenc.mpd",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - HD QUALITY TV",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4549050.m3u8?txSecret=8deadc3d48ccb33fbd3dc99ea093377d&txTime=6AD3829B"
     },
     {
       "id": 137,
-      "name": "Bangladesh Vs Zimbabwe - WILLOW SPORTS",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
-      "stream_url": "https://live-pv-ta.amazon.fastly-edge.com/lhr-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "stream_url": "https://www.rtmpcdn.com/live/ef28d180-b692-44d9-9932-87cdb92ca94a.m3u8"
     },
     {
       "id": 138,
-      "name": "Bangladesh Vs Zimbabwe - T SPORTS HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
-      "stream_url": "http://103.151.60.162:2122/play/a030/index.m3u8?hls",
-      "cookie": ""
+      "name": "Venezia Vs SSC Napoli - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Venezia%20Vs%20SSC%20Napoli.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/YGGGAAAAAAQQQQAA.m3u8"
     },
     {
       "id": 139,
-      "name": "Bangladesh Vs Zimbabwe - FANCODE IND IP",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
-      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249694_english_hls_c370ab317921311_1ta-di_h264/index.m3u8",
-      "cookie": ""
+      "name": "Carrarese Vs Modena - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Carrarese%20Vs%20Modena.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/1CCCAAAAQQQ.m3u8"
     },
     {
       "id": 140,
-      "name": "Canada Vs Nepal - SPORTSCAST TV",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Canada%20Vs%20Nepal.jpg",
-      "stream_url": "https://live-d-01-icc-we.akamaized.net/variant/v1blackout/vcg-01-d/DASH_DASH/Live/channel(vcg-01-ch-hd-10)/hdntl=exp=1792242011~acl=%2fvariant%2fv1blackout%2fvcg-01-d%2f*~id=2ac03f6e-df86-481e-a05f-ec1015c944ac~data=hdntl~hmac=ac4c9d8b443780294b7557bdddccaff13a3ddf2e7355eab11e0e405277d3b3e5/manifest.mpd?vcfilter=ad10685a-90e7-4006-bc71-2d7eef2d7b2a&",
-      "cookie": ""
+      "name": "Padova Vs Virtus Entella - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Padova%20Vs%20Virtus%20Entella.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/YGGG.m3u8"
     },
     {
       "id": 141,
-      "name": "Canada Vs Nepal - SPORTSCAST TV ALT",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Canada%20Vs%20Nepal.jpg",
-      "stream_url": "https://live-d-01-icc-we.akamaized.net/variant/v1blackout/vcg-01-d-nodvr/DASH_DASH/Live/channel(vcg-01-ch-hd-06)/hdntl=exp=1792242007~acl=%2fvariant%2fv1blackout%2fvcg-01-d-nodvr%2f*~id=2ac03f6e-df86-481e-a05f-ec1015c944ac~data=hdntl~hmac=326c543f04bc5d1f63e8119fc1b0a0aea342f1a2b9d805d3e68d02f0a1274a12/manifest.mpd?vcfilter=e747806c-2d6c-47f9-adf5-40e9f734a8a8&",
-      "cookie": ""
+      "name": "Benevento Vs L.R. Vicenza - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Benevento%20Vs%20L.R.%20Vicenza.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/1CCCAAAAQQ.m3u8"
     },
     {
       "id": 142,
-      "name": "CFFA Vs Young Africans SC - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CFFA%20Vs%20Young%20Africans%20SC.jpg",
-      "stream_url": "http://193.47.62.44/hls/POPOPO.m3u8",
-      "cookie": ""
+      "name": "Ascoli Vs Empoli - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Ascoli%20Vs%20Empoli.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/1CCCAAAAQ.m3u8"
     },
     {
       "id": 143,
-      "name": "India Vs West Indies - WILLOW SPORTS",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/India%20Vs%20West%20Indies.jpg",
-      "stream_url": "http://103.114.11.37:8081/Willow-TV/index.m3u8",
-      "cookie": ""
+      "name": "Hibernian Vs Falkirk FC - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hibernian%20Vs%20Falkirk%20FC.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/BIIIAAAAAAQQ.m3u8"
     },
     {
       "id": 144,
-      "name": "Fulham Vs Hull City - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fulham%20Vs%20Hull%20City.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_80d889e7_23f1_43d7_a0ee_47aa24473b5c/index.m3u8",
-      "cookie": ""
+      "name": "Kilmarnock Vs Motherwell - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Kilmarnock%20Vs%20Motherwell.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/H111AAAAQQQQ.m3u8"
     },
     {
       "id": 145,
-      "name": "Brentford Vs Liverpool FC - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Brentford%20Vs%20Liverpool%20FC.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_aa2ff4c6_3fca_4485_9c81_4e0c24850e95/index.m3u8",
-      "cookie": ""
+      "name": "St. Johnstone Vs Dundee United - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/St.%20Johnstone%20Vs%20Dundee%20United.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.59/hls/N777AAAAAAQQ.m3u8"
     },
     {
       "id": 146,
-      "name": "Manchester City Vs Ipswich Town - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Manchester%20City%20Vs%20Ipswich%20Town.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_e61cdbf5_068e_4153_b635_5e06e5fc7cfb/index.m3u8",
-      "cookie": ""
+      "name": "Aberdeen Vs St. Mirren - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Aberdeen%20Vs%20St.%20Mirren.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/L111AAQQQQQ.m3u8"
     },
     {
       "id": 147,
-      "name": "1. FC Union Berlin Vs Borussia Dortmund - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/1.%20FC%20Union%20Berlin%20Vs%20Borussia%20Dortmund.jpg",
-      "stream_url": "http://162.251.160.53:8089/1011/index.m3u8",
-      "cookie": ""
+      "name": "Bristol City Vs Sheffield United - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bristol%20City%20Vs%20Sheffield%20United.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/BIIIAAAAAA.m3u8"
     },
     {
       "id": 148,
-      "name": "SV 07 Elversberg Vs FC Augsburg - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%2007%20Elversberg%20Vs%20FC%20Augsburg.jpg",
-      "stream_url": "http://162.251.160.53:8089/789/index.m3u8",
-      "cookie": ""
+      "name": "Derby County Vs Stoke City - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Derby%20County%20Vs%20Stoke%20City.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/H111AAAAQQ.m3u8"
     },
     {
       "id": 149,
-      "name": "Hamburger SV Vs VfB Stuttgart - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hamburger%20SV%20Vs%20VfB%20Stuttgart.jpg",
-      "stream_url": "http://162.251.160.53:8089/870/index.m3u8",
-      "cookie": ""
+      "name": "Birmingham City Vs Queens Park Rangers - SKY SPORTS EPL - FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Birmingham%20City%20Vs%20Queens%20Park%20Rangers.jpg",
+      "group": "Football",
+      "stream_url": "https://bl.rutube.ru/livestream/e5bacac3b8e730791d4cab20ae81cd8f/index.m3u8?s=Dxx13S3dlOjavbRFqRtQ6g&e=2075285630&scheme="
     },
     {
       "id": 150,
-      "name": "SV Werder Bremen Vs SC Paderborn 07 - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SV%20Werder%20Bremen%20Vs%20SC%20Paderborn%2007.jpg",
-      "stream_url": "http://162.251.160.53:8089/1123/index.m3u8",
-      "cookie": ""
+      "name": "Birmingham City Vs Queens Park Rangers - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Birmingham%20City%20Vs%20Queens%20Park%20Rangers.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/L111AAQQQ.m3u8"
     },
     {
       "id": 151,
-      "name": "FC Schalke 04 Vs 1. FSV Mainz 05 - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Schalke%2004%20Vs%201.%20FSV%20Mainz%2005.jpg",
-      "stream_url": "http://162.251.160.53:8089/975/index.m3u8",
-      "cookie": ""
+      "name": "West Bromwich Albion Vs Blackburn Rovers - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/West%20Bromwich%20Albion%20Vs%20Blackburn%20Rovers.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/1459/index.m3u8"
     },
     {
       "id": 152,
-      "name": "Norwich City Vs Portsmouth - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Norwich%20City%20Vs%20Portsmouth.jpg",
-      "stream_url": "http://162.251.160.53:8089/1651/index.m3u8",
-      "cookie": ""
+      "name": "West Bromwich Albion Vs Blackburn Rovers - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/West%20Bromwich%20Albion%20Vs%20Blackburn%20Rovers.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/H111AAAAQQQ.m3u8"
     },
     {
       "id": 153,
+      "name": "Wrexham Vs Preston North End - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Wrexham%20Vs%20Preston%20North%20End.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.59/hls/N777AAAAAAQ.m3u8"
+    },
+    {
+      "id": 154,
+      "name": "Norwich City Vs Portsmouth - BEIN3 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Norwich%20City%20Vs%20Portsmouth.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd"
+    },
+    {
+      "id": 155,
+      "name": "Norwich City Vs Portsmouth - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Norwich%20City%20Vs%20Portsmouth.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/1651/index.m3u8"
+    },
+    {
+      "id": 156,
+      "name": "Norwich City Vs Portsmouth - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Norwich%20City%20Vs%20Portsmouth.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.59/hls/N777AAAAAA.m3u8"
+    },
+    {
+      "id": 157,
+      "name": "Southampton Vs Bolton Wanderers - CBS SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Southampton%20Vs%20Bolton%20Wanderers.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "d9623774ac5c8c351aafe97c5fe70267:5164e6d05164a2d65fa8fcc962aa4861",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd"
+    },
+    {
+      "id": 158,
+      "name": "Southampton Vs Bolton Wanderers - QUALITY TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Southampton%20Vs%20Bolton%20Wanderers.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/sd-1-4563630.m3u8?txSecret=9fabf529e685bbd620c907691db41dcf&txTime=6AD38989"
+    },
+    {
+      "id": 159,
       "name": "Southampton Vs Bolton Wanderers - TV QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Southampton%20Vs%20Bolton%20Wanderers.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_us_b0hn279j23/index.m3u8",
-      "cookie": ""
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_us_b0hn279j23/index.m3u8"
+    },
+    {
+      "id": 160,
+      "name": "Southampton Vs Bolton Wanderers - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Southampton%20Vs%20Bolton%20Wanderers.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/L111AAQQQQ.m3u8"
+    },
+    {
+      "id": 161,
+      "name": "Swansea City Vs West Ham United - QUALITY TV+ HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Swansea%20City%20Vs%20West%20Ham%20United.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/sd-1-4563634.m3u8?txSecret=93f223d61ef29167529e9bb413314759&txTime=6AD389A4"
+    },
+    {
+      "id": 162,
+      "name": "Swansea City Vs West Ham United - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Swansea%20City%20Vs%20West%20Ham%20United.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/1555/index.m3u8"
+    },
+    {
+      "id": 163,
+      "name": "Swansea City Vs West Ham United - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Swansea%20City%20Vs%20West%20Ham%20United.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/BIIIAAAAAAQ.m3u8"
+    },
+    {
+      "id": 164,
+      "name": "Chippa United Vs Kruger United - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Chippa%20United%20Vs%20Kruger%20United.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMAAAAAQ.m3u8"
+    },
+    {
+      "id": 165,
+      "name": "Lamontville Golden Arrows Vs Milford FC - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lamontville%20Golden%20Arrows%20Vs%20Milford%20FC.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/TMMMAAAAAQQ.m3u8"
+    },
+    {
+      "id": 166,
+      "name": "Arsenal Vs Birmingham City W.F.C. - PARAMOUNT+ FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Arsenal%20Vs%20Birmingham%20City%20W.F.C..jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "e1bcb99484b1b0c67ebe58aea5e5e928:c249f63abb0bf5068b921d328b47e07b",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/ysc0smpdad/out/v1/561cac99030040ce8ef4f56e0c2f5683/8e388aab-de50-4660-8f1c-2caf565fdda3-cenc.mpd?aws_sessionId=e33ba791-e1f8-4cc6-b6a5-0e0295bea982"
+    },
+    {
+      "id": 167,
+      "name": "Arsenal Vs Birmingham City W.F.C. - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Arsenal%20Vs%20Birmingham%20City%20W.F.C..jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/1765/index.m3u8"
+    },
+    {
+      "id": 168,
+      "name": "Arsenal Vs Birmingham City W.F.C. - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Arsenal%20Vs%20Birmingham%20City%20W.F.C..jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/4GGGQQQQQQQ.m3u8"
+    },
+    {
+      "id": 169,
+      "name": "Gençlerbirliği Vs Galatasaray - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Gen%C3%A7lerbirli%C4%9Fi%20Vs%20Galatasaray.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/sd-1-4581337.m3u8?txSecret=1daccb84f51b944c2713277d12e532f3&txTime=6AD382E7"
+    },
+    {
+      "id": 170,
+      "name": "Gençlerbirliği Vs Galatasaray - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Gen%C3%A7lerbirli%C4%9Fi%20Vs%20Galatasaray.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_us_b0hk7tp8xm/index.m3u8"
+    },
+    {
+      "id": 171,
+      "name": "Gençlerbirliği Vs Galatasaray - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Gen%C3%A7lerbirli%C4%9Fi%20Vs%20Galatasaray.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/JCCCAA.m3u8"
+    },
+    {
+      "id": 172,
+      "name": "Amed Sportif Faaliyetler Vs Konyaspor - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Amed%20Sportif%20Faaliyetler%20Vs%20Konyaspor.jpg",
+      "group": "Football",
+      "stream_url": "https://live.vivo155.com/live/sd-1-4581332.m3u8?txSecret=eaa40afa08356094b562f27d2093ceb4&txTime=6AD38303"
+    },
+    {
+      "id": 173,
+      "name": "Amed Sportif Faaliyetler Vs Konyaspor - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Amed%20Sportif%20Faaliyetler%20Vs%20Konyaspor.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/JCCCA.m3u8"
+    },
+    {
+      "id": 174,
+      "name": "Sivasspor Vs Sarıyer - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Sivasspor%20Vs%20Sar%C4%B1yer.jpg",
+      "group": "Football",
+      "stream_url": "https://edgestream2.pro/hls/.m3u8"
+    },
+    {
+      "id": 175,
+      "name": "Bradford City Vs Stevenage - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bradford%20City%20Vs%20Stevenage.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/L111AAQ.m3u8"
+    },
+    {
+      "id": 176,
+      "name": "Barnsley Vs Cambridge United - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Barnsley%20Vs%20Cambridge%20United.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.59/hls/N777AAA.m3u8"
+    },
+    {
+      "id": 177,
+      "name": "Leicester City Vs Doncaster Rovers - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Leicester%20City%20Vs%20Doncaster%20Rovers.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/BIIIAAAA.m3u8"
+    },
+    {
+      "id": 178,
+      "name": "Stockport County Vs Bromley - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Stockport%20County%20Vs%20Bromley.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/BIIIAAAAA.m3u8"
+    },
+    {
+      "id": 179,
+      "name": "Plymouth Argyle Vs Huddersfield Town - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Plymouth%20Argyle%20Vs%20Huddersfield%20Town.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.59/hls/N777AAAA.m3u8"
+    },
+    {
+      "id": 180,
+      "name": "Leyton Orient Vs Blackpool - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Leyton%20Orient%20Vs%20Blackpool.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/H111AAAA.m3u8"
+    },
+    {
+      "id": 181,
+      "name": "Sheffield Wednesday Vs AFC Wimbledon - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Sheffield%20Wednesday%20Vs%20AFC%20Wimbledon.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/L111AAQQ.m3u8"
+    },
+    {
+      "id": 182,
+      "name": "Wycombe Wanderers Vs Notts County - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Wycombe%20Wanderers%20Vs%20Notts%20County.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.59/hls/N777AAAAA.m3u8"
+    },
+    {
+      "id": 183,
+      "name": "Wigan Athletic Vs Reading - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Wigan%20Athletic%20Vs%20Reading.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/H111AAAAQ.m3u8"
+    },
+    {
+      "id": 184,
+      "name": "Bangladesh Vs Zimbabwe - WILLOW FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "d67c0f3e8d176e693e9d452ec4aeca2f:3cae5de28b16ae8152999574ced3b4db",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/iiqppqpksi/out/v1/5aedff78e45a44a08461ab32fa41310a/cenc.mpd"
+    },
+    {
+      "id": 185,
+      "name": "Bangladesh Vs Zimbabwe - FANCODE FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd"
+    },
+    {
+      "id": 186,
+      "name": "Bangladesh Vs Zimbabwe - WILLOW ALT",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "d67c0f3e8d176e693e9d452ec4aeca2f:3cae5de28b16ae8152999574ced3b4db",
+      "stream_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/iiqppqpksi/out/v1/5aedff78e45a44a08461ab32fa41310a/cenc.mpd"
+    },
+    {
+      "id": 187,
+      "name": "Bangladesh Vs Zimbabwe - WILLOW SPORTS",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "290e09c837da78d5cd961978d390515c:b748836c71e6a4ca68ef5b5652db6247",
+      "stream_url": "https://live-pv-ta.amazon.fastly-edge.com/lhr-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd"
+    },
+    {
+      "id": 188,
+      "name": "Bangladesh Vs Zimbabwe - T SPORTS HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
+      "group": "Cricket",
+      "stream_url": "http://103.151.60.162:2122/play/a030/index.m3u8?hls"
+    },
+    {
+      "id": 189,
+      "name": "Bangladesh Vs Zimbabwe - FANCODE IND IP",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bangladesh%20Vs%20Zimbabwe.jpg",
+      "group": "Cricket",
+      "stream_url": "https://dai-fancode.pages.dev/mumbai/4249694_english_hls_c370ab317921311_1ta-di_h264/index.m3u8"
+    },
+    {
+      "id": 190,
+      "name": "Canada Vs Nepal - SPORTSCAST TV",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Canada%20Vs%20Nepal.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "39bd302cdeed3710a89fb004d232ab67:9869f804ba18d7e508cbff781829221c",
+      "stream_url": "https://live-d-01-icc-we.akamaized.net/variant/v1blackout/vcg-01-d/DASH_DASH/Live/channel(vcg-01-ch-hd-10)/hdntl=exp=1792242011~acl=%2fvariant%2fv1blackout%2fvcg-01-d%2f*~id=2ac03f6e-df86-481e-a05f-ec1015c944ac~data=hdntl~hmac=ac4c9d8b443780294b7557bdddccaff13a3ddf2e7355eab11e0e405277d3b3e5/manifest.mpd?vcfilter=ad10685a-90e7-4006-bc71-2d7eef2d7b2a&"
+    },
+    {
+      "id": 191,
+      "name": "Canada Vs Nepal - SPORTSCAST TV ALT",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Canada%20Vs%20Nepal.jpg",
+      "group": "Cricket",
+      "license_type": "clearkey",
+      "license_key": "39bd302cdeed3710a89fb004d232ab67:9869f804ba18d7e508cbff781829221c",
+      "stream_url": "https://live-d-01-icc-we.akamaized.net/variant/v1blackout/vcg-01-d-nodvr/DASH_DASH/Live/channel(vcg-01-ch-hd-06)/hdntl=exp=1792242007~acl=%2fvariant%2fv1blackout%2fvcg-01-d-nodvr%2f*~id=2ac03f6e-df86-481e-a05f-ec1015c944ac~data=hdntl~hmac=326c543f04bc5d1f63e8119fc1b0a0aea342f1a2b9d805d3e68d02f0a1274a12/manifest.mpd?vcfilter=e747806c-2d6c-47f9-adf5-40e9f734a8a8&"
+    },
+    {
+      "id": 192,
+      "name": "African Stars FC Vs Orlando Pirates - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/African%20Stars%20FC%20Vs%20Orlando%20Pirates.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/VVVVA.m3u8"
+    },
+    {
+      "id": 193,
+      "name": "Tout Puissant Mazembe Vs Club Africain - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tout%20Puissant%20Mazembe%20Vs%20Club%20Africain.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/YGGGAAAAAA.m3u8"
+    },
+    {
+      "id": 194,
+      "name": "CFFA Vs Young Africans SC - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CFFA%20Vs%20Young%20Africans%20SC.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.44/hls/POPOPO.m3u8"
+    },
+    {
+      "id": 195,
+      "name": "CFFA Vs Young Africans SC - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/CFFA%20Vs%20Young%20Africans%20SC.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.41/hls/POPOPOX.m3u8"
+    },
+    {
+      "id": 196,
+      "name": "Motor Lublin Vs Śląsk Wrocław - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Motor%20Lublin%20Vs%20%C5%9Al%C4%85sk%20Wroc%C5%82aw.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/1CCCAAA.m3u8"
+    },
+    {
+      "id": 197,
+      "name": "Kitara FC Vs Al Ahly FC - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Kitara%20FC%20Vs%20Al%20Ahly%20FC.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.55/hls/YGGGAAAAA.m3u8"
+    },
+    {
+      "id": 198,
+      "name": "Red Arrows Vs Kaizer Chiefs - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Red%20Arrows%20Vs%20Kaizer%20Chiefs.jpg",
+      "group": "Football",
+      "stream_url": "http://193.47.62.50/hls/VVVV.m3u8"
+    },
+    {
+      "id": 199,
+      "name": "Horse Racing Vs Horse Racing - FOX1 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "5466ebd70704bdeb657f0abf3c5ca4ef:bdd79b72d8e48ed483aa623cc38a8a16",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50/cenc.mpd"
+    },
+    {
+      "id": 200,
+      "name": "Horse Racing Vs Horse Racing - FOX2 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "09453ce820d65fbc675de3185f9e454c:98cff9600995fa381c76fdacf3c7edae",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd"
+    },
+    {
+      "id": 201,
+      "name": "Horse Racing Vs Horse Racing - SKY RACING - FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "group": "Other",
+      "stream_url": "https://bl.rutube.ru/livestream/362d68a2d5d5b48dbf23522573e64d57/index.m3u8?s=SyXrFpONvusXH9PA0isg7Q&e=2075285628&scheme=https"
+    },
+    {
+      "id": 202,
+      "name": "Horse Racing Vs Horse Racing - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "group": "Other",
+      "stream_url": "https://tmaxapp.site/8wirwjs76erftg/skysportsracing.m3u8"
+    },
+    {
+      "id": 203,
+      "name": "Horse Racing Vs Horse Racing - ITV1 FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "group": "Other",
+      "license_type": "clearkey",
+      "license_key": "30089c52924f037b225b82c616fee2a5:f55dc8b66ed4fc6753d6035ae7e17144",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0eiyyz8qzm/out/v1/dd17af8835fe4bd087d1a4e359b635d7/cenc.mpd"
+    },
+    {
+      "id": 204,
+      "name": "Villarreal Vs Elche - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Villarreal%20Vs%20Elche.jpg",
+      "group": "Football",
+      "stream_url": "http://162.251.160.53:8089/prime_in_amzn1_dv_gti_4eefb71b_465e_4ef7_b54b_23ca80ef6880/index.m3u8"
+    },
+    {
+      "id": 205,
+      "name": "ADO Den Haag Vs PSV Eindhoven - SportDigital Fussball",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/ADO%20Den%20Haag%20Vs%20PSV%20Eindhoven.jpg",
+      "group": "Football",
+      "license_type": "clearkey",
+      "license_key": "0ad4080cdff8c60b1233b22087f0b340:285f129c5eca01dd08a5d5a14ad801c8",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd"
     }
   ]
 }
