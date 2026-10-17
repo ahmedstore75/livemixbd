@@ -114,11 +114,11 @@ https://tvsen6.aynaott.com/talkSPORT/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="TNT Sport 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_4af9a282522f487a6ed41692f99baad6_playmist_tnt_sports_1400x400.jpg", TNT Sport 1
 https://tvsen6.aynaott.com/TntSports1HD/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="TSN 1" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-20/images_d165c628a0db9286da3914ca916a4971_playmist_tsn_1400x400.jpg", TSN 1
-https://tvsen7.aynascope.net/tsn1/index.m3u8
+https://tvsen7.aynaott.com/tsn1/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="TSN 2" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_c92bf4f46958e65be6cc370e3fc1f0dd_playmist_tsn_2_400x400.jpg", TSN 2
-https://tvsen7.aynascope.net/tsn2/index.m3u8
+https://tvsen7.aynaott.com/tsn2/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="TSN 3" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-19/images_905f151dfde79e14a2b9e7b934683ba6_playmist_tsn3_300.jpg", TSN 3
-https://tvsen7.aynascope.net/tsn3/index.m3u8
+https://tvsen7.aynaott.com/tsn3/index.m3u8
 #EXTINF:-1 group-title="Sports" tvg-name="Willow Sports 2" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-10-13/images_b682a582e7041a8083aa53cefbe9546e_playmist_willow_sports_2.jpg", Willow Sports 2
 https://tvsen7.aynaott.com/Sports1/index.m3u8
 #EXTINF:-1 group-title="Kolkata" tvg-name="Colors Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-04/images_5d61a8692dfaff7064d04ea23765cda0_playmist_colors_bangla_400x400.jpg", Colors Bangla
@@ -195,8 +195,6 @@ https://vods2.aynaott.com/hindimovies/index.m3u8
 https://tvsen6.aynaott.com/mzwbzfZ4/index.m3u8
 #EXTINF:-1 group-title="Movies" tvg-name="Manoranjan Movies" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_fa199bbc64f6fb27edca5b1205217dce_playmist_manoranjan_movies_400x400.jpg", Manoranjan Movies
 https://tvsen6.aynaott.com/vhu6qz5N/index.m3u8
-#EXTINF:-1 group-title="Music" tvg-name="9x Jalwa" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_320caef1d7d4c16d902ae73584767638_playmist_9x_jalwa_400x400.jpg", 9x Jalwa
-https://tvsen6.aynaott.com/CiPT1VTG8bVekeAZiibd/index.m3u8
 #EXTINF:-1 group-title="Music" tvg-name="9XM" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-16/images_665747d089b71dd7f26eb503b51abfed_playmist_9xm_400x400.jpg", 9XM
 https://tvsen3.aynaott.com/qCrLpS9v/index.m3u8
 #EXTINF:-1 group-title="Music" tvg-name="Dhoom Music Bangla" tvg-logo="https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-14/images_308780d623c52c9b477206d44a374ff3_playmist_dhoom_music_bangla_400x400.jpg", Dhoom Music Bangla
