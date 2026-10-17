@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-// Fetch এর জন্য টাইমআউট অপশনসহ M3U পার্স করার ফাংশন (গ্রুপ ও এক্সট্রা প্রোপার্টিসহ)
+// Fetch এর জন্য টাইমআউট অপশনসহ M3U পার্স করার ফাংশন
 async function fetchAndParseM3U(url, timeoutMs = 10000) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
@@ -23,17 +23,8 @@ async function fetchAndParseM3U(url, timeoutMs = 10000) {
     const lines = text.split(/\r?\n/);
     const items = [];
 
-    let currentItem = {
-      name: '',
-      logo: '',
-      group: '',
-      license_type: '',
-      license_key: '',
-      user_agent: '',
-      referer: '',
-      cookie: '',
-      stream_url: ''
-    };
+    let currentItem = {};
+    let currentCookie = "";
 
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i].trim();
@@ -42,9 +33,6 @@ async function fetchAndParseM3U(url, timeoutMs = 10000) {
       if (line.startsWith('#EXTINF:')) {
         const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
         const logo = logoMatch ? logoMatch[1] : '';
-
-        const groupMatch = line.match(/group-title="([^"]+)"/i);
-        const group = groupMatch ? groupMatch[1] : '';
 
         let channelName = '';
         const lastCommaIndex = line.lastIndexOf(',');
@@ -57,54 +45,33 @@ async function fetchAndParseM3U(url, timeoutMs = 10000) {
           channelName = nameMatch ? nameMatch[1] : 'Unknown Channel';
         }
 
-        currentItem.name = channelName;
-        currentItem.logo = logo;
-        currentItem.group = group;
-      } else if (line.startsWith('#KODIPROP:')) {
-        if (/license_type=/i.test(line)) {
-          const match = line.match(/license_type=(.+)/i);
-          if (match) currentItem.license_type = match[1].trim();
-        } else if (/license_key=/i.test(line)) {
-          const match = line.match(/license_key=(.+)/i);
-          if (match) currentItem.license_key = match[1].trim();
-        }
-      } else if (line.startsWith('#EXTVLCPT:')) {
-        if (/http-user-agent=/i.test(line)) {
-          const match = line.match(/http-user-agent=(.+)/i);
-          if (match) currentItem.user_agent = match[1].trim();
-        } else if (/http-referer=/i.test(line)) {
-          const match = line.match(/http-referer=(.+)/i);
-          if (match) currentItem.referer = match[1].trim();
-        }
+        currentItem = {
+          name: channelName,
+          logo: logo
+        };
       } else if (line.startsWith('#EXTHTTP:')) {
         try {
           const jsonStr = line.replace('#EXTHTTP:', '').trim();
           const parsedHttp = JSON.parse(jsonStr);
-          currentItem.cookie = parsedHttp.cookie || parsedHttp.Cookie || "";
+          currentCookie = parsedHttp.cookie || parsedHttp.Cookie || "";
         } catch (e) {
           const cookieMatch = line.match(/Edge-[^"\s]+/i);
           if (cookieMatch) {
-            currentItem.cookie = cookieMatch[0];
+            currentCookie = cookieMatch[0];
           }
         }
       } else if (!line.startsWith('#')) {
         if (currentItem.name) {
-          currentItem.stream_url = line;
-          items.push({ ...currentItem });
+          items.push({
+            name: currentItem.name,
+            logo: currentItem.logo,
+            stream_url: line,
+            cookie: currentCookie
+          });
         }
 
-        // রিসেট for next item
-        currentItem = {
-          name: '',
-          logo: '',
-          group: '',
-          license_type: '',
-          license_key: '',
-          user_agent: '',
-          referer: '',
-          cookie: '',
-          stream_url: ''
-        };
+        currentItem = {};
+        currentCookie = "";
       }
     }
     return items;
@@ -158,7 +125,7 @@ function getCategoryPriority(name) {
   const sportsKeywords = [
     'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
     'ten 2', 'ten 3', 'bfl', 'epl', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
-    'tapmad', 'dazn', 'bein sports', 'super sport', 'live match', 'darts', 'cycling', 'motorsports'
+    'tapmad', 'dazn', 'bein sports', 'super sport', 'live match'
   ];
   if (sportsKeywords.some(key => n.includes(key))) return 3;
 
@@ -221,7 +188,12 @@ function filterChannelsOnly(channels, seenUrls) {
 
     if (!seenUrls.has(streamUrl)) {
       seenUrls.add(streamUrl);
-      filtered.push({ ...channel });
+      filtered.push({
+        name: channelName,
+        logo: channel.logo,
+        stream_url: channel.stream_url,
+        cookie: channel.cookie || ""
+      });
     }
   }
 
@@ -271,30 +243,17 @@ async function main() {
 
   const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
   const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
-  
-  // ৩ নম্বর লিংক যেভাবে আছে ঠিক সেইভাবে ফিল্টার করা হলো (কোনো পরিবর্তন ছাড়াই)
   const fastIptvChannels = filterChannelsOnly(fastIptvData, seenUrls);
 
   const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
-  // জেসন আউটপুটে এক্সট্রা প্রোপার্টিগুলো যুক্ত করা হলো যাতে স্ক্রিনশটের ডেটা হুবহু মিলে যায়
-  const finalResponse = allFinalChannels.map((ch, index) => {
-    let itemObj = {
-      id: index + 1,
-      name: ch.name,
-      logo: ch.logo,
-      group: ch.group || "Other"
-    };
-
-    if (ch.license_type) itemObj.license_type = ch.license_type;
-    if (ch.license_key) itemObj.license_key = ch.license_key;
-    if (ch.user_agent) itemObj.user_agent = ch.user_agent;
-    if (ch.referer) itemObj.referer = ch.referer;
-    if (ch.cookie) itemObj.cookie = ch.cookie;
-
-    itemObj.stream_url = ch.stream_url;
-    return itemObj;
-  });
+  const finalResponse = allFinalChannels.map((ch, index) => ({
+    id: index + 1,
+    name: ch.name,
+    logo: ch.logo,
+    stream_url: ch.stream_url,
+    cookie: ch.cookie
+  }));
 
   const todayDate = new Date().toISOString().split('T')[0];
 
@@ -308,7 +267,7 @@ async function main() {
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json with all properties matching source!`);
+  console.log(`Successfully generated playlist.json matching your format.`);
 }
 
 main();
