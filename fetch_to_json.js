@@ -243,8 +243,11 @@ async function main() {
 
   const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
   const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
+  
+  // ৩ নম্বর লিংক থেকে আসা ডেটাগুলো যেভাবে আছে ঠিক সেভাবেই ফিল্টার করা হলো (কোনো ক্যাটাগরি সর্টিং ছাড়াই)
   const fastIptvChannels = filterChannelsOnly(fastIptvData, seenUrls);
 
+  // সবগুলোকে একসাথে যুক্ত করা
   const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
 
   const finalResponse = allFinalChannels.map((ch, index) => ({
