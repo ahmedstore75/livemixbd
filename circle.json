@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-16T03:48:07.663Z",
-  "total_channels": 181,
+  "updated_at": "2026-10-17T03:38:08.152Z",
+  "total_channels": 182,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -1322,7 +1322,7 @@
       "logo": "https://api.cirkletv.com/files/Resized_Image_2026_08_13_12_49_59_8814_2_1788331314118_f794cb4b63d6581d.webp",
       "category": "Infotainment",
       "urls": [
-        "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.mpd"
+        "https://drk6xq0vhn.gpcdn.net/live/discovery_sd_abr/live/discovery_sd_480/chunks.m3u8?nimblesessionid=222211116"
       ]
     },
     {
@@ -1350,6 +1350,15 @@
       "category": "Infotainment",
       "urls": [
         "https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1784102611&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=be23b688e0d8482e77b3a038a220a900"
+      ]
+    },
+    {
+      "id": "cdc9986f-3a37-40d0-ac21-98b5363d4350",
+      "name": "Discovery Science",
+      "logo": "https://api.cirkletv.com/files/Hridoy_TV_channel__14__1788332017044_ebf7e84128af1517.webp",
+      "category": "Infotainment",
+      "urls": [
+        "https://drk6xq0vhn.gpcdn.net/live/discovery_science_abr/live/discovery_science/chunks.m3u8?nimblesessionid=222213519"
       ]
     },
     {
