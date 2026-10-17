@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 153,
+  "channels_amount": 148,
   "last_update": "2026-10-17",
   "response": [
     {
@@ -735,345 +735,310 @@
     },
     {
       "id": 105,
-      "name": "Philadelphia Union Vs Charlotte FC - HD QUALITY MLS",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Philadelphia%20Union%20Vs%20Charlotte%20FC.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58165/load-playlist?&.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 106,
-      "name": "Philadelphia Union Vs Charlotte FC - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Philadelphia%20Union%20Vs%20Charlotte%20FC.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_abc458cd_f103_487d_8c54_81036713bcf0/index.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 107,
-      "name": "Philadelphia Union Vs Charlotte FC - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Philadelphia%20Union%20Vs%20Charlotte%20FC.jpg",
-      "stream_url": "http://193.47.62.41/hls/BIIIAAQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 108,
-      "name": "Minnesota United Vs St.Louis City - TSN5 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Minnesota%20United%20Vs%20St.Louis%20City.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 109,
-      "name": "Minnesota United Vs St.Louis City - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Minnesota%20United%20Vs%20St.Louis%20City.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_16b43562_7a45_4da7_bded_e11a4c7bf60b/index.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 110,
-      "name": "Golden State Valkyries Vs Atlanta Dream - TSN4 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Golden%20State%20Valkyries%20Vs%20Atlanta%20Dream.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 111,
-      "name": "Golden State Valkyries Vs Atlanta Dream - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Golden%20State%20Valkyries%20Vs%20Atlanta%20Dream.jpg",
-      "stream_url": "https://edgestream2.pro/hls/.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 112,
-      "name": "Tampa Bay Lightning Vs Vancouver Canucks - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tampa%20Bay%20Lightning%20Vs%20Vancouver%20Canucks.jpg",
-      "stream_url": "https://edgestream2.pro/hls/Czajafjihafch18.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 113,
-      "name": "Tampa Bay Lightning Vs Vancouver Canucks - HD QUALITY+ LIVE",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tampa%20Bay%20Lightning%20Vs%20Vancouver%20Canucks.jpg",
-      "stream_url": "https://edgestream4.pro/hls/Czajafjihafch18.m3u8?",
-      "cookie": ""
-    },
-    {
-      "id": 114,
-      "name": "Winnipeg Jets Vs Carolina Hurricanes - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Winnipeg%20Jets%20Vs%20Carolina%20Hurricanes.jpg",
-      "stream_url": "https://edgestream6.pro/hls/ihfazugfyjcazich17.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 115,
-      "name": "Saskatchewan Roughriders Vs Montreal Alouettes - TSN1 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Saskatchewan%20Roughriders%20Vs%20Montreal%20Alouettes.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 116,
-      "name": "Saskatchewan Roughriders Vs Montreal Alouettes - TSN3 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Saskatchewan%20Roughriders%20Vs%20Montreal%20Alouettes.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 117,
-      "name": "Troyes Vs RC Lens - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
-      "stream_url": "https://live.vivo155.com/live/hd-en-1-4550904.m3u8?txSecret=371e5b338ef8f4de256dbe37ab28d813&txTime=6AD3D3B1",
-      "cookie": ""
-    },
-    {
-      "id": 118,
-      "name": "Troyes Vs RC Lens - HD QUALITY 4",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
-      "stream_url": "https://www.rtmpcdn.com/live/506f6856-30e6-4070-beb7-0fddd4f15e54.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 119,
-      "name": "Troyes Vs RC Lens - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
-      "stream_url": "http://162.251.160.53:8089/1341/index.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 120,
-      "name": "Troyes Vs RC Lens - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
-      "stream_url": "http://193.47.62.41/hls/UBBBAAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 121,
-      "name": "Lille Vs Stade Brestois - HD QUALITY 1",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
-      "stream_url": "https://live.vivo155.com/live/hd-en-1-4550899.m3u8?txSecret=25646cfda7948d9b0a6ba7457a9acf37&txTime=6AD3D3C5",
-      "cookie": ""
-    },
-    {
-      "id": 122,
-      "name": "Lille Vs Stade Brestois - HD QUALITY 4",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
-      "stream_url": "https://www.rtmpcdn.com/live/bd8126ab-f232-4bc1-9d82-60aff1ca9e08.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 123,
-      "name": "Lille Vs Stade Brestois - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
-      "stream_url": "http://162.251.160.53:8089/870/index.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 124,
-      "name": "Lille Vs Stade Brestois - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
-      "stream_url": "http://193.47.62.41/hls/UBBBAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 125,
-      "name": "KS Cracovia Vs Legia Warszawa - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/KS%20Cracovia%20Vs%20Legia%20Warszawa.jpg",
-      "stream_url": "http://193.47.62.55/hls/JDDDAAAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 126,
-      "name": "Air Force Falcons Vs UNLV Rebels - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Air%20Force%20Falcons%20Vs%20UNLV%20Rebels.jpg",
-      "stream_url": "https://edgestream4.pro/hls/bvnzadfvyt59.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 127,
-      "name": "Central Michigan Chippewas Vs Western Michigan Broncos - HD QUALITY TV",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Central%20Michigan%20Chippewas%20Vs%20Western%20Michigan%20Broncos.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58163/load-playlist?&.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 128,
-      "name": "Central Michigan Chippewas Vs Western Michigan Broncos - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Central%20Michigan%20Chippewas%20Vs%20Western%20Michigan%20Broncos.jpg",
-      "stream_url": "https://edgestream6.pro/hls/uyopzarf50.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 129,
-      "name": "Michigan Wolverines Vs Penn State Nittany Lions - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Michigan%20Wolverines%20Vs%20Penn%20State%20Nittany%20Lions.jpg",
-      "stream_url": "https://edgestream4.pro/hls/rzavbdyua57.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 130,
-      "name": "Georgia Bulldogs Vs Auburn Tigers - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Georgia%20Bulldogs%20Vs%20Auburn%20Tigers.jpg",
-      "stream_url": "https://edgestream4.pro/hls/hjksgdfauzy51.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 131,
-      "name": "Eastern Michigan Eagles Vs Toledo Rockets - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Eastern%20Michigan%20Eagles%20Vs%20Toledo%20Rockets.jpg",
-      "stream_url": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 132,
-      "name": "Duke Blue Devils Vs North Carolina Tar Heels - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Duke%20Blue%20Devils%20Vs%20North%20Carolina%20Tar%20Heels.jpg",
-      "stream_url": "https://edgestream4.pro/hls/poiryezafv56.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 133,
-      "name": "Miami (Oh) Red Hawks Vs Akron Zips - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Miami%20%28Oh%29%20Red%20Hawks%20Vs%20Akron%20Zips.jpg",
-      "stream_url": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 134,
-      "name": "Texas Tech Red Raiders Vs Arizona State Sun Devils - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Texas%20Tech%20Red%20Raiders%20Vs%20Arizona%20State%20Sun%20Devils.jpg",
-      "stream_url": "https://edgestream6.pro/hls/bnvcxwhfg54.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 135,
-      "name": "Wyoming Cowboys Vs Northern Illinois Huskies - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Wyoming%20Cowboys%20Vs%20Northern%20Illinois%20Huskies.jpg",
-      "stream_url": "https://edgestream4.pro/hls/earzfddshg58.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 136,
-      "name": "Ole Miss Rebels Vs Missouri Tigers - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Ole%20Miss%20Rebels%20Vs%20Missouri%20Tigers.jpg",
-      "stream_url": "https://edgestream4.pro/hls/lmdsjkfgv52.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 137,
-      "name": "Virginia Tech Hokies Vs Georgia Tech Yellow Jackets - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Virginia%20Tech%20Hokies%20Vs%20Georgia%20Tech%20Yellow%20Jackets.jpg",
-      "stream_url": "https://edgestream6.pro/hls/sdezqfza55.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 138,
-      "name": "Tennessee Volunteers Vs Alabama Crimson Tide - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tennessee%20Volunteers%20Vs%20Alabama%20Crimson%20Tide.jpg",
-      "stream_url": "https://edgestream3.pro/hls/rtzaeyvhb53.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 139,
-      "name": "Rice Owls Vs Tulsa Golden Hurricane - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Rice%20Owls%20Vs%20Tulsa%20Golden%20Hurricane.jpg",
-      "stream_url": "https://edgestream2.pro/hls/wxdaztfhd62.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 140,
-      "name": "Daniel Dubois Vs Fabio Wardley - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58153/load-playlist?&.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 141,
-      "name": "Daniel Dubois Vs Fabio Wardley - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
-      "stream_url": "https://admin2.formaturamaxi.com.br/ppv2.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 142,
-      "name": "Daniel Dubois Vs Fabio Wardley - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
-      "stream_url": "http://193.47.62.50/hls/RRRRR.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 143,
-      "name": "Daniel Dubois Vs Fabio Wardley - HD QUALITY TV",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58129/load-playlist?&.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 144,
-      "name": "MMA Cage Warriors Vs MMA Cage Warriors - Link 1",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/MMA%20Cage%20Warriors%20Vs%20MMA%20Cage%20Warriors.jpg",
-      "stream_url": "http://193.47.62.59/hls/CACACA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 145,
-      "name": "Glory 110 Kickboxing Vs Glory 110 Kickboxing - Link 1",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Glory%20110%20Kickboxing%20Vs%20Glory%20110%20Kickboxing.jpg",
-      "stream_url": "http://193.47.62.50/hls/B1111.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 146,
-      "name": "Hannover 96 Vs FC St. Pauli - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hannover%2096%20Vs%20FC%20St.%20Pauli.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4566625.m3u8?txSecret=7cfbca17fd2706941760fa000c2cea5c&txTime=6AD3D2D7",
-      "cookie": ""
-    },
-    {
-      "id": 147,
-      "name": "Hannover 96 Vs FC St. Pauli - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hannover%2096%20Vs%20FC%20St.%20Pauli.jpg",
-      "stream_url": "http://193.47.62.41/hls/BIII.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 148,
-      "name": "Bath Rugby Vs Montpellier Hérault Rugby - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bath%20Rugby%20Vs%20Montpellier%20H%C3%A9rault%20Rugby.jpg",
-      "stream_url": "http://193.47.62.44/hls/qhhhQQQA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 149,
-      "name": "Scarlets Vs Newcastle Red Bulls - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Scarlets%20Vs%20Newcastle%20Red%20Bulls.jpg",
-      "stream_url": "http://193.47.62.44/hls/qhhhQQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 150,
-      "name": "Munster Vs Racing 92 - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Munster%20Vs%20Racing%2092.jpg",
-      "stream_url": "http://193.47.62.44/hls/qhhhQQQAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 151,
-      "name": "Atlético Mineiro Vs Coritiba - PREMIERER1 FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Atl%C3%A9tico%20Mineiro%20Vs%20Coritiba.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/nelfyucw9a/out/v1/6ffb2c365ad14f88b154591beb43d1f6/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 152,
       "name": "Botafogo Vs Chapecoense - PREMIERE2 BR FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Botafogo%20Vs%20Chapecoense.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/oy6rp0jwmf/out/v1/580ecf12bad24979baf8dd993dce053e/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 153,
+      "id": 106,
+      "name": "Minnesota United Vs St.Louis City - TSN5 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Minnesota%20United%20Vs%20St.Louis%20City.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 107,
+      "name": "Minnesota United Vs St.Louis City - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Minnesota%20United%20Vs%20St.Louis%20City.jpg",
+      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_16b43562_7a45_4da7_bded_e11a4c7bf60b/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 108,
+      "name": "Golden State Valkyries Vs Atlanta Dream - TSN4 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Golden%20State%20Valkyries%20Vs%20Atlanta%20Dream.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 109,
+      "name": "Golden State Valkyries Vs Atlanta Dream - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Golden%20State%20Valkyries%20Vs%20Atlanta%20Dream.jpg",
+      "stream_url": "https://edgestream2.pro/hls/.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 110,
+      "name": "Tampa Bay Lightning Vs Vancouver Canucks - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tampa%20Bay%20Lightning%20Vs%20Vancouver%20Canucks.jpg",
+      "stream_url": "https://edgestream2.pro/hls/Czajafjihafch18.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 111,
+      "name": "Tampa Bay Lightning Vs Vancouver Canucks - HD QUALITY+ LIVE",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tampa%20Bay%20Lightning%20Vs%20Vancouver%20Canucks.jpg",
+      "stream_url": "https://edgestream4.pro/hls/Czajafjihafch18.m3u8?",
+      "cookie": ""
+    },
+    {
+      "id": 112,
+      "name": "Winnipeg Jets Vs Carolina Hurricanes - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Winnipeg%20Jets%20Vs%20Carolina%20Hurricanes.jpg",
+      "stream_url": "https://edgestream6.pro/hls/ihfazugfyjcazich17.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 113,
+      "name": "Saskatchewan Roughriders Vs Montreal Alouettes - TSN1 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Saskatchewan%20Roughriders%20Vs%20Montreal%20Alouettes.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 114,
+      "name": "Saskatchewan Roughriders Vs Montreal Alouettes - TSN3 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Saskatchewan%20Roughriders%20Vs%20Montreal%20Alouettes.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 115,
+      "name": "Troyes Vs RC Lens - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4550904.m3u8?txSecret=371e5b338ef8f4de256dbe37ab28d813&txTime=6AD3D3B1",
+      "cookie": ""
+    },
+    {
+      "id": 116,
+      "name": "Troyes Vs RC Lens - HD QUALITY 4",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
+      "stream_url": "https://www.rtmpcdn.com/live/506f6856-30e6-4070-beb7-0fddd4f15e54.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 117,
+      "name": "Troyes Vs RC Lens - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
+      "stream_url": "http://162.251.160.53:8089/1341/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 118,
+      "name": "Troyes Vs RC Lens - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Troyes%20Vs%20RC%20Lens.jpg",
+      "stream_url": "http://193.47.62.41/hls/UBBBAAA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 119,
+      "name": "Lille Vs Stade Brestois - HD QUALITY 1",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
+      "stream_url": "https://live.vivo155.com/live/hd-en-1-4550899.m3u8?txSecret=25646cfda7948d9b0a6ba7457a9acf37&txTime=6AD3D3C5",
+      "cookie": ""
+    },
+    {
+      "id": 120,
+      "name": "Lille Vs Stade Brestois - HD QUALITY 4",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
+      "stream_url": "https://www.rtmpcdn.com/live/bd8126ab-f232-4bc1-9d82-60aff1ca9e08.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 121,
+      "name": "Lille Vs Stade Brestois - TV QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
+      "stream_url": "http://162.251.160.53:8089/870/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 122,
+      "name": "Lille Vs Stade Brestois - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Lille%20Vs%20Stade%20Brestois.jpg",
+      "stream_url": "http://193.47.62.41/hls/UBBBAA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 123,
+      "name": "Air Force Falcons Vs UNLV Rebels - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Air%20Force%20Falcons%20Vs%20UNLV%20Rebels.jpg",
+      "stream_url": "https://edgestream4.pro/hls/bvnzadfvyt59.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 124,
+      "name": "Michigan Wolverines Vs Penn State Nittany Lions - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Michigan%20Wolverines%20Vs%20Penn%20State%20Nittany%20Lions.jpg",
+      "stream_url": "https://edgestream4.pro/hls/rzavbdyua57.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 125,
+      "name": "Georgia Bulldogs Vs Auburn Tigers - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Georgia%20Bulldogs%20Vs%20Auburn%20Tigers.jpg",
+      "stream_url": "https://edgestream4.pro/hls/hjksgdfauzy51.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 126,
+      "name": "Eastern Michigan Eagles Vs Toledo Rockets - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Eastern%20Michigan%20Eagles%20Vs%20Toledo%20Rockets.jpg",
+      "stream_url": "https://edgestream2.pro/hls/cwxvbnfghq60.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 127,
+      "name": "Duke Blue Devils Vs North Carolina Tar Heels - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Duke%20Blue%20Devils%20Vs%20North%20Carolina%20Tar%20Heels.jpg",
+      "stream_url": "https://edgestream4.pro/hls/poiryezafv56.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 128,
+      "name": "Miami (Oh) Red Hawks Vs Akron Zips - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Miami%20%28Oh%29%20Red%20Hawks%20Vs%20Akron%20Zips.jpg",
+      "stream_url": "https://edgestream2.pro/hls/gfhfgsqda61.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 129,
+      "name": "Texas Tech Red Raiders Vs Arizona State Sun Devils - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Texas%20Tech%20Red%20Raiders%20Vs%20Arizona%20State%20Sun%20Devils.jpg",
+      "stream_url": "https://edgestream6.pro/hls/bnvcxwhfg54.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 130,
+      "name": "Wyoming Cowboys Vs Northern Illinois Huskies - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Wyoming%20Cowboys%20Vs%20Northern%20Illinois%20Huskies.jpg",
+      "stream_url": "https://edgestream4.pro/hls/earzfddshg58.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 131,
+      "name": "Ole Miss Rebels Vs Missouri Tigers - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Ole%20Miss%20Rebels%20Vs%20Missouri%20Tigers.jpg",
+      "stream_url": "https://edgestream4.pro/hls/lmdsjkfgv52.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 132,
+      "name": "Virginia Tech Hokies Vs Georgia Tech Yellow Jackets - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Virginia%20Tech%20Hokies%20Vs%20Georgia%20Tech%20Yellow%20Jackets.jpg",
+      "stream_url": "https://edgestream6.pro/hls/sdezqfza55.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 133,
+      "name": "Tennessee Volunteers Vs Alabama Crimson Tide - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Tennessee%20Volunteers%20Vs%20Alabama%20Crimson%20Tide.jpg",
+      "stream_url": "https://edgestream3.pro/hls/rtzaeyvhb53.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 134,
+      "name": "Rice Owls Vs Tulsa Golden Hurricane - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Rice%20Owls%20Vs%20Tulsa%20Golden%20Hurricane.jpg",
+      "stream_url": "https://edgestream2.pro/hls/wxdaztfhd62.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 135,
       "name": "Louisiana Ragin Cajuns Vs Troy Trojans - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Louisiana%20Ragin%20Cajuns%20Vs%20Troy%20Trojans.jpg",
       "stream_url": "https://edgestream1.pro/hls/wxcgfaiiog63.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 136,
+      "name": "Daniel Dubois Vs Fabio Wardley - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
+      "stream_url": "https://chatgpt.hereisman.net/playlist/58153/load-playlist?&.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 137,
+      "name": "Daniel Dubois Vs Fabio Wardley - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
+      "stream_url": "https://admin2.formaturamaxi.com.br/ppv2.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 138,
+      "name": "Daniel Dubois Vs Fabio Wardley - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
+      "stream_url": "http://193.47.62.50/hls/RRRRR.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 139,
+      "name": "Daniel Dubois Vs Fabio Wardley - HD QUALITY TV",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
+      "stream_url": "https://chatgpt.hereisman.net/playlist/58129/load-playlist?&.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 140,
+      "name": "MMA Cage Warriors Vs MMA Cage Warriors - Link 1",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/MMA%20Cage%20Warriors%20Vs%20MMA%20Cage%20Warriors.jpg",
+      "stream_url": "http://193.47.62.59/hls/CACACA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 141,
+      "name": "Glory 110 Kickboxing Vs Glory 110 Kickboxing - Link 1",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Glory%20110%20Kickboxing%20Vs%20Glory%20110%20Kickboxing.jpg",
+      "stream_url": "http://193.47.62.50/hls/B1111.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 142,
+      "name": "Bath Rugby Vs Montpellier Hérault Rugby - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Bath%20Rugby%20Vs%20Montpellier%20H%C3%A9rault%20Rugby.jpg",
+      "stream_url": "http://193.47.62.44/hls/qhhhQQQA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 143,
+      "name": "Scarlets Vs Newcastle Red Bulls - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Scarlets%20Vs%20Newcastle%20Red%20Bulls.jpg",
+      "stream_url": "http://193.47.62.44/hls/qhhhQQQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 144,
+      "name": "Munster Vs Racing 92 - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Munster%20Vs%20Racing%2092.jpg",
+      "stream_url": "http://193.47.62.44/hls/qhhhQQQAA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 145,
+      "name": "Atlético Mineiro Vs Coritiba - PREMIERER1 FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Atl%C3%A9tico%20Mineiro%20Vs%20Coritiba.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/nelfyucw9a/out/v1/6ffb2c365ad14f88b154591beb43d1f6/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 146,
+      "name": "Florida Panthers Vs Seattle Kraken - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Florida%20Panthers%20Vs%20Seattle%20Kraken.jpg",
+      "stream_url": "https://edgestream3.pro/hls/bzagLHzach19.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 147,
+      "name": "Florida Panthers Vs Seattle Kraken - HD QUALITY+ LIVE",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Florida%20Panthers%20Vs%20Seattle%20Kraken.jpg",
+      "stream_url": "https://edgestream4.pro/hls/bzagLHzach19.m3u8?",
+      "cookie": ""
+    },
+    {
+      "id": 148,
+      "name": "Oregon State Beavers Vs Washington State Cougars - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Oregon%20State%20Beavers%20Vs%20Washington%20State%20Cougars.jpg",
+      "stream_url": "https://edgestream4.pro/hls/gfsqdqsjhdaiu64.m3u8",
       "cookie": ""
     }
   ]
