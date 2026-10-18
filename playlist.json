@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 202,
+  "channels_amount": 194,
   "last_update": "2026-10-18",
   "response": [
     {
@@ -1211,209 +1211,153 @@
     },
     {
       "id": 173,
-      "name": "AC Milan Vs Atalanta - PARAMOUNT+ FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/k1dtyvtftn/out/v1/8858a897c068473ca2cf15187a25d4c0/a53a901c-4a02-4d9f-9e75-197a53283ad1-cenc.mpd?aws_sessionId=c7032e6b-6463-4d6d-9fe1-007f7ef8cca1",
-      "cookie": ""
-    },
-    {
-      "id": 174,
-      "name": "AC Milan Vs Atalanta - FUBO SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/r99hsepdiu/out/v1/4f4679779d1b4c4d9ef5db79174645cd/475b4c83-456b-479c-94e6-a196cbf1e673-cenc.mpd?aws_sessionId=e9fc500c-017f-4996-a522-93cc143debd2",
-      "cookie": ""
-    },
-    {
-      "id": 175,
-      "name": "AC Milan Vs Atalanta - BeIN2 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 176,
-      "name": "AC Milan Vs Atalanta - TNT1UK SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 177,
-      "name": "AC Milan Vs Atalanta - SPORT1 CZ FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 178,
-      "name": "AC Milan Vs Atalanta - CazéTV FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?",
-      "cookie": ""
-    },
-    {
-      "id": 179,
-      "name": "AC Milan Vs Atalanta - HD QUALITY4",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "https://www.rtmpcdn.com/live/88eed2a6-a336-43ad-9079-a0f11d79185d.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 180,
-      "name": "AC Milan Vs Atalanta - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/AC%20Milan%20Vs%20Atalanta.jpg",
-      "stream_url": "http://193.47.62.44/hls/HCCCQQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 181,
       "name": "Real Valladolid Vs CD Eldense - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Valladolid%20Vs%20CD%20Eldense.jpg",
       "stream_url": "http://193.47.62.44/hls/T333AAAA.m3u8",
       "cookie": ""
     },
     {
-      "id": 182,
+      "id": 174,
       "name": "Girona FC Vs FC Andorra - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Girona%20FC%20Vs%20FC%20Andorra.jpg",
       "stream_url": "http://193.47.62.44/hls/T333AAA.m3u8",
       "cookie": ""
     },
     {
-      "id": 183,
+      "id": 175,
       "name": "Racing Club Vs CA Independiente - FOX DEPORTES FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Racing%20Club%20Vs%20CA%20Independiente.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 184,
+      "id": 176,
       "name": "Racing Club Vs CA Independiente - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Racing%20Club%20Vs%20CA%20Independiente.jpg",
       "stream_url": "http://193.47.62.44/hls/U999AA.m3u8",
       "cookie": ""
     },
     {
-      "id": 185,
-      "name": "Başakşehir FK Vs Gaziantep FK - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Ba%C5%9Fak%C5%9Fehir%20FK%20Vs%20Gaziantep%20FK.jpg",
-      "stream_url": "http://193.47.62.44/hls/FAFAFAQQ.m3u8",
+      "id": 177,
+      "name": "FC Twente Vs FC Utrecht - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Twente%20Vs%20FC%20Utrecht.jpg",
+      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQQ.m3u8",
       "cookie": ""
     },
     {
-      "id": 186,
+      "id": 178,
+      "name": "NEC Nijmegen Vs Fortuna Sittard - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NEC%20Nijmegen%20Vs%20Fortuna%20Sittard.jpg",
+      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 179,
       "name": "Houston Dash Vs Orlando Pride - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Houston%20Dash%20Vs%20Orlando%20Pride.jpg",
       "stream_url": "http://193.47.62.44/hls/T333AAAAQQ.m3u8",
       "cookie": ""
     },
     {
-      "id": 187,
+      "id": 180,
       "name": "Northampton Saints Vs Cardiff Rugby - PREMIERE2 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Northampton%20Saints%20Vs%20Cardiff%20Rugby.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 188,
+      "id": 181,
       "name": "Northampton Saints Vs Cardiff Rugby - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Northampton%20Saints%20Vs%20Cardiff%20Rugby.jpg",
       "stream_url": "http://193.47.62.44/hls/T333AA.m3u8",
       "cookie": ""
     },
     {
-      "id": 189,
+      "id": 182,
       "name": "Castres Olympique Vs Benetton Treviso - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Castres%20Olympique%20Vs%20Benetton%20Treviso.jpg",
       "stream_url": "http://193.47.62.44/hls/T333A.m3u8",
       "cookie": ""
     },
     {
-      "id": 190,
-      "name": "Club Sporting Cristal Vs Comerciantes Unidos - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Club%20Sporting%20Cristal%20Vs%20Comerciantes%20Unidos.jpg",
-      "stream_url": "http://193.47.62.44/hls/HCCCQQQQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 191,
-      "name": "Ajman Vs Al-Sharjah - AD1 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Ajman%20Vs%20Al-Sharjah.jpg",
-      "stream_url": "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv/abudhabi_sports_1/abudhabi_sports_1_dash_enc/index.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 192,
-      "name": "FK Jablonec Vs FC Viktoria Plzeň - SportDigital Fussball",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FK%20Jablonec%20Vs%20FC%20Viktoria%20Plze%C5%88.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 193,
-      "name": "Club Atlético de Madrid Vs Madrid CFF - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Club%20Atl%C3%A9tico%20de%20Madrid%20Vs%20Madrid%20CFF.jpg",
-      "stream_url": "http://193.47.62.44/hls/FAFAFAQQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 194,
+      "id": 183,
       "name": "Sampdoria Vs Arezzo - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Sampdoria%20Vs%20Arezzo.jpg",
       "stream_url": "http://193.47.62.44/hls/U999.m3u8",
       "cookie": ""
     },
     {
-      "id": 195,
-      "name": "JKT Tanzania Vs Mbeya City - Link 1",
-      "logo": "http://api.sofascore.com/api/v1/unique-tournament/2353/image/dark",
-      "stream_url": "http://193.47.62.44/hls/HCCCQQQQQQA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 196,
+      "id": 184,
       "name": "Al-Fateh Vs Al-Khaleej - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Al-Fateh%20Vs%20Al-Khaleej.jpg",
       "stream_url": "https://file.genoads.com/ch1.m3u8",
       "cookie": ""
     },
     {
-      "id": 197,
+      "id": 185,
+      "name": "Widad Temara Vs Kawkab Marrakech - Link 1",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Widad%20Temara%20Vs%20Kawkab%20Marrakech.jpg",
+      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQQQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 186,
       "name": "NASCAR CUP SERIES Vs NASCAR CUP SERIES - TSN5 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NASCAR%20CUP%20SERIES%20Vs%20NASCAR%20CUP%20SERIES.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 198,
+      "id": 187,
       "name": "Real Madrid Vs Sevilla - TSN2 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 199,
+      "id": 188,
       "name": "Real Madrid Vs Sevilla - ESPN DEPORTES HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
       "stream_url": "https://edgestream5.pro/hls/377qj1h2727.m3u8",
       "cookie": ""
     },
     {
-      "id": 200,
+      "id": 189,
+      "name": "Real Madrid Vs Sevilla - CazéTV FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?",
+      "cookie": ""
+    },
+    {
+      "id": 190,
+      "name": "Juventus Vs Lazio - TNT1UK SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Juventus%20Vs%20Lazio.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 191,
       "name": "Juventus Vs Lazio - CBS SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Juventus%20Vs%20Lazio.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 201,
+      "id": 192,
       "name": "Grêmio Vs Cruzeiro - PREMIERER4 FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Gr%C3%AAmio%20Vs%20Cruzeiro.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tirjor64kh/out/v1/fd2ed9916d994f09a3bd62b64141b9cb/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 202,
+      "id": 193,
+      "name": "Fluminense Vs Santos - SportDigital Fussball",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fluminense%20Vs%20Santos.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 194,
       "name": "Fluminense Vs Santos - PREMIERE2 BR FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fluminense%20Vs%20Santos.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/oy6rp0jwmf/out/v1/580ecf12bad24979baf8dd993dce053e/cenc.mpd",
