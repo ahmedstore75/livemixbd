@@ -14,37 +14,37 @@
     },
     {
       "id": 2,
-      "name": "Italy - Race 3 - UIM - ABP Aquabike World Championship 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791964313540x302.jpg",
-      "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 3,
-      "name": "Angers vs Marseille - MATCHDAY 7 - French Ligue 1 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791881566540x302.jpg",
-      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/28593jkiL-tapmad/master.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 4,
       "name": "Celta vs Alaves - MATCHDAY 9 - LaLiga 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790933574540x302.jpg",
       "stream_url": "https://saseries.akamaized.net/hls/live/2110097/tapmad258645/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 5,
+      "id": 3,
       "name": "Le Havre vs Auxerre - MATCHDAY 7 - French Ligue 1 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791881711540x302.jpg",
+      "stream_url": "https://saseries.akamaized.net/hls/live/2110097/306-tapmad/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 4,
+      "name": "Lorient vs Monaco - MATCHDAY 7 - French Ligue 1 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791881833540x302.jpg",
       "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad3/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Paris FC vs Rennes - MATCHDAY 7 - French Ligue 1 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1791881975540x302.jpg",
       "stream_url": "https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 6,
+      "name": "Malaga vs Real Sociedad - MATCHDAY 9 - LaLiga 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/ChannelFeaturedAppthumb/1790933705540x302.jpg",
+      "stream_url": "https://vodnewv2.in-maa-1.linodeobjects.com/promos/Tapmadpromo/master.m3u8",
       "cookie": ""
     },
     {
