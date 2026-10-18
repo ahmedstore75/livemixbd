@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 194,
+  "channels_amount": 189,
   "last_update": "2026-10-18",
   "response": [
     {
@@ -1064,303 +1064,268 @@
     },
     {
       "id": 152,
-      "name": "Snooker Vs Snooker - TNT4UK SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Snooker%20Vs%20Snooker.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 153,
-      "name": "Horse Racing Vs Horse Racing - FOX1 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 154,
-      "name": "Horse Racing Vs Horse Racing - FOX2 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 155,
-      "name": "Horse Racing Vs Horse Racing - SKY RACING - FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
-      "stream_url": "https://bl.rutube.ru/livestream/362d68a2d5d5b48dbf23522573e64d57/index.m3u8?s=SyXrFpONvusXH9PA0isg7Q&e=2075285628&scheme=https",
-      "cookie": ""
-    },
-    {
-      "id": 156,
-      "name": "Horse Racing Vs Horse Racing - HD QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
-      "stream_url": "https://tmaxapp.site/8wirwjs76erftg/skysportsracing.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 157,
-      "name": "Horse Racing Vs Horse Racing - ITV1 FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0eiyyz8qzm/out/v1/dd17af8835fe4bd087d1a4e359b635d7/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 158,
-      "name": "DARTS PDC Vs DARTS PDC - Nova2 Sports FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/DARTS%20PDC%20Vs%20DARTS%20PDC.jpg",
-      "stream_url": "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 159,
-      "name": "DARTS PDC Vs DARTS PDC - Darts European Tour 15",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/DARTS%20PDC%20Vs%20DARTS%20PDC.jpg",
-      "stream_url": "http://193.47.62.41/hls/IZZZA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 160,
-      "name": "England 🏅 Vs West Indies 🏅 - WILLOW FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/szep2s50dy/out/v1/0654483782a74c1e9e3e578377d28fc6/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 161,
-      "name": "England 🏅 Vs West Indies 🏅 - STARZPLAY FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "https://dfus5rb42if6f.cloudfront.net/v1/dash/eeb5dfd8be1d42cebda3c08973c15ec684f7ea9b/CWCW-PreRoll-Live-DASH/out/v1/45ba30e075ad455a8767d3f33e67ea3d/index.mpd?aws.sessionId=a5905909-7a94-41e4-adfb-d978f53fbe72",
-      "cookie": ""
-    },
-    {
-      "id": 162,
-      "name": "England 🏅 Vs West Indies 🏅 - WILLOW ALT",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/szep2s50dy/out/v1/0654483782a74c1e9e3e578377d28fc6/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 163,
-      "name": "England 🏅 Vs West Indies 🏅 - FANCODE2 FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 164,
-      "name": "England 🏅 Vs West Indies 🏅 - FANCODE FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 165,
-      "name": "England 🏅 Vs West Indies 🏅 - STAR SPORTS HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "http://51.75.127.199:3141/starsports2/index.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 166,
-      "name": "England 🏅 Vs West Indies 🏅 - WILLOW SPORTS",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
-      "stream_url": "https://live-pv-ta.amazon.fastly-edge.com/lhr-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 167,
-      "name": "Málaga CF Vs Real Sociedad - BEIN3 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/M%C3%A1laga%20CF%20Vs%20Real%20Sociedad.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 168,
-      "name": "Málaga CF Vs Real Sociedad - PREMIER1 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/M%C3%A1laga%20CF%20Vs%20Real%20Sociedad.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 169,
-      "name": "Málaga CF Vs Real Sociedad - D SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/M%C3%A1laga%20CF%20Vs%20Real%20Sociedad.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 170,
-      "name": "Málaga CF Vs Real Sociedad - ESPN DEPORTES HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/M%C3%A1laga%20CF%20Vs%20Real%20Sociedad.jpg",
-      "stream_url": "https://edgestream7.pro/hls/377qj1h2727.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 171,
-      "name": "Málaga CF Vs Real Sociedad - HD QUALITY l4",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/M%C3%A1laga%20CF%20Vs%20Real%20Sociedad.jpg",
-      "stream_url": "https://www.rtmpcdn.com/live/aadfb122-eb41-4ef1-a92a-d7c2276d1b7c.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 172,
-      "name": "Málaga CF Vs Real Sociedad - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/M%C3%A1laga%20CF%20Vs%20Real%20Sociedad.jpg",
-      "stream_url": "http://193.47.62.44/hls/T333AAAAQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 173,
-      "name": "Real Valladolid Vs CD Eldense - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Valladolid%20Vs%20CD%20Eldense.jpg",
-      "stream_url": "http://193.47.62.44/hls/T333AAAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 174,
-      "name": "Girona FC Vs FC Andorra - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Girona%20FC%20Vs%20FC%20Andorra.jpg",
-      "stream_url": "http://193.47.62.44/hls/T333AAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 175,
-      "name": "Racing Club Vs CA Independiente - FOX DEPORTES FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Racing%20Club%20Vs%20CA%20Independiente.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 176,
-      "name": "Racing Club Vs CA Independiente - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Racing%20Club%20Vs%20CA%20Independiente.jpg",
-      "stream_url": "http://193.47.62.44/hls/U999AA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 177,
-      "name": "FC Twente Vs FC Utrecht - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Twente%20Vs%20FC%20Utrecht.jpg",
-      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 178,
-      "name": "NEC Nijmegen Vs Fortuna Sittard - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NEC%20Nijmegen%20Vs%20Fortuna%20Sittard.jpg",
-      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 179,
-      "name": "Houston Dash Vs Orlando Pride - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Houston%20Dash%20Vs%20Orlando%20Pride.jpg",
-      "stream_url": "http://193.47.62.44/hls/T333AAAAQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 180,
-      "name": "Northampton Saints Vs Cardiff Rugby - PREMIERE2 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Northampton%20Saints%20Vs%20Cardiff%20Rugby.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 181,
-      "name": "Northampton Saints Vs Cardiff Rugby - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Northampton%20Saints%20Vs%20Cardiff%20Rugby.jpg",
-      "stream_url": "http://193.47.62.44/hls/T333AA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 182,
-      "name": "Castres Olympique Vs Benetton Treviso - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Castres%20Olympique%20Vs%20Benetton%20Treviso.jpg",
-      "stream_url": "http://193.47.62.44/hls/T333A.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 183,
-      "name": "Sampdoria Vs Arezzo - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Sampdoria%20Vs%20Arezzo.jpg",
-      "stream_url": "http://193.47.62.44/hls/U999.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 184,
-      "name": "Al-Fateh Vs Al-Khaleej - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Al-Fateh%20Vs%20Al-Khaleej.jpg",
-      "stream_url": "https://file.genoads.com/ch1.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 185,
-      "name": "Widad Temara Vs Kawkab Marrakech - Link 1",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Widad%20Temara%20Vs%20Kawkab%20Marrakech.jpg",
-      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQQQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 186,
       "name": "NASCAR CUP SERIES Vs NASCAR CUP SERIES - TSN5 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NASCAR%20CUP%20SERIES%20Vs%20NASCAR%20CUP%20SERIES.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 187,
+      "id": 153,
+      "name": "NASCAR CUP SERIES Vs NASCAR CUP SERIES - FOX1 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NASCAR%20CUP%20SERIES%20Vs%20NASCAR%20CUP%20SERIES.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 154,
+      "name": "NASCAR CUP SERIES Vs NASCAR CUP SERIES - FOX2 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NASCAR%20CUP%20SERIES%20Vs%20NASCAR%20CUP%20SERIES.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 155,
+      "name": "Snooker Vs Snooker - TNT4UK SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Snooker%20Vs%20Snooker.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 156,
+      "name": "Horse Racing Vs Horse Racing - SKY RACING - FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "stream_url": "https://bl.rutube.ru/livestream/362d68a2d5d5b48dbf23522573e64d57/index.m3u8?s=SyXrFpONvusXH9PA0isg7Q&e=2075285628&scheme=https",
+      "cookie": ""
+    },
+    {
+      "id": 157,
+      "name": "Horse Racing Vs Horse Racing - HD QUALITY",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "stream_url": "https://tmaxapp.site/8wirwjs76erftg/skysportsracing.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 158,
+      "name": "Horse Racing Vs Horse Racing - ITV1 FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Horse%20Racing%20Vs%20Horse%20Racing.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0eiyyz8qzm/out/v1/dd17af8835fe4bd087d1a4e359b635d7/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 159,
+      "name": "DARTS PDC Vs DARTS PDC - Nova2 Sports FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/DARTS%20PDC%20Vs%20DARTS%20PDC.jpg",
+      "stream_url": "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 160,
+      "name": "DARTS PDC Vs DARTS PDC - Darts European Tour 15",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/DARTS%20PDC%20Vs%20DARTS%20PDC.jpg",
+      "stream_url": "http://193.47.62.41/hls/IZZZA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 161,
+      "name": "England 🏅 Vs West Indies 🏅 - WILLOW FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/szep2s50dy/out/v1/0654483782a74c1e9e3e578377d28fc6/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 162,
+      "name": "England 🏅 Vs West Indies 🏅 - STARZPLAY FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "https://dfus5rb42if6f.cloudfront.net/v1/dash/eeb5dfd8be1d42cebda3c08973c15ec684f7ea9b/CWCW-PreRoll-Live-DASH/out/v1/45ba30e075ad455a8767d3f33e67ea3d/index.mpd?aws.sessionId=a5905909-7a94-41e4-adfb-d978f53fbe72",
+      "cookie": ""
+    },
+    {
+      "id": 163,
+      "name": "England 🏅 Vs West Indies 🏅 - WILLOW ALT",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/szep2s50dy/out/v1/0654483782a74c1e9e3e578377d28fc6/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 164,
+      "name": "England 🏅 Vs West Indies 🏅 - FANCODE2 FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 165,
+      "name": "England 🏅 Vs West Indies 🏅 - FANCODE FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 166,
+      "name": "England 🏅 Vs West Indies 🏅 - STAR SPORTS HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "http://51.75.127.199:3141/starsports2/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 167,
+      "name": "England 🏅 Vs West Indies 🏅 - WILLOW SPORTS",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/England%20%F0%9F%8F%85%20Vs%20West%20Indies%20%F0%9F%8F%85.jpg",
+      "stream_url": "https://live-pv-ta.amazon.fastly-edge.com/lhr-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 168,
       "name": "Real Madrid Vs Sevilla - TSN2 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 188,
+      "id": 169,
+      "name": "Real Madrid Vs Sevilla - BEIN3 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 170,
+      "name": "Real Madrid Vs Sevilla - PREMIER1 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 171,
+      "name": "Real Madrid Vs Sevilla - D SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 172,
       "name": "Real Madrid Vs Sevilla - ESPN DEPORTES HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
       "stream_url": "https://edgestream5.pro/hls/377qj1h2727.m3u8",
       "cookie": ""
     },
     {
-      "id": 189,
+      "id": 173,
       "name": "Real Madrid Vs Sevilla - CazéTV FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Madrid%20Vs%20Sevilla.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?",
       "cookie": ""
     },
     {
-      "id": 190,
+      "id": 174,
       "name": "Juventus Vs Lazio - TNT1UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Juventus%20Vs%20Lazio.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 191,
+      "id": 175,
       "name": "Juventus Vs Lazio - CBS SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Juventus%20Vs%20Lazio.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 192,
+      "id": 176,
+      "name": "Racing Club Vs CA Independiente - FOX DEPORTES FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Racing%20Club%20Vs%20CA%20Independiente.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 177,
+      "name": "Racing Club Vs CA Independiente - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Racing%20Club%20Vs%20CA%20Independiente.jpg",
+      "stream_url": "http://193.47.62.44/hls/U999AA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 178,
       "name": "Grêmio Vs Cruzeiro - PREMIERER4 FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Gr%C3%AAmio%20Vs%20Cruzeiro.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tirjor64kh/out/v1/fd2ed9916d994f09a3bd62b64141b9cb/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 193,
+      "id": 179,
       "name": "Fluminense Vs Santos - SportDigital Fussball",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fluminense%20Vs%20Santos.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 194,
+      "id": 180,
       "name": "Fluminense Vs Santos - PREMIERE2 BR FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fluminense%20Vs%20Santos.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/oy6rp0jwmf/out/v1/580ecf12bad24979baf8dd993dce053e/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 181,
+      "name": "FC Twente Vs FC Utrecht - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/FC%20Twente%20Vs%20FC%20Utrecht.jpg",
+      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 182,
+      "name": "NEC Nijmegen Vs Fortuna Sittard - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/NEC%20Nijmegen%20Vs%20Fortuna%20Sittard.jpg",
+      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 183,
+      "name": "Houston Dash Vs Orlando Pride - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Houston%20Dash%20Vs%20Orlando%20Pride.jpg",
+      "stream_url": "http://193.47.62.44/hls/T333AAAAQQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 184,
+      "name": "Northampton Saints Vs Cardiff Rugby - PREMIERE2 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Northampton%20Saints%20Vs%20Cardiff%20Rugby.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 185,
+      "name": "Northampton Saints Vs Cardiff Rugby - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Northampton%20Saints%20Vs%20Cardiff%20Rugby.jpg",
+      "stream_url": "http://193.47.62.44/hls/T333AA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 186,
+      "name": "Castres Olympique Vs Benetton Treviso - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Castres%20Olympique%20Vs%20Benetton%20Treviso.jpg",
+      "stream_url": "http://193.47.62.44/hls/T333A.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 187,
+      "name": "Sampdoria Vs Arezzo - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Sampdoria%20Vs%20Arezzo.jpg",
+      "stream_url": "http://193.47.62.44/hls/U999.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 188,
+      "name": "Al-Fateh Vs Al-Khaleej - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Al-Fateh%20Vs%20Al-Khaleej.jpg",
+      "stream_url": "https://file.genoads.com/ch1.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 189,
+      "name": "Widad Temara Vs Kawkab Marrakech - Link 1",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Widad%20Temara%20Vs%20Kawkab%20Marrakech.jpg",
+      "stream_url": "http://193.47.62.44/hls/FYYYAAAAQQQ.m3u8",
       "cookie": ""
     }
   ]
