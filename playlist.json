@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 179,
+  "channels_amount": 174,
   "last_update": "2026-10-18",
   "response": [
     {
@@ -707,552 +707,517 @@
     },
     {
       "id": 101,
-      "name": "Alianza Lima Vs Club Atlético Grau - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Alianza%20Lima%20Vs%20Club%20Atl%C3%A9tico%20Grau.jpg",
-      "stream_url": "http://193.47.62.55/hls/F222AAAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 102,
-      "name": "Atlanta United Vs Inter Miami CF - ENGLISH FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Atlanta%20United%20Vs%20Inter%20Miami%20CF.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/dm3g1rq1cg/out/v1/8c9ef42395f74aa0b382282db4ae1ddc/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 103,
-      "name": "Atlanta United Vs Inter Miami CF - SPANISH FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Atlanta%20United%20Vs%20Inter%20Miami%20CF.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/kwfam6n7jy/out/v1/e434b15f7483403ca8b6a1401201daca/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 104,
-      "name": "Atlanta United Vs Inter Miami CF - HD QUALITY +",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Atlanta%20United%20Vs%20Inter%20Miami%20CF.jpg",
-      "stream_url": "https://chatgpt.hereisman.net/playlist/58220/load-playlist?&.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 105,
-      "name": "Atlanta United Vs Inter Miami CF - TV QUALITY",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Atlanta%20United%20Vs%20Inter%20Miami%20CF.jpg",
-      "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_a24b3abf_3b52_456b_ad33_ebde89b58125/index.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 106,
       "name": "LA Galaxy Vs San Diego FC - MLS TV HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/LA%20Galaxy%20Vs%20San%20Diego%20FC.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58240/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 107,
+      "id": 102,
       "name": "LA Galaxy Vs San Diego FC - TV QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/LA%20Galaxy%20Vs%20San%20Diego%20FC.jpg",
       "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_fa8881cb_6c28_4752_b5ed_fd7f819f8bd1/index.m3u8",
       "cookie": ""
     },
     {
-      "id": 108,
+      "id": 103,
       "name": "LA Galaxy Vs San Diego FC - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/LA%20Galaxy%20Vs%20San%20Diego%20FC.jpg",
       "stream_url": "http://193.47.62.41/hls/FEEEAAAA.m3u8",
       "cookie": ""
     },
     {
-      "id": 109,
+      "id": 104,
       "name": "Seattle Sounders FC Vs CF Montréal - MLS TV HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Seattle%20Sounders%20FC%20Vs%20CF%20Montr%C3%A9al.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58244/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 110,
+      "id": 105,
       "name": "Seattle Sounders FC Vs CF Montréal - TV QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Seattle%20Sounders%20FC%20Vs%20CF%20Montr%C3%A9al.jpg",
       "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_cdb6d01c_f3fe_45a0_a16e_135db09081c3/index.m3u8",
       "cookie": ""
     },
     {
-      "id": 111,
+      "id": 106,
       "name": "Seattle Sounders FC Vs CF Montréal - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Seattle%20Sounders%20FC%20Vs%20CF%20Montr%C3%A9al.jpg",
       "stream_url": "http://193.47.62.41/hls/TPPPAA.m3u8",
       "cookie": ""
     },
     {
-      "id": 112,
+      "id": 107,
       "name": "San Jose Earthquakes Vs Nashville SC - MLS TV HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/San%20Jose%20Earthquakes%20Vs%20Nashville%20SC.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58242/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 113,
+      "id": 108,
       "name": "San Jose Earthquakes Vs Nashville SC - TV QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/San%20Jose%20Earthquakes%20Vs%20Nashville%20SC.jpg",
       "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_b8c7c2ea_f451_4000_98c1_2646be8ce39d/index.m3u8",
       "cookie": ""
     },
     {
-      "id": 114,
+      "id": 109,
       "name": "San Jose Earthquakes Vs Nashville SC - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/San%20Jose%20Earthquakes%20Vs%20Nashville%20SC.jpg",
       "stream_url": "http://193.47.62.41/hls/TPPPA.m3u8",
       "cookie": ""
     },
     {
-      "id": 115,
+      "id": 110,
       "name": "Portland Timbers Vs Colorado Rapids - MLS TV HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Portland%20Timbers%20Vs%20Colorado%20Rapids.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58241/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 116,
+      "id": 111,
       "name": "Portland Timbers Vs Colorado Rapids - TV QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Portland%20Timbers%20Vs%20Colorado%20Rapids.jpg",
       "stream_url": "http://162.251.160.53:8089/prime_can_amzn1_dv_gti_07826f64_3130_4a11_9cec_df5c0638a894/index.m3u8",
       "cookie": ""
     },
     {
-      "id": 117,
+      "id": 112,
       "name": "Portland Timbers Vs Colorado Rapids - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Portland%20Timbers%20Vs%20Colorado%20Rapids.jpg",
       "stream_url": "http://193.47.62.41/hls/TPPP.m3u8",
       "cookie": ""
     },
     {
-      "id": 118,
+      "id": 113,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - TNT2UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 119,
+      "id": 114,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - SportsNet FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ccupb3gevq/out/v1/d9d54c61efab463981d1a7d04ceeb44c/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 120,
+      "id": 115,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58211/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 121,
+      "id": 116,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - MLB TV HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "https://admin.formaturamaxi.com.br/mlb.m3u8",
       "cookie": ""
     },
     {
-      "id": 122,
+      "id": 117,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "https://edgestream2.pro/hls/dazhfiach15.m3u8",
       "cookie": ""
     },
     {
-      "id": 123,
+      "id": 118,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - HD QUALITY+ LIVE",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "https://edgestream4.pro/hls/dazhfiach15.m3u8?",
       "cookie": ""
     },
     {
-      "id": 124,
+      "id": 119,
       "name": "Cleveland Guardians Vs Tampa Bay Rays - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Cleveland%20Guardians%20Vs%20Tampa%20Bay%20Rays.jpg",
       "stream_url": "http://193.47.62.59/hls/SSSSAAA.m3u8",
       "cookie": ""
     },
     {
-      "id": 125,
+      "id": 120,
       "name": "Utah Mammoth Vs Edmonton Oilers - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Utah%20Mammoth%20Vs%20Edmonton%20Oilers.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58237/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 126,
+      "id": 121,
       "name": "Utah Mammoth Vs Edmonton Oilers - SPORTSCAST + FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Utah%20Mammoth%20Vs%20Edmonton%20Oilers.jpg",
       "stream_url": "https://live.kinescopecdn.net/on-air/5bf2c07e-3604-42cf-959a-67ed8914ffd5/cfbb297d-3702-4c4a-8e99-eacf243bdef5/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 127,
+      "id": 122,
       "name": "Utah Mammoth Vs Edmonton Oilers - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Utah%20Mammoth%20Vs%20Edmonton%20Oilers.jpg",
       "stream_url": "https://edgestream6.pro/hls/hefbafbakx28.m3u8",
       "cookie": ""
     },
     {
-      "id": 128,
+      "id": 123,
       "name": "Utah Mammoth Vs Edmonton Oilers - HD QUALITY+ LIVE",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Utah%20Mammoth%20Vs%20Edmonton%20Oilers.jpg",
       "stream_url": "https://edgestream7.pro/hls/hefbafbakx28.m3u8?",
       "cookie": ""
     },
     {
-      "id": 129,
+      "id": 124,
       "name": "Los Angeles Kings Vs Boston Bruins - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Los%20Angeles%20Kings%20Vs%20Boston%20Bruins.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58233/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 130,
+      "id": 125,
       "name": "Los Angeles Kings Vs Boston Bruins - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Los%20Angeles%20Kings%20Vs%20Boston%20Bruins.jpg",
       "stream_url": "https://edgestream1.pro/hls/jzabfazkbf27.m3u8",
       "cookie": ""
     },
     {
-      "id": 131,
+      "id": 126,
       "name": "Los Angeles Kings Vs Boston Bruins - HD QUALITY+ LIVE",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Los%20Angeles%20Kings%20Vs%20Boston%20Bruins.jpg",
       "stream_url": "https://edgestream6.pro/hls/jzabfazkbf27.m3u8?",
       "cookie": ""
     },
     {
-      "id": 132,
+      "id": 127,
       "name": "Nashville Predators Vs St. Louis Blues - SPORTSCAST + FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Nashville%20Predators%20Vs%20St.%20Louis%20Blues.jpg",
       "stream_url": "https://live.kinescopecdn.net/on-air/5bf2c07e-3604-42cf-959a-67ed8914ffd5/73c1817e-5297-4b19-9fcd-5443f535960b/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 133,
+      "id": 128,
       "name": "Nashville Predators Vs St. Louis Blues - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Nashville%20Predators%20Vs%20St.%20Louis%20Blues.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58224/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 134,
+      "id": 129,
       "name": "Nashville Predators Vs St. Louis Blues - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Nashville%20Predators%20Vs%20St.%20Louis%20Blues.jpg",
       "stream_url": "https://edgestream6.pro/hls/dzjhkfazbka26.m3u8",
       "cookie": ""
     },
     {
-      "id": 135,
+      "id": 130,
       "name": "Nashville Predators Vs St. Louis Blues - HD QUALITY+ LIVE",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Nashville%20Predators%20Vs%20St.%20Louis%20Blues.jpg",
       "stream_url": "https://edgestream7.pro/hls/dzjhkfazbka26.m3u8?",
       "cookie": ""
     },
     {
-      "id": 136,
+      "id": 131,
       "name": "Vegas Golden Knights Vs Pittsburgh Penguins - SPORTSCAST + FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Vegas%20Golden%20Knights%20Vs%20Pittsburgh%20Penguins.jpg",
       "stream_url": "https://live.kinescopecdn.net/on-air/5bf2c07e-3604-42cf-959a-67ed8914ffd5/ec835b32-921a-4051-b482-7081496f38b0/master.m3u8",
       "cookie": ""
     },
     {
-      "id": 137,
+      "id": 132,
       "name": "Vegas Golden Knights Vs Pittsburgh Penguins - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Vegas%20Golden%20Knights%20Vs%20Pittsburgh%20Penguins.jpg",
       "stream_url": "https://edgestream2.pro/hls/hfzljfahzcax29.m3u8",
       "cookie": ""
     },
     {
-      "id": 138,
+      "id": 133,
       "name": "Vegas Golden Knights Vs Pittsburgh Penguins - HD QUALITY+ LIVE",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Vegas%20Golden%20Knights%20Vs%20Pittsburgh%20Penguins.jpg",
       "stream_url": "https://edgestream6.pro/hls/hfzljfahzcax29.m3u8?",
       "cookie": ""
     },
     {
-      "id": 139,
+      "id": 134,
       "name": "Orange County SC Vs Phoenix Rising FC - CBS SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Orange%20County%20SC%20Vs%20Phoenix%20Rising%20FC.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 140,
+      "id": 135,
       "name": "Orange County SC Vs Phoenix Rising FC - TV QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Orange%20County%20SC%20Vs%20Phoenix%20Rising%20FC.jpg",
       "stream_url": "http://162.251.160.53:8089/342/index.m3u8",
       "cookie": ""
     },
     {
-      "id": 141,
+      "id": 136,
       "name": "Wellington Phoenix Vs Melbourne Victory - TNT3UK SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Wellington%20Phoenix%20Vs%20Melbourne%20Victory.jpg",
       "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 142,
+      "id": 137,
       "name": "UTEP Miners Vs San Jose State Spartans - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/UTEP%20Miners%20Vs%20San%20Jose%20State%20Spartans.jpg",
       "stream_url": "https://edgestream2.pro/hls/omljkhqsdag79.m3u8",
       "cookie": ""
     },
     {
-      "id": 143,
+      "id": 138,
       "name": "Hawaii Rainbow Warriors Vs New Mexico Lobos - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hawaii%20Rainbow%20Warriors%20Vs%20New%20Mexico%20Lobos.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58243/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 144,
+      "id": 139,
       "name": "Hawaii Rainbow Warriors Vs New Mexico Lobos - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hawaii%20Rainbow%20Warriors%20Vs%20New%20Mexico%20Lobos.jpg",
       "stream_url": "https://edgestream2.pro/hls/ioazuryeahrfvzed84.m3u8",
       "cookie": ""
     },
     {
-      "id": 145,
+      "id": 140,
       "name": "Hawaii Rainbow Warriors Vs New Mexico Lobos - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hawaii%20Rainbow%20Warriors%20Vs%20New%20Mexico%20Lobos.jpg",
       "stream_url": "http://193.47.62.55/hls/ROOO.m3u8",
       "cookie": ""
     },
     {
-      "id": 146,
+      "id": 141,
       "name": "San Diego State Aztecs Vs Fresno State Bulldogs - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/San%20Diego%20State%20Aztecs%20Vs%20Fresno%20State%20Bulldogs.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58245/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 147,
+      "id": 142,
       "name": "San Diego State Aztecs Vs Fresno State Bulldogs - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/San%20Diego%20State%20Aztecs%20Vs%20Fresno%20State%20Bulldogs.jpg",
       "stream_url": "https://edgestream2.pro/hls/nbekiurtghjhfza83.m3u8",
       "cookie": ""
     },
     {
-      "id": 148,
+      "id": 143,
       "name": "San Diego State Aztecs Vs Fresno State Bulldogs - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/San%20Diego%20State%20Aztecs%20Vs%20Fresno%20State%20Bulldogs.jpg",
       "stream_url": "http://193.47.62.55/hls/ROOOAA.m3u8",
       "cookie": ""
     },
     {
-      "id": 149,
+      "id": 144,
       "name": "California Golden Bears Vs Wake Forest Demon Deacons - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/California%20Golden%20Bears%20Vs%20Wake%20Forest%20Demon%20Deacons.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58239/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 150,
+      "id": 145,
       "name": "California Golden Bears Vs Wake Forest Demon Deacons - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/California%20Golden%20Bears%20Vs%20Wake%20Forest%20Demon%20Deacons.jpg",
       "stream_url": "https://edgestream2.pro/hls/iozauyezaioyur82.m3u8",
       "cookie": ""
     },
     {
-      "id": 151,
+      "id": 146,
       "name": "California Golden Bears Vs Wake Forest Demon Deacons - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/California%20Golden%20Bears%20Vs%20Wake%20Forest%20Demon%20Deacons.jpg",
       "stream_url": "http://193.47.62.55/hls/ROOOAAAAQ.m3u8",
       "cookie": ""
     },
     {
-      "id": 152,
+      "id": 147,
       "name": "Colorado Buffaloes Vs Utah Utes - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Colorado%20Buffaloes%20Vs%20Utah%20Utes.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58238/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 153,
+      "id": 148,
       "name": "Colorado Buffaloes Vs Utah Utes - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Colorado%20Buffaloes%20Vs%20Utah%20Utes.jpg",
       "stream_url": "https://edgestream2.pro/hls/dsqhjbjhsqd81.m3u8",
       "cookie": ""
     },
     {
-      "id": 154,
+      "id": 149,
       "name": "Colorado Buffaloes Vs Utah Utes - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Colorado%20Buffaloes%20Vs%20Utah%20Utes.jpg",
       "stream_url": "http://193.47.62.55/hls/ROOOA.m3u8",
       "cookie": ""
     },
     {
-      "id": 155,
+      "id": 150,
       "name": "Oregon Ducks Vs Nebraska Cornhuskers - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Oregon%20Ducks%20Vs%20Nebraska%20Cornhuskers.jpg",
       "stream_url": "https://edgestream2.pro/hls/jkhfsgqghjqsd85.m3u8",
       "cookie": ""
     },
     {
-      "id": 156,
+      "id": 151,
       "name": "Oregon Ducks Vs Nebraska Cornhuskers - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Oregon%20Ducks%20Vs%20Nebraska%20Cornhuskers.jpg",
       "stream_url": "http://193.47.62.50/hls/V555AQ.m3u8",
       "cookie": ""
     },
     {
-      "id": 157,
+      "id": 152,
       "name": "Sacramento State Hornets Vs Ohio Bobcats - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Sacramento%20State%20Hornets%20Vs%20Ohio%20Bobcats.jpg",
       "stream_url": "https://edgestream2.pro/hls/sdghjvqazhvg80.m3u8",
       "cookie": ""
     },
     {
-      "id": 158,
+      "id": 153,
       "name": "Daniel Dubois Vs Fabio Wardley - HD QUALITY",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58153/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 159,
+      "id": 154,
       "name": "Daniel Dubois Vs Fabio Wardley - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
       "stream_url": "https://admin2.formaturamaxi.com.br/ppv2.m3u8",
       "cookie": ""
     },
     {
-      "id": 160,
+      "id": 155,
       "name": "Daniel Dubois Vs Fabio Wardley - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
       "stream_url": "http://193.47.62.50/hls/RRRRR.m3u8",
       "cookie": ""
     },
     {
-      "id": 161,
+      "id": 156,
       "name": "Daniel Dubois Vs Fabio Wardley - HD QUALITY TV",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Daniel%20Dubois%20Vs%20Fabio%20Wardley.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58129/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 162,
+      "id": 157,
       "name": "Joaquin Buckley Vs Mike Malott - TNT SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 163,
+      "id": 158,
       "name": "Joaquin Buckley Vs Mike Malott - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://admin2.formaturamaxi.com.br/tnt.m3u8",
       "cookie": ""
     },
     {
-      "id": 164,
+      "id": 159,
       "name": "Joaquin Buckley Vs Mike Malott - UFC EVENTO HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://castorvanta.s3.us-east-1.amazonaws.com/ufc.m3u8",
       "cookie": ""
     },
     {
-      "id": 165,
+      "id": 160,
       "name": "Joaquin Buckley Vs Mike Malott - UFC LIVE FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://ubuntu.fromthyheart.site/dailymotion/live/playlist/24.m3u8",
       "cookie": ""
     },
     {
-      "id": 166,
+      "id": 161,
       "name": "Joaquin Buckley Vs Mike Malott - HD TV LIVE",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://edgestream5.pro/hls/zeuryuegn48.m3u8",
       "cookie": ""
     },
     {
-      "id": 167,
+      "id": 162,
       "name": "Joaquin Buckley Vs Mike Malott - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "http://193.47.62.44/hls/EUUU.m3u8",
       "cookie": ""
     },
     {
-      "id": 168,
+      "id": 163,
       "name": "Joaquin Buckley Vs Mike Malott - ENGLISH FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/hxfqawff2a/out/v1/090dd6e78371426490217ece41028da3/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 169,
+      "id": 164,
       "name": "Joaquin Buckley Vs Mike Malott - PORTUGUESE FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/zzx42fsaf7/out/v1/ebf8430cdc21410ebbf6db901f9ba31c/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 170,
+      "id": 165,
       "name": "Joaquin Buckley Vs Mike Malott - SPANISH FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/fe0wnhejuw/out/v1/21f5edd9dc0a4562ad27ec1481ee7c41/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 171,
+      "id": 166,
       "name": "Joaquin Buckley Vs Mike Malott - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://edgestream2.pro/hls/zeuryuegn48.m3u8",
       "cookie": ""
     },
     {
-      "id": 172,
+      "id": 167,
       "name": "Joaquin Buckley Vs Mike Malott - UFC TV FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Joaquin%20Buckley%20Vs%20Mike%20Malott.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/9v8cttmhcw/out/v1/df4c5196e3d74e7d8f484fc25d9034f1/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 173,
+      "id": 168,
       "name": "Herring Vs Dodson - HD QUALITY +",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Herring%20Vs%20Dodson.jpg",
       "stream_url": "https://chatgpt.hereisman.net/playlist/58195/load-playlist?&.m3u8",
       "cookie": ""
     },
     {
-      "id": 174,
+      "id": 169,
       "name": "Herring Vs Dodson - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Herring%20Vs%20Dodson.jpg",
       "stream_url": "http://193.47.62.41/hls/F8888.m3u8",
       "cookie": ""
     },
     {
-      "id": 175,
+      "id": 170,
       "name": "Hadribeaj Vs Fundora - Link 1",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Hadribeaj%20Vs%20Fundora.jpg",
       "stream_url": "https://admin2.formaturamaxi.com.br/ppv.m3u8",
       "cookie": ""
     },
     {
-      "id": 176,
+      "id": 171,
       "name": "New Zealand Vs Fiji - PREMIERE2 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/New%20Zealand%20Vs%20Fiji.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 177,
+      "id": 172,
       "name": "New Zealand Vs Fiji - LOW QUALITY (USE VPN)",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/New%20Zealand%20Vs%20Fiji.jpg",
       "stream_url": "http://193.47.62.44/hls/HTTTA.m3u8",
       "cookie": ""
     },
     {
-      "id": 178,
+      "id": 173,
       "name": "Canterbury Vs Taranaki - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Canterbury%20Vs%20Taranaki.jpg",
       "stream_url": "http://193.47.62.44/hls/HTTT.m3u8",
       "cookie": ""
     },
     {
-      "id": 179,
+      "id": 174,
       "name": "Essendon Bombers Vs North Melbourne - FOX2 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Essendon%20Bombers%20Vs%20North%20Melbourne.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
