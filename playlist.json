@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 152,
+  "channels_amount": 154,
   "last_update": "2026-10-18",
   "response": [
     {
@@ -952,118 +952,132 @@
     },
     {
       "id": 136,
-      "name": "Crystal Palace Vs West Ham - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Crystal%20Palace%20Vs%20West%20Ham.jpg",
-      "stream_url": "http://193.47.62.41/hls/9RRRAAAAAQ.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 137,
-      "name": "Chelsea FC Vs Tottenham FC - CBS SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Chelsea%20FC%20Vs%20Tottenham%20FC.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 138,
-      "name": "Chelsea FC Vs Tottenham FC - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Chelsea%20FC%20Vs%20Tottenham%20FC.jpg",
-      "stream_url": "http://193.47.62.41/hls/9RRRAAAAA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 139,
-      "name": "Kasımpaşa Vs Samsunspor - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Kas%C4%B1mpa%C5%9Fa%20Vs%20Samsunspor.jpg",
-      "stream_url": "https://live.vivo155.com/live/sd-1-4581338.m3u8?txSecret=23ec42df2cdea6dc9595dbc7a8fb3f8f&txTime=6AD497B0",
-      "cookie": ""
-    },
-    {
-      "id": 140,
-      "name": "Kasımpaşa Vs Samsunspor - LOW QUALITY (USE VPN)",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Kas%C4%B1mpa%C5%9Fa%20Vs%20Samsunspor.jpg",
-      "stream_url": "http://193.47.62.44/hls/3UUUA.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 141,
-      "name": "Fremantle Dockers Vs St Kilda Saints - TNT2UK SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fremantle%20Dockers%20Vs%20St%20Kilda%20Saints.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 142,
-      "name": "Fremantle Dockers Vs St Kilda Saints - FOX2 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fremantle%20Dockers%20Vs%20St%20Kilda%20Saints.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 143,
-      "name": "Casademont Zaragoza Vs Força Lleida CE - D SPORTS + FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Casademont%20Zaragoza%20Vs%20For%C3%A7a%20Lleida%20CE.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 144,
-      "name": "Juventus Vs Como - D SPORTS2 + FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Juventus%20Vs%20Como.jpg",
-      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/rgilyeubta/out/v1/09a67027b18f4fd78aaa3794a2aacfe8/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 145,
-      "name": "Deportivo Alavés Vs Sevilla FC - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Deportivo%20Alav%C3%A9s%20Vs%20Sevilla%20FC.jpg",
-      "stream_url": "http://193.47.62.44/hls/wawawaaaa.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 146,
-      "name": "Real Sociedad Vs Fútbol Club Barcelona - STREAM TV + HD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Sociedad%20Vs%20F%C3%BAtbol%20Club%20Barcelona.jpg",
-      "stream_url": "http://193.47.62.44/hls/wawawaaaaq.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 147,
-      "name": "Osasuna Vs Real Racing Club - BEIN3 SPORTS FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Osasuna%20Vs%20Real%20Racing%20Club.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 148,
-      "name": "Osasuna Vs Real Racing Club - FANCODE FHD",
-      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Osasuna%20Vs%20Real%20Racing%20Club.jpg",
-      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
-      "cookie": ""
-    },
-    {
-      "id": 149,
       "name": "SG Dynamo Dresden Vs 1. FC Magdeburg - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/SG%20Dynamo%20Dresden%20Vs%201.%20FC%20Magdeburg.jpg",
       "stream_url": "https://file.genoads.com/ch1.m3u8",
       "cookie": ""
     },
     {
+      "id": 137,
+      "name": "Crystal Palace Vs West Ham - PARAMOUNT+ FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Crystal%20Palace%20Vs%20West%20Ham.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/6bjjqwaurr/out/v1/dd78904715334c7fb148206f09267adc/b37e9ecd-98c0-4c87-8821-851f99176d2f-cenc.mpd?aws_sessionId=4511c721-f341-423b-8fa5-1104ab30cd51",
+      "cookie": ""
+    },
+    {
+      "id": 138,
+      "name": "Crystal Palace Vs West Ham - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Crystal%20Palace%20Vs%20West%20Ham.jpg",
+      "stream_url": "http://193.47.62.41/hls/9RRRAAAAAQ.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 139,
+      "name": "Chelsea FC Vs Tottenham FC - PARAMOUNT+ FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Chelsea%20FC%20Vs%20Tottenham%20FC.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/5b7osjfauj/out/v1/bf25e33644084a68a368322f63154576/5330eb47-82b0-4a8c-a76d-1f38d5315082-cenc.mpd?aws_sessionId=df232b72-c0d4-4ac0-9573-03f60ed5d5bd",
+      "cookie": ""
+    },
+    {
+      "id": 140,
+      "name": "Chelsea FC Vs Tottenham FC - CBS SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Chelsea%20FC%20Vs%20Tottenham%20FC.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 141,
+      "name": "Chelsea FC Vs Tottenham FC - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Chelsea%20FC%20Vs%20Tottenham%20FC.jpg",
+      "stream_url": "http://193.47.62.41/hls/9RRRAAAAA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 142,
+      "name": "Kasımpaşa Vs Samsunspor - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Kas%C4%B1mpa%C5%9Fa%20Vs%20Samsunspor.jpg",
+      "stream_url": "https://live.vivo155.com/live/sd-1-4581338.m3u8?txSecret=23ec42df2cdea6dc9595dbc7a8fb3f8f&txTime=6AD497B0",
+      "cookie": ""
+    },
+    {
+      "id": 143,
+      "name": "Kasımpaşa Vs Samsunspor - LOW QUALITY (USE VPN)",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Kas%C4%B1mpa%C5%9Fa%20Vs%20Samsunspor.jpg",
+      "stream_url": "http://193.47.62.44/hls/3UUUA.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 144,
+      "name": "Fremantle Dockers Vs St Kilda Saints - TNT2UK SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fremantle%20Dockers%20Vs%20St%20Kilda%20Saints.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 145,
+      "name": "Fremantle Dockers Vs St Kilda Saints - FOX2 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Fremantle%20Dockers%20Vs%20St%20Kilda%20Saints.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 146,
+      "name": "Casademont Zaragoza Vs Força Lleida CE - D SPORTS + FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Casademont%20Zaragoza%20Vs%20For%C3%A7a%20Lleida%20CE.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 147,
+      "name": "Juventus Vs Como - D SPORTS2 + FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Juventus%20Vs%20Como.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/rgilyeubta/out/v1/09a67027b18f4fd78aaa3794a2aacfe8/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 148,
+      "name": "Deportivo Alavés Vs Sevilla FC - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Deportivo%20Alav%C3%A9s%20Vs%20Sevilla%20FC.jpg",
+      "stream_url": "http://193.47.62.44/hls/wawawaaaa.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 149,
+      "name": "Real Sociedad Vs Fútbol Club Barcelona - STREAM TV + HD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Real%20Sociedad%20Vs%20F%C3%BAtbol%20Club%20Barcelona.jpg",
+      "stream_url": "http://193.47.62.44/hls/wawawaaaaq.m3u8",
+      "cookie": ""
+    },
+    {
       "id": 150,
+      "name": "Osasuna Vs Real Racing Club - BEIN3 SPORTS FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Osasuna%20Vs%20Real%20Racing%20Club.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 151,
+      "name": "Osasuna Vs Real Racing Club - FANCODE FHD",
+      "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Osasuna%20Vs%20Real%20Racing%20Club.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 152,
       "name": "Section Paloise Vs Leicester Tigers - PREMIER1 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Section%20Paloise%20Vs%20Leicester%20Tigers.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 151,
+      "id": 153,
       "name": "Harlequin FC Vs RC Vannes - PREMIERE2 SPORTS FHD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Harlequin%20FC%20Vs%20RC%20Vannes.jpg",
       "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
       "cookie": ""
     },
     {
-      "id": 152,
+      "id": 154,
       "name": "Aviron Bayonnais Vs Toyota Cheetahs - STREAM TV + HD",
       "logo": "https://raw.githubusercontent.com/sm-monirulislam/Upcoming-and-Live-Sports-Data/main/match_image/Aviron%20Bayonnais%20Vs%20Toyota%20Cheetahs.jpg",
       "stream_url": "https://edgestream2.pro/hls/.m3u8",
