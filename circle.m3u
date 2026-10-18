@@ -333,6 +333,9 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/
 #EXTINF:-1 tvg-id="b14a7033-632d-4c40-97d2-b09b50654d4d" tvg-logo="" group-title="Bangla Entertainment", Shakhtar Donetsk vs AEK Athens
 https://tencent-cdn.tapmad.com/v1/019ea6d121dd15e8f4122afee4cf8f/019ea6d2f96e15e8f0602c5e1b7bc3/fifa1_720.m3u8
 
+#EXTINF:-1 tvg-id="ff6a129b-294d-4cce-83b9-4d996a8702f6" tvg-logo="" group-title="Bangla Entertainment",Valencia vs Athletic Club 
+https://vodnewv2.in-maa-1.linodeobjects.com/promos/Tapmadpromo/master.m3u8
+
 #EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="Bangla Entertainment",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2
 
@@ -463,7 +466,7 @@ https://live.presstv.ir/hls/ifilmen_4_482/index.m3u8
 https://api.cirkletv.com/api/https?url=http://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=discovery_bangla&sm=.m3u8
 
 #EXTINF:-1 tvg-id="fa3a7970-97cf-44c5-a77c-9fcc04cdfb5b" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_12_49_59_8814_2_1788331314118_f794cb4b63d6581d.webp" group-title="Infotainment",Discovery Hindi
-https://drk6xq0vhn.gpcdn.net/live/discovery_sd_abr/live/discovery_sd_480/chunks.m3u8?nimblesessionid=222211116
+https://drk6xq0vhn.gpcdn.net/live/discovery_sd_abr/live/discovery_sd_480/chunks.m3u8
 
 #EXTINF:-1 tvg-id="4a976bb6-12fa-4689-90c9-439529596796" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_12_50_01_5406_4_1788331590052_b484eea100c8c4e3.webp" group-title="Infotainment",Discovery English
 https://prod-linear-media.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8?edge-cache-token=Expires=1790344936~Starts=1790341336~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=t-5WgA-APtI0Eahx8CWtK7SsIe_1ZeDLiNOmukntG8NOGCj_RQ5hjGEMSVKK4UGP_7hGmzTDEqnc_pZZ0xI-Cw
@@ -472,10 +475,16 @@ https://prod-linear-media.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8?edg
 https://livecdn.live247stream.com/discoverpakistan/web/playlist.m3u8
 
 #EXTINF:-1 tvg-id="642dd98a-a2d3-4fe1-b36c-30d4ad76c3f1" tvg-logo="https://api.cirkletv.com/files/Resized_Image_2026_08_13_15_29_20_5232_2_1788331828537_0be2b542e968019f.webp" group-title="Infotainment",National geographic 
-https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1784102611&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=be23b688e0d8482e77b3a038a220a900
+https://tvsen6.aynaott.com/natgeo/index.m3u8
 
 #EXTINF:-1 tvg-id="cdc9986f-3a37-40d0-ac21-98b5363d4350" tvg-logo="https://api.cirkletv.com/files/Hridoy_TV_channel__14__1788332017044_ebf7e84128af1517.webp" group-title="Infotainment",Discovery Science
-https://drk6xq0vhn.gpcdn.net/live/discovery_science_abr/live/discovery_science/chunks.m3u8?nimblesessionid=222213519
+https://drk6xq0vhn.gpcdn.net/live/discovery_science_abr/live/discovery_science/chunks.m3u8
+
+#EXTINF:-1 tvg-id="d2183c14-5e0a-4d35-ba97-50c6281e7cc9" tvg-logo="https://api.cirkletv.com/files/Hridoy_TV_channel__12__1788332135885_d2656f3cc9cdb40f.webp" group-title="Infotainment",Discovery Turbo
+https://drk6xq0vhn.gpcdn.net/live/discovery_turbo_abr/live/discovery_turbo_480/chunks.m3u8
+
+#EXTINF:-1 tvg-id="421ca9ee-f1ff-498d-8a7a-4573d7879fd0" tvg-logo="https://api.cirkletv.com/files/Hridoy_TV_channel__13__1788332885702_fe7a3a94398a5988.webp" group-title="Infotainment",Discovery Investigation
+https://drk6xq0vhn.gpcdn.net/live/id_hd_abr/live/id_hd/chunks.m3u8
 
 #EXTINF:-1 tvg-id="4c56349a-7ed4-4981-8c22-810703561407" tvg-logo="https://s3.aynaott.com/storage/597c839e577e81813e44812cedc50892" group-title="Infotainment",Wild TV
 https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8

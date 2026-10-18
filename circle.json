@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-17T03:38:08.152Z",
-  "total_channels": 182,
+  "updated_at": "2026-10-18T03:44:51.303Z",
+  "total_channels": 185,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -966,6 +966,15 @@
       ]
     },
     {
+      "id": "ff6a129b-294d-4cce-83b9-4d996a8702f6",
+      "name": "Valencia vs Athletic Club ",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://vodnewv2.in-maa-1.linodeobjects.com/promos/Tapmadpromo/master.m3u8"
+      ]
+    },
+    {
       "id": "e0a22e01-451e-4c52-9694-962aa6a77f76",
       "name": "FehérvárTV",
       "logo": "https://www.fehervartv.hu/css/img/icon-1-2.png",
@@ -1322,7 +1331,7 @@
       "logo": "https://api.cirkletv.com/files/Resized_Image_2026_08_13_12_49_59_8814_2_1788331314118_f794cb4b63d6581d.webp",
       "category": "Infotainment",
       "urls": [
-        "https://drk6xq0vhn.gpcdn.net/live/discovery_sd_abr/live/discovery_sd_480/chunks.m3u8?nimblesessionid=222211116"
+        "https://drk6xq0vhn.gpcdn.net/live/discovery_sd_abr/live/discovery_sd_480/chunks.m3u8"
       ]
     },
     {
@@ -1349,7 +1358,7 @@
       "logo": "https://api.cirkletv.com/files/Resized_Image_2026_08_13_15_29_20_5232_2_1788331828537_0be2b542e968019f.webp",
       "category": "Infotainment",
       "urls": [
-        "https://tvsen6.aynaott.com/natgeo/index.m3u8?e=1784102611&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=be23b688e0d8482e77b3a038a220a900"
+        "https://tvsen6.aynaott.com/natgeo/index.m3u8"
       ]
     },
     {
@@ -1358,7 +1367,25 @@
       "logo": "https://api.cirkletv.com/files/Hridoy_TV_channel__14__1788332017044_ebf7e84128af1517.webp",
       "category": "Infotainment",
       "urls": [
-        "https://drk6xq0vhn.gpcdn.net/live/discovery_science_abr/live/discovery_science/chunks.m3u8?nimblesessionid=222213519"
+        "https://drk6xq0vhn.gpcdn.net/live/discovery_science_abr/live/discovery_science/chunks.m3u8"
+      ]
+    },
+    {
+      "id": "d2183c14-5e0a-4d35-ba97-50c6281e7cc9",
+      "name": "Discovery Turbo",
+      "logo": "https://api.cirkletv.com/files/Hridoy_TV_channel__12__1788332135885_d2656f3cc9cdb40f.webp",
+      "category": "Infotainment",
+      "urls": [
+        "https://drk6xq0vhn.gpcdn.net/live/discovery_turbo_abr/live/discovery_turbo_480/chunks.m3u8"
+      ]
+    },
+    {
+      "id": "421ca9ee-f1ff-498d-8a7a-4573d7879fd0",
+      "name": "Discovery Investigation",
+      "logo": "https://api.cirkletv.com/files/Hridoy_TV_channel__13__1788332885702_fe7a3a94398a5988.webp",
+      "category": "Infotainment",
+      "urls": [
+        "https://drk6xq0vhn.gpcdn.net/live/id_hd_abr/live/id_hd/chunks.m3u8"
       ]
     },
     {
