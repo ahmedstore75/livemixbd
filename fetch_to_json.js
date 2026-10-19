@@ -1,275 +1,88 @@
 const fs = require('fs');
 
-// Fetch এর জন্য টাইমআউট অপশনসহ M3U পার্স করার ফাংশন
-async function fetchAndParseM3U(url, timeoutMs = 10000) {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-
+async function fetchAndParseM3U(url) {
   try {
-    const response = await fetch(url, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-      }
-    });
-    clearTimeout(timeoutId);
-
-    if (!response.ok) {
-      console.error(`Fetch failed for ${url} with status: ${response.status}`);
-      return [];
-    }
-
+    const response = await fetch(url);
     const text = await response.text();
-    const lines = text.split(/\r?\n/);
+    const lines = text.split('\n');
     const items = [];
+    
+    let currentAttributes = {};
+    let currentHeaders = [];
 
-    let currentItem = {};
-    let currentCookie = "";
-
-    for (let i = 0; i < lines.length; i++) {
-      let line = lines[i].trim();
+    for (let line of lines) {
+      line = line.trim();
       if (!line) continue;
 
       if (line.startsWith('#EXTINF:')) {
-        const logoMatch = line.match(/tvg-logo="([^"]+)"/i);
+        // লোগো এক্সট্রাক্ট
+        const logoMatch = line.match(/tvg-logo="([^"]+)"/);
         const logo = logoMatch ? logoMatch[1] : '';
 
-        let channelName = '';
-        const lastCommaIndex = line.lastIndexOf(',');
-        if (lastCommaIndex !== -1) {
-          channelName = line.substring(lastCommaIndex + 1).trim();
-        }
+        // গ্রুপ/ক্যাটাগরি এক্সট্রাক্ট
+        const groupMatch = line.match(/group-title="([^"]+)"/);
+        const group = groupMatch ? groupMatch[1] : '';
 
-        if (!channelName) {
-          const nameMatch = line.match(/tvg-name="([^"]+)"/i);
-          channelName = nameMatch ? nameMatch[1] : 'Unknown Channel';
-        }
+        // মূল চ্যানেল নাম এক্সট্রাক্ট
+        const nameMatch = line.match(/,(.+)$/);
+        const originalName = nameMatch ? nameMatch[1].trim() : 'Unknown Channel';
 
-        currentItem = {
-          name: channelName,
-          logo: logo
+        currentAttributes = {
+          channel_name: `${originalName} - আহমদ আলী`,
+          original_name: originalName,
+          logo: logo,
+          group: group,
+          raw_extinf: line.replace(/,.*$/, `,${originalName} - আহমদ আলী`)
         };
-      } else if (line.startsWith('#EXTHTTP:')) {
-        try {
-          const jsonStr = line.replace('#EXTHTTP:', '').trim();
-          const parsedHttp = JSON.parse(jsonStr);
-          currentCookie = parsedHttp.cookie || parsedHttp.Cookie || "";
-        } catch (e) {
-          const cookieMatch = line.match(/Edge-[^"\s]+/i);
-          if (cookieMatch) {
-            currentCookie = cookieMatch[0];
-          }
-        }
-      } else if (!line.startsWith('#')) {
-        if (currentItem.name) {
-          items.push({
-            name: currentItem.name,
-            logo: currentItem.logo,
-            stream_url: line,
-            cookie: currentCookie
-          });
-        }
-
-        currentItem = {};
-        currentCookie = "";
+      } else if (line.startsWith('#')) {
+        // KODI PROP বা অতিরিক্ত সিকিউরিটি হেডার (যেমন Cookie, License, User-Agent ইত্যাদি)
+        currentHeaders.push(line);
+      } else {
+        // স্ট্রিম URL
+        items.push({
+          ...currentAttributes,
+          stream_url: line,
+          headers: [...currentHeaders]
+        });
+        
+        // রিসেট
+        currentAttributes = {};
+        currentHeaders = [];
       }
     }
     return items;
   } catch (error) {
-    if (error.name === 'AbortError') {
-      console.error(`Error: Request timed out for ${url}`);
-    } else {
-      console.error(`Error fetching M3U ${url}:`, error.message);
-    }
+    console.error(`Error fetching ${url}:`, error);
     return [];
   }
 }
 
-// জনপ্রিয় চ্যানেলগুলোর তালিকা
-const popularBdChannelsOrder = [
-  'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24',
-  't sports', 'gtv', 'gazi tv', 'ntv', 'rtv', 'channel i', 'atn bangla', 'atn news',
-  'maasranga', 'deepto', 'banglavision', 'boishakhi', 'desh tv', 'nagorik', 'btv'
-];
-
-function getPopularBDIndex(name) {
-  const n = name.toLowerCase();
-  for (let i = 0; i < popularBdChannelsOrder.length; i++) {
-    if (n.includes(popularBdChannelsOrder[i])) {
-      return i;
-    }
-  }
-  return 999;
-}
-
-// ক্যাটাগরি পার্সিং
-function getCategoryPriority(name) {
-  const n = name.toLowerCase();
-
-  const isMohona = /mohona/i.test(n);
-  const bdKeywords = [
-    'somoy', 'ekattor', 'jamuna', 'independent', 'channel 24', 'dbc', 'news24', 
-    'atn bangla', 'atn news', 'channel i', 'ntv', 'rtv', 'boishakhi', 'banglavision', 
-    'desh tv', 'maasranga', 'gazi tv', 'gtv', 'nagorik', 'bijoy tv', 
-    'my tv', 'asian tv', 'saampratik', 'ananda', 'deepto', 'duronto', 'btv', 'bangla tv',
-    'channel s', 'ekhon', 'global tv', 'nexus', 'rajdhani', 't sports'
-  ];
-  if (isMohona || bdKeywords.some(key => n.includes(key))) return 1;
-
-  const kolkataKeywords = [
-    'star jalsha', 'zee bangla', 'colors bangla', 'sun bangla', 'sony aath', 
-    'jalsha movies', 'zee bangla cinema', 'khabor 24', 'abp ananda', 'news18 bangla'
-  ];
-  if (kolkataKeywords.some(key => n.includes(key))) return 2;
-
-  const sportsKeywords = [
-    'sport', 'sports', 'cricket', 'football', 'star sports', 'sony ten', 'ten 1', 
-    'ten 2', 'ten 3', 'bfl', 'epl', 'astro sports', 'willow', 'ptv sports', 'eurosport', 
-    'tapmad', 'dazn', 'bein sports', 'super sport', 'live match'
-  ];
-  if (sportsKeywords.some(key => n.includes(key))) return 3;
-
-  const isAndPictures = /(&|and|&amp;)\s*picture/i.test(n);
-  const movieKeywords = [
-    'movie', 'movies', 'cinema', 'hbo', 'star movies', 'sony pix', 'mnx', 'flix', 
-    'cineplex', 'action', 'zee cinema', 'zee bollywood', 'star gold', 'sony max', 'colors cineplex'
-  ];
-  if (isAndPictures || movieKeywords.some(key => n.includes(key))) return 4;
-
-  const dramaKeywords = [
-    'star plus', 'zee tv hd', 'sony tv', 'colors tv', 'sab tv', 'star bharat', 
-    '&tv hd', 'bindass', 'tlc', 'e!', 'axn'
-  ];
-  if (dramaKeywords.some(key => n.includes(key))) return 5;
-
-  const docKeywords = [
-    'discovery', 'national geographic', 'nat geo', 'animal planet', 
-    'history', 'investigation', 'natgeo', 'science', 'bbc earth'
-  ];
-  if (docKeywords.some(key => n.includes(key))) return 6;
-
-  const kidsKeywords = [
-    'cartoon', 'nick', 'pogo', 'disney', 'hungama', 'sonic', 'discovery kids', 'baby', 'sony yay', 'yay'
-  ];
-  if (kidsKeywords.some(key => n.includes(key))) return 7;
-
-  const musicKeywords = [
-    'music', 'song', 'mtv', 'sangeet', '9xm', 'zoom', 'vh1'
-  ];
-  if (musicKeywords.some(key => n.includes(key))) return 8;
-
-  const newsKeywords = [
-    'bbc news', 'cnn', 'al jazeera', 'ndtv', 'india today', 'aaj tak', 'republic', 
-    'dw', 'france 24', 'cgtn', 'russia today', 'rt news', 'trt world', 'news'
-  ];
-  if (newsKeywords.some(key => n.includes(key))) return 9;
-
-  const religiousKeywords = [
-    'islam', 'makkah', 'madinah', 'sunnah', 'peace tv', 'quran', 'peacetv', 'bhakti', 'saudi sunnah'
-  ];
-  if (religiousKeywords.some(key => n.includes(key))) return 10;
-
-  return 11;
-}
-
-function filterChannelsOnly(channels, seenUrls) {
-  const yearPattern = /\(\d{4}\)/;
-  const filtered = [];
-
-  for (const channel of channels) {
-    const streamUrl = channel.stream_url;
-    const channelName = channel.name ? channel.name.trim() : "";
-
-    if (!streamUrl) continue;
-
-    if (channelName.toLowerCase() === "program promo" || yearPattern.test(channelName)) {
-      continue;
-    }
-
-    if (!seenUrls.has(streamUrl)) {
-      seenUrls.add(streamUrl);
-      filtered.push({
-        name: channelName,
-        logo: channel.logo,
-        stream_url: channel.stream_url,
-        cookie: channel.cookie || ""
-      });
-    }
-  }
-
-  return filtered;
-}
-
-function processAndSortLink2(channels, seenUrls) {
-  const filtered = filterChannelsOnly(channels, seenUrls);
-
-  filtered.sort((a, b) => {
-    const catA = getCategoryPriority(a.name);
-    const catB = getCategoryPriority(b.name);
-
-    if (catA !== catB) {
-      return catA - catB;
-    }
-
-    if (catA === 1) {
-      const popA = getPopularBDIndex(a.name);
-      const popB = getPopularBDIndex(b.name);
-
-      if (popA !== popB) {
-        return popA - popB;
-      }
-    }
-
-    return a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' });
-  });
-
-  return filtered;
-}
-
 async function main() {
-  const url1 = 'https://gist.githubusercontent.com/albatr0ssss/3cff7a26be49b1d352c15f615067e7cd/raw/tapmad_bd.m3u';
-  const url2 = 'https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u';
-  const url3 = 'https://raw.githubusercontent.com/ahan443/FAST-IPTV/refs/heads/main/z.m3u';
-  const url4 = 'https://raw.githubusercontent.com/ahmedstore75/livemixbd/refs/heads/main/ayna_ott.m3u';
-  
-  console.log("Fetching channels...");
+  const url1 = 'https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update/refs/heads/main/toffee_playlist.m3u';
+  const url2 = 'https://raw.githubusercontent.com/sm-monirulislam/SM-IPTV/refs/heads/main/akash_go.m3u';
 
-  const [tapmadData, toffeeData, fastIptvData] = await Promise.all([
+  const [toffeeData, akashData] = await Promise.all([
     fetchAndParseM3U(url1),
-    fetchAndParseM3U(url2),
-    fetchAndParseM3U(url3),
-    fetchAndParseM3U(url4)
+    fetchAndParseM3U(url2)
   ]);
 
-  const seenUrls = new Set();
-
-  const tapmadChannels = filterChannelsOnly(tapmadData, seenUrls);
-  const sortedToffeeChannels = processAndSortLink2(toffeeData, seenUrls);
-  const fastIptvChannels = filterChannelsOnly(fastIptvData, seenUrls);
-
-  const allFinalChannels = [...tapmadChannels, ...sortedToffeeChannels, ...fastIptvChannels];
-
-  const finalResponse = allFinalChannels.map((ch, index) => ({
-    id: index + 1,
-    name: ch.name,
-    logo: ch.logo,
-    stream_url: ch.stream_url,
-    cookie: ch.cookie
-  }));
-
-  const todayDate = new Date().toISOString().split('T')[0];
-
   const resultData = {
-    status: "success",
-    name: "Live Channels",
-    owner: "Ahammad Ali",
-    channels_amount: finalResponse.length,
-    last_update: todayDate,
-    response: finalResponse
+    updated_at: new Date().toISOString(),
+    total_channels: toffeeData.length + akashData.length,
+    playlists: {
+      toffee: {
+        total_channels: toffeeData.length,
+        channels: toffeeData
+      },
+      akash_go: {
+        total_channels: akashData.length,
+        channels: akashData
+      }
+    }
   };
 
   fs.writeFileSync('playlist.json', JSON.stringify(resultData, null, 2));
-  console.log(`Successfully generated playlist.json matching your format.`);
+  console.log(`Successfully saved playlist.json with total ${resultData.total_channels} channels.`);
 }
 
 main();
