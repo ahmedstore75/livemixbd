@@ -1010,7 +1010,7 @@
       "id": 144,
       "name": "Jalsha Movies HD",
       "logo": "https://i.postimg.cc/rFcCkS5m/20240822_231714.png",
-      "stream_url": "http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8",
+      "stream_url": "http://103.151.60.162:2122/play/a00x/index.m3u8",
       "cookie": ""
     },
     {
@@ -1514,7 +1514,7 @@
       "id": 216,
       "name": "National Wild",
       "logo": "https://i.postimg.cc/Jh2Cwrgr/20240823-024003.png",
-      "stream_url": "http://51.75.127.199:3141/natgeowild/index.m3u8",
+      "stream_url": "http://103.151.60.162:2122/play/a01f/index.m3u8",
       "cookie": ""
     },
     {
