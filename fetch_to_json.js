@@ -237,7 +237,8 @@ async function main() {
   const [tapmadData, toffeeData, fastIptvData] = await Promise.all([
     fetchAndParseM3U(url1),
     fetchAndParseM3U(url2),
-    fetchAndParseM3U(url3)
+    fetchAndParseM3U(url3),
+    fetchAndParseM3U(url4)
   ]);
 
   const seenUrls = new Set();
