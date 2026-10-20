@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T03:54:08.352Z",
-  "total_channels": 185,
+  "updated_at": "2026-10-20T04:06:35.039Z",
+  "total_channels": 182,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -8,7 +8,7 @@
       "logo": "https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp",
       "category": "Sports",
       "urls": [
-        "https://tvsen5.aynaott.com/TnMn5kZz8aLmjkl/index.m3u8"
+        "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/jvrno3jef2/out/v1/0f66f4d875f04d7d91f6210461dd7b52/cenc.mpd"
       ]
     },
     {
@@ -957,24 +957,6 @@
       ]
     },
     {
-      "id": "b14a7033-632d-4c40-97d2-b09b50654d4d",
-      "name": " Shakhtar Donetsk vs AEK Athens",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://tencent-cdn.tapmad.com/v1/019ea6d121dd15e8f4122afee4cf8f/019ea6d2f96e15e8f0602c5e1b7bc3/fifa1_720.m3u8"
-      ]
-    },
-    {
-      "id": "ff6a129b-294d-4cce-83b9-4d996a8702f6",
-      "name": "Valencia vs Athletic Club ",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://vodnewv2.in-maa-1.linodeobjects.com/promos/Tapmadpromo/master.m3u8"
-      ]
-    },
-    {
       "id": "e0a22e01-451e-4c52-9694-962aa6a77f76",
       "name": "FehérvárTV",
       "logo": "https://www.fehervartv.hu/css/img/icon-1-2.png",
@@ -1413,15 +1395,6 @@
       "category": "Infotainment",
       "urls": [
         "https://autentic-adventure-earth-1-eu.rakuten.wurl.tv/playlist.m3u8"
-      ]
-    },
-    {
-      "id": "cc6b406d-e25a-473e-8aae-e4d995faeed9",
-      "name": "Real Salt Lake vs San Jose Earthquakes",
-      "logo": "",
-      "category": "Infotainment",
-      "urls": [
-        "https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=39e36a36bee3b28086243e1a54ef0dc2&txTime=6ad07f91"
       ]
     },
     {
