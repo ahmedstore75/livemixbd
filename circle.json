@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T04:06:35.039Z",
+  "updated_at": "2026-10-21T03:55:18.347Z",
   "total_channels": 182,
   "channels": [
     {
@@ -8,16 +8,7 @@
       "logo": "https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp",
       "category": "Sports",
       "urls": [
-        "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/jvrno3jef2/out/v1/0f66f4d875f04d7d91f6210461dd7b52/cenc.mpd"
-      ]
-    },
-    {
-      "id": "ac6c5217-402f-4d35-b00a-6434298f096c",
-      "name": "T Sports HD ",
-      "logo": "https://api.cirkletv.com/files/file_0000000050788208b0b4debf28c41fa7_1790512105560_fa2d01a63b4fe62f.webp",
-      "category": "Sports",
-      "urls": [
-        "https://sm-monirul.xyz/@monirul_Islam_SM/exp.php?id=t_sports&sm=.m3u8"
+        "https://robitv.com/rn/http://45.117.61.162/01_Tsports_HD/tracks-v1a1/mono.m3u8"
       ]
     },
     {
@@ -954,6 +945,15 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
+      ]
+    },
+    {
+      "id": "42726158-b9ba-4f6d-b815-531a48c63d2e",
+      "name": "Manchester city vs AEK Athens",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/main.m3u8"
       ]
     },
     {
