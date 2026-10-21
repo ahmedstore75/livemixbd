@@ -7,16 +7,16 @@
   "response": [
     {
       "id": 1,
-      "name": "South Africa vs Australia - 2nd Test - Australia Tour of South Africa 2026 - Server 1",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17918899001020x576.jpg",
-      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/main.m3u8",
+      "name": "Como vs Manchester United - MATCHDAY 3 - UEFA Champions League 2026/27 - Server 1",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17920503331020x576.jpg",
+      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14ab8af8915fc600b1e3e9683f0/01a14ab953dd1ea540a81c2b41b75f/main.m3u8",
       "cookie": ""
     },
     {
       "id": 2,
-      "name": "South Africa vs Australia - 2nd Test - Australia Tour of South Africa 2026 - Server 2",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17918899001020x576.jpg",
-      "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad4/master.m3u8",
+      "name": "Como vs Manchester United - MATCHDAY 3 - UEFA Champions League 2026/27 - Server 2",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17920503331020x576.jpg",
+      "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad2/master.m3u8",
       "cookie": ""
     },
     {
