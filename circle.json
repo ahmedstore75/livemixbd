@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T03:55:17.995Z",
+  "updated_at": "2026-10-23T03:58:57.157Z",
   "total_channels": 182,
   "channels": [
     {
@@ -8,7 +8,7 @@
       "logo": "https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp",
       "category": "Sports",
       "urls": [
-        "https://robitv.com/rn/http://45.117.61.162/01_Tsports_HD/tracks-v1a1/mono.m3u8"
+        "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8"
       ]
     },
     {
@@ -224,7 +224,7 @@
       "logo": "https://api.cirkletv.com/files/FOX_Sports_1781966035684_cc0af2b7c2e78b63.webp",
       "category": "Sports",
       "urls": [
-        "https://tvsen7.aynaott.com/foxsports2/index.m3u8?e=1779283790&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=cbb7f40b4af7be51a91e0629a5ac7238"
+        "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50"
       ]
     },
     {

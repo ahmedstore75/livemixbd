@@ -5,7 +5,7 @@
 # ==========================================
 
 #EXTINF:-1 tvg-id="d614da2b-21fd-45e4-816f-0de46db5cf25" tvg-logo="https://api.cirkletv.com/files/T_Sports_1784992285501_97b36993457b7a98.webp" group-title="Sports",T Sports 
-https://robitv.com/rn/http://45.117.61.162/01_Tsports_HD/tracks-v1a1/mono.m3u8
+https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8
 
 #EXTINF:-1 tvg-id="2d40c804-f163-4171-8949-15da49e337ea" tvg-logo="https://api.cirkletv.com/files/PS_1_1787305037500_ec9cd529addf41cb.webp" group-title="Sports",Premier Sports 1
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
@@ -77,7 +77,7 @@ https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8
 https://tvsen7.aynaott.com/Sports1/index.m3u8?e=1784102510&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&ip=52.157.32.49&token=3d148447575a06fa99eb4be6e5d9a318
 
 #EXTINF:-1 tvg-id="1ea6a6ad-dbb6-4f46-a4d3-3e2723e6a52d" tvg-logo="https://api.cirkletv.com/files/FOX_Sports_1781966035684_cc0af2b7c2e78b63.webp" group-title="Sports",FOX SPORTS FHD
-https://tvsen7.aynaott.com/foxsports2/index.m3u8?e=1779283790&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=cbb7f40b4af7be51a91e0629a5ac7238
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50
 
 #EXTINF:-1 tvg-id="da406d36-4e0b-4b4c-b196-874216592862" tvg-logo="https://i.imgur.com/6rsLtY7.png" group-title="Sports",CGtv
 https://cgentertainment-cgtv-1-it.samsung.wurl.tv/playlist.m3u8
