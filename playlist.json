@@ -14,16 +14,16 @@
     },
     {
       "id": 2,
-      "name": "Monaco vs LOSC - MATCHDAY 8 - French Ligue 1 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17923911601020x576.jpg",
-      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a145b15ce115fc600b1e3e9683db/01a145b24db11ea557841e1612cf4c/main.m3u8",
+      "name": "Celta vs Betis - MATCHDAY 10 - LaLiga 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17926498901020x576.jpg",
+      "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad3/master.m3u8",
       "cookie": ""
     },
     {
       "id": 3,
-      "name": "Celta vs Betis - MATCHDAY 10 - LaLiga 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17926498901020x576.jpg",
-      "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad3/master.m3u8",
+      "name": "Rennes vs Strasbourg - MATCHDAY 8 - French Ligue 1 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17923916861020x576.jpg",
+      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a145b15ce115fc600b1e3e9683db/01a145b24db11ea557841e1612cf4c/main.m3u8",
       "cookie": ""
     },
     {
