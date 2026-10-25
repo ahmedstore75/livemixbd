@@ -43,6 +43,15 @@ https://starsportshindiii.pages.dev/index.m3u8
 #EXTINF:-1 tvg-id="ede09ced-dda7-43ec-929a-38d1d9cc7fab" tvg-logo="https://api.cirkletv.com/files/star_sports_2_1786556991887_47a52a99537415cf.webp" group-title="Sports",Star Sports 2 HD
 https://tvsen7.aynascope.net/ssport2hd/tracks-v1a1/mono.ts.m3u8
 
+#EXTINF:-1 tvg-id="28132a45-eb7f-498a-bf14-06cda7783aaf" tvg-logo="https://api.cirkletv.com/files/TNT_Sports_1_1784796055116_b958cb8da4f4b760.webp" group-title="Sports",TNT Sports  1
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd
+
+#EXTINF:-1 tvg-id="2e43903b-7e7e-4bc9-a88c-06f56fe27c67" tvg-logo="https://api.cirkletv.com/files/file_00000000c3d882119ed287c4e70d2185_1792851621982_36f6d702d8cf0b6e.webp" group-title="Sports",TNT Sports 2
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
+
+#EXTINF:-1 tvg-id="c9a5bba7-4b36-45d5-b2a3-a96f814e1ee0" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRGISinRODAvSEXFwhQboVp2FnEQMGK0elVk5IZBsnA&s=10" group-title="Sports",TNT Sports 3
+https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
+
 #EXTINF:-1 tvg-id="078eb12d-21c4-4169-b58a-53e907dab998" tvg-logo="https://api.cirkletv.com/files/A_Sports_1786589525831_b45b1650271b3a73.webp" group-title="Sports",A Sports
 https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8?e=1784102512&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=968935df4fd0678de5d7fe392c0610d9
 
@@ -81,12 +90,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1
 
 #EXTINF:-1 tvg-id="da406d36-4e0b-4b4c-b196-874216592862" tvg-logo="https://i.imgur.com/6rsLtY7.png" group-title="Sports",CGtv
 https://cgentertainment-cgtv-1-it.samsung.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="28132a45-eb7f-498a-bf14-06cda7783aaf" tvg-logo="https://api.cirkletv.com/files/TNT_Sports_1_1784796055116_b958cb8da4f4b760.webp" group-title="Sports",TNT Sports  1
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd
-
-#EXTINF:-1 tvg-id="2e43903b-7e7e-4bc9-a88c-06f56fe27c67" tvg-logo="https://api.cirkletv.com/files/TNT_Sports_1_1784796055116_b958cb8da4f4b760.webp" group-title="Sports",TNT Sports 3
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
 
 #EXTINF:-1 tvg-id="b32ebc05-63b0-46bc-9941-2d73f6a558ac" tvg-logo="https://api.cirkletv.com/files/images__10__1790931301579_40ad23aa00d24c51.webp" group-title="Sports",Trace Sports 
 https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
