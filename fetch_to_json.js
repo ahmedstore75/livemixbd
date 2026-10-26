@@ -229,7 +229,7 @@ function processAndSortLink2(channels, seenUrls) {
 async function main() {
   const url1 = 'https://gist.githubusercontent.com/albatr0ssss/3cff7a26be49b1d352c15f615067e7cd/raw/tapmad_bd.m3u';
   const url2 = 'https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u';
-  const url3 = 'https://raw.githubusercontent.com/ahmedstore75/livemixbd/refs/heads/main/ayna_ott.m3u';
+  const url3 = 'https://iptv-123.fit';
 
   console.log("Fetching channels...");
 
