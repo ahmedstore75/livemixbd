@@ -43,13 +43,13 @@ https://starsportshindiii.pages.dev/index.m3u8
 #EXTINF:-1 tvg-id="ede09ced-dda7-43ec-929a-38d1d9cc7fab" tvg-logo="https://api.cirkletv.com/files/star_sports_2_1786556991887_47a52a99537415cf.webp" group-title="Sports",Star Sports 2 HD
 https://tvsen7.aynascope.net/ssport2hd/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-id="28132a45-eb7f-498a-bf14-06cda7783aaf" tvg-logo="https://api.cirkletv.com/files/TNT_Sports_1_1784796055116_b958cb8da4f4b760.webp" group-title="Sports",TNT Sports  1
+#EXTINF:-1 tvg-id="28132a45-eb7f-498a-bf14-06cda7783aaf" tvg-logo="https://api.cirkletv.com/files/RobiSports_Com_1792920811222_a3010212eb9b7ed0.webp" group-title="Sports",TNT Sports  1
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd
 
-#EXTINF:-1 tvg-id="2e43903b-7e7e-4bc9-a88c-06f56fe27c67" tvg-logo="https://api.cirkletv.com/files/file_00000000c3d882119ed287c4e70d2185_1792851621982_36f6d702d8cf0b6e.webp" group-title="Sports",TNT Sports 2
+#EXTINF:-1 tvg-id="2e43903b-7e7e-4bc9-a88c-06f56fe27c67" tvg-logo="https://api.cirkletv.com/files/RobiSports_Com_Sports_1792919987924_6f66b10c5638b949.webp" group-title="Sports",TNT Sports 2
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
 
-#EXTINF:-1 tvg-id="c9a5bba7-4b36-45d5-b2a3-a96f814e1ee0" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRGISinRODAvSEXFwhQboVp2FnEQMGK0elVk5IZBsnA&s=10" group-title="Sports",TNT Sports 3
+#EXTINF:-1 tvg-id="c9a5bba7-4b36-45d5-b2a3-a96f814e1ee0" tvg-logo="https://api.cirkletv.com/files/RobiSports_1792920509321_a938d26056644972.webp" group-title="Sports",TNT Sports 3
 https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
 
 #EXTINF:-1 tvg-id="078eb12d-21c4-4169-b58a-53e907dab998" tvg-logo="https://api.cirkletv.com/files/A_Sports_1786589525831_b45b1650271b3a73.webp" group-title="Sports",A Sports
@@ -330,8 +330,11 @@ https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
 #EXTINF:-1 tvg-id="689da1c3-0880-4d12-a407-a9e4c5fa7c65" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg" group-title="Bangla Entertainment",ACCU Weather
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1
 
-#EXTINF:-1 tvg-id="42726158-b9ba-4f6d-b815-531a48c63d2e" tvg-logo="" group-title="Bangla Entertainment",Manchester city vs AEK Athens
-https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/main.m3u8
+#EXTINF:-1 tvg-id="d9a1a065-751d-4551-ace4-8b97dee0ff12" tvg-logo="" group-title="Bangla Entertainment",Athletic Club vs Getafe
+https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.m3u8
+
+#EXTINF:-1 tvg-id="3e9e3243-4c40-4d26-937c-588d7027a107" tvg-logo="" group-title="Bangla Entertainment",Athletic Club vs Getafe
+https://live2.domaincdn.cc/livecdn/channel-19.m3u8?auth_key=3000001792935076-0-0-88112128510ed8b9e0c7274e76670d02
 
 #EXTINF:-1 tvg-id="e0a22e01-451e-4c52-9694-962aa6a77f76" tvg-logo="https://www.fehervartv.hu/css/img/icon-1-2.png" group-title="Bangla Entertainment",FehérvárTV
 https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2

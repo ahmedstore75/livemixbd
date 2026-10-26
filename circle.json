@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-25T03:52:43.984Z",
-  "total_channels": 183,
+  "updated_at": "2026-10-26T03:56:34.947Z",
+  "total_channels": 184,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -122,7 +122,7 @@
     {
       "id": "28132a45-eb7f-498a-bf14-06cda7783aaf",
       "name": "TNT Sports  1",
-      "logo": "https://api.cirkletv.com/files/TNT_Sports_1_1784796055116_b958cb8da4f4b760.webp",
+      "logo": "https://api.cirkletv.com/files/RobiSports_Com_1792920811222_a3010212eb9b7ed0.webp",
       "category": "Sports",
       "urls": [
         "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd"
@@ -131,7 +131,7 @@
     {
       "id": "2e43903b-7e7e-4bc9-a88c-06f56fe27c67",
       "name": "TNT Sports 2",
-      "logo": "https://api.cirkletv.com/files/file_00000000c3d882119ed287c4e70d2185_1792851621982_36f6d702d8cf0b6e.webp",
+      "logo": "https://api.cirkletv.com/files/RobiSports_Com_Sports_1792919987924_6f66b10c5638b949.webp",
       "category": "Sports",
       "urls": [
         "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
@@ -140,7 +140,7 @@
     {
       "id": "c9a5bba7-4b36-45d5-b2a3-a96f814e1ee0",
       "name": "TNT Sports 3",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRGISinRODAvSEXFwhQboVp2FnEQMGK0elVk5IZBsnA&s=10",
+      "logo": "https://api.cirkletv.com/files/RobiSports_1792920509321_a938d26056644972.webp",
       "category": "Sports",
       "urls": [
         "https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd"
@@ -957,12 +957,21 @@
       ]
     },
     {
-      "id": "42726158-b9ba-4f6d-b815-531a48c63d2e",
-      "name": "Manchester city vs AEK Athens",
+      "id": "d9a1a065-751d-4551-ace4-8b97dee0ff12",
+      "name": "Athletic Club vs Getafe",
       "logo": "",
       "category": "Bangla Entertainment",
       "urls": [
-        "https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/main.m3u8"
+        "https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.m3u8"
+      ]
+    },
+    {
+      "id": "3e9e3243-4c40-4d26-937c-588d7027a107",
+      "name": "Athletic Club vs Getafe",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://live2.domaincdn.cc/livecdn/channel-19.m3u8?auth_key=3000001792935076-0-0-88112128510ed8b9e0c7274e76670d02"
       ]
     },
     {
