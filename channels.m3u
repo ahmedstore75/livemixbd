@@ -1,0 +1,292 @@
+#EXTM3U
+#EXT-X-SESSION-DATA:DATA-ID="developer.credit",VALUE="@Krishna_Subroto"
+# ╔══════════════════════════════════════════════════════╗
+# ║                                                      ║
+# ║   📺  Xtreme Codes Channel Exporter             ║
+# ║   👨‍💻  Developer : @Krishna_Subroto                 ║
+# ║   🔧  Version   : v1.0                             ║
+# ║                                                      ║
+# ║   ⚠️  For educational / personal use only            ║
+# ║                                                      ║
+# ╚══════════════════════════════════════════════════════╝
+
+#EXTINF:-1 tvg-logo="http://escuadronx.com:8080/images/ch_867bf438e6ef.png" group-title="Uncategorized",beIN SPORTS en Español
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/1909791.ts
+#EXTINF:-1 tvg-logo="http://escuadronx.com:8080/images/ch_d04677bc3180.png" group-title="Uncategorized",beIN SPORTS XTRA
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/1909792.ts
+#EXTINF:-1 tvg-logo="http://escuadronx.com:8080/images/ch_3d697574ef0b.png" group-title="Uncategorized",beIN Sports usa
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/1909793.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/b6ce2426cc52ca48e337dd2a263ccb21.jpg" group-title="Uncategorized",US: BEIN Sports HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291592.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-08/36c8a2f7e977b190633248afab44b0be.png" group-title="Uncategorized",US: BEIN Sports 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291593.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-08/d633a8820b5347f07f377b0961e49033.png" group-title="Uncategorized",US: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291594.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/968b2561d3ef02a84e6761d4d914db6a.png" group-title="Uncategorized",US: BEIN Sports 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291595.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/143beddb5ede0e1f1c962d27225f73e8.png" group-title="Uncategorized",US: BEIN Sports 5 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291596.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-08/508c7fe8551803cd75658da2876e94c9.png" group-title="Uncategorized",US: BEIN Sports 6 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291597.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/35bdc00f1836b7669f614ffa005537c1.png" group-title="Uncategorized",US: BEIN Sports 7 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291598.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-08/1af633ac21f674213181b644bd010f25.png" group-title="Uncategorized",US: BEIN Sports USA HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/291599.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-09/7c07efb5599972e022017294d3666dbc.png" group-title="Uncategorized",CA: BEIN Sports HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/290701.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/d1e2a161fa7650f78d827bb7e8cd3c21.png" group-title="Uncategorized",FR: BEIN Sports MAX 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301996.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/c8cadfdb308ce51abcaac8220528833e.png" group-title="Uncategorized",FR: BEIN Sports MAX 5 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301997.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/188bf35c841af13de45c2cf86e7438b5.png" group-title="Uncategorized",FR: BEIN Sports MAX 10 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301998.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/e36554e2468737a5a1e4a41112d673a5.png" group-title="Uncategorized",FR: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301960.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/6250ce9aa48d84200378db8e1c293ecb.png" group-title="Uncategorized",FR: BEIN Sports MAX 6 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301881.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/b2834f48777b3cd3bd463f5f88a80a2d.png" group-title="Uncategorized",FR: BEIN Sports MAX 7 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301882.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/7b8e9459b28777e8b6123dd030b7b88d.png" group-title="Uncategorized",FR: BEIN Sports MAX 8 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301883.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/6373a7564fe06eaffa6429200895b1ab.png" group-title="Uncategorized",FR: BEIN Sports MAX 9 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/301884.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/cs/etc/blank-icon.png" group-title="Uncategorized",BR: BET Being MARY JANE HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/304138.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/55676974411.png" group-title="Uncategorized",AR: Union BEIN Sports 1 Premium SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896000.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/31963047111.png" group-title="Uncategorized",AR: VIP BEIN Sports 10 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895989.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/99018154131.png" group-title="Uncategorized",AR: VIP BEIN Sports 6 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895981.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/66119205071.png" group-title="Uncategorized",AR: Bein Sports 7 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895982.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/42252951371.png" group-title="Uncategorized",AR: BEIN Sports 7 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895983.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/54945492311.png" group-title="Uncategorized",BEIN Sports 7 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895984.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/20103588961.png" group-title="Uncategorized",AR.bein| BEIN Sports 8 FHD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895985.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/17293656281.png" group-title="Uncategorized",AR: BEIN Sports 9 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895986.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/47313066651.png" group-title="Uncategorized",AR: VIP BEIN Sports 9 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895987.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/38086560661.png" group-title="Uncategorized",AR: BEIN Sports 10 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895988.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/45469240011.png" group-title="Uncategorized",AR: BEIN Sports 11 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895990.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/90045981471.png" group-title="Uncategorized",AR: BEIN Sport 6 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895979.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/16823931741.png" group-title="Uncategorized",beIN Sports 11
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895991.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/51990117331.png" group-title="Uncategorized",AR: BEIN Sports EN Espanyol HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895992.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/51373715101.png" group-title="Uncategorized",AR: BEIN Sports MAX 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895993.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/56983770671.png" group-title="Uncategorized",FR: BEIN Sports MAX 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895994.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/40074466121.png" group-title="Uncategorized",AR: BEIN MAX 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895995.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/69578797431.png" group-title="Uncategorized",FR: BEIN Sports MAX 5 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895996.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/17625347121.png" group-title="Uncategorized",FR: BEIN Sports MAX 5 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895997.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/70737990441.png" group-title="Uncategorized",FR: BEIN Sport MAX 6 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895998.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/29370912971.png" group-title="Uncategorized",AR: BEIN Sport HD 6
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895980.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/93929559641.png" group-title="Uncategorized",AR: VIP BEIN Sports 5 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895978.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/81428742891.png" group-title="Uncategorized",AR: BEIN Sports Premium 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896001.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/52684362631.png" group-title="Uncategorized",AR: BEIN Sport 2 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895966.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/49840119461.png" group-title="Uncategorized",AR-VIP: Bein Sports Premium 1 FHD/H265
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896002.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/16372716111.png" group-title="Uncategorized",BEIN Sports Premium 2 FHD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896003.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/96772938541.png" group-title="Uncategorized",AR: BEIN Sports Premium 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896004.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/99471025131.png" group-title="Uncategorized",AR: BEIN Sports Premium 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896005.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/31853366731.png" group-title="Uncategorized",AR: BEIN Sports XTRA 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/896006.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/69698514771.png" group-title="Uncategorized",AR: BEIN Sports 1 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895963.ts
+#EXTINF:-1 tvg-logo="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS1_DIGITAL_Mono.png" group-title="Uncategorized",FR: BEIN SPORTS 1 HEVC
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895964.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/69162360981.png" group-title="Uncategorized",FR: BEIN Sport 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895965.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/63674873011.png" group-title="Uncategorized",AR: VIP BEIN Sports 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895967.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/41550855361.png" group-title="Uncategorized",AR: BEIN Sport 5 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895977.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/53396148581.png" group-title="Uncategorized",TR: BEIN Sports 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895968.ts
+#EXTINF:-1 tvg-logo="https://assets.bein.com/mena/sites/4/2015/06/beIN_SPORTS3_DIGITAL_Mono.png" group-title="Uncategorized",AR: BEIN SPORTS 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895969.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/82458133391.png" group-title="Uncategorized",AR: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895970.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/79505812141.png" group-title="Uncategorized",AR: BEIN Sport 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895971.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/97601028691.png" group-title="Uncategorized",AR: VIP BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895972.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/28714264671.png" group-title="Uncategorized",AR: BEIN Sport 4 SD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895973.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/58443302111.png" group-title="Uncategorized",AR: BEIN Sport 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895974.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/76324708471.png" group-title="Uncategorized",AR: BEIN Sports 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895975.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/84891170391.png" group-title="Uncategorized",AR: BEIN Sport 5 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895976.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/31254129131.png" group-title="Uncategorized",FR: BEIN MAX 10 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/895999.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-08/426ffd6c8884d86ebf2eab9424aec0c8.png" group-title="Uncategorized",beIN Box Office 2
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890095.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/752642b37938786f6aa7c4a541a4d88a.jpg" group-title="Uncategorized",beIN Drama 1
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890096.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/f53fed0173cd3832fe7cda3ff10e106e.png" group-title="Uncategorized",beIN Movies Action 2
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890097.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-05/14fdcdb04d6dedc02d4c5da6b8799ac9.png" group-title="Uncategorized",beIN Movies Drama 3
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890098.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/3ea0e8888e4246635f275548efadf3fa.png" group-title="Uncategorized",beIN Movies Family 4
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890099.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-01/5e38160e63541c3247432ad7cd12e674.jpg" group-title="Uncategorized",beIN Movies Premiere 1
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890100.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-05/6306dcf5a1a9da5240d1a3952f822936.png" group-title="Uncategorized",beIN Series 1
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890101.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-05/a1b0e8b1557f00883b0f6709d6d54e33.png" group-title="Uncategorized",beIN Series 2
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890102.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-08/3ed2da3eb57b68e64b3c86821ca6201e.png" group-title="Uncategorized",beIN Gourmet
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/890088.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/de22be100229320ab6edcdce8de7ba64.png" group-title="Uncategorized",TR: BEIN Sports 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317174.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/9e0d289e6b96b75e073d74cae50fc8a4.png" group-title="Uncategorized",TR: BEIN Sports 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317175.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/f7d20955aa9bafdb1a3f750f81e15bc9.png" group-title="Uncategorized",TR: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317176.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/c3c50392388c5ec0a094ab2fdb13c874.png" group-title="Uncategorized",TR: BEIN Sports 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317177.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-11/6b3c1cbcf5f09bb55850d7f309ef5b44.png" group-title="Uncategorized",TR: BEIN Sports 5 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317178.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/14b924d7b7ab9bac07505c7bd792ade1.png" group-title="Uncategorized",TR: BEIN Sports Haber HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317179.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/d53f40a54a2315cb05e9aa96d1061a49.png" group-title="Uncategorized",TR: BEIN Sports MAX 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317180.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-06/7e39fd24865d2511ff67d711c6e0635d.png" group-title="Uncategorized",TR: BEIN Sports MAX 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317181.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/bd21663ad8c4d4c1ac6440b3f40ba746.png" group-title="Uncategorized",TR: BEIN BOX Office 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/316995.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-12/adea4a88280fb88d0c2232343a33a69e.png" group-title="Uncategorized",TR: BEIN BOX Office 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/316996.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-12/661d76fd2683c5c3a355f92d2e71afc5.png" group-title="Uncategorized",TR: BEIN BOX Office 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/316997.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-02/f35c4aa1c5be07033c105aa2a264ee99.png" group-title="Uncategorized",TR: BEIN BOX Office TURK HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/316998.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/ca1d2bb923338f5d520918b981135d91.png" group-title="Uncategorized",TR: BEIN Movies Action HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/316999.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/75e47808eb64b20e1611e171c8a17339.png" group-title="Uncategorized",TR: BEIN Movies Family HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317000.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/4c2308f19e292f658c25f7eeb320302c.png" group-title="Uncategorized",TR: BEIN Movies Premiere HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317001.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/8132ccbeac2354ea63bf6b409a16a261.png" group-title="Uncategorized",TR: BEIN Movies Premiere 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317002.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/56d0118fa3eedb7b7ec361b78a1cd3e4.png" group-title="Uncategorized",TR: BEIN Movies Stars HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317003.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/cdb8893f36235adb4e32d276d5a5d3fb.png" group-title="Uncategorized",TR: BEIN Movies TURK HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317004.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/d248d175de659f0813a02e9134d18b6b.png" group-title="Uncategorized",TR: BEIN Series 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317005.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/b356d48dffa753ebf6b5ae6f31ff71c0.png" group-title="Uncategorized",TR: BEIN Series 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317006.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/ad65c62b7bfe6448570dfe2996b17f04.png" group-title="Uncategorized",TR: BEIN Series 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317007.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/9abe75f1c9ee476a5d033cf5ceca6cad.png" group-title="Uncategorized",TR: BEIN Series 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317008.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/adf92f2916a0009d7b4f31870656b093.png" group-title="Uncategorized",TR: BEIN Series Comedy HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317009.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/6e3828293e36f3cc45e82b169e6590e8.png" group-title="Uncategorized",TR: BEIN IZ HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317205.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2021-07/ae6ed623d37a8ee71af209e2cc08d22e.png" group-title="Uncategorized",TR: BEIN Gurme HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/317268.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-09/2e2bd5ae938e87eb279c657811c09466.jpg" group-title="Uncategorized",AR: BEIN BOX Office 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/506440.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/68956988831.png" group-title="Uncategorized",BEIN Movies 1 Premiere HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833476.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/jeemtv.png" group-title="Uncategorized",AR ▎BEIN JEEM HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833363.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beingourmet.png" group-title="Uncategorized",AR ▎BEIN GOURMET HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833351.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/fatafeat.png" group-title="Uncategorized",AR ▎BEIN FATAFEAT HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833349.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/baraemtv.png" group-title="Uncategorized",AR ▎BEIN BARAEM HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833350.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/ngcwildhd.png" group-title="Uncategorized",AR ▎BEIN NAT GEO WILD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833335.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beindrama.png" group-title="Uncategorized",AR ▎BEIN DRAMA HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833359.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinseries2.png" group-title="Uncategorized",AR ▎BEIN SERIES 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833358.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinseries1.png" group-title="Uncategorized",AR ▎BEIN SERIES 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833357.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinmovies4.png" group-title="Uncategorized",AR ▎BEIN MOVIES 4 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833352.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinmovies3.png" group-title="Uncategorized",AR ▎BEIN MOVIES 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833347.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinmovies2.png" group-title="Uncategorized",AR ▎BEIN MOVIES 2 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833353.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinmovies1.png" group-title="Uncategorized",AR ▎BEIN MOVIES 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833367.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/foxmovies.png" group-title="Uncategorized",AR ▎BEIN FOX MOVIES ACTION HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833338.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinboxoffice1.png" group-title="Uncategorized",AR ▎BEIN BOX OFFICE 1 HD 8ᴋ
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833336.ts
+#EXTINF:-1 tvg-logo="https://img.logo-cdn.cc/beinboxoffice2.png" group-title="Uncategorized",AR ▎BEIN BOX OFFICE 2 HD 8ᴋ
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833360.ts
+#EXTINF:-1 group-title="Uncategorized",AR ▎BEIN NAT GEO HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833337.ts
+#EXTINF:-1 group-title="Uncategorized",AR ▎BEIN BOX OFFICE 3 HD 8ᴋ
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833348.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/33882909071.png" group-title="Uncategorized",Bein FOX LIFE HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833346.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/65120320981.png" group-title="Uncategorized",AR: Bein FOX Rewayat HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833362.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/59127001941.png" group-title="Uncategorized",Bein BBC Earth HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833340.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/59078196151.png" group-title="Uncategorized",AR: Bein Gourmet HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833364.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/77545951181.png" group-title="Uncategorized",AR: Bein Gulli Arabic  HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833365.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/86012638861.png" group-title="Uncategorized",Bein AMC HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833361.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/12097831581.png" group-title="Uncategorized",Bein Animal Planet HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833339.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/72510162941.png" group-title="Uncategorized",Bein Bein Movies 1 HD Premiere
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833356.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/88183776741.png" group-title="Uncategorized",Bein FOX Crime HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833345.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/45800743031.png" group-title="Uncategorized",Bein Bein Movies 4HD Family
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833369.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/96912525611.png" group-title="Uncategorized",Bein Discovery LIFE HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833341.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/10336507661.png" group-title="Uncategorized",Bein Drama HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833342.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/56802295001.png" group-title="Uncategorized",Bein DTX HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833343.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/48103999051.png" group-title="Uncategorized",Bein Fatafeat HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833368.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/21876892541.png" group-title="Uncategorized",Bein FOX Action Movies HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833366.ts
+#EXTINF:-1 tvg-logo="http://img-cdn.curl.pk:8880/channels_icon/93952167221.png" group-title="Uncategorized",BEin: Bein Foodnetwork HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/833344.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-01/43bbde4fc0ae1f73eaa8e63f96c0a975.png" group-title="Uncategorized",PH: BEIN Sports 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/290857.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2022-05/fde470ee5be4764508af7ca066be9694.png" group-title="Uncategorized",PH: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/290858.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/0df06bc563f4f3bf615dc3ea7e55fb8c.png" group-title="Uncategorized",ID: BEIN Sports 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/302214.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2023-05/ba5a124ab816d4a371da240396786a62.png" group-title="Uncategorized",ID: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/302215.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2025-02/60151b52e1e8004606612eeb01f3fbde.png" group-title="Uncategorized",ID: BEIN Sports 1 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/501229.ts
+#EXTINF:-1 tvg-logo="http://s3.i3ns.net:2052/portal/picon/2025-02/6f82a20e6cb25273d24618f5a8c98458.png" group-title="Uncategorized",ID: BEIN Sports 3 HD
+http://filex.me:8080/live/MAINCORE/X3rMZTzddV/501230.ts
