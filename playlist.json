@@ -653,7 +653,7 @@
       "id": 93,
       "name": "Somoy Tv",
       "logo": "https://i.postimg.cc/QCKgdb09/20240822-230145.png",
-      "stream_url": "https://tvsen5.aynascope.net/somoytv/mono.m3u8",
+      "stream_url": "https://drk6xq0vhn.gpcdn.net/live/somoy_tv_abr/index.m3u8",
       "cookie": ""
     },
     {
@@ -681,7 +681,7 @@
       "id": 97,
       "name": "Star News",
       "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/45/Star_News_Bangladesh.png",
-      "stream_url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/starnewsbd.stream/playlist.m3u8",
+      "stream_url": "http://103.135.253.32:8080/Star-News/index.m3u8",
       "cookie": ""
     },
     {
