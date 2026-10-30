@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-29T04:58:48.132Z",
-  "total_channels": 184,
+  "updated_at": "2026-10-30T04:58:24.090Z",
+  "total_channels": 185,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -63,6 +63,15 @@
       "category": "Sports",
       "urls": [
         "https://otv.hridoytv-engine.workers.dev/?d=IAYdFFVWezsnIDo6NiUATQocDnA8GxkdVicqFVZuBAcHDnlcBFcaQWszYn5jbmZmVFNFVUZ5JB0EHRdifF0YaAEDU1JxEFEHXU83Zmd4YDRtMAZRS1VAOzRLXhoYanlUGjsBAwEFKUpYUAxANTNuLmBmO2NcBRRQFmpoQA&expire=47753355654"
+      ]
+    },
+    {
+      "id": "0a55e28d-44e4-4f16-b920-0288614f3fb6",
+      "name": "Willow Sports",
+      "logo": "https://api.cirkletv.com/files/file_0000000040d882119de515305a7e7228_1793332496033_b3fe6aebf1d1ad24.webp",
+      "category": "Sports",
+      "urls": [
+        "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd"
       ]
     },
     {

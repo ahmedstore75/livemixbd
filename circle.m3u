@@ -25,6 +25,9 @@ https://api.cirkletv.com/api/hridoy-tv/stream/ten_cricket_576?expire=43738831219
 #EXTINF:-1 tvg-id="0ac10a95-5435-479f-b537-4dec4f59f7cf" tvg-logo="https://api.cirkletv.com/files/cricbuzz_1786727115094_38c2b5cfcb846aa3.webp" group-title="Sports",Cricbuzz
 https://otv.hridoytv-engine.workers.dev/?d=IAYdFFVWezsnIDo6NiUATQocDnA8GxkdVicqFVZuBAcHDnlcBFcaQWszYn5jbmZmVFNFVUZ5JB0EHRdifF0YaAEDU1JxEFEHXU83Zmd4YDRtMAZRS1VAOzRLXhoYanlUGjsBAwEFKUpYUAxANTNuLmBmO2NcBRRQFmpoQA&expire=47753355654
 
+#EXTINF:-1 tvg-id="0a55e28d-44e4-4f16-b920-0288614f3fb6" tvg-logo="https://api.cirkletv.com/files/file_0000000040d882119de515305a7e7228_1793332496033_b3fe6aebf1d1ad24.webp" group-title="Sports",Willow Sports
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
+
 #EXTINF:-1 tvg-id="e2588632-0f96-4fa9-b2f1-be5e3cc14862" tvg-logo="https://api.cirkletv.com/files/willow_1782972080164_396453b7eb6dae16.webp" group-title="Sports",Willow Cricbuzz
 https://tvsen5.aynascope.net/willowhd/mono.m3u8
 
