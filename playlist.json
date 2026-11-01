@@ -21,30 +21,30 @@
     },
     {
       "id": 3,
-      "name": "Hong Kong Sixes - Day 3 - Knockout Stage / Finals - Hong Kong International Sixes 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17932645421020x576.jpg",
-      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/main.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 4,
       "name": "Sydney Sixers vs Hobart Hurricanes - Group Stage - Women's Big Bash League 2026",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17934894001020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14ab8af8915fc600b1e3e9683f0/01a14ab953dd1ea540a81c2b41b75f/main.m3u8",
       "cookie": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Hwacheon KSPO WFC (KOR) vs 4.25 Sports Club (PRK) - MATCHDAY 1 - AFC Women's Champions League 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17930939841020x576.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8",
       "cookie": ""
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "INAC Kobe Leonessa (JPN) vs Bam Khatoon FC (IRN) - MATCHDAY 1 - AFC Women's Champions League 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17930936501020x576.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/tapmad-PAKvsWI-BKd2-TesT/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 6,
+      "name": "Beijing Jingtan Football Club (CHN) vs Kaya FC-Iloilo (PHI) - MATCHDAY 1 - AFC Women's Champions League 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17930943591020x576.jpg",
+      "stream_url": "https://d8j84o343a5m2.cloudfront.net/live/testtapmad3/master.m3u8",
       "cookie": ""
     },
     {
