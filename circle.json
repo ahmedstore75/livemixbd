@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-01T05:07:44.384Z",
-  "total_channels": 185,
+  "updated_at": "2026-11-02T05:08:32.439Z",
+  "total_channels": 186,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -981,6 +981,15 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://live2.domaincdn.cc/livecdn/channel-19.m3u8?auth_key=3000001792935076-0-0-88112128510ed8b9e0c7274e76670d02"
+      ]
+    },
+    {
+      "id": "e7ceb411-da76-4953-8927-df8edb745aba",
+      "name": "Athletic Club vs Real Sociedad",
+      "logo": "",
+      "category": "Bangla Entertainment",
+      "urls": [
+        "https://tencent-cdn.tapmad.com/v1/01a145b15ce115fc600b1e3e9683db/01a145b24db11ea557841e1612cf4c/ProdPK_export_clone_clone_720.m3u8"
       ]
     },
     {
