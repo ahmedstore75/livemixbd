@@ -14,23 +14,23 @@
     },
     {
       "id": 2,
-      "name": "Round 7 - Race Off - Session 4 - E1 Series 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17945514751020x576.jpg",
-      "stream_url": "https://multiregion-asia-cdn.tapmad.com/v1/01a1548c4faf15fc600b1e3e968408/01a1548c7fde1ea557841e1612cf76/main.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 3,
       "name": "Norway vs Wales - MATCHDAY 5 - UEFA Nations League 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17942951621020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14abbcff31ea540a81c2b41b760/01a14abc06421567ee931e109fa577/main.m3u8",
       "cookie": ""
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Georgia vs Hungary - MATCHDAY 5 - UEFA Nations League 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17942950541020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14ab8af8915fc600b1e3e9683f0/01a14ab953dd1ea540a81c2b41b75f/main.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 4,
+      "name": "Round 7 - Finals - Session 5 - E1 Series 2026",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17945517571020x576.jpg",
+      "stream_url": "https://multiregion-asia-cdn.tapmad.com/v1/01a1548c4faf15fc600b1e3e968408/01a1548c7fde1ea557841e1612cf76/main.m3u8",
       "cookie": ""
     },
     {
