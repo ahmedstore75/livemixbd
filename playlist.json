@@ -21,30 +21,30 @@
     },
     {
       "id": 3,
-      "name": "CLASSIC 24 HOUR presented by Mission Foods (GROUP A/B) RACE 1 - Group Stages - HSR Daytona Classic 2026",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17943014771020x576.jpg",
-      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a4cd93615fc600b1e3e9683e8/01a14a5761541567ee931e109fa576/main.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 4,
       "name": "Sydney Sixers vs Melbourne Renegades - Group Stage - Women's Big Bash League 2026",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17944775261020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a9fb90c15fc60e91e1786b061/01a14a9feb881ea540a81c2b41b75e/main.m3u8",
       "cookie": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Gane vs Hokit - UFC 334 - UFC 2026 - Server 1",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17932589681020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a5b5bd11ea540a81c2b41b75b/01a14a5b94ea15fc600b1e3e9683eb/main.m3u8",
       "cookie": ""
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Gane vs Hokit - UFC 334 - UFC 2026 - Server 2",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17932589681020x576.jpg",
       "stream_url": "https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 6,
+      "name": "CAN - Race - Longines FEI Jumping World Cup 2026",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17945620741020x576.jpg",
+      "stream_url": "https://multiregion-asia-cdn.tapmad.com/v1/01a1548c4faf15fc600b1e3e968408/01a1548c7fde1ea557841e1612cf76/main.m3u8",
       "cookie": ""
     },
     {
