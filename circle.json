@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-14T05:37:17.355Z",
-  "total_channels": 189,
+  "updated_at": "2026-11-16T05:34:51.477Z",
+  "total_channels": 191,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -165,15 +165,6 @@
       ]
     },
     {
-      "id": "3a2b206c-a7aa-40fd-a1e1-cadaa86fbe66",
-      "name": "DD Sports",
-      "logo": "https://api.cirkletv.com/files/DD_Sports_1786590048470_3273294b04df06cb.webp",
-      "category": "Sports",
-      "urls": [
-        "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8"
-      ]
-    },
-    {
       "id": "33824024-0c09-4512-8f92-088c5b5d3832",
       "name": "Gazi TV",
       "logo": "https://api.cirkletv.com/files/gazi_tv__1784912733004_0612f4d5c61e40b3.webp",
@@ -207,6 +198,15 @@
       "category": "Sports",
       "urls": [
         "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd"
+      ]
+    },
+    {
+      "id": "3a2b206c-a7aa-40fd-a1e1-cadaa86fbe66",
+      "name": "DD Sports",
+      "logo": "https://api.cirkletv.com/files/DD_Sports_1786590048470_3273294b04df06cb.webp",
+      "category": "Sports",
+      "urls": [
+        "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8"
       ]
     },
     {
@@ -477,6 +477,24 @@
       "category": "News",
       "urls": [
         "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8"
+      ]
+    },
+    {
+      "id": "dd88c9af-54b6-4fd8-91ed-16e605744051",
+      "name": "Croatia vs Czech Republic",
+      "logo": "",
+      "category": "News",
+      "urls": [
+        "https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/ProdPK_export_720.m3u8"
+      ]
+    },
+    {
+      "id": "528ff34b-2678-47f7-bce1-ae71f6066809",
+      "name": "Croatia vs Czech Republic",
+      "logo": "",
+      "category": "News",
+      "urls": [
+        "https://live05.wecile.app/live/33860426.m3u8"
       ]
     },
     {
