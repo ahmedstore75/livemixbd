@@ -7,16 +7,16 @@
   "response": [
     {
       "id": 1,
-      "name": "Prochazka vs Stirling - Fight Night - UFC 2026 - Server 1",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17948117991020x576.jpg",
-      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14abbcff31ea540a81c2b41b760/01a14abc06421567ee931e109fa577/main.m3u8",
+      "name": "New Zealand vs India - 1st Test - India Tour of New Zealand 2026 - Server 1",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17945538171020x576.jpg",
+      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a9fb90c15fc60e91e1786b061/01a14a9feb881ea540a81c2b41b75e/main.m3u8",
       "cookie": ""
     },
     {
       "id": 2,
-      "name": "Prochazka vs Stirling - Fight Night - UFC 2026 - Server 2",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17948117991020x576.jpg",
-      "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14ab8af8915fc600b1e3e9683f0/01a14ab953dd1ea540a81c2b41b75f/main.m3u8",
+      "name": "New Zealand vs India - 1st Test - India Tour of New Zealand 2026 - Server 2",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17945538171020x576.jpg",
+      "stream_url": "https://serieAleague.akamaized.net/hls/live/2107107/A1@25853-tapmad/master.m3u8",
       "cookie": ""
     },
     {
