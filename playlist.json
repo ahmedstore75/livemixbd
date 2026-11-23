@@ -2,7 +2,7 @@
   "status": "success",
   "name": "Live Channels",
   "owner": "Ahammad Ali",
-  "channels_amount": 80,
+  "channels_amount": 315,
   "last_update": "2026-11-23",
   "response": [
     {
@@ -532,37 +532,1682 @@
     },
     {
       "id": 76,
-      "name": "Akash Aath",
-      "logo": "https://i.postimg.cc/J47pjBQZ/m3uworld4k.png",
-      "stream_url": "https://tvsen5.aynaott.com/Wm9Lv2RjZGT6/index.m3u8#fb:M3U_World_4K",
+      "name": "BTV HD",
+      "logo": "https://i.ibb.co.com/TMxTpz2q/images.png",
+      "stream_url": "https://nkafmbewiff.gpcdn.net/tile_2/master.m3u8",
       "cookie": ""
     },
     {
       "id": 77,
-      "name": "Amar Bangla",
-      "logo": "https://i.postimg.cc/J47pjBQZ/m3uworld4k.png",
-      "stream_url": "http://115.187.41.216:8080/hls/amarbangla/index.m3u8#fb:M3U_World_4K",
+      "name": "সময় টিভি",
+      "logo": "https://i.ibb.co.com/fYYrxKHh/svg.png",
+      "stream_url": "https://toffee.sm-monirul-islam-rs.workers.dev/somoy_tv/index.m3u8",
       "cookie": ""
     },
     {
       "id": 78,
-      "name": "Amar Digital TV",
-      "logo": "https://i.postimg.cc/J47pjBQZ/m3uworld4k.png",
-      "stream_url": "http://115.187.41.216:8080/hls/amardigital/index.m3u8#fb:M3U_World_4K",
+      "name": "Star News BD",
+      "logo": "https://i.ibb.co.com/kr61rgp/images.jpg",
+      "stream_url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/starnewsbd.stream/playlist.m3u8",
       "cookie": ""
     },
     {
       "id": 79,
-      "name": "ANANDA TV HD",
-      "logo": "https://i.postimg.cc/J47pjBQZ/m3uworld4k.png",
-      "stream_url": "https://playztv-apps.pages.dev/ananda-tv/index.m3u8#fb:M3U_World_4K",
+      "name": "Al-Jazeera HD 🇧🇩",
+      "logo": "https://i.ibb.co.com/cXTjmmtP/Star-News.png",
+      "stream_url": "https://j6nfugukcl.gpcdn.net/tile_7/master.m3u8",
       "cookie": ""
     },
     {
       "id": 80,
-      "name": "ASIAN TV",
-      "logo": "https://i.postimg.cc/J47pjBQZ/m3uworld4k.png",
-      "stream_url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8#fb:M3U_World_4K",
+      "name": "স্পাইস FM Radio 📻 মোবাইল লক করা অবস্থায়ও চলতে থাকবে",
+      "logo": "https://i.ibb.co.com/4mjS8hB/download-1.png",
+      "stream_url": "https://stream.spicefmbd.com/stream.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 81,
+      "name": "Untitled Event",
+      "logo": "https://i.ibb.co.com/Pvt50PbR/images-1.png",
+      "stream_url": "https://playztv-apps.pages.dev/ptv-sports/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 82,
+      "name": "Tapmad",
+      "logo": "https://i.ibb.co.com/rWBZhhy/images.png",
+      "stream_url": "https://t-prod-bd.tapmad.com/v1/01a14a9fb90c15fc60e91e1786b061/01a14a9feb881ea540a81c2b41b75e/main.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 83,
+      "name": "Tapmad",
+      "logo": "https://i.ibb.co.com/rWBZhhy/images.png",
+      "stream_url": "https://serieAleague.akamaized.net/hls/live/2107107/A1@25853-tapmad/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 84,
+      "name": "WILLOW FHD Add Free",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/1rio9enthp/out/v1/349d14aa7815498f8c11ab98f7100aaa/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 85,
+      "name": "PREMIER 1 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 86,
+      "name": "Men's Asia Cup Vs Rising Stars 2026 - STARZPLAY FHD",
+      "logo": "https://i.ibb.co.com/S4QmmsNB/images-1.jpg",
+      "stream_url": "https://d1ifzl5cnhi7bu.cloudfront.net/out/v1/45ba30e075ad455a8767d3f33e67ea3d/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 87,
+      "name": "WILLOW CRICBUZZ",
+      "logo": "https://i.ibb.co.com/27F7kMM5/images-1.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/0bftapixow/out/v1/a435ed7a00f947deb4369b46d8f2fb70/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 88,
+      "name": "PRIME ENG FHD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/mebvsdzu7s/out/v1/563c92c11fff4290a160e365f6996c34/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 89,
+      "name": "PRIME HINDI FHD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/szeafaauqf/out/v1/6b31170c3b5749928bff04fc71f02b06/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 90,
+      "name": "WILLOW ALT",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/1rio9enthp/out/v1/349d14aa7815498f8c11ab98f7100aaa/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 91,
+      "name": "TNT 1 UK SPORTS FHD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 92,
+      "name": "New Zealand Vs India - TNT 2 UK SPORTS FHD",
+      "logo": "https://i.ibb.co.com/M5Zkn6Qx/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 93,
+      "name": "FANCODE FHD",
+      "logo": "https://i.ibb.co.com/N640mX0k/unnamed.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 94,
+      "name": "FANCODE FHD",
+      "logo": "https://i.ibb.co.com/N640mX0k/unnamed.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 95,
+      "name": "BBL Women's Vs BBL Women's - WILLOW SPORTS FHD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ayibqpy7eg/out/v1/fe38511af6f54d7db4ba768f02ba106b/cenc.mpd?",
+      "cookie": ""
+    },
+    {
+      "id": 96,
+      "name": "Sky Sport Cricket",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://bl.rutube.ru/livestream/7c13a51576b9ff2601f08f5d57dd5169/index.m3u8?s=uiXES2ePt7xTpQnbJxn7Dg&e=2074684474&scheme=https|user-agent=Mozilla",
+      "cookie": ""
+    },
+    {
+      "id": 97,
+      "name": "TNT Sport 1",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 98,
+      "name": "Ten Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://live.incableinternet.com/ten-sports/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 99,
+      "name": "Willow",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://playztv-apps.pages.dev/unite8-sports-2/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 100,
+      "name": "Willow TV",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://playztv-apps.pages.dev/willow-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 101,
+      "name": "Willow Sports HD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen7.aynaott.com/rEBp38Ax/tracks-v1a1/mono.ts.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 102,
+      "name": "Willow Sports 2",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen7.aynaott.com/Sports1/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 103,
+      "name": "A Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://playztv-apps.pages.dev/a-sports/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 104,
+      "name": "PTV Sports HD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://live.msnetworks.net/ptv-sports/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 105,
+      "name": "Ten Cricket",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://iptvlive.ahmed-bd-org.workers.dev/ten-cricket-1/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 106,
+      "name": "Star Sports 2",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen7.aynaott.com/ssport2hd/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 107,
+      "name": "Willow Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen7.aynaott.com/rEBp38Ax/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 108,
+      "name": "Willow Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen5.aynaott.com/willowhd/index.m3u8#fb:M3U_World_4K?_hls_ts=1793851861409",
+      "cookie": ""
+    },
+    {
+      "id": 109,
+      "name": "A Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 110,
+      "name": "A Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://live.msnetworks.net/a-sports/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 111,
+      "name": "Ten Sports",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://live.msnetworks.net/ten-sports/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 112,
+      "name": "Siyatha tv",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://rtmp01.voaplus.com/hls/6x6ik312qk4grfxocfcv.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 113,
+      "name": "Bein Sports 1",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "http://27.124.71.27/beIN_Sports_1/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 114,
+      "name": "Willow_Sports HD",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://warm-caverns-48629-92fab798385f.herokuapp.com/https://d36r8jifhgsk5j.cloudfront.net/Willow_TV540p.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 115,
+      "name": "DD SPORTS",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index_3.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 116,
+      "name": "Redbull TV",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 117,
+      "name": "Motor Vision",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "https://mvg-mv-xumo.otteravision.com/mvg/mv/mv.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 118,
+      "name": "FOX 2 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 119,
+      "name": "FOX DEPORTES FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 120,
+      "name": "SKY TOP EVENT FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/gjsukewpxp/out/v1/ef14aacf858248839b9867eec5caf563/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 121,
+      "name": "SKY SPORT MIX FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/oln41tn1gj/out/v1/1247ce6ac92b4ee3be02e7082954348a/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 122,
+      "name": "SKY SPORT TENNIS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ymojggb3li/out/v1/4e528b82e63f499c886b3a34e89eaf9b/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 123,
+      "name": "BeIN 1 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 124,
+      "name": "BeIN 2 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 125,
+      "name": "BEIN 3 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 126,
+      "name": "TSN 2 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 127,
+      "name": "TSN 5 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 128,
+      "name": "SportDigital FussBall",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 129,
+      "name": "LaLiga Hyper motion",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://cache07.zapitv.com/live/eds_c2/HYPERMOTION1/dash_live_ez/HYPERMOTION1.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 130,
+      "name": "NOVA2 SPORTS FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 131,
+      "name": "SPORT 1 DE - FHD",
+      "logo": "https://i.ibb.co.com/qYrPSRfp/images-2.jpg",
+      "stream_url": "https://ac-009.live.p7s1video.net/181aa0bf/t_009/sport1-de/cenc-default.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 132,
+      "name": "FIFA TV TV Football",
+      "logo": "",
+      "stream_url": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 133,
+      "name": "FIFA+ Women",
+      "logo": "",
+      "stream_url": "https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 134,
+      "name": "UEFA TV Football",
+      "logo": "",
+      "stream_url": "https://live-manifest.production-public.tubi.io/live/d846008d-b608-4ddf-931c-48e9b60bf6c5/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 135,
+      "name": "Tapmad Football",
+      "logo": "",
+      "stream_url": "https://seriealeague.akamaized.net/hls/live/2107107/A1@257-tapmad/level_0.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 136,
+      "name": "Fubo Sports",
+      "logo": "https://placehold.co/800x450/0f172a/ffffff.png?text=Fubo+Sports&font=Oswald",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/3b7qwiqzk3/out/v1/9f14895badca43e6a716db021dcd0c31/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 137,
+      "name": "Sports Digital",
+      "logo": "https://placehold.co/800x450/0f172a/ffffff.png?text=Sports+Digital&font=Oswald",
+      "stream_url": "https://otte.bia-cf.live.pv-cdn.net/fra-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 138,
+      "name": "Fox Sports 1 US",
+      "logo": "https://placehold.co/800x450/0f172a/ffffff.png?text=Fox+Sports+1+US&font=Oswald",
+      "stream_url": "https://otte-netskrt.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/tmpzbbdj9y/out/v1/962736723a534ba294e7592fef49827b/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 139,
+      "name": "Fox Sports 2 US",
+      "logo": "https://placehold.co/800x450/0f172a/ffffff.png?text=Fox+Sports+2+US&font=Oswald",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 140,
+      "name": "CBS",
+      "logo": "https://placehold.co/800x450/0f172a/ffffff.png?text=CBS&font=Oswald",
+      "stream_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/rbem8rorcw/out/v1/5318821e2c3c44c2a439681b9aa86e9b/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 141,
+      "name": "Fox Deportes",
+      "logo": "https://placehold.co/800x450/0f172a/ffffff.png?text=Fox+Deportes&font=Oswald",
+      "stream_url": "https://otte-netskrt.live.pv-cdn.net/lhr-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 142,
+      "name": "A SPOR",
+      "logo": "https://i.ibb.co/xSjB51j/aspor.png",
+      "stream_url": "https://billowing-dawn-ee85.opkawsar156.workers.dev/?url=https%3A%2F%2Frnttwmjcin.turknet.ercdn.net%2Flcpmvefbyo%2Faspor%2Faspor_1080p.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 143,
+      "name": "Mundial Sports HD",
+      "logo": "",
+      "stream_url": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 144,
+      "name": "MuxIP-SportsFirst TV🎯",
+      "logo": "",
+      "stream_url": "https://d2396zb8liu8hs.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/DistroTV-MuxIP-SportsFirstTV/409.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 145,
+      "name": "A SPOR",
+      "logo": "https://i.ibb.co/xSjB51j/aspor.png",
+      "stream_url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_480p.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 146,
+      "name": "Real Madrid tv Football",
+      "logo": "",
+      "stream_url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 147,
+      "name": "Aljazeera HD Backup 🛜v",
+      "logo": "",
+      "stream_url": "https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/aljazeeraLive/AJE/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 148,
+      "name": "🔲 𝗢𝗻𝗹𝘆 𝗠𝘆 𝗙𝗧𝗣 📶",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "http://10.111.200.30/live/feed1001/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 149,
+      "name": "🔲 𝗢𝗻𝗹𝘆 𝗠𝘆 𝗙𝗧𝗣 📶 Speed Line",
+      "logo": "https://i.ibb.co.com/23MR9Jqj/images.png",
+      "stream_url": "http://flix.11plus.live:8083/TSportsHD/tracks-v1a1/mono.m3u8?token=3e44697822eeb6ea5c0e86f4ec161a1d91a13239-03589ad6ce351aeb7d9c4fa0161fca66-1780691486-1780680686",
+      "cookie": ""
+    },
+    {
+      "id": 150,
+      "name": "Movies Now HD",
+      "logo": "https://d229kpbsb5jevy.cloudfront.net/timesplay/content/common/logos/channel/logos/wthfwe.jpeg",
+      "stream_url": "https://times-ott-live.akamaized.net/moviesnow_wv_drm/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 151,
+      "name": "MNX HD",
+      "logo": "https://d229kpbsb5jevy.cloudfront.net/timesplay/content/common/logos/channel/logos/vunjev.jpeg",
+      "stream_url": "https://times-ott-live.akamaized.net/mnxhd_wv_drm/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 152,
+      "name": "MN+",
+      "logo": "https://d229kpbsb5jevy.cloudfront.net/timesplay/content/common/logos/channel/logos/leazcc.jpeg",
+      "stream_url": "https://times-ott-live.akamaized.net/mnplus_wv_drm/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 153,
+      "name": "Romedy Now",
+      "logo": "https://d229kpbsb5jevy.cloudfront.net/timesplay/content/common/logos/channel/logos/nchght.jpeg",
+      "stream_url": "https://times-ott-live.akamaized.net/romedynow_wv_drm/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 154,
+      "name": "HBO",
+      "logo": "https://iili.io/Ju79f8g.png",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/hbo/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 155,
+      "name": "HBO Hits",
+      "logo": "https://iili.io/Ju79nwv.png",
+      "stream_url": "https://alibaba-cdn.cdnpub-maxstream.com/atm/DASH/hbohits/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 156,
+      "name": "HBO Family",
+      "logo": "https://iili.io/Ju79otR.png",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/hbofamily/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 157,
+      "name": "HBO Signature",
+      "logo": "https://iili.io/Ju79IMN.png",
+      "stream_url": "https://alibaba-cdn.cdnpub-maxstream.com/atm/DASH/hbosignature/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 158,
+      "name": "Cinemax",
+      "logo": "https://iili.io/Ju79znp.png",
+      "stream_url": "https://alibaba-cdn.cdnpub-maxstream.com/atm/DASH/cinemax/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 159,
+      "name": "FX Life",
+      "logo": "",
+      "stream_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561301/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 160,
+      "name": "ТНТ4 International",
+      "logo": "",
+      "stream_url": "https://cdn4.skygo.mn/live/disk1/TNT4/HLSv3-FTA/TNT4.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 161,
+      "name": "ТНТ International",
+      "logo": "",
+      "stream_url": "https://cdn4.skygo.mn/live/disk1/THT/HLSv3-FTA/THT.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 162,
+      "name": "Arabica TV",
+      "logo": " ",
+      "stream_url": "http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 163,
+      "name": "SRK TV",
+      "logo": " ",
+      "stream_url": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 164,
+      "name": "NTV TV UK",
+      "logo": " ",
+      "stream_url": "https://ap02.iqplay.tv:8082/iqb8002/nt589v/chunks.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 165,
+      "name": "BTV 🇧🇩",
+      "logo": " ",
+      "stream_url": "http://103.165.93.31:8095/btv/tracks-v1a1/mono.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 166,
+      "name": "DBC টিভি 🇧🇩",
+      "logo": " ",
+      "stream_url": "http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 167,
+      "name": "Ananda-tv 🇧🇩",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/ananda-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 168,
+      "name": "Asian-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/asian-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 169,
+      "name": "A Sports HD",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/asports/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 170,
+      "name": "ATN-Bangla",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/atn-bangla/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 171,
+      "name": "ATN-News",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/atn-news/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 172,
+      "name": "bijoy-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/bijoy-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 173,
+      "name": "boishakhi-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/boishakhi-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 174,
+      "name": "btv-world",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/btv-world/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 175,
+      "name": "btv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/btv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 176,
+      "name": "Channel-9",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/channel-9/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 177,
+      "name": "Channel-i",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/channel-i/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 178,
+      "name": "DBC-News",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/dbc-news/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 179,
+      "name": "Sesh-TV",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/desh-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 180,
+      "name": "Duronto-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/duronto-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 181,
+      "name": "Ekattor-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/ekattor-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 182,
+      "name": "Gazi_tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/gazi_tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 183,
+      "name": "Jamuna-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/jamuna-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 184,
+      "name": "Maasranga-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/maasranga-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 185,
+      "name": "my-tv",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/my-tv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 186,
+      "name": "NTV",
+      "logo": " ",
+      "stream_url": "https://playztv-apps.pages.dev/ntv/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 187,
+      "name": "Jungle Book",
+      "logo": "https://i.imgur.com/ubZMeQv.jpg",
+      "stream_url": "https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 188,
+      "name": "Rongeen TV",
+      "logo": "https://i.postimg.cc/zBCLNtGZ/Duronto.jpg",
+      "stream_url": "https://server.thelegitpro.in/rongeentv/rongeentv/tracks-v1a1/mono.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 189,
+      "name": "ZB Cartoon",
+      "logo": "https://i.postimg.cc/FFwSjdzS/Pogo.jpg",
+      "stream_url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 190,
+      "name": "Zoo Moo",
+      "logo": "https://i.postimg.cc/FFwSjdzS/Pogo.jpg",
+      "stream_url": "https://zoomoo-samsungau.amagi.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 191,
+      "name": "Saudi Quran",
+      "logo": "https://yt3.ggpht.com/ytc/AMLnZu_Gxy8ywjMY6_YPX-1uYtUGA56FOfDoBsH62-ekNA=s900-c-k-c0x00ffffff-no-rj",
+      "stream_url": "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 192,
+      "name": "Madina live",
+      "logo": "https://images-na.ssl-images-amazon.com/images/I/71CywdrFaZL.png",
+      "stream_url": "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 193,
+      "name": "Peace tv Bangla",
+      "logo": "https://images-na.ssl-images-amazon.com/images/I/71CywdrFaZL.png",
+      "stream_url": "https://dzkyvlfyge.erbvr.com/PeaceTvBangla/tracks-v3a1/mono.m3u8?sid=s7AaNdTzDE2912wNcPLejQ",
+      "cookie": ""
+    },
+    {
+      "id": 194,
+      "name": "Mizanur Rahman Ajhari",
+      "logo": "https://images-na.ssl-images-amazon.com/images/I/71CywdrFaZL.png",
+      "stream_url": "https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 195,
+      "name": "Noor Tv",
+      "logo": " ",
+      "stream_url": "https://cdn.bestream.io:19360/elfaro4/elfaro4.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 196,
+      "name": "Peace Tv English",
+      "logo": " ",
+      "stream_url": "https://dzkyvlfyge.erbvr.com/PeaceTvEnglish/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 197,
+      "name": "Madani Tv",
+      "logo": " ",
+      "stream_url": "https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 198,
+      "name": "Sunnah Tv",
+      "logo": " ",
+      "stream_url": "http://m.live.net.sa:1935/live/sunnah/chunklist.m3u8?v=1",
+      "cookie": ""
+    },
+    {
+      "id": 199,
+      "name": "QURAN",
+      "logo": "https://i.ibb.co/GnfgKbs/alquran.png",
+      "stream_url": "http://m.live.net.sa:1935/live/quran/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 200,
+      "name": "QURAN",
+      "logo": "https://i.ibb.co/GnfgKbs/alquran.png",
+      "stream_url": "https://www.elahmad.com/tv/m3u8/online_live_14_tv.m3u8?id=qoran_tv&t=11111111",
+      "cookie": ""
+    },
+    {
+      "id": 201,
+      "name": "BAHRAIN QURAN",
+      "logo": "https://i.ibb.co/cygNtwH/bahrain-quaran.png",
+      "stream_url": "https://5c7b683162943.streamlock.net/live/ngrp:bahrainquran_all/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 202,
+      "name": "SHARJAH QURAN",
+      "logo": "https://i.ibb.co/2qdGPCh/Sharjahtvquran.png",
+      "stream_url": "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 203,
+      "name": "QURAN RADIOTV SMC",
+      "logo": "https://i.ibb.co/2qdGPCh/Sharjahtvquran.png",
+      "stream_url": "https://live.kwikmotion.com/smcquranlive/quranradiolive/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 204,
+      "name": "AL QAMAR",
+      "logo": "https://i.ibb.co/dQtMFVT/qamar.jpg",
+      "stream_url": "https://streamer3.premio.link/alqamar/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 205,
+      "name": "ALMASIRA MUBASHER",
+      "logo": "https://i.ibb.co/ypj95gJ/almasirah.png",
+      "stream_url": "https://svs.itworkscdn.net/almasiramubacherlive/almasira.smil/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 206,
+      "name": "ALMASIRA MUBASHER",
+      "logo": "https://i.ibb.co/ypj95gJ/almasirah.png",
+      "stream_url": "https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 207,
+      "name": "AL EKHBARIA",
+      "logo": "https://i.ibb.co/TkVK043/ekbariya.png",
+      "stream_url": "https://al-ekhbaria-prod-dub.shahid.net/out/v1/d443f3203b444032896e3233cb6eaa84/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 208,
+      "name": "AL EKHBARIA",
+      "logo": "https://i.ibb.co/TkVK043/ekbariya.png",
+      "stream_url": "https://cdn-globecast.akamaized.net/live/eds/al_ekhbariya/hls_roku/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 209,
+      "name": "AL EKHBARIA",
+      "logo": "https://i.ibb.co/TkVK043/ekbariya.png",
+      "stream_url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 210,
+      "name": "AL SUNNAH TV",
+      "logo": "https://i.ibb.co/MctgDQ8/sunnah.png",
+      "stream_url": "https://shls-euronews-en-prod-dub.shahid.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 211,
+      "name": "AL SUNNAH TV",
+      "logo": "https://i.ibb.co/MctgDQ8/sunnah.png",
+      "stream_url": "https://sbc-prod-dub-enc.edgenextcdn.net/out/v1/b09bbb8d9b684763be4211b088168de7/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 212,
+      "name": "AL SUNNAH TV",
+      "logo": "https://i.ibb.co/MctgDQ8/sunnah.png",
+      "stream_url": "http://m.live.net.sa:1935/live/sunnah/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 213,
+      "name": "AL MAJD HOLY QURAN TV",
+      "logo": "https://i.ibb.co/Qj9JJTCZ/amhquran.png",
+      "stream_url": "https://edge66.magictvbox.com/liveApple/al_majd/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 214,
+      "name": "QURAN KAREEM TV",
+      "logo": "https://i.ibb.co/f0cKj4S/kareem.jpg",
+      "stream_url": "https://al-ekhbaria-prod-dub.shahid.net/out/v1/9885cab0a3ec4008b53bae57a27ca76b/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 215,
+      "name": "AL RESALAH",
+      "logo": "https://i.ibb.co/G3xHLRPy/resalah.png",
+      "stream_url": "https://rotana.hibridcdn.net/rotananet/risala_net-7Y83PP5adWixDF93/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 216,
+      "name": "AL ISTIQAMA",
+      "logo": "https://i.ibb.co/HPzRmd3/alistiqama.png",
+      "stream_url": "https://jmc-live.ercdn.net/alistiqama/alistiqama.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 217,
+      "name": "TLC HD",
+      "logo": "",
+      "stream_url": "https://travelxp-travelxp-1-nz.samsung.wurl.tv/1200.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 218,
+      "name": "Viasat Histroy",
+      "logo": "https://xb-static.nm-ovp.nelonenmedia.fi/xb/styles/1920x1080/public/img/c116363be962f3446d477111a5ce8bc0155ee8f3-viasat-history.jpg",
+      "stream_url": "https://mob.webtvstream.bhtelecom.ba/hls15/viasat_history.mpd?n=7e88df0f0fc1cbd49f02170eb9448f5a",
+      "cookie": ""
+    },
+    {
+      "id": 219,
+      "name": "Viasat Nature",
+      "logo": "https://xb-static.nm-ovp.nelonenmedia.fi/xb/styles/1920x1080/public/img/594765b48cc829bb002c035f89cabedebcf6ade5-viasat-nature.jpg",
+      "stream_url": "https://mob.webtvstream.bhtelecom.ba/hls15/viasat_nature.mpd?n=276ceb87b528e1ce0973b5d585851284",
+      "cookie": ""
+    },
+    {
+      "id": 220,
+      "name": "Discovery",
+      "logo": "",
+      "stream_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/562104/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 221,
+      "name": "TLC",
+      "logo": "https://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/FOvFsIgt.png",
+      "stream_url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Tlc2/default/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 222,
+      "name": "National Geographic",
+      "logo": "",
+      "stream_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561901/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 223,
+      "name": "Nat Geo Wild",
+      "logo": "",
+      "stream_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561201/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 224,
+      "name": "Animal Planet",
+      "logo": "",
+      "stream_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561803/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 225,
+      "name": "Discovery Asia HD",
+      "logo": "",
+      "stream_url": "https://cdn4.skygo.mn/live/disk1/Discovery_Asia/HLSv3-FTA/Discovery_Asia-avc1_3000000=67-mp4a_256000_eng=12.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 226,
+      "name": "Discovery HD",
+      "logo": "",
+      "stream_url": "https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 227,
+      "name": "Sochi 24 HD 🇷🇺",
+      "logo": "",
+      "stream_url": "http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 228,
+      "name": "Wild Life",
+      "logo": "",
+      "stream_url": "https://wildearth-plex.amagi.tv/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 229,
+      "name": "BBC Earth",
+      "logo": "",
+      "stream_url": "http://65.108.239.207/bbc/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 230,
+      "name": "Discovery Channel",
+      "logo": "",
+      "stream_url": "http://fl1.moveonjoy.com/Discovery_Channel/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 231,
+      "name": "Destination America",
+      "logo": "",
+      "stream_url": "http://fl1.moveonjoy.com/Destination_America/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 232,
+      "name": "DISCOVERY FAMILY CHANNEL",
+      "logo": "",
+      "stream_url": "http://fl1.moveonjoy.com/DISCOVERY_FAMILY_CHANNEL/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 233,
+      "name": "DISCOVERY LIFE",
+      "logo": "",
+      "stream_url": "http://fl1.moveonjoy.com/DISCOVERY_LIFE/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 234,
+      "name": "DISNEY JR",
+      "logo": "",
+      "stream_url": "http://fl1.moveonjoy.com/DISNEY_JR/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 235,
+      "name": "BBC Earth",
+      "logo": "https://i.postimg.cc/Y05S4Fjz/Animal-Planet.jpg",
+      "stream_url": "https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 236,
+      "name": "Drone TV",
+      "logo": "",
+      "stream_url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/dronetv/440.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 237,
+      "name": "BBC Earth US",
+      "logo": "",
+      "stream_url": "https://amg00793-bbcstudios-amg00793c3-lg-us-2528.playouts.now.amagi.tv/playlist/amg00793-bbcstudios-bbcearta-lgus/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 238,
+      "name": "4k Nature",
+      "logo": "",
+      "stream_url": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/4k-travel-tv/manifest.m3u8?v=1%20#EXTINF:-1%20,Wild%20Earth",
+      "cookie": ""
+    },
+    {
+      "id": 239,
+      "name": "ACCU WEATHER",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/AccuWeather_2021.svg",
+      "stream_url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1",
+      "cookie": ""
+    },
+    {
+      "id": 240,
+      "name": "Discovery",
+      "logo": "https://i.ibb.co/V2gtYfH/download-1.png",
+      "stream_url": "http://stvlive.net:8080/discovery/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 241,
+      "name": "Xplore TV",
+      "logo": "",
+      "stream_url": "https://xlpore-samsungus.amagi.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 242,
+      "name": "Animal Planet HD",
+      "logo": "https://i.ibb.co/3rYngJk/Sony-BBC-Earth.png",
+      "stream_url": "http://195.189.60.31:8003/play/a0gk/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 243,
+      "name": "Animal Planet Backup",
+      "logo": "https://i.ibb.co/MV3xv1y/download-1.png",
+      "stream_url": "https://cdn08jtedge.indihometv.com/dassdvr/194/animalplanet/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 244,
+      "name": "Discovery Asia HD",
+      "logo": "https://images.indihometv.com/assets/DISCOVERYASIA-OTT-135-HD.png?v=2.0.0.13",
+      "stream_url": "https://cdn08jtedge.indihometv.com/dassdvr/194/discoveryasia/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 245,
+      "name": "Travel XP English",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/mBanglaavel%20XP.png",
+      "stream_url": "https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 246,
+      "name": "Travel XP English NZ",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Travel%20XP.png",
+      "stream_url": "https://travelxp-travelxp-1-nz.samsung.wurl.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 247,
+      "name": "Travel XP English SE",
+      "logo": "https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Travel%20XP.png",
+      "stream_url": "https://travelxp-travelxp-1-se.samsung.wurl.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 248,
+      "name": "Love Nature 4K*",
+      "logo": "https://www.lyngsat.com/logo/tv/ll/love_nature_ca.png",
+      "stream_url": "https://d18dyiwu97wm6q.cloudfront.net/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 249,
+      "name": "Animal_Planet_HD",
+      "logo": "https://www.lyngsat.com/logo/tv/ll/love_nature_ca.png",
+      "stream_url": "http://mfe01.cliptv.az/dash/Animal_Planet_HD345wer.ism/playlist.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 250,
+      "name": "Amazon SAT",
+      "logo": "",
+      "stream_url": "https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 251,
+      "name": "HISTORY HD",
+      "logo": "https://cantseeus.com/wp-content/uploads/7523/10/History_28751529.png",
+      "stream_url": "https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_historyhd.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 252,
+      "name": "OUTDOOR CHANNEL 🇺🇸",
+      "logo": "https://i.ibb.co/jZ2NVqN/outdoorch.png",
+      "stream_url": "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 253,
+      "name": "Outdor channel",
+      "logo": "https://i.ibb.co/jZ2NVqN/outdoorch.png",
+      "stream_url": "http://103.66.62.83:8000/play/a04f/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 254,
+      "name": "REAL WILD 🇬🇧",
+      "logo": "https://i.ibb.co/sRhcqHT/realwild.png",
+      "stream_url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00426-littledotstudio-realwild-tcl/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 255,
+      "name": "INSIGHT",
+      "logo": "https://business.insight.tv/wp-content/uploads/7521/01/Insight-TV-Logo-small-150x150.png",
+      "stream_url": "https://insighttv-samsung-us.amagi.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 256,
+      "name": "Colors Infinity SD",
+      "logo": "https://gd.mdsharifulislamnayon.workers.dev/1:/TV%20LOGO/colors%20infinity.jpeg",
+      "stream_url": "https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 257,
+      "name": "Colors HD",
+      "logo": "https://i.ibb.co/9grLJCS/fone22.png",
+      "stream_url": "https://padmaonline.duckdns.org:8088/ColorsHD/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 258,
+      "name": "FASHION ONE",
+      "logo": "https://i.ibb.co/9grLJCS/fone22.png",
+      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2ee6997cb_1/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 259,
+      "name": "FASHION ONE",
+      "logo": "https://i.ibb.co/9grLJCS/fone22.png",
+      "stream_url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e2ee690051.smil/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 260,
+      "name": "Digital Fashion",
+      "logo": "https://i.ibb.co/9grLJCS/fone22.png",
+      "stream_url": "http://115.187.41.216:8080/hls/digitalfashion/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 261,
+      "name": "Times Of India",
+      "logo": "",
+      "stream_url": "https://live.sli.ke/live/npnhm84gz9/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 262,
+      "name": "Wion News",
+      "logo": "",
+      "stream_url": "https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 263,
+      "name": "Tv9 Bangla",
+      "logo": "",
+      "stream_url": "https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9banaen8yq/liveabr/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 264,
+      "name": "TRT WORLD",
+      "logo": "",
+      "stream_url": "https://tv-trtworld.medya.trt.com.tr/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 265,
+      "name": "Press TV Iran",
+      "logo": "",
+      "stream_url": "https://live.presstv.ir/hls/presstv_5_482/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 266,
+      "name": "ABC Australia",
+      "logo": "",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/ABC_AUSTRALIA/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 267,
+      "name": "Al Jazeera",
+      "logo": "",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/aljazeera/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 268,
+      "name": "CGTN Doc",
+      "logo": "",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/CGTN_DOCUMENTARY/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 269,
+      "name": "DW",
+      "logo": "",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/DWTV/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 270,
+      "name": "France 24",
+      "logo": "",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/FRANCE_24/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 271,
+      "name": "France News 24",
+      "logo": "",
+      "stream_url": "https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_5000.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 272,
+      "name": "NHK World",
+      "logo": "",
+      "stream_url": "https://cdn10jtedge.indihometv.com/atm/DASH/NHK_WORLD_JAPAN/manifest.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 273,
+      "name": "CNN International",
+      "logo": "",
+      "stream_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/560404/index.mpd",
+      "cookie": ""
+    },
+    {
+      "id": 274,
+      "name": "France 24 English (720p)",
+      "logo": "https://is.gd/DtaJNT",
+      "stream_url": "https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_2300.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 275,
+      "name": "BBC NEWS",
+      "logo": "https://is.gd/DtaJNT",
+      "stream_url": "https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 276,
+      "name": "BBC NEWS",
+      "logo": "https://is.gd/DtaJNT",
+      "stream_url": "https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News-avc1_3000000=8-mp4a_208000_eng=2.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 277,
+      "name": "FOX NEWS",
+      "logo": "https://is.gd/Qwtxnl",
+      "stream_url": "https://stream.livenewsplay.com:9443/hls/foxnews/foxsd.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 278,
+      "name": "DW NEWS",
+      "logo": "https://is.gd/imZMIp",
+      "stream_url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream02/streamPlaylist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 279,
+      "name": "Aljazeera NEWS",
+      "logo": "https://is.gd/pOyTnP",
+      "stream_url": "https://live-hls-web-aje.getaj.net/AJE/04.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 280,
+      "name": "CNN NEWS",
+      "logo": "https://is.gd/ywX5PG",
+      "stream_url": "https://amg01448-samsungin-cnnnow-samsungin-4npqg.amagi.tv/playlist/amg01448-samsungin-cnnnow-samsungin/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 281,
+      "name": "NDTV NEWS",
+      "logo": "https://is.gd/ih6x8j",
+      "stream_url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678-b/ndtv24x7/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 282,
+      "name": "T Global News (Canada)",
+      "logo": "",
+      "stream_url": "https://live.corusdigitaldev.com/groupd/live/49a91e7f-1023-430f-8d66-561055f3d0f7/live.isml/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 283,
+      "name": "BBC News",
+      "logo": "https://i.imgur.com/REuN9RR.png",
+      "stream_url": "http://45.148.145.57/IN_BN/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 284,
+      "name": "BBC News",
+      "logo": "https://i.imgur.com/wgIUsFu.png",
+      "stream_url": "https://ythls.armelin.one/channel/UCelk6aHijZq-GJBBB9YpReA.m3u8?v=1",
+      "cookie": ""
+    },
+    {
+      "id": 285,
+      "name": "DW English",
+      "logo": "https://i.imgur.com/A1xzjOI.png",
+      "stream_url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8?v=1",
+      "cookie": ""
+    },
+    {
+      "id": 286,
+      "name": "FOX News (AU) 🛜",
+      "logo": "https://i.ibb.co/whc9vkT/download-5.png",
+      "stream_url": "https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 287,
+      "name": "RT News (EN) 🛜",
+      "logo": "https://i.ibb.co/M7W5zRy/images.png",
+      "stream_url": "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 288,
+      "name": "RTNEWS GLOBAL",
+      "logo": "https://i.ibb.co/M7W5zRy/images.png",
+      "stream_url": "https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8?v=1",
+      "cookie": ""
+    },
+    {
+      "id": 289,
+      "name": "RT NEWS USA",
+      "logo": "https://i.ibb.co/M7W5zRy/images.png",
+      "stream_url": "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8?v=1",
+      "cookie": ""
+    },
+    {
+      "id": 290,
+      "name": "CNBC Indonesia (EN) 🛜",
+      "logo": "https://i.ibb.co/Tv1pgrG/download-4.png",
+      "stream_url": "https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 291,
+      "name": "Iran International(EN) 🛜",
+      "logo": "",
+      "stream_url": "https://dev-live.livetvstream.co.uk/LS-63503-4/chunklist_b1196000.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 292,
+      "name": "DW English 📶_📺",
+      "logo": "https://i.ibb.co/7kNhrmW/dw-english-home-tv.png",
+      "stream_url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 293,
+      "name": "Aljazeera",
+      "logo": "https://i.imgur.com/e3cYtrb.jpg",
+      "stream_url": "https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 294,
+      "name": "Breaking News",
+      "logo": "https://i.postimg.cc/ZnD8CtvQ/BBC.jpg",
+      "stream_url": "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg02703-leadstory-leadstory-samsungau/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 295,
+      "name": "CGTN",
+      "logo": "https://i.postimg.cc/ZnD8CtvQ/BBC.jpg",
+      "stream_url": "https://0472.org/hls/cgtn.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 296,
+      "name": "CNA News",
+      "logo": "https://i.postimg.cc/vH3MKVPY/CNN.jpg",
+      "stream_url": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 297,
+      "name": "CNN (US)",
+      "logo": "https://i.postimg.cc/vH3MKVPY/CNN.jpg",
+      "stream_url": "https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 298,
+      "name": "Global News (US)",
+      "logo": "https://i.imgur.com/kcMUGOE.jpg",
+      "stream_url": "https://live.corusdigitaldev.com/groupb/live/3062d0e3-ed4c-4f47-8482-95648250f4b8/live.isml/.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 299,
+      "name": "India Today",
+      "logo": "https://i.imgur.com/kcMUGOE.jpg",
+      "stream_url": "https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 300,
+      "name": "NBC 7 San Diego",
+      "logo": "https://i.imgur.com/ldXaLJK.png",
+      "stream_url": "https://nbcu-nbcsandiegonews-firetv.amagi.tv/playlist.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 301,
+      "name": "NDTV English",
+      "logo": "https://i.imgur.com/ldXaLJK.png",
+      "stream_url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 302,
+      "name": "NDTV Hindi",
+      "logo": "https://i.imgur.com/ldXaLJK.png",
+      "stream_url": "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 303,
+      "name": "News Max",
+      "logo": "https://i.postimg.cc/RZJmcSt6/9XM.jpg",
+      "stream_url": "https://ddy6new.newkso.ru/ddy6/premium613/mono.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 304,
+      "name": "News Max 2",
+      "logo": "https://i.postimg.cc/RZJmcSt6/9XM.jpg",
+      "stream_url": "https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 305,
+      "name": "Quran",
+      "logo": "https://i.imgur.com/AfY8NAf.jpg",
+      "stream_url": "https://download.quranicaudio.com/qdc/abdurrahmaan_as_sudais/murattal/96.mp3",
+      "cookie": ""
+    },
+    {
+      "id": 306,
+      "name": "Bangladesh Betar",
+      "logo": "https://i.imgur.com/AfY8NAf.jpg",
+      "stream_url": "http://as3.digitalsynapsebd.com:8263/;stream.mp3",
+      "cookie": ""
+    },
+    {
+      "id": 307,
+      "name": "Redio Shadin",
+      "logo": "https://i.imgur.com/16uHVGr.png",
+      "stream_url": "http://stream-157.zeno.fm/umq9q5uuva5tv?zs=RZTxFKUnRZeT5gVmKwDoCA",
+      "cookie": ""
+    },
+    {
+      "id": 308,
+      "name": "Redio Today",
+      "logo": "https://i.imgur.com/NSzeePe.png",
+      "stream_url": "http://stream-144.zeno.fm/8wv4d8g4344tv?zs=OM6q0RfuRDi1X6Tty62qhA",
+      "cookie": ""
+    },
+    {
+      "id": 309,
+      "name": "Redio Ekattor",
+      "logo": "https://i.imgur.com/oWpQCYD.png",
+      "stream_url": "http://192.144.82.200:9302/;stream/1;",
+      "cookie": ""
+    },
+    {
+      "id": 310,
+      "name": "Redio Sarabela",
+      "logo": "https://i.imgur.com/sUtIV0g.png",
+      "stream_url": "http://103.4.145.50:8000/stream/1/",
+      "cookie": ""
+    },
+    {
+      "id": 311,
+      "name": "Redio Padma",
+      "logo": "https://i.imgur.com/gi3zr40.png",
+      "stream_url": "http://cassini.shoutca.st:9109/radiopadma.mp3",
+      "cookie": ""
+    },
+    {
+      "id": 312,
+      "name": "Sayaji FM",
+      "logo": "https://i.imgur.com/rmd6v7M.png",
+      "stream_url": "https://sayajifm.radioca.st/stream/;?1707488287650",
+      "cookie": ""
+    },
+    {
+      "id": 313,
+      "name": "Radio BongOnet",
+      "logo": "https://i.imgur.com/Ca6gh7i.png",
+      "stream_url": "https://stream.bongonet.net/proxy/radiobongonet?mp=/stream/1/",
+      "cookie": ""
+    },
+    {
+      "id": 314,
+      "name": "Radio Retro Bollywood",
+      "logo": "https://i.imgur.com/d09PXR5.jpg",
+      "stream_url": "https://stream-140.zeno.fm/g372rxef798uv?zs=zMsr18fRTH-5eFy8qKIW-g",
+      "cookie": ""
+    },
+    {
+      "id": 315,
+      "name": "Radio Bolly FM",
+      "logo": "https://i.imgur.com/UScHwWO.jpg",
+      "stream_url": "https://stream-160.zeno.fm/zu59ykebs2zuv?zs=TJdihQC0Q8CabTsCGBWA4A",
       "cookie": ""
     }
   ]
