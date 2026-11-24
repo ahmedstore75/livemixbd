@@ -21,30 +21,30 @@
     },
     {
       "id": 3,
-      "name": "Newcastle Jets FC (AUS) vs Kashiwa Reysol (JPN) - MATCHDAY 5 - AFC Champions League Elite 2026/27",
-      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17951617411020x576.jpg",
-      "stream_url": "https://multiregion-asia-cdn.tapmad.com/v1/01a1548c4faf15fc600b1e3e968408/01a1548c7fde1ea557841e1612cf76/main.m3u8",
-      "cookie": ""
-    },
-    {
-      "id": 4,
       "name": "Chattogram City FC Brothers Union Ltd - MATCHDAY 5 - Federation Cup 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17955019471020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a80166b1ea557841e1612cf55/01a14a8047211ea557841e1612cf58/main.m3u8",
       "cookie": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Abahani Ltd. DhakaFakirerpool Young Mens Club - MATCHDAY 5 - Federation Cup 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17955018211020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a5b5bd11ea540a81c2b41b75b/01a14a5b94ea15fc600b1e3e9683eb/main.m3u8",
       "cookie": ""
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Fortis FC Ltd vs Rahamatgonj MFS - MATCHDAY 5 - Federation Cup 2026/27",
       "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17955016991020x576.jpg",
       "stream_url": "https://tencent-cdn.tapmad.com/v1/01a14a4cd93615fc600b1e3e9683e8/01a14a5761541567ee931e109fa576/main.m3u8",
+      "cookie": ""
+    },
+    {
+      "id": 6,
+      "name": "Kyoto Sanga F.C. (JPN) vs FC Pohang Steelers (KOR) - MATCHDAY 5 - AFC Champions League Elite 2026/27",
+      "logo": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17951652401020x576.jpg",
+      "stream_url": "https://multiregion-asia-cdn.tapmad.com/v1/01a1548c4faf15fc600b1e3e968408/01a1548c7fde1ea557841e1612cf76/main.m3u8",
       "cookie": ""
     },
     {
