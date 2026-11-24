@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-22T05:49:17.998Z",
-  "total_channels": 191,
+  "updated_at": "2026-11-24T09:04:14.249Z",
+  "total_channels": 183,
   "channels": [
     {
       "id": "d614da2b-21fd-45e4-816f-0de46db5cf25",
@@ -165,48 +165,21 @@
       ]
     },
     {
-      "id": "33824024-0c09-4512-8f92-088c5b5d3832",
-      "name": "Gazi TV",
-      "logo": "https://api.cirkletv.com/files/gazi_tv__1784912733004_0612f4d5c61e40b3.webp",
-      "category": "Sports",
-      "urls": [
-        "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8"
-      ]
-    },
-    {
-      "id": "8aa9cd71-c884-4e8f-942a-67075dfd4fed",
-      "name": "TSN3 SPORTS FHD",
-      "logo": "",
-      "category": "Sports",
-      "urls": [
-        "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd"
-      ]
-    },
-    {
-      "id": "29bc55fd-e997-4b50-9698-17da61108b09",
-      "name": "BeIN2 SPORTS FHD",
-      "logo": "",
-      "category": "Sports",
-      "urls": [
-        "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd"
-      ]
-    },
-    {
-      "id": "7ae38896-9885-4331-b2af-8150b5ce8c89",
-      "name": "D SPORTS + FHD",
-      "logo": "",
-      "category": "Sports",
-      "urls": [
-        "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1/7695a0f64a0e424b973d5b09a2a3eb91/cenc.mpd"
-      ]
-    },
-    {
       "id": "3a2b206c-a7aa-40fd-a1e1-cadaa86fbe66",
       "name": "DD Sports",
       "logo": "https://api.cirkletv.com/files/DD_Sports_1786590048470_3273294b04df06cb.webp",
       "category": "Sports",
       "urls": [
         "https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8"
+      ]
+    },
+    {
+      "id": "33824024-0c09-4512-8f92-088c5b5d3832",
+      "name": "Gazi TV",
+      "logo": "https://api.cirkletv.com/files/gazi_tv__1784912733004_0612f4d5c61e40b3.webp",
+      "category": "Sports",
+      "urls": [
+        "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8"
       ]
     },
     {
@@ -477,24 +450,6 @@
       "category": "News",
       "urls": [
         "https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8"
-      ]
-    },
-    {
-      "id": "dd88c9af-54b6-4fd8-91ed-16e605744051",
-      "name": "Croatia vs Czech Republic",
-      "logo": "",
-      "category": "News",
-      "urls": [
-        "https://tencent-cdn.tapmad.com/v1/01a1456f124d15fc600b1e3e9683d7/01a145990eba15fc60e91e1786b054/ProdPK_export_720.m3u8"
-      ]
-    },
-    {
-      "id": "528ff34b-2678-47f7-bce1-ae71f6066809",
-      "name": "Croatia vs Czech Republic",
-      "logo": "",
-      "category": "News",
-      "urls": [
-        "https://live05.wecile.app/live/33860426.m3u8"
       ]
     },
     {
@@ -1008,33 +963,6 @@
       "category": "Bangla Entertainment",
       "urls": [
         "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8?v=1"
-      ]
-    },
-    {
-      "id": "d9a1a065-751d-4551-ace4-8b97dee0ff12",
-      "name": "Athletic Club vs Getafe",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.m3u8"
-      ]
-    },
-    {
-      "id": "3e9e3243-4c40-4d26-937c-588d7027a107",
-      "name": "Athletic Club vs Getafe",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://live2.domaincdn.cc/livecdn/channel-19.m3u8?auth_key=3000001792935076-0-0-88112128510ed8b9e0c7274e76670d02"
-      ]
-    },
-    {
-      "id": "e7ceb411-da76-4953-8927-df8edb745aba",
-      "name": "Athletic Club vs Real Sociedad",
-      "logo": "",
-      "category": "Bangla Entertainment",
-      "urls": [
-        "https://tencent-cdn.tapmad.com/v1/01a145b15ce115fc600b1e3e9683db/01a145b24db11ea557841e1612cf4c/ProdPK_export_clone_clone_720.m3u8"
       ]
     },
     {
